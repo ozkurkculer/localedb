@@ -31,7 +31,6 @@ export const mainNav: NavItem[] = [
   {
     title: "Locale Codes",
     href: "/locale-codes",
-    disabled: true,
   },
   {
     title: "About",

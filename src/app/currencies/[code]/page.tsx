@@ -56,7 +56,7 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
     <div className="container py-12">
       {/* Header */}
       <div className="mb-12 text-center">
-        <div className="mb-4 text-8xl font-bold text-primary">{currency.data.symbol}</div>
+        <div className="mb-4 text-8xl font-bold bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent">{currency.data.symbol}</div>
         <h1 className="mb-2 text-4xl font-bold">{currency.data.name}</h1>
         <p className="text-xl text-muted-foreground">{currency.data.nativeName}</p>
         <div className="mt-4 flex justify-center gap-2">

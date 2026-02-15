@@ -108,7 +108,7 @@ function CurrencyCard({ currency }: CurrencyCardProps) {
       className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-border/40 bg-card p-5 transition-all hover:border-border hover:shadow-lg hover:shadow-primary/5"
     >
         <div className="mb-4 flex items-center justify-between">
-             <div className="text-2xl font-bold text-primary">{currency.symbol}</div>
+             <div className="text-2xl font-bold bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent">{currency.symbol}</div>
              <div className="rounded bg-muted px-2 py-1 font-mono text-xs font-medium">{currency.code}</div>
         </div>
 
