@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "BDT",
+    "numericCode": 50,
+    "name": "Taka",
+    "nativeName": "Bangladeshi taka",
+    "symbol": "৳",
+    "narrowSymbol": "৳",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Poisha",
+    "pattern": "#,##,##0.00¤",
+    "example": "১,২৩,৪৫৬.৭৯৳",
+    "accountingExample": "(১,২৩৪.৫৬৳)",
+    "countries": [
+      "BD"
+    ]
+  }
+}

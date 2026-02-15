@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "LBP",
+    "numericCode": 422,
+    "name": "Lebanese Pound",
+    "nativeName": "Lebanese pound",
+    "symbol": "ل.ل",
+    "narrowSymbol": "ل.ل",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Piastres",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏١٢٣٬٤٥٧ ل.ل.‏",
+    "accountingExample": "؜-‏١٬٢٣٥ ل.ل.‏",
+    "countries": [
+      "LB"
+    ]
+  }
+}

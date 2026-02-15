@@ -1,0 +1,31 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "XOF",
+    "numericCode": 952,
+    "name": "West African Franc",
+    "nativeName": "West African CFA franc",
+    "symbol": "Fr",
+    "narrowSymbol": "Fr",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 0,
+    "subunitName": "",
+    "pattern": "#,##0.00 ¤",
+    "example": "123 457 F CFA",
+    "accountingExample": "(1 235 F CFA)",
+    "countries": [
+      "BJ",
+      "BF",
+      "CI",
+      "GW",
+      "ML",
+      "NE",
+      "SN",
+      "TG"
+    ]
+  }
+}

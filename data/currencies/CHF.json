@@ -1,0 +1,25 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "CHF",
+    "numericCode": 756,
+    "name": "Swiss Franc",
+    "nativeName": "Swiss franc",
+    "symbol": "Fr",
+    "narrowSymbol": "Fr",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Rappen",
+    "pattern": "#,##0.00 ¤",
+    "example": "CHF 123’456.79",
+    "accountingExample": "-1’234.56 CHF",
+    "countries": [
+      "LI",
+      "CH"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "MRO",
+    "numericCode": 478,
+    "name": "Mauritanian Ouguiya",
+    "nativeName": "",
+    "symbol": "",
+    "narrowSymbol": "",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 5,
+    "subunitName": "Khoums",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏١٢٣٬٤٥٧ MRO",
+    "accountingExample": "؜-‏١٬٢٣٥ MRO",
+    "countries": [
+      "MR"
+    ]
+  }
+}

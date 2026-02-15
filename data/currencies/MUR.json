@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "MUR",
+    "numericCode": 480,
+    "name": "Mauritian Rupee",
+    "nativeName": "Mauritian rupee",
+    "symbol": "₨",
+    "narrowSymbol": "₨",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "Rs 123,456.79",
+    "accountingExample": "(Rs 1,234.56)",
+    "countries": [
+      "MU"
+    ]
+  }
+}

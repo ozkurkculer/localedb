@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "DJF",
+    "numericCode": 262,
+    "name": "Djibouti Franc",
+    "nativeName": "Djiboutian franc",
+    "symbol": "Fr",
+    "narrowSymbol": "Fr",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centimes",
+    "pattern": "#,##0.00 ¤",
+    "example": "123 457 Fdj",
+    "accountingExample": "(1 235 Fdj)",
+    "countries": [
+      "DJ"
+    ]
+  }
+}

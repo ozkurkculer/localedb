@@ -1,0 +1,25 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ILS",
+    "numericCode": 376,
+    "name": "New Israeli Sheqel",
+    "nativeName": "Israeli new shekel",
+    "symbol": "₪",
+    "narrowSymbol": "₪",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Agorot",
+    "pattern": "‏#,##0.00 ‏¤;‏-#,##0.00 ‏¤",
+    "example": "‏123,456.79 ‏₪",
+    "accountingExample": "‏‎-1,234.56 ‏₪",
+    "countries": [
+      "IL",
+      "PS"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "GTQ",
+    "numericCode": 320,
+    "name": "Quetzal",
+    "nativeName": "Guatemalan quetzal",
+    "symbol": "Q",
+    "narrowSymbol": "Q",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centavos",
+    "pattern": "#,##0.00 ¤",
+    "example": "Q 123,456.79",
+    "accountingExample": "-Q 1,234.56",
+    "countries": [
+      "GT"
+    ]
+  }
+}

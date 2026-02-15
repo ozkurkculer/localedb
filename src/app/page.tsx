@@ -105,7 +105,6 @@ export default function Home() {
             title="Currencies"
             description="Detailed currency information with symbols, formatting rules, and subunits."
             href="/currencies"
-            disabled
           />
         </div>
       </motion.section>

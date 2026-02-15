@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ZAR",
+    "numericCode": 710,
+    "name": "South African Rand",
+    "nativeName": "South African rand",
+    "symbol": "R",
+    "narrowSymbol": "R",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "R 123 456,79",
+    "accountingExample": "(R 1 234,56)",
+    "countries": [
+      "ZA"
+    ]
+  }
+}

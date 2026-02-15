@@ -1,0 +1,25 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "XCG",
+    "numericCode": 532,
+    "name": "Caribbean guilder",
+    "nativeName": "Caribische gulden",
+    "symbol": "Cg",
+    "narrowSymbol": "Cg",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤ #,##0.00;¤ -#,##0.00",
+    "example": "XCG 123.456,79",
+    "accountingExample": "(XCG 1.234,56)",
+    "countries": [
+      "CW",
+      "SX"
+    ]
+  }
+}

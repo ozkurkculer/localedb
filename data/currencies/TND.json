@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "TND",
+    "numericCode": 788,
+    "name": "Tunesian Dinar",
+    "nativeName": "Tunisian dinar",
+    "symbol": "د.ت",
+    "narrowSymbol": "د.ت",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 1000,
+    "subunitName": "Millimes",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏123.456,789 د.ت.‏",
+    "accountingExample": "(؜1.234,560 د.ت.‏)",
+    "countries": [
+      "TN"
+    ]
+  }
+}

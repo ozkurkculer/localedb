@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "VND",
+    "numericCode": 704,
+    "name": "Dong",
+    "nativeName": "Vietnamese đồng",
+    "symbol": "₫",
+    "narrowSymbol": "₫",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 10,
+    "subunitName": "Hào",
+    "pattern": "#,##0.00 ¤",
+    "example": "123.457 ₫",
+    "accountingExample": "-1.235 ₫",
+    "countries": [
+      "VN"
+    ]
+  }
+}

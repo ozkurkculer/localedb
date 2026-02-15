@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "AED",
+    "numericCode": 784,
+    "name": "Arabic Dirham",
+    "nativeName": "United Arab Emirates dirham",
+    "symbol": "د.إ",
+    "narrowSymbol": "د.إ",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Fils",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏123,456.79 د.إ.‏",
+    "accountingExample": "(؜1,234.56 د.إ.‏)",
+    "countries": [
+      "AE"
+    ]
+  }
+}
