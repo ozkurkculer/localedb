@@ -44,7 +44,7 @@ export function MobileNav() {
             </Link>
           ))}
         </nav>
-        <div className="mt-8 flex items-center gap-4 border-t pt-4">
+        <div className="ps-5 mt-8 flex items-center gap-4 border-t pt-4">
           <span className="text-sm text-muted-foreground">Theme:</span>
           <ThemeToggle />
         </div>
