@@ -87,6 +87,20 @@ export default function Home() {
       >
         <div className="grid gap-6 sm:grid-cols-2">
           <FeatureCard
+            icon={<Globe2 className="h-10 w-10" />}
+            title="Countries"
+            description="Browse localization data for 250+ countries including codes, currencies, and formatting."
+            href="/countries"
+            variant="blue"
+          />
+          <FeatureCard
+            icon={<Languages className="h-10 w-10" />}
+            title="Languages"
+            description="Explore processed data for world languages, including native names and countries."
+            href="/languages"
+            variant="green"
+          />
+          <FeatureCard
             icon={<Coins className="h-10 w-10" />}
             title="Currency Formats"
             description="Symbol position, separators, and patterns for every currency in the world."
@@ -99,20 +113,6 @@ export default function Home() {
             description="Database of 9,000+ airports with IATA/ICAO codes, coordinates, and regions."
             href="/airports"
             variant="red"
-          />
-          <FeatureCard
-             icon={<Globe2 className="h-10 w-10" />}
-            title="Countries"
-            description="Browse localization data for 250+ countries including codes, currencies, and formatting."
-            href="/countries"
-            variant="blue"
-          />
-          <FeatureCard
-            icon={<Languages className="h-10 w-10" />}
-            title="Languages"
-            description="Explore processed data for world languages, including native names and countries."
-            href="/languages"
-            variant="green"
           />
           <FeatureCard
              icon={<Code2 className="h-10 w-10" />}

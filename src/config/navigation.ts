@@ -41,6 +41,10 @@ export const mainNav: NavItem[] = [
     href: "/about",
   },
   {
+    title: "Roadmap",
+    href: "/roadmap",
+  },
+  {
     title: "Contributing",
     href: "/contributing",
   },
@@ -65,7 +69,7 @@ export const footerNav = {
   community: [
     {
       title: "GitHub",
-      href: "https://github.com/yourusername/localedb",
+      href: "https://github.com/ozkurkculer/localedb",
       external: true,
     },
     {
@@ -92,7 +96,7 @@ export const footerNav = {
     },
     {
       title: "License",
-      href: "https://github.com/yourusername/localedb/blob/main/LICENSE",
+      href: "https://github.com/ozkurkculer/localedb/blob/main/LICENSE",
       external: true,
     },
   ],

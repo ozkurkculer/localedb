@@ -6,12 +6,12 @@ export const siteConfig = {
   url: "https://localedb.org",
   ogImage: "https://localedb.org/og-image.png",
   links: {
-    github: "https://github.com/yourusername/localedb",
+    github: "https://github.com/ozkurkculer/localedb",
     twitter: "https://twitter.com/localedb",
   },
   creator: {
     name: "LocaleDB Contributors",
-    url: "https://github.com/yourusername/localedb/graphs/contributors",
+    url: "https://github.com/ozkurkculer/localedb/graphs/contributors",
   },
   keywords: [
     "localization",
