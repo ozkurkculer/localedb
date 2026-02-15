@@ -29,7 +29,7 @@ export function MobileNav() {
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
-        <nav className="mt-8 flex flex-col space-y-4">
+        <nav className="ps-5 mt-8 flex flex-col space-y-4">
           {mainNav.map((item) => (
             <Link
               key={item.href}
