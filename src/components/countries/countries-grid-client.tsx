@@ -115,7 +115,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
           )}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center flex-col-reverse md:flex-row gap-4 md:gap-2">
             {/* Sort Dropdown */}
             <DropdownMenu>
             <DropdownMenuTrigger asChild>
