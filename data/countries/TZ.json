@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Tanzania",
-    "officialName": "Tanzania",
+    "officialName": "United Republic of Tanzania",
     "nativeName": "Tanzania",
-    "officialNativeName": "",
+    "officialNativeName": "United Republic of Tanzania",
     "capital": "Dodoma",
     "capitalCoordinates": [
       -6.17221,
       35.73947
     ],
     "coordinates": [
-      0,
-      0
+      -6,
+      35
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 945087,
     "flagEmoji": "🇹🇿",
     "tld": [
-      "tz"
+      ".tz"
     ],
     "landlocked": false,
     "borders": [
@@ -63,7 +63,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Tanzanian"
   },
   "codes": {
     "iso3166Alpha2": "TZ",
@@ -98,8 +98,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "TSh 123,456.79",
+    "accountingExample": "-TSh 1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -216,15 +216,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+255",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+255 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

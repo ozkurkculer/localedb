@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Ivory Coast",
-    "officialName": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
     "nativeName": "Côte d’Ivoire",
-    "officialNativeName": "",
+    "officialNativeName": "République de Côte d'Ivoire",
     "capital": "Yamoussoukro",
     "capitalCoordinates": [
       6.82055,
       -5.27674
     ],
     "coordinates": [
-      0,
-      0
+      8,
+      -5
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 322463,
     "flagEmoji": "🇨🇮",
     "tld": [
-      "ci"
+      ".ci"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Ivorian"
   },
   "codes": {
     "iso3166Alpha2": "CI",
@@ -85,8 +85,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 F CFA",
+    "accountingExample": "(1 235 F CFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+225",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+225 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

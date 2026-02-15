@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Libya",
-    "officialName": "Libya",
+    "officialName": "State of Libya",
     "nativeName": "ليبيا",
-    "officialNativeName": "",
+    "officialNativeName": "دولة ليبيا",
     "capital": "Tripoli",
     "capitalCoordinates": [
       32.87519,
       13.18746
     ],
     "coordinates": [
-      0,
-      0
+      25,
+      17
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,7 @@
     "area": 1759540,
     "flagEmoji": "🇱🇾",
     "tld": [
-      "ly"
+      ".ly"
     ],
     "landlocked": false,
     "borders": [
@@ -51,7 +51,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Libyan"
   },
   "codes": {
     "iso3166Alpha2": "LY",
@@ -86,8 +86,8 @@
     "subunitValue": 1000,
     "subunitName": "Dirhams",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123.456,789 د.ل.‏",
+    "accountingExample": "(؜1.234,560 د.ل.‏)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -204,15 +204,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5‎%‎",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+218",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+218 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

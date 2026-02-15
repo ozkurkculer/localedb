@@ -11,15 +11,15 @@
     "name": "Bermuda",
     "officialName": "Bermuda",
     "nativeName": "Bermuda",
-    "officialNativeName": "",
+    "officialNativeName": "Bermuda",
     "capital": "Hamilton",
     "capitalCoordinates": [
       32.2949,
       -64.78303
     ],
     "coordinates": [
-      0,
-      0
+      32.33333333,
+      -64.75
     ],
     "continent": "North America",
     "region": "North America",
@@ -28,7 +28,7 @@
     "area": 54,
     "flagEmoji": "🇧🇲",
     "tld": [
-      "bm"
+      ".bm"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bermudian"
   },
   "codes": {
     "iso3166Alpha2": "BM",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1441",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1441 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

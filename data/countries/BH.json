@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Bahrain",
-    "officialName": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
     "nativeName": "البحرين",
-    "officialNativeName": "",
+    "officialNativeName": "مملكة البحرين",
     "capital": "Manama",
     "capitalCoordinates": [
       26.21536,
       50.5832
     ],
     "coordinates": [
-      0,
-      0
+      26,
+      50.55
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 765,
     "flagEmoji": "🇧🇭",
     "tld": [
-      "bh"
+      ".bh"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bahraini"
   },
   "codes": {
     "iso3166Alpha2": "BH",
@@ -79,8 +79,8 @@
     "subunitValue": 1000,
     "subunitName": "Fils",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٨٩ د.ب.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦٠ د.ب.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+973",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+973 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

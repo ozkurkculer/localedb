@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Slovakia",
-    "officialName": "Slovakia",
+    "officialName": "Slovak Republic",
     "nativeName": "Slovensko",
-    "officialNativeName": "",
+    "officialNativeName": "Slovenská republika",
     "capital": "Bratislava",
     "capitalCoordinates": [
       48.14816,
       17.10674
     ],
     "coordinates": [
-      0,
-      0
+      48.66666666,
+      19.5
     ],
     "continent": "Europe",
     "region": "Central Europe",
@@ -28,7 +28,7 @@
     "area": 49037,
     "flagEmoji": "🇸🇰",
     "tld": [
-      "sk"
+      ".sk"
     ],
     "landlocked": true,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Slovak"
   },
   "codes": {
     "iso3166Alpha2": "SK",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+421",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+421 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

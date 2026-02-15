@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Singapore",
-    "officialName": "Singapore",
+    "officialName": "Republic of Singapore",
     "nativeName": "Singapore",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Singapore",
     "capital": "Singapore",
     "capitalCoordinates": [
       1.28967,
       103.85007
     ],
     "coordinates": [
-      0,
-      0
+      1.36666666,
+      103.8
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,9 @@
     "area": 710,
     "flagEmoji": "🇸🇬",
     "tld": [
-      "sg"
+      ".sg",
+      ".新加坡",
+      ".சிங்கப்பூர்"
     ],
     "landlocked": false,
     "borders": [],
@@ -74,7 +76,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Singaporean"
   },
   "codes": {
     "iso3166Alpha2": "SG",
@@ -109,8 +111,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -227,15 +229,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+65",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+65 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

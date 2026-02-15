@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Azerbaijan",
-    "officialName": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
     "nativeName": "Azərbaycan",
-    "officialNativeName": "",
+    "officialNativeName": "Azərbaycan Respublikası",
     "capital": "Baku",
     "capitalCoordinates": [
       40.37767,
       49.89201
     ],
     "coordinates": [
-      0,
-      0
+      40.5,
+      47.5
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 86600,
     "flagEmoji": "🇦🇿",
     "tld": [
-      "az"
+      ".az"
     ],
     "landlocked": true,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Azerbaijani"
   },
   "codes": {
     "iso3166Alpha2": "AZ",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Qäpi",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 ₼",
+    "accountingExample": "-1.234,56 ₼"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+994",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+994 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

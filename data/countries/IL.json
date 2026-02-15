@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Israel",
-    "officialName": "Israel",
+    "officialName": "State of Israel",
     "nativeName": "ישראל",
-    "officialNativeName": "",
+    "officialNativeName": "دولة إسرائيل",
     "capital": "Jerusalem",
     "capitalCoordinates": [
       31.76904,
       35.21633
     ],
     "coordinates": [
-      0,
-      0
+      31.47,
+      35.13
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 20770,
     "flagEmoji": "🇮🇱",
     "tld": [
-      "il"
+      ".il"
     ],
     "landlocked": false,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Israeli"
   },
   "codes": {
     "iso3166Alpha2": "IL",
@@ -95,8 +95,8 @@
     "subunitValue": 100,
     "subunitName": "Agorot",
     "pattern": "‏#,##0.00 ‏¤;‏-#,##0.00 ‏¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123,456.79 ‏₪",
+    "accountingExample": "‏‎-1,234.56 ‏₪"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+972",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+972 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

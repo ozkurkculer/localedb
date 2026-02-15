@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Haiti",
-    "officialName": "Haiti",
+    "officialName": "Republic of Haiti",
     "nativeName": "Haïti",
-    "officialNativeName": "",
+    "officialNativeName": "République d'Haïti",
     "capital": "Port-au-Prince",
     "capitalCoordinates": [
       18.53917,
       -72.335
     ],
     "coordinates": [
-      0,
-      0
+      19,
+      -72.41666666
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 27750,
     "flagEmoji": "🇭🇹",
     "tld": [
-      "ht"
+      ".ht"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +56,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Haitian"
   },
   "codes": {
     "iso3166Alpha2": "HT",
@@ -91,8 +91,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 G",
+    "accountingExample": "(1 234,56 G)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +209,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+509",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+509 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

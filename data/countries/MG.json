@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Madagascar",
-    "officialName": "Madagascar",
+    "officialName": "Republic of Madagascar",
     "nativeName": "Madagascar",
-    "officialNativeName": "",
+    "officialNativeName": "République de Madagascar",
     "capital": "Antananarivo",
     "capitalCoordinates": [
       -18.91368,
       47.53613
     ],
     "coordinates": [
-      0,
-      0
+      -20,
+      47
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 587041,
     "flagEmoji": "🇲🇬",
     "tld": [
-      "mg"
+      ".mg"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Malagasy"
   },
   "codes": {
     "iso3166Alpha2": "MG",
@@ -89,8 +89,8 @@
     "subunitValue": 5,
     "subunitName": "Iraimbilanja",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 Ar",
+    "accountingExample": "(1 235 Ar)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+261",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+261 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

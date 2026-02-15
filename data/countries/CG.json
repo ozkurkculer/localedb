@@ -11,15 +11,15 @@
     "name": "Republic of the Congo",
     "officialName": "Republic of the Congo",
     "nativeName": "Congo-Brazzaville",
-    "officialNativeName": "",
+    "officialNativeName": "République du Congo",
     "capital": "Brazzaville",
     "capitalCoordinates": [
       -4.26613,
       15.28318
     ],
     "coordinates": [
-      0,
-      0
+      -1,
+      15
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 342000,
     "flagEmoji": "🇨🇬",
     "tld": [
-      "cg"
+      ".cg"
     ],
     "landlocked": false,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Congolese"
   },
   "codes": {
     "iso3166Alpha2": "CG",
@@ -95,8 +95,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 FCFA",
+    "accountingExample": "(1 235 FCFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+242",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+242 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

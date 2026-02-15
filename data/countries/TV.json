@@ -11,15 +11,15 @@
     "name": "Tuvalu",
     "officialName": "Tuvalu",
     "nativeName": "Tuvalu",
-    "officialNativeName": "",
+    "officialNativeName": "Tuvalu",
     "capital": "Funafuti",
     "capitalCoordinates": [
       -8.52425,
       179.19417
     ],
     "coordinates": [
-      0,
-      0
+      -8,
+      178
     ],
     "continent": "Oceania",
     "region": "Polynesia",
@@ -28,7 +28,7 @@
     "area": 26,
     "flagEmoji": "🇹🇻",
     "tld": [
-      "tv"
+      ".tv"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Tuvaluan"
   },
   "codes": {
     "iso3166Alpha2": "TV",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "TVD 123,456.79",
+    "accountingExample": "(TVD 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+688",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+688 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

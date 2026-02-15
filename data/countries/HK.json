@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Hong Kong",
-    "officialName": "Hong Kong",
+    "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
     "nativeName": "Hong Kong SAR China",
-    "officialNativeName": "",
+    "officialNativeName": "Hong Kong Special Administrative Region of the People's Republic of China",
     "capital": "Hong Kong",
     "capitalCoordinates": [
       22.28552,
       114.15769
     ],
     "coordinates": [
-      0,
-      0
+      22.267,
+      114.188
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,8 @@
     "area": 1104,
     "flagEmoji": "🇭🇰",
     "tld": [
-      "hk"
+      ".hk",
+      ".香港"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +57,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Hong Konger"
   },
   "codes": {
     "iso3166Alpha2": "HK",
@@ -91,8 +92,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "HK$123,456.79",
+    "accountingExample": "(HK$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +210,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+852",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+852 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

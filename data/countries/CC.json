@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Cocos (Keeling) Islands",
-    "officialName": "Cocos (Keeling) Islands",
+    "officialName": "Territory of the Cocos (Keeling) Islands",
     "nativeName": "Cocos (Keeling) Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Territory of the Cocos (Keeling) Islands",
     "capital": "West Island",
     "capitalCoordinates": [
       -12.14603,
       96.822424
     ],
     "coordinates": [
-      0,
-      0
+      -12.5,
+      96.83333333
     ],
     "continent": "Australia",
     "region": "Australia and New Zealand",
@@ -28,7 +28,7 @@
     "area": 14,
     "flagEmoji": "🇨🇨",
     "tld": [
-      "cc"
+      ".cc"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cocos Islander"
   },
   "codes": {
     "iso3166Alpha2": "CC",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+61",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+61 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

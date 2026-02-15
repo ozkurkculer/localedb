@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Qatar",
-    "officialName": "Qatar",
+    "officialName": "State of Qatar",
     "nativeName": "قطر",
-    "officialNativeName": "",
+    "officialNativeName": "دولة قطر",
     "capital": "Doha",
     "capitalCoordinates": [
       25.27932,
       51.52245
     ],
     "coordinates": [
-      0,
-      0
+      25.5,
+      51.25
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,8 @@
     "area": 11586,
     "flagEmoji": "🇶🇦",
     "tld": [
-      "qa"
+      ".qa",
+      "قطر."
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Qatari"
   },
   "codes": {
     "iso3166Alpha2": "QA",
@@ -81,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Dirham",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٩ ر.ق.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦ ر.ق.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+974",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+974 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

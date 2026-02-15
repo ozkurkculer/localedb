@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Laos",
-    "officialName": "Laos",
+    "officialName": "Lao People's Democratic Republic",
     "nativeName": "ລາວ",
-    "officialNativeName": "",
+    "officialNativeName": "ສາທາລະນະ ຊາທິປະໄຕ ຄົນລາວ ຂອງ",
     "capital": "Vientiane",
     "capitalCoordinates": [
       17.96667,
       102.6
     ],
     "coordinates": [
-      0,
-      0
+      18,
+      105
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 236800,
     "flagEmoji": "🇱🇦",
     "tld": [
-      "la"
+      ".la"
     ],
     "landlocked": true,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Laotian"
   },
   "codes": {
     "iso3166Alpha2": "LA",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "At",
     "pattern": "¤#,##0.00;¤-#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₭123.457",
+    "accountingExample": "₭-1.235"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+856",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+856 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

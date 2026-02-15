@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Pakistan",
-    "officialName": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
     "nativeName": "پاکستان",
-    "officialNativeName": "",
+    "officialNativeName": "Islamic Republic of Pakistan",
     "capital": "Islamabad",
     "capitalCoordinates": [
       33.72148,
       73.04329
     ],
     "coordinates": [
-      0,
-      0
+      30,
+      70
     ],
     "continent": "Asia",
     "region": "Southern Asia",
@@ -28,7 +28,7 @@
     "area": 881912,
     "flagEmoji": "🇵🇰",
     "tld": [
-      "pk"
+      ".pk"
     ],
     "landlocked": false,
     "borders": [
@@ -59,7 +59,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Pakistani"
   },
   "codes": {
     "iso3166Alpha2": "PK",
@@ -94,8 +94,8 @@
     "subunitValue": 100,
     "subunitName": "Paisa",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "Rs 123,456.79",
+    "accountingExample": "(Rs 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -212,15 +212,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+92",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+92 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

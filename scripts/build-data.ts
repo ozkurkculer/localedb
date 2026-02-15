@@ -55,9 +55,6 @@ function deepMerge(target: any, source: any) {
   
   for (const key in source) {
     if (source[key] instanceof Array) {
-        // Arrays are overwritten, not merged, to avoid duplicates unless specific logic needed
-        // target[key] = source[key]; 
-        // Actually, for languages list it might be better to merge unique, but for simplicity overwrite is safer for "overrides".
         target[key] = source[key];
     } else if (typeof source[key] === 'object') {
       target[key] = deepMerge(target[key] || {}, source[key]);
@@ -66,6 +63,15 @@ function deepMerge(target: any, source: any) {
     }
   }
   return target;
+}
+
+function safeFormatCurrency(locale: string, currency: string, value: number, options: Intl.NumberFormatOptions = {}): string {
+    if (!currency) return "";
+    try {
+        return new Intl.NumberFormat(locale, { style: "currency", currency, ...options }).format(value);
+    } catch (e) {
+        return "";
+    }
 }
 
 // --- Main Build Process ---
@@ -207,8 +213,8 @@ async function processCountry(
             subunitValue: slData.currency_subunit_value,
             subunitName: slData.currency_subunit_name,
             pattern: numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00",
-            example: "",
-            accountingExample: ""
+            example: safeFormatCurrency(cldrLocale, slData.currency_code, 123456.789),
+            accountingExample: safeFormatCurrency(cldrLocale, slData.currency_code, -1234.56, { currencySign: "accounting" })
         },
         dateTime: {
             firstDayOfWeek: 1,
@@ -257,15 +263,15 @@ async function processCountry(
             thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
             digitGrouping: "3",
             pattern: numbers?.["decimalFormats-numberSystem-latn"]?.standard || "#,##0.###",
-            percentExample: "",
-            example: "",
+            percentExample: new Intl.NumberFormat(cldrLocale, { style: "percent", minimumFractionDigits: 1 }).format(0.255),
+            example: new Intl.NumberFormat(cldrLocale).format(1234567.89),
             numberingSystem: numbers?.defaultNumberingSystem || "latn"
         },
         phone: {
             callingCode: mledozeData?.idd?.root ? mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "") : "",
             trunkPrefix: "0",
             internationalPrefix: "00",
-            exampleFormat: "",
+            exampleFormat: (mledozeData?.idd?.root ? (mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "")) : "") + " 555 123 4567", // Heuristic example
             subscriberNumberLengths: []
         },
         addressFormat: {

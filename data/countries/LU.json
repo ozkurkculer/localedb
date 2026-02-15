@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Luxembourg",
-    "officialName": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
     "nativeName": "Luxembourg",
-    "officialNativeName": "",
+    "officialNativeName": "Großherzogtum Luxemburg",
     "capital": "Luxembourg",
     "capitalCoordinates": [
       49.61167,
       6.13
     ],
     "coordinates": [
-      0,
-      0
+      49.75,
+      6.16666666
     ],
     "continent": "Europe",
     "region": "Western Europe",
@@ -28,7 +28,7 @@
     "area": 2586,
     "flagEmoji": "🇱🇺",
     "tld": [
-      "lu"
+      ".lu"
     ],
     "landlocked": true,
     "borders": [
@@ -68,7 +68,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Luxembourger"
   },
   "codes": {
     "iso3166Alpha2": "LU",
@@ -103,8 +103,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "(1.234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -221,15 +221,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+352",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+352 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

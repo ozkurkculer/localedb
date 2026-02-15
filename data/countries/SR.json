@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Suriname",
-    "officialName": "Suriname",
+    "officialName": "Republic of Suriname",
     "nativeName": "Suriname",
-    "officialNativeName": "",
+    "officialNativeName": "Republiek Suriname",
     "capital": "Paramaribo",
     "capitalCoordinates": [
       5.86638,
       -55.16682
     ],
     "coordinates": [
-      0,
-      0
+      4,
+      -56
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 163820,
     "flagEmoji": "🇸🇷",
     "tld": [
-      "sr"
+      ".sr"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Surinamer"
   },
   "codes": {
     "iso3166Alpha2": "SR",
@@ -83,8 +83,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤ #,##0.00;¤ -#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$ 123.456,79",
+    "accountingExample": "($ 1.234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+597",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+597 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

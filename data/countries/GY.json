@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Guyana",
-    "officialName": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
     "nativeName": "Guyana",
-    "officialNativeName": "",
+    "officialNativeName": "Co-operative Republic of Guyana",
     "capital": "Georgetown",
     "capitalCoordinates": [
       6.80448,
       -58.15527
     ],
     "coordinates": [
-      0,
-      0
+      5,
+      -59
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 214969,
     "flagEmoji": "🇬🇾",
     "tld": [
-      "gy"
+      ".gy"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guyanese"
   },
   "codes": {
     "iso3166Alpha2": "GY",
@@ -83,8 +83,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+592",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+592 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

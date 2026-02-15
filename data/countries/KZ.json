@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Kazakhstan",
-    "officialName": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
     "nativeName": "Қазақстан",
-    "officialNativeName": "",
+    "officialNativeName": "Қазақстан Республикасы",
     "capital": "Nursultan",
     "capitalCoordinates": [
       51.1801,
       71.44598
     ],
     "coordinates": [
-      0,
-      0
+      48,
+      68
     ],
     "continent": "Asia",
     "region": "Central Asia",
@@ -28,7 +28,8 @@
     "area": 2724900,
     "flagEmoji": "🇰🇿",
     "tld": [
-      "kz"
+      ".kz",
+      ".қаз"
     ],
     "landlocked": true,
     "borders": [
@@ -60,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Kazakhstani"
   },
   "codes": {
     "iso3166Alpha2": "KZ",
@@ -95,8 +96,8 @@
     "subunitValue": 100,
     "subunitName": "Tyin",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 ₸",
+    "accountingExample": "-1 234,56 ₸"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +215,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+76",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+76 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

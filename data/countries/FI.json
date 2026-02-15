@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Finland",
-    "officialName": "Finland",
+    "officialName": "Republic of Finland",
     "nativeName": "Suomi",
-    "officialNativeName": "",
+    "officialNativeName": "Suomen tasavalta",
     "capital": "Helsinki",
     "capitalCoordinates": [
       60.16952,
       24.93545
     ],
     "coordinates": [
-      0,
-      0
+      64,
+      26
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 338424,
     "flagEmoji": "🇫🇮",
     "tld": [
-      "fi"
+      ".fi"
     ],
     "landlocked": false,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Finnish"
   },
   "codes": {
     "iso3166Alpha2": "FI",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "−1 234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+358",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+358 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

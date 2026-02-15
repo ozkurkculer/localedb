@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Philippines",
-    "officialName": "Philippines",
+    "officialName": "Republic of the Philippines",
     "nativeName": "Philippines",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of the Philippines",
     "capital": "Manila",
     "capitalCoordinates": [
       14.6042,
       120.9822
     ],
     "coordinates": [
-      0,
-      0
+      13,
+      122
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 342353,
     "flagEmoji": "🇵🇭",
     "tld": [
-      "ph"
+      ".ph"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Filipino"
   },
   "codes": {
     "iso3166Alpha2": "PH",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₱123,456.79",
+    "accountingExample": "(₱1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+63",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+63 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

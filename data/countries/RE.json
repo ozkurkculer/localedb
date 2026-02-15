@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Reunion",
-    "officialName": "Reunion",
+    "officialName": "Réunion Island",
     "nativeName": "La Réunion",
-    "officialNativeName": "",
+    "officialNativeName": "Ile de la Réunion",
     "capital": "Saint-Denis",
     "capitalCoordinates": [
       -20.88231,
       55.4504
     ],
     "coordinates": [
-      0,
-      0
+      -21.15,
+      55.5
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 2511,
     "flagEmoji": "🇷🇪",
     "tld": [
-      "re"
+      ".re"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Réunionese"
   },
   "codes": {
     "iso3166Alpha2": "RE",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+262",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+262 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

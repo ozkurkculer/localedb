@@ -11,15 +11,15 @@
     "name": "United Arab Emirates",
     "officialName": "United Arab Emirates",
     "nativeName": "الإمارات العربية المتحدة",
-    "officialNativeName": "",
+    "officialNativeName": "الإمارات العربية المتحدة",
     "capital": "Abu Dhabi",
     "capitalCoordinates": [
       24.46667,
       54.36667
     ],
     "coordinates": [
-      0,
-      0
+      24,
+      54
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,8 @@
     "area": 83600,
     "flagEmoji": "🇦🇪",
     "tld": [
-      "ae"
+      ".ae",
+      "امارات."
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Emirati"
   },
   "codes": {
     "iso3166Alpha2": "AE",
@@ -82,8 +83,8 @@
     "subunitValue": 100,
     "subunitName": "Fils",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123,456.79 د.إ.‏",
+    "accountingExample": "(؜1,234.56 د.إ.‏)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +201,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5‎%‎",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+971",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+971 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -11,15 +11,15 @@
     "name": "Turkmenistan",
     "officialName": "Turkmenistan",
     "nativeName": "Türkmenistan",
-    "officialNativeName": "",
+    "officialNativeName": "Туркменистан",
     "capital": "Ashgabat",
     "capitalCoordinates": [
       37.95,
       58.38333
     ],
     "coordinates": [
-      0,
-      0
+      40,
+      60
     ],
     "continent": "Asia",
     "region": "Central Asia",
@@ -28,7 +28,7 @@
     "area": 488100,
     "flagEmoji": "🇹🇲",
     "tld": [
-      "tm"
+      ".tm"
     ],
     "landlocked": true,
     "borders": [
@@ -59,7 +59,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Turkmen"
   },
   "codes": {
     "iso3166Alpha2": "TM",
@@ -94,8 +94,8 @@
     "subunitValue": 100,
     "subunitName": "Tenge",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 TMT",
+    "accountingExample": "-1 234,56 TMT"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -212,15 +212,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+993",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+993 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

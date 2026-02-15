@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Sweden",
-    "officialName": "Sweden",
+    "officialName": "Kingdom of Sweden",
     "nativeName": "Sverige",
-    "officialNativeName": "",
+    "officialNativeName": "Konungariket Sverige",
     "capital": "Stockholm",
     "capitalCoordinates": [
       59.33258,
       18.0649
     ],
     "coordinates": [
-      0,
-      0
+      62,
+      15
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 450295,
     "flagEmoji": "🇸🇪",
     "tld": [
-      "se"
+      ".se"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Swedish"
   },
   "codes": {
     "iso3166Alpha2": "SE",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Öre",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 kr",
+    "accountingExample": "−1 234,56 kr"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+46",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+46 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

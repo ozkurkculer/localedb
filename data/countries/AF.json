@@ -24,7 +24,7 @@
     "continent": "Asia",
     "region": "Southern Asia",
     "subregion": "Southern Asia",
-    "population": 40218234,
+    "population": 0,
     "area": 652230,
     "flagEmoji": "🇦🇫",
     "tld": [
@@ -106,8 +106,8 @@
     "subunitValue": 100,
     "subunitName": "Puls",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "؋ ۱۲۳٬۴۵۷",
+    "accountingExample": "(؋۱٬۲۳۵)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -224,15 +224,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "۲۵٫۵٪",
+    "example": "۱٬۲۳۴٬۵۶۷٫۸۹",
     "numberingSystem": "arabext"
   },
   "phone": {
     "callingCode": "+93",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+93 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

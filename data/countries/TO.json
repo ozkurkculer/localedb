@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Tonga",
-    "officialName": "Tonga",
+    "officialName": "Kingdom of Tonga",
     "nativeName": "Tonga",
-    "officialNativeName": "",
+    "officialNativeName": "Kingdom of Tonga",
     "capital": "Nuku‘alofa",
     "capitalCoordinates": [
       -21.13938,
       -175.2018
     ],
     "coordinates": [
-      0,
-      0
+      -20,
+      -175
     ],
     "continent": "Oceania",
     "region": "Polynesia",
@@ -28,7 +28,7 @@
     "area": 747,
     "flagEmoji": "🇹🇴",
     "tld": [
-      "to"
+      ".to"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Tongan"
   },
   "codes": {
     "iso3166Alpha2": "TO",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Seniti",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "T$123,456.79",
+    "accountingExample": "(T$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+676",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+676 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

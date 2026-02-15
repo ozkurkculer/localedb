@@ -11,15 +11,15 @@
     "name": "Cook Islands",
     "officialName": "Cook Islands",
     "nativeName": "Cook Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Cook Islands",
     "capital": "Avarua",
     "capitalCoordinates": [
       -21.20778,
       -159.775
     ],
     "coordinates": [
-      0,
-      0
+      -21.23333333,
+      -159.76666666
     ],
     "continent": "Oceania",
     "region": "Polynesia",
@@ -28,7 +28,7 @@
     "area": 236,
     "flagEmoji": "🇨🇰",
     "tld": [
-      "ck"
+      ".ck"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cook Islander"
   },
   "codes": {
     "iso3166Alpha2": "CK",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "CKD 123,456.79",
+    "accountingExample": "(CKD 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+682",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+682 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

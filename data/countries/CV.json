@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Cape Verde",
-    "officialName": "Cape Verde",
+    "officialName": "Republic of Cabo Verde",
     "nativeName": "Cabo Verde",
-    "officialNativeName": "",
+    "officialNativeName": "República de Cabo Verde",
     "capital": "Praia",
     "capitalCoordinates": [
       14.93152,
       -23.51254
     ],
     "coordinates": [
-      0,
-      0
+      16,
+      -24
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 4033,
     "flagEmoji": "🇨🇻",
     "tld": [
-      "cv"
+      ".cv"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cape Verdian"
   },
   "codes": {
     "iso3166Alpha2": "CV",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456$79 ​",
+    "accountingExample": "-1234$56 ​"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+238",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+238 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

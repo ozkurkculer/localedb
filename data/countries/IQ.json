@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Iraq",
-    "officialName": "Iraq",
+    "officialName": "Republic of Iraq",
     "nativeName": "العراق",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية العراق",
     "capital": "Baghdad",
     "capitalCoordinates": [
       33.34058,
       44.40088
     ],
     "coordinates": [
-      0,
-      0
+      33,
+      44
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 438317,
     "flagEmoji": "🇮🇶",
     "tld": [
-      "iq"
+      ".iq"
     ],
     "landlocked": false,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Iraqi"
   },
   "codes": {
     "iso3166Alpha2": "IQ",
@@ -96,8 +96,8 @@
     "subunitValue": 1000,
     "subunitName": "Fils",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٧ د.ع.‏",
+    "accountingExample": "؜-‏١٬٢٣٥ د.ع.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+964",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+964 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

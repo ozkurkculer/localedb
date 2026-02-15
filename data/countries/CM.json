@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Cameroon",
-    "officialName": "Cameroon",
+    "officialName": "Republic of Cameroon",
     "nativeName": "Cameroon",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Cameroon",
     "capital": "Yaounde",
     "capitalCoordinates": [
       3.86667,
       11.51667
     ],
     "coordinates": [
-      0,
-      0
+      6,
+      12
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 475442,
     "flagEmoji": "🇨🇲",
     "tld": [
-      "cm"
+      ".cm"
     ],
     "landlocked": false,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cameroonian"
   },
   "codes": {
     "iso3166Alpha2": "CM",
@@ -96,8 +96,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "FCFA 123,457",
+    "accountingExample": "(FCFA 1,235)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+237",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+237 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

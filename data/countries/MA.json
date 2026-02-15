@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Morocco",
-    "officialName": "Morocco",
+    "officialName": "Kingdom of Morocco",
     "nativeName": "المغرب",
-    "officialNativeName": "",
+    "officialNativeName": "المملكة المغربية",
     "capital": "Rabat",
     "capitalCoordinates": [
       34.01325,
       -6.83255
     ],
     "coordinates": [
-      0,
-      0
+      32,
+      -5
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,8 @@
     "area": 446550,
     "flagEmoji": "🇲🇦",
     "tld": [
-      "ma"
+      ".ma",
+      "المغرب."
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Moroccan"
   },
   "codes": {
     "iso3166Alpha2": "MA",
@@ -83,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123.456,79 د.م.‏",
+    "accountingExample": "(؜1.234,56 د.م.‏)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +202,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5‎%‎",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+212",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+212 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

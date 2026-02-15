@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Ecuador",
-    "officialName": "Ecuador",
+    "officialName": "Republic of Ecuador",
     "nativeName": "Ecuador",
-    "officialNativeName": "",
+    "officialNativeName": "República del Ecuador",
     "capital": "Quito",
     "capitalCoordinates": [
       -0.22985,
       -78.52495
     ],
     "coordinates": [
-      0,
-      0
+      -2,
+      -77.5
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 276841,
     "flagEmoji": "🇪🇨",
     "tld": [
-      "ec"
+      ".ec"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Ecuadorean"
   },
   "codes": {
     "iso3166Alpha2": "EC",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123.456,79",
+    "accountingExample": "-$1.234,56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+593",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+593 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

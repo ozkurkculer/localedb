@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Sri Lanka",
-    "officialName": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
     "nativeName": "ශ්‍රී ලංකාව",
-    "officialNativeName": "",
+    "officialNativeName": "ශ්‍රී ලංකා ප්‍රජාතාන්ත්‍රික සමාජවාදී ජනරජය",
     "capital": "Colombo",
     "capitalCoordinates": [
       6.93194,
       79.84778
     ],
     "coordinates": [
-      0,
-      0
+      7,
+      81
     ],
     "continent": "Asia",
     "region": "Southern Asia",
@@ -28,7 +28,9 @@
     "area": 65610,
     "flagEmoji": "🇱🇰",
     "tld": [
-      "lk"
+      ".lk",
+      ".இலங்கை",
+      ".ලංකා"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Sri Lankan"
   },
   "codes": {
     "iso3166Alpha2": "LK",
@@ -91,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "රු. 123,456.79",
+    "accountingExample": "(රු. 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +211,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+94",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+94 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

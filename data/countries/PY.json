@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Paraguay",
-    "officialName": "Paraguay",
+    "officialName": "Republic of Paraguay",
     "nativeName": "Paraguay",
-    "officialNativeName": "",
+    "officialNativeName": "Tetã Paraguái",
     "capital": "Asunción",
     "capitalCoordinates": [
       -25.30066,
       -57.63591
     ],
     "coordinates": [
-      0,
-      0
+      -23,
+      -58
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 406752,
     "flagEmoji": "🇵🇾",
     "tld": [
-      "py"
+      ".py"
     ],
     "landlocked": true,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Paraguayan"
   },
   "codes": {
     "iso3166Alpha2": "PY",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Centimos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "Gs. 123.457",
+    "accountingExample": "-Gs. 1.235"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+595",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+595 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

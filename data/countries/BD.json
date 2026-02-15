@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Bangladesh",
-    "officialName": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
     "nativeName": "বাংলাদেশ",
-    "officialNativeName": "",
+    "officialNativeName": "বাংলাদেশ গণপ্রজাতন্ত্রী",
     "capital": "Dhaka",
     "capitalCoordinates": [
       23.7104,
       90.40744
     ],
     "coordinates": [
-      0,
-      0
+      24,
+      90
     ],
     "continent": "Asia",
     "region": "Southern Asia",
@@ -28,7 +28,7 @@
     "area": 147570,
     "flagEmoji": "🇧🇩",
     "tld": [
-      "bd"
+      ".bd"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bangladeshi"
   },
   "codes": {
     "iso3166Alpha2": "BD",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Poisha",
     "pattern": "#,##,##0.00¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "১,২৩,৪৫৬.৭৯৳",
+    "accountingExample": "(১,২৩৪.৫৬৳)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "২৫.৫%",
+    "example": "১২,৩৪,৫৬৭.৮৯",
     "numberingSystem": "beng"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+880",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+880 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

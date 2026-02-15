@@ -11,15 +11,15 @@
     "name": "Sint Maarten",
     "officialName": "Sint Maarten",
     "nativeName": "Sint-Maarten",
-    "officialNativeName": "",
+    "officialNativeName": "Sint Maarten",
     "capital": "Philipsburg",
     "capitalCoordinates": [
       18.025415,
       -63.050516
     ],
     "coordinates": [
-      0,
-      0
+      18.033333,
+      -63.05
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 34,
     "flagEmoji": "🇸🇽",
     "tld": [
-      "sx"
+      ".sx"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +56,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "St. Maartener"
   },
   "codes": {
     "iso3166Alpha2": "SX",
@@ -91,8 +91,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤ #,##0.00;¤ -#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "XCG 123.456,79",
+    "accountingExample": "(XCG 1.234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +209,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1721",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1721 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

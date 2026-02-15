@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Poland",
-    "officialName": "Poland",
+    "officialName": "Republic of Poland",
     "nativeName": "Polska",
-    "officialNativeName": "",
+    "officialNativeName": "Rzeczpospolita Polska",
     "capital": "Warsaw",
     "capitalCoordinates": [
       52.22977,
       21.01178
     ],
     "coordinates": [
-      0,
-      0
+      52,
+      20
     ],
     "continent": "Europe",
     "region": "Central Europe",
@@ -28,7 +28,7 @@
     "area": 312679,
     "flagEmoji": "🇵🇱",
     "tld": [
-      "pl"
+      ".pl"
     ],
     "landlocked": false,
     "borders": [
@@ -52,7 +52,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Polish"
   },
   "codes": {
     "iso3166Alpha2": "PL",
@@ -87,8 +87,8 @@
     "subunitValue": 100,
     "subunitName": "Groszy",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 zł",
+    "accountingExample": "(1234,56 zł)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -205,15 +205,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+48",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+48 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

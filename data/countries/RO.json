@@ -11,15 +11,15 @@
     "name": "Romania",
     "officialName": "Romania",
     "nativeName": "România",
-    "officialNativeName": "",
+    "officialNativeName": "România",
     "capital": "Bucharest",
     "capitalCoordinates": [
       44.43225,
       26.10626
     ],
     "coordinates": [
-      0,
-      0
+      46,
+      25
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,7 @@
     "area": 238391,
     "flagEmoji": "🇷🇴",
     "tld": [
-      "ro"
+      ".ro"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Romanian"
   },
   "codes": {
     "iso3166Alpha2": "RO",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Bani",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 RON",
+    "accountingExample": "(1.234,56 RON)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+40",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+40 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

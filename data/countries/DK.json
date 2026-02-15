@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Denmark",
-    "officialName": "Denmark",
+    "officialName": "Kingdom of Denmark",
     "nativeName": "Danmark",
-    "officialNativeName": "",
+    "officialNativeName": "Kongeriget Danmark",
     "capital": "Copenhagen",
     "capitalCoordinates": [
       55.67594,
       12.56553
     ],
     "coordinates": [
-      0,
-      0
+      56,
+      10
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 43094,
     "flagEmoji": "🇩🇰",
     "tld": [
-      "dk"
+      ".dk"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Danish"
   },
   "codes": {
     "iso3166Alpha2": "DK",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "øre",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 kr.",
+    "accountingExample": "-1.234,56 kr."
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+45",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+45 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

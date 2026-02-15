@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "East Timor",
-    "officialName": "East Timor",
+    "officialName": "Democratic Republic of Timor-Leste",
     "nativeName": "Timor-Leste",
-    "officialNativeName": "",
+    "officialNativeName": "República Democrática de Timor-Leste",
     "capital": "Dili",
     "capitalCoordinates": [
       -8.55861,
       125.57361
     ],
     "coordinates": [
-      0,
-      0
+      -8.83333333,
+      125.91666666
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 14874,
     "flagEmoji": "🇹🇱",
     "tld": [
-      "tl"
+      ".tl"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "East Timorese"
   },
   "codes": {
     "iso3166Alpha2": "TL",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 US$",
+    "accountingExample": "(1234,56 US$)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+670",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+670 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

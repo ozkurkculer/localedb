@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Svalbard",
-    "officialName": "Svalbard",
+    "officialName": "Svalbard og Jan Mayen",
     "nativeName": "Svalbard og Jan Mayen",
-    "officialNativeName": "",
+    "officialNativeName": "Svalbard og Jan Mayen",
     "capital": "Longyearbyen",
     "capitalCoordinates": [
       78.22334,
       15.64689
     ],
     "coordinates": [
-      0,
-      0
+      78,
+      20
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": -1,
     "flagEmoji": "🇸🇯",
     "tld": [
-      "sj"
+      ".sj"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Norwegian"
   },
   "codes": {
     "iso3166Alpha2": "SJ",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Øre",
     "pattern": "#,##0.00 ¤;-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "kr 123 456,79",
+    "accountingExample": "(kr 1 234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+4779",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+4779 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Guinea",
-    "officialName": "Guinea",
+    "officialName": "Republic of Guinea",
     "nativeName": "Guinée",
-    "officialNativeName": "",
+    "officialNativeName": "République de Guinée",
     "capital": "Conakry",
     "capitalCoordinates": [
       9.53795,
       -13.67729
     ],
     "coordinates": [
-      0,
-      0
+      11,
+      -10
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 245857,
     "flagEmoji": "🇬🇳",
     "tld": [
-      "gn"
+      ".gn"
     ],
     "landlocked": false,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guinean"
   },
   "codes": {
     "iso3166Alpha2": "GN",
@@ -96,8 +96,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 FG",
+    "accountingExample": "(1 235 FG)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+224",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+224 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Curacao",
-    "officialName": "Curacao",
+    "officialName": "Country of Curaçao",
     "nativeName": "Curaçao",
-    "officialNativeName": "",
+    "officialNativeName": "Country of Curaçao",
     "capital": "Willemstad",
     "capitalCoordinates": [
       12.133649,
       -68.930873
     ],
     "coordinates": [
-      0,
-      0
+      12.116667,
+      -68.933333
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 444,
     "flagEmoji": "🇨🇼",
     "tld": [
-      "cw"
+      ".cw"
     ],
     "landlocked": false,
     "borders": [],
@@ -64,7 +64,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Curaçaoan"
   },
   "codes": {
     "iso3166Alpha2": "CW",
@@ -99,8 +99,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤ #,##0.00;¤ -#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "XCG 123.456,79",
+    "accountingExample": "(XCG 1.234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -217,15 +217,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+599",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+599 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

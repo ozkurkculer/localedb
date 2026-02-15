@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Togo",
-    "officialName": "Togo",
+    "officialName": "Togolese Republic",
     "nativeName": "Togo",
-    "officialNativeName": "",
+    "officialNativeName": "République togolaise",
     "capital": "Lomé",
     "capitalCoordinates": [
       6.13748,
       1.21227
     ],
     "coordinates": [
-      0,
-      0
+      8,
+      1.16666666
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 56785,
     "flagEmoji": "🇹🇬",
     "tld": [
-      "tg"
+      ".tg"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Togolese"
   },
   "codes": {
     "iso3166Alpha2": "TG",
@@ -83,8 +83,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 F CFA",
+    "accountingExample": "(1 235 F CFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+228",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+228 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

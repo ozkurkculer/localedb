@@ -11,15 +11,15 @@
     "name": "Burkina Faso",
     "officialName": "Burkina Faso",
     "nativeName": "Burkina Faso",
-    "officialNativeName": "",
+    "officialNativeName": "République du Burkina",
     "capital": "Ouagadougou",
     "capitalCoordinates": [
       12.36566,
       -1.53388
     ],
     "coordinates": [
-      0,
-      0
+      13,
+      -2
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 272967,
     "flagEmoji": "🇧🇫",
     "tld": [
-      "bf"
+      ".bf"
     ],
     "landlocked": true,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Burkinabe"
   },
   "codes": {
     "iso3166Alpha2": "BF",
@@ -96,8 +96,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 F CFA",
+    "accountingExample": "(1 235 F CFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+226",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+226 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

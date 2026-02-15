@@ -11,15 +11,15 @@
     "name": "Bosnia and Herzegovina",
     "officialName": "Bosnia and Herzegovina",
     "nativeName": "Bosna i Hercegovina",
-    "officialNativeName": "",
+    "officialNativeName": "Bosna i Hercegovina",
     "capital": "Sarajevo",
     "capitalCoordinates": [
       43.84864,
       18.35644
     ],
     "coordinates": [
-      0,
-      0
+      44,
+      18
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,7 @@
     "area": 51209,
     "flagEmoji": "🇧🇦",
     "tld": [
-      "ba"
+      ".ba"
     ],
     "landlocked": false,
     "borders": [
@@ -68,7 +68,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bosnian, Herzegovinian"
   },
   "codes": {
     "iso3166Alpha2": "BA",
@@ -103,8 +103,8 @@
     "subunitValue": 100,
     "subunitName": "Fening",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 KM",
+    "accountingExample": "-1.234,56 KM"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -221,15 +221,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+387",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+387 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

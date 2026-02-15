@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Oman",
-    "officialName": "Oman",
+    "officialName": "Sultanate of Oman",
     "nativeName": "عُمان",
-    "officialNativeName": "",
+    "officialNativeName": "سلطنة عمان",
     "capital": "Muscat",
     "capitalCoordinates": [
       23.61387,
       58.5922
     ],
     "coordinates": [
-      0,
-      0
+      21,
+      57
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 309500,
     "flagEmoji": "🇴🇲",
     "tld": [
-      "om"
+      ".om"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Omani"
   },
   "codes": {
     "iso3166Alpha2": "OM",
@@ -83,8 +83,8 @@
     "subunitValue": 1000,
     "subunitName": "Baizas",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٨٩ ر.ع.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦٠ ر.ع.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+968",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+968 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

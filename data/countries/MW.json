@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Malawi",
-    "officialName": "Malawi",
+    "officialName": "Republic of Malawi",
     "nativeName": "Malawi",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Malawi",
     "capital": "Lilongwe",
     "capitalCoordinates": [
       -13.96692,
       33.78725
     ],
     "coordinates": [
-      0,
-      0
+      -13.5,
+      34
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 118484,
     "flagEmoji": "🇲🇼",
     "tld": [
-      "mw"
+      ".mw"
     ],
     "landlocked": true,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Malawian"
   },
   "codes": {
     "iso3166Alpha2": "MW",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Tambala",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "MK 123,456.79",
+    "accountingExample": "(MK 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+265",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+265 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

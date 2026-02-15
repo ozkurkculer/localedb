@@ -11,15 +11,15 @@
     "name": "Saint Martin",
     "officialName": "Saint Martin",
     "nativeName": "St. Martin",
-    "officialNativeName": "",
+    "officialNativeName": "Saint-Martin",
     "capital": "Marigot",
     "capitalCoordinates": [
       18.06667,
       -63.08333
     ],
     "coordinates": [
-      0,
-      0
+      18.08333333,
+      -63.95
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,8 @@
     "area": 53,
     "flagEmoji": "🇲🇫",
     "tld": [
-      "mf"
+      ".fr",
+      ".gp"
     ],
     "landlocked": false,
     "borders": [
@@ -66,7 +67,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Saint Martin Islander"
   },
   "codes": {
     "iso3166Alpha2": "MF",
@@ -101,8 +102,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "€123,456.79",
+    "accountingExample": "(€1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -219,15 +220,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+590",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+590 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

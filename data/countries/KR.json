@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "South Korea",
-    "officialName": "South Korea",
+    "officialName": "Republic of Korea",
     "nativeName": "대한민국",
-    "officialNativeName": "",
+    "officialNativeName": "대한민국",
     "capital": "Seoul",
     "capitalCoordinates": [
       37.566,
       126.9784
     ],
     "coordinates": [
-      0,
-      0
+      37,
+      127.5
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,8 @@
     "area": 100210,
     "flagEmoji": "🇰🇷",
     "tld": [
-      "kr"
+      ".kr",
+      ".한국"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "South Korean"
   },
   "codes": {
     "iso3166Alpha2": "KR",
@@ -81,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Chon",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₩123,457",
+    "accountingExample": "(₩1,235)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+82",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+82 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

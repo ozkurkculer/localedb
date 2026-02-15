@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Seychelles",
-    "officialName": "Seychelles",
+    "officialName": "Republic of Seychelles",
     "nativeName": "Seychelles",
-    "officialNativeName": "",
+    "officialNativeName": "Repiblik Sesel",
     "capital": "Victoria",
     "capitalCoordinates": [
       -4.61667,
       55.45
     ],
     "coordinates": [
-      0,
-      0
+      -4.58333333,
+      55.66666666
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 452,
     "flagEmoji": "🇸🇨",
     "tld": [
-      "sc"
+      ".sc"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Seychellois"
   },
   "codes": {
     "iso3166Alpha2": "SC",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 SR",
+    "accountingExample": "(1 234,56 SR)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+248",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+248 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

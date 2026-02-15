@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Macao",
-    "officialName": "Macao",
+    "officialName": "Macao Special Administrative Region of the People's Republic of China",
     "nativeName": "中国澳门特别行政区",
-    "officialNativeName": "",
+    "officialNativeName": "Região Administrativa Especial de Macau da República Popular da China",
     "capital": "Concelho de Macau",
     "capitalCoordinates": [
       22.20056,
       113.54611
     ],
     "coordinates": [
-      0,
-      0
+      22.16666666,
+      113.55
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 30,
     "flagEmoji": "🇲🇴",
     "tld": [
-      "mo"
+      ".mo"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +56,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Macanese"
   },
   "codes": {
     "iso3166Alpha2": "MO",
@@ -91,8 +91,8 @@
     "subunitValue": 100,
     "subunitName": "Avos",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "MOP$123,456.79",
+    "accountingExample": "(MOP$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +209,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+853",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+853 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

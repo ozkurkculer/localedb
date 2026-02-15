@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Kenya",
-    "officialName": "Kenya",
+    "officialName": "Republic of Kenya",
     "nativeName": "Kenya",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Kenya",
     "capital": "Nairobi",
     "capitalCoordinates": [
       -1.28333,
       36.81667
     ],
     "coordinates": [
-      0,
-      0
+      1,
+      38
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 580367,
     "flagEmoji": "🇰🇪",
     "tld": [
-      "ke"
+      ".ke"
     ],
     "landlocked": false,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Kenyan"
   },
   "codes": {
     "iso3166Alpha2": "KE",
@@ -95,8 +95,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "Ksh 123,456.79",
+    "accountingExample": "(Ksh 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+254",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+254 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

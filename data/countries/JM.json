@@ -11,15 +11,15 @@
     "name": "Jamaica",
     "officialName": "Jamaica",
     "nativeName": "Jamaica",
-    "officialNativeName": "",
+    "officialNativeName": "Jamaica",
     "capital": "Kingston",
     "capitalCoordinates": [
       17.99702,
       -76.79358
     ],
     "coordinates": [
-      0,
-      0
+      18.25,
+      -77.5
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 10991,
     "flagEmoji": "🇯🇲",
     "tld": [
-      "jm"
+      ".jm"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Jamaican"
   },
   "codes": {
     "iso3166Alpha2": "JM",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1876",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1876 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Marshall Islands",
-    "officialName": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
     "nativeName": "Marshall Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of the Marshall Islands",
     "capital": "Majuro",
     "capitalCoordinates": [
       7.08971,
       171.38027
     ],
     "coordinates": [
-      0,
-      0
+      9,
+      168
     ],
     "continent": "Oceania",
     "region": "Micronesia",
@@ -28,7 +28,7 @@
     "area": 181,
     "flagEmoji": "🇲🇭",
     "tld": [
-      "mh"
+      ".mh"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Marshallese"
   },
   "codes": {
     "iso3166Alpha2": "MH",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+692",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+692 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

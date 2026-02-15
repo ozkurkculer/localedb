@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Cyprus",
-    "officialName": "Cyprus",
+    "officialName": "Republic of Cyprus",
     "nativeName": "Κύπρος",
-    "officialNativeName": "",
+    "officialNativeName": "Δημοκρατία της Κύπρος",
     "capital": "Nicosia",
     "capitalCoordinates": [
       35.17531,
       33.3642
     ],
     "coordinates": [
-      0,
-      0
+      35,
+      33
     ],
     "continent": "Asia",
     "region": "Southern Europe",
@@ -28,7 +28,7 @@
     "area": 9251,
     "flagEmoji": "🇨🇾",
     "tld": [
-      "cy"
+      ".cy"
     ],
     "landlocked": false,
     "borders": [],
@@ -64,7 +64,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cypriot"
   },
   "codes": {
     "iso3166Alpha2": "CY",
@@ -99,8 +99,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "-1.234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -217,15 +217,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+357",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+357 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

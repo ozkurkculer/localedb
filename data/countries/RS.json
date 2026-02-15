@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Serbia",
-    "officialName": "Serbia",
+    "officialName": "Republic of Serbia",
     "nativeName": "Србија",
-    "officialNativeName": "",
+    "officialNativeName": "Република Србија",
     "capital": "Belgrade",
     "capitalCoordinates": [
       44.80401,
       20.46513
     ],
     "coordinates": [
-      0,
-      0
+      44,
+      21
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,8 @@
     "area": 88361,
     "flagEmoji": "🇷🇸",
     "tld": [
-      "rs"
+      ".rs",
+      ".срб"
     ],
     "landlocked": true,
     "borders": [
@@ -53,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Serbian"
   },
   "codes": {
     "iso3166Alpha2": "RS",
@@ -88,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Para",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.457 RSD",
+    "accountingExample": "(1.235 RSD)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -206,15 +207,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+381",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+381 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

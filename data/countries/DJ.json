@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Djibouti",
-    "officialName": "Djibouti",
+    "officialName": "Republic of Djibouti",
     "nativeName": "Djibouti",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية جيبوتي",
     "capital": "Djibouti",
     "capitalCoordinates": [
       11.58901,
       43.14503
     ],
     "coordinates": [
-      0,
-      0
+      11.5,
+      43
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 23200,
     "flagEmoji": "🇩🇯",
     "tld": [
-      "dj"
+      ".dj"
     ],
     "landlocked": false,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Djibouti"
   },
   "codes": {
     "iso3166Alpha2": "DJ",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 Fdj",
+    "accountingExample": "(1 235 Fdj)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+253",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+253 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

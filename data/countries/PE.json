@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Peru",
-    "officialName": "Peru",
+    "officialName": "Republic of Peru",
     "nativeName": "Perú",
-    "officialNativeName": "",
+    "officialNativeName": "Piruw Suyu",
     "capital": "Lima",
     "capitalCoordinates": [
       -12.04318,
       -77.02824
     ],
     "coordinates": [
-      0,
-      0
+      -10,
+      -76
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 1285216,
     "flagEmoji": "🇵🇪",
     "tld": [
-      "pe"
+      ".pe"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Peruvian"
   },
   "codes": {
     "iso3166Alpha2": "PE",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Céntimos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "S/ 123,456.79",
+    "accountingExample": "-S/ 1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+51",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+51 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

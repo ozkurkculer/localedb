@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "India",
-    "officialName": "India",
+    "officialName": "Republic of India",
     "nativeName": "भारत",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of India",
     "capital": "New Delhi",
     "capitalCoordinates": [
       28.63576,
       77.22445
     ],
     "coordinates": [
-      0,
-      0
+      20,
+      77
     ],
     "continent": "Asia",
     "region": "Southern Asia",
@@ -28,7 +28,7 @@
     "area": 3287590,
     "flagEmoji": "🇮🇳",
     "tld": [
-      "in"
+      ".in"
     ],
     "landlocked": false,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Indian"
   },
   "codes": {
     "iso3166Alpha2": "IN",
@@ -96,8 +96,8 @@
     "subunitValue": 100,
     "subunitName": "Paise",
     "pattern": "¤#,##,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₹1,23,456.79",
+    "accountingExample": "-₹1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "12,34,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+91",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+91 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

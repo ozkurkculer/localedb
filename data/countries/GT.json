@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Guatemala",
-    "officialName": "Guatemala",
+    "officialName": "Republic of Guatemala",
     "nativeName": "Guatemala",
-    "officialNativeName": "",
+    "officialNativeName": "República de Guatemala",
     "capital": "Guatemala City",
     "capitalCoordinates": [
       14.64072,
       -90.51327
     ],
     "coordinates": [
-      0,
-      0
+      15.5,
+      -90.25
     ],
     "continent": "Central America",
     "region": "Central America",
@@ -28,7 +28,7 @@
     "area": 108889,
     "flagEmoji": "🇬🇹",
     "tld": [
-      "gt"
+      ".gt"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guatemalan"
   },
   "codes": {
     "iso3166Alpha2": "GT",
@@ -84,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "Q 123,456.79",
+    "accountingExample": "-Q 1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+502",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+502 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

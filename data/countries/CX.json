@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Christmas Island",
-    "officialName": "Christmas Island",
+    "officialName": "Territory of Christmas Island",
     "nativeName": "Christmas Island",
-    "officialNativeName": "",
+    "officialNativeName": "Territory of Christmas Island",
     "capital": "Flying Fish Cove",
     "capitalCoordinates": [
       -10.42172,
       105.67912
     ],
     "coordinates": [
-      0,
-      0
+      -10.5,
+      105.66666666
     ],
     "continent": "Australia",
     "region": "Australia and New Zealand",
@@ -28,7 +28,7 @@
     "area": 135,
     "flagEmoji": "🇨🇽",
     "tld": [
-      "cx"
+      ".cx"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Christmas Islander"
   },
   "codes": {
     "iso3166Alpha2": "CX",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+61",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+61 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

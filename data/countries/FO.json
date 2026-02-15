@@ -11,15 +11,15 @@
     "name": "Faroe Islands",
     "officialName": "Faroe Islands",
     "nativeName": "Føroyar",
-    "officialNativeName": "",
+    "officialNativeName": "Færøerne",
     "capital": "Tórshavn",
     "capitalCoordinates": [
       62.00973,
       -6.77164
     ],
     "coordinates": [
-      0,
-      0
+      62,
+      -7
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 1393,
     "flagEmoji": "🇫🇴",
     "tld": [
-      "fo"
+      ".fo"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Faroese"
   },
   "codes": {
     "iso3166Alpha2": "FO",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Oyra",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 FOK",
+    "accountingExample": "(1.234,56 FOK)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+298",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+298 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

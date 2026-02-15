@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Liechtenstein",
-    "officialName": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
     "nativeName": "Liechtenstein",
-    "officialNativeName": "",
+    "officialNativeName": "Fürstentum Liechtenstein",
     "capital": "Vaduz",
     "capitalCoordinates": [
       47.14151,
       9.52154
     ],
     "coordinates": [
-      0,
-      0
+      47.26666666,
+      9.53333333
     ],
     "continent": "Europe",
     "region": "Western Europe",
@@ -28,7 +28,7 @@
     "area": 160,
     "flagEmoji": "🇱🇮",
     "tld": [
-      "li"
+      ".li"
     ],
     "landlocked": true,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Liechtensteiner"
   },
   "codes": {
     "iso3166Alpha2": "LI",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Rappen",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "CHF 123’456.79",
+    "accountingExample": "-1’234.56 CHF"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1’234’567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+423",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+423 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

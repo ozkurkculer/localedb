@@ -11,15 +11,15 @@
     "name": "Greenland",
     "officialName": "Greenland",
     "nativeName": "Kalaallit Nunaat",
-    "officialNativeName": "",
+    "officialNativeName": "Kalaallit Nunaat",
     "capital": "Nuuk",
     "capitalCoordinates": [
       64.18347,
       -51.72157
     ],
     "coordinates": [
-      0,
-      0
+      72,
+      -40
     ],
     "continent": "North America",
     "region": "North America",
@@ -28,7 +28,7 @@
     "area": 2166086,
     "flagEmoji": "🇬🇱",
     "tld": [
-      "gl"
+      ".gl"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Greenlandic"
   },
   "codes": {
     "iso3166Alpha2": "GL",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "øre",
     "pattern": "¤#,##0.00;¤-#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "kr. 123.456,79",
+    "accountingExample": "kr.-1.234,56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+299",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+299 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

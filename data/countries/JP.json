@@ -11,15 +11,15 @@
     "name": "Japan",
     "officialName": "Japan",
     "nativeName": "日本",
-    "officialNativeName": "",
+    "officialNativeName": "日本",
     "capital": "Tokyo",
     "capitalCoordinates": [
       35.6895,
       139.69171
     ],
     "coordinates": [
-      0,
-      0
+      36,
+      138
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,8 @@
     "area": 377930,
     "flagEmoji": "🇯🇵",
     "tld": [
-      "jp"
+      ".jp",
+      ".みんな"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +45,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Japanese"
   },
   "codes": {
     "iso3166Alpha2": "JP",
@@ -79,8 +80,8 @@
     "subunitValue": 100,
     "subunitName": "Sen",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "￥123,457",
+    "accountingExample": "(￥1,235)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +198,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+81",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+81 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

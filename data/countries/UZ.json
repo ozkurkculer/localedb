@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Uzbekistan",
-    "officialName": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
     "nativeName": "Oʻzbekiston",
-    "officialNativeName": "",
+    "officialNativeName": "Республика Узбекистан",
     "capital": "Tashkent",
     "capitalCoordinates": [
       41.26465,
       69.21627
     ],
     "coordinates": [
-      0,
-      0
+      41,
+      64
     ],
     "continent": "Asia",
     "region": "Central Asia",
@@ -28,7 +28,7 @@
     "area": 447400,
     "flagEmoji": "🇺🇿",
     "tld": [
-      "uz"
+      ".uz"
     ],
     "landlocked": true,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Uzbekistani"
   },
   "codes": {
     "iso3166Alpha2": "UZ",
@@ -95,8 +95,8 @@
     "subunitValue": 100,
     "subunitName": "Tiyin",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 soʻm",
+    "accountingExample": "(soʻm 1 234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+998",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+998 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

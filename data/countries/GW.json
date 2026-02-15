@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Guinea-Bissau",
-    "officialName": "Guinea-Bissau",
+    "officialName": "Republic of Guinea-Bissau",
     "nativeName": "Guiné-Bissau",
-    "officialNativeName": "",
+    "officialNativeName": "República da Guiné-Bissau",
     "capital": "Bissau",
     "capitalCoordinates": [
       11.86357,
       -15.59767
     ],
     "coordinates": [
-      0,
-      0
+      12,
+      -15
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 36125,
     "flagEmoji": "🇬🇼",
     "tld": [
-      "gw"
+      ".gw"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guinea-Bissauan"
   },
   "codes": {
     "iso3166Alpha2": "GW",
@@ -82,8 +82,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 F CFA",
+    "accountingExample": "(1235 F CFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+245",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+245 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -24,7 +24,7 @@
     "continent": "Central America",
     "region": "Caribbean",
     "subregion": "Caribbean",
-    "population": 13452,
+    "population": 0,
     "area": 91,
     "flagEmoji": "🇦🇮",
     "tld": [
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
     "callingCode": "+1264",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1264 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {
@@ -226,7 +226,7 @@
     "measurementSystem": "metric",
     "temperatureScale": "celsius",
     "paperSize": "A4",
-    "drivingSide": "left",
+    "drivingSide": "right",
     "weekNumbering": "ISO"
   }
 }

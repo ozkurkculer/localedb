@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Syria",
-    "officialName": "Syria",
+    "officialName": "Syrian Arab Republic",
     "nativeName": "سوريا",
-    "officialNativeName": "",
+    "officialNativeName": "الجمهورية العربية السورية",
     "capital": "Damascus",
     "capitalCoordinates": [
       33.5102,
       36.29128
     ],
     "coordinates": [
-      0,
-      0
+      35,
+      38
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,8 @@
     "area": 185180,
     "flagEmoji": "🇸🇾",
     "tld": [
-      "sy"
+      ".sy",
+      "سوريا."
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +51,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Syrian"
   },
   "codes": {
     "iso3166Alpha2": "SY",
@@ -85,8 +86,8 @@
     "subunitValue": 100,
     "subunitName": "Piastres",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٧ ل.س.‏",
+    "accountingExample": "؜-‏١٬٢٣٥ ل.س.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +204,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+963",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+963 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

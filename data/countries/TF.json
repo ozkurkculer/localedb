@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "French Southern and Antarctic Lands",
-    "officialName": "French Southern and Antarctic Lands",
+    "officialName": "Territory of the French Southern and Antarctic Lands",
     "nativeName": "Terres australes françaises",
-    "officialNativeName": "",
+    "officialNativeName": "Territoire des Terres australes et antarctiques françaises",
     "capital": "Port-aux-Français",
     "capitalCoordinates": [
       -49.35,
       70.21667
     ],
     "coordinates": [
-      0,
-      0
+      -49.25,
+      69.167
     ],
     "continent": "Oceania",
     "region": "",
@@ -28,7 +28,7 @@
     "area": 7747,
     "flagEmoji": "🇹🇫",
     "tld": [
-      "tf"
+      ".tf"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "French"
   },
   "codes": {
     "iso3166Alpha2": "TF",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+262",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+262 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

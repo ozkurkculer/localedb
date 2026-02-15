@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Chad",
-    "officialName": "Chad",
+    "officialName": "Republic of Chad",
     "nativeName": "Tchad",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية تشاد",
     "capital": "N'Djamena",
     "capitalCoordinates": [
       12.10672,
       15.0444
     ],
     "coordinates": [
-      0,
-      0
+      15,
+      19
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 1284000,
     "flagEmoji": "🇹🇩",
     "tld": [
-      "td"
+      ".td"
     ],
     "landlocked": true,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Chadian"
   },
   "codes": {
     "iso3166Alpha2": "TD",
@@ -96,8 +96,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 FCFA",
+    "accountingExample": "(1 235 FCFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+235",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+235 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {
