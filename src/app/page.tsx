@@ -96,9 +96,9 @@ export default function Home() {
           <FeatureCard
              icon={<Plane className="h-10 w-10" />}
             title="Airports"
-            description="Database of 7,000+ airports with IATA/ICAO codes, coordinates, and regions."
+            description="Database of 9,000+ airports with IATA/ICAO codes, coordinates, and regions."
             href="/airports"
-            variant="sky"
+            variant="red"
           />
           <FeatureCard
              icon={<Globe2 className="h-10 w-10" />}
@@ -133,7 +133,7 @@ interface FeatureCardProps {
   description: string;
   href?: string;
   disabled?: boolean;
-  variant?: "default" | "gold" | "green" | "blue" | "sky";
+  variant?: "default" | "gold" | "green" | "blue" | "red";
 }
 
 function FeatureCard({ icon, title, description, href, disabled, variant = "default" }: FeatureCardProps) {
@@ -162,11 +162,11 @@ function FeatureCard({ icon, title, description, href, disabled, variant = "defa
       title: "bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent",
       borderHover: "hover:border-blue-500/50",
     },
-    sky: {
-      icon: "text-sky-500",
-      iconBg: "bg-sky-500/10",
-      title: "bg-gradient-to-br from-sky-400 to-blue-500 bg-clip-text text-transparent",
-      borderHover: "hover:border-sky-500/50",
+    red: {
+      icon: "text-red-500",
+      iconBg: "bg-red-500/10",
+      title: "bg-gradient-to-br from-red-500 to-rose-600 bg-clip-text text-transparent",
+      borderHover: "hover:border-red-500/50",
     },
   };
 
