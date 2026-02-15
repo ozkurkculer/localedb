@@ -5,7 +5,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Types
-import { CountryLocaleData, CountryBasics, CodeSystems, CurrencyInfo, DateTimeInfo, NumberFormatInfo, PhoneInfo, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
+import { CountryLocaleData, CountryBasics, CodeSystems, DateTimeInfo, NumberFormatInfo, PhoneInfo, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
+import { CurrencyInfo, CurrencyLocaleData, CurrencyIndexEntry } from '../src/types/currency';
 import { Language, LanguageLocaleData, LanguageIndexEntry } from '../src/types/language';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,11 +15,13 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const OUT_COUNTRIES_DIR = path.join(DATA_DIR, 'countries');
 const OUT_LANGUAGES_DIR = path.join(DATA_DIR, 'languages');
+const OUT_CURRENCIES_DIR = path.join(DATA_DIR, 'currencies'); // [NEW]
 const OVERRIDES_DIR = path.join(DATA_DIR, 'overrides');
 
 // Ensure output directories exist
 if (!fs.existsSync(OUT_COUNTRIES_DIR)) fs.mkdirSync(OUT_COUNTRIES_DIR, { recursive: true });
 if (!fs.existsSync(OUT_LANGUAGES_DIR)) fs.mkdirSync(OUT_LANGUAGES_DIR, { recursive: true });
+if (!fs.existsSync(OUT_CURRENCIES_DIR)) fs.mkdirSync(OUT_CURRENCIES_DIR, { recursive: true }); // [NEW]
 
 // --- Helper Functions ---
 
@@ -91,9 +94,13 @@ async function build() {
   const mledozeMap = new Map();
   mledozeList.forEach((c: any) => mledozeMap.set(c.cca2, c));
 
-    const countryIndex: CountryIndexEntry[] = [];
-    const languageIndex: LanguageIndexEntry[] = []; // [NEW]
+      const countryIndex: CountryIndexEntry[] = [];
+    const languageIndex: LanguageIndexEntry[] = [];
+    const currencyIndex: CurrencyIndexEntry[] = []; // [NEW]
     const languageUsageMap: Record<string, string[]> = {};
+    const currencyUsageMap: Record<string, string[]> = {}; // [NEW]
+    // We need to store full currency info to generate pages later
+    const currencyInfoMap: Record<string, CurrencyInfo> = {}; 
   
     // 2. Process Countries
     console.log(`🌍 Processing ${slCountries.length} countries...`);
@@ -107,7 +114,16 @@ async function build() {
           const mledozeCountry = mledozeMap.get(isoCode);
           const overrideData = await readJsonFile(path.join(OVERRIDES_DIR, `${isoCode}.json`));
           
-          await processCountry(isoCode, slCountry, mledozeCountry, overrideData, countryIndex, languageUsageMap);
+          await processCountry(
+              isoCode, 
+              slCountry, 
+              mledozeCountry, 
+              overrideData, 
+              countryIndex, 
+              languageUsageMap,
+              currencyUsageMap,
+              currencyInfoMap
+            );
       }));
   
       if (global.gc) global.gc(); 
@@ -119,15 +135,25 @@ async function build() {
     console.log(`🗣️ Processing languages...`);
     for (let i = 0; i < slLanguages.length; i += BATCH_SIZE) {
         const batch = slLanguages.slice(i, i + BATCH_SIZE);
-        await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap, languageIndex))); // [NEW] Pass index
+        await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap, languageIndex)));
         process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slLanguages.length)}/${slLanguages.length} languages`);
     }
     console.log('\n✨ Languages processed.');
+
+    // 4. Process Currencies [NEW]
+    console.log(`💰 Processing currencies...`);
+    const currencyCodes = Object.keys(currencyInfoMap).sort();
+    for (const code of currencyCodes) {
+        await processCurrency(code, currencyInfoMap[code], currencyUsageMap, currencyIndex);
+    }
+    console.log(`✅ Processed ${currencyCodes.length} currencies`);
+    console.log('\n✨ Currencies processed.');
   
-    // 4. Write Indices
+    // 5. Write Indices
     console.log('📝 Writing indices...');
     await fs.promises.writeFile(path.join(DATA_DIR, '_index_countries.json'), JSON.stringify(countryIndex, null, 2));
-    await fs.promises.writeFile(path.join(DATA_DIR, '_index_languages.json'), JSON.stringify(languageIndex, null, 2)); // [NEW]
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_languages.json'), JSON.stringify(languageIndex, null, 2));
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_currencies.json'), JSON.stringify(currencyIndex, null, 2)); // [NEW]
 
   const endTime = Date.now();
   console.log(`🎉 Build complete in ${((endTime - startTime) / 1000).toFixed(2)}s`);
@@ -139,16 +165,37 @@ async function processCountry(
     mledozeData: any, 
     overrideData: any,
     index: CountryIndexEntry[], 
-    langMap: Record<string, string[]>
+    langMap: Record<string, string[]>,
+    currencyMap: Record<string, string[]>, // [NEW]
+    currencyInfoMap: Record<string, CurrencyInfo> // [NEW]
 ) {
     const primaryLang = slData.languages?.[0]?.iso_639_1 || 'en';
     const cldrLocale = `${primaryLang}-${isoCode}`;
     let cldrPath = primaryLang; 
 
-    // --- FETCH CLDR ---
+    // ... (Reading CLDR data remains same)
     const territories = await readCldrData(`cldr-localenames-full/main/${cldrPath}/territories.json`, "main", cldrPath, "localeDisplayNames", "territories", isoCode);
     const caGregorian = await readCldrData(`cldr-dates-full/main/${cldrPath}/ca-gregorian.json`, "main", cldrPath, "dates", "calendars", "gregorian");
     const numbers = await readCldrData(`cldr-numbers-full/main/${cldrPath}/numbers.json`, "main", cldrPath, "numbers");
+
+    // Construct Currency Object
+    const currencyObj: CurrencyInfo = {
+        code: slData.currency_code,
+        numericCode: slData.currency_numeric,
+        name: slData.currency,
+        nativeName: slData.currency_local,
+        symbol: slData.currency_symbol,
+        narrowSymbol: slData.currency_symbol,
+        symbolPosition: "before",
+        decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",
+        thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
+        decimalDigits: 2,
+        subunitValue: slData.currency_subunit_value,
+        subunitName: slData.currency_subunit_name,
+        pattern: numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00",
+        example: safeFormatCurrency(cldrLocale, slData.currency_code, 123456.789),
+        accountingExample: safeFormatCurrency(cldrLocale, slData.currency_code, -1234.56, { currencySign: "accounting" })
+    };
 
     // --- BASE DATA (SimpleLocalize) ---
     const data: CountryLocaleData = {
@@ -201,23 +248,7 @@ async function processCountry(
             maritime: slData.maritime,
             mmc: slData.mmc
         },
-        currency: {
-            code: slData.currency_code,
-            numericCode: slData.currency_numeric,
-            name: slData.currency,
-            nativeName: slData.currency_local,
-            symbol: slData.currency_symbol,
-            narrowSymbol: slData.currency_symbol,
-            symbolPosition: "before",
-            decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",
-            thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
-            decimalDigits: 2,
-            subunitValue: slData.currency_subunit_value,
-            subunitName: slData.currency_subunit_name,
-            pattern: numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00",
-            example: safeFormatCurrency(cldrLocale, slData.currency_code, 123456.789),
-            accountingExample: safeFormatCurrency(cldrLocale, slData.currency_code, -1234.56, { currencySign: "accounting" })
-        },
+        currency: currencyObj, // Use constructed object
         dateTime: {
             firstDayOfWeek: 1,
             clockFormat: "24h",
@@ -300,11 +331,22 @@ async function processCountry(
         deepMerge(data, overrideData);
     }
 
-    // Update index
+    // Update index (Language)
     slData.languages.forEach((l: any) => {
         if (!langMap[l.iso_639_1]) langMap[l.iso_639_1] = [];
         langMap[l.iso_639_1].push(isoCode);
     });
+
+    // Update index (Currency) [NEW]
+    if (currencyObj.code) {
+        if (!currencyMap[currencyObj.code]) currencyMap[currencyObj.code] = [];
+        currencyMap[currencyObj.code].push(isoCode);
+        // Store info. If it exists, merging or keeping one is expected.
+        // We'll keep the one that looks "most populated" or just the first one.
+        if (!currencyInfoMap[currencyObj.code]) {
+            currencyInfoMap[currencyObj.code] = currencyObj;
+        }
+    }
 
     index.push({
         code: isoCode,
@@ -352,6 +394,36 @@ async function processLanguage(metadata: any, langMap: Record<string, string[]>,
 
     const outFile = path.join(OUT_LANGUAGES_DIR, `${code}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(langData, null, 2));
+}
+
+async function processCurrency(
+    code: string, 
+    info: CurrencyInfo, 
+    currencyMap: Record<string, string[]>, 
+    index: CurrencyIndexEntry[]
+) {
+    if (!code) return;
+
+    const countries = currencyMap[code] || [];
+
+    const currencyData: CurrencyLocaleData = {
+        $schema: "1.0.0",
+        lastUpdated: new Date().toISOString().split('T')[0],
+        data: {
+            ...info,
+            countries: countries
+        }
+    };
+
+    index.push({
+        code: code,
+        name: info.name,
+        symbol: info.symbol,
+        countriesCount: countries.length
+    });
+
+    const outFile = path.join(OUT_CURRENCIES_DIR, `${code}.json`);
+    await fs.promises.writeFile(outFile, JSON.stringify(currencyData, null, 2));
 }
 
 // Run

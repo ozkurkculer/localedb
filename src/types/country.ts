@@ -8,7 +8,7 @@
 export type WritingDirection = "ltr" | "rtl";
 export type MeasurementSystem = "metric" | "imperial" | "mixed";
 export type TemperatureScale = "celsius" | "fahrenheit";
-export type CurrencySymbolPosition = "before" | "after";
+// CurrencySymbolPosition moved to currency.ts
 export type DayOfWeek = 1 | 2 | 3 | 4 | 5 | 6 | 7; // ISO 8601: 1=Monday, 7=Sunday
 export type ClockFormat = "12h" | "24h";
 
@@ -97,38 +97,11 @@ export interface CodeSystems {
 
 // ─── Currency ────────────────────────────────────────────────────
 
-export interface CurrencyInfo {
-  /** ISO 4217 code, e.g. "TRY" */
-  code: string;
-  /** ISO 4217 numeric code, e.g. 949 */
-  numericCode: number;
-  /** English name, e.g. "Turkish Lira" */
-  name: string;
-  /** Native name, e.g. "Türk Lirası" */
-  nativeName: string;
-  /** Currency symbol, e.g. "₺" */
-  symbol: string;
-  /** Narrow symbol (if different from symbol), e.g. "₺" */
-  narrowSymbol: string;
-  /** Position of symbol relative to amount */
-  symbolPosition: CurrencySymbolPosition;
-  /** Decimal separator character, e.g. "," */
-  decimalSeparator: string;
-  /** Thousands/grouping separator character, e.g. "." */
-  thousandsSeparator: string;
-  /** Number of decimal digits, e.g. 2 */
-  decimalDigits: number;
-  /** Subunit to unit ratio, e.g. 100 (100 kuruş = 1 lira) */
-  subunitValue: number;
-  /** Subunit name, e.g. "Kuruş", "Cent", "Puls" */
-  subunitName: string;
-  /** Formatting pattern (CLDR), e.g. "#.##0,00 ¤" */
-  pattern: string;
-  /** Concrete example, e.g. "1.250,00 ₺" */
-  example: string;
-  /** Accounting format example, e.g. "(1.250,00 ₺)" for negatives */
-  accountingExample: string;
-}
+// ─── Currency ────────────────────────────────────────────────────
+
+import { CurrencyInfo } from "./currency";
+
+export type { CurrencyInfo };
 
 // ─── Date and Time ───────────────────────────────────────────────
 
