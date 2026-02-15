@@ -17,31 +17,36 @@ interface RoadmapItem {
 const roadmapData: RoadmapItem[] = [
   {
     id: "1",
-    title: "Proje oluşumu ve dataların girilmesi",
+    title: "Project Initiation & Data Population",
+    description: "Initial setup of the Next.js project and population of core data for countries, currencies, and languages.",
     status: "completed",
     date: "Q1 2026",
   },
   {
     id: "2",
-    title: "Proje hatalarının giderilmesi ve contribution sisteminin aktif hale getirilmesi",
+    title: "Bug Fixes & Contribution System",
+    description: "Resolving initial issues and establishing a robust workflow for community contributions via overrides.",
     status: "in-progress",
     date: "Q1 2026",
   },
   {
     id: "3",
-    title: "İstenilen ülkelerin datalarının export edilebilmesi için bir arayüz",
+    title: "Data Export Interface",
+    description: "A user interface allowing users to select specific countries and export their data in custom JSON formats.",
     status: "planned",
     date: "Q2 2026",
   },
   {
     id: "4",
-    title: "İstenilen ülkelerin datalarının indirilebilmesi için bir paket ve CLI",
+    title: "npm Package & CLI Tool",
+    description: "A dedicated npm package and CLI tool for developers to download and integrate locale data directly into their projects.",
     status: "planned",
     date: "Q2 2026",
   },
   {
     id: "5",
-    title: "API altyapısının kurulması ve yayına alınması",
+    title: "Public API Launch",
+    description: "Development and deployment of a RESTful API to serve locale data dynamically.",
     status: "planned",
     date: "Q3 2026",
   },
@@ -49,21 +54,21 @@ const roadmapData: RoadmapItem[] = [
 
 const statusConfig = {
   completed: {
-    label: "Tamamlandı",
+    label: "Completed",
     icon: CheckCircle2,
     color: "text-green-500",
     bg: "bg-green-500/10",
     border: "border-green-500/20",
   },
   "in-progress": {
-    label: "Yapılıyor",
+    label: "In Progress",
     icon: Loader2,
     color: "text-blue-500",
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
   },
   planned: {
-    label: "Planlandı",
+    label: "Planned",
     icon: Circle,
     color: "text-muted-foreground",
     bg: "bg-muted/50",
@@ -79,7 +84,7 @@ export default function RoadmapPage() {
           Project Roadmap
         </h1>
         <p className="text-xl text-muted-foreground">
-          LocaleDB'nin gelişim süreci ve gelecek planları.
+          LocaleDB's development journey and future plans.
         </p>
       </div>
 
