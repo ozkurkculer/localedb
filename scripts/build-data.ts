@@ -161,7 +161,7 @@ async function processCountry(
             population: mledozeData?.population || 0,
             area: slData.area_sq_km,
             flagEmoji: slData.flag,
-            tld: slData.tld,
+            tld: mledozeData?.tld || (slData.tld ? [slData.tld] : []),
             landlocked: slData.is_landlocked,
             borders: slData.borders || [],
             languages: slData.languages.map((l: any) => ({

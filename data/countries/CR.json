@@ -27,7 +27,9 @@
     "population": 0,
     "area": 51100,
     "flagEmoji": "🇨🇷",
-    "tld": "cr",
+    "tld": [
+      "cr"
+    ],
     "landlocked": false,
     "borders": [
       "NI",

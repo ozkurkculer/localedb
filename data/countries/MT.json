@@ -27,7 +27,9 @@
     "population": 0,
     "area": 316,
     "flagEmoji": "🇲🇹",
-    "tld": "mt",
+    "tld": [
+      "mt"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

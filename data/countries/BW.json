@@ -27,7 +27,9 @@
     "population": 0,
     "area": 582000,
     "flagEmoji": "🇧🇼",
-    "tld": "bw",
+    "tld": [
+      "bw"
+    ],
     "landlocked": true,
     "borders": [
       "NA",

@@ -27,7 +27,9 @@
     "population": 0,
     "area": 100210,
     "flagEmoji": "🇰🇷",
-    "tld": "kr",
+    "tld": [
+      "kr"
+    ],
     "landlocked": false,
     "borders": [
       "KP"

@@ -27,7 +27,9 @@
     "population": 0,
     "area": 1886068,
     "flagEmoji": "🇸🇩",
-    "tld": "sd",
+    "tld": [
+      "sd"
+    ],
     "landlocked": false,
     "borders": [
       "CF",

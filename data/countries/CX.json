@@ -27,7 +27,9 @@
     "population": 0,
     "area": 135,
     "flagEmoji": "🇨🇽",
-    "tld": "cx",
+    "tld": [
+      "cx"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

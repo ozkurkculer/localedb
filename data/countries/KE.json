@@ -27,7 +27,9 @@
     "population": 0,
     "area": 580367,
     "flagEmoji": "🇰🇪",
-    "tld": "ke",
+    "tld": [
+      "ke"
+    ],
     "landlocked": false,
     "borders": [
       "ET",

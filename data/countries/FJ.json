@@ -27,7 +27,9 @@
     "population": 0,
     "area": 18272,
     "flagEmoji": "🇫🇯",
-    "tld": "fj",
+    "tld": [
+      "fj"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

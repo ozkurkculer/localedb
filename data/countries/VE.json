@@ -27,7 +27,9 @@
     "population": 0,
     "area": 916445,
     "flagEmoji": "🇻🇪",
-    "tld": "ve",
+    "tld": [
+      "ve"
+    ],
     "landlocked": false,
     "borders": [
       "BR",

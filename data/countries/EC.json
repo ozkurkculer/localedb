@@ -27,7 +27,9 @@
     "population": 0,
     "area": 276841,
     "flagEmoji": "🇪🇨",
-    "tld": "ec",
+    "tld": [
+      "ec"
+    ],
     "landlocked": false,
     "borders": [
       "CO",

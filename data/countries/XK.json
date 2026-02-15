@@ -27,7 +27,9 @@
     "population": 0,
     "area": 10908,
     "flagEmoji": "🇽🇰",
-    "tld": "ko",
+    "tld": [
+      "ko"
+    ],
     "landlocked": true,
     "borders": [
       "AL",

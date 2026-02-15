@@ -27,7 +27,9 @@
     "population": 13452,
     "area": 91,
     "flagEmoji": "🇦🇮",
-    "tld": "ai",
+    "tld": [
+      ".ai"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

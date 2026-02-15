@@ -27,7 +27,9 @@
     "population": 0,
     "area": 270467,
     "flagEmoji": "🇳🇿",
-    "tld": "nz",
+    "tld": [
+      "nz"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

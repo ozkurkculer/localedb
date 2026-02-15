@@ -27,7 +27,9 @@
     "population": 0,
     "area": 30355,
     "flagEmoji": "🇱🇸",
-    "tld": "ls",
+    "tld": [
+      "ls"
+    ],
     "landlocked": true,
     "borders": [
       "ZA"

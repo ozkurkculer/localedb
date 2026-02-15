@@ -46,7 +46,7 @@ export interface CountryBasics {
   /** Flag emoji character, e.g. "🇹🇷" */
   flagEmoji: string;
   /** Country-code top-level domain, e.g. ".tr" */
-  tld: string;
+  tld: string[];
   /** Whether the country is landlocked */
   landlocked: boolean;
   /** ISO 3166-1 alpha-2 codes of bordering countries */

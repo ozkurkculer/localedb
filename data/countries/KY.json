@@ -27,7 +27,9 @@
     "population": 0,
     "area": 264,
     "flagEmoji": "🇰🇾",
-    "tld": "ky",
+    "tld": [
+      "ky"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

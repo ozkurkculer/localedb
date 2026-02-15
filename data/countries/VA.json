@@ -27,7 +27,9 @@
     "population": 0,
     "area": 0.44,
     "flagEmoji": "🇻🇦",
-    "tld": "va",
+    "tld": [
+      "va"
+    ],
     "landlocked": true,
     "borders": [
       "IT"

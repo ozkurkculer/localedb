@@ -27,7 +27,9 @@
     "population": 0,
     "area": 83871,
     "flagEmoji": "🇦🇹",
-    "tld": "at",
+    "tld": [
+      "at"
+    ],
     "landlocked": true,
     "borders": [
       "CZ",

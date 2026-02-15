@@ -27,7 +27,9 @@
     "population": 0,
     "area": 11586,
     "flagEmoji": "🇶🇦",
-    "tld": "qa",
+    "tld": [
+      "qa"
+    ],
     "landlocked": false,
     "borders": [
       "SA"

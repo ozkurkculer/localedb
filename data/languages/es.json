@@ -9,8 +9,8 @@
     "nativeName": "Español",
     "direction": "ltr",
     "countries": [
-      "GQ",
       "AR",
+      "GQ",
       "BZ",
       "BO",
       "CL",
@@ -18,8 +18,8 @@
       "DO",
       "EC",
       "SV",
-      "GU",
       "GT",
+      "GU",
       "HN",
       "CO",
       "CU",
@@ -31,8 +31,8 @@
       "PR",
       "ES",
       "UY",
-      "EH",
-      "VE"
+      "VE",
+      "EH"
     ]
   }
 }
