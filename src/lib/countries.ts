@@ -1,0 +1,68 @@
+import { readFile, readdir } from "fs/promises";
+import path from "path";
+import type { CountryLocaleData, CountryIndexEntry } from "@/types/country";
+
+const DATA_DIR = path.join(process.cwd(), "data", "countries");
+const INDEX_PATH = path.join(process.cwd(), "data", "_index.json");
+
+/**
+ * Load a single country's full data by alpha-2 code.
+ * This is called at build time during SSG.
+ * @param code - ISO 3166-1 alpha-2 code (e.g., "TR", "US")
+ */
+export async function getCountry(code: string): Promise<CountryLocaleData> {
+  const filePath = path.join(DATA_DIR, `${code.toUpperCase()}.json`);
+  const raw = await readFile(filePath, "utf-8");
+  return JSON.parse(raw) as CountryLocaleData;
+}
+
+/**
+ * Load all country codes (for generateStaticParams).
+ * Returns an array of ISO 3166-1 alpha-2 codes.
+ */
+export async function getAllCountryCodes(): Promise<string[]> {
+  const files = await readdir(DATA_DIR);
+  return files
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => f.replace(".json", ""));
+}
+
+/**
+ * Load the lightweight index for the grid page.
+ * Contains minimal data for all countries.
+ */
+export async function getCountryIndex(): Promise<CountryIndexEntry[]> {
+  const raw = await readFile(INDEX_PATH, "utf-8");
+  return JSON.parse(raw) as CountryIndexEntry[];
+}
+
+/**
+ * Search countries by name or code (case-insensitive).
+ * Used for client-side filtering.
+ * @param query - Search term
+ */
+export async function searchCountries(
+  query: string
+): Promise<CountryIndexEntry[]> {
+  const index = await getCountryIndex();
+  const lowerQuery = query.toLowerCase();
+
+  return index.filter(
+    (country) =>
+      country.name.toLowerCase().includes(lowerQuery) ||
+      country.code.toLowerCase().includes(lowerQuery) ||
+      country.primaryLocale.toLowerCase().includes(lowerQuery) ||
+      country.currencyCode.toLowerCase().includes(lowerQuery)
+  );
+}
+
+/**
+ * Get countries by continent.
+ * @param continent - Continent name (e.g., "Asia", "Europe")
+ */
+export async function getCountriesByContinent(
+  continent: string
+): Promise<CountryIndexEntry[]> {
+  const index = await getCountryIndex();
+  return index.filter((country) => country.continent === continent);
+}

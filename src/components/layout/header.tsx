@@ -1,0 +1,52 @@
+import Link from "next/link";
+import { Globe } from "lucide-react";
+import { siteConfig } from "@/config/site";
+import { mainNav } from "@/config/navigation";
+import { ThemeToggle } from "./theme-toggle";
+
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
+        {/* Logo */}
+        <Link href="/" className="mr-8 flex items-center space-x-2">
+          <Globe className="h-6 w-6" />
+          <span className="hidden font-bold sm:inline-block">
+            {siteConfig.name}
+          </span>
+        </Link>
+
+        {/* Main Navigation */}
+        <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
+          {mainNav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`
+                transition-colors hover:text-foreground/80
+                ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
+              `}
+            >
+              {item.title}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Right side - Theme toggle & GitHub */}
+        <div className="flex items-center space-x-2">
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:block"
+          >
+            <div className="inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+              GitHub
+            </div>
+          </Link>
+          <ThemeToggle />
+        </div>
+      </div>
+    </header>
+  );
+}

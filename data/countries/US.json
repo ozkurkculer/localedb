@@ -1,0 +1,130 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "basics": {
+    "name": "United States",
+    "officialName": "United States of America",
+    "nativeName": "United States",
+    "officialNativeName": "United States of America",
+    "capital": "Washington, D.C.",
+    "capitalCoordinates": [38.9072, -77.0369],
+    "coordinates": [37.0902, -95.7129],
+    "continent": "North America",
+    "region": "Northern America",
+    "subregion": "Northern America",
+    "population": 331900000,
+    "area": 9833517,
+    "flagEmoji": "🇺🇸",
+    "tld": ".us",
+    "landlocked": false,
+    "borders": ["CAN", "MEX"],
+    "languages": [
+      {
+        "code": "en",
+        "name": "English",
+        "nativeName": "English",
+        "official": true
+      }
+    ],
+    "demonym": "American"
+  },
+  "codes": {
+    "iso3166Alpha2": "US",
+    "iso3166Alpha3": "USA",
+    "iso3166Numeric": "840",
+    "bcp47": ["en-US", "es-US"],
+    "internetTld": ".us",
+    "ioc": "USA",
+    "fifa": "USA"
+  },
+  "currency": {
+    "code": "USD",
+    "name": "United States Dollar",
+    "nativeName": "United States Dollar",
+    "symbol": "$",
+    "narrowSymbol": "$",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "pattern": "¤#,##0.00",
+    "example": "$1,250.00",
+    "accountingExample": "($1,250.00)"
+  },
+  "dateTime": {
+    "firstDayOfWeek": 7,
+    "clockFormat": "12h",
+    "dateFormats": {
+      "full": "Sunday, February 15, 2026",
+      "long": "February 15, 2026",
+      "medium": "Feb 15, 2026",
+      "short": "2/15/26"
+    },
+    "timeFormats": {
+      "full": "3:30:00 PM Eastern Standard Time",
+      "long": "3:30:00 PM EST",
+      "medium": "3:30:00 PM",
+      "short": "3:30 PM"
+    },
+    "datePatterns": {
+      "full": "EEEE, MMMM d, y",
+      "long": "MMMM d, y",
+      "medium": "MMM d, y",
+      "short": "M/d/yy"
+    },
+    "timePatterns": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "monthNames": {
+      "wide": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "abbreviated": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+    },
+    "dayNames": {
+      "wide": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "abbreviated": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "narrow": ["M", "T", "W", "T", "F", "S", "S"]
+    },
+    "amPmMarkers": ["AM", "PM"],
+    "timezones": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Anchorage", "Pacific/Honolulu"],
+    "primaryTimezone": "America/New_York",
+    "utcOffset": "-05:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+1",
+    "trunkPrefix": "1",
+    "internationalPrefix": "011",
+    "exampleFormat": "+1 212 555 1234",
+    "subscriberNumberLengths": [10]
+  },
+  "addressFormat": {
+    "format": "%N%n%O%n%A%n%C, %S %Z",
+    "lineOrder": ["Name", "Organization", "Street Address", "City, State ZIP"],
+    "postalCodeFormat": "NNNNN",
+    "postalCodeRegex": "^\\d{5}(-\\d{4})?$",
+    "postalCodeExample": "10001",
+    "administrativeDivisionName": "State",
+    "administrativeDivisionType": "State"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "imperial",
+    "temperatureScale": "fahrenheit",
+    "paperSize": "Letter",
+    "drivingSide": "right",
+    "weekNumbering": "US"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "flagEmoji": "🇹🇷",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "tr-TR",
+    "currencyCode": "TRY",
+    "callingCode": "+90"
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "flagEmoji": "🇺🇸",
+    "continent": "North America",
+    "region": "Northern America",
+    "primaryLocale": "en-US",
+    "currencyCode": "USD",
+    "callingCode": "+1"
+  }
+]

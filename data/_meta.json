@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-15T00:00:00Z",
+  "totalCountries": 2,
+  "cldrVersion": "46",
+  "sources": [
+    "CLDR 46",
+    "mledoze/countries",
+    "Manual curation"
+  ]
+}
