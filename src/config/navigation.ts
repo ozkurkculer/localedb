@@ -21,6 +21,10 @@ export const mainNav: MainNavItem[] = [
     href: "/countries",
   },
   {
+    title: "Locale Codes",
+    href: "/locale-codes",
+  },
+  {
     title: "About",
     href: "/about",
   },
