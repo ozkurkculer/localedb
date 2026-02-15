@@ -17,6 +17,10 @@ export type ClockFormat = "12h" | "24h";
 export interface Language {
   /** ISO 639-1 two-letter code, e.g. "tr" */
   code: string;
+  /** ISO 639-2 three-letter bibliographic code, e.g. "tur" */
+  iso639_2: string;
+  /** ISO 639-3 three-letter terminologic code, e.g. "tur" */
+  iso639_3: string;
   /** English name, e.g. "Turkish" */
   name: string;
   /** Native name, e.g. "Türkçe" */
@@ -86,6 +90,22 @@ export interface CodeSystems {
   ioc: string;
   /** FIFA code, e.g. "TUR" */
   fifa: string;
+  /** International vehicle registration code, e.g. "TR" */
+  vehicleCode: string;
+  /** FIPS 10-4 code (US federal standard), e.g. "TU" */
+  fips10: string;
+  /** UN/LOCODE (United Nations Code for Trade and Transport Locations), e.g. "TR" */
+  unLocode: string;
+  /** NATO STANAG 1059 code, e.g. "TUR" */
+  stanag1059: string;
+  /** ITU (International Telecommunication Union) code, e.g. "TUR" */
+  itu: string;
+  /** UIC (International Union of Railways) country code, e.g. "52 TR" */
+  uic: string;
+  /** Maritime identification digits (MID), e.g. 271 */
+  maritime: number;
+  /** Mobile country code (MCC) for GSM networks, e.g. 286 */
+  mmc: number;
 }
 
 // ─── Currency ────────────────────────────────────────────────────
@@ -93,6 +113,8 @@ export interface CodeSystems {
 export interface CurrencyInfo {
   /** ISO 4217 code, e.g. "TRY" */
   code: string;
+  /** ISO 4217 numeric code, e.g. 949 */
+  numericCode: number;
   /** English name, e.g. "Turkish Lira" */
   name: string;
   /** Native name, e.g. "Türk Lirası" */
@@ -109,6 +131,10 @@ export interface CurrencyInfo {
   thousandsSeparator: string;
   /** Number of decimal digits, e.g. 2 */
   decimalDigits: number;
+  /** Subunit to unit ratio, e.g. 100 (100 kuruş = 1 lira) */
+  subunitValue: number;
+  /** Subunit name, e.g. "Kuruş", "Cent", "Puls" */
+  subunitName: string;
   /** Formatting pattern (CLDR), e.g. "#.##0,00 ¤" */
   pattern: string;
   /** Concrete example, e.g. "1.250,00 ₺" */
