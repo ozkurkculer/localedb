@@ -10,16 +10,6 @@
     "callingCode": "+93"
   },
   {
-    "code": "EG",
-    "name": "Egypt",
-    "flagEmoji": "🇪🇬",
-    "continent": "Africa",
-    "region": "Northern Africa",
-    "primaryLocale": "ar-EG",
-    "currencyCode": "EGP",
-    "callingCode": "+20"
-  },
-  {
     "code": "AL",
     "name": "Albania",
     "flagEmoji": "🇦🇱",
@@ -40,6 +30,26 @@
     "callingCode": "+35818"
   },
   {
+    "code": "AD",
+    "name": "Andorra",
+    "flagEmoji": "🇦🇩",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "ca-AD",
+    "currencyCode": "EUR",
+    "callingCode": "+376"
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "flagEmoji": "🇦🇴",
+    "continent": "Africa",
+    "region": "Middle Africa",
+    "primaryLocale": "pt-AO",
+    "currencyCode": "AOA",
+    "callingCode": "+244"
+  },
+  {
     "code": "DZ",
     "name": "Algeria",
     "flagEmoji": "🇩🇿",
@@ -48,6 +58,16 @@
     "primaryLocale": "ar-DZ",
     "currencyCode": "DZD",
     "callingCode": "+213"
+  },
+  {
+    "code": "AI",
+    "name": "Anguilla",
+    "flagEmoji": "🇦🇮",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-AI",
+    "currencyCode": "XCD",
+    "callingCode": "+1264"
   },
   {
     "code": "AS",
@@ -70,34 +90,14 @@
     "callingCode": ""
   },
   {
-    "code": "AI",
-    "name": "Anguilla",
-    "flagEmoji": "🇦🇮",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-AI",
-    "currencyCode": "XCD",
-    "callingCode": "+1264"
-  },
-  {
-    "code": "AO",
-    "name": "Angola",
-    "flagEmoji": "🇦🇴",
+    "code": "EG",
+    "name": "Egypt",
+    "flagEmoji": "🇪🇬",
     "continent": "Africa",
-    "region": "Middle Africa",
-    "primaryLocale": "pt-AO",
-    "currencyCode": "AOA",
-    "callingCode": "+244"
-  },
-  {
-    "code": "AD",
-    "name": "Andorra",
-    "flagEmoji": "🇦🇩",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "ca-AD",
-    "currencyCode": "EUR",
-    "callingCode": "+376"
+    "region": "Northern Africa",
+    "primaryLocale": "ar-EG",
+    "currencyCode": "EGP",
+    "callingCode": "+20"
   },
   {
     "code": "AG",
@@ -140,14 +140,14 @@
     "callingCode": "+374"
   },
   {
-    "code": "AZ",
-    "name": "Azerbaijan",
-    "flagEmoji": "🇦🇿",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "az-AZ",
-    "currencyCode": "AZN",
-    "callingCode": "+994"
+    "code": "AW",
+    "name": "Aruba",
+    "flagEmoji": "🇦🇼",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "nl-AW",
+    "currencyCode": "AWG",
+    "callingCode": "+297"
   },
   {
     "code": "AU",
@@ -160,14 +160,24 @@
     "callingCode": "+61"
   },
   {
-    "code": "AW",
-    "name": "Aruba",
-    "flagEmoji": "🇦🇼",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "nl-AW",
-    "currencyCode": "AWG",
-    "callingCode": "+297"
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "flagEmoji": "🇦🇿",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "az-AZ",
+    "currencyCode": "AZN",
+    "callingCode": "+994"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "flagEmoji": "🇪🇹",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "am-ET",
+    "currencyCode": "ETB",
+    "callingCode": "+251"
   },
   {
     "code": "BS",
@@ -190,14 +200,14 @@
     "callingCode": "+973"
   },
   {
-    "code": "ET",
-    "name": "Ethiopia",
-    "flagEmoji": "🇪🇹",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "am-ET",
-    "currencyCode": "ETB",
-    "callingCode": "+251"
+    "code": "BD",
+    "name": "Bangladesh",
+    "flagEmoji": "🇧🇩",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "primaryLocale": "bn-BD",
+    "currencyCode": "BDT",
+    "callingCode": "+880"
   },
   {
     "code": "BB",
@@ -210,26 +220,6 @@
     "callingCode": "+1246"
   },
   {
-    "code": "BD",
-    "name": "Bangladesh",
-    "flagEmoji": "🇧🇩",
-    "continent": "Asia",
-    "region": "Southern Asia",
-    "primaryLocale": "bn-BD",
-    "currencyCode": "BDT",
-    "callingCode": "+880"
-  },
-  {
-    "code": "BE",
-    "name": "Belgium",
-    "flagEmoji": "🇧🇪",
-    "continent": "Europe",
-    "region": "Western Europe",
-    "primaryLocale": "nl-BE",
-    "currencyCode": "EUR",
-    "callingCode": "+32"
-  },
-  {
     "code": "BZ",
     "name": "Belize",
     "flagEmoji": "🇧🇿",
@@ -238,16 +228,6 @@
     "primaryLocale": "en-BZ",
     "currencyCode": "BZD",
     "callingCode": "+501"
-  },
-  {
-    "code": "BM",
-    "name": "Bermuda",
-    "flagEmoji": "🇧🇲",
-    "continent": "North America",
-    "region": "North America",
-    "primaryLocale": "en-BM",
-    "currencyCode": "BMD",
-    "callingCode": "+1441"
   },
   {
     "code": "BY",
@@ -260,6 +240,26 @@
     "callingCode": "+375"
   },
   {
+    "code": "BE",
+    "name": "Belgium",
+    "flagEmoji": "🇧🇪",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "nl-BE",
+    "currencyCode": "EUR",
+    "callingCode": "+32"
+  },
+  {
+    "code": "BM",
+    "name": "Bermuda",
+    "flagEmoji": "🇧🇲",
+    "continent": "North America",
+    "region": "North America",
+    "primaryLocale": "en-BM",
+    "currencyCode": "BMD",
+    "callingCode": "+1441"
+  },
+  {
     "code": "BJ",
     "name": "Benin",
     "flagEmoji": "🇧🇯",
@@ -268,6 +268,16 @@
     "primaryLocale": "fr-BJ",
     "currencyCode": "XOF",
     "callingCode": "+229"
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "flagEmoji": "🇧🇹",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "primaryLocale": "dz-BT",
+    "currencyCode": "BTN",
+    "callingCode": "+975"
   },
   {
     "code": "BO",
@@ -290,16 +300,6 @@
     "callingCode": "+387"
   },
   {
-    "code": "BT",
-    "name": "Bhutan",
-    "flagEmoji": "🇧🇹",
-    "continent": "Asia",
-    "region": "Southern Asia",
-    "primaryLocale": "dz-BT",
-    "currencyCode": "BTN",
-    "callingCode": "+975"
-  },
-  {
     "code": "BW",
     "name": "Botswana",
     "flagEmoji": "🇧🇼",
@@ -308,6 +308,16 @@
     "primaryLocale": "en-BW",
     "currencyCode": "BWP",
     "callingCode": "+267"
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "flagEmoji": "🇧🇫",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "primaryLocale": "fr-BF",
+    "currencyCode": "XOF",
+    "callingCode": "+226"
   },
   {
     "code": "BR",
@@ -320,16 +330,6 @@
     "callingCode": "+55"
   },
   {
-    "code": "BV",
-    "name": "Bouvet Island",
-    "flagEmoji": "🇧🇻",
-    "continent": "South America",
-    "region": "",
-    "primaryLocale": "no-BV",
-    "currencyCode": "NOK",
-    "callingCode": "+47"
-  },
-  {
     "code": "IO",
     "name": "British Indian Ocean Territory",
     "flagEmoji": "🇮🇴",
@@ -338,6 +338,16 @@
     "primaryLocale": "en-IO",
     "currencyCode": "USD",
     "callingCode": "+246"
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "flagEmoji": "🇧🇮",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "fr-BI",
+    "currencyCode": "BIF",
+    "callingCode": "+257"
   },
   {
     "code": "CL",
@@ -360,14 +370,14 @@
     "callingCode": "+673"
   },
   {
-    "code": "BI",
-    "name": "Burundi",
-    "flagEmoji": "🇧🇮",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "fr-BI",
-    "currencyCode": "BIF",
-    "callingCode": "+257"
+    "code": "BV",
+    "name": "Bouvet Island",
+    "flagEmoji": "🇧🇻",
+    "continent": "South America",
+    "region": "",
+    "primaryLocale": "no-BV",
+    "currencyCode": "NOK",
+    "callingCode": "+47"
   },
   {
     "code": "BG",
@@ -378,16 +388,6 @@
     "primaryLocale": "bg-BG",
     "currencyCode": "BGN",
     "callingCode": "+359"
-  },
-  {
-    "code": "BF",
-    "name": "Burkina Faso",
-    "flagEmoji": "🇧🇫",
-    "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "fr-BF",
-    "currencyCode": "XOF",
-    "callingCode": "+226"
   },
   {
     "code": "CN",
@@ -430,14 +430,14 @@
     "callingCode": "+599"
   },
   {
-    "code": "CD",
-    "name": "Democratic Republic of the Congo",
-    "flagEmoji": "🇨🇩",
-    "continent": "Africa",
-    "region": "Middle Africa",
-    "primaryLocale": "fr-CD",
-    "currencyCode": "CDF",
-    "callingCode": "+243"
+    "code": "DO",
+    "name": "Dominican Republic",
+    "flagEmoji": "🇩🇴",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "es-DO",
+    "currencyCode": "DOP",
+    "callingCode": "+1809"
   },
   {
     "code": "DK",
@@ -450,34 +450,14 @@
     "callingCode": "+45"
   },
   {
-    "code": "DM",
-    "name": "Dominica",
-    "flagEmoji": "🇩🇲",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-DM",
-    "currencyCode": "XCD",
-    "callingCode": "+1767"
-  },
-  {
-    "code": "EC",
-    "name": "Ecuador",
-    "flagEmoji": "🇪🇨",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "es-EC",
-    "currencyCode": "USD",
-    "callingCode": "+593"
-  },
-  {
-    "code": "DE",
-    "name": "Germany",
-    "flagEmoji": "🇩🇪",
-    "continent": "Europe",
-    "region": "Western Europe",
-    "primaryLocale": "de-DE",
-    "currencyCode": "EUR",
-    "callingCode": "+49"
+    "code": "CD",
+    "name": "Democratic Republic of the Congo",
+    "flagEmoji": "🇨🇩",
+    "continent": "Africa",
+    "region": "Middle Africa",
+    "primaryLocale": "fr-CD",
+    "currencyCode": "CDF",
+    "callingCode": "+243"
   },
   {
     "code": "DJ",
@@ -490,24 +470,34 @@
     "callingCode": "+253"
   },
   {
-    "code": "DO",
-    "name": "Dominican Republic",
-    "flagEmoji": "🇩🇴",
+    "code": "DM",
+    "name": "Dominica",
+    "flagEmoji": "🇩🇲",
     "continent": "Central America",
     "region": "Caribbean",
-    "primaryLocale": "es-DO",
-    "currencyCode": "DOP",
-    "callingCode": "+1809"
+    "primaryLocale": "en-DM",
+    "currencyCode": "XCD",
+    "callingCode": "+1767"
   },
   {
-    "code": "CI",
-    "name": "Ivory Coast",
-    "flagEmoji": "🇨🇮",
-    "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "fr-CI",
-    "currencyCode": "XOF",
-    "callingCode": "+225"
+    "code": "DE",
+    "name": "Germany",
+    "flagEmoji": "🇩🇪",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "de-DE",
+    "currencyCode": "EUR",
+    "callingCode": "+49"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "flagEmoji": "🇪🇨",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "es-EC",
+    "currencyCode": "USD",
+    "callingCode": "+593"
   },
   {
     "code": "SV",
@@ -520,44 +510,14 @@
     "callingCode": "+503"
   },
   {
-    "code": "FO",
-    "name": "Faroe Islands",
-    "flagEmoji": "🇫🇴",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "fo-FO",
-    "currencyCode": "FOK",
-    "callingCode": "+298"
-  },
-  {
-    "code": "SZ",
-    "name": "Eswatini",
-    "flagEmoji": "🇸🇿",
+    "code": "CI",
+    "name": "Ivory Coast",
+    "flagEmoji": "🇨🇮",
     "continent": "Africa",
-    "region": "Southern Africa",
-    "primaryLocale": "en-SZ",
-    "currencyCode": "SZL",
-    "callingCode": "+268"
-  },
-  {
-    "code": "ER",
-    "name": "Eritrea",
-    "flagEmoji": "🇪🇷",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "ti-ER",
-    "currencyCode": "ERN",
-    "callingCode": "+291"
-  },
-  {
-    "code": "EE",
-    "name": "Estonia",
-    "flagEmoji": "🇪🇪",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "et-EE",
-    "currencyCode": "EUR",
-    "callingCode": "+372"
+    "region": "Western Africa",
+    "primaryLocale": "fr-CI",
+    "currencyCode": "XOF",
+    "callingCode": "+225"
   },
   {
     "code": "FK",
@@ -570,14 +530,14 @@
     "callingCode": "+500"
   },
   {
-    "code": "FI",
-    "name": "Finland",
-    "flagEmoji": "🇫🇮",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "fi-FI",
-    "currencyCode": "EUR",
-    "callingCode": "+358"
+    "code": "ER",
+    "name": "Eritrea",
+    "flagEmoji": "🇪🇷",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "ti-ER",
+    "currencyCode": "ERN",
+    "callingCode": "+291"
   },
   {
     "code": "FJ",
@@ -590,6 +550,46 @@
     "callingCode": "+679"
   },
   {
+    "code": "SZ",
+    "name": "Eswatini",
+    "flagEmoji": "🇸🇿",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "primaryLocale": "en-SZ",
+    "currencyCode": "SZL",
+    "callingCode": "+268"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "flagEmoji": "🇪🇪",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "et-EE",
+    "currencyCode": "EUR",
+    "callingCode": "+372"
+  },
+  {
+    "code": "FO",
+    "name": "Faroe Islands",
+    "flagEmoji": "🇫🇴",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "fo-FO",
+    "currencyCode": "FOK",
+    "callingCode": "+298"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "flagEmoji": "🇫🇮",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "fi-FI",
+    "currencyCode": "EUR",
+    "callingCode": "+358"
+  },
+  {
     "code": "FM",
     "name": "Federated States of Micronesia",
     "flagEmoji": "🇫🇲",
@@ -600,6 +600,16 @@
     "callingCode": "+691"
   },
   {
+    "code": "GF",
+    "name": "French Guiana",
+    "flagEmoji": "🇬🇫",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "fr-GF",
+    "currencyCode": "EUR",
+    "callingCode": "+594"
+  },
+  {
     "code": "FR",
     "name": "France",
     "flagEmoji": "🇫🇷",
@@ -608,6 +618,16 @@
     "primaryLocale": "fr-FR",
     "currencyCode": "EUR",
     "callingCode": "+33"
+  },
+  {
+    "code": "TF",
+    "name": "French Southern and Antarctic Lands",
+    "flagEmoji": "🇹🇫",
+    "continent": "Oceania",
+    "region": "",
+    "primaryLocale": "fr-TF",
+    "currencyCode": "EUR",
+    "callingCode": "+262"
   },
   {
     "code": "PF",
@@ -628,26 +648,6 @@
     "primaryLocale": "fr-MC",
     "currencyCode": "EUR",
     "callingCode": "+377"
-  },
-  {
-    "code": "GF",
-    "name": "French Guiana",
-    "flagEmoji": "🇬🇫",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "fr-GF",
-    "currencyCode": "EUR",
-    "callingCode": "+594"
-  },
-  {
-    "code": "TF",
-    "name": "French Southern and Antarctic Lands",
-    "flagEmoji": "🇹🇫",
-    "continent": "Oceania",
-    "region": "",
-    "primaryLocale": "fr-TF",
-    "currencyCode": "EUR",
-    "callingCode": "+262"
   },
   {
     "code": "GA",
@@ -720,6 +720,26 @@
     "callingCode": "+590"
   },
   {
+    "code": "GT",
+    "name": "Guatemala",
+    "flagEmoji": "🇬🇹",
+    "continent": "Central America",
+    "region": "Central America",
+    "primaryLocale": "es-GT",
+    "currencyCode": "GTQ",
+    "callingCode": "+502"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "flagEmoji": "🇬🇷",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "el-GR",
+    "currencyCode": "EUR",
+    "callingCode": "+30"
+  },
+  {
     "code": "GU",
     "name": "Guam",
     "flagEmoji": "🇬🇺",
@@ -740,26 +760,6 @@
     "callingCode": "+299"
   },
   {
-    "code": "GG",
-    "name": "Guernsey",
-    "flagEmoji": "🇬🇬",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "en-GG",
-    "currencyCode": "GGP",
-    "callingCode": "+44"
-  },
-  {
-    "code": "GR",
-    "name": "Greece",
-    "flagEmoji": "🇬🇷",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "el-GR",
-    "currencyCode": "EUR",
-    "callingCode": "+30"
-  },
-  {
     "code": "GN",
     "name": "Guinea",
     "flagEmoji": "🇬🇳",
@@ -770,14 +770,24 @@
     "callingCode": "+224"
   },
   {
-    "code": "GT",
-    "name": "Guatemala",
-    "flagEmoji": "🇬🇹",
-    "continent": "Central America",
-    "region": "Central America",
-    "primaryLocale": "es-GT",
-    "currencyCode": "GTQ",
-    "callingCode": "+502"
+    "code": "GY",
+    "name": "Guyana",
+    "flagEmoji": "🇬🇾",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "en-GY",
+    "currencyCode": "GYD",
+    "callingCode": "+592"
+  },
+  {
+    "code": "GG",
+    "name": "Guernsey",
+    "flagEmoji": "🇬🇬",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "en-GG",
+    "currencyCode": "GGP",
+    "callingCode": "+44"
   },
   {
     "code": "GW",
@@ -788,16 +798,6 @@
     "primaryLocale": "pt-GW",
     "currencyCode": "XOF",
     "callingCode": "+245"
-  },
-  {
-    "code": "GY",
-    "name": "Guyana",
-    "flagEmoji": "🇬🇾",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "en-GY",
-    "currencyCode": "GYD",
-    "callingCode": "+592"
   },
   {
     "code": "HT",
@@ -840,16 +840,6 @@
     "callingCode": "+504"
   },
   {
-    "code": "IQ",
-    "name": "Iraq",
-    "flagEmoji": "🇮🇶",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "ar-IQ",
-    "currencyCode": "IQD",
-    "callingCode": "+964"
-  },
-  {
     "code": "IM",
     "name": "Isle of Man",
     "flagEmoji": "🇮🇲",
@@ -858,6 +848,16 @@
     "primaryLocale": "en-IM",
     "currencyCode": "IMP",
     "callingCode": "+44"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "flagEmoji": "🇮🇳",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "primaryLocale": "hi-IN",
+    "currencyCode": "INR",
+    "callingCode": "+91"
   },
   {
     "code": "ID",
@@ -870,6 +870,16 @@
     "callingCode": "+62"
   },
   {
+    "code": "IQ",
+    "name": "Iraq",
+    "flagEmoji": "🇮🇶",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "ar-IQ",
+    "currencyCode": "IQD",
+    "callingCode": "+964"
+  },
+  {
     "code": "IE",
     "name": "Ireland",
     "flagEmoji": "🇮🇪",
@@ -878,16 +888,6 @@
     "primaryLocale": "ga-IE",
     "currencyCode": "EUR",
     "callingCode": "+353"
-  },
-  {
-    "code": "IN",
-    "name": "India",
-    "flagEmoji": "🇮🇳",
-    "continent": "Asia",
-    "region": "Southern Asia",
-    "primaryLocale": "hi-IN",
-    "currencyCode": "INR",
-    "callingCode": "+91"
   },
   {
     "code": "IR",
@@ -910,6 +910,16 @@
     "callingCode": "+1876"
   },
   {
+    "code": "IT",
+    "name": "Italy",
+    "flagEmoji": "🇮🇹",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "it-IT",
+    "currencyCode": "EUR",
+    "callingCode": "+39"
+  },
+  {
     "code": "IS",
     "name": "Iceland",
     "flagEmoji": "🇮🇸",
@@ -918,6 +928,36 @@
     "primaryLocale": "is-IS",
     "currencyCode": "ISK",
     "callingCode": "+354"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "flagEmoji": "🇯🇵",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "primaryLocale": "ja-JP",
+    "currencyCode": "JPY",
+    "callingCode": "+81"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "flagEmoji": "🇯🇴",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "ar-JO",
+    "currencyCode": "JOD",
+    "callingCode": "+962"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "flagEmoji": "🇮🇱",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "he-IL",
+    "currencyCode": "ILS",
+    "callingCode": "+972"
   },
   {
     "code": "YE",
@@ -940,34 +980,14 @@
     "callingCode": "+44"
   },
   {
-    "code": "IT",
-    "name": "Italy",
-    "flagEmoji": "🇮🇹",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "it-IT",
-    "currencyCode": "EUR",
-    "callingCode": "+39"
-  },
-  {
-    "code": "IL",
-    "name": "Israel",
-    "flagEmoji": "🇮🇱",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "he-IL",
-    "currencyCode": "ILS",
-    "callingCode": "+972"
-  },
-  {
-    "code": "JP",
-    "name": "Japan",
-    "flagEmoji": "🇯🇵",
-    "continent": "Asia",
-    "region": "Eastern Asia",
-    "primaryLocale": "ja-JP",
-    "currencyCode": "JPY",
-    "callingCode": "+81"
+    "code": "VI",
+    "name": "Virgin Islands",
+    "flagEmoji": "🇻🇮",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-VI",
+    "currencyCode": "USD",
+    "callingCode": "+1340"
   },
   {
     "code": "VG",
@@ -980,24 +1000,14 @@
     "callingCode": "+1284"
   },
   {
-    "code": "JO",
-    "name": "Jordan",
-    "flagEmoji": "🇯🇴",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "ar-JO",
-    "currencyCode": "JOD",
-    "callingCode": "+962"
-  },
-  {
-    "code": "VI",
-    "name": "Virgin Islands",
-    "flagEmoji": "🇻🇮",
+    "code": "KY",
+    "name": "Cayman Islands",
+    "flagEmoji": "🇰🇾",
     "continent": "Central America",
     "region": "Caribbean",
-    "primaryLocale": "en-VI",
-    "currencyCode": "USD",
-    "callingCode": "+1340"
+    "primaryLocale": "en-KY",
+    "currencyCode": "KYD",
+    "callingCode": "+1345"
   },
   {
     "code": "CA",
@@ -1010,16 +1020,6 @@
     "callingCode": "+1204"
   },
   {
-    "code": "KY",
-    "name": "Cayman Islands",
-    "flagEmoji": "🇰🇾",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-KY",
-    "currencyCode": "KYD",
-    "callingCode": "+1345"
-  },
-  {
     "code": "CM",
     "name": "Cameroon",
     "flagEmoji": "🇨🇲",
@@ -1028,16 +1028,6 @@
     "primaryLocale": "en-CM",
     "currencyCode": "XAF",
     "callingCode": "+237"
-  },
-  {
-    "code": "BQ",
-    "name": "Caribbean Netherlands",
-    "flagEmoji": "🇧🇶",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "nl-BQ",
-    "currencyCode": "USD",
-    "callingCode": "+599"
   },
   {
     "code": "CV",
@@ -1050,14 +1040,14 @@
     "callingCode": "+238"
   },
   {
-    "code": "KE",
-    "name": "Kenya",
-    "flagEmoji": "🇰🇪",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "en-KE",
-    "currencyCode": "KES",
-    "callingCode": "+254"
+    "code": "BQ",
+    "name": "Caribbean Netherlands",
+    "flagEmoji": "🇧🇶",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "nl-BQ",
+    "currencyCode": "USD",
+    "callingCode": "+599"
   },
   {
     "code": "KH",
@@ -1090,6 +1080,16 @@
     "callingCode": "+974"
   },
   {
+    "code": "KE",
+    "name": "Kenya",
+    "flagEmoji": "🇰🇪",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "en-KE",
+    "currencyCode": "KES",
+    "callingCode": "+254"
+  },
+  {
     "code": "KG",
     "name": "Kyrgyzstan",
     "flagEmoji": "🇰🇬",
@@ -1110,24 +1110,14 @@
     "callingCode": "+686"
   },
   {
-    "code": "UM",
-    "name": "United States Minor Outlying Islands",
-    "flagEmoji": "🇺🇲",
-    "continent": "Oceania",
-    "region": "North America",
-    "primaryLocale": "en-UM",
-    "currencyCode": "USD",
-    "callingCode": "+268"
-  },
-  {
-    "code": "CO",
-    "name": "Colombia",
-    "flagEmoji": "🇨🇴",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "es-CO",
-    "currencyCode": "COP",
-    "callingCode": "+57"
+    "code": "KM",
+    "name": "Comoros",
+    "flagEmoji": "🇰🇲",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "ar-KM",
+    "currencyCode": "KMF",
+    "callingCode": "+269"
   },
   {
     "code": "CC",
@@ -1140,24 +1130,34 @@
     "callingCode": "+61"
   },
   {
-    "code": "KM",
-    "name": "Comoros",
-    "flagEmoji": "🇰🇲",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "ar-KM",
-    "currencyCode": "KMF",
-    "callingCode": "+269"
+    "code": "CO",
+    "name": "Colombia",
+    "flagEmoji": "🇨🇴",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "es-CO",
+    "currencyCode": "COP",
+    "callingCode": "+57"
   },
   {
-    "code": "XK",
-    "name": "Kosovo",
-    "flagEmoji": "🇽🇰",
+    "code": "HR",
+    "name": "Croatia",
+    "flagEmoji": "🇭🇷",
     "continent": "Europe",
     "region": "Southeast Europe",
-    "primaryLocale": "sq-XK",
+    "primaryLocale": "hr-HR",
     "currencyCode": "EUR",
-    "callingCode": "+383"
+    "callingCode": "+385"
+  },
+  {
+    "code": "UM",
+    "name": "United States Minor Outlying Islands",
+    "flagEmoji": "🇺🇲",
+    "continent": "Oceania",
+    "region": "North America",
+    "primaryLocale": "en-UM",
+    "currencyCode": "USD",
+    "callingCode": "+268"
   },
   {
     "code": "CU",
@@ -1168,6 +1168,16 @@
     "primaryLocale": "es-CU",
     "currencyCode": "CUP",
     "callingCode": "+53"
+  },
+  {
+    "code": "XK",
+    "name": "Kosovo",
+    "flagEmoji": "🇽🇰",
+    "continent": "Europe",
+    "region": "Southeast Europe",
+    "primaryLocale": "sq-XK",
+    "currencyCode": "EUR",
+    "callingCode": "+383"
   },
   {
     "code": "KW",
@@ -1190,16 +1200,6 @@
     "callingCode": "+856"
   },
   {
-    "code": "HR",
-    "name": "Croatia",
-    "flagEmoji": "🇭🇷",
-    "continent": "Europe",
-    "region": "Southeast Europe",
-    "primaryLocale": "hr-HR",
-    "currencyCode": "EUR",
-    "callingCode": "+385"
-  },
-  {
     "code": "LS",
     "name": "Lesotho",
     "flagEmoji": "🇱🇸",
@@ -1210,14 +1210,14 @@
     "callingCode": "+266"
   },
   {
-    "code": "LV",
-    "name": "Latvia",
-    "flagEmoji": "🇱🇻",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "lv-LV",
-    "currencyCode": "EUR",
-    "callingCode": "+371"
+    "code": "LB",
+    "name": "Lebanon",
+    "flagEmoji": "🇱🇧",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "ar-LB",
+    "currencyCode": "LBP",
+    "callingCode": "+961"
   },
   {
     "code": "LY",
@@ -1240,16 +1240,6 @@
     "callingCode": "+231"
   },
   {
-    "code": "LB",
-    "name": "Lebanon",
-    "flagEmoji": "🇱🇧",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "ar-LB",
-    "currencyCode": "LBP",
-    "callingCode": "+961"
-  },
-  {
     "code": "LT",
     "name": "Lithuania",
     "flagEmoji": "🇱🇹",
@@ -1260,14 +1250,24 @@
     "callingCode": "+370"
   },
   {
-    "code": "LI",
-    "name": "Liechtenstein",
-    "flagEmoji": "🇱🇮",
+    "code": "LU",
+    "name": "Luxembourg",
+    "flagEmoji": "🇱🇺",
     "continent": "Europe",
     "region": "Western Europe",
-    "primaryLocale": "de-LI",
-    "currencyCode": "CHF",
-    "callingCode": "+423"
+    "primaryLocale": "fr-LU",
+    "currencyCode": "EUR",
+    "callingCode": "+352"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "flagEmoji": "🇱🇻",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "lv-LV",
+    "currencyCode": "EUR",
+    "callingCode": "+371"
   },
   {
     "code": "MO",
@@ -1280,14 +1280,14 @@
     "callingCode": "+853"
   },
   {
-    "code": "LU",
-    "name": "Luxembourg",
-    "flagEmoji": "🇱🇺",
+    "code": "LI",
+    "name": "Liechtenstein",
+    "flagEmoji": "🇱🇮",
     "continent": "Europe",
     "region": "Western Europe",
-    "primaryLocale": "fr-LU",
-    "currencyCode": "EUR",
-    "callingCode": "+352"
+    "primaryLocale": "de-LI",
+    "currencyCode": "CHF",
+    "callingCode": "+423"
   },
   {
     "code": "MG",
@@ -1320,14 +1320,14 @@
     "callingCode": "+60"
   },
   {
-    "code": "MW",
-    "name": "Malawi",
-    "flagEmoji": "🇲🇼",
+    "code": "ML",
+    "name": "Mali",
+    "flagEmoji": "🇲🇱",
     "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "en-MW",
-    "currencyCode": "MWK",
-    "callingCode": "+265"
+    "region": "Western Africa",
+    "primaryLocale": "fr-ML",
+    "currencyCode": "XOF",
+    "callingCode": "+223"
   },
   {
     "code": "MA",
@@ -1340,44 +1340,14 @@
     "callingCode": "+212"
   },
   {
-    "code": "ML",
-    "name": "Mali",
-    "flagEmoji": "🇲🇱",
+    "code": "MW",
+    "name": "Malawi",
+    "flagEmoji": "🇲🇼",
     "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "fr-ML",
-    "currencyCode": "XOF",
-    "callingCode": "+223"
-  },
-  {
-    "code": "MT",
-    "name": "Malta",
-    "flagEmoji": "🇲🇹",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "mt-MT",
-    "currencyCode": "EUR",
-    "callingCode": "+356"
-  },
-  {
-    "code": "MH",
-    "name": "Marshall Islands",
-    "flagEmoji": "🇲🇭",
-    "continent": "Oceania",
-    "region": "Micronesia",
-    "primaryLocale": "en-MH",
-    "currencyCode": "USD",
-    "callingCode": "+692"
-  },
-  {
-    "code": "MR",
-    "name": "Mauritania",
-    "flagEmoji": "🇲🇷",
-    "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "ar-MR",
-    "currencyCode": "MRO",
-    "callingCode": "+222"
+    "region": "Eastern Africa",
+    "primaryLocale": "en-MW",
+    "currencyCode": "MWK",
+    "callingCode": "+265"
   },
   {
     "code": "MQ",
@@ -1390,6 +1360,36 @@
     "callingCode": "+596"
   },
   {
+    "code": "MT",
+    "name": "Malta",
+    "flagEmoji": "🇲🇹",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "mt-MT",
+    "currencyCode": "EUR",
+    "callingCode": "+356"
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "flagEmoji": "🇲🇷",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "primaryLocale": "ar-MR",
+    "currencyCode": "MRO",
+    "callingCode": "+222"
+  },
+  {
+    "code": "MH",
+    "name": "Marshall Islands",
+    "flagEmoji": "🇲🇭",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "primaryLocale": "en-MH",
+    "currencyCode": "USD",
+    "callingCode": "+692"
+  },
+  {
     "code": "MU",
     "name": "Mauritius",
     "flagEmoji": "🇲🇺",
@@ -1398,16 +1398,6 @@
     "primaryLocale": "en-MU",
     "currencyCode": "MUR",
     "callingCode": "+230"
-  },
-  {
-    "code": "MX",
-    "name": "Mexico",
-    "flagEmoji": "🇲🇽",
-    "continent": "Central America",
-    "region": "North America",
-    "primaryLocale": "es-MX",
-    "currencyCode": "MXN",
-    "callingCode": "+52"
   },
   {
     "code": "YT",
@@ -1420,16 +1410,6 @@
     "callingCode": "+262"
   },
   {
-    "code": "MZ",
-    "name": "Mozambique",
-    "flagEmoji": "🇲🇿",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "pt-MZ",
-    "currencyCode": "MZN",
-    "callingCode": "+258"
-  },
-  {
     "code": "MN",
     "name": "Mongolia",
     "flagEmoji": "🇲🇳",
@@ -1438,6 +1418,16 @@
     "primaryLocale": "mn-MN",
     "currencyCode": "MNT",
     "callingCode": "+976"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "flagEmoji": "🇲🇽",
+    "continent": "Central America",
+    "region": "North America",
+    "primaryLocale": "es-MX",
+    "currencyCode": "MXN",
+    "callingCode": "+52"
   },
   {
     "code": "MD",
@@ -1450,24 +1440,14 @@
     "callingCode": "+373"
   },
   {
-    "code": "ME",
-    "name": "Montenegro",
-    "flagEmoji": "🇲🇪",
-    "continent": "Europe",
-    "region": "Southeast Europe",
-    "primaryLocale": "sr-ME",
-    "currencyCode": "EUR",
-    "callingCode": "+382"
-  },
-  {
-    "code": "NR",
-    "name": "Nauru",
-    "flagEmoji": "🇳🇷",
-    "continent": "Oceania",
-    "region": "Micronesia",
-    "primaryLocale": "en-NR",
-    "currencyCode": "AUD",
-    "callingCode": "+674"
+    "code": "NA",
+    "name": "Namibia",
+    "flagEmoji": "🇳🇦",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "primaryLocale": "en-NA",
+    "currencyCode": "NAD",
+    "callingCode": "+264"
   },
   {
     "code": "MS",
@@ -1480,14 +1460,34 @@
     "callingCode": "+1664"
   },
   {
-    "code": "NA",
-    "name": "Namibia",
-    "flagEmoji": "🇳🇦",
+    "code": "NR",
+    "name": "Nauru",
+    "flagEmoji": "🇳🇷",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "primaryLocale": "en-NR",
+    "currencyCode": "AUD",
+    "callingCode": "+674"
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "flagEmoji": "🇲🇪",
+    "continent": "Europe",
+    "region": "Southeast Europe",
+    "primaryLocale": "sr-ME",
+    "currencyCode": "EUR",
+    "callingCode": "+382"
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "flagEmoji": "🇲🇿",
     "continent": "Africa",
-    "region": "Southern Africa",
-    "primaryLocale": "en-NA",
-    "currencyCode": "NAD",
-    "callingCode": "+264"
+    "region": "Eastern Africa",
+    "primaryLocale": "pt-MZ",
+    "currencyCode": "MZN",
+    "callingCode": "+258"
   },
   {
     "code": "MM",
@@ -1500,14 +1500,24 @@
     "callingCode": "+95"
   },
   {
-    "code": "NI",
-    "name": "Nicaragua",
-    "flagEmoji": "🇳🇮",
-    "continent": "Central America",
-    "region": "Central America",
-    "primaryLocale": "es-NI",
-    "currencyCode": "NIO",
-    "callingCode": "+505"
+    "code": "NC",
+    "name": "New Caledonia",
+    "flagEmoji": "🇳🇨",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "primaryLocale": "fr-NC",
+    "currencyCode": "XPF",
+    "callingCode": "+687"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "flagEmoji": "🇳🇱",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "nl-NL",
+    "currencyCode": "EUR",
+    "callingCode": "+31"
   },
   {
     "code": "NZ",
@@ -1530,24 +1540,14 @@
     "callingCode": "+234"
   },
   {
-    "code": "NP",
-    "name": "Nepal",
-    "flagEmoji": "🇳🇵",
-    "continent": "Asia",
-    "region": "Southern Asia",
-    "primaryLocale": "ne-NP",
-    "currencyCode": "NPR",
-    "callingCode": "+977"
-  },
-  {
-    "code": "NL",
-    "name": "Netherlands",
-    "flagEmoji": "🇳🇱",
-    "continent": "Europe",
-    "region": "Western Europe",
-    "primaryLocale": "nl-NL",
-    "currencyCode": "EUR",
-    "callingCode": "+31"
+    "code": "NI",
+    "name": "Nicaragua",
+    "flagEmoji": "🇳🇮",
+    "continent": "Central America",
+    "region": "Central America",
+    "primaryLocale": "es-NI",
+    "currencyCode": "NIO",
+    "callingCode": "+505"
   },
   {
     "code": "NU",
@@ -1558,26 +1558,6 @@
     "primaryLocale": "en-NU",
     "currencyCode": "NZD",
     "callingCode": "+683"
-  },
-  {
-    "code": "NC",
-    "name": "New Caledonia",
-    "flagEmoji": "🇳🇨",
-    "continent": "Oceania",
-    "region": "Melanesia",
-    "primaryLocale": "fr-NC",
-    "currencyCode": "XPF",
-    "callingCode": "+687"
-  },
-  {
-    "code": "KP",
-    "name": "North Korea",
-    "flagEmoji": "🇰🇵",
-    "continent": "Asia",
-    "region": "Eastern Asia",
-    "primaryLocale": "ko-KP",
-    "currencyCode": "KPW",
-    "callingCode": "+850"
   },
   {
     "code": "NE",
@@ -1600,24 +1580,34 @@
     "callingCode": "+1670"
   },
   {
-    "code": "NO",
-    "name": "Norway",
-    "flagEmoji": "🇳🇴",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "no-NO",
-    "currencyCode": "NOK",
-    "callingCode": "+47"
+    "code": "NP",
+    "name": "Nepal",
+    "flagEmoji": "🇳🇵",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "primaryLocale": "ne-NP",
+    "currencyCode": "NPR",
+    "callingCode": "+977"
   },
   {
-    "code": "AT",
-    "name": "Austria",
-    "flagEmoji": "🇦🇹",
-    "continent": "Europe",
-    "region": "Central Europe",
-    "primaryLocale": "de-AT",
-    "currencyCode": "EUR",
-    "callingCode": "+43"
+    "code": "KP",
+    "name": "North Korea",
+    "flagEmoji": "🇰🇵",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "primaryLocale": "ko-KP",
+    "currencyCode": "KPW",
+    "callingCode": "+850"
+  },
+  {
+    "code": "NF",
+    "name": "Norfolk Island",
+    "flagEmoji": "🇳🇫",
+    "continent": "Australia",
+    "region": "Australia and New Zealand",
+    "primaryLocale": "en-NF",
+    "currencyCode": "AUD",
+    "callingCode": "+672"
   },
   {
     "code": "MK",
@@ -1630,14 +1620,24 @@
     "callingCode": "+389"
   },
   {
-    "code": "NF",
-    "name": "Norfolk Island",
-    "flagEmoji": "🇳🇫",
-    "continent": "Australia",
-    "region": "Australia and New Zealand",
-    "primaryLocale": "en-NF",
-    "currencyCode": "AUD",
-    "callingCode": "+672"
+    "code": "AT",
+    "name": "Austria",
+    "flagEmoji": "🇦🇹",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "primaryLocale": "de-AT",
+    "currencyCode": "EUR",
+    "callingCode": "+43"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "flagEmoji": "🇳🇴",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "no-NO",
+    "currencyCode": "NOK",
+    "callingCode": "+47"
   },
   {
     "code": "OM",
@@ -1660,14 +1660,14 @@
     "callingCode": "+670"
   },
   {
-    "code": "PS",
-    "name": "Palestine",
-    "flagEmoji": "🇵🇸",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "ar-PS",
-    "currencyCode": "ILS",
-    "callingCode": "+970"
+    "code": "PW",
+    "name": "Palau",
+    "flagEmoji": "🇵🇼",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "primaryLocale": "en-PW",
+    "currencyCode": "USD",
+    "callingCode": "+680"
   },
   {
     "code": "PK",
@@ -1680,14 +1680,14 @@
     "callingCode": "+92"
   },
   {
-    "code": "PW",
-    "name": "Palau",
-    "flagEmoji": "🇵🇼",
-    "continent": "Oceania",
-    "region": "Micronesia",
-    "primaryLocale": "en-PW",
-    "currencyCode": "USD",
-    "callingCode": "+680"
+    "code": "PS",
+    "name": "Palestine",
+    "flagEmoji": "🇵🇸",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "ar-PS",
+    "currencyCode": "ILS",
+    "callingCode": "+970"
   },
   {
     "code": "PA",
@@ -1700,26 +1700,6 @@
     "callingCode": "+507"
   },
   {
-    "code": "PE",
-    "name": "Peru",
-    "flagEmoji": "🇵🇪",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "es-PE",
-    "currencyCode": "PEN",
-    "callingCode": "+51"
-  },
-  {
-    "code": "PY",
-    "name": "Paraguay",
-    "flagEmoji": "🇵🇾",
-    "continent": "South America",
-    "region": "South America",
-    "primaryLocale": "es-PY",
-    "currencyCode": "PYG",
-    "callingCode": "+595"
-  },
-  {
     "code": "PG",
     "name": "Papua New Guinea",
     "flagEmoji": "🇵🇬",
@@ -1728,6 +1708,16 @@
     "primaryLocale": "en-PG",
     "currencyCode": "PGK",
     "callingCode": "+675"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "flagEmoji": "🇵🇪",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "es-PE",
+    "currencyCode": "PEN",
+    "callingCode": "+51"
   },
   {
     "code": "PH",
@@ -1750,6 +1740,16 @@
     "callingCode": "+351"
   },
   {
+    "code": "PY",
+    "name": "Paraguay",
+    "flagEmoji": "🇵🇾",
+    "continent": "South America",
+    "region": "South America",
+    "primaryLocale": "es-PY",
+    "currencyCode": "PYG",
+    "callingCode": "+595"
+  },
+  {
     "code": "PN",
     "name": "Pitcairn Islands",
     "flagEmoji": "🇵🇳",
@@ -1758,36 +1758,6 @@
     "primaryLocale": "en-PN",
     "currencyCode": "NZD",
     "callingCode": "+64"
-  },
-  {
-    "code": "PR",
-    "name": "Puerto Rico",
-    "flagEmoji": "🇵🇷",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "es-PR",
-    "currencyCode": "USD",
-    "callingCode": "+1787"
-  },
-  {
-    "code": "RE",
-    "name": "Reunion",
-    "flagEmoji": "🇷🇪",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "fr-RE",
-    "currencyCode": "EUR",
-    "callingCode": "+262"
-  },
-  {
-    "code": "PL",
-    "name": "Poland",
-    "flagEmoji": "🇵🇱",
-    "continent": "Europe",
-    "region": "Central Europe",
-    "primaryLocale": "pl-PL",
-    "currencyCode": "PLN",
-    "callingCode": "+48"
   },
   {
     "code": "CG",
@@ -1800,6 +1770,36 @@
     "callingCode": "+242"
   },
   {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "flagEmoji": "🇵🇷",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "es-PR",
+    "currencyCode": "USD",
+    "callingCode": "+1787"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "flagEmoji": "🇵🇱",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "primaryLocale": "pl-PL",
+    "currencyCode": "PLN",
+    "callingCode": "+48"
+  },
+  {
+    "code": "RE",
+    "name": "Reunion",
+    "flagEmoji": "🇷🇪",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "fr-RE",
+    "currencyCode": "EUR",
+    "callingCode": "+262"
+  },
+  {
     "code": "WS",
     "name": "Samoa",
     "flagEmoji": "🇼🇸",
@@ -1808,46 +1808,6 @@
     "primaryLocale": "sm-WS",
     "currencyCode": "WST",
     "callingCode": "+685"
-  },
-  {
-    "code": "MF",
-    "name": "Saint Martin",
-    "flagEmoji": "🇲🇫",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-MF",
-    "currencyCode": "EUR",
-    "callingCode": "+590"
-  },
-  {
-    "code": "RO",
-    "name": "Romania",
-    "flagEmoji": "🇷🇴",
-    "continent": "Europe",
-    "region": "Southeast Europe",
-    "primaryLocale": "ro-RO",
-    "currencyCode": "RON",
-    "callingCode": "+40"
-  },
-  {
-    "code": "BL",
-    "name": "Saint Barthelemy",
-    "flagEmoji": "🇧🇱",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "fr-BL",
-    "currencyCode": "EUR",
-    "callingCode": "+590"
-  },
-  {
-    "code": "ZM",
-    "name": "Zambia",
-    "flagEmoji": "🇿🇲",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "en-ZM",
-    "currencyCode": "ZMW",
-    "callingCode": "+260"
   },
   {
     "code": "RW",
@@ -1860,24 +1820,24 @@
     "callingCode": "+250"
   },
   {
-    "code": "SM",
-    "name": "San Marino",
-    "flagEmoji": "🇸🇲",
+    "code": "RO",
+    "name": "Romania",
+    "flagEmoji": "🇷🇴",
     "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "it-SM",
-    "currencyCode": "EUR",
-    "callingCode": "+378"
+    "region": "Southeast Europe",
+    "primaryLocale": "ro-RO",
+    "currencyCode": "RON",
+    "callingCode": "+40"
   },
   {
-    "code": "ST",
-    "name": "Sao Tome and Principe",
-    "flagEmoji": "🇸🇹",
-    "continent": "Africa",
-    "region": "Middle Africa",
-    "primaryLocale": "pt-ST",
-    "currencyCode": "STD",
-    "callingCode": "+239"
+    "code": "MF",
+    "name": "Saint Martin",
+    "flagEmoji": "🇲🇫",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-MF",
+    "currencyCode": "EUR",
+    "callingCode": "+590"
   },
   {
     "code": "RU",
@@ -1900,14 +1860,44 @@
     "callingCode": "+677"
   },
   {
-    "code": "CH",
-    "name": "Switzerland",
-    "flagEmoji": "🇨🇭",
+    "code": "BL",
+    "name": "Saint Barthelemy",
+    "flagEmoji": "🇧🇱",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "fr-BL",
+    "currencyCode": "EUR",
+    "callingCode": "+590"
+  },
+  {
+    "code": "SM",
+    "name": "San Marino",
+    "flagEmoji": "🇸🇲",
     "continent": "Europe",
-    "region": "Western Europe",
-    "primaryLocale": "de-CH",
-    "currencyCode": "CHF",
-    "callingCode": "+41"
+    "region": "Southern Europe",
+    "primaryLocale": "it-SM",
+    "currencyCode": "EUR",
+    "callingCode": "+378"
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "flagEmoji": "🇿🇲",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "en-ZM",
+    "currencyCode": "ZMW",
+    "callingCode": "+260"
+  },
+  {
+    "code": "ST",
+    "name": "Sao Tome and Principe",
+    "flagEmoji": "🇸🇹",
+    "continent": "Africa",
+    "region": "Middle Africa",
+    "primaryLocale": "pt-ST",
+    "currencyCode": "STD",
+    "callingCode": "+239"
   },
   {
     "code": "SA",
@@ -1920,26 +1910,6 @@
     "callingCode": "+966"
   },
   {
-    "code": "SN",
-    "name": "Senegal",
-    "flagEmoji": "🇸🇳",
-    "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "fr-SN",
-    "currencyCode": "XOF",
-    "callingCode": "+221"
-  },
-  {
-    "code": "SC",
-    "name": "Seychelles",
-    "flagEmoji": "🇸🇨",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "fr-SC",
-    "currencyCode": "SCR",
-    "callingCode": "+248"
-  },
-  {
     "code": "SE",
     "name": "Sweden",
     "flagEmoji": "🇸🇪",
@@ -1950,14 +1920,24 @@
     "callingCode": "+46"
   },
   {
-    "code": "ZW",
-    "name": "Zimbabwe",
-    "flagEmoji": "🇿🇼",
+    "code": "CH",
+    "name": "Switzerland",
+    "flagEmoji": "🇨🇭",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "de-CH",
+    "currencyCode": "CHF",
+    "callingCode": "+41"
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "flagEmoji": "🇸🇳",
     "continent": "Africa",
-    "region": "Southern Africa",
-    "primaryLocale": "en-ZW",
-    "currencyCode": "ZWL",
-    "callingCode": "+263"
+    "region": "Western Africa",
+    "primaryLocale": "fr-SN",
+    "currencyCode": "XOF",
+    "callingCode": "+221"
   },
   {
     "code": "SL",
@@ -1970,6 +1950,16 @@
     "callingCode": "+232"
   },
   {
+    "code": "SC",
+    "name": "Seychelles",
+    "flagEmoji": "🇸🇨",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "fr-SC",
+    "currencyCode": "SCR",
+    "callingCode": "+248"
+  },
+  {
     "code": "RS",
     "name": "Serbia",
     "flagEmoji": "🇷🇸",
@@ -1980,14 +1970,14 @@
     "callingCode": "+381"
   },
   {
-    "code": "SX",
-    "name": "Sint Maarten",
-    "flagEmoji": "🇸🇽",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "nl-SX",
-    "currencyCode": "XCG",
-    "callingCode": "+1721"
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "flagEmoji": "🇿🇼",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "primaryLocale": "en-ZW",
+    "currencyCode": "ZWL",
+    "callingCode": "+263"
   },
   {
     "code": "SG",
@@ -2000,44 +1990,14 @@
     "callingCode": "+65"
   },
   {
-    "code": "KN",
-    "name": "Saint Kitts and Nevis",
-    "flagEmoji": "🇰🇳",
+    "code": "SX",
+    "name": "Sint Maarten",
+    "flagEmoji": "🇸🇽",
     "continent": "Central America",
     "region": "Caribbean",
-    "primaryLocale": "en-KN",
-    "currencyCode": "XCD",
-    "callingCode": "+1869"
-  },
-  {
-    "code": "SK",
-    "name": "Slovakia",
-    "flagEmoji": "🇸🇰",
-    "continent": "Europe",
-    "region": "Central Europe",
-    "primaryLocale": "sk-SK",
-    "currencyCode": "EUR",
-    "callingCode": "+421"
-  },
-  {
-    "code": "LC",
-    "name": "Saint Lucia",
-    "flagEmoji": "🇱🇨",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-LC",
-    "currencyCode": "XCD",
-    "callingCode": "+1758"
-  },
-  {
-    "code": "PM",
-    "name": "Saint Pierre and Miquelon",
-    "flagEmoji": "🇵🇲",
-    "continent": "North America",
-    "region": "North America",
-    "primaryLocale": "fr-PM",
-    "currencyCode": "EUR",
-    "callingCode": "+508"
+    "primaryLocale": "nl-SX",
+    "currencyCode": "XCG",
+    "callingCode": "+1721"
   },
   {
     "code": "SH",
@@ -2050,14 +2010,24 @@
     "callingCode": "+290"
   },
   {
-    "code": "SO",
-    "name": "Somalia",
-    "flagEmoji": "🇸🇴",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "so-SO",
-    "currencyCode": "SOS",
-    "callingCode": "+252"
+    "code": "LC",
+    "name": "Saint Lucia",
+    "flagEmoji": "🇱🇨",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-LC",
+    "currencyCode": "XCD",
+    "callingCode": "+1758"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "flagEmoji": "🇪🇸",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "es-ES",
+    "currencyCode": "EUR",
+    "callingCode": "+34"
   },
   {
     "code": "SI",
@@ -2070,14 +2040,34 @@
     "callingCode": "+386"
   },
   {
-    "code": "ES",
-    "name": "Spain",
-    "flagEmoji": "🇪🇸",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "es-ES",
+    "code": "KN",
+    "name": "Saint Kitts and Nevis",
+    "flagEmoji": "🇰🇳",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-KN",
+    "currencyCode": "XCD",
+    "callingCode": "+1869"
+  },
+  {
+    "code": "PM",
+    "name": "Saint Pierre and Miquelon",
+    "flagEmoji": "🇵🇲",
+    "continent": "North America",
+    "region": "North America",
+    "primaryLocale": "fr-PM",
     "currencyCode": "EUR",
-    "callingCode": "+34"
+    "callingCode": "+508"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "flagEmoji": "🇸🇰",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "primaryLocale": "sk-SK",
+    "currencyCode": "EUR",
+    "callingCode": "+421"
   },
   {
     "code": "LK",
@@ -2100,6 +2090,16 @@
     "callingCode": "+1784"
   },
   {
+    "code": "SO",
+    "name": "Somalia",
+    "flagEmoji": "🇸🇴",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "so-SO",
+    "currencyCode": "SOS",
+    "callingCode": "+252"
+  },
+  {
     "code": "ZA",
     "name": "South Africa",
     "flagEmoji": "🇿🇦",
@@ -2120,16 +2120,6 @@
     "callingCode": "+249"
   },
   {
-    "code": "SS",
-    "name": "South Sudan",
-    "flagEmoji": "🇸🇸",
-    "continent": "Africa",
-    "region": "Middle Africa",
-    "primaryLocale": "en-SS",
-    "currencyCode": "SSP",
-    "callingCode": "+211"
-  },
-  {
     "code": "SR",
     "name": "Suriname",
     "flagEmoji": "🇸🇷",
@@ -2138,16 +2128,6 @@
     "primaryLocale": "nl-SR",
     "currencyCode": "SRD",
     "callingCode": "+597"
-  },
-  {
-    "code": "KR",
-    "name": "South Korea",
-    "flagEmoji": "🇰🇷",
-    "continent": "Asia",
-    "region": "Eastern Asia",
-    "primaryLocale": "ko-KR",
-    "currencyCode": "KRW",
-    "callingCode": "+82"
   },
   {
     "code": "GS",
@@ -2160,14 +2140,24 @@
     "callingCode": "+500"
   },
   {
-    "code": "SJ",
-    "name": "Svalbard",
-    "flagEmoji": "🇸🇯",
-    "continent": "Europe",
-    "region": "Northern Europe",
-    "primaryLocale": "no-SJ",
-    "currencyCode": "NOK",
-    "callingCode": "+4779"
+    "code": "KR",
+    "name": "South Korea",
+    "flagEmoji": "🇰🇷",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "primaryLocale": "ko-KR",
+    "currencyCode": "KRW",
+    "callingCode": "+82"
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "flagEmoji": "🇸🇸",
+    "continent": "Africa",
+    "region": "Middle Africa",
+    "primaryLocale": "en-SS",
+    "currencyCode": "SSP",
+    "callingCode": "+211"
   },
   {
     "code": "SY",
@@ -2178,6 +2168,16 @@
     "primaryLocale": "ar-SY",
     "currencyCode": "SYP",
     "callingCode": "+963"
+  },
+  {
+    "code": "SJ",
+    "name": "Svalbard",
+    "flagEmoji": "🇸🇯",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "no-SJ",
+    "currencyCode": "NOK",
+    "callingCode": "+4779"
   },
   {
     "code": "TW",
@@ -2200,16 +2200,6 @@
     "callingCode": "+992"
   },
   {
-    "code": "TZ",
-    "name": "Tanzania",
-    "flagEmoji": "🇹🇿",
-    "continent": "Africa",
-    "region": "Eastern Africa",
-    "primaryLocale": "sw-TZ",
-    "currencyCode": "TZS",
-    "callingCode": "+255"
-  },
-  {
     "code": "TK",
     "name": "Tokelau",
     "flagEmoji": "🇹🇰",
@@ -2218,46 +2208,6 @@
     "primaryLocale": "en-TK",
     "currencyCode": "NZD",
     "callingCode": "+690"
-  },
-  {
-    "code": "TG",
-    "name": "Togo",
-    "flagEmoji": "🇹🇬",
-    "continent": "Africa",
-    "region": "Western Africa",
-    "primaryLocale": "fr-TG",
-    "currencyCode": "XOF",
-    "callingCode": "+228"
-  },
-  {
-    "code": "TT",
-    "name": "Trinidad and Tobago",
-    "flagEmoji": "🇹🇹",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-TT",
-    "currencyCode": "TTD",
-    "callingCode": "+1868"
-  },
-  {
-    "code": "TD",
-    "name": "Chad",
-    "flagEmoji": "🇹🇩",
-    "continent": "Africa",
-    "region": "Middle Africa",
-    "primaryLocale": "fr-TD",
-    "currencyCode": "XAF",
-    "callingCode": "+235"
-  },
-  {
-    "code": "TH",
-    "name": "Thailand",
-    "flagEmoji": "🇹🇭",
-    "continent": "Asia",
-    "region": "South-Eastern Asia",
-    "primaryLocale": "th-TH",
-    "currencyCode": "THB",
-    "callingCode": "+66"
   },
   {
     "code": "TO",
@@ -2270,14 +2220,44 @@
     "callingCode": "+676"
   },
   {
-    "code": "CZ",
-    "name": "Czechia",
-    "flagEmoji": "🇨🇿",
-    "continent": "Europe",
-    "region": "Central Europe",
-    "primaryLocale": "cs-CZ",
-    "currencyCode": "CZK",
-    "callingCode": "+420"
+    "code": "TH",
+    "name": "Thailand",
+    "flagEmoji": "🇹🇭",
+    "continent": "Asia",
+    "region": "South-Eastern Asia",
+    "primaryLocale": "th-TH",
+    "currencyCode": "THB",
+    "callingCode": "+66"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "flagEmoji": "🇹🇿",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "primaryLocale": "sw-TZ",
+    "currencyCode": "TZS",
+    "callingCode": "+255"
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "flagEmoji": "🇹🇬",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "primaryLocale": "fr-TG",
+    "currencyCode": "XOF",
+    "callingCode": "+228"
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "flagEmoji": "🇹🇩",
+    "continent": "Africa",
+    "region": "Middle Africa",
+    "primaryLocale": "fr-TD",
+    "currencyCode": "XAF",
+    "callingCode": "+235"
   },
   {
     "code": "TN",
@@ -2288,6 +2268,26 @@
     "primaryLocale": "ar-TN",
     "currencyCode": "TND",
     "callingCode": "+216"
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "flagEmoji": "🇹🇹",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-TT",
+    "currencyCode": "TTD",
+    "callingCode": "+1868"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "flagEmoji": "🇨🇿",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "primaryLocale": "cs-CZ",
+    "currencyCode": "CZK",
+    "callingCode": "+420"
   },
   {
     "code": "TR",
@@ -2310,36 +2310,6 @@
     "callingCode": "+678"
   },
   {
-    "code": "VA",
-    "name": "Vatican City",
-    "flagEmoji": "🇻🇦",
-    "continent": "Europe",
-    "region": "Southern Europe",
-    "primaryLocale": "la-VA",
-    "currencyCode": "EUR",
-    "callingCode": "+3906698"
-  },
-  {
-    "code": "TM",
-    "name": "Turkmenistan",
-    "flagEmoji": "🇹🇲",
-    "continent": "Asia",
-    "region": "Central Asia",
-    "primaryLocale": "tk-TM",
-    "currencyCode": "TMT",
-    "callingCode": "+993"
-  },
-  {
-    "code": "UA",
-    "name": "Ukraine",
-    "flagEmoji": "🇺🇦",
-    "continent": "Europe",
-    "region": "Eastern Europe",
-    "primaryLocale": "uk-UA",
-    "currencyCode": "UAH",
-    "callingCode": "+380"
-  },
-  {
     "code": "UY",
     "name": "Uruguay",
     "flagEmoji": "🇺🇾",
@@ -2348,16 +2318,6 @@
     "primaryLocale": "es-UY",
     "currencyCode": "UYU",
     "callingCode": "+598"
-  },
-  {
-    "code": "TC",
-    "name": "Turks and Caicos Islands",
-    "flagEmoji": "🇹🇨",
-    "continent": "Central America",
-    "region": "Caribbean",
-    "primaryLocale": "en-TC",
-    "currencyCode": "USD",
-    "callingCode": "+1649"
   },
   {
     "code": "TV",
@@ -2370,6 +2330,26 @@
     "callingCode": "+688"
   },
   {
+    "code": "TC",
+    "name": "Turks and Caicos Islands",
+    "flagEmoji": "🇹🇨",
+    "continent": "Central America",
+    "region": "Caribbean",
+    "primaryLocale": "en-TC",
+    "currencyCode": "USD",
+    "callingCode": "+1649"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "flagEmoji": "🇺🇦",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "primaryLocale": "uk-UA",
+    "currencyCode": "UAH",
+    "callingCode": "+380"
+  },
+  {
     "code": "UG",
     "name": "Uganda",
     "flagEmoji": "🇺🇬",
@@ -2380,14 +2360,14 @@
     "callingCode": "+256"
   },
   {
-    "code": "HU",
-    "name": "Hungary",
-    "flagEmoji": "🇭🇺",
-    "continent": "Europe",
-    "region": "Central Europe",
-    "primaryLocale": "hu-HU",
-    "currencyCode": "HUF",
-    "callingCode": "+36"
+    "code": "TM",
+    "name": "Turkmenistan",
+    "flagEmoji": "🇹🇲",
+    "continent": "Asia",
+    "region": "Central Asia",
+    "primaryLocale": "tk-TM",
+    "currencyCode": "TMT",
+    "callingCode": "+993"
   },
   {
     "code": "UZ",
@@ -2400,6 +2380,26 @@
     "callingCode": "+998"
   },
   {
+    "code": "VA",
+    "name": "Vatican City",
+    "flagEmoji": "🇻🇦",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "primaryLocale": "la-VA",
+    "currencyCode": "EUR",
+    "callingCode": "+3906698"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "flagEmoji": "🇭🇺",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "primaryLocale": "hu-HU",
+    "currencyCode": "HUF",
+    "callingCode": "+36"
+  },
+  {
     "code": "VE",
     "name": "Venezuela",
     "flagEmoji": "🇻🇪",
@@ -2408,46 +2408,6 @@
     "primaryLocale": "es-VE",
     "currencyCode": "VED",
     "callingCode": "+58"
-  },
-  {
-    "code": "VN",
-    "name": "Vietnam",
-    "flagEmoji": "🇻🇳",
-    "continent": "Asia",
-    "region": "South-Eastern Asia",
-    "primaryLocale": "vi-VN",
-    "currencyCode": "VND",
-    "callingCode": "+84"
-  },
-  {
-    "code": "CX",
-    "name": "Christmas Island",
-    "flagEmoji": "🇨🇽",
-    "continent": "Australia",
-    "region": "Australia and New Zealand",
-    "primaryLocale": "en-CX",
-    "currencyCode": "AUD",
-    "callingCode": "+61"
-  },
-  {
-    "code": "AE",
-    "name": "United Arab Emirates",
-    "flagEmoji": "🇦🇪",
-    "continent": "Asia",
-    "region": "Western Asia",
-    "primaryLocale": "ar-AE",
-    "currencyCode": "AED",
-    "callingCode": "+971"
-  },
-  {
-    "code": "WF",
-    "name": "Wallis and Futuna",
-    "flagEmoji": "🇼🇫",
-    "continent": "Oceania",
-    "region": "Polynesia",
-    "primaryLocale": "fr-WF",
-    "currencyCode": "XPF",
-    "callingCode": "+681"
   },
   {
     "code": "GB",
@@ -2460,14 +2420,44 @@
     "callingCode": "+44"
   },
   {
-    "code": "EH",
-    "name": "Western Sahara",
-    "flagEmoji": "🇪🇭",
-    "continent": "Africa",
-    "region": "Northern Africa",
-    "primaryLocale": "es-EH",
-    "currencyCode": "MAD",
-    "callingCode": "+2125288"
+    "code": "CX",
+    "name": "Christmas Island",
+    "flagEmoji": "🇨🇽",
+    "continent": "Australia",
+    "region": "Australia and New Zealand",
+    "primaryLocale": "en-CX",
+    "currencyCode": "AUD",
+    "callingCode": "+61"
+  },
+  {
+    "code": "WF",
+    "name": "Wallis and Futuna",
+    "flagEmoji": "🇼🇫",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "primaryLocale": "fr-WF",
+    "currencyCode": "XPF",
+    "callingCode": "+681"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "flagEmoji": "🇻🇳",
+    "continent": "Asia",
+    "region": "South-Eastern Asia",
+    "primaryLocale": "vi-VN",
+    "currencyCode": "VND",
+    "callingCode": "+84"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "flagEmoji": "🇦🇪",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "ar-AE",
+    "currencyCode": "AED",
+    "callingCode": "+971"
   },
   {
     "code": "CF",
@@ -2478,6 +2468,16 @@
     "primaryLocale": "fr-CF",
     "currencyCode": "XAF",
     "callingCode": "+236"
+  },
+  {
+    "code": "EH",
+    "name": "Western Sahara",
+    "flagEmoji": "🇪🇭",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "primaryLocale": "es-EH",
+    "currencyCode": "MAD",
+    "callingCode": "+2125288"
   },
   {
     "code": "CY",

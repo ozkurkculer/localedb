@@ -92,14 +92,20 @@ export default function Home() {
             description="Symbol position, separators, and patterns for every currency in the world."
           />
           <FeatureCard
-            icon={<Database className="h-10 w-10" />}
-            title="Date & Time"
-            description="Locale-specific date formats, time zones, and calendar patterns."
+            title="Countries"
+            description="Browse localization data for 250+ countries including codes, currencies, and formatting."
+            href="/countries"
           />
           <FeatureCard
-            icon={<Code2 className="h-10 w-10" />}
-            title="Country Codes"
-            description="ISO 3166, BCP47, RFC4647, and all international standards."
+            title="Languages"
+            description="Explore processed data for world languages, including native names and countries."
+            href="/languages"
+          />
+          <FeatureCard
+            title="Currencies"
+            description="Detailed currency information with symbols, formatting rules, and subunits."
+            href="/currencies"
+            disabled
           />
         </div>
       </motion.section>
@@ -108,24 +114,44 @@ export default function Home() {
 }
 
 interface FeatureCardProps {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   description: string;
+  href?: string;
+  disabled?: boolean;
 }
 
-function FeatureCard({ icon, title, description }: FeatureCardProps) {
-  return (
-    <motion.div
-      variants={fadeInUp}
-      whileHover={{ scale: 1.02 }}
-      transition={{ duration: 0.2 }}
-      className="group relative overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all hover:border-border hover:shadow-md"
-    >
-      <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 text-primary">
-        {icon}
-      </div>
+function FeatureCard({ icon, title, description, href, disabled }: FeatureCardProps) {
+  const Content = (
+    <div className={`group relative h-full overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : 'hover:border-border hover:shadow-md'}`}>
+      {icon && (
+        <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 text-primary">
+          {icon}
+        </div>
+      )}
       <h3 className="mb-2 text-xl font-semibold">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
+    </div>
+  );
+
+  if (href && !disabled) {
+    return (
+      <Link href={href}>
+        <motion.div
+          variants={fadeInUp}
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.2 }}
+          className="h-full"
+        >
+          {Content}
+        </motion.div>
+      </Link>
+    );
+  }
+
+  return (
+    <motion.div variants={fadeInUp} className="h-full">
+      {Content}
     </motion.div>
   );
 }

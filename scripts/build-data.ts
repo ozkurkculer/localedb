@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 
 // Types
 import { CountryLocaleData, CountryBasics, CodeSystems, CurrencyInfo, DateTimeInfo, NumberFormatInfo, PhoneInfo, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
-import { Language, LanguageLocaleData } from '../src/types/language';
+import { Language, LanguageLocaleData, LanguageIndexEntry } from '../src/types/language';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -91,41 +91,43 @@ async function build() {
   const mledozeMap = new Map();
   mledozeList.forEach((c: any) => mledozeMap.set(c.cca2, c));
 
-  const countryIndex: CountryIndexEntry[] = [];
-  const languageUsageMap: Record<string, string[]> = {};
-
-  // 2. Process Countries
-  console.log(`🌍 Processing ${slCountries.length} countries...`);
+    const countryIndex: CountryIndexEntry[] = [];
+    const languageIndex: LanguageIndexEntry[] = []; // [NEW]
+    const languageUsageMap: Record<string, string[]> = {};
   
-  const BATCH_SIZE = 10;
-  for (let i = 0; i < slCountries.length; i += BATCH_SIZE) {
-    const batch = slCountries.slice(i, i + BATCH_SIZE);
+    // 2. Process Countries
+    console.log(`🌍 Processing ${slCountries.length} countries...`);
     
-    await Promise.all(batch.map(async (slCountry: any) => {
-        const isoCode = slCountry.code;
-        const mledozeCountry = mledozeMap.get(isoCode);
-        const overrideData = await readJsonFile(path.join(OVERRIDES_DIR, `${isoCode}.json`));
-        
-        await processCountry(isoCode, slCountry, mledozeCountry, overrideData, countryIndex, languageUsageMap);
-    }));
-
-    if (global.gc) global.gc(); 
-    process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slCountries.length)}/${slCountries.length} countries`);
-  }
-  console.log('\n✨ Countries processed.');
-
-  // 3. Process Languages
-  console.log(`🗣️ Processing languages...`);
-  for (let i = 0; i < slLanguages.length; i += BATCH_SIZE) {
-      const batch = slLanguages.slice(i, i + BATCH_SIZE);
-      await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap)));
-      process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slLanguages.length)}/${slLanguages.length} languages`);
-  }
-  console.log('\n✨ Languages processed.');
-
-  // 4. Write Indices
-  console.log('📝 Writing indices...');
-  await fs.promises.writeFile(path.join(DATA_DIR, '_index_countries.json'), JSON.stringify(countryIndex, null, 2));
+    const BATCH_SIZE = 10;
+    for (let i = 0; i < slCountries.length; i += BATCH_SIZE) {
+      const batch = slCountries.slice(i, i + BATCH_SIZE);
+      
+      await Promise.all(batch.map(async (slCountry: any) => {
+          const isoCode = slCountry.code;
+          const mledozeCountry = mledozeMap.get(isoCode);
+          const overrideData = await readJsonFile(path.join(OVERRIDES_DIR, `${isoCode}.json`));
+          
+          await processCountry(isoCode, slCountry, mledozeCountry, overrideData, countryIndex, languageUsageMap);
+      }));
+  
+      if (global.gc) global.gc(); 
+      process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slCountries.length)}/${slCountries.length} countries`);
+    }
+    console.log('\n✨ Countries processed.');
+  
+    // 3. Process Languages
+    console.log(`🗣️ Processing languages...`);
+    for (let i = 0; i < slLanguages.length; i += BATCH_SIZE) {
+        const batch = slLanguages.slice(i, i + BATCH_SIZE);
+        await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap, languageIndex))); // [NEW] Pass index
+        process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slLanguages.length)}/${slLanguages.length} languages`);
+    }
+    console.log('\n✨ Languages processed.');
+  
+    // 4. Write Indices
+    console.log('📝 Writing indices...');
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_countries.json'), JSON.stringify(countryIndex, null, 2));
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_languages.json'), JSON.stringify(languageIndex, null, 2)); // [NEW]
 
   const endTime = Date.now();
   console.log(`🎉 Build complete in ${((endTime - startTime) / 1000).toFixed(2)}s`);
@@ -321,9 +323,11 @@ async function processCountry(
 }
 
 // ... (processLanguage and build invocation remain same)
-async function processLanguage(metadata: any, langMap: Record<string, string[]>) {
+async function processLanguage(metadata: any, langMap: Record<string, string[]>, index: any[]) {
     const code = metadata.iso_639_1;
     if (!code) return; // Skip if no code
+
+    const countries = langMap[code] || [];
 
     const langData: LanguageLocaleData = {
         $schema: "1.0.0",
@@ -335,9 +339,16 @@ async function processLanguage(metadata: any, langMap: Record<string, string[]>)
           name: metadata.name,
           nativeName: metadata.name_local,
           direction: "ltr", // Default
-          countries: langMap[code] || []
+          countries: countries
         }
     };
+
+    index.push({
+        code: code,
+        name: metadata.name,
+        nativeName: metadata.name_local,
+        countriesCount: countries.length
+    });
 
     const outFile = path.join(OUT_LANGUAGES_DIR, `${code}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(langData, null, 2));
