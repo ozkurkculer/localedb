@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Search, X, Plane } from "lucide-react";
+import { Search, X, Plane, ArrowUpDown, Copy, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,20 +13,42 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import type { Airport } from "@/types/airport";
+import { toast } from "sonner";
 
 interface AirportsTableClientProps {
   airports: Airport[];
   countryMap: Record<string, { name: string; emoji: string }>;
 }
 
+type SortKey = "iata" | "icao" | "name" | "country" | "region";
+type SortOrder = "asc" | "desc";
+
 export function AirportsTableClient({ airports, countryMap }: AirportsTableClientProps) {
   const [search, setSearch] = React.useState("");
   const [page, setPage] = React.useState(1);
+  const [sortKey, setSortKey] = React.useState<SortKey>("iata");
+  const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
   const itemsPerPage = 50;
 
-  // Filter airports
-  const filteredAirports = React.useMemo(() => {
-    let results = airports;
+  const handleSort = (key: SortKey) => {
+    if (sortKey === key) {
+      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    } else {
+      setSortKey(key);
+      setSortOrder("asc");
+    }
+  };
+
+  const copyToClipboard = (text: string, label: string) => {
+    navigator.clipboard.writeText(text);
+    toast.success(`Copied ${label} to clipboard`);
+  };
+
+  // Filter and Sort
+  const processedAirports = React.useMemo(() => {
+    let results = [...airports];
+
+    // Filter
     if (search) {
       const lowerSearch = search.toLowerCase();
       results = results.filter((airport) => {
@@ -40,17 +62,55 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
         );
       });
     }
-    return results;
-  }, [airports, search, countryMap]);
 
-  // Reset page on search
+    // Sort
+    results.sort((a, b) => {
+      let valA = "";
+      let valB = "";
+
+      switch (sortKey) {
+        case "country":
+          valA = countryMap[a.countryCode]?.name || "";
+          valB = countryMap[b.countryCode]?.name || "";
+          break;
+        case "iata":
+          valA = a.iata || "";
+          valB = b.iata || "";
+          break;
+        case "icao":
+          valA = a.icao || "";
+          valB = b.icao || "";
+          break;
+        case "name":
+          valA = a.name || "";
+          valB = b.name || "";
+          break;
+        case "region":
+          valA = a.region || "";
+          valB = b.region || "";
+          break;
+      }
+
+      return sortOrder === "asc" 
+        ? valA.localeCompare(valB) 
+        : valB.localeCompare(valA);
+    });
+
+    return results;
+  }, [airports, search, countryMap, sortKey, sortOrder]);
+
+  // Reset page on search/sort
   React.useEffect(() => {
     setPage(1);
-  }, [search]);
+  }, [search, sortKey, sortOrder]);
 
   // Paginate
-  const displayedAirports = filteredAirports.slice(0, page * itemsPerPage);
-  const hasMore = displayedAirports.length < filteredAirports.length;
+  const displayedAirports = processedAirports.slice(0, page * itemsPerPage);
+  const hasMore = displayedAirports.length < processedAirports.length;
+
+  const SortIcon = ({ active }: { active: boolean }) => (
+    <ArrowUpDown className={`ml-2 h-4 w-4 ${active ? "opacity-100" : "opacity-40"}`} />
+  );
 
   return (
     <div className="space-y-8">
@@ -74,7 +134,7 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
           )}
         </div>
         <div className="text-sm text-muted-foreground">
-            Showing {displayedAirports.length} of {filteredAirports.length} airports
+            Showing {displayedAirports.length} of {processedAirports.length} airports
         </div>
       </div>
 
@@ -83,17 +143,29 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent">
-              <TableHead className="w-[100px]">IATA</TableHead>
-              <TableHead className="w-[100px]">ICAO</TableHead>
-              <TableHead>Airport Name</TableHead>
-              <TableHead>Location</TableHead>
-              <TableHead className="text-right">Region</TableHead>
+              <TableHead className="w-[100px] cursor-pointer hover:text-foreground" onClick={() => handleSort("iata")}>
+                <div className="flex items-center">IATA <SortIcon active={sortKey === "iata"} /></div>
+              </TableHead>
+              <TableHead className="w-[100px] cursor-pointer hover:text-foreground" onClick={() => handleSort("icao")}>
+                <div className="flex items-center">ICAO <SortIcon active={sortKey === "icao"} /></div>
+              </TableHead>
+              <TableHead className="cursor-pointer hover:text-foreground" onClick={() => handleSort("name")}>
+                <div className="flex items-center">Airport Name <SortIcon active={sortKey === "name"} /></div>
+              </TableHead>
+              <TableHead className="cursor-pointer hover:text-foreground" onClick={() => handleSort("country")}>
+                 <div className="flex items-center">Location <SortIcon active={sortKey === "country"} /></div>
+              </TableHead>
+              <TableHead className="cursor-pointer text-right hover:text-foreground" onClick={() => handleSort("region")}>
+                 <div className="flex items-center justify-end">Region <SortIcon active={sortKey === "region"} /></div>
+              </TableHead>
+              <TableHead className="w-[50px]"></TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {displayedAirports.map((airport) => {
               const country = countryMap[airport.countryCode];
               const key = airport.iata || airport.icao || `${airport.latitude}-${airport.longitude}`;
+              const airportText = `${airport.name} (${airport.iata}/${airport.icao})`;
               
               return (
                 <TableRow key={key} className="group hover:bg-red-500/5">
@@ -118,12 +190,24 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
                   <TableCell className="text-right text-muted-foreground">
                     {airport.region}
                   </TableCell>
+                  <TableCell>
+                     <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-8 w-8 opacity-0 group-hover:opacity-100"
+                        onClick={() => copyToClipboard(airportText, airport.name)}
+                        title="Copy details"
+                     >
+                        <Copy className="h-4 w-4" />
+                        <span className="sr-only">Copy</span>
+                     </Button>
+                  </TableCell>
                 </TableRow>
               );
             })}
             {displayedAirports.length === 0 && (
               <TableRow>
-                <TableCell colSpan={5} className="h-24 text-center text-muted-foreground">
+                <TableCell colSpan={6} className="h-24 text-center text-muted-foreground">
                   No airports found matching your search.
                 </TableCell>
               </TableRow>

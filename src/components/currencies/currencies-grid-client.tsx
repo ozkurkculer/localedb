@@ -3,9 +3,15 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Search, X } from "lucide-react";
+import { Search, X, ArrowUpDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import type { CurrencyIndexEntry } from "@/types/currency";
 
 interface CurrenciesGridClientProps {
@@ -17,12 +23,26 @@ const fadeInUp = {
   animate: { opacity: 1, y: 0 },
 };
 
+type SortKey = "name" | "code" | "symbol";
+type SortOrder = "asc" | "desc";
+
 export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) {
   const [search, setSearch] = React.useState("");
+  const [sortKey, setSortKey] = React.useState<SortKey>("name");
+  const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
 
-  // Filter currencies
+  const handleSort = (key: SortKey) => {
+    if (sortKey === key) {
+      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    } else {
+      setSortKey(key);
+      setSortOrder("asc");
+    }
+  };
+
+  // Filter and Sort currencies
   const filteredCurrencies = React.useMemo(() => {
-    return currencies.filter((currency) => {
+    let result = currencies.filter((currency) => {
       const matchesSearch =
         search === "" ||
         currency.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -31,7 +51,33 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
 
       return matchesSearch;
     });
-  }, [currencies, search]);
+
+    result.sort((a, b) => {
+      let valA = "";
+      let valB = "";
+
+      switch (sortKey) {
+        case "name":
+          valA = a.name;
+          valB = b.name;
+          break;
+        case "code":
+          valA = a.code;
+          valB = b.code;
+          break;
+        case "symbol":
+          valA = a.symbol;
+          valB = b.symbol;
+          break;
+      }
+
+      return sortOrder === "asc"
+        ? valA.localeCompare(valB)
+        : valB.localeCompare(valA);
+    });
+
+    return result;
+  }, [currencies, search, sortKey, sortOrder]);
 
   return (
     <div className="space-y-8">
@@ -55,6 +101,27 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
             </button>
           )}
         </div>
+
+        {/* Sort Dropdown */}
+        <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="sm" className="gap-2">
+                <ArrowUpDown className="h-4 w-4" />
+                Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+                </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => handleSort("name")}>
+                Name
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleSort("code")}>
+                Code
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleSort("symbol")}>
+                Symbol
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+        </DropdownMenu>
       </div>
 
       {/* Results Count */}
