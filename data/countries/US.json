@@ -22,6 +22,8 @@
     "languages": [
       {
         "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
         "name": "English",
         "nativeName": "English",
         "official": true
@@ -36,10 +38,19 @@
     "bcp47": ["en-US", "es-US"],
     "internetTld": ".us",
     "ioc": "USA",
-    "fifa": "USA"
+    "fifa": "USA",
+    "vehicleCode": "USA",
+    "fips10": "US",
+    "unLocode": "US",
+    "stanag1059": "USA",
+    "itu": "USA",
+    "uic": "72 US",
+    "maritime": 338,
+    "mmc": 310
   },
   "currency": {
     "code": "USD",
+    "numericCode": 840,
     "name": "United States Dollar",
     "nativeName": "United States Dollar",
     "symbol": "$",
@@ -48,6 +59,8 @@
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
     "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cent",
     "pattern": "¤#,##0.00",
     "example": "$1,250.00",
     "accountingExample": "($1,250.00)"

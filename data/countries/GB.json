@@ -22,6 +22,8 @@
     "languages": [
       {
         "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
         "name": "English",
         "nativeName": "English",
         "official": true
@@ -36,10 +38,19 @@
     "bcp47": ["en-GB", "cy-GB", "gd-GB"],
     "internetTld": ".uk",
     "ioc": "GBR",
-    "fifa": "ENG"
+    "fifa": "ENG",
+    "vehicleCode": "GB",
+    "fips10": "UK",
+    "unLocode": "GB",
+    "stanag1059": "GBR",
+    "itu": "G",
+    "uic": "70 GB",
+    "maritime": 232,
+    "mmc": 234
   },
   "currency": {
     "code": "GBP",
+    "numericCode": 826,
     "name": "British Pound Sterling",
     "nativeName": "British Pound Sterling",
     "symbol": "£",
@@ -48,6 +59,8 @@
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
     "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Penny",
     "pattern": "¤#,##0.00",
     "example": "£1,250.00",
     "accountingExample": "(£1,250.00)"

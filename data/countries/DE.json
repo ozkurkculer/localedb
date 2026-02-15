@@ -22,6 +22,8 @@
     "languages": [
       {
         "code": "de",
+        "iso639_2": "deu",
+        "iso639_3": "deu",
         "name": "German",
         "nativeName": "Deutsch",
         "official": true
@@ -36,10 +38,19 @@
     "bcp47": ["de-DE"],
     "internetTld": ".de",
     "ioc": "GER",
-    "fifa": "GER"
+    "fifa": "GER",
+    "vehicleCode": "D",
+    "fips10": "GM",
+    "unLocode": "DE",
+    "stanag1059": "DEU",
+    "itu": "D",
+    "uic": "80 D",
+    "maritime": 211,
+    "mmc": 262
   },
   "currency": {
     "code": "EUR",
+    "numericCode": 978,
     "name": "Euro",
     "nativeName": "Euro",
     "symbol": "€",
@@ -48,6 +59,8 @@
     "decimalSeparator": ",",
     "thousandsSeparator": ".",
     "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cent",
     "pattern": "#.##0,00 ¤",
     "example": "1.250,00 €",
     "accountingExample": "-1.250,00 €"

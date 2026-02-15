@@ -22,6 +22,8 @@
     "languages": [
       {
         "code": "ja",
+        "iso639_2": "jpn",
+        "iso639_3": "jpn",
         "name": "Japanese",
         "nativeName": "日本語",
         "official": true
@@ -36,10 +38,19 @@
     "bcp47": ["ja-JP"],
     "internetTld": ".jp",
     "ioc": "JPN",
-    "fifa": "JPN"
+    "fifa": "JPN",
+    "vehicleCode": "J",
+    "fips10": "JA",
+    "unLocode": "JP",
+    "stanag1059": "JPN",
+    "itu": "J",
+    "uic": "06 J",
+    "maritime": 431,
+    "mmc": 440
   },
   "currency": {
     "code": "JPY",
+    "numericCode": 392,
     "name": "Japanese Yen",
     "nativeName": "円",
     "symbol": "¥",
@@ -48,6 +59,8 @@
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
     "decimalDigits": 0,
+    "subunitValue": 1,
+    "subunitName": "",
     "pattern": "¤#,##0",
     "example": "¥1,250",
     "accountingExample": "(¥1,250)"
