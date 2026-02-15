@@ -108,7 +108,7 @@ function LanguageCard({ language }: LanguageCardProps) {
       className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-border/40 bg-card p-5 transition-all hover:border-border hover:shadow-lg hover:shadow-primary/5"
     >
       {/* Language Name */}
-      <h3 className="mb-1 text-lg font-semibold transition-colors group-hover:text-primary">
+      <h3 className="mb-1 text-lg font-bold bg-gradient-to-br from-emerald-400 to-green-600 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-green-500 transition-all">
         {language.name}
       </h3>
       <p className="mb-4 text-sm text-muted-foreground">{language.nativeName}</p>

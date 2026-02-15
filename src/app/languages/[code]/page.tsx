@@ -56,7 +56,7 @@ export default async function LanguagePage({ params }: LanguagePageProps) {
     <div className="container py-12">
       {/* Header */}
       <div className="mb-12 text-center">
-        <h1 className="mb-2 text-4xl font-bold">{language.data.name}</h1>
+        <h1 className="mb-2 text-4xl font-bold bg-gradient-to-br from-emerald-400 to-green-600 bg-clip-text text-transparent">{language.data.name}</h1>
         <p className="text-xl text-muted-foreground">{language.data.nativeName}</p>
         <div className="mt-4 flex justify-center gap-2">
             <span className="rounded-md bg-muted px-3 py-1 font-mono text-sm">{language.data.code}</span>

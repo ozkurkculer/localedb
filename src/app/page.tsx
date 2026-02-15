@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Globe2, Code2, Database } from "lucide-react";
+import { ArrowRight, Globe2, Code2, Coins, Languages } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
@@ -85,26 +85,30 @@ export default function Home() {
         viewport={{ once: true }}
         className="mx-auto max-w-5xl pb-24 md:pb-32"
       >
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2">
           <FeatureCard
-            icon={<Globe2 className="h-10 w-10" />}
+            icon={<Coins className="h-10 w-10" />}
             title="Currency Formats"
             description="Symbol position, separators, and patterns for every currency in the world."
+            href="/currencies"
           />
           <FeatureCard
+             icon={<Globe2 className="h-10 w-10" />}
             title="Countries"
             description="Browse localization data for 250+ countries including codes, currencies, and formatting."
             href="/countries"
           />
           <FeatureCard
+            icon={<Languages className="h-10 w-10" />}
             title="Languages"
             description="Explore processed data for world languages, including native names and countries."
             href="/languages"
           />
           <FeatureCard
-            title="Currencies"
-            description="Detailed currency information with symbols, formatting rules, and subunits."
-            href="/currencies"
+             icon={<Code2 className="h-10 w-10" />}
+            title="Locale Codes"
+            description="ISO 3166, BCP47, RFC4647, and all international standards reference."
+            href="/locale-codes"
           />
         </div>
       </motion.section>
