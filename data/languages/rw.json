@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "rw",
+    "iso639_2": "kin",
+    "iso639_3": "kin",
+    "name": "Kinyarwanda",
+    "nativeName": "Ikinyarwanda",
+    "direction": "ltr",
+    "countries": [
+      "RW"
+    ]
+  }
+}

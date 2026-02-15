@@ -14,20 +14,7 @@ export type ClockFormat = "12h" | "24h";
 
 // ─── Language Information ────────────────────────────────────────
 
-export interface Language {
-  /** ISO 639-1 two-letter code, e.g. "tr" */
-  code: string;
-  /** ISO 639-2 three-letter bibliographic code, e.g. "tur" */
-  iso639_2: string;
-  /** ISO 639-3 three-letter terminologic code, e.g. "tur" */
-  iso639_3: string;
-  /** English name, e.g. "Turkish" */
-  name: string;
-  /** Native name, e.g. "Türkçe" */
-  nativeName: string;
-  /** Whether this is an official language */
-  official: boolean;
-}
+import { Language } from "./language";
 
 // ─── Country Basics ──────────────────────────────────────────────
 

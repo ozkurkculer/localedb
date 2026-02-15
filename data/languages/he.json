@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "he",
+    "iso639_2": "heb",
+    "iso639_3": "heb",
+    "name": "Hebrew (modern)",
+    "nativeName": "עברית",
+    "direction": "ltr",
+    "countries": [
+      "IL"
+    ]
+  }
+}

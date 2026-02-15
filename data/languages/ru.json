@@ -1,0 +1,22 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ru",
+    "iso639_2": "rus",
+    "iso639_3": "rus",
+    "name": "Russian",
+    "nativeName": "Русский",
+    "direction": "ltr",
+    "countries": [
+      "AQ",
+      "BY",
+      "KZ",
+      "KG",
+      "RU",
+      "TJ",
+      "TM",
+      "UZ"
+    ]
+  }
+}

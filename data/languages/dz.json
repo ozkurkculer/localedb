@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "dz",
+    "iso639_2": "dzo",
+    "iso639_3": "dzo",
+    "name": "Dzongkha",
+    "nativeName": "རྫོང་ཁ",
+    "direction": "ltr",
+    "countries": [
+      "BT"
+    ]
+  }
+}

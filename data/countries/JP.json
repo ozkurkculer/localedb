@@ -1,22 +1,33 @@
 {
   "$schema": "1.0.0",
   "lastUpdated": "2026-02-15",
-  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
   "basics": {
     "name": "Japan",
     "officialName": "Japan",
     "nativeName": "日本",
-    "officialNativeName": "日本国",
+    "officialNativeName": "",
     "capital": "Tokyo",
-    "capitalCoordinates": [35.6895, 139.6917],
-    "coordinates": [36.2048, 138.2529],
+    "capitalCoordinates": [
+      35.6895,
+      139.69171
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
     "continent": "Asia",
     "region": "Eastern Asia",
     "subregion": "Eastern Asia",
-    "population": 125836021,
+    "population": 0,
     "area": 377930,
     "flagEmoji": "🇯🇵",
-    "tld": ".jp",
+    "tld": "jp",
     "landlocked": false,
     "borders": [],
     "languages": [
@@ -25,18 +36,22 @@
         "iso639_2": "jpn",
         "iso639_3": "jpn",
         "name": "Japanese",
-        "nativeName": "日本語",
-        "official": true
+        "nativeName": "日本語 (にほんご)",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
       }
     ],
-    "demonym": "Japanese"
+    "demonym": ""
   },
   "codes": {
     "iso3166Alpha2": "JP",
     "iso3166Alpha3": "JPN",
     "iso3166Numeric": "392",
-    "bcp47": ["ja-JP"],
-    "internetTld": ".jp",
+    "bcp47": [
+      "ja-JP"
+    ],
+    "internetTld": "jp",
     "ioc": "JPN",
     "fifa": "JPN",
     "vehicleCode": "J",
@@ -44,100 +59,172 @@
     "unLocode": "JP",
     "stanag1059": "JPN",
     "itu": "J",
-    "uic": "06 J",
-    "maritime": 431,
-    "mmc": 440
+    "uic": "42 J",
+    "maritime": "431, 432",
+    "mmc": "440, 441"
   },
   "currency": {
     "code": "JPY",
     "numericCode": 392,
     "name": "Japanese Yen",
-    "nativeName": "円",
+    "nativeName": "Japanese yen",
     "symbol": "¥",
     "narrowSymbol": "¥",
     "symbolPosition": "before",
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
-    "decimalDigits": 0,
-    "subunitValue": 1,
-    "subunitName": "",
-    "pattern": "¤#,##0",
-    "example": "¥1,250",
-    "accountingExample": "(¥1,250)"
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Sen",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
   },
   "dateTime": {
-    "firstDayOfWeek": 7,
+    "firstDayOfWeek": 1,
     "clockFormat": "24h",
     "dateFormats": {
-      "full": "2026年2月15日日曜日",
-      "long": "2026年2月15日",
-      "medium": "2026/02/15",
-      "short": "2026/02/15"
-    },
-    "timeFormats": {
-      "full": "15時30分00秒 日本標準時",
-      "long": "15:30:00 JST",
-      "medium": "15:30:00",
-      "short": "15:30"
-    },
-    "datePatterns": {
       "full": "y年M月d日EEEE",
       "long": "y年M月d日",
       "medium": "y/MM/dd",
       "short": "y/MM/dd"
     },
-    "timePatterns": {
+    "timeFormats": {
       "full": "H時mm分ss秒 zzzz",
       "long": "H:mm:ss z",
       "medium": "H:mm:ss",
       "short": "H:mm"
     },
+    "datePatterns": {
+      "full": "yMMMEEEEd",
+      "long": "yMMMd",
+      "medium": "yMMdd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
     "monthNames": {
-      "wide": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
-      "abbreviated": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
-      "narrow": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+      "wide": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月",
+        "7月",
+        "8月",
+        "9月",
+        "10月",
+        "11月",
+        "12月"
+      ],
+      "abbreviated": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月",
+        "7月",
+        "8月",
+        "9月",
+        "10月",
+        "11月",
+        "12月"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
     },
     "dayNames": {
-      "wide": ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"],
-      "abbreviated": ["月", "火", "水", "木", "金", "土", "日"],
-      "narrow": ["月", "火", "水", "木", "金", "土", "日"]
+      "wide": [
+        "日曜日",
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日",
+        "金曜日",
+        "土曜日"
+      ],
+      "abbreviated": [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+      ],
+      "narrow": [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+      ]
     },
-    "amPmMarkers": ["午前", "午後"],
-    "timezones": ["Asia/Tokyo"],
-    "primaryTimezone": "Asia/Tokyo",
-    "utcOffset": "+09:00"
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "primaryTimezone": "UTC+09:00",
+    "utcOffset": "+00:00"
   },
   "numberFormat": {
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "25.5%",
-    "example": "1,234,567.89",
+    "percentExample": "",
+    "example": "",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "+81",
+    "callingCode": "",
     "trunkPrefix": "0",
-    "internationalPrefix": "010",
-    "exampleFormat": "+81 3 1234 5678",
-    "subscriberNumberLengths": [9, 10]
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
   },
   "addressFormat": {
-    "format": "〒%Z%n%S%C%A%n%O%n%N",
-    "lineOrder": ["Postal Code", "Prefecture + City + Address", "Organization", "Name"],
-    "postalCodeFormat": "NNN-NNNN",
-    "postalCodeRegex": "^\\d{3}-?\\d{4}$",
-    "postalCodeExample": "100-0001",
-    "administrativeDivisionName": "都道府県",
-    "administrativeDivisionType": "Prefecture"
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###-####",
+    "postalCodeRegex": "^(\\d{7})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
   },
   "locale": {
     "writingDirection": "ltr",
     "measurementSystem": "metric",
     "temperatureScale": "celsius",
     "paperSize": "A4",
-    "drivingSide": "left",
+    "drivingSide": "right",
     "weekNumbering": "ISO"
   }
 }

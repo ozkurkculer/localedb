@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ur",
+    "iso639_2": "urd",
+    "iso639_3": "urd",
+    "name": "Urdu",
+    "nativeName": "اردو",
+    "direction": "ltr",
+    "countries": [
+      "PK"
+    ]
+  }
+}

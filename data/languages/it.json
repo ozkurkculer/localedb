@@ -1,0 +1,18 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "it",
+    "iso639_2": "ita",
+    "iso639_3": "ita",
+    "name": "Italian",
+    "nativeName": "Italiano",
+    "direction": "ltr",
+    "countries": [
+      "IT",
+      "SM",
+      "CH",
+      "VA"
+    ]
+  }
+}

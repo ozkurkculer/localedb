@@ -1,24 +1,45 @@
 {
   "$schema": "1.0.0",
   "lastUpdated": "2026-02-15",
-  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
   "basics": {
     "name": "Germany",
-    "officialName": "Federal Republic of Germany",
+    "officialName": "Germany",
     "nativeName": "Deutschland",
-    "officialNativeName": "Bundesrepublik Deutschland",
+    "officialNativeName": "",
     "capital": "Berlin",
-    "capitalCoordinates": [52.52, 13.405],
-    "coordinates": [51.1657, 10.4515],
+    "capitalCoordinates": [
+      52.51767,
+      13.405538
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
     "continent": "Europe",
     "region": "Western Europe",
     "subregion": "Western Europe",
-    "population": 83240525,
+    "population": 0,
     "area": 357114,
     "flagEmoji": "🇩🇪",
-    "tld": ".de",
+    "tld": "de",
     "landlocked": false,
-    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "borders": [
+      "AT",
+      "BE",
+      "CZ",
+      "DK",
+      "FR",
+      "LU",
+      "NL",
+      "PL",
+      "CH"
+    ],
     "languages": [
       {
         "code": "de",
@@ -26,17 +47,21 @@
         "iso639_3": "deu",
         "name": "German",
         "nativeName": "Deutsch",
-        "official": true
+        "official": true,
+        "direction": "ltr",
+        "countries": []
       }
     ],
-    "demonym": "German"
+    "demonym": ""
   },
   "codes": {
     "iso3166Alpha2": "DE",
     "iso3166Alpha3": "DEU",
     "iso3166Numeric": "276",
-    "bcp47": ["de-DE"],
-    "internetTld": ".de",
+    "bcp47": [
+      "de-DE"
+    ],
+    "internetTld": "de",
     "ioc": "GER",
     "fifa": "GER",
     "vehicleCode": "D",
@@ -45,7 +70,7 @@
     "stanag1059": "DEU",
     "itu": "D",
     "uic": "80 D",
-    "maritime": 211,
+    "maritime": "211, 218",
     "mmc": 262
   },
   "currency": {
@@ -55,82 +80,154 @@
     "nativeName": "Euro",
     "symbol": "€",
     "narrowSymbol": "€",
-    "symbolPosition": "after",
+    "symbolPosition": "before",
     "decimalSeparator": ",",
     "thousandsSeparator": ".",
     "decimalDigits": 2,
     "subunitValue": 100,
     "subunitName": "Cent",
-    "pattern": "#.##0,00 ¤",
-    "example": "1.250,00 €",
-    "accountingExample": "-1.250,00 €"
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
   },
   "dateTime": {
     "firstDayOfWeek": 1,
     "clockFormat": "24h",
     "dateFormats": {
-      "full": "Sonntag, 15. Februar 2026",
-      "long": "15. Februar 2026",
-      "medium": "15.02.2026",
-      "short": "15.02.26"
-    },
-    "timeFormats": {
-      "full": "15:30:00 Mitteleuropäische Normalzeit",
-      "long": "15:30:00 MEZ",
-      "medium": "15:30:00",
-      "short": "15:30"
-    },
-    "datePatterns": {
       "full": "EEEE, d. MMMM y",
       "long": "d. MMMM y",
       "medium": "dd.MM.y",
       "short": "dd.MM.yy"
     },
-    "timePatterns": {
+    "timeFormats": {
       "full": "HH:mm:ss zzzz",
       "long": "HH:mm:ss z",
       "medium": "HH:mm:ss",
       "short": "HH:mm"
     },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMdd",
+      "short": "yyMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
     "monthNames": {
-      "wide": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-      "abbreviated": ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
-      "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+      "wide": [
+        "Januar",
+        "Februar",
+        "März",
+        "April",
+        "Mai",
+        "Juni",
+        "Juli",
+        "August",
+        "September",
+        "Oktober",
+        "November",
+        "Dezember"
+      ],
+      "abbreviated": [
+        "Jan.",
+        "Feb.",
+        "März",
+        "Apr.",
+        "Mai",
+        "Juni",
+        "Juli",
+        "Aug.",
+        "Sept.",
+        "Okt.",
+        "Nov.",
+        "Dez."
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
     },
     "dayNames": {
-      "wide": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
-      "abbreviated": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
-      "narrow": ["M", "D", "M", "D", "F", "S", "S"]
+      "wide": [
+        "Sonntag",
+        "Montag",
+        "Dienstag",
+        "Mittwoch",
+        "Donnerstag",
+        "Freitag",
+        "Samstag"
+      ],
+      "abbreviated": [
+        "So.",
+        "Mo.",
+        "Di.",
+        "Mi.",
+        "Do.",
+        "Fr.",
+        "Sa."
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "D",
+        "M",
+        "D",
+        "F",
+        "S"
+      ]
     },
-    "amPmMarkers": ["AM", "PM"],
-    "timezones": ["Europe/Berlin"],
-    "primaryTimezone": "Europe/Berlin",
-    "utcOffset": "+01:00"
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "primaryTimezone": "UTC+01:00",
+    "utcOffset": "+00:00"
   },
   "numberFormat": {
     "decimalSeparator": ",",
     "thousandsSeparator": ".",
     "digitGrouping": "3",
-    "pattern": "#.##0,###",
-    "percentExample": "25,5 %",
-    "example": "1.234.567,89",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "+49",
+    "callingCode": "",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "+49 30 12345678",
-    "subscriberNumberLengths": [9, 10, 11]
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
   },
   "addressFormat": {
-    "format": "%N%n%O%n%A%n%Z %C",
-    "lineOrder": ["Name", "Organization", "Street Address", "Postal Code + City"],
-    "postalCodeFormat": "NNNNN",
-    "postalCodeRegex": "^\\d{5}$",
-    "postalCodeExample": "10115",
-    "administrativeDivisionName": "Land",
-    "administrativeDivisionType": "State"
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "#####",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
   },
   "locale": {
     "writingDirection": "ltr",

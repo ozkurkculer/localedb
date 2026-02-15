@@ -1,0 +1,230 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Cape Verde",
+    "officialName": "Cape Verde",
+    "nativeName": "Cabo Verde",
+    "officialNativeName": "",
+    "capital": "Praia",
+    "capitalCoordinates": [
+      14.93152,
+      -23.51254
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Africa",
+    "region": "Western Africa",
+    "subregion": "Western Africa",
+    "population": 0,
+    "area": 4033,
+    "flagEmoji": "🇨🇻",
+    "tld": "cv",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "pt",
+        "iso639_2": "por",
+        "iso639_3": "por",
+        "name": "Portuguese",
+        "nativeName": "Português",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "CV",
+    "iso3166Alpha3": "CPV",
+    "iso3166Numeric": "132",
+    "bcp47": [
+      "pt-CV"
+    ],
+    "internetTld": "cv",
+    "ioc": "CPV",
+    "fifa": "CPV",
+    "vehicleCode": "CV",
+    "fips10": "CV",
+    "unLocode": "CV",
+    "stanag1059": "CPV",
+    "itu": "CPV",
+    "uic": "",
+    "maritime": 617,
+    "mmc": 625
+  },
+  "currency": {
+    "code": "CVE",
+    "numericCode": 132,
+    "name": "Cape Verdean Escudo",
+    "nativeName": "Cape Verdean escudo",
+    "symbol": "Esc",
+    "narrowSymbol": "Esc",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centavos",
+    "pattern": "¤ #,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d 'de' MMMM 'de' y",
+      "long": "d 'de' MMMM 'de' y",
+      "medium": "d 'de' MMM 'de' y",
+      "short": "dd/MM/y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "janeiro",
+        "fevereiro",
+        "março",
+        "abril",
+        "maio",
+        "junho",
+        "julho",
+        "agosto",
+        "setembro",
+        "outubro",
+        "novembro",
+        "dezembro"
+      ],
+      "abbreviated": [
+        "jan.",
+        "fev.",
+        "mar.",
+        "abr.",
+        "mai.",
+        "jun.",
+        "jul.",
+        "ago.",
+        "set.",
+        "out.",
+        "nov.",
+        "dez."
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "domingo",
+        "segunda-feira",
+        "terça-feira",
+        "quarta-feira",
+        "quinta-feira",
+        "sexta-feira",
+        "sábado"
+      ],
+      "abbreviated": [
+        "dom.",
+        "seg.",
+        "ter.",
+        "qua.",
+        "qui.",
+        "sex.",
+        "sáb."
+      ],
+      "narrow": [
+        "D",
+        "S",
+        "T",
+        "Q",
+        "Q",
+        "S",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-01:00"
+    ],
+    "primaryTimezone": "UTC-01:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "####",
+    "postalCodeRegex": "^(\\d{4})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

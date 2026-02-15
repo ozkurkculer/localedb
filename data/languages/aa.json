@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "aa",
+    "iso639_2": "aar",
+    "iso639_3": "aar",
+    "name": "Afar",
+    "nativeName": "Afar",
+    "direction": "ltr",
+    "countries": [
+      "ER"
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "North Korea",
+    "officialName": "North Korea",
+    "nativeName": "북한",
+    "officialNativeName": "",
+    "capital": "Pyongyang",
+    "capitalCoordinates": [
+      39.03385,
+      125.75432
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "subregion": "Eastern Asia",
+    "population": 0,
+    "area": 120538,
+    "flagEmoji": "🇰🇵",
+    "tld": "kp",
+    "landlocked": false,
+    "borders": [
+      "CN",
+      "KR",
+      "RU"
+    ],
+    "languages": [
+      {
+        "code": "ko",
+        "iso639_2": "kor",
+        "iso639_3": "kor",
+        "name": "Korean",
+        "nativeName": "한국어",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "KP",
+    "iso3166Alpha3": "PRK",
+    "iso3166Numeric": "408",
+    "bcp47": [
+      "ko-KP"
+    ],
+    "internetTld": "kp",
+    "ioc": "PRK",
+    "fifa": "PRK",
+    "vehicleCode": "KP",
+    "fips10": "KN",
+    "unLocode": "KP",
+    "stanag1059": "PRK",
+    "itu": "KRE",
+    "uic": "30 PRK",
+    "maritime": 445,
+    "mmc": 467
+  },
+  "currency": {
+    "code": "KPW",
+    "numericCode": 408,
+    "name": "North Korean Won",
+    "nativeName": "North Korean won",
+    "symbol": "₩",
+    "narrowSymbol": "₩",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Chon",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "y년 MMMM d일 EEEE",
+      "long": "y년 MMMM d일",
+      "medium": "y. M. d.",
+      "short": "yy. M. d."
+    },
+    "timeFormats": {
+      "full": "a h시 m분 s초 zzzz",
+      "long": "a h시 m분 s초 z",
+      "medium": "a h:mm:ss",
+      "short": "a h:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmszzzz",
+      "long": "ahmsz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "1월",
+        "2월",
+        "3월",
+        "4월",
+        "5월",
+        "6월",
+        "7월",
+        "8월",
+        "9월",
+        "10월",
+        "11월",
+        "12월"
+      ],
+      "abbreviated": [
+        "1월",
+        "2월",
+        "3월",
+        "4월",
+        "5월",
+        "6월",
+        "7월",
+        "8월",
+        "9월",
+        "10월",
+        "11월",
+        "12월"
+      ],
+      "narrow": [
+        "1월",
+        "2월",
+        "3월",
+        "4월",
+        "5월",
+        "6월",
+        "7월",
+        "8월",
+        "9월",
+        "10월",
+        "11월",
+        "12월"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "일요일",
+        "월요일",
+        "화요일",
+        "수요일",
+        "목요일",
+        "금요일",
+        "토요일"
+      ],
+      "abbreviated": [
+        "일",
+        "월",
+        "화",
+        "수",
+        "목",
+        "금",
+        "토"
+      ],
+      "narrow": [
+        "일",
+        "월",
+        "화",
+        "수",
+        "목",
+        "금",
+        "토"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "primaryTimezone": "UTC+09:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###-###",
+    "postalCodeRegex": "^(\\d{6})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

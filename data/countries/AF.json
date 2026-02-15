@@ -1,0 +1,257 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
+    "nativeName": "افغانستان",
+    "officialNativeName": "جمهوری اسلامی افغانستان",
+    "capital": "Kabul",
+    "capitalCoordinates": [
+      34.52813,
+      69.17233
+    ],
+    "coordinates": [
+      33,
+      65
+    ],
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "subregion": "Southern Asia",
+    "population": 40218234,
+    "area": 652230,
+    "flagEmoji": "🇦🇫",
+    "tld": "af",
+    "landlocked": true,
+    "borders": [
+      "IR",
+      "PK",
+      "TM",
+      "UZ",
+      "TJ",
+      "CN"
+    ],
+    "languages": [
+      {
+        "code": "ps",
+        "iso639_2": "pus",
+        "iso639_3": "pus",
+        "name": "Pashto",
+        "nativeName": "پښتو",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "uz",
+        "iso639_2": "uzb",
+        "iso639_3": "uzb",
+        "name": "Uzbek",
+        "nativeName": "Oʻzbek",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "tk",
+        "iso639_2": "tuk",
+        "iso639_3": "tuk",
+        "name": "Turkmen",
+        "nativeName": "Türkmen",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": "Afghan"
+  },
+  "codes": {
+    "iso3166Alpha2": "AF",
+    "iso3166Alpha3": "AFG",
+    "iso3166Numeric": "4",
+    "bcp47": [
+      "ps-AF"
+    ],
+    "internetTld": "af",
+    "ioc": "AFG",
+    "fifa": "AFG",
+    "vehicleCode": "AFG",
+    "fips10": "AF",
+    "unLocode": "AF",
+    "stanag1059": "AFG",
+    "itu": "AFG",
+    "uic": "68 AF",
+    "maritime": 401,
+    "mmc": 412
+  },
+  "currency": {
+    "code": "AFN",
+    "numericCode": 971,
+    "name": "Afghani",
+    "nativeName": "Afghan afghani",
+    "symbol": "؋",
+    "narrowSymbol": "؋",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Puls",
+    "pattern": "¤ #,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE د y د MMMM d",
+      "long": "y MMMM d",
+      "medium": "y MMM d",
+      "short": "y/M/d"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss (zzzz)",
+      "long": "H:mm:ss (z)",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "جنوري",
+        "فبروري",
+        "مارچ",
+        "اپریل",
+        "مۍ",
+        "جون",
+        "جولای",
+        "اګست",
+        "سېپتمبر",
+        "اکتوبر",
+        "نومبر",
+        "دسمبر"
+      ],
+      "abbreviated": [
+        "جنوري",
+        "فبروري",
+        "مارچ",
+        "اپریل",
+        "مۍ",
+        "جون",
+        "جولای",
+        "اګست",
+        "سېپتمبر",
+        "اکتوبر",
+        "نومبر",
+        "دسمبر"
+      ],
+      "narrow": [
+        "ج",
+        "ف",
+        "م",
+        "ا",
+        "م",
+        "ج",
+        "ج",
+        "ا",
+        "س",
+        "ا",
+        "ن",
+        "د"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "يونۍ",
+        "دونۍ",
+        "درېنۍ",
+        "څلرنۍ",
+        "پينځنۍ",
+        "جمعه",
+        "اونۍ"
+      ],
+      "abbreviated": [
+        "يونۍ",
+        "دونۍ",
+        "درېنۍ",
+        "څلرنۍ",
+        "پينځنۍ",
+        "جمعه",
+        "اونۍ"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+04:30"
+    ],
+    "primaryTimezone": "UTC+04:30",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "arabext"
+  },
+  "phone": {
+    "callingCode": "+93",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "",
+    "postalCodeRegex": "",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

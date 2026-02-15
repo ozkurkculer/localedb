@@ -1,0 +1,18 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "sr",
+    "iso639_2": "srp",
+    "iso639_3": "srp",
+    "name": "Serbian",
+    "nativeName": "српски језик",
+    "direction": "ltr",
+    "countries": [
+      "BA",
+      "XK",
+      "ME",
+      "RS"
+    ]
+  }
+}

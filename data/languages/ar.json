@@ -1,0 +1,39 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ar",
+    "iso639_2": "ara",
+    "iso639_3": "ara",
+    "name": "Arabic",
+    "nativeName": "العربية",
+    "direction": "ltr",
+    "countries": [
+      "EG",
+      "DZ",
+      "BH",
+      "DJ",
+      "ER",
+      "IQ",
+      "IL",
+      "YE",
+      "JO",
+      "QA",
+      "KM",
+      "KW",
+      "LY",
+      "LB",
+      "MA",
+      "MR",
+      "OM",
+      "PS",
+      "SA",
+      "SO",
+      "SD",
+      "SY",
+      "TD",
+      "TN",
+      "AE"
+    ]
+  }
+}

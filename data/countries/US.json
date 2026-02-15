@@ -1,24 +1,38 @@
 {
   "$schema": "1.0.0",
   "lastUpdated": "2026-02-15",
-  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
   "basics": {
-    "name": "United States",
+    "name": "United States of America",
     "officialName": "United States of America",
     "nativeName": "United States",
-    "officialNativeName": "United States of America",
+    "officialNativeName": "",
     "capital": "Washington, D.C.",
-    "capitalCoordinates": [38.9072, -77.0369],
-    "coordinates": [37.0902, -95.7129],
+    "capitalCoordinates": [
+      38.89511,
+      -77.03637
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
     "continent": "North America",
-    "region": "Northern America",
-    "subregion": "Northern America",
-    "population": 331900000,
-    "area": 9833517,
+    "region": "North America",
+    "subregion": "North America",
+    "population": 0,
+    "area": 9372610,
     "flagEmoji": "🇺🇸",
-    "tld": ".us",
+    "tld": "us",
     "landlocked": false,
-    "borders": ["CAN", "MEX"],
+    "borders": [
+      "CA",
+      "MX"
+    ],
     "languages": [
       {
         "code": "en",
@@ -26,17 +40,21 @@
         "iso639_3": "eng",
         "name": "English",
         "nativeName": "English",
-        "official": true
+        "official": true,
+        "direction": "ltr",
+        "countries": []
       }
     ],
-    "demonym": "American"
+    "demonym": ""
   },
   "codes": {
     "iso3166Alpha2": "US",
     "iso3166Alpha3": "USA",
     "iso3166Numeric": "840",
-    "bcp47": ["en-US", "es-US"],
-    "internetTld": ".us",
+    "bcp47": [
+      "en-US"
+    ],
+    "internetTld": "us",
     "ioc": "USA",
     "fifa": "USA",
     "vehicleCode": "USA",
@@ -44,15 +62,15 @@
     "unLocode": "US",
     "stanag1059": "USA",
     "itu": "USA",
-    "uic": "72 US",
-    "maritime": 338,
-    "mmc": 310
+    "uic": "001 US",
+    "maritime": "303, 338, 366, 367, 368, 369",
+    "mmc": "310, 311, 312, 313, 314, 315, 316"
   },
   "currency": {
     "code": "USD",
     "numericCode": 840,
-    "name": "United States Dollar",
-    "nativeName": "United States Dollar",
+    "name": "US Dollar",
+    "nativeName": "United States dollar",
     "symbol": "$",
     "narrowSymbol": "$",
     "symbolPosition": "before",
@@ -60,84 +78,167 @@
     "thousandsSeparator": ",",
     "decimalDigits": 2,
     "subunitValue": 100,
-    "subunitName": "Cent",
+    "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "$1,250.00",
-    "accountingExample": "($1,250.00)"
+    "example": "",
+    "accountingExample": ""
   },
   "dateTime": {
-    "firstDayOfWeek": 7,
-    "clockFormat": "12h",
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
     "dateFormats": {
-      "full": "Sunday, February 15, 2026",
-      "long": "February 15, 2026",
-      "medium": "Feb 15, 2026",
-      "short": "2/15/26"
-    },
-    "timeFormats": {
-      "full": "3:30:00 PM Eastern Standard Time",
-      "long": "3:30:00 PM EST",
-      "medium": "3:30:00 PM",
-      "short": "3:30 PM"
-    },
-    "datePatterns": {
       "full": "EEEE, MMMM d, y",
       "long": "MMMM d, y",
       "medium": "MMM d, y",
       "short": "M/d/yy"
     },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
     "timePatterns": {
-      "full": "h:mm:ss a zzzz",
-      "long": "h:mm:ss a z",
-      "medium": "h:mm:ss a",
-      "short": "h:mm a"
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
     },
     "monthNames": {
-      "wide": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-      "abbreviated": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-      "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+      "wide": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "abbreviated": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
     },
     "dayNames": {
-      "wide": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "abbreviated": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-      "narrow": ["M", "T", "W", "T", "F", "S", "S"]
+      "wide": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "abbreviated": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ]
     },
-    "amPmMarkers": ["AM", "PM"],
-    "timezones": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Anchorage", "Pacific/Honolulu"],
-    "primaryTimezone": "America/New_York",
-    "utcOffset": "-05:00"
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-12:00",
+      "UTC-11:00",
+      "UTC-10:00",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC+10:00",
+      "UTC+12:00"
+    ],
+    "primaryTimezone": "UTC-12:00",
+    "utcOffset": "+00:00"
   },
   "numberFormat": {
     "decimalSeparator": ".",
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "25.5%",
-    "example": "1,234,567.89",
+    "percentExample": "",
+    "example": "",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "+1",
-    "trunkPrefix": "1",
-    "internationalPrefix": "011",
-    "exampleFormat": "+1 212 555 1234",
-    "subscriberNumberLengths": [10]
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
   },
   "addressFormat": {
-    "format": "%N%n%O%n%A%n%C, %S %Z",
-    "lineOrder": ["Name", "Organization", "Street Address", "City, State ZIP"],
-    "postalCodeFormat": "NNNNN",
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "#####-####",
     "postalCodeRegex": "^\\d{5}(-\\d{4})?$",
-    "postalCodeExample": "10001",
-    "administrativeDivisionName": "State",
-    "administrativeDivisionType": "State"
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province",
+    "stateCodeType": "ANSI"
   },
   "locale": {
     "writingDirection": "ltr",
-    "measurementSystem": "imperial",
-    "temperatureScale": "fahrenheit",
-    "paperSize": "Letter",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
     "drivingSide": "right",
-    "weekNumbering": "US"
+    "weekNumbering": "ISO"
   }
 }

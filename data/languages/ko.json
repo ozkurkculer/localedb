@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ko",
+    "iso639_2": "kor",
+    "iso639_3": "kor",
+    "name": "Korean",
+    "nativeName": "한국어",
+    "direction": "ltr",
+    "countries": [
+      "KP",
+      "KR"
+    ]
+  }
+}

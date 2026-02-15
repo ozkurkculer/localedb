@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "la",
+    "iso639_2": "lat",
+    "iso639_3": "lat",
+    "name": "Latin",
+    "nativeName": "latine",
+    "direction": "ltr",
+    "countries": [
+      "VA"
+    ]
+  }
+}

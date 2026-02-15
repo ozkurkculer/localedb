@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "si",
+    "iso639_2": "sin",
+    "iso639_3": "sin",
+    "name": "Sinhalese",
+    "nativeName": "සිංහල",
+    "direction": "ltr",
+    "countries": [
+      "LK"
+    ]
+  }
+}

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:data": "tsx scripts/build-data.ts",
     "start": "next start",
     "lint": "eslint"
   },

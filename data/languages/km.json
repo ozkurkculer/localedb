@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "km",
+    "iso639_2": "khm",
+    "iso639_3": "khm",
+    "name": "Khmer",
+    "nativeName": "ខ្មែរ",
+    "direction": "ltr",
+    "countries": [
+      "KH"
+    ]
+  }
+}

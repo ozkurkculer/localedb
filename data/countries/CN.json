@@ -1,0 +1,247 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "China",
+    "officialName": "China",
+    "nativeName": "中国",
+    "officialNativeName": "",
+    "capital": "Beijing",
+    "capitalCoordinates": [
+      39.9075,
+      116.39723
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "subregion": "Eastern Asia",
+    "population": 0,
+    "area": 9706961,
+    "flagEmoji": "🇨🇳",
+    "tld": "cn",
+    "landlocked": false,
+    "borders": [
+      "AF",
+      "BT",
+      "MM",
+      "HK",
+      "IN",
+      "KZ",
+      "NP",
+      "KP",
+      "KG",
+      "LA",
+      "MO",
+      "MN",
+      "PK",
+      "RU",
+      "TJ",
+      "VN"
+    ],
+    "languages": [
+      {
+        "code": "zh",
+        "iso639_2": "zho",
+        "iso639_3": "zho",
+        "name": "Chinese",
+        "nativeName": "中文 (Zhōngwén)",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "CN",
+    "iso3166Alpha3": "CHN",
+    "iso3166Numeric": "156",
+    "bcp47": [
+      "zh-CN"
+    ],
+    "internetTld": "cn",
+    "ioc": "CHN",
+    "fifa": "CHN",
+    "vehicleCode": "CHN",
+    "fips10": "CH",
+    "unLocode": "CN",
+    "stanag1059": "CHN",
+    "itu": "CHN",
+    "uic": "33 RC",
+    "maritime": "412, 413, 414",
+    "mmc": "460, 461"
+  },
+  "currency": {
+    "code": "CNY",
+    "numericCode": 156,
+    "name": "Renminbi Yuan",
+    "nativeName": "Chinese yuan",
+    "symbol": "¥",
+    "narrowSymbol": "¥",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Fen",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "y年M月d日EEEE",
+      "long": "y年M月d日",
+      "medium": "y年M月d日",
+      "short": "y/M/d"
+    },
+    "timeFormats": {
+      "full": "zzzz HH:mm:ss",
+      "long": "z HH:mm:ss",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMEEEEd",
+      "long": "yMMMd",
+      "medium": "yMMMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "一月",
+        "二月",
+        "三月",
+        "四月",
+        "五月",
+        "六月",
+        "七月",
+        "八月",
+        "九月",
+        "十月",
+        "十一月",
+        "十二月"
+      ],
+      "abbreviated": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月",
+        "7月",
+        "8月",
+        "9月",
+        "10月",
+        "11月",
+        "12月"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "星期日",
+        "星期一",
+        "星期二",
+        "星期三",
+        "星期四",
+        "星期五",
+        "星期六"
+      ],
+      "abbreviated": [
+        "周日",
+        "周一",
+        "周二",
+        "周三",
+        "周四",
+        "周五",
+        "周六"
+      ],
+      "narrow": [
+        "日",
+        "一",
+        "二",
+        "三",
+        "四",
+        "五",
+        "六"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "primaryTimezone": "UTC+08:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "######",
+    "postalCodeRegex": "^(\\d{6})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

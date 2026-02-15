@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "na",
+    "iso639_2": "nau",
+    "iso639_3": "nau",
+    "name": "Nauruan",
+    "nativeName": "Dorerin Naoero",
+    "direction": "ltr",
+    "countries": [
+      "NR"
+    ]
+  }
+}

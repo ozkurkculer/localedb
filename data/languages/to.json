@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "to",
+    "iso639_2": "ton",
+    "iso639_3": "ton",
+    "name": "Tonga (Tonga Islands)",
+    "nativeName": "faka Tonga",
+    "direction": "ltr",
+    "countries": [
+      "TO"
+    ]
+  }
+}

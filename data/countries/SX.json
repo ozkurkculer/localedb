@@ -1,0 +1,242 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Sint Maarten",
+    "officialName": "Sint Maarten",
+    "nativeName": "Sint-Maarten",
+    "officialNativeName": "",
+    "capital": "Philipsburg",
+    "capitalCoordinates": [
+      18.025415,
+      -63.050516
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Central America",
+    "region": "Caribbean",
+    "subregion": "Caribbean",
+    "population": 0,
+    "area": 34,
+    "flagEmoji": "🇸🇽",
+    "tld": "sx",
+    "landlocked": false,
+    "borders": [
+      "MF"
+    ],
+    "languages": [
+      {
+        "code": "nl",
+        "iso639_2": "nld",
+        "iso639_3": "nld",
+        "name": "Dutch",
+        "nativeName": "Nederlands",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "SX",
+    "iso3166Alpha3": "SXM",
+    "iso3166Numeric": "534",
+    "bcp47": [
+      "nl-SX"
+    ],
+    "internetTld": "sx",
+    "ioc": "",
+    "fifa": "",
+    "vehicleCode": "",
+    "fips10": "NN",
+    "unLocode": "",
+    "stanag1059": "",
+    "itu": "",
+    "uic": "",
+    "maritime": 306,
+    "mmc": ""
+  },
+  "currency": {
+    "code": "XCG",
+    "numericCode": 532,
+    "name": "Caribbean guilder",
+    "nativeName": "Caribische gulden",
+    "symbol": "Cg",
+    "narrowSymbol": "Cg",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤ #,##0.00;¤ -#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd-MM-y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "januari",
+        "februari",
+        "maart",
+        "april",
+        "mei",
+        "juni",
+        "juli",
+        "augustus",
+        "september",
+        "oktober",
+        "november",
+        "december"
+      ],
+      "abbreviated": [
+        "jan",
+        "feb",
+        "mrt",
+        "apr",
+        "mei",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "okt",
+        "nov",
+        "dec"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "zondag",
+        "maandag",
+        "dinsdag",
+        "woensdag",
+        "donderdag",
+        "vrijdag",
+        "zaterdag"
+      ],
+      "abbreviated": [
+        "zo",
+        "ma",
+        "di",
+        "wo",
+        "do",
+        "vr",
+        "za"
+      ],
+      "narrow": [
+        "Z",
+        "M",
+        "D",
+        "W",
+        "D",
+        "V",
+        "Z"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "primaryTimezone": "UTC-04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "",
+    "postalCodeRegex": "",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

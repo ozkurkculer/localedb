@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "az",
+    "iso639_2": "aze",
+    "iso639_3": "aze",
+    "name": "Azerbaijani",
+    "nativeName": "azərbaycan dili",
+    "direction": "ltr",
+    "countries": [
+      "AZ"
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Romania",
+    "officialName": "Romania",
+    "nativeName": "România",
+    "officialNativeName": "",
+    "capital": "Bucharest",
+    "capitalCoordinates": [
+      44.43225,
+      26.10626
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Europe",
+    "region": "Southeast Europe",
+    "subregion": "Southeast Europe",
+    "population": 0,
+    "area": 238391,
+    "flagEmoji": "🇷🇴",
+    "tld": "ro",
+    "landlocked": false,
+    "borders": [
+      "BG",
+      "HU",
+      "MD",
+      "RS",
+      "UA"
+    ],
+    "languages": [
+      {
+        "code": "ro",
+        "iso639_2": "ron",
+        "iso639_3": "ron",
+        "name": "Romanian",
+        "nativeName": "Română",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "RO",
+    "iso3166Alpha3": "ROU",
+    "iso3166Numeric": "642",
+    "bcp47": [
+      "ro-RO"
+    ],
+    "internetTld": "ro",
+    "ioc": "ROU",
+    "fifa": "ROU",
+    "vehicleCode": "RO",
+    "fips10": "RO",
+    "unLocode": "RO",
+    "stanag1059": "ROU",
+    "itu": "ROU",
+    "uic": "53 RO",
+    "maritime": 264,
+    "mmc": 226
+  },
+  "currency": {
+    "code": "RON",
+    "numericCode": 946,
+    "name": "Romanian Leu",
+    "nativeName": "Romanian leu",
+    "symbol": "lei",
+    "narrowSymbol": "lei",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Bani",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd.MM.y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "ianuarie",
+        "februarie",
+        "martie",
+        "aprilie",
+        "mai",
+        "iunie",
+        "iulie",
+        "august",
+        "septembrie",
+        "octombrie",
+        "noiembrie",
+        "decembrie"
+      ],
+      "abbreviated": [
+        "ian.",
+        "feb.",
+        "mar.",
+        "apr.",
+        "mai",
+        "iun.",
+        "iul.",
+        "aug.",
+        "sept.",
+        "oct.",
+        "nov.",
+        "dec."
+      ],
+      "narrow": [
+        "I",
+        "F",
+        "M",
+        "A",
+        "M",
+        "I",
+        "I",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "duminică",
+        "luni",
+        "marți",
+        "miercuri",
+        "joi",
+        "vineri",
+        "sâmbătă"
+      ],
+      "abbreviated": [
+        "dum.",
+        "lun.",
+        "mar.",
+        "mie.",
+        "joi",
+        "vin.",
+        "sâm."
+      ],
+      "narrow": [
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "primaryTimezone": "UTC+02:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "######",
+    "postalCodeRegex": "^(\\d{6})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "India",
+    "officialName": "India",
+    "nativeName": "भारत",
+    "officialNativeName": "",
+    "capital": "New Delhi",
+    "capitalCoordinates": [
+      28.63576,
+      77.22445
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "subregion": "Southern Asia",
+    "population": 0,
+    "area": 3287590,
+    "flagEmoji": "🇮🇳",
+    "tld": "in",
+    "landlocked": false,
+    "borders": [
+      "BD",
+      "BT",
+      "MM",
+      "CN",
+      "NP",
+      "PK"
+    ],
+    "languages": [
+      {
+        "code": "hi",
+        "iso639_2": "hin",
+        "iso639_3": "hin",
+        "name": "Hindi",
+        "nativeName": "हिन्दी",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "IN",
+    "iso3166Alpha3": "IND",
+    "iso3166Numeric": "356",
+    "bcp47": [
+      "hi-IN"
+    ],
+    "internetTld": "in",
+    "ioc": "IND",
+    "fifa": "IND",
+    "vehicleCode": "IND",
+    "fips10": "IN",
+    "unLocode": "IN",
+    "stanag1059": "IND",
+    "itu": "IND",
+    "uic": "",
+    "maritime": 419,
+    "mmc": "404, 405"
+  },
+  "currency": {
+    "code": "INR",
+    "numericCode": 356,
+    "name": "Indian Rupee",
+    "nativeName": "Indian rupee",
+    "symbol": "₹",
+    "narrowSymbol": "₹",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Paise",
+    "pattern": "¤#,##,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "d/M/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "जनवरी",
+        "फ़रवरी",
+        "मार्च",
+        "अप्रैल",
+        "मई",
+        "जून",
+        "जुलाई",
+        "अगस्त",
+        "सितंबर",
+        "अक्टूबर",
+        "नवंबर",
+        "दिसंबर"
+      ],
+      "abbreviated": [
+        "जन॰",
+        "फ़र॰",
+        "मार्च",
+        "अप्रैल",
+        "मई",
+        "जून",
+        "जुल॰",
+        "अग॰",
+        "सित॰",
+        "अक्टू॰",
+        "नव॰",
+        "दिस॰"
+      ],
+      "narrow": [
+        "ज",
+        "फ़",
+        "मा",
+        "अ",
+        "म",
+        "जू",
+        "जु",
+        "अ",
+        "सि",
+        "अ",
+        "न",
+        "दि"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "रविवार",
+        "सोमवार",
+        "मंगलवार",
+        "बुधवार",
+        "गुरुवार",
+        "शुक्रवार",
+        "शनिवार"
+      ],
+      "abbreviated": [
+        "रवि",
+        "सोम",
+        "मंगल",
+        "बुध",
+        "गुरु",
+        "शुक्र",
+        "शनि"
+      ],
+      "narrow": [
+        "र",
+        "सो",
+        "मं",
+        "बु",
+        "गु",
+        "शु",
+        "श"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+05:30"
+    ],
+    "primaryTimezone": "UTC+05:30",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "######",
+    "postalCodeRegex": "^(\\d{6})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ky",
+    "iso639_2": "kir",
+    "iso639_3": "kir",
+    "name": "Kyrgyz",
+    "nativeName": "Кыргызча",
+    "direction": "ltr",
+    "countries": [
+      "KG"
+    ]
+  }
+}

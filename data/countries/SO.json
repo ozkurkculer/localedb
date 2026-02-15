@@ -1,0 +1,244 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Somalia",
+    "officialName": "Somalia",
+    "nativeName": "Soomaaliya",
+    "officialNativeName": "",
+    "capital": "Mogadishu",
+    "capitalCoordinates": [
+      2.03711,
+      45.34375
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "subregion": "Eastern Africa",
+    "population": 0,
+    "area": 637657,
+    "flagEmoji": "🇸🇴",
+    "tld": "so",
+    "landlocked": false,
+    "borders": [
+      "DJ",
+      "ET",
+      "KE"
+    ],
+    "languages": [
+      {
+        "code": "so",
+        "iso639_2": "som",
+        "iso639_3": "som",
+        "name": "Somali",
+        "nativeName": "Soomaaliga",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "ar",
+        "iso639_2": "ara",
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "nativeName": "العربية",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "SO",
+    "iso3166Alpha3": "SOM",
+    "iso3166Numeric": "706",
+    "bcp47": [
+      "so-SO"
+    ],
+    "internetTld": "so",
+    "ioc": "SOM",
+    "fifa": "SOM",
+    "vehicleCode": "SO",
+    "fips10": "SO",
+    "unLocode": "SO",
+    "stanag1059": "SOM",
+    "itu": "SOM",
+    "uic": "",
+    "maritime": 666,
+    "mmc": 637
+  },
+  "currency": {
+    "code": "SOS",
+    "numericCode": 706,
+    "name": "Somalian Shilling",
+    "nativeName": "Somali shilling",
+    "symbol": "Sh",
+    "narrowSymbol": "Sh",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centesimi",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, MMMM d, y",
+      "long": "MMMM d, y",
+      "medium": "dd-MMM-y",
+      "short": "dd/MM/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEdd",
+      "long": "yMMMMdd",
+      "medium": "yMMMdd",
+      "short": "yyMMdd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "Janaayo",
+        "Febraayo",
+        "Maarso",
+        "Abriil",
+        "Maayo",
+        "Juun",
+        "Luulyo",
+        "Agosto",
+        "Sebtembar",
+        "Oktoobar",
+        "Noofeembar",
+        "Diseembar"
+      ],
+      "abbreviated": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Abr",
+        "May",
+        "Jun",
+        "Lul",
+        "Ogs",
+        "Seb",
+        "Okt",
+        "Nof",
+        "Dis"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "L",
+        "O",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "Axad",
+        "Isniin",
+        "Talaado",
+        "Arbaco",
+        "Khamiis",
+        "Jimco",
+        "Sabti"
+      ],
+      "abbreviated": [
+        "Axd",
+        "Isn",
+        "Tldo",
+        "Arbc",
+        "Khms",
+        "Jmc",
+        "Sbti"
+      ],
+      "narrow": [
+        "A",
+        "I",
+        "T",
+        "A",
+        "Kh",
+        "J",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "primaryTimezone": "UTC+03:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "@@  #####",
+    "postalCodeRegex": "^([A-Z]{2}\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

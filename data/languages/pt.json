@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "pt",
+    "iso639_2": "por",
+    "iso639_3": "por",
+    "name": "Portuguese",
+    "nativeName": "Português",
+    "direction": "ltr",
+    "countries": [
+      "AO",
+      "GQ",
+      "BR",
+      "GW",
+      "CV",
+      "MO",
+      "MZ",
+      "TL",
+      "PT",
+      "ST"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "af",
+    "iso639_2": "afr",
+    "iso639_3": "afr",
+    "name": "Afrikaans",
+    "nativeName": "Afrikaans",
+    "direction": "ltr",
+    "countries": [
+      "NA",
+      "ZA"
+    ]
+  }
+}

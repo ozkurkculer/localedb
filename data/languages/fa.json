@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "fa",
+    "iso639_2": "fas",
+    "iso639_3": "fas",
+    "name": "Persian (Farsi)",
+    "nativeName": "فارسی",
+    "direction": "ltr",
+    "countries": [
+      "IR"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "bi",
+    "iso639_2": "bis",
+    "iso639_3": "bis",
+    "name": "Bislama",
+    "nativeName": "Bislama",
+    "direction": "ltr",
+    "countries": [
+      "VU"
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Iceland",
+    "officialName": "Iceland",
+    "nativeName": "Ísland",
+    "officialNativeName": "",
+    "capital": "Reykjavík",
+    "capitalCoordinates": [
+      64.13548,
+      -21.89541
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "subregion": "Northern Europe",
+    "population": 0,
+    "area": 103000,
+    "flagEmoji": "🇮🇸",
+    "tld": "is",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "is",
+        "iso639_2": "isl",
+        "iso639_3": "isl",
+        "name": "Icelandic",
+        "nativeName": "Íslenska",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "IS",
+    "iso3166Alpha3": "ISL",
+    "iso3166Numeric": "352",
+    "bcp47": [
+      "is-IS"
+    ],
+    "internetTld": "is",
+    "ioc": "ISL",
+    "fifa": "ISL",
+    "vehicleCode": "IS",
+    "fips10": "IC",
+    "unLocode": "IS",
+    "stanag1059": "ISL",
+    "itu": "ISL",
+    "uic": "",
+    "maritime": 251,
+    "mmc": 274
+  },
+  "currency": {
+    "code": "ISK",
+    "numericCode": 352,
+    "name": "Icelandic Krone",
+    "nativeName": "Icelandic króna",
+    "symbol": "kr",
+    "narrowSymbol": "kr",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Aurar",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "d. MMM y",
+      "short": "d.M.y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "janúar",
+        "febrúar",
+        "mars",
+        "apríl",
+        "maí",
+        "júní",
+        "júlí",
+        "ágúst",
+        "september",
+        "október",
+        "nóvember",
+        "desember"
+      ],
+      "abbreviated": [
+        "jan.",
+        "feb.",
+        "mar.",
+        "apr.",
+        "maí",
+        "jún.",
+        "júl.",
+        "ágú.",
+        "sep.",
+        "okt.",
+        "nóv.",
+        "des."
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "Á",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "sunnudagur",
+        "mánudagur",
+        "þriðjudagur",
+        "miðvikudagur",
+        "fimmtudagur",
+        "föstudagur",
+        "laugardagur"
+      ],
+      "abbreviated": [
+        "sun.",
+        "mán.",
+        "þri.",
+        "mið.",
+        "fim.",
+        "fös.",
+        "lau."
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "Þ",
+        "M",
+        "F",
+        "F",
+        "L"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC"
+    ],
+    "primaryTimezone": "UTC",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###",
+    "postalCodeRegex": "^(\\d{3})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

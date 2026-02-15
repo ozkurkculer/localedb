@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "uz",
+    "iso639_2": "uzb",
+    "iso639_3": "uzb",
+    "name": "Uzbek",
+    "nativeName": "Oʻzbek",
+    "direction": "ltr",
+    "countries": [
+      "AF",
+      "UZ"
+    ]
+  }
+}
