@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "MZN",
+    "numericCode": "",
+    "name": "Metical",
+    "nativeName": "Mozambican metical",
+    "symbol": "MT",
+    "narrowSymbol": "MT",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centavos",
+    "pattern": "¤ #,##0.00",
+    "example": "123 456,79 MTn",
+    "accountingExample": "(1234,56 MTn)",
+    "countries": [
+      "MZ"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ETB",
+    "numericCode": 230,
+    "name": "Birr",
+    "nativeName": "Ethiopian birr",
+    "symbol": "Br",
+    "narrowSymbol": "Br",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "ብር 123,456.79",
+    "accountingExample": "(ብር 1,234.56)",
+    "countries": [
+      "ET"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "JOD",
+    "numericCode": 400,
+    "name": "Jordanian Dinar",
+    "nativeName": "Jordanian dinar",
+    "symbol": "د.ا",
+    "narrowSymbol": "د.ا",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Piaster",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏١٢٣٬٤٥٦٫٧٨٩ د.أ.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦٠ د.أ.‏",
+    "countries": [
+      "JO"
+    ]
+  }
+}

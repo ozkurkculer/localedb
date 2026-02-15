@@ -1,0 +1,25 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "GBP",
+    "numericCode": 826,
+    "name": "Sterling Pound",
+    "nativeName": "",
+    "symbol": "",
+    "narrowSymbol": "",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Pence",
+    "pattern": "¤#,##0.00",
+    "example": "£123,456.79",
+    "accountingExample": "(£1,234.56)",
+    "countries": [
+      "GS",
+      "GB"
+    ]
+  }
+}

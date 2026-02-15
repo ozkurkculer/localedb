@@ -15,14 +15,23 @@ export interface MainNavItem extends NavItem {}
 
 export interface SidebarNavItem extends NavItemWithChildren {}
 
-export const mainNav: MainNavItem[] = [
+export const mainNav: NavItem[] = [
   {
     title: "Countries",
     href: "/countries",
   },
   {
+    title: "Languages",
+    href: "/languages",
+  },
+  {
+    title: "Currencies",
+    href: "/currencies",
+  },
+  {
     title: "Locale Codes",
     href: "/locale-codes",
+    disabled: true,
   },
   {
     title: "About",

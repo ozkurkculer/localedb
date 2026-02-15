@@ -1,0 +1,27 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "NZD",
+    "numericCode": 554,
+    "name": "New Zealand Dollar",
+    "nativeName": "New Zealand dollar",
+    "symbol": "$",
+    "narrowSymbol": "$",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)",
+    "countries": [
+      "NZ",
+      "NU",
+      "PN",
+      "TK"
+    ]
+  }
+}

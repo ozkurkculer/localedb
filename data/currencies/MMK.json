@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "MMK",
+    "numericCode": 104,
+    "name": "Kyat",
+    "nativeName": "Burmese kyat",
+    "symbol": "Ks",
+    "narrowSymbol": "Ks",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Pyas",
+    "pattern": "#,##0.00 ¤",
+    "example": "၁၂၃,၄၅၇ K",
+    "accountingExample": "-K ၁,၂၃၅",
+    "countries": [
+      "MM"
+    ]
+  }
+}

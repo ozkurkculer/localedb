@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "GEL",
+    "numericCode": 981,
+    "name": "Georgian Lari",
+    "nativeName": "lari",
+    "symbol": "₾",
+    "narrowSymbol": "₾",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Tetri",
+    "pattern": "#,##0.00 ¤",
+    "example": "123 456,79 ₾",
+    "accountingExample": "-1234,56 ₾",
+    "countries": [
+      "GE"
+    ]
+  }
+}

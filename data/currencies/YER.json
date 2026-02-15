@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "YER",
+    "numericCode": 886,
+    "name": "Jemen Rial",
+    "nativeName": "Yemeni rial",
+    "symbol": "﷼",
+    "narrowSymbol": "﷼",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Fils",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "‏١٢٣٬٤٥٧ ر.ي.‏",
+    "accountingExample": "؜-‏١٬٢٣٥ ر.ي.‏",
+    "countries": [
+      "YE"
+    ]
+  }
+}

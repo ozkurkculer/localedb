@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "MVR",
+    "numericCode": 462,
+    "name": "Maldivian Rufiyaa",
+    "nativeName": "Maldivian rufiyaa",
+    "symbol": ".ރ",
+    "narrowSymbol": ".ރ",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Laari",
+    "pattern": "¤ #,##0.00",
+    "example": "MVR 123,456.79",
+    "accountingExample": "(MVR 1,234.56)",
+    "countries": [
+      "MV"
+    ]
+  }
+}

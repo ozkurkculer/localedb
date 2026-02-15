@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "GHS",
+    "numericCode": 936,
+    "name": "Ghana Cedi",
+    "nativeName": "Ghanaian cedi",
+    "symbol": "₵",
+    "narrowSymbol": "₵",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Pesewas",
+    "pattern": "¤#,##0.00",
+    "example": "GH₵123,456.79",
+    "accountingExample": "(GH₵1,234.56)",
+    "countries": [
+      "GH"
+    ]
+  }
+}

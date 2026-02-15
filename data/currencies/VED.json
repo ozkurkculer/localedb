@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "VED",
+    "numericCode": 926,
+    "name": "Bolivar digital",
+    "nativeName": "",
+    "symbol": "",
+    "narrowSymbol": "",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Céntimos",
+    "pattern": "#,##0.00 ¤",
+    "example": "VED 123.456,79",
+    "accountingExample": "-VED 1.234,56",
+    "countries": [
+      "VE"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "CZK",
+    "numericCode": 203,
+    "name": "Czech Krone",
+    "nativeName": "Czech koruna",
+    "symbol": "Kč",
+    "narrowSymbol": "Kč",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Haleru",
+    "pattern": "#,##0.00 ¤",
+    "example": "123 456,79 Kč",
+    "accountingExample": "-1 234,56 Kč",
+    "countries": [
+      "CZ"
+    ]
+  }
+}

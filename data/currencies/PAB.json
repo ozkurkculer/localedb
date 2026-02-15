@@ -1,0 +1,24 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "PAB",
+    "numericCode": 590,
+    "name": "Panamanian Balboa",
+    "nativeName": "Panamanian balboa",
+    "symbol": "B/.",
+    "narrowSymbol": "B/.",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centesimos",
+    "pattern": "#,##0.00 ¤",
+    "example": "B/. 123,456.79",
+    "accountingExample": "-B/. 1,234.56",
+    "countries": [
+      "PA"
+    ]
+  }
+}
