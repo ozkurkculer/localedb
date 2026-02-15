@@ -1,31 +1,67 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, Globe2, Code2, Database } from "lucide-react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 export default function Home() {
   return (
     <div className="container relative">
       {/* Hero Section */}
-      <section className="mx-auto flex max-w-5xl flex-col items-center gap-8 py-24 text-center md:py-32 lg:py-40">
-        <div className="flex items-center gap-2 rounded-full border border-border/40 bg-muted/50 px-4 py-1.5 text-sm">
+      <motion.section
+        initial="initial"
+        animate="animate"
+        className="mx-auto flex max-w-5xl flex-col items-center gap-8 py-24 text-center md:py-32 lg:py-40"
+      >
+        <motion.div
+          {...fadeInUp}
+          className="flex items-center gap-2 rounded-full border border-border/40 bg-muted/50 px-4 py-1.5 text-sm"
+        >
           <Globe2 className="h-4 w-4" />
           <span className="font-medium">Open Source Localization Data</span>
-        </div>
+        </motion.div>
 
-        <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+        <motion.h1
+          {...fadeInUp}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+        >
           The{" "}
           <span className="bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
             Localization Encyclopedia
           </span>{" "}
           for Developers
-        </h1>
+        </motion.h1>
 
-        <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
+        <motion.p
+          {...fadeInUp}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="max-w-2xl text-lg text-muted-foreground sm:text-xl"
+        >
           {siteConfig.description}
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col gap-4 sm:flex-row">
+        <motion.div
+          {...fadeInUp}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-col gap-4 sm:flex-row"
+        >
           <Button size="lg" asChild>
             <Link href="/countries">
               Browse Countries
@@ -38,11 +74,17 @@ export default function Home() {
               View on GitHub
             </Link>
           </Button>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
       {/* Feature Cards */}
-      <section className="mx-auto max-w-5xl pb-24 md:pb-32">
+      <motion.section
+        variants={staggerContainer}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="mx-auto max-w-5xl pb-24 md:pb-32"
+      >
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <FeatureCard
             icon={<Globe2 className="h-10 w-10" />}
@@ -60,7 +102,7 @@ export default function Home() {
             description="ISO 3166, BCP47, RFC4647, and all international standards."
           />
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
@@ -73,12 +115,17 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all hover:border-border hover:shadow-md">
+    <motion.div
+      variants={fadeInUp}
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.2 }}
+      className="group relative overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all hover:border-border hover:shadow-md"
+    >
       <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 text-primary">
         {icon}
       </div>
       <h3 className="mb-2 text-xl font-semibold">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
+    </motion.div>
   );
 }

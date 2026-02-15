@@ -1,0 +1,130 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "basics": {
+    "name": "Japan",
+    "officialName": "Japan",
+    "nativeName": "日本",
+    "officialNativeName": "日本国",
+    "capital": "Tokyo",
+    "capitalCoordinates": [35.6895, 139.6917],
+    "coordinates": [36.2048, 138.2529],
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "subregion": "Eastern Asia",
+    "population": 125836021,
+    "area": 377930,
+    "flagEmoji": "🇯🇵",
+    "tld": ".jp",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "ja",
+        "name": "Japanese",
+        "nativeName": "日本語",
+        "official": true
+      }
+    ],
+    "demonym": "Japanese"
+  },
+  "codes": {
+    "iso3166Alpha2": "JP",
+    "iso3166Alpha3": "JPN",
+    "iso3166Numeric": "392",
+    "bcp47": ["ja-JP"],
+    "internetTld": ".jp",
+    "ioc": "JPN",
+    "fifa": "JPN"
+  },
+  "currency": {
+    "code": "JPY",
+    "name": "Japanese Yen",
+    "nativeName": "円",
+    "symbol": "¥",
+    "narrowSymbol": "¥",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 0,
+    "pattern": "¤#,##0",
+    "example": "¥1,250",
+    "accountingExample": "(¥1,250)"
+  },
+  "dateTime": {
+    "firstDayOfWeek": 7,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "2026年2月15日日曜日",
+      "long": "2026年2月15日",
+      "medium": "2026/02/15",
+      "short": "2026/02/15"
+    },
+    "timeFormats": {
+      "full": "15時30分00秒 日本標準時",
+      "long": "15:30:00 JST",
+      "medium": "15:30:00",
+      "short": "15:30"
+    },
+    "datePatterns": {
+      "full": "y年M月d日EEEE",
+      "long": "y年M月d日",
+      "medium": "y/MM/dd",
+      "short": "y/MM/dd"
+    },
+    "timePatterns": {
+      "full": "H時mm分ss秒 zzzz",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "monthNames": {
+      "wide": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      "abbreviated": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      "narrow": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    "dayNames": {
+      "wide": ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"],
+      "abbreviated": ["月", "火", "水", "木", "金", "土", "日"],
+      "narrow": ["月", "火", "水", "木", "金", "土", "日"]
+    },
+    "amPmMarkers": ["午前", "午後"],
+    "timezones": ["Asia/Tokyo"],
+    "primaryTimezone": "Asia/Tokyo",
+    "utcOffset": "+09:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+81",
+    "trunkPrefix": "0",
+    "internationalPrefix": "010",
+    "exampleFormat": "+81 3 1234 5678",
+    "subscriberNumberLengths": [9, 10]
+  },
+  "addressFormat": {
+    "format": "〒%Z%n%S%C%A%n%O%n%N",
+    "lineOrder": ["Postal Code", "Prefecture + City + Address", "Organization", "Name"],
+    "postalCodeFormat": "NNN-NNNN",
+    "postalCodeRegex": "^\\d{3}-?\\d{4}$",
+    "postalCodeExample": "100-0001",
+    "administrativeDivisionName": "都道府県",
+    "administrativeDivisionType": "Prefecture"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "left",
+    "weekNumbering": "ISO"
+  }
+}

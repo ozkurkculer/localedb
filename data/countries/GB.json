@@ -1,0 +1,130 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "basics": {
+    "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
+    "nativeName": "United Kingdom",
+    "officialNativeName": "United Kingdom of Great Britain and Northern Ireland",
+    "capital": "London",
+    "capitalCoordinates": [51.5074, -0.1278],
+    "coordinates": [55.3781, -3.436],
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "subregion": "Northern Europe",
+    "population": 67886011,
+    "area": 242900,
+    "flagEmoji": "🇬🇧",
+    "tld": ".uk",
+    "landlocked": false,
+    "borders": ["IRL"],
+    "languages": [
+      {
+        "code": "en",
+        "name": "English",
+        "nativeName": "English",
+        "official": true
+      }
+    ],
+    "demonym": "British"
+  },
+  "codes": {
+    "iso3166Alpha2": "GB",
+    "iso3166Alpha3": "GBR",
+    "iso3166Numeric": "826",
+    "bcp47": ["en-GB", "cy-GB", "gd-GB"],
+    "internetTld": ".uk",
+    "ioc": "GBR",
+    "fifa": "ENG"
+  },
+  "currency": {
+    "code": "GBP",
+    "name": "British Pound Sterling",
+    "nativeName": "British Pound Sterling",
+    "symbol": "£",
+    "narrowSymbol": "£",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "pattern": "¤#,##0.00",
+    "example": "£1,250.00",
+    "accountingExample": "(£1,250.00)"
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "Sunday, 15 February 2026",
+      "long": "15 February 2026",
+      "medium": "15 Feb 2026",
+      "short": "15/02/2026"
+    },
+    "timeFormats": {
+      "full": "15:30:00 Greenwich Mean Time",
+      "long": "15:30:00 GMT",
+      "medium": "15:30:00",
+      "short": "15:30"
+    },
+    "datePatterns": {
+      "full": "EEEE, d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd/MM/y"
+    },
+    "timePatterns": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "monthNames": {
+      "wide": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "abbreviated": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+    },
+    "dayNames": {
+      "wide": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "abbreviated": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "narrow": ["M", "T", "W", "T", "F", "S", "S"]
+    },
+    "amPmMarkers": ["am", "pm"],
+    "timezones": ["Europe/London"],
+    "primaryTimezone": "Europe/London",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+44",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "+44 20 7123 4567",
+    "subscriberNumberLengths": [10]
+  },
+  "addressFormat": {
+    "format": "%N%n%O%n%A%n%C%n%Z",
+    "lineOrder": ["Name", "Organization", "Street Address", "City", "Postal Code"],
+    "postalCodeFormat": "AA9A 9AA",
+    "postalCodeRegex": "^[A-Z]{1,2}\\d{1,2}[A-Z]?\\s?\\d[A-Z]{2}$",
+    "postalCodeExample": "SW1A 1AA",
+    "administrativeDivisionName": "County",
+    "administrativeDivisionType": "County"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "mixed",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "left",
+    "weekNumbering": "ISO"
+  }
+}
