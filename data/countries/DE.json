@@ -1,0 +1,130 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "basics": {
+    "name": "Germany",
+    "officialName": "Federal Republic of Germany",
+    "nativeName": "Deutschland",
+    "officialNativeName": "Bundesrepublik Deutschland",
+    "capital": "Berlin",
+    "capitalCoordinates": [52.52, 13.405],
+    "coordinates": [51.1657, 10.4515],
+    "continent": "Europe",
+    "region": "Western Europe",
+    "subregion": "Western Europe",
+    "population": 83240525,
+    "area": 357114,
+    "flagEmoji": "🇩🇪",
+    "tld": ".de",
+    "landlocked": false,
+    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "languages": [
+      {
+        "code": "de",
+        "name": "German",
+        "nativeName": "Deutsch",
+        "official": true
+      }
+    ],
+    "demonym": "German"
+  },
+  "codes": {
+    "iso3166Alpha2": "DE",
+    "iso3166Alpha3": "DEU",
+    "iso3166Numeric": "276",
+    "bcp47": ["de-DE"],
+    "internetTld": ".de",
+    "ioc": "GER",
+    "fifa": "GER"
+  },
+  "currency": {
+    "code": "EUR",
+    "name": "Euro",
+    "nativeName": "Euro",
+    "symbol": "€",
+    "narrowSymbol": "€",
+    "symbolPosition": "after",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "pattern": "#.##0,00 ¤",
+    "example": "1.250,00 €",
+    "accountingExample": "-1.250,00 €"
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "Sonntag, 15. Februar 2026",
+      "long": "15. Februar 2026",
+      "medium": "15.02.2026",
+      "short": "15.02.26"
+    },
+    "timeFormats": {
+      "full": "15:30:00 Mitteleuropäische Normalzeit",
+      "long": "15:30:00 MEZ",
+      "medium": "15:30:00",
+      "short": "15:30"
+    },
+    "datePatterns": {
+      "full": "EEEE, d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "dd.MM.y",
+      "short": "dd.MM.yy"
+    },
+    "timePatterns": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "monthNames": {
+      "wide": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+      "abbreviated": ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+      "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+    },
+    "dayNames": {
+      "wide": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
+      "abbreviated": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+      "narrow": ["M", "D", "M", "D", "F", "S", "S"]
+    },
+    "amPmMarkers": ["AM", "PM"],
+    "timezones": ["Europe/Berlin"],
+    "primaryTimezone": "Europe/Berlin",
+    "utcOffset": "+01:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#.##0,###",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+49",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "+49 30 12345678",
+    "subscriberNumberLengths": [9, 10, 11]
+  },
+  "addressFormat": {
+    "format": "%N%n%O%n%A%n%Z %C",
+    "lineOrder": ["Name", "Organization", "Street Address", "Postal Code + City"],
+    "postalCodeFormat": "NNNNN",
+    "postalCodeRegex": "^\\d{5}$",
+    "postalCodeExample": "10115",
+    "administrativeDivisionName": "Land",
+    "administrativeDivisionType": "State"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

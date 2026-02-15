@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getCountry, getAllCountryCodes } from "@/lib/countries";
+import { CopyButton } from "@/components/copy-button";
 
 interface CountryPageProps {
   params: Promise<{
@@ -226,10 +227,19 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
         {/* JSON Export */}
         <Section title="Raw JSON Data">
-          <div className="rounded-lg bg-muted p-4">
-            <pre className="overflow-x-auto text-sm">
-              <code>{JSON.stringify(country, null, 2)}</code>
-            </pre>
+          <div className="relative">
+            <div className="absolute right-2 top-2 z-10">
+              <CopyButton
+                value={JSON.stringify(country, null, 2)}
+                label="JSON data"
+                className="h-8 w-8 bg-background/80 backdrop-blur"
+              />
+            </div>
+            <div className="rounded-lg bg-muted p-4">
+              <pre className="overflow-x-auto text-sm">
+                <code>{JSON.stringify(country, null, 2)}</code>
+              </pre>
+            </div>
           </div>
         </Section>
       </div>
@@ -263,9 +273,16 @@ function Section({
 
 function DataItem({ label, value }: { label: string; value: string }) {
   return (
-    <div>
+    <div className="group relative">
       <p className="text-sm font-medium text-muted-foreground">{label}</p>
-      <p className="mt-1 font-mono text-sm">{value}</p>
+      <div className="mt-1 flex items-center justify-between gap-2">
+        <p className="font-mono text-sm">{value}</p>
+        <CopyButton
+          value={value}
+          label={label}
+          className="h-7 w-7 opacity-0 transition-opacity group-hover:opacity-100"
+        />
+      </div>
     </div>
   );
 }

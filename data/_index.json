@@ -1,5 +1,35 @@
 [
   {
+    "code": "DE",
+    "name": "Germany",
+    "flagEmoji": "🇩🇪",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "de-DE",
+    "currencyCode": "EUR",
+    "callingCode": "+49"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "flagEmoji": "🇬🇧",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "primaryLocale": "en-GB",
+    "currencyCode": "GBP",
+    "callingCode": "+44"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "flagEmoji": "🇯🇵",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "primaryLocale": "ja-JP",
+    "currencyCode": "JPY",
+    "callingCode": "+81"
+  },
+  {
     "code": "TR",
     "name": "Turkey",
     "flagEmoji": "🇹🇷",
