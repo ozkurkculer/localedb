@@ -243,5 +243,520 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PK",
+      "region": "Azad Jammu and Kashmir",
+      "iata": "MFG",
+      "icao": "OPMF",
+      "name": "Muzaffarabad Airport",
+      "latitude": 34.339,
+      "longitude": 73.5086
+    },
+    {
+      "countryCode": "PK",
+      "region": "Azad Jammu and Kashmir",
+      "iata": "RAZ",
+      "icao": "OPRT",
+      "name": "Rawalakot Airport",
+      "latitude": 33.8497,
+      "longitude": 73.7981
+    },
+    {
+      "countryCode": "PK",
+      "region": "Azad Jammu and Kashmir",
+      "iata": "XJM",
+      "icao": "OPMA",
+      "name": "Mangla Airport",
+      "latitude": 33.0501,
+      "longitude": 73.6384
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "DBA",
+      "icao": "OPDB",
+      "name": "Dalbandin Airport",
+      "latitude": 28.8783,
+      "longitude": 64.3998
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "GWD",
+      "icao": "OPGD",
+      "name": "Gwadar International Airport",
+      "latitude": 25.2333,
+      "longitude": 62.3295
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "JIW",
+      "icao": "OPJI",
+      "name": "Jiwani Airport",
+      "latitude": 25.0678,
+      "longitude": 61.8054
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "KDD",
+      "icao": "OPKH",
+      "name": "Khuzdar Airport",
+      "latitude": 27.7906,
+      "longitude": 66.6473
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "LRG",
+      "icao": "OPLL",
+      "name": "Loralai Airport",
+      "latitude": 30.3555,
+      "longitude": 68.6135
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "NHS",
+      "icao": "",
+      "name": "Nushki Airport",
+      "latitude": 29.539,
+      "longitude": 66.0233
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "ORW",
+      "icao": "OPOR",
+      "name": "Ormara Airport",
+      "latitude": 25.2747,
+      "longitude": 64.586
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "PJG",
+      "icao": "OPPG",
+      "name": "Panjgur Airport",
+      "latitude": 26.9545,
+      "longitude": 64.1325
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "PSI",
+      "icao": "OPPI",
+      "name": "Pasni Airport",
+      "latitude": 25.2905,
+      "longitude": 63.3451
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "PZH",
+      "icao": "OPZB",
+      "name": "Zhob Airport",
+      "latitude": 31.3584,
+      "longitude": 69.4636
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "REQ",
+      "icao": "",
+      "name": "Reko Diq Airport",
+      "latitude": 29.0469,
+      "longitude": 62.1968
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "SBQ",
+      "icao": "OPSB",
+      "name": "Sibi Airport",
+      "latitude": 29.5712,
+      "longitude": 67.8479
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "SUL",
+      "icao": "OPSU",
+      "name": "Sui Airport",
+      "latitude": 28.6451,
+      "longitude": 69.1769
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "TFT",
+      "icao": "",
+      "name": "Taftan Airport",
+      "latitude": 28.9642,
+      "longitude": 61.5954
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "TUK",
+      "icao": "OPTU",
+      "name": "Turbat International Airport",
+      "latitude": 25.9864,
+      "longitude": 63.0302
+    },
+    {
+      "countryCode": "PK",
+      "region": "Balochistan",
+      "iata": "UET",
+      "icao": "OPQT",
+      "name": "Quetta International Airport",
+      "latitude": 30.2514,
+      "longitude": 66.9378
+    },
+    {
+      "countryCode": "PK",
+      "region": "Gilgit-Baltistan",
+      "iata": "CHB",
+      "icao": "OPCL",
+      "name": "Chilas Airport",
+      "latitude": 35.4267,
+      "longitude": 74.0817
+    },
+    {
+      "countryCode": "PK",
+      "region": "Gilgit-Baltistan",
+      "iata": "GIL",
+      "icao": "OPGT",
+      "name": "Gilgit Airport",
+      "latitude": 35.9188,
+      "longitude": 74.3336
+    },
+    {
+      "countryCode": "PK",
+      "region": "Gilgit-Baltistan",
+      "iata": "KDU",
+      "icao": "OPSD",
+      "name": "Skardu Airport",
+      "latitude": 35.3355,
+      "longitude": 75.536
+    },
+    {
+      "countryCode": "PK",
+      "region": "Islamabad",
+      "iata": "ISB",
+      "icao": "OPIS",
+      "name": "Islamabad International Airport",
+      "latitude": 33.5607,
+      "longitude": 72.8516
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "BNP",
+      "icao": "OPBN",
+      "name": "Bannu Airport",
+      "latitude": 32.9729,
+      "longitude": 70.5279
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "CJL",
+      "icao": "OPCH",
+      "name": "Chitral Airport",
+      "latitude": 35.8866,
+      "longitude": 71.8006
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "DSK",
+      "icao": "OPDI",
+      "name": "Dera Ismail Khan Airport",
+      "latitude": 31.9094,
+      "longitude": 70.8966
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "OHT",
+      "icao": "OPKT",
+      "name": "PAF Base Kohat",
+      "latitude": 33.57,
+      "longitude": 71.44
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "PAJ",
+      "icao": "OPPC",
+      "name": "Parachinar Airport",
+      "latitude": 33.9021,
+      "longitude": 70.0716
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "PEW",
+      "icao": "OPPS",
+      "name": "Bacha Khan International Airport",
+      "latitude": 33.9939,
+      "longitude": 71.5146
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "SDT",
+      "icao": "OPSS",
+      "name": "Saidu Sharif Airport",
+      "latitude": 34.8136,
+      "longitude": 72.3528
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "TLB",
+      "icao": "OPTA",
+      "name": "Tarbela Dam Airport",
+      "latitude": 33.9861,
+      "longitude": 72.6114
+    },
+    {
+      "countryCode": "PK",
+      "region": "Khyber Pakhtunkhwa",
+      "iata": "WAF",
+      "icao": "OPWN",
+      "name": "Wana Airport",
+      "latitude": 32.3047,
+      "longitude": 69.5704
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "ATG",
+      "icao": "",
+      "name": "PAF Base Minhas",
+      "latitude": 33.8691,
+      "longitude": 72.4009
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "BHV",
+      "icao": "OPBW",
+      "name": "Bahawalpur Airport",
+      "latitude": 29.3481,
+      "longitude": 71.718
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "BHW",
+      "icao": "",
+      "name": "Bhagatanwala Airport",
+      "latitude": 32.0561,
+      "longitude": 72.9484
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "DEA",
+      "icao": "OPDG",
+      "name": "Dera Ghazi Khan International Airport",
+      "latitude": 29.961,
+      "longitude": 70.4859
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "GRT",
+      "icao": "",
+      "name": "Gujrat Airport",
+      "latitude": 32.6031,
+      "longitude": 74.0771
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "LHE",
+      "icao": "OPLA",
+      "name": "Allama Iqbal International Airport",
+      "latitude": 31.5216,
+      "longitude": 74.4036
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "LYP",
+      "icao": "OPFA",
+      "name": "Faisalabad International Airport",
+      "latitude": 31.365,
+      "longitude": 72.9948
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "MUX",
+      "icao": "OPMT",
+      "name": "Multan International Airport",
+      "latitude": 30.2032,
+      "longitude": 71.4191
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "MWD",
+      "icao": "OPMI",
+      "name": "PAF Base M.M. Alam",
+      "latitude": 32.5631,
+      "longitude": 71.5707
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "RYK",
+      "icao": "OPRK",
+      "name": "Shaikh Zayed International Airport",
+      "latitude": 28.3839,
+      "longitude": 70.2796
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "SGI",
+      "icao": "OPSR",
+      "name": "PAF Base Mushaf",
+      "latitude": 32.0486,
+      "longitude": 72.665
+    },
+    {
+      "countryCode": "PK",
+      "region": "Punjab",
+      "iata": "SKT",
+      "icao": "OPST",
+      "name": "Sialkot International Airport",
+      "latitude": 32.5356,
+      "longitude": 74.3639
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "BDN",
+      "icao": "OPTH",
+      "name": "Talhar Airport",
+      "latitude": 24.8415,
+      "longitude": 68.8384
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "DDU",
+      "icao": "OPDD",
+      "name": "Dadu Airport",
+      "latitude": 26.7408,
+      "longitude": 67.6666
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "HDD",
+      "icao": "OPKD",
+      "name": "Hyderabad Airport",
+      "latitude": 25.3181,
+      "longitude": 68.3661
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "JAG",
+      "icao": "OPJA",
+      "name": "PAF Base Shahbaz",
+      "latitude": 28.2842,
+      "longitude": 68.4497
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "KCF",
+      "icao": "",
+      "name": "Kadanwari Airport",
+      "latitude": 27.1667,
+      "longitude": 69.3167
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "KHI",
+      "icao": "OPKC",
+      "name": "Jinnah International Airport",
+      "latitude": 24.9065,
+      "longitude": 67.1608
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "MJD",
+      "icao": "OPMJ",
+      "name": "Moenjodaro Airport",
+      "latitude": 27.3352,
+      "longitude": 68.1431
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "MPD",
+      "icao": "OPMP",
+      "name": "Sindhri Airport",
+      "latitude": 25.6828,
+      "longitude": 69.0728
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "RZS",
+      "icao": "OPSW",
+      "name": "Sawan Airport",
+      "latitude": 26.9662,
+      "longitude": 68.8781
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "SKZ",
+      "icao": "OPSK",
+      "name": "Sukkur Airport",
+      "latitude": 27.722,
+      "longitude": 68.7917
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "SYW",
+      "icao": "OPSN",
+      "name": "Sehwan Sharif Airport",
+      "latitude": 26.4731,
+      "longitude": 67.7172
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "WNS",
+      "icao": "OPNH",
+      "name": "Nawabshah Airport",
+      "latitude": 26.2194,
+      "longitude": 68.3901
+    },
+    {
+      "countryCode": "PK",
+      "region": "Sindh",
+      "iata": "ZIZ",
+      "icao": "",
+      "name": "Zamzama Airport",
+      "latitude": 26.7109,
+      "longitude": 67.6673
+    }
+  ]
 }

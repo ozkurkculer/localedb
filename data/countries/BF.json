@@ -245,5 +245,250 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BF",
+      "region": "Bougouriba",
+      "iata": "XDE",
+      "icao": "DFOU",
+      "name": "Diebougou Airport",
+      "latitude": 10.95,
+      "longitude": -3.25
+    },
+    {
+      "countryCode": "BF",
+      "region": "Boulgou",
+      "iata": "TEG",
+      "icao": "DFET",
+      "name": "Tenkodogo Airport",
+      "latitude": 11.8,
+      "longitude": -0.367
+    },
+    {
+      "countryCode": "BF",
+      "region": "Boulgou",
+      "iata": "XZA",
+      "icao": "DFEZ",
+      "name": "Zabre Airport",
+      "latitude": 11.167,
+      "longitude": -0.617
+    },
+    {
+      "countryCode": "BF",
+      "region": "Comoe",
+      "iata": "BNR",
+      "icao": "DFOB",
+      "name": "Banfora Airport",
+      "latitude": 10.683,
+      "longitude": -4.717
+    },
+    {
+      "countryCode": "BF",
+      "region": "Gnagna",
+      "iata": "XBG",
+      "icao": "DFEB",
+      "name": "Bogande Airport",
+      "latitude": 12.983,
+      "longitude": -0.167
+    },
+    {
+      "countryCode": "BF",
+      "region": "Gourma",
+      "iata": "FNG",
+      "icao": "DFEF",
+      "name": "Fada N'gourma Airport",
+      "latitude": 12.033,
+      "longitude": 0.35
+    },
+    {
+      "countryCode": "BF",
+      "region": "Houet",
+      "iata": "BOY",
+      "icao": "DFOO",
+      "name": "Bobo Dioulasso Airport",
+      "latitude": 11.1601,
+      "longitude": -4.33097
+    },
+    {
+      "countryCode": "BF",
+      "region": "Kadiogo",
+      "iata": "OUA",
+      "icao": "DFFD",
+      "name": "Ouagadougou Airport",
+      "latitude": 12.3532,
+      "longitude": -1.51242
+    },
+    {
+      "countryCode": "BF",
+      "region": "Kompienga",
+      "iata": "XPA",
+      "icao": "DFEP",
+      "name": "Pama Airport",
+      "latitude": 11.25,
+      "longitude": 0.7
+    },
+    {
+      "countryCode": "BF",
+      "region": "Kossi",
+      "iata": "XNU",
+      "icao": "DFON",
+      "name": "Nouna Airport",
+      "latitude": 12.75,
+      "longitude": -3.867
+    },
+    {
+      "countryCode": "BF",
+      "region": "Mouhoun",
+      "iata": "DGU",
+      "icao": "DFOD",
+      "name": "Dedougou Airport",
+      "latitude": 12.459,
+      "longitude": -3.49
+    },
+    {
+      "countryCode": "BF",
+      "region": "Nahouri",
+      "iata": "PUP",
+      "icao": "DFCP",
+      "name": "Po Airport",
+      "latitude": 11.15,
+      "longitude": -1.15
+    },
+    {
+      "countryCode": "BF",
+      "region": "Namentenga",
+      "iata": "XBO",
+      "icao": "DFEA",
+      "name": "Boulsa Airport",
+      "latitude": 12.65,
+      "longitude": -0.567
+    },
+    {
+      "countryCode": "BF",
+      "region": "Oudalan",
+      "iata": "TMQ",
+      "icao": "DFEM",
+      "name": "Tambao Airport",
+      "latitude": 14.8,
+      "longitude": 0.05
+    },
+    {
+      "countryCode": "BF",
+      "region": "Oudalan",
+      "iata": "XGG",
+      "icao": "DFEG",
+      "name": "Gorom Gorom Airport",
+      "latitude": 14.45,
+      "longitude": -0.233
+    },
+    {
+      "countryCode": "BF",
+      "region": "Poni",
+      "iata": "XGA",
+      "icao": "DFOG",
+      "name": "Gaoua Airport (Amilcar Cabral Airport)",
+      "latitude": 10.3841,
+      "longitude": -3.16345
+    },
+    {
+      "countryCode": "BF",
+      "region": "Sanmatenga",
+      "iata": "XKY",
+      "icao": "DFCA",
+      "name": "Kaya Airport",
+      "latitude": 13.067,
+      "longitude": -1.1
+    },
+    {
+      "countryCode": "BF",
+      "region": "Seno",
+      "iata": "DOR",
+      "icao": "DFEE",
+      "name": "Dori Airport",
+      "latitude": 14.033,
+      "longitude": -0.033
+    },
+    {
+      "countryCode": "BF",
+      "region": "Sissili",
+      "iata": "XLU",
+      "icao": "DFCL",
+      "name": "Leo Airport",
+      "latitude": 11.1,
+      "longitude": -2.1
+    },
+    {
+      "countryCode": "BF",
+      "region": "Soum",
+      "iata": "XAR",
+      "icao": "DFOY",
+      "name": "Aribinda Airport",
+      "latitude": 14.217,
+      "longitude": -0.883
+    },
+    {
+      "countryCode": "BF",
+      "region": "Soum",
+      "iata": "XDJ",
+      "icao": "DFCJ",
+      "name": "Djibo Airport",
+      "latitude": 14.1,
+      "longitude": -1.633
+    },
+    {
+      "countryCode": "BF",
+      "region": "Sourou",
+      "iata": "TUQ",
+      "icao": "DFOT",
+      "name": "Tougan Airport",
+      "latitude": 13.067,
+      "longitude": -3.067
+    },
+    {
+      "countryCode": "BF",
+      "region": "Tapoa",
+      "iata": "ARL",
+      "icao": "DFER",
+      "name": "Arly Airport",
+      "latitude": 11.597,
+      "longitude": 1.483
+    },
+    {
+      "countryCode": "BF",
+      "region": "Tapoa",
+      "iata": "DIP",
+      "icao": "DFED",
+      "name": "Diapaga Airport",
+      "latitude": 12.0603,
+      "longitude": 1.78463
+    },
+    {
+      "countryCode": "BF",
+      "region": "Tapoa",
+      "iata": "XKA",
+      "icao": "DFEL",
+      "name": "Kantchari Airport",
+      "latitude": 12.467,
+      "longitude": 1.5
+    },
+    {
+      "countryCode": "BF",
+      "region": "Yagha",
+      "iata": "XSE",
+      "icao": "DFES",
+      "name": "Sebba Airport",
+      "latitude": 13.45,
+      "longitude": 0.517
+    },
+    {
+      "countryCode": "BF",
+      "region": "Yatenga",
+      "iata": "OUG",
+      "icao": "DFCC",
+      "name": "Ouahigouya Airport",
+      "latitude": 13.567,
+      "longitude": -2.417
+    }
+  ]
 }

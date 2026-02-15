@@ -238,5 +238,871 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "FDH",
+      "icao": "EDNY",
+      "name": "Friedrichshafen Airport (Bodensee Airport)",
+      "latitude": 47.6713,
+      "longitude": 9.51149
+    },
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "FKB",
+      "icao": "EDSB",
+      "name": "Karlsruhe/Baden-Baden Airport",
+      "latitude": 48.7794,
+      "longitude": 8.0805
+    },
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "HDB",
+      "icao": "ETIE",
+      "name": "Heidelberg Airport",
+      "latitude": 49.3924,
+      "longitude": 8.65193
+    },
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "LHA",
+      "icao": "EDTL",
+      "name": "Flughafen Lahr (Lahr Airport)",
+      "latitude": 48.3693,
+      "longitude": 7.82772
+    },
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "MHG",
+      "icao": "EDFM",
+      "name": "Mannheim City Airport",
+      "latitude": 49.4731,
+      "longitude": 8.51417
+    },
+    {
+      "countryCode": "DE",
+      "region": "Baden-Wurttemberg",
+      "iata": "STR",
+      "icao": "EDDS",
+      "name": "Stuttgart Airport",
+      "latitude": 48.6899,
+      "longitude": 9.22196
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "AGB",
+      "icao": "EDMA",
+      "name": "Augsburg Airport",
+      "latitude": 48.4253,
+      "longitude": 10.9317
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "BYU",
+      "icao": "EDQD",
+      "name": "Bindlacher Berg Airport",
+      "latitude": 49.985,
+      "longitude": 11.64
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "FEL",
+      "icao": "ETSF",
+      "name": "Furstenfeldbruck Air Base",
+      "latitude": 48.2056,
+      "longitude": 11.2669
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "FMM",
+      "icao": "EDJA",
+      "name": "Memmingen Airport",
+      "latitude": 47.9888,
+      "longitude": 10.2395
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "GHF",
+      "icao": "EDQG",
+      "name": "Giebelstadt Airport",
+      "latitude": 49.6481,
+      "longitude": 9.96639
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "HOQ",
+      "icao": "EDQM",
+      "name": "Hof-Plauen Airport",
+      "latitude": 50.2886,
+      "longitude": 11.8564
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "IGS",
+      "icao": "ETSI",
+      "name": "Ingolstadt Manching Airport",
+      "latitude": 48.7157,
+      "longitude": 11.534
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "ILH",
+      "icao": "ETIK",
+      "name": "Illesheim Army Airfield",
+      "latitude": 49.4739,
+      "longitude": 10.3881
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "KZG",
+      "icao": "ETIN",
+      "name": "Kitzingen Airport",
+      "latitude": 49.7431,
+      "longitude": 10.2006
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "MUC",
+      "icao": "EDDM",
+      "name": "Munich Airport",
+      "latitude": 48.3538,
+      "longitude": 11.7861
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "NUE",
+      "icao": "EDDN",
+      "name": "Nuremberg Airport",
+      "latitude": 49.4987,
+      "longitude": 11.0781
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "OBF",
+      "icao": "EDMO",
+      "name": "Oberpfaffenhofen Airport",
+      "latitude": 48.0814,
+      "longitude": 11.2831
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "RBM",
+      "icao": "EDMS",
+      "name": "Straubing Wallmuhle Airport",
+      "latitude": 48.9008,
+      "longitude": 12.5167
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bayern",
+      "iata": "URD",
+      "icao": "EDQE",
+      "name": "Burg Feuerstein Airport",
+      "latitude": 49.7942,
+      "longitude": 11.1336
+    },
+    {
+      "countryCode": "DE",
+      "region": "Berlin",
+      "iata": "TXL",
+      "icao": "EDDT",
+      "name": "Berlin Tegel Airport",
+      "latitude": 52.5597,
+      "longitude": 13.2877
+    },
+    {
+      "countryCode": "DE",
+      "region": "Brandenburg",
+      "iata": "BER",
+      "icao": "EDDB",
+      "name": "Berlin Brandenburg Airport",
+      "latitude": 52.3514,
+      "longitude": 13.4939
+    },
+    {
+      "countryCode": "DE",
+      "region": "Brandenburg",
+      "iata": "CBU",
+      "icao": "EDCD",
+      "name": "Cottbus-Drewitz Airport",
+      "latitude": 51.8894,
+      "longitude": 14.5319
+    },
+    {
+      "countryCode": "DE",
+      "region": "Brandenburg",
+      "iata": "",
+      "icao": "EDAY",
+      "name": "Strausberg",
+      "latitude": 52.5799,
+      "longitude": 13.9156
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bremen",
+      "iata": "BRE",
+      "icao": "EDDW",
+      "name": "Bremen Airport",
+      "latitude": 53.0475,
+      "longitude": 8.78667
+    },
+    {
+      "countryCode": "DE",
+      "region": "Bremen",
+      "iata": "BRV",
+      "icao": "EDWB",
+      "name": "Bremerhaven Airport",
+      "latitude": 53.5069,
+      "longitude": 8.57278
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hamburg",
+      "iata": "HAM",
+      "icao": "EDDH",
+      "name": "Hamburg Airport",
+      "latitude": 53.6304,
+      "longitude": 9.98823
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hamburg",
+      "iata": "XFW",
+      "icao": "EDHI",
+      "name": "Hamburg Finkenwerder Airport",
+      "latitude": 53.5353,
+      "longitude": 9.83556
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hessen",
+      "iata": "FRA",
+      "icao": "EDDF",
+      "name": "Frankfurt Airport",
+      "latitude": 50.0333,
+      "longitude": 8.57056
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hessen",
+      "iata": "FRZ",
+      "icao": "ETHF",
+      "name": "Fritzlar Air Base",
+      "latitude": 51.1146,
+      "longitude": 9.286
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hessen",
+      "iata": "KSF",
+      "icao": "EDVK",
+      "name": "Kassel Airport",
+      "latitude": 51.4173,
+      "longitude": 9.38497
+    },
+    {
+      "countryCode": "DE",
+      "region": "Hessen",
+      "iata": "WIE",
+      "icao": "ETOU",
+      "name": "Wiesbaden Army Airfield",
+      "latitude": 50.0498,
+      "longitude": 8.3254
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "BBH",
+      "icao": "EDBH",
+      "name": "Stralsund-Barth Airport",
+      "latitude": 54.3383,
+      "longitude": 12.7105
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "FNB",
+      "icao": "EDBN",
+      "name": "Neubrandenburg Airport",
+      "latitude": 53.6022,
+      "longitude": 13.306
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "GTI",
+      "icao": "EDCG",
+      "name": "Rugen Airport (Guttin Airfield)",
+      "latitude": 54.3833,
+      "longitude": 13.3256
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "HDF",
+      "icao": "EDAH",
+      "name": "Heringsdorf Airport",
+      "latitude": 53.8787,
+      "longitude": 14.1523
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "PEF",
+      "icao": "EDCP",
+      "name": "Peenemunde Airfield",
+      "latitude": 54.1578,
+      "longitude": 13.7744
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "REB",
+      "icao": "EDAX",
+      "name": "Rechlin-Larz Airfield",
+      "latitude": 53.3064,
+      "longitude": 12.7522
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "RLG",
+      "icao": "ETNL",
+      "name": "Rostock-Laage Airport",
+      "latitude": 53.9182,
+      "longitude": 12.2783
+    },
+    {
+      "countryCode": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "iata": "SZW",
+      "icao": "EDOP",
+      "name": "Schwerin-Parchim International Airport",
+      "latitude": 53.427,
+      "longitude": 11.7834
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "AGE",
+      "icao": "EDWG",
+      "name": "Wangerooge Airport",
+      "latitude": 53.7828,
+      "longitude": 7.91389
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "BMK",
+      "icao": "EDWR",
+      "name": "Borkum Airfield",
+      "latitude": 53.5964,
+      "longitude": 6.70917
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "BMR",
+      "icao": "EDWZ",
+      "name": "Baltrum Airport",
+      "latitude": 53.7247,
+      "longitude": 7.37333
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "BWE",
+      "icao": "EDVE",
+      "name": "Braunschweig-Wolfsburg Airport",
+      "latitude": 52.3192,
+      "longitude": 10.5561
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "EME",
+      "icao": "EDWE",
+      "name": "Emden Airport",
+      "latitude": 53.3911,
+      "longitude": 7.2275
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "FCN",
+      "icao": "ETMN",
+      "name": "Nordholz Naval Airbase",
+      "latitude": 53.7677,
+      "longitude": 8.6585
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "HAJ",
+      "icao": "EDDV",
+      "name": "Hannover Airport",
+      "latitude": 52.4611,
+      "longitude": 9.68508
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "JUI",
+      "icao": "EDWJ",
+      "name": "Juist Airport",
+      "latitude": 53.6811,
+      "longitude": 7.05583
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "LGO",
+      "icao": "EDWL",
+      "name": "Langeoog Airport",
+      "latitude": 53.7425,
+      "longitude": 7.49778
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "NOD",
+      "icao": "EDWS",
+      "name": "Norddeich Airport",
+      "latitude": 53.6331,
+      "longitude": 7.19028
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "NRD",
+      "icao": "EDWY",
+      "name": "Norderney Airport",
+      "latitude": 53.7069,
+      "longitude": 7.23
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "VAC",
+      "icao": "EDWU",
+      "name": "Varrelbusch Airport",
+      "latitude": 52.9083,
+      "longitude": 8.04056
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "WVN",
+      "icao": "EDWI",
+      "name": "JadeWeserAirport",
+      "latitude": 53.5022,
+      "longitude": 8.05222
+    },
+    {
+      "countryCode": "DE",
+      "region": "Niedersachsen",
+      "iata": "XLW",
+      "icao": "EDWD",
+      "name": "Lemwerder Airport",
+      "latitude": 53.1447,
+      "longitude": 8.62444
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "AAH",
+      "icao": "EDKA",
+      "name": "Merzbruck Airport",
+      "latitude": 50.8231,
+      "longitude": 6.18639
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "BFE",
+      "icao": "EDLI",
+      "name": "Bielefeld Airport",
+      "latitude": 51.9647,
+      "longitude": 8.54444
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "CGN",
+      "icao": "EDDK",
+      "name": "Cologne Bonn Airport",
+      "latitude": 50.8659,
+      "longitude": 7.14274
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "ZCV",
+      "icao": "EDLD",
+      "name": "Dinslaken/Schwarze Heide",
+      "latitude": 51.616,
+      "longitude": 6.861167
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "DTM",
+      "icao": "EDLW",
+      "name": "Dortmund Airport",
+      "latitude": 51.5183,
+      "longitude": 7.61224
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "DUS",
+      "icao": "EDDL",
+      "name": "Dusseldorf Airport",
+      "latitude": 51.2895,
+      "longitude": 6.76678
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "ESS",
+      "icao": "EDLE",
+      "name": "Essen/Mulheim Airport",
+      "latitude": 51.4023,
+      "longitude": 6.93733
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "FMO",
+      "icao": "EDDG",
+      "name": "Munster Osnabruck International Airport",
+      "latitude": 52.1346,
+      "longitude": 7.68483
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "GKE",
+      "icao": "ETNG",
+      "name": "NATO Air Base Geilenkirchen",
+      "latitude": 50.9608,
+      "longitude": 6.04242
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "GUT",
+      "icao": "ETUO",
+      "name": "RAF Gutersloh",
+      "latitude": 51.9228,
+      "longitude": 8.30633
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "MGL",
+      "icao": "EDLN",
+      "name": "Dusseldorf Monchengladbach Airport",
+      "latitude": 51.2303,
+      "longitude": 6.50444
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "NRN",
+      "icao": "EDLV",
+      "name": "Weeze Airport (Niederrhein Airport)",
+      "latitude": 51.6024,
+      "longitude": 6.14217
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "PAD",
+      "icao": "EDLP",
+      "name": "Paderborn Lippstadt Airport",
+      "latitude": 51.6141,
+      "longitude": 8.61632
+    },
+    {
+      "countryCode": "DE",
+      "region": "Nordrhein-Westfalen",
+      "iata": "SGE",
+      "icao": "EDGS",
+      "name": "Siegerland Airport",
+      "latitude": 50.7077,
+      "longitude": 8.08297
+    },
+    {
+      "countryCode": "DE",
+      "region": "Rheinland-Pfalz",
+      "iata": "BBJ",
+      "icao": "EDRB",
+      "name": "Bitburg Airport",
+      "latitude": 49.9453,
+      "longitude": 6.565
+    },
+    {
+      "countryCode": "DE",
+      "region": "Rheinland-Pfalz",
+      "iata": "HHN",
+      "icao": "EDFH",
+      "name": "Frankfurt-Hahn Airport",
+      "latitude": 49.9487,
+      "longitude": 7.26389
+    },
+    {
+      "countryCode": "DE",
+      "region": "Rheinland-Pfalz",
+      "iata": "RMS",
+      "icao": "ETAR",
+      "name": "Ramstein Air Base",
+      "latitude": 49.4369,
+      "longitude": 7.60028
+    },
+    {
+      "countryCode": "DE",
+      "region": "Rheinland-Pfalz",
+      "iata": "SPM",
+      "icao": "ETAD",
+      "name": "Spangdahlem Air Base",
+      "latitude": 49.9727,
+      "longitude": 6.6925
+    },
+    {
+      "countryCode": "DE",
+      "region": "Rheinland-Pfalz",
+      "iata": "ZQW",
+      "icao": "EDRZ",
+      "name": "Zweibrucken Airport",
+      "latitude": 49.2094,
+      "longitude": 7.40056
+    },
+    {
+      "countryCode": "DE",
+      "region": "Saarland",
+      "iata": "SCN",
+      "icao": "EDDR",
+      "name": "Saarbrucken Airport",
+      "latitude": 49.2146,
+      "longitude": 7.10951
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen",
+      "iata": "DRS",
+      "icao": "EDDC",
+      "name": "Dresden Airport",
+      "latitude": 51.1328,
+      "longitude": 13.7672
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen",
+      "iata": "IES",
+      "icao": "EDAU",
+      "name": "Riesa-Gohlis Airfield",
+      "latitude": 51.2936,
+      "longitude": 13.3561
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen",
+      "iata": "LEJ",
+      "icao": "EDDP",
+      "name": "Leipzig/Halle Airport",
+      "latitude": 51.4239,
+      "longitude": 12.2364
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen-Anhalt",
+      "iata": "CSO",
+      "icao": "EDBC",
+      "name": "Magdeburg-Cochstedt Airport",
+      "latitude": 51.8564,
+      "longitude": 11.4203
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen-Anhalt",
+      "iata": "KOQ",
+      "icao": "EDCK",
+      "name": "Kothen Airport",
+      "latitude": 51.7211,
+      "longitude": 11.9528
+    },
+    {
+      "countryCode": "DE",
+      "region": "Sachsen-Anhalt",
+      "iata": "ZHZ",
+      "icao": "EDAQ",
+      "name": "Halle-Oppin Airport",
+      "latitude": 51.5527,
+      "longitude": 12.054
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "EUM",
+      "icao": "EDHN",
+      "name": "Neumunster Airport",
+      "latitude": 54.0794,
+      "longitude": 9.94139
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "FLF",
+      "icao": "EDXF",
+      "name": "Flensburg-Schaferhaus Airport",
+      "latitude": 54.7733,
+      "longitude": 9.37889
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "GWT",
+      "icao": "EDXW",
+      "name": "Sylt Airport (Westerland Airport)",
+      "latitude": 54.9132,
+      "longitude": 8.34047
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "HEI",
+      "icao": "EDXB",
+      "name": "Heide-Busum Airport",
+      "latitude": 54.1533,
+      "longitude": 8.90167
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "HGL",
+      "icao": "EDXH",
+      "name": "Helgoland Airport (Dune Airport)",
+      "latitude": 54.1853,
+      "longitude": 7.91583
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "",
+      "icao": "EDHB",
+      "name": "Grube Airport",
+      "latitude": 54.244434,
+      "longitude": 11.02376
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "",
+      "icao": "EDHE",
+      "name": "Uetersen Airfield",
+      "latitude": 54.244434,
+      "longitude": 11.02376
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "KEL",
+      "icao": "EDHK",
+      "name": "Kiel Airport",
+      "latitude": 54.3794,
+      "longitude": 10.1453
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "LBC",
+      "icao": "EDHL",
+      "name": "Lubeck Airport",
+      "latitude": 53.8054,
+      "longitude": 10.7192
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "OHR",
+      "icao": "EDXY",
+      "name": "Wyk auf Fohr Airport",
+      "latitude": 54.6844,
+      "longitude": 8.52833
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "PSH",
+      "icao": "EDXO",
+      "name": "Sankt Peter-Ording Airport",
+      "latitude": 54.3089,
+      "longitude": 8.68694
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "QHU",
+      "icao": "EDXJ",
+      "name": "Husum Schwesing Airport",
+      "latitude": 54.51,
+      "longitude": 9.13833
+    },
+    {
+      "countryCode": "DE",
+      "region": "Schleswig-Holstein",
+      "iata": "WBG",
+      "icao": "ETNS",
+      "name": "Schleswig Air Base",
+      "latitude": 54.4593,
+      "longitude": 9.51633
+    },
+    {
+      "countryCode": "DE",
+      "region": "Thuringen",
+      "iata": "AOC",
+      "icao": "EDAC",
+      "name": "Leipzig-Altenburg Airport",
+      "latitude": 50.9819,
+      "longitude": 12.5064
+    },
+    {
+      "countryCode": "DE",
+      "region": "Thuringen",
+      "iata": "EIB",
+      "icao": "EDGE",
+      "name": "Eisenach-Kindel Airport",
+      "latitude": 50.9916,
+      "longitude": 10.4797
+    },
+    {
+      "countryCode": "DE",
+      "region": "Thuringen",
+      "iata": "ERF",
+      "icao": "EDDE",
+      "name": "Erfurt-Weimar Airport",
+      "latitude": 50.9798,
+      "longitude": 10.9581
+    }
+  ]
 }

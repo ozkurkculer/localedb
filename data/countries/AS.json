@@ -238,5 +238,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AS",
+      "region": "Eastern District",
+      "iata": "OFU",
+      "icao": "NSAS",
+      "name": "Ofu Airport",
+      "latitude": -14.1844,
+      "longitude": -169.67
+    },
+    {
+      "countryCode": "AS",
+      "region": "Eastern District",
+      "iata": "PPG",
+      "icao": "NSTU",
+      "name": "Pago Pago International Airport",
+      "latitude": -14.331,
+      "longitude": -170.71
+    },
+    {
+      "countryCode": "AS",
+      "region": "Eastern District",
+      "iata": "TAV",
+      "icao": "",
+      "name": "Tau Airport",
+      "latitude": -14.2292,
+      "longitude": -169.511
+    }
+  ]
 }

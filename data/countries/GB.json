@@ -238,5 +238,1069 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GB",
+      "region": "Buckinghamshire",
+      "iata": "HYC",
+      "icao": "EGTB",
+      "name": "Wycombe Air Park Airport",
+      "latitude": 51.6117,
+      "longitude": -0.808333
+    },
+    {
+      "countryCode": "GB",
+      "region": "Devon",
+      "iata": "PLH",
+      "icao": "EGHD",
+      "name": "Plymouth City Airport",
+      "latitude": 50.4228,
+      "longitude": -4.10583
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BBP",
+      "icao": "EGHJ",
+      "name": "Bembridge Airport",
+      "latitude": 50.6781,
+      "longitude": -1.10944
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BBS",
+      "icao": "EGLK",
+      "name": "Blackbushe Airport",
+      "latitude": 51.3239,
+      "longitude": -0.8475
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BEQ",
+      "icao": "EGXH",
+      "name": "RAF Honington",
+      "latitude": 52.3426,
+      "longitude": 0.772939
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BEX",
+      "icao": "EGUB",
+      "name": "RAF Benson",
+      "latitude": 51.6164,
+      "longitude": -1.09583
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "name": "Birmingham Airport",
+      "latitude": 52.4539,
+      "longitude": -1.74803
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BLK",
+      "icao": "EGNH",
+      "name": "Blackpool Airport",
+      "latitude": 53.7717,
+      "longitude": -3.02861
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BOH",
+      "icao": "EGHH",
+      "name": "Bournemouth Airport",
+      "latitude": 50.78,
+      "longitude": -1.8425
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BQH",
+      "icao": "EGKB",
+      "name": "London Biggin Hill Airport",
+      "latitude": 51.3308,
+      "longitude": 0.0325
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BRS",
+      "icao": "EGGD",
+      "name": "Bristol Airport",
+      "latitude": 51.3827,
+      "longitude": -2.71909
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BWF",
+      "icao": "EGNL",
+      "name": "Barrow/Walney Island Airport",
+      "latitude": 54.1286,
+      "longitude": -3.2675
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "BZZ",
+      "icao": "EGVN",
+      "name": "RAF Brize Norton",
+      "latitude": 51.75,
+      "longitude": -1.58362
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "CAX",
+      "icao": "EGNC",
+      "name": "Carlisle Lake District Airport",
+      "latitude": 54.9375,
+      "longitude": -2.80917
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "CBG",
+      "icao": "EGSC",
+      "name": "Cambridge Airport",
+      "latitude": 52.205,
+      "longitude": 0.175
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "CVT",
+      "icao": "EGBE",
+      "name": "Coventry Airport",
+      "latitude": 52.3697,
+      "longitude": -1.47972
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "DSA",
+      "icao": "EGCN",
+      "name": "Robin Hood Airport Doncaster Sheffield",
+      "latitude": 53.4805,
+      "longitude": -1.01066
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "EMA",
+      "icao": "EGNX",
+      "name": "East Midlands Airport",
+      "latitude": 52.8311,
+      "longitude": -1.32806
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "EXT",
+      "icao": "EGTE",
+      "name": "Exeter International Airport",
+      "latitude": 50.7344,
+      "longitude": -3.41389
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "FAB",
+      "icao": "EGLF",
+      "name": "Farnborough Airport",
+      "latitude": 51.2758,
+      "longitude": -0.776333
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "FFD",
+      "icao": "EGVA",
+      "name": "RAF Fairford",
+      "latitude": 51.6822,
+      "longitude": -1.79003
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "GBA",
+      "icao": "EGBP",
+      "name": "Cotswold Airport",
+      "latitude": 51.6681,
+      "longitude": -2.05694
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "GLO",
+      "icao": "EGBJ",
+      "name": "Gloucestershire Airport",
+      "latitude": 51.8942,
+      "longitude": -2.16722
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "HRT",
+      "icao": "EGXU",
+      "name": "RAF Linton-on-Ouse",
+      "latitude": 54.0489,
+      "longitude": -1.25275
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "HUY",
+      "icao": "EGNJ",
+      "name": "Humberside Airport",
+      "latitude": 53.5744,
+      "longitude": -0.350833
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "IOM",
+      "icao": "EGNS",
+      "name": "Isle of Man Airport",
+      "latitude": 54.0833,
+      "longitude": -4.62333
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "ISC",
+      "icao": "EGHE",
+      "name": "St Mary's Airport",
+      "latitude": 49.9133,
+      "longitude": -6.29167
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "KNF",
+      "icao": "EGYM",
+      "name": "RAF Marham",
+      "latitude": 52.6484,
+      "longitude": 0.550692
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "KRH",
+      "icao": "EGKR",
+      "name": "Redhill Aerodrome",
+      "latitude": 51.2136,
+      "longitude": -0.138611
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LBA",
+      "icao": "EGNM",
+      "name": "Leeds Bradford Airport",
+      "latitude": 53.8659,
+      "longitude": -1.66057
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LCY",
+      "icao": "EGLC",
+      "name": "London City Airport",
+      "latitude": 51.5053,
+      "longitude": 0.055278
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LEQ",
+      "icao": "EGHC",
+      "name": "Land's End Airport",
+      "latitude": 50.1028,
+      "longitude": -5.67056
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LGW",
+      "icao": "EGKK",
+      "name": "Gatwick Airport",
+      "latitude": 51.1481,
+      "longitude": -0.190278
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LHB",
+      "icao": "EG74",
+      "name": "Bruntingthorpe Aerodrome (Leicester Harboro'/Harbour Airport)",
+      "latitude": 52.4908,
+      "longitude": -1.1312
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LHR",
+      "icao": "EGLL",
+      "name": "Heathrow Airport",
+      "latitude": 51.4775,
+      "longitude": -0.461389
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LKZ",
+      "icao": "EGUL",
+      "name": "RAF Lakenheath",
+      "latitude": 52.4093,
+      "longitude": 0.561
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LPL",
+      "icao": "EGGP",
+      "name": "Liverpool John Lennon Airport",
+      "latitude": 53.3336,
+      "longitude": -2.84972
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LTN",
+      "icao": "EGGW",
+      "name": "London Luton Airport",
+      "latitude": 51.8747,
+      "longitude": -0.368333
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LYE",
+      "icao": "EGDL",
+      "name": "RAF Lyneham",
+      "latitude": 51.5051,
+      "longitude": -1.99343
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "LYX",
+      "icao": "EGMD",
+      "name": "Lydd Airport (London Ashford Airport)",
+      "latitude": 50.9561,
+      "longitude": 0.939167
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "MAN",
+      "icao": "EGCC",
+      "name": "Manchester Airport",
+      "latitude": 53.3537,
+      "longitude": -2.27495
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "MHZ",
+      "icao": "EGUN",
+      "name": "RAF Mildenhall",
+      "latitude": 52.3619,
+      "longitude": 0.486406
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "MME",
+      "icao": "EGNV",
+      "name": "Teesside International Airport",
+      "latitude": 54.5092,
+      "longitude": -1.42941
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "NCL",
+      "icao": "EGNT",
+      "name": "Newcastle Airport",
+      "latitude": 55.0375,
+      "longitude": -1.69167
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "NHT",
+      "icao": "EGWU",
+      "name": "RAF Northolt",
+      "latitude": 51.553,
+      "longitude": -0.418167
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "NQT",
+      "icao": "EGBN",
+      "name": "Nottingham Airport",
+      "latitude": 52.92,
+      "longitude": -1.07917
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "NQY",
+      "icao": "EGHQ",
+      "name": "Cornwall Airport Newquay",
+      "latitude": 50.4406,
+      "longitude": -4.99541
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "NWI",
+      "icao": "EGSH",
+      "name": "Norwich International Airport",
+      "latitude": 52.6758,
+      "longitude": 1.28278
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "ODH",
+      "icao": "EGVO",
+      "name": "RAF Odiham",
+      "latitude": 51.2341,
+      "longitude": -0.942825
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "ORM",
+      "icao": "EGBK",
+      "name": "Sywell Aerodrome",
+      "latitude": 52.3053,
+      "longitude": -0.793056
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "OXF",
+      "icao": "EGTK",
+      "name": "Oxford Airport (London Oxford Airport)",
+      "latitude": 51.8369,
+      "longitude": -1.32
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "QCY",
+      "icao": "EGXC",
+      "name": "RAF Coningsby",
+      "latitude": 53.093,
+      "longitude": -0.166014
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "QFO",
+      "icao": "EGSU",
+      "name": "Duxford Aerodrome",
+      "latitude": 52.0908,
+      "longitude": 0.131944
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "QLA",
+      "icao": "EGHL",
+      "name": "Lasham Airfield",
+      "latitude": 51.1872,
+      "longitude": -1.03361
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "QUG",
+      "icao": "EGHR",
+      "name": "Chichester/Goodwood Airport",
+      "latitude": 50.8594,
+      "longitude": -0.759167
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "QUY",
+      "icao": "EGUY",
+      "name": "RAF Wyton",
+      "latitude": 52.3572,
+      "longitude": -0.107833
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "RCS",
+      "icao": "EGTO",
+      "name": "Rochester Airport",
+      "latitude": 51.3519,
+      "longitude": 0.503333
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "SEN",
+      "icao": "EGMC",
+      "name": "London Southend Airport",
+      "latitude": 51.5703,
+      "longitude": 0.693333
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "SOU",
+      "icao": "EGHI",
+      "name": "Southampton Airport",
+      "latitude": 50.9503,
+      "longitude": -1.3568
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "SQZ",
+      "icao": "EGXP",
+      "name": "RAF Scampton",
+      "latitude": 53.3078,
+      "longitude": -0.550833
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "STN",
+      "icao": "EGSS",
+      "name": "London Stansted Airport",
+      "latitude": 51.885,
+      "longitude": 0.235
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "UPV",
+      "icao": "EGDJ",
+      "name": "RAF Upavon",
+      "latitude": 51.2862,
+      "longitude": -1.78202
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "WTN",
+      "icao": "EGXW",
+      "name": "RAF Waddington",
+      "latitude": 53.1662,
+      "longitude": -0.523811
+    },
+    {
+      "countryCode": "GB",
+      "region": "England",
+      "iata": "YEO",
+      "icao": "EGDY",
+      "name": "Royal Naval Air Station Yeovilton",
+      "latitude": 51.0094,
+      "longitude": -2.63882
+    },
+    {
+      "countryCode": "GB",
+      "region": "Great Britain",
+      "iata": "GCI",
+      "icao": "EGJB",
+      "name": "Guernsey Airport",
+      "latitude": 49.4347,
+      "longitude": -2.60194
+    },
+    {
+      "countryCode": "GB",
+      "region": "Guernsey",
+      "iata": "ACI",
+      "icao": "EGJA",
+      "name": "Alderney Airport",
+      "latitude": 49.7067,
+      "longitude": -2.21444
+    },
+    {
+      "countryCode": "GB",
+      "region": "Kent",
+      "iata": "MSE",
+      "icao": "EGMH",
+      "name": "Manston Airport",
+      "latitude": 51.3422,
+      "longitude": 1.34611
+    },
+    {
+      "countryCode": "GB",
+      "region": "Lancashire",
+      "iata": "WRT",
+      "icao": "EGNO",
+      "name": "Warton Aerodrome",
+      "latitude": 53.745,
+      "longitude": -2.88389
+    },
+    {
+      "countryCode": "GB",
+      "region": "Northern Ireland",
+      "iata": "BFS",
+      "icao": "EGAA",
+      "name": "Belfast International Airport",
+      "latitude": 54.6575,
+      "longitude": -6.21583
+    },
+    {
+      "countryCode": "GB",
+      "region": "Northern Ireland",
+      "iata": "BHD",
+      "icao": "EGAC",
+      "name": "George Best Belfast City Airport",
+      "latitude": 54.6181,
+      "longitude": -5.8725
+    },
+    {
+      "countryCode": "GB",
+      "region": "Northern Ireland",
+      "iata": "BOL",
+      "icao": "EGQB",
+      "name": "Ballykelly Airfield (RAF Ballykelly)",
+      "latitude": 55.0544,
+      "longitude": -7.02
+    },
+    {
+      "countryCode": "GB",
+      "region": "Northern Ireland",
+      "iata": "ENK",
+      "icao": "EGAB",
+      "name": "Enniskillen/St Angelo Airport",
+      "latitude": 54.3989,
+      "longitude": -7.65167
+    },
+    {
+      "countryCode": "GB",
+      "region": "Northern Ireland",
+      "iata": "LDY",
+      "icao": "EGAE",
+      "name": "City of Derry Airport",
+      "latitude": 55.0428,
+      "longitude": -7.16111
+    },
+    {
+      "countryCode": "GB",
+      "region": "Rutland",
+      "iata": "OKH",
+      "icao": "EGXJ",
+      "name": "RAF Cottesmore",
+      "latitude": 52.7294,
+      "longitude": -0.651389
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "ABZ",
+      "icao": "EGPD",
+      "name": "Aberdeen Airport",
+      "latitude": 57.2019,
+      "longitude": -2.19778
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "ADX",
+      "icao": "EGQL",
+      "name": "RAF Leuchars",
+      "latitude": 56.3729,
+      "longitude": -2.86844
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "BEB",
+      "icao": "EGPL",
+      "name": "Benbecula Airport",
+      "latitude": 57.4811,
+      "longitude": -7.36278
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "BRR",
+      "icao": "EGPR",
+      "name": "Barra Airport",
+      "latitude": 57.0228,
+      "longitude": -7.44306
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "CAL",
+      "icao": "EGEC",
+      "name": "Campbeltown Airport / RAF Machrihanish",
+      "latitude": 55.4372,
+      "longitude": -5.68639
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "COL",
+      "icao": "",
+      "name": "Coll Airport",
+      "latitude": 56.6019,
+      "longitude": -6.61778
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "CSA",
+      "icao": "",
+      "name": "Colonsay Airport",
+      "latitude": 56.0575,
+      "longitude": -6.24306
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "DND",
+      "icao": "EGPN",
+      "name": "Dundee Airport",
+      "latitude": 56.4525,
+      "longitude": -3.02583
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "DOC",
+      "icao": "",
+      "name": "Dornoch Airport",
+      "latitude": 57.869,
+      "longitude": -4.023
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "EDI",
+      "icao": "EGPH",
+      "name": "Edinburgh Airport",
+      "latitude": 55.95,
+      "longitude": -3.3725
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "EOI",
+      "icao": "EGED",
+      "name": "Eday Airport",
+      "latitude": 59.1906,
+      "longitude": -2.77222
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "FIE",
+      "icao": "EGEF",
+      "name": "Fair Isle Airport",
+      "latitude": 59.5358,
+      "longitude": -1.62806
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "FOA",
+      "icao": "",
+      "name": "Foula Airfield",
+      "latitude": 60.1217,
+      "longitude": -2.0532
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "FSS",
+      "icao": "EGQK",
+      "name": "RAF Kinloss",
+      "latitude": 57.6494,
+      "longitude": -3.56064
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "GLA",
+      "icao": "EGPF",
+      "name": "Glasgow Airport",
+      "latitude": 55.8719,
+      "longitude": -4.43306
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "ILY",
+      "icao": "EGPI",
+      "name": "Islay Airport (Glenegedale Airport)",
+      "latitude": 55.6819,
+      "longitude": -6.25667
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "INV",
+      "icao": "EGPE",
+      "name": "Inverness Airport",
+      "latitude": 57.5425,
+      "longitude": -4.0475
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "KOI",
+      "icao": "EGPA",
+      "name": "Kirkwall Airport",
+      "latitude": 58.9578,
+      "longitude": -2.905
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "LMO",
+      "icao": "EGQS",
+      "name": "RAF Lossiemouth",
+      "latitude": 57.7052,
+      "longitude": -3.33917
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "LSI",
+      "icao": "EGPB",
+      "name": "Sumburgh Airport",
+      "latitude": 59.8814,
+      "longitude": -1.29389
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "LWK",
+      "icao": "EGET",
+      "name": "Tingwall Airport",
+      "latitude": 60.1919,
+      "longitude": -1.24361
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "NDY",
+      "icao": "EGES",
+      "name": "Sanday Airport",
+      "latitude": 59.2503,
+      "longitude": -2.57667
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "NRL",
+      "icao": "EGEN",
+      "name": "North Ronaldsay Airport",
+      "latitude": 59.3675,
+      "longitude": -2.43444
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "OBN",
+      "icao": "EGEO",
+      "name": "Oban Airport (North Connel Airport)",
+      "latitude": 56.4635,
+      "longitude": -5.39967
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "OUK",
+      "icao": "",
+      "name": "Out Skerries Airport",
+      "latitude": 60.4252,
+      "longitude": -0.75
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "PIK",
+      "icao": "EGPK",
+      "name": "Glasgow Prestwick Airport",
+      "latitude": 55.5094,
+      "longitude": -4.58667
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "PPW",
+      "icao": "EGEP",
+      "name": "Papa Westray Airport",
+      "latitude": 59.3517,
+      "longitude": -2.90028
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "PSL",
+      "icao": "EGPT",
+      "name": "Perth Airport (Scone Airport)",
+      "latitude": 56.4392,
+      "longitude": -3.37222
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "PSV",
+      "icao": "",
+      "name": "Papa Stour Airport",
+      "latitude": 60.3217,
+      "longitude": -1.69306
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "SKL",
+      "icao": "EGEI",
+      "name": "Broadford Airfield",
+      "latitude": 57.2414,
+      "longitude": -5.90966
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "SOY",
+      "icao": "EGER",
+      "name": "Stronsay Airport",
+      "latitude": 59.1553,
+      "longitude": -2.64139
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "SYY",
+      "icao": "EGPO",
+      "name": "Stornoway Airport",
+      "latitude": 58.2156,
+      "longitude": -6.33111
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "TRE",
+      "icao": "EGPU",
+      "name": "Tiree Airport",
+      "latitude": 56.4992,
+      "longitude": -6.86917
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "UNT",
+      "icao": "EGPW",
+      "name": "Baltasound Airport",
+      "latitude": 60.7469,
+      "longitude": -0.854722
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "WHS",
+      "icao": "EGEH",
+      "name": "Whalsay Airstrip",
+      "latitude": 60.3775,
+      "longitude": -0.925556
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "WIC",
+      "icao": "EGPC",
+      "name": "Wick Airport",
+      "latitude": 58.4589,
+      "longitude": -3.09306
+    },
+    {
+      "countryCode": "GB",
+      "region": "Scotland",
+      "iata": "WRY",
+      "icao": "EGEW",
+      "name": "Westray Airport",
+      "latitude": 59.3503,
+      "longitude": -2.95
+    },
+    {
+      "countryCode": "GB",
+      "region": "South Gloucestershire",
+      "iata": "FZO",
+      "icao": "EGTG",
+      "name": "Bristol Filton Airport",
+      "latitude": 51.5194,
+      "longitude": -2.59361
+    },
+    {
+      "countryCode": "GB",
+      "region": "Wales",
+      "iata": "CEG",
+      "icao": "EGNR",
+      "name": "Hawarden Airport (Chester Airport)",
+      "latitude": 53.1781,
+      "longitude": -2.97778
+    },
+    {
+      "countryCode": "GB",
+      "region": "Wales",
+      "iata": "CWL",
+      "icao": "EGFF",
+      "name": "Cardiff Airport",
+      "latitude": 51.3967,
+      "longitude": -3.34333
+    },
+    {
+      "countryCode": "GB",
+      "region": "Wales",
+      "iata": "HAW",
+      "icao": "EGFE",
+      "name": "Haverfordwest Aerodrome",
+      "latitude": 51.8331,
+      "longitude": -4.96111
+    },
+    {
+      "countryCode": "GB",
+      "region": "Wales",
+      "iata": "SWS",
+      "icao": "EGFH",
+      "name": "Swansea Airport",
+      "latitude": 51.6053,
+      "longitude": -4.06783
+    },
+    {
+      "countryCode": "GB",
+      "region": "Wales",
+      "iata": "VLY",
+      "icao": "EGOV",
+      "name": "Anglesey Airport / RAF Valley",
+      "latitude": 53.2481,
+      "longitude": -4.53534
+    },
+    {
+      "countryCode": "GB",
+      "region": "West Sussex",
+      "iata": "ESH",
+      "icao": "EGKA",
+      "name": "Brighton City Airport",
+      "latitude": 50.8356,
+      "longitude": -0.297222
+    }
+  ]
 }

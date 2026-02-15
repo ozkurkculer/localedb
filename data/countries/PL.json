@@ -236,5 +236,169 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PL",
+      "region": "Dolnoslaskie",
+      "iata": "WRO",
+      "icao": "EPWR",
+      "name": "Copernicus Airport Wroclaw",
+      "latitude": 51.1027,
+      "longitude": 16.8858
+    },
+    {
+      "countryCode": "PL",
+      "region": "Kujawsko-pomorskie",
+      "iata": "BZG",
+      "icao": "EPBY",
+      "name": "Bydgoszcz Ignacy Jan Paderewski Airport",
+      "latitude": 53.0968,
+      "longitude": 17.9777
+    },
+    {
+      "countryCode": "PL",
+      "region": "Lodzkie",
+      "iata": "LCJ",
+      "icao": "EPLL",
+      "name": "Lodz Wladyslaw Reymont Airport",
+      "latitude": 51.7219,
+      "longitude": 19.3981
+    },
+    {
+      "countryCode": "PL",
+      "region": "Lubelskie",
+      "iata": "BXP",
+      "icao": "EPBP",
+      "name": "Biala Podlaska Airport",
+      "latitude": 52.0008,
+      "longitude": 23.1325
+    },
+    {
+      "countryCode": "PL",
+      "region": "Lubelskie",
+      "iata": "LUZ",
+      "icao": "EPLB",
+      "name": "Lublin Airport",
+      "latitude": 51.2403,
+      "longitude": 22.7136
+    },
+    {
+      "countryCode": "PL",
+      "region": "Lubuskie",
+      "iata": "IEG",
+      "icao": "EPZG",
+      "name": "Zielona Gora Airport",
+      "latitude": 52.1385,
+      "longitude": 15.7986
+    },
+    {
+      "countryCode": "PL",
+      "region": "Malopolskie",
+      "iata": "KRK",
+      "icao": "EPKK",
+      "name": "John Paul II International Airport Krakow-Balice",
+      "latitude": 50.0777,
+      "longitude": 19.7848
+    },
+    {
+      "countryCode": "PL",
+      "region": "Mazowieckie",
+      "iata": "RDO",
+      "icao": "EPRA",
+      "name": "Radom Airport",
+      "latitude": 51.3892,
+      "longitude": 21.2133
+    },
+    {
+      "countryCode": "PL",
+      "region": "Mazowieckie",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "name": "Warsaw Chopin Airport",
+      "latitude": 52.1657,
+      "longitude": 20.9671
+    },
+    {
+      "countryCode": "PL",
+      "region": "Mazowieckie",
+      "iata": "WMI",
+      "icao": "EPMO",
+      "name": "Warsaw Modlin Airport",
+      "latitude": 52.4511,
+      "longitude": 20.6518
+    },
+    {
+      "countryCode": "PL",
+      "region": "Podlaskie",
+      "iata": "RZE",
+      "icao": "EPRZ",
+      "name": "Rzeszow-Jasionka Airport",
+      "latitude": 50.11,
+      "longitude": 22.019
+    },
+    {
+      "countryCode": "PL",
+      "region": "Pomorskie",
+      "iata": "GDN",
+      "icao": "EPGD",
+      "name": "Gdansk Lech Walesa Airport",
+      "latitude": 54.3776,
+      "longitude": 18.4662
+    },
+    {
+      "countryCode": "PL",
+      "region": "Slaskie",
+      "iata": "CZW",
+      "icao": "EPRU",
+      "name": "Czestochowa-Rudniki Airport",
+      "latitude": 50.885,
+      "longitude": 19.2047
+    },
+    {
+      "countryCode": "PL",
+      "region": "Slaskie",
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice International Airport",
+      "latitude": 50.4743,
+      "longitude": 19.08
+    },
+    {
+      "countryCode": "PL",
+      "region": "Warminsko-mazurskie",
+      "iata": "SZY",
+      "icao": "EPSY",
+      "name": "Olsztyn-Mazury Regional Airport",
+      "latitude": 53.4819,
+      "longitude": 20.9377
+    },
+    {
+      "countryCode": "PL",
+      "region": "Wielkopolskie",
+      "iata": "POZ",
+      "icao": "EPPO",
+      "name": "Poznań–Ławica Henryk Wieniawski Airport",
+      "latitude": 52.421,
+      "longitude": 16.8263
+    },
+    {
+      "countryCode": "PL",
+      "region": "Zachodniopomorskie",
+      "iata": "OSZ",
+      "icao": "EPKZ",
+      "name": "Koszalin-Zegrze Pomorskie Airport",
+      "latitude": 54.0425,
+      "longitude": 16.2656
+    },
+    {
+      "countryCode": "PL",
+      "region": "Zachodniopomorskie",
+      "iata": "SZZ",
+      "icao": "EPSC",
+      "name": "Solidarity Szczecin-Goleniow Airport",
+      "latitude": 53.5847,
+      "longitude": 14.9022
+    }
+  ]
 }

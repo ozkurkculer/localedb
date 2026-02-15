@@ -231,5 +231,97 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TN",
+      "region": "Gabes",
+      "iata": "GAE",
+      "icao": "DTTG",
+      "name": "Gabes - Matmata International Airport",
+      "latitude": 33.8769,
+      "longitude": 10.1033
+    },
+    {
+      "countryCode": "TN",
+      "region": "Gafsa",
+      "iata": "GAF",
+      "icao": "DTTF",
+      "name": "Gafsa - Ksar International Airport",
+      "latitude": 34.422,
+      "longitude": 8.8225
+    },
+    {
+      "countryCode": "TN",
+      "region": "Jendouba",
+      "iata": "TBJ",
+      "icao": "DTKA",
+      "name": "Tabarka-Ain Draham Internation",
+      "latitude": 36.98,
+      "longitude": 8.87694
+    },
+    {
+      "countryCode": "TN",
+      "region": "Medenine",
+      "iata": "DJE",
+      "icao": "DTTJ",
+      "name": "Djerba-Zarzis International Airport",
+      "latitude": 33.875,
+      "longitude": 10.7755
+    },
+    {
+      "countryCode": "TN",
+      "region": "Monastir",
+      "iata": "MIR",
+      "icao": "DTMB",
+      "name": "Monastir Habib Bourguiba International Airport",
+      "latitude": 35.7581,
+      "longitude": 10.7547
+    },
+    {
+      "countryCode": "TN",
+      "region": "Sfax",
+      "iata": "SFA",
+      "icao": "DTTX",
+      "name": "Sfax-Thyna International Airport",
+      "latitude": 34.718,
+      "longitude": 10.691
+    },
+    {
+      "countryCode": "TN",
+      "region": "Sousse",
+      "iata": "NBE",
+      "icao": "DTNH",
+      "name": "Enfidha-Hammamet International Airport",
+      "latitude": 36.0758,
+      "longitude": 10.4386
+    },
+    {
+      "countryCode": "TN",
+      "region": "Tataouine",
+      "iata": "EBM",
+      "icao": "DTTR",
+      "name": "El Borma Airport",
+      "latitude": 31.7043,
+      "longitude": 9.25462
+    },
+    {
+      "countryCode": "TN",
+      "region": "Tozeur",
+      "iata": "TOE",
+      "icao": "DTTZ",
+      "name": "Tozeur-Nefta International Airport",
+      "latitude": 33.9397,
+      "longitude": 8.11056
+    },
+    {
+      "countryCode": "TN",
+      "region": "Tunis",
+      "iata": "TUN",
+      "icao": "DTTA",
+      "name": "Tunis–Carthage International Airport",
+      "latitude": 36.8511,
+      "longitude": 10.2272
+    }
+  ]
 }

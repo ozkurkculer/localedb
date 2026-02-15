@@ -247,5 +247,286 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TZ",
+      "region": "Arusha",
+      "iata": "ARK",
+      "icao": "HTAR",
+      "name": "Arusha Airport",
+      "latitude": -3.36779,
+      "longitude": 36.6333
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Arusha",
+      "iata": "LKY",
+      "icao": "HTLM",
+      "name": "Lake Manyara Airport",
+      "latitude": -3.37631,
+      "longitude": 35.8183
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Dar es Salaam",
+      "iata": "DAR",
+      "icao": "HTDA",
+      "name": "Julius Nyerere International Airport",
+      "latitude": -6.87811,
+      "longitude": 39.2026
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Dodoma",
+      "iata": "DOD",
+      "icao": "HTDO",
+      "name": "Dodoma Airport",
+      "latitude": -6.17044,
+      "longitude": 35.7526
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Geita",
+      "iata": "GIT",
+      "icao": "HTGE",
+      "name": "Geita Airport",
+      "latitude": -2.81367,
+      "longitude": 32.1725
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Iringa",
+      "iata": "IRI",
+      "icao": "HTIR",
+      "name": "Iringa Airport (Nduli Airport)",
+      "latitude": -7.66863,
+      "longitude": 35.7521
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Kagera",
+      "iata": "BKZ",
+      "icao": "HTBU",
+      "name": "Bukoba Airport",
+      "latitude": -1.332,
+      "longitude": 31.8212
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Katavi",
+      "iata": "NPY",
+      "icao": "HTMP",
+      "name": "Mpanda Airport",
+      "latitude": -6.3559,
+      "longitude": 31.0804
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Kigoma",
+      "iata": "TKQ",
+      "icao": "HTKA",
+      "name": "Kigoma Airport",
+      "latitude": -4.8862,
+      "longitude": 29.6709
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Kilimanjaro",
+      "iata": "JRO",
+      "icao": "HTKJ",
+      "name": "Kilimanjaro International Airport",
+      "latitude": -3.42941,
+      "longitude": 37.0745
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Kusini Pemba",
+      "iata": "PMA",
+      "icao": "HTPE",
+      "name": "Pemba Airport",
+      "latitude": -5.25726,
+      "longitude": 39.8114
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Lindi",
+      "iata": "KIY",
+      "icao": "HTKI",
+      "name": "Kilwa Masoko Airport",
+      "latitude": -8.91123,
+      "longitude": 39.5086
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Lindi",
+      "iata": "LDI",
+      "icao": "HTLI",
+      "name": "Lindi Airport (Kikwetu Airport)",
+      "latitude": -9.85111,
+      "longitude": 39.7578
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Lindi",
+      "iata": "NCH",
+      "icao": "HTNA",
+      "name": "Nachingwea Airport",
+      "latitude": -10.3575,
+      "longitude": 38.7792
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mara",
+      "iata": "GTZ",
+      "icao": "HTGR",
+      "name": "Kirawira B Airstrip",
+      "latitude": -2.16083,
+      "longitude": 34.2256
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mara",
+      "iata": "MUZ",
+      "icao": "HTMU",
+      "name": "Musoma Airport",
+      "latitude": -1.503,
+      "longitude": 33.8021
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mbeya",
+      "iata": "MBI",
+      "icao": "HTMB",
+      "name": "Mbeya Airport",
+      "latitude": -8.91994,
+      "longitude": 33.274
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mjini Magharibi",
+      "iata": "ZNZ",
+      "icao": "HTZA",
+      "name": "Abeid Amani Karume International Airport",
+      "latitude": -6.22202,
+      "longitude": 39.2249
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mtwara",
+      "iata": "MYW",
+      "icao": "HTMT",
+      "name": "Mtwara Airport",
+      "latitude": -10.3391,
+      "longitude": 40.1818
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mtwara",
+      "iata": "XMI",
+      "icao": "HTMI",
+      "name": "Masasi Airport",
+      "latitude": -10.733,
+      "longitude": 38.767
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Mwanza",
+      "iata": "MWZ",
+      "icao": "HTMW",
+      "name": "Mwanza Airport",
+      "latitude": -2.44449,
+      "longitude": 32.9327
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Njombe",
+      "iata": "JOM",
+      "icao": "HTNJ",
+      "name": "Njombe Airport",
+      "latitude": -9.35,
+      "longitude": 34.8
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Pwani",
+      "iata": "MFA",
+      "icao": "HTMA",
+      "name": "Mafia Airport",
+      "latitude": -7.91748,
+      "longitude": 39.6685
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Rukwa",
+      "iata": "SUT",
+      "icao": "HTSU",
+      "name": "Sumbawanga Airport",
+      "latitude": -7.94889,
+      "longitude": 31.6103
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Ruvuma",
+      "iata": "SGX",
+      "icao": "HTSO",
+      "name": "Songea Airport",
+      "latitude": -10.683,
+      "longitude": 35.583
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Shinyanga",
+      "iata": "KBH",
+      "icao": "",
+      "name": "Kahama Buzwagi Airport",
+      "latitude": -3.8465,
+      "longitude": 32.6835
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Shinyanga",
+      "iata": "MWN",
+      "icao": "HTMD",
+      "name": "Mwadui Airport",
+      "latitude": -3.52133,
+      "longitude": 33.6155
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Shinyanga",
+      "iata": "SHY",
+      "icao": "HTSY",
+      "name": "Shinyanga Airport",
+      "latitude": -3.6093,
+      "longitude": 33.5035
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Simiyu",
+      "iata": "SEU",
+      "icao": "HTSN",
+      "name": "Seronera Airstrip",
+      "latitude": -2.45806,
+      "longitude": 34.8225
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Tabora",
+      "iata": "TBO",
+      "icao": "HTTB",
+      "name": "Tabora Airport",
+      "latitude": -5.07639,
+      "longitude": 32.8333
+    },
+    {
+      "countryCode": "TZ",
+      "region": "Tanga",
+      "iata": "TGT",
+      "icao": "HTTG",
+      "name": "Tanga Airport",
+      "latitude": -5.09236,
+      "longitude": 39.0712
+    }
+  ]
 }

@@ -233,5 +233,250 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MA",
+      "region": "Beni-Mellal-Khenifra",
+      "iata": "BEM",
+      "icao": "GMMD",
+      "name": "Beni Mellal Airport",
+      "latitude": 32.4019,
+      "longitude": -6.31591
+    },
+    {
+      "countryCode": "MA",
+      "region": "Casablanca-Settat",
+      "iata": "CAS",
+      "icao": "GMMC",
+      "name": "Anfa Airport",
+      "latitude": 33.5533,
+      "longitude": -7.66139
+    },
+    {
+      "countryCode": "MA",
+      "region": "Casablanca-Settat",
+      "iata": "CMN",
+      "icao": "GMMN",
+      "name": "Mohammed V International Airport",
+      "latitude": 33.3675,
+      "longitude": -7.58997
+    },
+    {
+      "countryCode": "MA",
+      "region": "Casablanca-Settat",
+      "iata": "GMD",
+      "icao": "GMMB",
+      "name": "Ben Slimane Airport",
+      "latitude": 33.6554,
+      "longitude": -7.22145
+    },
+    {
+      "countryCode": "MA",
+      "region": "Draa-Tafilalet",
+      "iata": "ERH",
+      "icao": "GMFK",
+      "name": "Moulay Ali Cherif Airport",
+      "latitude": 31.9475,
+      "longitude": -4.39833
+    },
+    {
+      "countryCode": "MA",
+      "region": "Draa-Tafilalet",
+      "iata": "OZG",
+      "icao": "GMAZ",
+      "name": "Zagora Airport",
+      "latitude": 30.3203,
+      "longitude": -5.86667
+    },
+    {
+      "countryCode": "MA",
+      "region": "Draa-Tafilalet",
+      "iata": "OZZ",
+      "icao": "GMMZ",
+      "name": "Ouarzazate Airport",
+      "latitude": 30.9391,
+      "longitude": -6.90943
+    },
+    {
+      "countryCode": "MA",
+      "region": "Fes- Meknes",
+      "iata": "FEZ",
+      "icao": "GMFF",
+      "name": "Fes-Saiss Airport",
+      "latitude": 33.9273,
+      "longitude": -4.97796
+    },
+    {
+      "countryCode": "MA",
+      "region": "Fes- Meknes",
+      "iata": "MEK",
+      "icao": "GMFM",
+      "name": "Bassatine Air Base",
+      "latitude": 33.8791,
+      "longitude": -5.51512
+    },
+    {
+      "countryCode": "MA",
+      "region": "Guelmim-Oued Noun (EH-partial)",
+      "iata": "GLN",
+      "icao": "",
+      "name": "Guelmim Airport",
+      "latitude": 29.0267,
+      "longitude": -10.0503
+    },
+    {
+      "countryCode": "MA",
+      "region": "Guelmim-Oued Noun (EH-partial)",
+      "iata": "SII",
+      "icao": "GMMF",
+      "name": "Sidi Ifni Airport (Sania Ramel Airport)",
+      "latitude": 29.3667,
+      "longitude": -10.1878
+    },
+    {
+      "countryCode": "MA",
+      "region": "Guelmim-Oued Noun (EH-partial)",
+      "iata": "TTA",
+      "icao": "GMAT",
+      "name": "Tan Tan Airport (Plage Blanche Airport)",
+      "latitude": 28.4482,
+      "longitude": -11.1613
+    },
+    {
+      "countryCode": "MA",
+      "region": "L'Oriental",
+      "iata": "NDR",
+      "icao": "GMMW",
+      "name": "Nador International Airport",
+      "latitude": 34.9888,
+      "longitude": -3.02821
+    },
+    {
+      "countryCode": "MA",
+      "region": "L'Oriental",
+      "iata": "OUD",
+      "icao": "GMFO",
+      "name": "Angads Airport",
+      "latitude": 34.7872,
+      "longitude": -1.92399
+    },
+    {
+      "countryCode": "MA",
+      "region": "L'Oriental",
+      "iata": "UAR",
+      "icao": "GMFB",
+      "name": "Bouarfa Airport",
+      "latitude": 32.5143,
+      "longitude": -1.98306
+    },
+    {
+      "countryCode": "MA",
+      "region": "Laayoune-Sakia El Hamra (EH-partial)",
+      "iata": "EUN",
+      "icao": "GMML",
+      "name": "Hassan I Airport",
+      "latitude": 27.1517,
+      "longitude": -13.2192
+    },
+    {
+      "countryCode": "MA",
+      "region": "Laayoune-Sakia El Hamra (EH-partial)",
+      "iata": "SMW",
+      "icao": "GMMA",
+      "name": "Smara Airport",
+      "latitude": 26.7318,
+      "longitude": -11.6847
+    },
+    {
+      "countryCode": "MA",
+      "region": "Laayoune-Sakia El Hamra (EH-partial)",
+      "iata": "VIL",
+      "icao": "GMMH",
+      "name": "Dakhla Airport",
+      "latitude": 23.7183,
+      "longitude": -15.932
+    },
+    {
+      "countryCode": "MA",
+      "region": "Marrakech-Safi",
+      "iata": "RAK",
+      "icao": "GMMX",
+      "name": "Marrakesh Menara Airport",
+      "latitude": 31.6069,
+      "longitude": -8.0363
+    },
+    {
+      "countryCode": "MA",
+      "region": "Marrakech-Safi",
+      "iata": "SFI",
+      "icao": "GMMS",
+      "name": "Safi Airport",
+      "latitude": 32.2731,
+      "longitude": -9.23694
+    },
+    {
+      "countryCode": "MA",
+      "region": "Rabat-Sale-Kenitra",
+      "iata": "NNA",
+      "icao": "GMMY",
+      "name": "Kenitra Air Base",
+      "latitude": 34.2989,
+      "longitude": -6.59588
+    },
+    {
+      "countryCode": "MA",
+      "region": "Rabat-Sale-Kenitra",
+      "iata": "RBA",
+      "icao": "GMME",
+      "name": "Rabat-Sale Airport",
+      "latitude": 34.0515,
+      "longitude": -6.75152
+    },
+    {
+      "countryCode": "MA",
+      "region": "Souss-Massa",
+      "iata": "AGA",
+      "icao": "GMAD",
+      "name": "Agadir-Al Massira Airport",
+      "latitude": 30.325,
+      "longitude": -9.41307
+    },
+    {
+      "countryCode": "MA",
+      "region": "Souss-Massa",
+      "iata": "ESU",
+      "icao": "GMMI",
+      "name": "Essaouira-Mogador Airport",
+      "latitude": 31.3975,
+      "longitude": -9.68167
+    },
+    {
+      "countryCode": "MA",
+      "region": "Tanger-Tetouan-Al Hoceima",
+      "iata": "AHU",
+      "icao": "GMTA",
+      "name": "Cherif Al Idrissi Airport",
+      "latitude": 35.1771,
+      "longitude": -3.83952
+    },
+    {
+      "countryCode": "MA",
+      "region": "Tanger-Tetouan-Al Hoceima",
+      "iata": "TNG",
+      "icao": "GMTT",
+      "name": "Tangier Ibn Battouta Airport",
+      "latitude": 35.7269,
+      "longitude": -5.91689
+    },
+    {
+      "countryCode": "MA",
+      "region": "Tanger-Tetouan-Al Hoceima",
+      "iata": "TTU",
+      "icao": "",
+      "name": "Sania Ramel Airport",
+      "latitude": 35.5943,
+      "longitude": -5.32002
+    }
+  ]
 }

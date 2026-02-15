@@ -229,5 +229,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "FM",
+      "region": "Chuuk",
+      "iata": "TKK",
+      "icao": "PTKK",
+      "name": "Chuuk International Airport",
+      "latitude": 7.46187,
+      "longitude": 151.843
+    },
+    {
+      "countryCode": "FM",
+      "region": "Kosrae",
+      "iata": "KSA",
+      "icao": "PTSA",
+      "name": "Kosrae International Airport",
+      "latitude": 5.35698,
+      "longitude": 162.958
+    },
+    {
+      "countryCode": "FM",
+      "region": "Pohnpei",
+      "iata": "PNI",
+      "icao": "PTPN",
+      "name": "Pohnpei International Airport",
+      "latitude": 6.9851,
+      "longitude": 158.209
+    },
+    {
+      "countryCode": "FM",
+      "region": "Yap",
+      "iata": "ULI",
+      "icao": "",
+      "name": "Ulithi Airport (FAA: TT02)",
+      "latitude": 10.0198,
+      "longitude": 139.79
+    },
+    {
+      "countryCode": "FM",
+      "region": "Yap",
+      "iata": "YAP",
+      "icao": "PTYA",
+      "name": "Yap International Airport",
+      "latitude": 9.49891,
+      "longitude": 138.083
+    }
+  ]
 }

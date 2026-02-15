@@ -233,5 +233,196 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MR",
+      "region": "Adrar",
+      "iata": "ATR",
+      "icao": "GQPA",
+      "name": "Atar International Airport",
+      "latitude": 20.5068,
+      "longitude": -13.0432
+    },
+    {
+      "countryCode": "MR",
+      "region": "Assaba",
+      "iata": "KFA",
+      "icao": "GQNF",
+      "name": "Kiffa Airport",
+      "latitude": 16.59,
+      "longitude": -11.4062
+    },
+    {
+      "countryCode": "MR",
+      "region": "Brakna",
+      "iata": "BGH",
+      "icao": "GQNE",
+      "name": "Abbaye Airport",
+      "latitude": 16.6333,
+      "longitude": -14.2
+    },
+    {
+      "countryCode": "MR",
+      "region": "Dakhlet Nouadhibou",
+      "iata": "NDB",
+      "icao": "GQPP",
+      "name": "Nouadhibou International Airport",
+      "latitude": 20.9331,
+      "longitude": -17.03
+    },
+    {
+      "countryCode": "MR",
+      "region": "Gorgol",
+      "iata": "KED",
+      "icao": "GQNK",
+      "name": "Kaedi Airport",
+      "latitude": 16.1595,
+      "longitude": -13.5076
+    },
+    {
+      "countryCode": "MR",
+      "region": "Guidimaka",
+      "iata": "SEY",
+      "icao": "GQNS",
+      "name": "Selibaby Airport",
+      "latitude": 15.1797,
+      "longitude": -12.2073
+    },
+    {
+      "countryCode": "MR",
+      "region": "Inchiri",
+      "iata": "AJJ",
+      "icao": "GQNJ",
+      "name": "Akjoujt Airport",
+      "latitude": 19.733,
+      "longitude": -14.3832
+    },
+    {
+      "countryCode": "MR",
+      "region": "Nouakchott Nord",
+      "iata": "AEO",
+      "icao": "GQNA",
+      "name": "Aioun el Atrouss Airport",
+      "latitude": 16.7113,
+      "longitude": -9.63788
+    },
+    {
+      "countryCode": "MR",
+      "region": "Nouakchott Nord",
+      "iata": "LEG",
+      "icao": "",
+      "name": "Aleg Airport",
+      "latitude": 17.1667,
+      "longitude": -13.95
+    },
+    {
+      "countryCode": "MR",
+      "region": "Nouakchott Nord",
+      "iata": "MBR",
+      "icao": "GQNU",
+      "name": "M'Bout Airport",
+      "latitude": 16.0333,
+      "longitude": -12.6
+    },
+    {
+      "countryCode": "MR",
+      "region": "Nouakchott Nord",
+      "iata": "NKC",
+      "icao": "GQNO",
+      "name": "Nouakchott-Oumtounsy International Airport",
+      "latitude": 18.31,
+      "longitude": -15.9697
+    },
+    {
+      "countryCode": "MR",
+      "region": "Nouakchott Nord",
+      "iata": "THT",
+      "icao": "GQNT",
+      "name": "Tamchakett Airport",
+      "latitude": 17.233,
+      "longitude": -10.817
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tagant",
+      "iata": "MOM",
+      "icao": "GQNL",
+      "name": "Letfotar Airport",
+      "latitude": 17.75,
+      "longitude": -12.5
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tagant",
+      "iata": "THI",
+      "icao": "GQNC",
+      "name": "Tichitt Airport",
+      "latitude": 18.45,
+      "longitude": -9.517
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tagant",
+      "iata": "TIY",
+      "icao": "GQND",
+      "name": "Tidjikja Airport",
+      "latitude": 18.5701,
+      "longitude": -11.4235
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tiris Zemmour",
+      "iata": "CGT",
+      "icao": "",
+      "name": "Chinguetti Airport",
+      "latitude": 20.5055,
+      "longitude": -12.3978
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tiris Zemmour",
+      "iata": "EMN",
+      "icao": "GQNI",
+      "name": "Nema Airport",
+      "latitude": 16.622,
+      "longitude": -7.3166
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tiris Zemmour",
+      "iata": "FGD",
+      "icao": "GQPF",
+      "name": "Fderik Airport",
+      "latitude": 22.667,
+      "longitude": -12.733
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tiris Zemmour",
+      "iata": "OUZ",
+      "icao": "GQPZ",
+      "name": "Tazadit Airport",
+      "latitude": 22.7564,
+      "longitude": -12.4836
+    },
+    {
+      "countryCode": "MR",
+      "region": "Tiris Zemmour",
+      "iata": "TMD",
+      "icao": "GQNH",
+      "name": "Timbedra Airport",
+      "latitude": 16.233,
+      "longitude": -8.167
+    },
+    {
+      "countryCode": "MR",
+      "region": "Trarza",
+      "iata": "OTL",
+      "icao": "GQNB",
+      "name": "Boutilimit Airport",
+      "latitude": 17.533,
+      "longitude": -14.683
+    }
+  ]
 }

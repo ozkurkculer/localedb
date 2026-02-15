@@ -102,6 +102,58 @@ async function build() {
     // We need to store full currency info to generate pages later
     const currencyInfoMap: Record<string, CurrencyInfo> = {}; 
   
+    // 1.5 Process Airports [NEW] - MUST BE BEFORE COUNTRIES
+    console.log(`✈️  Processing airports...`);
+    const airportsMap = new Map<string, any[]>();
+    const airportIndex: any[] = [];
+    
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/ip2location/ip2location-iata-icao/master/iata-icao.csv');
+        const csvText = await response.text();
+        const lines = csvText.split('\n').slice(1); // Skip header
+
+        lines.forEach(line => {
+            // "country_code","region_name","iata","icao","airport","latitude","longitude"
+            const parts = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+            if (!parts || parts.length < 7) return;
+
+            const clean = (s: string) => s.replace(/^"|"$/g, '').trim();
+            const countryCode = clean(parts[0]);
+            
+            if (!countryCode) return;
+
+            const airport = {
+                countryCode: countryCode,
+                region: clean(parts[1]),
+                iata: clean(parts[2]),
+                icao: clean(parts[3]),
+                name: clean(parts[4]),
+                latitude: parseFloat(clean(parts[5])),
+                longitude: parseFloat(clean(parts[6]))
+            };
+
+            // Basic validation: must have name and at least one code
+            if (airport.name && (airport.iata || airport.icao)) {
+                if (!airportsMap.has(countryCode)) {
+                    airportsMap.set(countryCode, []);
+                }
+                airportsMap.get(countryCode)?.push(airport);
+                
+                // Add to global index if it has IATA (major airports usually do)
+                if (airport.iata) {
+                    airportIndex.push(airport);
+                }
+            }
+        });
+        console.log(`✅ Loaded ${airportIndex.length} major airports`);
+    } catch (e) {
+        console.error("Failed to load airports:", e);
+    }
+    
+    // Sort airport index by IATA
+    airportIndex.sort((a, b) => a.iata.localeCompare(b.iata));
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_airports.json'), JSON.stringify(airportIndex, null, 2));
+
     // 2. Process Countries
     console.log(`🌍 Processing ${slCountries.length} countries...`);
     
@@ -113,6 +165,7 @@ async function build() {
           const isoCode = slCountry.code;
           const mledozeCountry = mledozeMap.get(isoCode);
           const overrideData = await readJsonFile(path.join(OVERRIDES_DIR, `${isoCode}.json`));
+          const countryAirports = airportsMap.get(isoCode) || []; // [NEW]
           
           await processCountry(
               isoCode, 
@@ -122,7 +175,8 @@ async function build() {
               countryIndex, 
               languageUsageMap,
               currencyUsageMap,
-              currencyInfoMap
+              currencyInfoMap,
+              countryAirports // [NEW]
             );
       }));
   
@@ -167,7 +221,8 @@ async function processCountry(
     index: CountryIndexEntry[], 
     langMap: Record<string, string[]>,
     currencyMap: Record<string, string[]>, // [NEW]
-    currencyInfoMap: Record<string, CurrencyInfo> // [NEW]
+    currencyInfoMap: Record<string, CurrencyInfo>, // [NEW]
+    airports: any[] // [NEW]
 ) {
     const primaryLang = slData.languages?.[0]?.iso_639_1 || 'en';
     const cldrLocale = `${primaryLang}-${isoCode}`;
@@ -323,7 +378,8 @@ async function processCountry(
             paperSize: "A4",
             drivingSide: mledozeData?.car?.side || "right",
             weekNumbering: "ISO"
-        }
+        },
+        airports: airports // [NEW]
     };
 
     // --- APPLY OVERRIDES ---

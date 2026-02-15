@@ -242,5 +242,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MW",
+      "region": "Blantyre",
+      "iata": "BLZ",
+      "icao": "FWCL",
+      "name": "Chileka International Airport",
+      "latitude": -15.6791,
+      "longitude": 34.974
+    },
+    {
+      "countryCode": "MW",
+      "region": "Chitipa",
+      "iata": "CEH",
+      "icao": "FWCD",
+      "name": "Chelinda Airport",
+      "latitude": -10.55,
+      "longitude": 33.8
+    },
+    {
+      "countryCode": "MW",
+      "region": "Karonga",
+      "iata": "KGJ",
+      "icao": "FWKA",
+      "name": "Karonga Airport",
+      "latitude": -9.95357,
+      "longitude": 33.893
+    },
+    {
+      "countryCode": "MW",
+      "region": "Kasungu",
+      "iata": "KBQ",
+      "icao": "FWKG",
+      "name": "Kasungu Airport",
+      "latitude": -13.0146,
+      "longitude": 33.4686
+    },
+    {
+      "countryCode": "MW",
+      "region": "Likoma",
+      "iata": "LIX",
+      "icao": "FWLK",
+      "name": "Likoma Airport",
+      "latitude": -12.0758,
+      "longitude": 34.7372
+    },
+    {
+      "countryCode": "MW",
+      "region": "Lilongwe",
+      "iata": "LLW",
+      "icao": "FWKI",
+      "name": "Lilongwe International Airport (Kamuzu Int'l)",
+      "latitude": -13.7894,
+      "longitude": 33.781
+    },
+    {
+      "countryCode": "MW",
+      "region": "Mangochi",
+      "iata": "CMK",
+      "icao": "FWCM",
+      "name": "Club Makokola Airport",
+      "latitude": -14.3069,
+      "longitude": 35.1325
+    },
+    {
+      "countryCode": "MW",
+      "region": "Mangochi",
+      "iata": "MAI",
+      "icao": "FWMG",
+      "name": "Mangochi Airport",
+      "latitude": -14.483,
+      "longitude": 35.267
+    },
+    {
+      "countryCode": "MW",
+      "region": "Mangochi",
+      "iata": "MYZ",
+      "icao": "FWMY",
+      "name": "Monkey Bay Airport",
+      "latitude": -14.0836,
+      "longitude": 34.9197
+    },
+    {
+      "countryCode": "MW",
+      "region": "Mangochi",
+      "iata": "VUU",
+      "icao": "",
+      "name": "Mvuu Camp Airport",
+      "latitude": -14.8386,
+      "longitude": 35.3014
+    },
+    {
+      "countryCode": "MW",
+      "region": "Mzimba",
+      "iata": "ZZU",
+      "icao": "FWUU",
+      "name": "Mzuzu Airport",
+      "latitude": -11.4447,
+      "longitude": 34.0118
+    },
+    {
+      "countryCode": "MW",
+      "region": "Nkhotakota",
+      "iata": "DWA",
+      "icao": "FWDW",
+      "name": "Dwanga Airport (Dwangwa Airport)",
+      "latitude": -12.5183,
+      "longitude": 34.1319
+    },
+    {
+      "countryCode": "MW",
+      "region": "Salima",
+      "iata": "LMB",
+      "icao": "FWSM",
+      "name": "Salima Airport",
+      "latitude": -13.7559,
+      "longitude": 34.5842
+    }
+  ]
 }

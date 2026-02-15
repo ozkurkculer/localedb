@@ -234,5 +234,142 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SN",
+      "region": "Dakar",
+      "iata": "DKR",
+      "icao": "GOOY",
+      "name": "Leopold Sedar Senghor International Airport",
+      "latitude": 14.7397,
+      "longitude": -17.4902
+    },
+    {
+      "countryCode": "SN",
+      "region": "Kaolack",
+      "iata": "KLC",
+      "icao": "GOOK",
+      "name": "Kaolack Airport",
+      "latitude": 14.1469,
+      "longitude": -16.0513
+    },
+    {
+      "countryCode": "SN",
+      "region": "Kedougou",
+      "iata": "KGG",
+      "icao": "GOTK",
+      "name": "Kedougou Airport",
+      "latitude": 12.5723,
+      "longitude": -12.2203
+    },
+    {
+      "countryCode": "SN",
+      "region": "Kolda",
+      "iata": "KDA",
+      "icao": "GODK",
+      "name": "Kolda North Airport",
+      "latitude": 12.8985,
+      "longitude": -14.9681
+    },
+    {
+      "countryCode": "SN",
+      "region": "Matam",
+      "iata": "MAX",
+      "icao": "GOSM",
+      "name": "Ouro Sogui Airport",
+      "latitude": 15.5936,
+      "longitude": -13.3228
+    },
+    {
+      "countryCode": "SN",
+      "region": "Saint-Louis",
+      "iata": "POD",
+      "icao": "GOSP",
+      "name": "Podor Airport",
+      "latitude": 16.683,
+      "longitude": -14.967
+    },
+    {
+      "countryCode": "SN",
+      "region": "Saint-Louis",
+      "iata": "RDT",
+      "icao": "GOSR",
+      "name": "Richard Toll Airport",
+      "latitude": 16.433,
+      "longitude": -15.65
+    },
+    {
+      "countryCode": "SN",
+      "region": "Saint-Louis",
+      "iata": "XLS",
+      "icao": "GOSS",
+      "name": "Saint-Louis Airport",
+      "latitude": 16.0508,
+      "longitude": -16.4632
+    },
+    {
+      "countryCode": "SN",
+      "region": "Tambacounda",
+      "iata": "BXE",
+      "icao": "GOTB",
+      "name": "Bakel Airport",
+      "latitude": 14.8473,
+      "longitude": -12.4683
+    },
+    {
+      "countryCode": "SN",
+      "region": "Tambacounda",
+      "iata": "NIK",
+      "icao": "",
+      "name": "Niokolo-Koba Airport",
+      "latitude": 13.052,
+      "longitude": -12.7272
+    },
+    {
+      "countryCode": "SN",
+      "region": "Tambacounda",
+      "iata": "SMY",
+      "icao": "GOTS",
+      "name": "Simenti Airport",
+      "latitude": 13.0468,
+      "longitude": -13.2954
+    },
+    {
+      "countryCode": "SN",
+      "region": "Tambacounda",
+      "iata": "TUD",
+      "icao": "GOTT",
+      "name": "Tambacounda Airport",
+      "latitude": 13.7368,
+      "longitude": -13.6531
+    },
+    {
+      "countryCode": "SN",
+      "region": "Thies",
+      "iata": "DSS",
+      "icao": "GOBD",
+      "name": "Blaise Diagne International Airport",
+      "latitude": 14.67,
+      "longitude": -17.0733
+    },
+    {
+      "countryCode": "SN",
+      "region": "Ziguinchor",
+      "iata": "CSK",
+      "icao": "GOGS",
+      "name": "Cap Skirring Airport",
+      "latitude": 12.3953,
+      "longitude": -16.748
+    },
+    {
+      "countryCode": "SN",
+      "region": "Ziguinchor",
+      "iata": "ZIG",
+      "icao": "GOGG",
+      "name": "Ziguinchor Airport",
+      "latitude": 12.5556,
+      "longitude": -16.2818
+    }
+  ]
 }

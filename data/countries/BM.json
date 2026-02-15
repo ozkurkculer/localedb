@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BM",
+      "region": "Hamilton",
+      "iata": "BDA",
+      "icao": "TXKF",
+      "name": "L.F. Wade International Airport",
+      "latitude": 32.364,
+      "longitude": -64.6787
+    }
+  ]
 }

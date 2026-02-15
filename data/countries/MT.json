@@ -238,5 +238,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MT",
+      "region": "Luqa",
+      "iata": "MLA",
+      "icao": "LMML",
+      "name": "Malta International Airport (Luqa Airport)",
+      "latitude": 35.8575,
+      "longitude": 14.4775
+    }
+  ]
 }

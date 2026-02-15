@@ -279,5 +279,556 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CD",
+      "region": "Bas-Uele",
+      "iata": "BZU",
+      "icao": "FZKJ",
+      "name": "Buta Zega Airport",
+      "latitude": 2.81835,
+      "longitude": 24.7937
+    },
+    {
+      "countryCode": "CD",
+      "region": "Equateur",
+      "iata": "BDT",
+      "icao": "FZFD",
+      "name": "Gbadolite Airport",
+      "latitude": 4.25321,
+      "longitude": 20.9753
+    },
+    {
+      "countryCode": "CD",
+      "region": "Equateur",
+      "iata": "BSU",
+      "icao": "FZEN",
+      "name": "Basankusu Airport",
+      "latitude": 1.22472,
+      "longitude": 19.7889
+    },
+    {
+      "countryCode": "CD",
+      "region": "Equateur",
+      "iata": "MDK",
+      "icao": "FZEA",
+      "name": "Mbandaka Airport",
+      "latitude": 0.0226,
+      "longitude": 18.2887
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "FBM",
+      "icao": "FZQA",
+      "name": "Lubumbashi International Airport",
+      "latitude": -11.5913,
+      "longitude": 27.5309
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "KAP",
+      "icao": "FZSK",
+      "name": "Kapanga Airport",
+      "latitude": -8.35,
+      "longitude": 22.583
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "KEC",
+      "icao": "FZQG",
+      "name": "Kasenga Airport",
+      "latitude": -10.35,
+      "longitude": 28.633
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "KIL",
+      "icao": "",
+      "name": "Kilwa Airport",
+      "latitude": -9.2886,
+      "longitude": 28.3269
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "KNM",
+      "icao": "FZTK",
+      "name": "Kaniama Airport",
+      "latitude": -7.583,
+      "longitude": 24.15
+    },
+    {
+      "countryCode": "CD",
+      "region": "Haut-Katanga",
+      "iata": "PWO",
+      "icao": "FZQC",
+      "name": "Pweto Airport",
+      "latitude": -8.467,
+      "longitude": 28.883
+    },
+    {
+      "countryCode": "CD",
+      "region": "Ituri",
+      "iata": "BUX",
+      "icao": "FZKA",
+      "name": "Bunia Airport",
+      "latitude": 1.56572,
+      "longitude": 30.2208
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai Oriental",
+      "iata": "GDJ",
+      "icao": "FZWC",
+      "name": "Gandajika Airport",
+      "latitude": -6.733,
+      "longitude": 23.95
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai Oriental",
+      "iata": "KBN",
+      "icao": "FZWT",
+      "name": "Tunta Airport",
+      "latitude": -6.133,
+      "longitude": 24.483
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai Oriental",
+      "iata": "LBO",
+      "icao": "FZVI",
+      "name": "Lusambo Airport",
+      "latitude": -4.96167,
+      "longitude": 23.3783
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai Oriental",
+      "iata": "LJA",
+      "icao": "FZVA",
+      "name": "Lodja Airport",
+      "latitude": -3.417,
+      "longitude": 23.45
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai Oriental",
+      "iata": "MJM",
+      "icao": "FZWA",
+      "name": "Mbuji Mayi Airport",
+      "latitude": -6.12124,
+      "longitude": 23.569
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "BAN",
+      "icao": "FZVR",
+      "name": "Basongo Airport",
+      "latitude": -4.3158,
+      "longitude": 20.4149
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "KGA",
+      "icao": "FZUA",
+      "name": "Kananga Airport",
+      "latitude": -5.90005,
+      "longitude": 22.4692
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "LZA",
+      "icao": "FZUG",
+      "name": "Luiza Airport",
+      "latitude": -7.183,
+      "longitude": 22.4
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "MEW",
+      "icao": "FZVM",
+      "name": "Mweka Airport",
+      "latitude": -4.85,
+      "longitude": 21.55
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "PFR",
+      "icao": "FZVS",
+      "name": "Ilebo Airport",
+      "latitude": -4.32992,
+      "longitude": 20.5901
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kasai",
+      "iata": "TSH",
+      "icao": "FZUK",
+      "name": "Tshikapa Airport",
+      "latitude": -6.43833,
+      "longitude": 20.7947
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kinshasa",
+      "iata": "FIH",
+      "icao": "FZAA",
+      "name": "N'djili Airport",
+      "latitude": -4.38575,
+      "longitude": 15.4446
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kinshasa",
+      "iata": "NLO",
+      "icao": "FZAB",
+      "name": "N'Dolo Airport",
+      "latitude": -4.32666,
+      "longitude": 15.3275
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kongo Central",
+      "iata": "BOA",
+      "icao": "FZAJ",
+      "name": "Boma Airport",
+      "latitude": -5.854,
+      "longitude": 13.064
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kongo Central",
+      "iata": "LZI",
+      "icao": "FZAL",
+      "name": "Luozi Airport",
+      "latitude": -4.95,
+      "longitude": 14.133
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kongo Central",
+      "iata": "MAT",
+      "icao": "FZAM",
+      "name": "Matadi Tshimpi Airport",
+      "latitude": -5.79961,
+      "longitude": 13.4404
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kongo Central",
+      "iata": "MNB",
+      "icao": "FZAG",
+      "name": "Muanda Airport (Moanda Airport)",
+      "latitude": -5.93086,
+      "longitude": 12.3518
+    },
+    {
+      "countryCode": "CD",
+      "region": "Kongo Central",
+      "iata": "NKL",
+      "icao": "FZAR",
+      "name": "Nkolo-Fuma Airport",
+      "latitude": -5.421,
+      "longitude": 14.8169
+    },
+    {
+      "countryCode": "CD",
+      "region": "Lualaba",
+      "iata": "KWZ",
+      "icao": "FZQM",
+      "name": "Kolwezi Airport",
+      "latitude": -10.7659,
+      "longitude": 25.5057
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "FDU",
+      "icao": "FZBO",
+      "name": "Bandundu Airport",
+      "latitude": -3.31132,
+      "longitude": 17.3817
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "IDF",
+      "icao": "FZCB",
+      "name": "Idiofa Airport",
+      "latitude": -5,
+      "longitude": 19.6
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "INO",
+      "icao": "FZBA",
+      "name": "Inongo Airport",
+      "latitude": -1.94722,
+      "longitude": 18.2858
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "KGN",
+      "icao": "FZOK",
+      "name": "Kasongo Lunda Airport",
+      "latitude": -4.533,
+      "longitude": 26.617
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "KKW",
+      "icao": "FZCA",
+      "name": "Kikwit Airport",
+      "latitude": -5.03577,
+      "longitude": 18.7856
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "KRZ",
+      "icao": "FZBT",
+      "name": "Basango Mboliasa Airport",
+      "latitude": -1.435,
+      "longitude": 19.024
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "LUS",
+      "icao": "FZCE",
+      "name": "Lusanga Airport",
+      "latitude": -4.8,
+      "longitude": 18.717
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "MSM",
+      "icao": "FZCV",
+      "name": "Masi-Manimba Airport",
+      "latitude": -4.783,
+      "longitude": 17.85
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mai-Ndombe",
+      "iata": "NIO",
+      "icao": "FZBI",
+      "name": "Nioki Airport",
+      "latitude": -2.7175,
+      "longitude": 17.6847
+    },
+    {
+      "countryCode": "CD",
+      "region": "Maniema",
+      "iata": "KLY",
+      "icao": "FZOC",
+      "name": "Kamisuku Airport",
+      "latitude": -2.578,
+      "longitude": 26.734
+    },
+    {
+      "countryCode": "CD",
+      "region": "Maniema",
+      "iata": "KND",
+      "icao": "FZOA",
+      "name": "Kindu Airport",
+      "latitude": -2.91918,
+      "longitude": 25.9154
+    },
+    {
+      "countryCode": "CD",
+      "region": "Maniema",
+      "iata": "PUN",
+      "icao": "FZOP",
+      "name": "Punia Airport",
+      "latitude": -1.367,
+      "longitude": 26.333
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mongala",
+      "iata": "BMB",
+      "icao": "FZFU",
+      "name": "Bumba Airport",
+      "latitude": 2.18278,
+      "longitude": 22.4817
+    },
+    {
+      "countryCode": "CD",
+      "region": "Mongala",
+      "iata": "LIQ",
+      "icao": "FZGA",
+      "name": "Lisala Airport",
+      "latitude": 2.17066,
+      "longitude": 21.4969
+    },
+    {
+      "countryCode": "CD",
+      "region": "Nord-Kivu",
+      "iata": "BNC",
+      "icao": "FZNP",
+      "name": "Beni Airport",
+      "latitude": 0.575,
+      "longitude": 29.4739
+    },
+    {
+      "countryCode": "CD",
+      "region": "Nord-Kivu",
+      "iata": "GOM",
+      "icao": "FZNA",
+      "name": "Goma International Airport",
+      "latitude": -1.67081,
+      "longitude": 29.2385
+    },
+    {
+      "countryCode": "CD",
+      "region": "Nord-Kivu",
+      "iata": "IRP",
+      "icao": "FZJH",
+      "name": "Matari Airport",
+      "latitude": 2.82761,
+      "longitude": 27.5883
+    },
+    {
+      "countryCode": "CD",
+      "region": "Nord-Kivu",
+      "iata": "RUE",
+      "icao": "",
+      "name": "Butembo Airport",
+      "latitude": 0.117142,
+      "longitude": 29.313
+    },
+    {
+      "countryCode": "CD",
+      "region": "Nord-Ubangi",
+      "iata": "KLI",
+      "icao": "FZFP",
+      "name": "Kotakoli Air Base",
+      "latitude": 4.15764,
+      "longitude": 21.6509
+    },
+    {
+      "countryCode": "CD",
+      "region": "Sankuru",
+      "iata": "IKL",
+      "icao": "FZGV",
+      "name": "Ikela Airport",
+      "latitude": -1.04811,
+      "longitude": 23.3725
+    },
+    {
+      "countryCode": "CD",
+      "region": "Sud-Kivu",
+      "iata": "BKY",
+      "icao": "FZMA",
+      "name": "Kavumu Airport",
+      "latitude": -2.30898,
+      "longitude": 28.8088
+    },
+    {
+      "countryCode": "CD",
+      "region": "Sud-Ubangi",
+      "iata": "GMA",
+      "icao": "FZFK",
+      "name": "Gemena Airport",
+      "latitude": 3.23537,
+      "longitude": 19.7713
+    },
+    {
+      "countryCode": "CD",
+      "region": "Sud-Ubangi",
+      "iata": "LIE",
+      "icao": "FZFA",
+      "name": "Libenge Airport",
+      "latitude": 3.633,
+      "longitude": 18.633
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tanganyika",
+      "iata": "BDV",
+      "icao": "FZRB",
+      "name": "Moba Airport",
+      "latitude": -7.067,
+      "longitude": 29.783
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tanganyika",
+      "iata": "FMI",
+      "icao": "FZRF",
+      "name": "Kalemie Airport",
+      "latitude": -5.87556,
+      "longitude": 29.25
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tanganyika",
+      "iata": "KBO",
+      "icao": "FZRM",
+      "name": "Kabalo Airport",
+      "latitude": -6.083,
+      "longitude": 26.917
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tanganyika",
+      "iata": "KOO",
+      "icao": "FZRQ",
+      "name": "Kongolo Airport",
+      "latitude": -5.39444,
+      "longitude": 26.99
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tanganyika",
+      "iata": "MNO",
+      "icao": "FZRA",
+      "name": "Manono Airport",
+      "latitude": -7.28889,
+      "longitude": 27.3944
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tshopo",
+      "iata": "FKI",
+      "icao": "FZIC",
+      "name": "Bangoka International Airport",
+      "latitude": 0.481639,
+      "longitude": 25.338
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tshopo",
+      "iata": "YAN",
+      "icao": "FZIR",
+      "name": "Yangambi Airport",
+      "latitude": 0.783,
+      "longitude": 24.467
+    },
+    {
+      "countryCode": "CD",
+      "region": "Tshuapa",
+      "iata": "BNB",
+      "icao": "FZGN",
+      "name": "Boende Airport",
+      "latitude": -0.217,
+      "longitude": 20.85
+    }
+  ]
 }

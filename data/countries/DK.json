@@ -234,5 +234,160 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DK",
+      "region": "Hovedstaden",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "name": "Copenhagen Airport",
+      "latitude": 55.6179,
+      "longitude": 12.656
+    },
+    {
+      "countryCode": "DK",
+      "region": "Hovedstaden",
+      "iata": "RNN",
+      "icao": "EKRN",
+      "name": "Bornholm Airport",
+      "latitude": 55.0633,
+      "longitude": 14.7596
+    },
+    {
+      "countryCode": "DK",
+      "region": "Midtjylland",
+      "iata": "AAR",
+      "icao": "EKAH",
+      "name": "Aarhus Airport",
+      "latitude": 56.3,
+      "longitude": 10.619
+    },
+    {
+      "countryCode": "DK",
+      "region": "Midtjylland",
+      "iata": "KRP",
+      "icao": "EKKA",
+      "name": "Karup Airport",
+      "latitude": 56.2975,
+      "longitude": 9.12463
+    },
+    {
+      "countryCode": "DK",
+      "region": "Midtjylland",
+      "iata": "SQW",
+      "icao": "EKSV",
+      "name": "Skive Airport",
+      "latitude": 56.5502,
+      "longitude": 9.17298
+    },
+    {
+      "countryCode": "DK",
+      "region": "Midtjylland",
+      "iata": "STA",
+      "icao": "EKVJ",
+      "name": "Stauning Vestjylland Airport",
+      "latitude": 55.9901,
+      "longitude": 8.35391
+    },
+    {
+      "countryCode": "DK",
+      "region": "Nordjylland",
+      "iata": "AAL",
+      "icao": "EKYT",
+      "name": "Aalborg Airport",
+      "latitude": 57.0928,
+      "longitude": 9.84924
+    },
+    {
+      "countryCode": "DK",
+      "region": "Nordjylland",
+      "iata": "BYR",
+      "icao": "EKLS",
+      "name": "Laesoe Airport",
+      "latitude": 57.2772,
+      "longitude": 11.0001
+    },
+    {
+      "countryCode": "DK",
+      "region": "Nordjylland",
+      "iata": "CNL",
+      "icao": "EKSN",
+      "name": "Sindal Airport",
+      "latitude": 57.5035,
+      "longitude": 10.2294
+    },
+    {
+      "countryCode": "DK",
+      "region": "Nordjylland",
+      "iata": "TED",
+      "icao": "EKTS",
+      "name": "Thisted Airport",
+      "latitude": 57.0688,
+      "longitude": 8.70522
+    },
+    {
+      "countryCode": "DK",
+      "region": "Sjaelland",
+      "iata": "MRW",
+      "icao": "EKMB",
+      "name": "Lolland Falster Airport",
+      "latitude": 54.6993,
+      "longitude": 11.4401
+    },
+    {
+      "countryCode": "DK",
+      "region": "Sjaelland",
+      "iata": "RKE",
+      "icao": "EKRK",
+      "name": "Roskilde Airport",
+      "latitude": 55.5856,
+      "longitude": 12.1314
+    },
+    {
+      "countryCode": "DK",
+      "region": "Syddanmark",
+      "iata": "BLL",
+      "icao": "EKBI",
+      "name": "Billund Airport",
+      "latitude": 55.7403,
+      "longitude": 9.15178
+    },
+    {
+      "countryCode": "DK",
+      "region": "Syddanmark",
+      "iata": "EBJ",
+      "icao": "EKEB",
+      "name": "Esbjerg Airport",
+      "latitude": 55.5259,
+      "longitude": 8.5534
+    },
+    {
+      "countryCode": "DK",
+      "region": "Syddanmark",
+      "iata": "ODE",
+      "icao": "EKOD",
+      "name": "Hans Christian Andersen Airport",
+      "latitude": 55.4767,
+      "longitude": 10.3309
+    },
+    {
+      "countryCode": "DK",
+      "region": "Syddanmark",
+      "iata": "SGD",
+      "icao": "EKSB",
+      "name": "Sonderborg Airport",
+      "latitude": 54.9644,
+      "longitude": 9.79173
+    },
+    {
+      "countryCode": "DK",
+      "region": "Syddanmark",
+      "iata": "SKS",
+      "icao": "EKSP",
+      "name": "Vojens Airport (Skrydstrup Airport)",
+      "latitude": 55.221,
+      "longitude": 9.26702
+    }
+  ]
 }

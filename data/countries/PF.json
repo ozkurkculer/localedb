@@ -230,5 +230,466 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PF",
+      "region": "Iles Australes",
+      "iata": "RMT",
+      "icao": "NTAM",
+      "name": "Rimatara Airport",
+      "latitude": -22.6373,
+      "longitude": -152.806
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Australes",
+      "iata": "RUR",
+      "icao": "NTAR",
+      "name": "Rurutu Airport",
+      "latitude": -22.4341,
+      "longitude": -151.361
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Australes",
+      "iata": "RVV",
+      "icao": "NTAV",
+      "name": "Raivavae Airport",
+      "latitude": -23.8852,
+      "longitude": -147.662
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Australes",
+      "iata": "TUB",
+      "icao": "NTAT",
+      "name": "Tubuai - Mataura Airport",
+      "latitude": -23.3654,
+      "longitude": -149.524
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Marquises",
+      "iata": "AUQ",
+      "icao": "NTMN",
+      "name": "Atuona Airport",
+      "latitude": -9.76879,
+      "longitude": -139.011
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Marquises",
+      "iata": "NHV",
+      "icao": "NTMD",
+      "name": "Nuku Hiva Airport",
+      "latitude": -8.7956,
+      "longitude": -140.229
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Marquises",
+      "iata": "UAH",
+      "icao": "NTMU",
+      "name": "Ua Huka Airport",
+      "latitude": -8.93611,
+      "longitude": -139.552
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Marquises",
+      "iata": "UAP",
+      "icao": "NTMP",
+      "name": "Ua Pou Airport",
+      "latitude": -9.35167,
+      "longitude": -140.078
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "BOB",
+      "icao": "NTTB",
+      "name": "Bora Bora Airport (Motu Mute Airport)",
+      "latitude": -16.4444,
+      "longitude": -151.751
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "HUH",
+      "icao": "NTTH",
+      "name": "Huahine - Fare Airport",
+      "latitude": -16.6872,
+      "longitude": -151.022
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "MAU",
+      "icao": "NTTP",
+      "name": "Maupiti Airport",
+      "latitude": -16.4265,
+      "longitude": -152.244
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "PPT",
+      "icao": "NTAA",
+      "name": "Fa'a'a International Airport",
+      "latitude": -17.5537,
+      "longitude": -149.607
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "RFP",
+      "icao": "NTTR",
+      "name": "Raiatea Airport (Uturoa Airport)",
+      "latitude": -16.7229,
+      "longitude": -151.466
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Sous-le-Vent",
+      "iata": "TTI",
+      "icao": "NTTE",
+      "name": "Tetiaroa Airport",
+      "latitude": -17.0133,
+      "longitude": -149.587
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "AAA",
+      "icao": "NTGA",
+      "name": "Anaa Airport",
+      "latitude": -17.3526,
+      "longitude": -145.51
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "AHE",
+      "icao": "NTHE",
+      "name": "Ahe Airport",
+      "latitude": -14.4281,
+      "longitude": -146.257
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "APK",
+      "icao": "NTGD",
+      "name": "Apataki Airport",
+      "latitude": -15.5736,
+      "longitude": -146.415
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "AXR",
+      "icao": "NTGU",
+      "name": "Arutua Airport",
+      "latitude": -15.2483,
+      "longitude": -146.617
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "FAC",
+      "icao": "NTKF",
+      "name": "Faaite Airport",
+      "latitude": -16.6867,
+      "longitude": -145.329
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "FAV",
+      "icao": "NTGF",
+      "name": "Fakarava Airport",
+      "latitude": -16.0541,
+      "longitude": -145.657
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "FGU",
+      "icao": "NTGB",
+      "name": "Fangatau Airport",
+      "latitude": -15.8199,
+      "longitude": -140.887
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "FHZ",
+      "icao": "NTKH",
+      "name": "Fakahina Airport",
+      "latitude": -15.9922,
+      "longitude": -140.165
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "GMR",
+      "icao": "NTGJ",
+      "name": "Totegegie Airport (Gambier Island Airport)",
+      "latitude": -23.0799,
+      "longitude": -134.89
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "HHZ",
+      "icao": "NTGH",
+      "name": "Hikueru Airport",
+      "latitude": -17.5447,
+      "longitude": -142.614
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "HOI",
+      "icao": "NTTO",
+      "name": "Hao Airport",
+      "latitude": -18.0748,
+      "longitude": -140.946
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "KHZ",
+      "icao": "NTKA",
+      "name": "Kauehi Airport",
+      "latitude": -15.7808,
+      "longitude": -145.124
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "KKR",
+      "icao": "NTGK",
+      "name": "Kaukura Airport",
+      "latitude": -15.6633,
+      "longitude": -146.885
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "KXU",
+      "icao": "NTKT",
+      "name": "Katiu Airport",
+      "latitude": -16.3394,
+      "longitude": -144.403
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "MKP",
+      "icao": "NTGM",
+      "name": "Makemo Airport",
+      "latitude": -16.5839,
+      "longitude": -143.658
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "MVT",
+      "icao": "NTGV",
+      "name": "Mataiva Airport",
+      "latitude": -14.8681,
+      "longitude": -148.717
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "NAU",
+      "icao": "NTGN",
+      "name": "Napuka Airport",
+      "latitude": -14.1768,
+      "longitude": -141.267
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "NIU",
+      "icao": "NTKN",
+      "name": "Niau Airport",
+      "latitude": -16.1191,
+      "longitude": -146.368
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "NUK",
+      "icao": "NTGW",
+      "name": "Nukutavake Airport",
+      "latitude": -19.285,
+      "longitude": -138.772
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "PKP",
+      "icao": "NTGP",
+      "name": "Puka-Puka Airport",
+      "latitude": -14.8095,
+      "longitude": -138.813
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "PUK",
+      "icao": "NTGQ",
+      "name": "Pukarua Airport",
+      "latitude": -18.2956,
+      "longitude": -137.017
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "REA",
+      "icao": "NTGE",
+      "name": "Reao Airport",
+      "latitude": -18.4659,
+      "longitude": -136.44
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "RGI",
+      "icao": "NTTG",
+      "name": "Rangiroa Airport",
+      "latitude": -14.9543,
+      "longitude": -147.661
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "RKA",
+      "icao": "NTKK",
+      "name": "Aratika-Nord Airport",
+      "latitude": -15.4853,
+      "longitude": -145.47
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "RRR",
+      "icao": "NTKO",
+      "name": "Raroia Airport",
+      "latitude": -16.045,
+      "longitude": -142.477
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "TIH",
+      "icao": "NTGC",
+      "name": "Tikehau Airport",
+      "latitude": -15.1196,
+      "longitude": -148.231
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "TJN",
+      "icao": "NTKM",
+      "name": "Takume Airport",
+      "latitude": -15.8547,
+      "longitude": -142.268
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "TKP",
+      "icao": "NTGT",
+      "name": "Takapoto Airport",
+      "latitude": -14.7095,
+      "longitude": -145.246
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "TKV",
+      "icao": "NTGO",
+      "name": "Tatakoto Airport",
+      "latitude": -17.3553,
+      "longitude": -138.445
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "TKX",
+      "icao": "NTKR",
+      "name": "Takaroa Airport",
+      "latitude": -14.4558,
+      "longitude": -145.025
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "UOA",
+      "icao": "NTTX",
+      "name": "Mururoa Airport",
+      "latitude": -21.8586,
+      "longitude": -138.82
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "VHZ",
+      "icao": "NTUV",
+      "name": "Vahitahi Airport",
+      "latitude": -18.78,
+      "longitude": -138.853
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "XMH",
+      "icao": "NTGI",
+      "name": "Manihi Airport",
+      "latitude": -14.4368,
+      "longitude": -146.07
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles Tuamotu-Gambier",
+      "iata": "ZTA",
+      "icao": "NTGY",
+      "name": "Tureia Airport",
+      "latitude": -20.7897,
+      "longitude": -138.57
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles du Vent",
+      "iata": "MOZ",
+      "icao": "NTTM",
+      "name": "Moorea Airport (Temae Airport)",
+      "latitude": -17.49,
+      "longitude": -149.762
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles du Vent",
+      "iata": "NKP",
+      "icao": "",
+      "name": "Nukutepipi Airport",
+      "latitude": -20.7,
+      "longitude": -143.047
+    },
+    {
+      "countryCode": "PF",
+      "region": "Iles du Vent",
+      "iata": "TPX",
+      "icao": "NTTU",
+      "name": "Tupai Airport",
+      "latitude": -16.2423,
+      "longitude": -151.834
+    }
+  ]
 }

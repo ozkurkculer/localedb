@@ -231,5 +231,268 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CR",
+      "region": "Alajuela",
+      "iata": "FON",
+      "icao": "MRAN",
+      "name": "La Fortuna Airport",
+      "latitude": 10.478,
+      "longitude": -84.6345
+    },
+    {
+      "countryCode": "CR",
+      "region": "Alajuela",
+      "iata": "LSL",
+      "icao": "MRLC",
+      "name": "Los Chiles Airport",
+      "latitude": 11.0353,
+      "longitude": -84.7061
+    },
+    {
+      "countryCode": "CR",
+      "region": "Alajuela",
+      "iata": "RFR",
+      "icao": "MRRF",
+      "name": "Rio Frio Airport",
+      "latitude": 10.3274,
+      "longitude": -83.8876
+    },
+    {
+      "countryCode": "CR",
+      "region": "Alajuela",
+      "iata": "SJO",
+      "icao": "MROC",
+      "name": "Juan Santamaria International Airport",
+      "latitude": 9.99386,
+      "longitude": -84.2088
+    },
+    {
+      "countryCode": "CR",
+      "region": "Alajuela",
+      "iata": "UPL",
+      "icao": "MRUP",
+      "name": "Upala Airport",
+      "latitude": 10.8922,
+      "longitude": -85.0162
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "CSC",
+      "icao": "MRMJ",
+      "name": "Canas Mojica Airport",
+      "latitude": 10.4307,
+      "longitude": -85.1746
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "LIR",
+      "icao": "MRLB",
+      "name": "Daniel Oduber Quiros International Airport",
+      "latitude": 10.5933,
+      "longitude": -85.5444
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "NCT",
+      "icao": "MRNC",
+      "name": "Nicoya Guanacaste Airport",
+      "latitude": 10.1394,
+      "longitude": -85.4458
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "NOB",
+      "icao": "MRNS",
+      "name": "Nosara Airport",
+      "latitude": 9.97649,
+      "longitude": -85.653
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "PBP",
+      "icao": "MRIA",
+      "name": "Punta Islita Airport",
+      "latitude": 9.85611,
+      "longitude": -85.3708
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "PLD",
+      "icao": "MRCR",
+      "name": "Carrillo Airport (Playa Samara/Carrillo Airport)",
+      "latitude": 9.87051,
+      "longitude": -85.4814
+    },
+    {
+      "countryCode": "CR",
+      "region": "Guanacaste",
+      "iata": "TNO",
+      "icao": "MRTM",
+      "name": "Tamarindo Airport",
+      "latitude": 10.3135,
+      "longitude": -85.8155
+    },
+    {
+      "countryCode": "CR",
+      "region": "Limon",
+      "iata": "BCL",
+      "icao": "MRBC",
+      "name": "Barra del Colorado Airport",
+      "latitude": 10.7687,
+      "longitude": -83.5856
+    },
+    {
+      "countryCode": "CR",
+      "region": "Limon",
+      "iata": "GPL",
+      "icao": "MRGP",
+      "name": "Guapiles Airport",
+      "latitude": 10.2172,
+      "longitude": -83.797
+    },
+    {
+      "countryCode": "CR",
+      "region": "Limon",
+      "iata": "LIO",
+      "icao": "MRLM",
+      "name": "Limon International Airport",
+      "latitude": 9.95796,
+      "longitude": -83.022
+    },
+    {
+      "countryCode": "CR",
+      "region": "Limon",
+      "iata": "TTQ",
+      "icao": "MRBT",
+      "name": "Tortuguero Airport (Barra de Tortuguero Airport)",
+      "latitude": 10.42,
+      "longitude": -83.6095
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "ACO",
+      "icao": "",
+      "name": "Cobano Airport",
+      "latitude": 9.6921,
+      "longitude": -85.0966
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "BAI",
+      "icao": "MRBA",
+      "name": "Buenos Aires Airport",
+      "latitude": 9.16395,
+      "longitude": -83.3302
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "DRK",
+      "icao": "MRDK",
+      "name": "Drake Bay Airport",
+      "latitude": 8.71889,
+      "longitude": -83.6417
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "GLF",
+      "icao": "MRGF",
+      "name": "Golfito Airport",
+      "latitude": 8.65401,
+      "longitude": -83.1822
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "JAP",
+      "icao": "MRCH",
+      "name": "Chacarita Airport",
+      "latitude": 9.98141,
+      "longitude": -84.7727
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "OTR",
+      "icao": "MRCC",
+      "name": "Coto 47 Airport",
+      "latitude": 8.60156,
+      "longitude": -82.9686
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "PJM",
+      "icao": "MRPJ",
+      "name": "Puerto Jimenez Airport",
+      "latitude": 8.53333,
+      "longitude": -83.3
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "PMZ",
+      "icao": "MRPM",
+      "name": "Palmar Sur Airport",
+      "latitude": 8.95103,
+      "longitude": -83.4686
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "TMU",
+      "icao": "MRTR",
+      "name": "Tambor Airport",
+      "latitude": 9.73852,
+      "longitude": -85.0138
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "TOO",
+      "icao": "MRSV",
+      "name": "San Vito de Java Airport",
+      "latitude": 8.82611,
+      "longitude": -82.9589
+    },
+    {
+      "countryCode": "CR",
+      "region": "Puntarenas",
+      "iata": "XQP",
+      "icao": "MRQP",
+      "name": "Quepos La Managua Airport",
+      "latitude": 9.44316,
+      "longitude": -84.1298
+    },
+    {
+      "countryCode": "CR",
+      "region": "San Jose",
+      "iata": "IPZ",
+      "icao": "MRSI",
+      "name": "San Isidro de El General Airport",
+      "latitude": 9.34861,
+      "longitude": -83.7125
+    },
+    {
+      "countryCode": "CR",
+      "region": "San Jose",
+      "iata": "SYQ",
+      "icao": "MRPV",
+      "name": "Tobias Bolanos International Airport",
+      "latitude": 9.95705,
+      "longitude": -84.1398
+    }
+  ]
 }

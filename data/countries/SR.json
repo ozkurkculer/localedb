@@ -232,5 +232,151 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SR",
+      "region": "Coronie",
+      "iata": "TOT",
+      "icao": "SMCO",
+      "name": "Totness Airstrip",
+      "latitude": 5.86583,
+      "longitude": -56.3275
+    },
+    {
+      "countryCode": "SR",
+      "region": "Marowijne",
+      "iata": "ABN",
+      "icao": "SMBN",
+      "name": "Albina Airstrip",
+      "latitude": 5.51272,
+      "longitude": -54.0501
+    },
+    {
+      "countryCode": "SR",
+      "region": "Marowijne",
+      "iata": "MOJ",
+      "icao": "SMMO",
+      "name": "Moengo Airstrip",
+      "latitude": 5.6076,
+      "longitude": -54.4003
+    },
+    {
+      "countryCode": "SR",
+      "region": "Nickerie",
+      "iata": "AGI",
+      "icao": "SMWA",
+      "name": "Wageningen Airstrip",
+      "latitude": 5.84113,
+      "longitude": -56.6733
+    },
+    {
+      "countryCode": "SR",
+      "region": "Nickerie",
+      "iata": "ICK",
+      "icao": "SMNI",
+      "name": "Majoor Henry Fernandes Airport (Nieuw Nickerie Airport)",
+      "latitude": 5.95556,
+      "longitude": -57.0394
+    },
+    {
+      "countryCode": "SR",
+      "region": "Para",
+      "iata": "PBM",
+      "icao": "SMJP",
+      "name": "Johan Adolf Pengel International Airport",
+      "latitude": 5.45283,
+      "longitude": -55.1878
+    },
+    {
+      "countryCode": "SR",
+      "region": "Paramaribo",
+      "iata": "ORG",
+      "icao": "SMZO",
+      "name": "Zorg en Hoop Airport",
+      "latitude": 5.81108,
+      "longitude": -55.1907
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "AAJ",
+      "icao": "SMCA",
+      "name": "Cayana Airstrip",
+      "latitude": 3.89868,
+      "longitude": -55.5779
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "BTO",
+      "icao": "",
+      "name": "Botopasi Airstrip",
+      "latitude": 4.21751,
+      "longitude": -55.4471
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "DOE",
+      "icao": "",
+      "name": "Djoemoe Airstrip",
+      "latitude": 4.00571,
+      "longitude": -55.4816
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "DRJ",
+      "icao": "SMDA",
+      "name": "Drietabbetje Airstrip",
+      "latitude": 4.11136,
+      "longitude": -54.6728
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "KCB",
+      "icao": "SMTP",
+      "name": "Tepoe Airstrip",
+      "latitude": 3.15,
+      "longitude": -55.717
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "LDO",
+      "icao": "SMDO",
+      "name": "Laduani Airstrip",
+      "latitude": 4.37611,
+      "longitude": -55.4071
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "OEM",
+      "icao": "SMPA",
+      "name": "Vincent Fayks Airport",
+      "latitude": 3.34528,
+      "longitude": -55.4425
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "SMZ",
+      "icao": "SMST",
+      "name": "Stoelmans Eiland Airstrip",
+      "latitude": 4.35,
+      "longitude": -54.4167
+    },
+    {
+      "countryCode": "SR",
+      "region": "Sipaliwini",
+      "iata": "WSO",
+      "icao": "SMWS",
+      "name": "Washabo Airport",
+      "latitude": 5.21528,
+      "longitude": -57.1853
+    }
+  ]
 }

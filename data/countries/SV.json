@@ -231,5 +231,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SV",
+      "region": "La Paz",
+      "iata": "ILS",
+      "icao": "MSSS",
+      "name": "Ilopango International Airport",
+      "latitude": 13.6959,
+      "longitude": -89.1151
+    },
+    {
+      "countryCode": "SV",
+      "region": "San Salvador",
+      "iata": "SAL",
+      "icao": "MSLP",
+      "name": "El Salvador International Airport Saint Óscar Arnulfo Romero y Galdámez",
+      "latitude": 13.4408,
+      "longitude": -89.0556
+    }
+  ]
 }

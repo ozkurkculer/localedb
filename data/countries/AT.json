@@ -237,5 +237,70 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AT",
+      "region": "Karnten",
+      "iata": "KLU",
+      "icao": "LOWK",
+      "name": "Klagenfurt Airport",
+      "latitude": 46.6425,
+      "longitude": 14.3377
+    },
+    {
+      "countryCode": "AT",
+      "region": "Niederosterreich",
+      "iata": "VIE",
+      "icao": "LOWW",
+      "name": "Vienna International Airport",
+      "latitude": 48.1103,
+      "longitude": 16.5697
+    },
+    {
+      "countryCode": "AT",
+      "region": "Oberosterreich",
+      "iata": "LNZ",
+      "icao": "LOWL",
+      "name": "Linz Airport (Blue Danube Airport)",
+      "latitude": 48.2332,
+      "longitude": 14.1875
+    },
+    {
+      "countryCode": "AT",
+      "region": "Salzburg",
+      "iata": "SZG",
+      "icao": "LOWS",
+      "name": "Salzburg Airport",
+      "latitude": 47.7933,
+      "longitude": 13.0043
+    },
+    {
+      "countryCode": "AT",
+      "region": "Steiermark",
+      "iata": "GRZ",
+      "icao": "LOWG",
+      "name": "Graz Airport",
+      "latitude": 46.9911,
+      "longitude": 15.4396
+    },
+    {
+      "countryCode": "AT",
+      "region": "Tirol",
+      "iata": "INN",
+      "icao": "LOWI",
+      "name": "Innsbruck Airport (Kranebitten Airport)",
+      "latitude": 47.2602,
+      "longitude": 11.344
+    },
+    {
+      "countryCode": "AT",
+      "region": "Vorarlberg",
+      "iata": "HOH",
+      "icao": "LOIH",
+      "name": "Hohenems-Dornbirn Airport",
+      "latitude": 47.385,
+      "longitude": 9.7
+    }
+  ]
 }

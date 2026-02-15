@@ -232,5 +232,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KP",
+      "region": "Hamgyong-bukto",
+      "iata": "RGO",
+      "icao": "ZKHM",
+      "name": "Orang Airport",
+      "latitude": 41.4285,
+      "longitude": 129.648
+    },
+    {
+      "countryCode": "KP",
+      "region": "Hwanghae-namdo",
+      "iata": "DSO",
+      "icao": "ZKSD",
+      "name": "Sondok Airport",
+      "latitude": 39.7452,
+      "longitude": 127.474
+    },
+    {
+      "countryCode": "KP",
+      "region": "Kangwon-do",
+      "iata": "WOS",
+      "icao": "ZKWS",
+      "name": "Wonsan Kalma International Airport",
+      "latitude": 39.1668,
+      "longitude": 127.486
+    },
+    {
+      "countryCode": "KP",
+      "region": "P'yongan-bukto",
+      "iata": "UJU",
+      "icao": "ZKUJ",
+      "name": "Uiju Airfield",
+      "latitude": 40.1546,
+      "longitude": 124.532
+    },
+    {
+      "countryCode": "KP",
+      "region": "P'yongyang",
+      "iata": "FNJ",
+      "icao": "ZKPY",
+      "name": "Pyongyang Sunan International Airport",
+      "latitude": 39.2241,
+      "longitude": 125.67
+    },
+    {
+      "countryCode": "KP",
+      "region": "Ryanggang-do",
+      "iata": "YJS",
+      "icao": "ZKSE",
+      "name": "Samjiyon Airport",
+      "latitude": 41.9071,
+      "longitude": 128.41
+    }
+  ]
 }

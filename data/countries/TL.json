@@ -230,5 +230,79 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "AUT",
+      "icao": "WPAT",
+      "name": "Atauro Airport",
+      "latitude": -8.24313,
+      "longitude": 125.606
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "BCH",
+      "icao": "WPEC",
+      "name": "Baucau Airport",
+      "latitude": -8.48903,
+      "longitude": 126.401
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "DIL",
+      "icao": "WPDL",
+      "name": "Presidente Nicolau Lobato International Airport",
+      "latitude": -8.5464,
+      "longitude": 125.526
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "KCI",
+      "icao": "",
+      "name": "Kon Airport",
+      "latitude": -8.34919,
+      "longitude": 127.051
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "MPT",
+      "icao": "WPMN",
+      "name": "Maliana Airport",
+      "latitude": -8.97224,
+      "longitude": 125.215
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "OEC",
+      "icao": "WPOC",
+      "name": "Oecusse Airport",
+      "latitude": -9.19806,
+      "longitude": 124.343
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "UAI",
+      "icao": "WPDB",
+      "name": "Suai Airport",
+      "latitude": -9.30331,
+      "longitude": 125.287
+    },
+    {
+      "countryCode": "TL",
+      "region": "Dili",
+      "iata": "VIQ",
+      "icao": "WPVQ",
+      "name": "Viqueque Airport",
+      "latitude": -8.8838,
+      "longitude": 126.373
+    }
+  ]
 }

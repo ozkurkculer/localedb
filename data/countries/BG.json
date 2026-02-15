@@ -234,5 +234,106 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BG",
+      "region": "Burgas",
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "name": "Burgas Airport",
+      "latitude": 42.5696,
+      "longitude": 27.5152
+    },
+    {
+      "countryCode": "BG",
+      "region": "Haskovo",
+      "iata": "HKV",
+      "icao": "LBHS",
+      "name": "Haskovo Malevo Airport",
+      "latitude": 41.8718,
+      "longitude": 25.6048
+    },
+    {
+      "countryCode": "BG",
+      "region": "Plovdiv",
+      "iata": "PDV",
+      "icao": "LBPD",
+      "name": "Plovdiv Airport",
+      "latitude": 42.0678,
+      "longitude": 24.8508
+    },
+    {
+      "countryCode": "BG",
+      "region": "Ruse",
+      "iata": "ROU",
+      "icao": "LBRS",
+      "name": "Ruse Airport",
+      "latitude": 43.6948,
+      "longitude": 26.0567
+    },
+    {
+      "countryCode": "BG",
+      "region": "Silistra",
+      "iata": "SLS",
+      "icao": "LBSS",
+      "name": "Silistra Airfield",
+      "latitude": 44.0552,
+      "longitude": 27.1788
+    },
+    {
+      "countryCode": "BG",
+      "region": "Sofia",
+      "iata": "SOF",
+      "icao": "LBSF",
+      "name": "Sofia Airport",
+      "latitude": 42.6967,
+      "longitude": 23.4114
+    },
+    {
+      "countryCode": "BG",
+      "region": "Stara Zagora",
+      "iata": "SZR",
+      "icao": "LBSZ",
+      "name": "Stara Zagora Airport",
+      "latitude": 42.3767,
+      "longitude": 25.655
+    },
+    {
+      "countryCode": "BG",
+      "region": "Targovishte",
+      "iata": "TGV",
+      "icao": "LBTG",
+      "name": "Targovishte Airport (Buhovtsi Airfield)",
+      "latitude": 43.3066,
+      "longitude": 26.7009
+    },
+    {
+      "countryCode": "BG",
+      "region": "Varna",
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "latitude": 43.2321,
+      "longitude": 27.8251
+    },
+    {
+      "countryCode": "BG",
+      "region": "Veliko Tarnovo",
+      "iata": "GOZ",
+      "icao": "LBGO",
+      "name": "Gorna Oryahovitsa Airport",
+      "latitude": 43.1514,
+      "longitude": 25.7129
+    },
+    {
+      "countryCode": "BG",
+      "region": "Yambol",
+      "iata": "JAM",
+      "icao": "",
+      "name": "Bezmer Air Base",
+      "latitude": 42.4549,
+      "longitude": 26.3522
+    }
+  ]
 }

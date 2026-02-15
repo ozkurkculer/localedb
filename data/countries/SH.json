@@ -229,5 +229,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SH",
+      "region": "Ascension",
+      "iata": "ASI",
+      "icao": "FHAW",
+      "name": "RAF Ascension Island (Wideawake Field)",
+      "latitude": -7.9696,
+      "longitude": -14.3937
+    },
+    {
+      "countryCode": "SH",
+      "region": "Saint Helena",
+      "iata": "HLE",
+      "icao": "FHSH",
+      "name": "Saint Helena Airport",
+      "latitude": -15.9577,
+      "longitude": -5.64594
+    }
+  ]
 }

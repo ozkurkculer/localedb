@@ -231,5 +231,385 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NP",
+      "region": "Bagmati",
+      "iata": "KTM",
+      "icao": "VNKT",
+      "name": "Tribhuvan International Airport",
+      "latitude": 27.6966,
+      "longitude": 85.3591
+    },
+    {
+      "countryCode": "NP",
+      "region": "Bagmati",
+      "iata": "LTG",
+      "icao": "VNLT",
+      "name": "Langtang Airport",
+      "latitude": 28.2,
+      "longitude": 85.583
+    },
+    {
+      "countryCode": "NP",
+      "region": "Bheri",
+      "iata": "BJU",
+      "icao": "VNBR",
+      "name": "Bajura Airport",
+      "latitude": 29.502,
+      "longitude": 81.669
+    },
+    {
+      "countryCode": "NP",
+      "region": "Bheri",
+      "iata": "KEP",
+      "icao": "VNNG",
+      "name": "Nepalgunj Airport",
+      "latitude": 28.1036,
+      "longitude": 81.667
+    },
+    {
+      "countryCode": "NP",
+      "region": "Bheri",
+      "iata": "SKH",
+      "icao": "VNSK",
+      "name": "Surkhet Airport",
+      "latitude": 28.586,
+      "longitude": 81.636
+    },
+    {
+      "countryCode": "NP",
+      "region": "Dhawalagiri",
+      "iata": "BGL",
+      "icao": "VNBL",
+      "name": "Balewa Airport",
+      "latitude": 28.2128,
+      "longitude": 83.6663
+    },
+    {
+      "countryCode": "NP",
+      "region": "Dhawalagiri",
+      "iata": "JMO",
+      "icao": "VNJS",
+      "name": "Jomsom Airport",
+      "latitude": 28.7804,
+      "longitude": 83.723
+    },
+    {
+      "countryCode": "NP",
+      "region": "Gandaki",
+      "iata": "NGX",
+      "icao": "VNMA",
+      "name": "Manang Airport",
+      "latitude": 28.6414,
+      "longitude": 84.0892
+    },
+    {
+      "countryCode": "NP",
+      "region": "Gandaki",
+      "iata": "PKR",
+      "icao": "VNPK",
+      "name": "Pokhara Airport",
+      "latitude": 28.2009,
+      "longitude": 83.9821
+    },
+    {
+      "countryCode": "NP",
+      "region": "Janakpur",
+      "iata": "JKR",
+      "icao": "VNJP",
+      "name": "Janakpur Airport",
+      "latitude": 26.7088,
+      "longitude": 85.9224
+    },
+    {
+      "countryCode": "NP",
+      "region": "Janakpur",
+      "iata": "RHP",
+      "icao": "VNRC",
+      "name": "Ramechhap Airport",
+      "latitude": 27.394,
+      "longitude": 86.0614
+    },
+    {
+      "countryCode": "NP",
+      "region": "Karnali",
+      "iata": "DOP",
+      "icao": "VNDP",
+      "name": "Dolpa Airport",
+      "latitude": 28.9857,
+      "longitude": 82.8191
+    },
+    {
+      "countryCode": "NP",
+      "region": "Karnali",
+      "iata": "IMK",
+      "icao": "VNST",
+      "name": "Simikot Airport",
+      "latitude": 29.9711,
+      "longitude": 81.8189
+    },
+    {
+      "countryCode": "NP",
+      "region": "Karnali",
+      "iata": "JUM",
+      "icao": "VNJL",
+      "name": "Jumla Airport",
+      "latitude": 29.2742,
+      "longitude": 82.1933
+    },
+    {
+      "countryCode": "NP",
+      "region": "Kosi",
+      "iata": "BHP",
+      "icao": "VNBJ",
+      "name": "Bhojpur Airport",
+      "latitude": 27.1474,
+      "longitude": 87.0508
+    },
+    {
+      "countryCode": "NP",
+      "region": "Kosi",
+      "iata": "BIR",
+      "icao": "VNVT",
+      "name": "Biratnagar Airport",
+      "latitude": 26.4815,
+      "longitude": 87.264
+    },
+    {
+      "countryCode": "NP",
+      "region": "Kosi",
+      "iata": "RJB",
+      "icao": "VNRB",
+      "name": "Rajbiraj Airport",
+      "latitude": 26.5101,
+      "longitude": 86.7339
+    },
+    {
+      "countryCode": "NP",
+      "region": "Kosi",
+      "iata": "TMI",
+      "icao": "VNTR",
+      "name": "Tumlingtar Airport",
+      "latitude": 27.315,
+      "longitude": 87.1933
+    },
+    {
+      "countryCode": "NP",
+      "region": "Lumbini",
+      "iata": "BWA",
+      "icao": "VNBW",
+      "name": "Gautam Buddha Airport",
+      "latitude": 27.5057,
+      "longitude": 83.4163
+    },
+    {
+      "countryCode": "NP",
+      "region": "Mahakali",
+      "iata": "SIH",
+      "icao": "VNDT",
+      "name": "Silgadhi Airport",
+      "latitude": 29.2631,
+      "longitude": 80.936
+    },
+    {
+      "countryCode": "NP",
+      "region": "Mahakali",
+      "iata": "XMG",
+      "icao": "VNMN",
+      "name": "Mahendranagar Airport",
+      "latitude": 28.9632,
+      "longitude": 80.1479
+    },
+    {
+      "countryCode": "NP",
+      "region": "Mechi",
+      "iata": "BDP",
+      "icao": "VNCG",
+      "name": "Bhadrapur Airport (Chandragadhi Airport)",
+      "latitude": 26.5708,
+      "longitude": 88.0796
+    },
+    {
+      "countryCode": "NP",
+      "region": "Mechi",
+      "iata": "TPJ",
+      "icao": "VNTJ",
+      "name": "Taplejung Airport",
+      "latitude": 27.3509,
+      "longitude": 87.6953
+    },
+    {
+      "countryCode": "NP",
+      "region": "Narayani",
+      "iata": "BHR",
+      "icao": "VNBP",
+      "name": "Bharatpur Airport",
+      "latitude": 27.6781,
+      "longitude": 84.4294
+    },
+    {
+      "countryCode": "NP",
+      "region": "Narayani",
+      "iata": "GKH",
+      "icao": "VNGK",
+      "name": "Palungtar Airport",
+      "latitude": 28.0385,
+      "longitude": 84.4664
+    },
+    {
+      "countryCode": "NP",
+      "region": "Narayani",
+      "iata": "MEY",
+      "icao": "VNMG",
+      "name": "Meghauli Airport",
+      "latitude": 27.5774,
+      "longitude": 84.2288
+    },
+    {
+      "countryCode": "NP",
+      "region": "Narayani",
+      "iata": "SIF",
+      "icao": "VNSI",
+      "name": "Simara Airport",
+      "latitude": 27.1595,
+      "longitude": 84.9801
+    },
+    {
+      "countryCode": "NP",
+      "region": "Rapti",
+      "iata": "DNP",
+      "icao": "VNDG",
+      "name": "Tribhuvannagar Airport (Dang Airport)",
+      "latitude": 28.1111,
+      "longitude": 82.2942
+    },
+    {
+      "countryCode": "NP",
+      "region": "Rapti",
+      "iata": "RPA",
+      "icao": "VNRP",
+      "name": "Rolpa Airport",
+      "latitude": 28.2673,
+      "longitude": 82.7565
+    },
+    {
+      "countryCode": "NP",
+      "region": "Rapti",
+      "iata": "RUK",
+      "icao": "VNRK",
+      "name": "Chaurjahari Airport",
+      "latitude": 28.627,
+      "longitude": 82.195
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "JIR",
+      "icao": "VNJI",
+      "name": "Jiri Airport",
+      "latitude": 27.6263,
+      "longitude": 86.2306
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "LDN",
+      "icao": "VNLD",
+      "name": "Lamidanda Airport",
+      "latitude": 27.2531,
+      "longitude": 86.67
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "LUA",
+      "icao": "VNLK",
+      "name": "Tenzing-Hillary Airport",
+      "latitude": 27.6869,
+      "longitude": 86.7297
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "PPL",
+      "icao": "VNPL",
+      "name": "Phaplu Airport",
+      "latitude": 27.5178,
+      "longitude": 86.5845
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "RUM",
+      "icao": "VNRT",
+      "name": "Rumjatar Airport",
+      "latitude": 27.3035,
+      "longitude": 86.5504
+    },
+    {
+      "countryCode": "NP",
+      "region": "Sagarmatha",
+      "iata": "SYH",
+      "icao": "VNSB",
+      "name": "Syangboche Airport",
+      "latitude": 27.8112,
+      "longitude": 86.7123
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "BIT",
+      "icao": "VNBT",
+      "name": "Baitadi Airport",
+      "latitude": 29.4653,
+      "longitude": 80.5492
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "BJH",
+      "icao": "VNBG",
+      "name": "Bajhang Airport",
+      "latitude": 29.539,
+      "longitude": 81.1854
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "DAP",
+      "icao": "VNDL",
+      "name": "Darchula Airport",
+      "latitude": 29.6692,
+      "longitude": 80.5484
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "DHI",
+      "icao": "VNDH",
+      "name": "Dhangadhi Airport",
+      "latitude": 28.7533,
+      "longitude": 80.5819
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "FEB",
+      "icao": "VNSR",
+      "name": "Sanfebagar Airport",
+      "latitude": 29.2366,
+      "longitude": 81.2153
+    },
+    {
+      "countryCode": "NP",
+      "region": "Seti",
+      "iata": "TPU",
+      "icao": "VNTP",
+      "name": "Tikapur Airport",
+      "latitude": 28.5219,
+      "longitude": 81.123
+    }
+  ]
 }

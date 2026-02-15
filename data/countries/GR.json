@@ -233,5 +233,403 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GR",
+      "region": "Anatoliki Makedonia kai Thraki",
+      "iata": "AXD",
+      "icao": "LGAL",
+      "name": "Alexandroupoli Airport (Dimokritos Airport)",
+      "latitude": 40.8559,
+      "longitude": 25.9563
+    },
+    {
+      "countryCode": "GR",
+      "region": "Anatoliki Makedonia kai Thraki",
+      "iata": "KVA",
+      "icao": "LGKV",
+      "name": "Kavala International Airport (Alexander the Great Airport)",
+      "latitude": 40.9133,
+      "longitude": 24.6192
+    },
+    {
+      "countryCode": "GR",
+      "region": "Attiki",
+      "iata": "ATH",
+      "icao": "LGAV",
+      "name": "Athens International Airport (Eleftherios Venizelos Airport)",
+      "latitude": 37.9364,
+      "longitude": 23.9445
+    },
+    {
+      "countryCode": "GR",
+      "region": "Attiki",
+      "iata": "KIT",
+      "icao": "LGKC",
+      "name": "Kithira Island National Airport",
+      "latitude": 36.2743,
+      "longitude": 23.017
+    },
+    {
+      "countryCode": "GR",
+      "region": "Dytiki Ellada",
+      "iata": "AGQ",
+      "icao": "LGAG",
+      "name": "Agrinion Airport",
+      "latitude": 38.602,
+      "longitude": 21.3512
+    },
+    {
+      "countryCode": "GR",
+      "region": "Dytiki Ellada",
+      "iata": "GPA",
+      "icao": "LGRX",
+      "name": "Araxos Airport",
+      "latitude": 38.1511,
+      "longitude": 21.4256
+    },
+    {
+      "countryCode": "GR",
+      "region": "Dytiki Ellada",
+      "iata": "PYR",
+      "icao": "LGAD",
+      "name": "Andravida Air Base",
+      "latitude": 37.9207,
+      "longitude": 21.2926
+    },
+    {
+      "countryCode": "GR",
+      "region": "Dytiki Makedonia",
+      "iata": "KSO",
+      "icao": "LGKA",
+      "name": "Kastoria National Airport (Aristotelis Airport)",
+      "latitude": 40.4463,
+      "longitude": 21.2822
+    },
+    {
+      "countryCode": "GR",
+      "region": "Dytiki Makedonia",
+      "iata": "KZI",
+      "icao": "LGKZ",
+      "name": "Kozani National Airport (Filippos Airport)",
+      "latitude": 40.2861,
+      "longitude": 21.8408
+    },
+    {
+      "countryCode": "GR",
+      "region": "Ionia Nisia",
+      "iata": "CFU",
+      "icao": "LGKR",
+      "name": "Corfu International Airport (Ioannis Kapodistrias Int'l Airport)",
+      "latitude": 39.6019,
+      "longitude": 19.9117
+    },
+    {
+      "countryCode": "GR",
+      "region": "Ionia Nisia",
+      "iata": "EFL",
+      "icao": "LGKF",
+      "name": "Kefalonia International Airport",
+      "latitude": 38.1201,
+      "longitude": 20.5005
+    },
+    {
+      "countryCode": "GR",
+      "region": "Ionia Nisia",
+      "iata": "PVK",
+      "icao": "LGPZ",
+      "name": "Aktion National Airport",
+      "latitude": 38.9255,
+      "longitude": 20.7653
+    },
+    {
+      "countryCode": "GR",
+      "region": "Ionia Nisia",
+      "iata": "ZTH",
+      "icao": "LGZA",
+      "name": "Zakynthos International Airport (Dionysios SolomosAirport)",
+      "latitude": 37.7509,
+      "longitude": 20.8843
+    },
+    {
+      "countryCode": "GR",
+      "region": "Ipeiros",
+      "iata": "IOA",
+      "icao": "LGIO",
+      "name": "Ioannina National Airport",
+      "latitude": 39.6964,
+      "longitude": 20.8225
+    },
+    {
+      "countryCode": "GR",
+      "region": "Kentriki Makedonia",
+      "iata": "SKG",
+      "icao": "LGTS",
+      "name": "Thessaloniki Airport",
+      "latitude": 40.5197,
+      "longitude": 22.9709
+    },
+    {
+      "countryCode": "GR",
+      "region": "Kriti",
+      "iata": "CHQ",
+      "icao": "LGSA",
+      "name": "Chania International Airport",
+      "latitude": 35.5317,
+      "longitude": 24.1497
+    },
+    {
+      "countryCode": "GR",
+      "region": "Kriti",
+      "iata": "HER",
+      "icao": "LGIR",
+      "name": "Heraklion International Airport (Nikos Kazantzakis Airport)",
+      "latitude": 35.3397,
+      "longitude": 25.1803
+    },
+    {
+      "countryCode": "GR",
+      "region": "Kriti",
+      "iata": "JSH",
+      "icao": "LGST",
+      "name": "Sitia Public Airport",
+      "latitude": 35.2161,
+      "longitude": 26.1013
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "AOK",
+      "icao": "LGKP",
+      "name": "Karpathos Island National Airport",
+      "latitude": 35.4214,
+      "longitude": 27.146
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JKL",
+      "icao": "LGKY",
+      "name": "Kalymnos Island National Airport",
+      "latitude": 36.9633,
+      "longitude": 26.9406
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JMK",
+      "icao": "LGMK",
+      "name": "Mykonos Island National Airport",
+      "latitude": 37.4351,
+      "longitude": 25.3481
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JNX",
+      "icao": "LGNX",
+      "name": "Naxos Island National Airport",
+      "latitude": 37.0811,
+      "longitude": 25.3681
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JSY",
+      "icao": "LGSO",
+      "name": "Syros Island National Airport",
+      "latitude": 37.4228,
+      "longitude": 24.9509
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JTR",
+      "icao": "LGSR",
+      "name": "Santorini (Thira) National Airport",
+      "latitude": 36.3992,
+      "longitude": 25.4793
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "JTY",
+      "icao": "LGPL",
+      "name": "Astypalaia Island National Airport",
+      "latitude": 36.5799,
+      "longitude": 26.3758
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "KGS",
+      "icao": "LGKO",
+      "name": "Kos Island International Airport",
+      "latitude": 36.7933,
+      "longitude": 27.0917
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "KSJ",
+      "icao": "LGKS",
+      "name": "Kasos Island Public Airport",
+      "latitude": 35.4214,
+      "longitude": 26.91
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "KZS",
+      "icao": "LGKJ",
+      "name": "Kastellorizo Island Public Airport",
+      "latitude": 36.1417,
+      "longitude": 29.5764
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "LRS",
+      "icao": "LGLE",
+      "name": "Leros Municipal Airport",
+      "latitude": 37.1849,
+      "longitude": 26.8003
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "MLO",
+      "icao": "LGML",
+      "name": "Milos Island National Airport",
+      "latitude": 36.6969,
+      "longitude": 24.4769
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "PAS",
+      "icao": "LGPA",
+      "name": "Paros National Airport",
+      "latitude": 37.0205,
+      "longitude": 25.1132
+    },
+    {
+      "countryCode": "GR",
+      "region": "Notio Aigaio",
+      "iata": "RHO",
+      "icao": "LGRP",
+      "name": "Rhodes International Airport",
+      "latitude": 36.4054,
+      "longitude": 28.0862
+    },
+    {
+      "countryCode": "GR",
+      "region": "Peloponnese",
+      "iata": "PKH",
+      "icao": "LGHL",
+      "name": "Porto Cheli Airport",
+      "latitude": 37.2988,
+      "longitude": 23.149
+    },
+    {
+      "countryCode": "GR",
+      "region": "Peloponnisos",
+      "iata": "KLX",
+      "icao": "LGKL",
+      "name": "Kalamata International Airport",
+      "latitude": 37.0683,
+      "longitude": 22.0255
+    },
+    {
+      "countryCode": "GR",
+      "region": "Peloponnisos",
+      "iata": "SPJ",
+      "icao": "LGSP",
+      "name": "Sparti Airport",
+      "latitude": 36.9739,
+      "longitude": 22.5263
+    },
+    {
+      "countryCode": "GR",
+      "region": "Sterea Ellada",
+      "iata": "SKU",
+      "icao": "LGSY",
+      "name": "Skyros Island National Airport",
+      "latitude": 38.9676,
+      "longitude": 24.4872
+    },
+    {
+      "countryCode": "GR",
+      "region": "Thessalia",
+      "iata": "JSI",
+      "icao": "LGSK",
+      "name": "Skiathos Island National Airport",
+      "latitude": 39.1771,
+      "longitude": 23.5037
+    },
+    {
+      "countryCode": "GR",
+      "region": "Thessalia",
+      "iata": "LRA",
+      "icao": "LGLR",
+      "name": "Larissa National Airport",
+      "latitude": 39.6503,
+      "longitude": 22.4655
+    },
+    {
+      "countryCode": "GR",
+      "region": "Thessalia",
+      "iata": "VOL",
+      "icao": "LGBL",
+      "name": "Nea Anchialos National Airport",
+      "latitude": 39.2196,
+      "longitude": 22.7943
+    },
+    {
+      "countryCode": "GR",
+      "region": "Voreio Aigaio",
+      "iata": "JIK",
+      "icao": "LGIK",
+      "name": "Ikaria Island National Airport",
+      "latitude": 37.6827,
+      "longitude": 26.3471
+    },
+    {
+      "countryCode": "GR",
+      "region": "Voreio Aigaio",
+      "iata": "JKH",
+      "icao": "LGHI",
+      "name": "Chios Island National Airport",
+      "latitude": 38.3432,
+      "longitude": 26.1406
+    },
+    {
+      "countryCode": "GR",
+      "region": "Voreio Aigaio",
+      "iata": "LXS",
+      "icao": "LGLM",
+      "name": "Lemnos International Airport",
+      "latitude": 39.9171,
+      "longitude": 25.2363
+    },
+    {
+      "countryCode": "GR",
+      "region": "Voreio Aigaio",
+      "iata": "MJT",
+      "icao": "LGMT",
+      "name": "Mytilene International Airport",
+      "latitude": 39.0567,
+      "longitude": 26.5983
+    },
+    {
+      "countryCode": "GR",
+      "region": "Voreio Aigaio",
+      "iata": "SMI",
+      "icao": "LGSM",
+      "name": "Samos International Airport",
+      "latitude": 37.69,
+      "longitude": 26.9117
+    }
+  ]
 }

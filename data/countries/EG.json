@@ -234,5 +234,250 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "EG",
+      "region": "Al Bahr al Ahmar",
+      "iata": "HRG",
+      "icao": "HEGN",
+      "name": "Hurghada International Airport",
+      "latitude": 27.1783,
+      "longitude": 33.7994
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Bahr al Ahmar",
+      "iata": "RMF",
+      "icao": "HEMA",
+      "name": "Marsa Alam International Airport",
+      "latitude": 25.5571,
+      "longitude": 34.5837
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Iskandariyah",
+      "iata": "ALY",
+      "icao": "HEAX",
+      "name": "El Nouzha Airport",
+      "latitude": 31.1839,
+      "longitude": 29.9489
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Iskandariyah",
+      "iata": "HBE",
+      "icao": "HEBA",
+      "name": "Borg El Arab Airport",
+      "latitude": 30.9177,
+      "longitude": 29.6964
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Jizah",
+      "iata": "SPX",
+      "icao": "",
+      "name": "Sphinx International Airport",
+      "latitude": 30.1097,
+      "longitude": 30.8944
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Minya",
+      "iata": "EMY",
+      "icao": "HE25",
+      "name": "El Minya Airport",
+      "latitude": 28.1013,
+      "longitude": 30.7303
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Qahirah",
+      "iata": "CAI",
+      "icao": "HECA",
+      "name": "Cairo International Airport",
+      "latitude": 30.1219,
+      "longitude": 31.4056
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Uqsur",
+      "iata": "LXR",
+      "icao": "HELX",
+      "name": "Luxor International Airport",
+      "latitude": 25.671,
+      "longitude": 32.7066
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Wadi al Jadid",
+      "iata": "DAK",
+      "icao": "HEDK",
+      "name": "Dakhla Oasis Airport",
+      "latitude": 25.4116,
+      "longitude": 29.0031
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Wadi al Jadid",
+      "iata": "GSQ",
+      "icao": "HEOW",
+      "name": "Sharq Al-Owainat Airport",
+      "latitude": 22.5857,
+      "longitude": 28.7166
+    },
+    {
+      "countryCode": "EG",
+      "region": "Al Wadi al Jadid",
+      "iata": "UVL",
+      "icao": "HEKG",
+      "name": "El Kharga Airport",
+      "latitude": 25.4736,
+      "longitude": 30.5907
+    },
+    {
+      "countryCode": "EG",
+      "region": "Ash Sharqiyah",
+      "iata": "TFR",
+      "icao": "",
+      "name": "Wadi al Jandali Airport",
+      "latitude": 30.3,
+      "longitude": 31.75
+    },
+    {
+      "countryCode": "EG",
+      "region": "Aswan",
+      "iata": "ABS",
+      "icao": "HEBL",
+      "name": "Abu Simbel Airport",
+      "latitude": 22.376,
+      "longitude": 31.6117
+    },
+    {
+      "countryCode": "EG",
+      "region": "Aswan",
+      "iata": "ASW",
+      "icao": "HESN",
+      "name": "Aswan International Airport",
+      "latitude": 23.9644,
+      "longitude": 32.82
+    },
+    {
+      "countryCode": "EG",
+      "region": "Asyut",
+      "iata": "ATZ",
+      "icao": "HEAT",
+      "name": "Assiut Airport",
+      "latitude": 27.0465,
+      "longitude": 31.012
+    },
+    {
+      "countryCode": "EG",
+      "region": "Bur Sa'id",
+      "iata": "PSD",
+      "icao": "HEPS",
+      "name": "Port Said Airport",
+      "latitude": 31.2794,
+      "longitude": 32.24
+    },
+    {
+      "countryCode": "EG",
+      "region": "Janub Sina'",
+      "iata": "AUE",
+      "icao": "",
+      "name": "Abu Rudeis Airport",
+      "latitude": 28.899,
+      "longitude": 33.2025
+    },
+    {
+      "countryCode": "EG",
+      "region": "Janub Sina'",
+      "iata": "ELT",
+      "icao": "HETR",
+      "name": "El Tor Airport",
+      "latitude": 28.209,
+      "longitude": 33.6455
+    },
+    {
+      "countryCode": "EG",
+      "region": "Janub Sina'",
+      "iata": "SKV",
+      "icao": "HESC",
+      "name": "St. Catherine International Airport",
+      "latitude": 28.6853,
+      "longitude": 34.0625
+    },
+    {
+      "countryCode": "EG",
+      "region": "Janub Sina'",
+      "iata": "SSH",
+      "icao": "HESH",
+      "name": "Sharm el-Sheikh International Airport",
+      "latitude": 27.9773,
+      "longitude": 34.395
+    },
+    {
+      "countryCode": "EG",
+      "region": "Janub Sina'",
+      "iata": "TCP",
+      "icao": "HETB",
+      "name": "Taba International Airport",
+      "latitude": 29.5878,
+      "longitude": 34.7781
+    },
+    {
+      "countryCode": "EG",
+      "region": "Matruh",
+      "iata": "DBB",
+      "icao": "HEAL",
+      "name": "Al Alamain International Airport",
+      "latitude": 30.9245,
+      "longitude": 28.4614
+    },
+    {
+      "countryCode": "EG",
+      "region": "Matruh",
+      "iata": "MUH",
+      "icao": "HEMM",
+      "name": "Marsa Matruh International Airport",
+      "latitude": 31.3254,
+      "longitude": 27.2217
+    },
+    {
+      "countryCode": "EG",
+      "region": "Matruh",
+      "iata": "SEW",
+      "icao": "",
+      "name": "Siwa Oasis North Airport",
+      "latitude": 29.3455,
+      "longitude": 25.5067
+    },
+    {
+      "countryCode": "EG",
+      "region": "Matruh",
+      "iata": "SQK",
+      "icao": "",
+      "name": "Sidi Barrani Airport",
+      "latitude": 31.4666,
+      "longitude": 25.878
+    },
+    {
+      "countryCode": "EG",
+      "region": "Shamal Sina'",
+      "iata": "AAC",
+      "icao": "HEAR",
+      "name": "El Arish International Airport",
+      "latitude": 31.0733,
+      "longitude": 33.8358
+    },
+    {
+      "countryCode": "EG",
+      "region": "Suhaj",
+      "iata": "HMB",
+      "icao": "HEMK",
+      "name": "Sohag International Airport",
+      "latitude": 26.3428,
+      "longitude": 31.7428
+    }
+  ]
 }

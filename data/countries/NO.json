@@ -252,5 +252,484 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NO",
+      "region": "Akershus",
+      "iata": "OSL",
+      "icao": "ENGM",
+      "name": "Oslo Airport",
+      "latitude": 60.1939,
+      "longitude": 11.1004
+    },
+    {
+      "countryCode": "NO",
+      "region": "Buskerud",
+      "iata": "GLL",
+      "icao": "ENKL",
+      "name": "Gol Airport",
+      "latitude": 60.7911,
+      "longitude": 9.04867
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "ALF",
+      "icao": "ENAT",
+      "name": "Alta Airport",
+      "latitude": 69.9761,
+      "longitude": 23.3717
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "BJF",
+      "icao": "ENBS",
+      "name": "Batsfjord Airport",
+      "latitude": 70.6005,
+      "longitude": 29.6914
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "BVG",
+      "icao": "ENBV",
+      "name": "Berlevag Airport",
+      "latitude": 70.8714,
+      "longitude": 29.0342
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "HAA",
+      "icao": "ENHK",
+      "name": "Hasvik Airport",
+      "latitude": 70.4867,
+      "longitude": 22.1397
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "HFT",
+      "icao": "ENHF",
+      "name": "Hammerfest Airport",
+      "latitude": 70.6797,
+      "longitude": 23.6686
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "HVG",
+      "icao": "ENHV",
+      "name": "Honningsvag Airport",
+      "latitude": 71.0097,
+      "longitude": 25.9836
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "KKN",
+      "icao": "ENKR",
+      "name": "Kirkenes Airport",
+      "latitude": 69.7258,
+      "longitude": 29.8913
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "LKL",
+      "icao": "ENNA",
+      "name": "Lakselv Airport",
+      "latitude": 70.0688,
+      "longitude": 24.9735
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "MEH",
+      "icao": "ENMH",
+      "name": "Mehamn Airport",
+      "latitude": 71.0297,
+      "longitude": 27.8267
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "VAW",
+      "icao": "ENSS",
+      "name": "Varddo Air",
+      "latitude": 70.3554,
+      "longitude": 31.0449
+    },
+    {
+      "countryCode": "NO",
+      "region": "Finnmark",
+      "iata": "VDS",
+      "icao": "ENVD",
+      "name": "Vadso Airport",
+      "latitude": 70.0653,
+      "longitude": 29.8447
+    },
+    {
+      "countryCode": "NO",
+      "region": "Hedmark",
+      "iata": "HMR",
+      "icao": "ENHA",
+      "name": "Hamar Airport",
+      "latitude": 60.8181,
+      "longitude": 11.068
+    },
+    {
+      "countryCode": "NO",
+      "region": "Hordaland",
+      "iata": "BGO",
+      "icao": "ENBR",
+      "name": "Bergen Airport",
+      "latitude": 60.2934,
+      "longitude": 5.21814
+    },
+    {
+      "countryCode": "NO",
+      "region": "Hordaland",
+      "iata": "SRP",
+      "icao": "ENSO",
+      "name": "Stord Airport",
+      "latitude": 59.7919,
+      "longitude": 5.34085
+    },
+    {
+      "countryCode": "NO",
+      "region": "More og Romsdal",
+      "iata": "AES",
+      "icao": "ENAL",
+      "name": "Alesund Airport",
+      "latitude": 62.5625,
+      "longitude": 6.1197
+    },
+    {
+      "countryCode": "NO",
+      "region": "More og Romsdal",
+      "iata": "HOV",
+      "icao": "ENOV",
+      "name": "Orsta-Volda Airport",
+      "latitude": 62.18,
+      "longitude": 6.0741
+    },
+    {
+      "countryCode": "NO",
+      "region": "More og Romsdal",
+      "iata": "KSU",
+      "icao": "ENKB",
+      "name": "Kristiansund Airport",
+      "latitude": 63.1118,
+      "longitude": 7.82452
+    },
+    {
+      "countryCode": "NO",
+      "region": "More og Romsdal",
+      "iata": "MOL",
+      "icao": "ENML",
+      "name": "Molde Airport",
+      "latitude": 62.7447,
+      "longitude": 7.2625
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nord-Trondelag",
+      "iata": "TRD",
+      "icao": "ENVA",
+      "name": "Trondheim Airport",
+      "latitude": 63.4578,
+      "longitude": 10.924
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "ANX",
+      "icao": "ENAN",
+      "name": "Andoya Airport",
+      "latitude": 69.2925,
+      "longitude": 16.1442
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "BNN",
+      "icao": "ENBN",
+      "name": "Bronnoysund Airport",
+      "latitude": 65.4611,
+      "longitude": 12.2175
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "BOO",
+      "icao": "ENBO",
+      "name": "Bodo Airport",
+      "latitude": 67.2692,
+      "longitude": 14.3653
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "EVE",
+      "icao": "ENEV",
+      "name": "Harstad/Narvik Airport",
+      "latitude": 68.4913,
+      "longitude": 16.6781
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "LKN",
+      "icao": "ENLK",
+      "name": "Leknes Airport",
+      "latitude": 68.1525,
+      "longitude": 13.6094
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "MJF",
+      "icao": "ENMS",
+      "name": "Mosjoen Airport",
+      "latitude": 65.784,
+      "longitude": 13.2149
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "MQN",
+      "icao": "ENRA",
+      "name": "Mo i Rana Airport",
+      "latitude": 66.3639,
+      "longitude": 14.3014
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "NVK",
+      "icao": "ENNK",
+      "name": "Narvik Airport",
+      "latitude": 68.4369,
+      "longitude": 17.3867
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "RET",
+      "icao": "ENRS",
+      "name": "Rost Airport",
+      "latitude": 67.5278,
+      "longitude": 12.1033
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "SKN",
+      "icao": "ENSK",
+      "name": "Stokmarknes Airport",
+      "latitude": 68.5788,
+      "longitude": 15.0334
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "SSJ",
+      "icao": "ENST",
+      "name": "Sandnessjoen Airport",
+      "latitude": 65.9568,
+      "longitude": 12.4689
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "SVJ",
+      "icao": "ENSH",
+      "name": "Svolvaer Airport",
+      "latitude": 68.2433,
+      "longitude": 14.6692
+    },
+    {
+      "countryCode": "NO",
+      "region": "Nordland",
+      "iata": "VRY",
+      "icao": "",
+      "name": "Vaeroy Heliport",
+      "latitude": 67.6548,
+      "longitude": 12.7261
+    },
+    {
+      "countryCode": "NO",
+      "region": "Oppland",
+      "iata": "VDB",
+      "icao": "ENFG",
+      "name": "Fagernes Airport",
+      "latitude": 61.0156,
+      "longitude": 9.28806
+    },
+    {
+      "countryCode": "NO",
+      "region": "Ostfold",
+      "iata": "RYG",
+      "icao": "ENRY",
+      "name": "Moss Airport",
+      "latitude": 59.3788,
+      "longitude": 10.7854
+    },
+    {
+      "countryCode": "NO",
+      "region": "Rogaland",
+      "iata": "HAU",
+      "icao": "ENHD",
+      "name": "Haugesund Airport",
+      "latitude": 59.3453,
+      "longitude": 5.20836
+    },
+    {
+      "countryCode": "NO",
+      "region": "Rogaland",
+      "iata": "SVG",
+      "icao": "ENZV",
+      "name": "Stavanger Airport",
+      "latitude": 58.8767,
+      "longitude": 5.63778
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sogn og Fjordane",
+      "iata": "FDE",
+      "icao": "ENBL",
+      "name": "Forde Airport",
+      "latitude": 61.3911,
+      "longitude": 5.75694
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sogn og Fjordane",
+      "iata": "FRO",
+      "icao": "ENFL",
+      "name": "Floro Airport",
+      "latitude": 61.5836,
+      "longitude": 5.02472
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sogn og Fjordane",
+      "iata": "SDN",
+      "icao": "ENSD",
+      "name": "Sandane Airport",
+      "latitude": 61.83,
+      "longitude": 6.10583
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sogn og Fjordane",
+      "iata": "SOG",
+      "icao": "ENSG",
+      "name": "Sogndal Airport",
+      "latitude": 61.1561,
+      "longitude": 7.13778
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sor-Trondelag",
+      "iata": "OLA",
+      "icao": "ENOL",
+      "name": "Orland Airport",
+      "latitude": 63.6989,
+      "longitude": 9.604
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sor-Trondelag",
+      "iata": "OSY",
+      "icao": "ENNM",
+      "name": "Namsos Airport",
+      "latitude": 64.4722,
+      "longitude": 11.5786
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sor-Trondelag",
+      "iata": "RRS",
+      "icao": "ENRO",
+      "name": "Roros Airport",
+      "latitude": 62.5784,
+      "longitude": 11.3423
+    },
+    {
+      "countryCode": "NO",
+      "region": "Sor-Trondelag",
+      "iata": "RVK",
+      "icao": "ENRM",
+      "name": "Rorvik Airport",
+      "latitude": 64.8383,
+      "longitude": 11.1461
+    },
+    {
+      "countryCode": "NO",
+      "region": "Telemark",
+      "iata": "NTB",
+      "icao": "ENNO",
+      "name": "Notodden Airport",
+      "latitude": 59.5657,
+      "longitude": 9.21222
+    },
+    {
+      "countryCode": "NO",
+      "region": "Telemark",
+      "iata": "SKE",
+      "icao": "ENSN",
+      "name": "Skien Airport",
+      "latitude": 59.185,
+      "longitude": 9.56694
+    },
+    {
+      "countryCode": "NO",
+      "region": "Troms",
+      "iata": "BDU",
+      "icao": "ENDU",
+      "name": "Bardufoss Airport",
+      "latitude": 69.0558,
+      "longitude": 18.5404
+    },
+    {
+      "countryCode": "NO",
+      "region": "Troms",
+      "iata": "SOJ",
+      "icao": "ENSR",
+      "name": "Sorkjosen Airport",
+      "latitude": 69.7868,
+      "longitude": 20.9594
+    },
+    {
+      "countryCode": "NO",
+      "region": "Troms",
+      "iata": "TOS",
+      "icao": "ENTC",
+      "name": "Tromse Airport",
+      "latitude": 69.6833,
+      "longitude": 18.9189
+    },
+    {
+      "countryCode": "NO",
+      "region": "Vest-Agder",
+      "iata": "KRS",
+      "icao": "ENCN",
+      "name": "Kristiansand Airport",
+      "latitude": 58.2042,
+      "longitude": 8.08537
+    },
+    {
+      "countryCode": "NO",
+      "region": "Vestfold",
+      "iata": "TRF",
+      "icao": "ENTO",
+      "name": "Sandefjord Airport",
+      "latitude": 59.1867,
+      "longitude": 10.2586
+    }
+  ]
 }

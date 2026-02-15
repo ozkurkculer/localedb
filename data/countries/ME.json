@@ -264,5 +264,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ME",
+      "region": "Berane",
+      "iata": "IVG",
+      "icao": "LYBR",
+      "name": "Dolac Airport",
+      "latitude": 42.839,
+      "longitude": 19.862
+    },
+    {
+      "countryCode": "ME",
+      "region": "Pljevlja",
+      "iata": "ZBK",
+      "icao": "",
+      "name": "Zabljak Airport",
+      "latitude": 43.1167,
+      "longitude": 19.2333
+    },
+    {
+      "countryCode": "ME",
+      "region": "Podgorica",
+      "iata": "TGD",
+      "icao": "LYPG",
+      "name": "Podgorica Airport",
+      "latitude": 42.3594,
+      "longitude": 19.2519
+    },
+    {
+      "countryCode": "ME",
+      "region": "Tivat",
+      "iata": "TIV",
+      "icao": "LYTV",
+      "name": "Tivat Airport",
+      "latitude": 42.4047,
+      "longitude": 18.7233
+    }
+  ]
 }

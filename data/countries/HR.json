@@ -234,5 +234,88 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "HR",
+      "region": "Dubrovacko-neretvanska zupanija",
+      "iata": "DBV",
+      "icao": "LDDU",
+      "name": "Dubrovnik Airport",
+      "latitude": 42.5614,
+      "longitude": 18.2682
+    },
+    {
+      "countryCode": "HR",
+      "region": "Grad Zagreb",
+      "iata": "ZAG",
+      "icao": "LDZA",
+      "name": "Zagreb Airport",
+      "latitude": 45.7429,
+      "longitude": 16.0688
+    },
+    {
+      "countryCode": "HR",
+      "region": "Istarska zupanija",
+      "iata": "PUY",
+      "icao": "LDPL",
+      "name": "Pula Airport",
+      "latitude": 44.8935,
+      "longitude": 13.9222
+    },
+    {
+      "countryCode": "HR",
+      "region": "Osjecko-baranjska zupanija",
+      "iata": "OSI",
+      "icao": "LDOS",
+      "name": "Osijek Airport",
+      "latitude": 45.4627,
+      "longitude": 18.8102
+    },
+    {
+      "countryCode": "HR",
+      "region": "Primorsko-goranska zupanija",
+      "iata": "LSZ",
+      "icao": "LDLO",
+      "name": "Losinj Airport",
+      "latitude": 44.5658,
+      "longitude": 14.3931
+    },
+    {
+      "countryCode": "HR",
+      "region": "Primorsko-goranska zupanija",
+      "iata": "RJK",
+      "icao": "LDRI",
+      "name": "Rijeka Airport",
+      "latitude": 45.2169,
+      "longitude": 14.5703
+    },
+    {
+      "countryCode": "HR",
+      "region": "Splitsko-dalmatinska zupanija",
+      "iata": "BWK",
+      "icao": "LDSB",
+      "name": "Bol Airport (Brac Airport)",
+      "latitude": 43.2857,
+      "longitude": 16.6797
+    },
+    {
+      "countryCode": "HR",
+      "region": "Splitsko-dalmatinska zupanija",
+      "iata": "SPU",
+      "icao": "LDSP",
+      "name": "Split Airport",
+      "latitude": 43.5389,
+      "longitude": 16.298
+    },
+    {
+      "countryCode": "HR",
+      "region": "Zadarska zupanija",
+      "iata": "ZAD",
+      "icao": "LDZD",
+      "name": "Zadar Airport",
+      "latitude": 44.1083,
+      "longitude": 15.3467
+    }
+  ]
 }

@@ -245,5 +245,106 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "IQ",
+      "region": "Al Anbar",
+      "iata": "IQA",
+      "icao": "ORAA",
+      "name": "Al Asad Airbase",
+      "latitude": 33.7856,
+      "longitude": 42.4412
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Al Anbar",
+      "iata": "TQD",
+      "icao": "ORAT",
+      "name": "Al-Taqaddum Air Base",
+      "latitude": 33.3381,
+      "longitude": 43.5971
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Al Basrah",
+      "iata": "BSR",
+      "icao": "ORMM",
+      "name": "Basra International Airport",
+      "latitude": 30.5491,
+      "longitude": 47.6621
+    },
+    {
+      "countryCode": "IQ",
+      "region": "An Najaf",
+      "iata": "NJF",
+      "icao": "ORNI",
+      "name": "Al Najaf International Airport",
+      "latitude": 31.9899,
+      "longitude": 44.4043
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Arbil",
+      "iata": "EBL",
+      "icao": "ORER",
+      "name": "Erbil International Airport",
+      "latitude": 36.2376,
+      "longitude": 43.9632
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Arbil",
+      "iata": "ISU",
+      "icao": "ORSU",
+      "name": "Sulaimaniyah International Airport",
+      "latitude": 35.5617,
+      "longitude": 45.3167
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Baghdad",
+      "iata": "BGW",
+      "icao": "ORBI",
+      "name": "Baghdad International Airport",
+      "latitude": 33.2625,
+      "longitude": 44.2346
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Dahuk",
+      "iata": "BMN",
+      "icao": "ORBB",
+      "name": "Bamarni Airport",
+      "latitude": 37.0988,
+      "longitude": 43.2666
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Kirkuk",
+      "iata": "KIK",
+      "icao": "ORKK",
+      "name": "Kirkuk Airport",
+      "latitude": 35.4695,
+      "longitude": 44.3489
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Ninawa",
+      "iata": "OSM",
+      "icao": "ORBM",
+      "name": "Mosul International Airport",
+      "latitude": 36.3058,
+      "longitude": 43.1474
+    },
+    {
+      "countryCode": "IQ",
+      "region": "Ninawa",
+      "iata": "RQW",
+      "icao": "",
+      "name": "Qayyarah Airfield West",
+      "latitude": 35.7672,
+      "longitude": 43.1251
+    }
+  ]
 }

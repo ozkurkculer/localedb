@@ -261,5 +261,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GQ",
+      "region": "Annobon",
+      "iata": "NBN",
+      "icao": "FGAB",
+      "name": "Annobon Air",
+      "latitude": -1.41028,
+      "longitude": 5.62194
+    },
+    {
+      "countryCode": "GQ",
+      "region": "Bioko Norte",
+      "iata": "SSG",
+      "icao": "FGSL",
+      "name": "Malabo International Airport (Saint Isabel Airport)",
+      "latitude": 3.75527,
+      "longitude": 8.70872
+    },
+    {
+      "countryCode": "GQ",
+      "region": "Litoral",
+      "iata": "BSG",
+      "icao": "FGBT",
+      "name": "Bata Airport",
+      "latitude": 1.90547,
+      "longitude": 9.80568
+    },
+    {
+      "countryCode": "GQ",
+      "region": "Litoral",
+      "iata": "OCS",
+      "icao": "",
+      "name": "Corisco International Airport",
+      "latitude": 0.9125,
+      "longitude": 9.3304
+    },
+    {
+      "countryCode": "GQ",
+      "region": "Wele-Nzas",
+      "iata": "GEM",
+      "icao": "FGMY",
+      "name": "President Obiang Nguema International Airport",
+      "latitude": 1.68533,
+      "longitude": 11.0244
+    }
+  ]
 }

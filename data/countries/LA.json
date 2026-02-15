@@ -234,5 +234,142 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LA",
+      "region": "Attapu",
+      "iata": "AOU",
+      "icao": "VLAP",
+      "name": "Attapeu International Airport",
+      "latitude": 14.7931,
+      "longitude": 107.045
+    },
+    {
+      "countryCode": "LA",
+      "region": "Bokeo",
+      "iata": "HOE",
+      "icao": "VLHS",
+      "name": "Ban Huoeisay Airport",
+      "latitude": 20.2573,
+      "longitude": 100.437
+    },
+    {
+      "countryCode": "LA",
+      "region": "Champasak",
+      "iata": "KOG",
+      "icao": "VLKG",
+      "name": "Khong Island Airport",
+      "latitude": 17.9881,
+      "longitude": 102.563
+    },
+    {
+      "countryCode": "LA",
+      "region": "Champasak",
+      "iata": "PKZ",
+      "icao": "VLPS",
+      "name": "Pakse International Airport",
+      "latitude": 15.1321,
+      "longitude": 105.781
+    },
+    {
+      "countryCode": "LA",
+      "region": "Houaphan",
+      "iata": "NEU",
+      "icao": "VLSN",
+      "name": "Nathong Airport",
+      "latitude": 20.4184,
+      "longitude": 104.067
+    },
+    {
+      "countryCode": "LA",
+      "region": "Khammouan",
+      "iata": "THK",
+      "icao": "VLTK",
+      "name": "Thakhek Airport",
+      "latitude": 17.4,
+      "longitude": 104.8
+    },
+    {
+      "countryCode": "LA",
+      "region": "Louang Namtha",
+      "iata": "LXG",
+      "icao": "VLLN",
+      "name": "Louang Namtha Airport",
+      "latitude": 20.9606,
+      "longitude": 101.402
+    },
+    {
+      "countryCode": "LA",
+      "region": "Louangphabang",
+      "iata": "LPQ",
+      "icao": "VLLB",
+      "name": "Luang Prabang International Airport",
+      "latitude": 19.8973,
+      "longitude": 102.161
+    },
+    {
+      "countryCode": "LA",
+      "region": "Oudomxai",
+      "iata": "ODY",
+      "icao": "VLOS",
+      "name": "Oudomsay Airport",
+      "latitude": 20.6827,
+      "longitude": 101.994
+    },
+    {
+      "countryCode": "LA",
+      "region": "Phongsali",
+      "iata": "PCQ",
+      "icao": "",
+      "name": "Boun Neua Airport",
+      "latitude": 21.6475,
+      "longitude": 101.9
+    },
+    {
+      "countryCode": "LA",
+      "region": "Salavan",
+      "iata": "VNA",
+      "icao": "VLSV",
+      "name": "Salavan Airport",
+      "latitude": 15.7094,
+      "longitude": 106.411
+    },
+    {
+      "countryCode": "LA",
+      "region": "Savannakhet",
+      "iata": "ZVK",
+      "icao": "VLSK",
+      "name": "Savannakhet Airport",
+      "latitude": 16.5566,
+      "longitude": 104.76
+    },
+    {
+      "countryCode": "LA",
+      "region": "Viangchan",
+      "iata": "VTE",
+      "icao": "VLVT",
+      "name": "Wattay International Airport",
+      "latitude": 17.9883,
+      "longitude": 102.563
+    },
+    {
+      "countryCode": "LA",
+      "region": "Xaignabouli",
+      "iata": "ZBY",
+      "icao": "VLSB",
+      "name": "Sayaboury Airport",
+      "latitude": 19.2436,
+      "longitude": 101.709
+    },
+    {
+      "countryCode": "LA",
+      "region": "Xiangkhouang",
+      "iata": "XKH",
+      "icao": "VLXK",
+      "name": "Xieng Khouang Airport",
+      "latitude": 19.4402,
+      "longitude": 103.169
+    }
+  ]
 }

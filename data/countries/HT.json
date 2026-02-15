@@ -240,5 +240,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "HT",
+      "region": "Grande'Anse",
+      "iata": "JEE",
+      "icao": "MTJE",
+      "name": "Jeremie Airport",
+      "latitude": 18.6631,
+      "longitude": -74.1703
+    },
+    {
+      "countryCode": "HT",
+      "region": "Nord",
+      "iata": "CAP",
+      "icao": "MTCH",
+      "name": "Hugo Chavez International Airport",
+      "latitude": 19.733,
+      "longitude": -72.1947
+    },
+    {
+      "countryCode": "HT",
+      "region": "Nord-Ouest",
+      "iata": "PAX",
+      "icao": "MTPX",
+      "name": "Port-de-Paix Airport",
+      "latitude": 19.9336,
+      "longitude": -72.8486
+    },
+    {
+      "countryCode": "HT",
+      "region": "Ouest",
+      "iata": "PAP",
+      "icao": "MTPP",
+      "name": "Toussaint Louverture International Airport",
+      "latitude": 18.58,
+      "longitude": -72.2925
+    },
+    {
+      "countryCode": "HT",
+      "region": "Sud",
+      "iata": "CYA",
+      "icao": "MTCA",
+      "name": "Antoine-Simon Airport",
+      "latitude": 18.2711,
+      "longitude": -73.7883
+    },
+    {
+      "countryCode": "HT",
+      "region": "Sud-Est",
+      "iata": "JAK",
+      "icao": "MTJA",
+      "name": "Jacmel Airport",
+      "latitude": 18.2411,
+      "longitude": -72.5185
+    }
+  ]
 }

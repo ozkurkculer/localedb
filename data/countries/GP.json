@@ -228,5 +228,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "BBR",
+      "icao": "TFFB",
+      "name": "Baillif Airport",
+      "latitude": 16.0133,
+      "longitude": -61.7422
+    },
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "DSD",
+      "icao": "TFFA",
+      "name": "La Desirade Airport (Grande-Anse Airport)",
+      "latitude": 16.2969,
+      "longitude": -61.0844
+    },
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "GBJ",
+      "icao": "TFFM",
+      "name": "Marie-Galante Airport (Les Bases)",
+      "latitude": 15.8687,
+      "longitude": -61.27
+    },
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "LSS",
+      "icao": "TFFS",
+      "name": "Les Saintes Airport",
+      "latitude": 15.8644,
+      "longitude": -61.5806
+    },
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "PTP",
+      "icao": "TFFR",
+      "name": "Pointe-a-Pitre International Airport (Le Raizet Airport)",
+      "latitude": 16.2653,
+      "longitude": -61.5318
+    },
+    {
+      "countryCode": "GP",
+      "region": "Guadeloupe",
+      "iata": "SFC",
+      "icao": "TFFC",
+      "name": "Saint-Francois Airport",
+      "latitude": 16.2578,
+      "longitude": -61.2625
+    }
+  ]
 }

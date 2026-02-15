@@ -258,5 +258,286 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "FJ",
+      "region": "Central",
+      "iata": "LUC",
+      "icao": "NFNH",
+      "name": "Laucala Airport",
+      "latitude": -16.7481,
+      "longitude": -179.667
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Central",
+      "iata": "NAN",
+      "icao": "NFFN",
+      "name": "Nadi International Airport",
+      "latitude": -17.7554,
+      "longitude": 177.443
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Central",
+      "iata": "PHR",
+      "icao": "NFND",
+      "name": "Pacific Harbour Airport",
+      "latitude": -18.257,
+      "longitude": 178.068
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Central",
+      "iata": "SUV",
+      "icao": "NFNA",
+      "name": "Nausori International Airport",
+      "latitude": -18.0433,
+      "longitude": 178.559
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "ICI",
+      "icao": "NFCI",
+      "name": "Cicia Airport",
+      "latitude": -17.7433,
+      "longitude": -179.342
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "KAY",
+      "icao": "NFNW",
+      "name": "Wakaya Airport",
+      "latitude": -17.617,
+      "longitude": 179.017
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "KDV",
+      "icao": "NFKD",
+      "name": "Vunisea Airport",
+      "latitude": -19.0581,
+      "longitude": 178.157
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "KXF",
+      "icao": "NFNO",
+      "name": "Koro Airport",
+      "latitude": -17.3458,
+      "longitude": 179.422
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "LEV",
+      "icao": "NFNB",
+      "name": "Levuka Airfield (Bureta Airport)",
+      "latitude": -17.7111,
+      "longitude": 178.759
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "LKB",
+      "icao": "NFNK",
+      "name": "Lakeba Airport",
+      "latitude": -18.1992,
+      "longitude": -178.817
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "MFJ",
+      "icao": "NFMO",
+      "name": "Moala Airport",
+      "latitude": -18.5667,
+      "longitude": 179.951
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "NGI",
+      "icao": "NFNG",
+      "name": "Gau Airport",
+      "latitude": -18.1156,
+      "longitude": 179.34
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "ONU",
+      "icao": "NFOL",
+      "name": "Ono-i-Lau Airport",
+      "latitude": -20.6589,
+      "longitude": -178.741
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Eastern",
+      "iata": "VBV",
+      "icao": "NFVB",
+      "name": "Vanuabalavu Airport",
+      "latitude": -17.269,
+      "longitude": -178.976
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "AQS",
+      "icao": "",
+      "name": "Saqani Airport",
+      "latitude": -16.4494,
+      "longitude": 179.74
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "BVF",
+      "icao": "NFNU",
+      "name": "Dama Airport",
+      "latitude": -16.8598,
+      "longitude": 178.623
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "LBS",
+      "icao": "NFNL",
+      "name": "Labasa Airport",
+      "latitude": -16.4667,
+      "longitude": 179.34
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "RBI",
+      "icao": "NFFR",
+      "name": "Rabi Airport",
+      "latitude": -16.5337,
+      "longitude": 179.976
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "RTA",
+      "icao": "NFNR",
+      "name": "Rotuma Airport",
+      "latitude": -12.4825,
+      "longitude": 177.071
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "SVU",
+      "icao": "NFNS",
+      "name": "Savusavu Airport",
+      "latitude": -16.8028,
+      "longitude": 179.341
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Northern",
+      "iata": "TVU",
+      "icao": "NFNM",
+      "name": "Matei Airport",
+      "latitude": -16.6906,
+      "longitude": -179.877
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "BXL",
+      "icao": "",
+      "name": "Blue Lagoon Seaplane Base",
+      "latitude": -16.943,
+      "longitude": 177.368
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "CST",
+      "icao": "NFCS",
+      "name": "Castaway Island Seaplane Base",
+      "latitude": -17.7358,
+      "longitude": 177.129
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "KVU",
+      "icao": "",
+      "name": "Korolevu Seaplane Base",
+      "latitude": -17.7543,
+      "longitude": 177.437
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "MNF",
+      "icao": "NFMA",
+      "name": "Mana Island Airport",
+      "latitude": -17.6731,
+      "longitude": 177.098
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "NTA",
+      "icao": "",
+      "name": "Natadola Seaplane Base",
+      "latitude": -18.0677,
+      "longitude": 177.315
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "PTF",
+      "icao": "NFFO",
+      "name": "Malolo Lailai Airport",
+      "latitude": -17.7779,
+      "longitude": 177.197
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "TTL",
+      "icao": "",
+      "name": "Turtle Island Seaplane Base",
+      "latitude": -16.966,
+      "longitude": 177.368
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "VAU",
+      "icao": "NFNV",
+      "name": "Vatukoula Airport",
+      "latitude": -17.5,
+      "longitude": 177.842
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "VTF",
+      "icao": "NFVL",
+      "name": "Vatulele Airport",
+      "latitude": -18.5125,
+      "longitude": 177.639
+    },
+    {
+      "countryCode": "FJ",
+      "region": "Western",
+      "iata": "YAS",
+      "icao": "NFSW",
+      "name": "Yasawa Island Airport",
+      "latitude": -16.7589,
+      "longitude": 177.545
+    }
+  ]
 }

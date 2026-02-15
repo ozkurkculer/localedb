@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TT",
+      "region": "Port of Spain",
+      "iata": "POS",
+      "icao": "TTPP",
+      "name": "Piarco International Airport",
+      "latitude": 10.5954,
+      "longitude": -61.3372
+    },
+    {
+      "countryCode": "TT",
+      "region": "Tobago",
+      "iata": "TAB",
+      "icao": "TTCP",
+      "name": "Arthur Napoleon Raymond Robinson International Airport",
+      "latitude": 11.1497,
+      "longitude": -60.8322
+    }
+  ]
 }

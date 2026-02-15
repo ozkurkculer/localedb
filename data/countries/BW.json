@@ -243,5 +243,151 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BW",
+      "region": "Central",
+      "iata": "ORP",
+      "icao": "FBOR",
+      "name": "Orapa Airport",
+      "latitude": -21.2667,
+      "longitude": 25.3167
+    },
+    {
+      "countryCode": "BW",
+      "region": "Central",
+      "iata": "PKW",
+      "icao": "FBSP",
+      "name": "Selebi-Phikwe Airport",
+      "latitude": -22.0583,
+      "longitude": 27.8288
+    },
+    {
+      "countryCode": "BW",
+      "region": "Central",
+      "iata": "SXN",
+      "icao": "FBSN",
+      "name": "Sua Pan Airport",
+      "latitude": -20.5534,
+      "longitude": 26.1158
+    },
+    {
+      "countryCode": "BW",
+      "region": "Central",
+      "iata": "TLD",
+      "icao": "FBTL",
+      "name": "Tuli Lodge Airport",
+      "latitude": -22.1892,
+      "longitude": 29.1269
+    },
+    {
+      "countryCode": "BW",
+      "region": "Chobe",
+      "iata": "BBK",
+      "icao": "FBKE",
+      "name": "Kasane Airport",
+      "latitude": -17.8329,
+      "longitude": 25.1624
+    },
+    {
+      "countryCode": "BW",
+      "region": "Ghanzi",
+      "iata": "GNZ",
+      "icao": "FBGZ",
+      "name": "Ghanzi Airport",
+      "latitude": -21.6925,
+      "longitude": 21.6581
+    },
+    {
+      "countryCode": "BW",
+      "region": "Kgalagadi",
+      "iata": "HUK",
+      "icao": "",
+      "name": "Hukuntsi Airport",
+      "latitude": -23.9897,
+      "longitude": 21.7581
+    },
+    {
+      "countryCode": "BW",
+      "region": "Kgalagadi",
+      "iata": "TBY",
+      "icao": "FBTS",
+      "name": "Tshabong Airport",
+      "latitude": -26.0333,
+      "longitude": 22.4
+    },
+    {
+      "countryCode": "BW",
+      "region": "North East",
+      "iata": "FRW",
+      "icao": "FBFT",
+      "name": "Francistown Airport",
+      "latitude": -21.1596,
+      "longitude": 27.4745
+    },
+    {
+      "countryCode": "BW",
+      "region": "North West",
+      "iata": "KHW",
+      "icao": "FBKR",
+      "name": "Khwai River Airport",
+      "latitude": -19.15,
+      "longitude": 23.783
+    },
+    {
+      "countryCode": "BW",
+      "region": "North West",
+      "iata": "MUB",
+      "icao": "FBMN",
+      "name": "Maun Airport",
+      "latitude": -19.9726,
+      "longitude": 23.4311
+    },
+    {
+      "countryCode": "BW",
+      "region": "North West",
+      "iata": "SVT",
+      "icao": "FBSV",
+      "name": "Savuti Airport",
+      "latitude": -18.5206,
+      "longitude": 24.0767
+    },
+    {
+      "countryCode": "BW",
+      "region": "North West",
+      "iata": "SWX",
+      "icao": "FBSW",
+      "name": "Shakawe Airport",
+      "latitude": -18.3739,
+      "longitude": 21.8326
+    },
+    {
+      "countryCode": "BW",
+      "region": "South East",
+      "iata": "GBE",
+      "icao": "FBSK",
+      "name": "Sir Seretse Khama International Airport",
+      "latitude": -24.5552,
+      "longitude": 25.9182
+    },
+    {
+      "countryCode": "BW",
+      "region": "South East",
+      "iata": "LOQ",
+      "icao": "FBLO",
+      "name": "Lobatse Airport",
+      "latitude": -25.1981,
+      "longitude": 25.7139
+    },
+    {
+      "countryCode": "BW",
+      "region": "Southern",
+      "iata": "JWA",
+      "icao": "FBJW",
+      "name": "Jwaneng Airport",
+      "latitude": -24.6023,
+      "longitude": 24.691
+    }
+  ]
 }

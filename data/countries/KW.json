@@ -231,5 +231,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KW",
+      "region": "Al Ahmadi",
+      "iata": "XIJ",
+      "icao": "OKAJ",
+      "name": "Ahmad al-Jaber Air Base",
+      "latitude": 28.9348,
+      "longitude": 47.7919
+    },
+    {
+      "countryCode": "KW",
+      "region": "Al Farwaniyah",
+      "iata": "KWI",
+      "icao": "OKKK",
+      "name": "Kuwait International Airport",
+      "latitude": 29.2266,
+      "longitude": 47.9689
+    }
+  ]
 }

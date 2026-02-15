@@ -231,5 +231,232 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KR",
+      "region": "Busan-gwangyeoksi",
+      "iata": "PUS",
+      "icao": "RKPK",
+      "name": "Gimhae International Airport",
+      "latitude": 35.1795,
+      "longitude": 128.938
+    },
+    {
+      "countryCode": "KR",
+      "region": "Chungcheongbuk-do",
+      "iata": "CJJ",
+      "icao": "RKTU",
+      "name": "Cheongju International Airport",
+      "latitude": 36.717,
+      "longitude": 127.499
+    },
+    {
+      "countryCode": "KR",
+      "region": "Chungcheongbuk-do",
+      "iata": "JWO",
+      "icao": "RKTI",
+      "name": "Jungwon Air Base",
+      "latitude": 37.03,
+      "longitude": 127.885
+    },
+    {
+      "countryCode": "KR",
+      "region": "Chungcheongnam-do",
+      "iata": "HMY",
+      "icao": "RKTP",
+      "name": "Seosan Air Base",
+      "latitude": 36.704,
+      "longitude": 126.486
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gangwon-do",
+      "iata": "KAG",
+      "icao": "RKNN",
+      "name": "Gangneung Air Base",
+      "latitude": 37.7536,
+      "longitude": 128.944
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gangwon-do",
+      "iata": "WJU",
+      "icao": "RKNW",
+      "name": "Wonju Airport",
+      "latitude": 37.4412,
+      "longitude": 127.964
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gangwon-do",
+      "iata": "YNY",
+      "icao": "RKNY",
+      "name": "Yangyang International Airport",
+      "latitude": 38.0613,
+      "longitude": 128.669
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gwangju-gwangyeoksi",
+      "iata": "CHN",
+      "icao": "RKJU",
+      "name": "Jeonju Airport",
+      "latitude": 35.8781,
+      "longitude": 127.119
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gwangju-gwangyeoksi",
+      "iata": "KUV",
+      "icao": "RKJK",
+      "name": "Gunsan Airport",
+      "latitude": 35.9038,
+      "longitude": 126.616
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gwangju-gwangyeoksi",
+      "iata": "KWJ",
+      "icao": "RKJJ",
+      "name": "Gwangju Airport",
+      "latitude": 35.1232,
+      "longitude": 126.805
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gwangju-gwangyeoksi",
+      "iata": "MWX",
+      "icao": "RKJB",
+      "name": "Muan International Airport",
+      "latitude": 34.9914,
+      "longitude": 126.383
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gwangju-gwangyeoksi",
+      "iata": "RSU",
+      "icao": "RKJY",
+      "name": "Yeosu/Suncheon Airport",
+      "latitude": 34.8423,
+      "longitude": 127.617
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeonggi-do",
+      "iata": "GMP",
+      "icao": "RKSS",
+      "name": "Seoul Gimpo International Airport",
+      "latitude": 37.5655,
+      "longitude": 126.8011
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeonggi-do",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "name": "Incheon International Airport",
+      "latitude": 37.4633,
+      "longitude": 126.44
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeonggi-do",
+      "iata": "OSN",
+      "icao": "RKSO",
+      "name": "Osan Air Base",
+      "latitude": 37.0906,
+      "longitude": 127.03
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeonggi-do",
+      "iata": "SWU",
+      "icao": "RKSW",
+      "name": "Suwon Air Base",
+      "latitude": 37.2394,
+      "longitude": 127.007
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "CHF",
+      "icao": "RKPE",
+      "name": "Jinhae Airport",
+      "latitude": 35.1402,
+      "longitude": 128.696
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "HIN",
+      "icao": "RKPS",
+      "name": "Sacheon Airport",
+      "latitude": 35.0886,
+      "longitude": 128.072
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "KPO",
+      "icao": "RKTH",
+      "name": "Pohang Airport",
+      "latitude": 35.988,
+      "longitude": 129.42
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "TAE",
+      "icao": "RKTN",
+      "name": "Daegu International Airport",
+      "latitude": 35.8969,
+      "longitude": 128.655
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "UJN",
+      "icao": "RKTL",
+      "name": "Uljin Airport",
+      "latitude": 36.7771,
+      "longitude": 129.462
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "USN",
+      "icao": "RKPU",
+      "name": "Ulsan Airport",
+      "latitude": 35.5935,
+      "longitude": 129.352
+    },
+    {
+      "countryCode": "KR",
+      "region": "Gyeongsangnam-do",
+      "iata": "YEC",
+      "icao": "RKTY",
+      "name": "Yecheon Air Base",
+      "latitude": 36.6304,
+      "longitude": 128.35
+    },
+    {
+      "countryCode": "KR",
+      "region": "Jeju-teukbyeoljachido",
+      "iata": "CJU",
+      "icao": "RKPC",
+      "name": "Jeju International Airport",
+      "latitude": 33.5113,
+      "longitude": 126.493
+    },
+    {
+      "countryCode": "KR",
+      "region": "Jeju-teukbyeoljachido",
+      "iata": "JDG",
+      "icao": "RKPD",
+      "name": "Jeongseok Airport",
+      "latitude": 33.3996,
+      "longitude": 126.712
+    }
+  ]
 }

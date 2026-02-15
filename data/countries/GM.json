@@ -230,5 +230,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GM",
+      "region": "Banjul",
+      "iata": "BJL",
+      "icao": "GBYD",
+      "name": "Banjul International Airport",
+      "latitude": 13.338,
+      "longitude": -16.6522
+    }
+  ]
 }

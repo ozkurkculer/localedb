@@ -245,5 +245,1393 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "IN",
+      "region": "Andaman and Nicobar Islands",
+      "iata": "CBD",
+      "icao": "VOCX",
+      "name": "Car Nicobar Air Force Base",
+      "latitude": 9.15251,
+      "longitude": 92.8196
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andaman and Nicobar Islands",
+      "iata": "IXZ",
+      "icao": "VOPB",
+      "name": "Veer Savarkar International Airport (Port Blair Airport)",
+      "latitude": 11.6412,
+      "longitude": 92.7297
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "BEK",
+      "icao": "VIBY",
+      "name": "Bareilly Airport",
+      "latitude": 28.4221,
+      "longitude": 79.4508
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "CDP",
+      "icao": "VOCP",
+      "name": "Kadapa Airport",
+      "latitude": 14.51,
+      "longitude": 78.7728
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "KJB",
+      "icao": "VOKU",
+      "name": "Kurnool Airport",
+      "latitude": 15.7132,
+      "longitude": 78.1612
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "PUT",
+      "icao": "VOPN",
+      "name": "Sri Sathya Sai Airport",
+      "latitude": 14.1493,
+      "longitude": 77.7911
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "RJA",
+      "icao": "VORY",
+      "name": "Rajahmundry Airport",
+      "latitude": 17.1104,
+      "longitude": 81.8182
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "TIR",
+      "icao": "VOTP",
+      "name": "Tirupati Airport",
+      "latitude": 13.6325,
+      "longitude": 79.5433
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "VGA",
+      "icao": "VOBZ",
+      "name": "Vijayawada Airport",
+      "latitude": 16.5304,
+      "longitude": 80.7968
+    },
+    {
+      "countryCode": "IN",
+      "region": "Andhra Pradesh",
+      "iata": "VTZ",
+      "icao": "VEVZ",
+      "name": "Visakhapatnam Airport",
+      "latitude": 17.7212,
+      "longitude": 83.2245
+    },
+    {
+      "countryCode": "IN",
+      "region": "Arunachal Pradesh",
+      "iata": "IXT",
+      "icao": "VEPG",
+      "name": "Pasighat Airport",
+      "latitude": 28.0661,
+      "longitude": 95.3356
+    },
+    {
+      "countryCode": "IN",
+      "region": "Arunachal Pradesh",
+      "iata": "IXV",
+      "icao": "VEAN",
+      "name": "Along Airport",
+      "latitude": 28.1753,
+      "longitude": 94.802
+    },
+    {
+      "countryCode": "IN",
+      "region": "Arunachal Pradesh",
+      "iata": "TEI",
+      "icao": "VETJ",
+      "name": "Tezu Airport",
+      "latitude": 27.9412,
+      "longitude": 96.1344
+    },
+    {
+      "countryCode": "IN",
+      "region": "Arunachal Pradesh",
+      "iata": "ZER",
+      "icao": "VEZO",
+      "name": "Zero Airport (Ziro Airport)",
+      "latitude": 27.5883,
+      "longitude": 93.8281
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "DEP",
+      "icao": "VEDZ",
+      "name": "Daporijo Airport",
+      "latitude": 27.9855,
+      "longitude": 94.2228
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "DIB",
+      "icao": "VEMN",
+      "name": "Dibrugarh Airport (Mohanbari Airport)",
+      "latitude": 27.4839,
+      "longitude": 95.0169
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "GAU",
+      "icao": "VEGT",
+      "name": "Lokpriya Gopinath Bordoloi International Airport",
+      "latitude": 26.1061,
+      "longitude": 91.5859
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "IXI",
+      "icao": "VELR",
+      "name": "Lilabari Airport",
+      "latitude": 27.2955,
+      "longitude": 94.0976
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "IXN",
+      "icao": "VEKW",
+      "name": "Khowai Airport",
+      "latitude": 24.0619,
+      "longitude": 91.6039
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "IXQ",
+      "icao": "VEKM",
+      "name": "Kamalpur Airport",
+      "latitude": 24.1317,
+      "longitude": 91.8142
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "IXS",
+      "icao": "VEKU",
+      "name": "Silchar Airport (Kumbhirgram Air Force Base)",
+      "latitude": 24.9129,
+      "longitude": 92.9787
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "JRH",
+      "icao": "VEJT",
+      "name": "Jorhat Airport (Rowriah Airport)",
+      "latitude": 26.7315,
+      "longitude": 94.1755
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "RUP",
+      "icao": "VERU",
+      "name": "Rupsi Airport",
+      "latitude": 26.1397,
+      "longitude": 89.91
+    },
+    {
+      "countryCode": "IN",
+      "region": "Assam",
+      "iata": "TEZ",
+      "icao": "VETZ",
+      "name": "Tezpur Airport",
+      "latitude": 26.7091,
+      "longitude": 92.7847
+    },
+    {
+      "countryCode": "IN",
+      "region": "Bihar",
+      "iata": "DBR",
+      "icao": "VEDH",
+      "name": "Darbhanga Airport",
+      "latitude": 26.1947,
+      "longitude": 85.9175
+    },
+    {
+      "countryCode": "IN",
+      "region": "Bihar",
+      "iata": "GAY",
+      "icao": "VEGY",
+      "name": "Gaya Airport (Bodhgaya Airport)",
+      "latitude": 24.7443,
+      "longitude": 84.9512
+    },
+    {
+      "countryCode": "IN",
+      "region": "Bihar",
+      "iata": "MZU",
+      "icao": "VEMZ",
+      "name": "Muzaffarpur Airport",
+      "latitude": 26.1191,
+      "longitude": 85.3137
+    },
+    {
+      "countryCode": "IN",
+      "region": "Bihar",
+      "iata": "PAT",
+      "icao": "VEPT",
+      "name": "Lok Nayak Jayaprakash Airport",
+      "latitude": 25.5913,
+      "longitude": 85.088
+    },
+    {
+      "countryCode": "IN",
+      "region": "Bihar",
+      "iata": "PXN",
+      "icao": "VEPU",
+      "name": "Purnea Airport",
+      "latitude": 25.4535,
+      "longitude": 87.2436
+    },
+    {
+      "countryCode": "IN",
+      "region": "Chandigarh",
+      "iata": "IXC",
+      "icao": "VICG",
+      "name": "Chandigarh Airport",
+      "latitude": 30.6735,
+      "longitude": 76.7885
+    },
+    {
+      "countryCode": "IN",
+      "region": "Chhattisgarh",
+      "iata": "JGB",
+      "icao": "",
+      "name": "Jagdalpur Airport",
+      "latitude": 19.0743,
+      "longitude": 82.0368
+    },
+    {
+      "countryCode": "IN",
+      "region": "Chhattisgarh",
+      "iata": "PAB",
+      "icao": "VEBU",
+      "name": "Bilaspur Airport",
+      "latitude": 21.9884,
+      "longitude": 82.111
+    },
+    {
+      "countryCode": "IN",
+      "region": "Chhattisgarh",
+      "iata": "RPR",
+      "icao": "VARP",
+      "name": "Swami Vivekananda Airport",
+      "latitude": 21.1804,
+      "longitude": 81.7388
+    },
+    {
+      "countryCode": "IN",
+      "region": "Daman and Diu",
+      "iata": "DIU",
+      "icao": "",
+      "name": "Diu Airport",
+      "latitude": 20.7131,
+      "longitude": 70.9211
+    },
+    {
+      "countryCode": "IN",
+      "region": "Daman and Diu",
+      "iata": "NMB",
+      "icao": "VADN",
+      "name": "Daman Airport",
+      "latitude": 20.4344,
+      "longitude": 72.8432
+    },
+    {
+      "countryCode": "IN",
+      "region": "Delhi",
+      "iata": "DEL",
+      "icao": "VIDP",
+      "name": "Indira Gandhi International Airport",
+      "latitude": 28.5665,
+      "longitude": 77.1031
+    },
+    {
+      "countryCode": "IN",
+      "region": "Goa",
+      "iata": "GOI",
+      "icao": "VOGO",
+      "name": "Goa International Airport (Dabolim Airport)",
+      "latitude": 15.3808,
+      "longitude": 73.8314
+    },
+    {
+      "countryCode": "IN",
+      "region": "Goa",
+      "iata": "GOX",
+      "icao": "VOGA",
+      "name": "Manohar International Airport (Goa)",
+      "latitude": 15.7312,
+      "longitude": 73.8666
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "AMD",
+      "icao": "VAAH",
+      "name": "Sardar Vallabhbhai Patel International Airport",
+      "latitude": 23.0772,
+      "longitude": 72.6347
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "BDQ",
+      "icao": "VABO",
+      "name": "Vadodara Airport (Civil Airport Harni)",
+      "latitude": 22.3362,
+      "longitude": 73.2263
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "BHJ",
+      "icao": "VABJ",
+      "name": "Bhuj Airport / Bhuj Rudra Mata Air Force Base",
+      "latitude": 23.2878,
+      "longitude": 69.6702
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "BHU",
+      "icao": "VABV",
+      "name": "Bhavnagar Airport",
+      "latitude": 21.7522,
+      "longitude": 72.1852
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "HSR",
+      "icao": "VAHS",
+      "name": "Rajkot International Airport",
+      "latitude": 22.3813,
+      "longitude": 71.0319
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "IXK",
+      "icao": "VAKS",
+      "name": "Keshod Airport",
+      "latitude": 21.3171,
+      "longitude": 70.2704
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "IXY",
+      "icao": "VAKE",
+      "name": "Kandla Airport (Gandhidham Airport)",
+      "latitude": 23.1127,
+      "longitude": 70.1003
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "JGA",
+      "icao": "VAJM",
+      "name": "Jamnagar Airport (Govardhanpur Airport)",
+      "latitude": 22.4655,
+      "longitude": 70.0126
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "PBD",
+      "icao": "VAPR",
+      "name": "Porbandar Airport",
+      "latitude": 21.6487,
+      "longitude": 69.6572
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "RAJ",
+      "icao": "VARK",
+      "name": "Rajkot Airport",
+      "latitude": 22.3092,
+      "longitude": 70.7795
+    },
+    {
+      "countryCode": "IN",
+      "region": "Gujarat",
+      "iata": "STV",
+      "icao": "VASU",
+      "name": "Surat Airport",
+      "latitude": 21.1141,
+      "longitude": 72.7418
+    },
+    {
+      "countryCode": "IN",
+      "region": "Haryana",
+      "iata": "HSS",
+      "icao": "VIHR",
+      "name": "Hisar Airport",
+      "latitude": 29.1794,
+      "longitude": 75.7553
+    },
+    {
+      "countryCode": "IN",
+      "region": "Himachal Pradesh",
+      "iata": "DHM",
+      "icao": "VIGG",
+      "name": "Gaggal Airport",
+      "latitude": 32.1651,
+      "longitude": 76.2634
+    },
+    {
+      "countryCode": "IN",
+      "region": "Himachal Pradesh",
+      "iata": "KUU",
+      "icao": "VIBR",
+      "name": "Bhuntar Airport (Kullu Manali Airport)",
+      "latitude": 31.8767,
+      "longitude": 77.1544
+    },
+    {
+      "countryCode": "IN",
+      "region": "Himachal Pradesh",
+      "iata": "SLV",
+      "icao": "VISM",
+      "name": "Shimla Airport",
+      "latitude": 31.0818,
+      "longitude": 77.068
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jammu and Kashmir",
+      "iata": "IXJ",
+      "icao": "VIJU",
+      "name": "Jammu Airport (Satwari Airport)",
+      "latitude": 32.6891,
+      "longitude": 74.8374
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jammu and Kashmir",
+      "iata": "IXL",
+      "icao": "VILH",
+      "name": "Kushok Bakula Rimpochee Airport",
+      "latitude": 34.1359,
+      "longitude": 77.5465
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jammu and Kashmir",
+      "iata": "RJI",
+      "icao": "",
+      "name": "Rajauri Airport",
+      "latitude": 33.3779,
+      "longitude": 74.3152
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jammu and Kashmir",
+      "iata": "SXR",
+      "icao": "VISR",
+      "name": "Sheikh ul Alam International Airport",
+      "latitude": 33.9871,
+      "longitude": 74.7742
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jharkhand",
+      "iata": "DBD",
+      "icao": "VEDB",
+      "name": "Dhanbad Airport",
+      "latitude": 23.834,
+      "longitude": 86.4253
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jharkhand",
+      "iata": "DGH",
+      "icao": "VEDO",
+      "name": "Deoghar Airport",
+      "latitude": 24.4433,
+      "longitude": 86.7065
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jharkhand",
+      "iata": "IXR",
+      "icao": "VERC",
+      "name": "Birsa Munda Airport",
+      "latitude": 23.3143,
+      "longitude": 85.3217
+    },
+    {
+      "countryCode": "IN",
+      "region": "Jharkhand",
+      "iata": "IXW",
+      "icao": "VEJS",
+      "name": "Sonari Airport",
+      "latitude": 22.8132,
+      "longitude": 86.1688
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "BEP",
+      "icao": "VOBI",
+      "name": "Bellary Airport",
+      "latitude": 15.1628,
+      "longitude": 76.8828
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "BLR",
+      "icao": "VOBL",
+      "name": "Kempegowda International Airport",
+      "latitude": 13.1979,
+      "longitude": 77.7063
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "HBX",
+      "icao": "VAHB",
+      "name": "Hubli Airport",
+      "latitude": 15.3617,
+      "longitude": 75.0849
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "IXE",
+      "icao": "VOML",
+      "name": "Mangalore Airport",
+      "latitude": 12.9613,
+      "longitude": 74.8901
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "IXG",
+      "icao": "VABM",
+      "name": "Belgaum Airport",
+      "latitude": 15.8593,
+      "longitude": 74.6183
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "MYQ",
+      "icao": "VOMY",
+      "name": "Mysore Airport (Mandakalli Airport)",
+      "latitude": 12.23,
+      "longitude": 76.6558
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "RQY",
+      "icao": "",
+      "name": "Shivamogga Rashtrakavi Kuvempu Airport",
+      "latitude": 13.8577,
+      "longitude": 75.6054
+    },
+    {
+      "countryCode": "IN",
+      "region": "Karnataka",
+      "iata": "VDY",
+      "icao": "VOJV",
+      "name": "Vidyanagar Airport (Jindal Airport)",
+      "latitude": 15.175,
+      "longitude": 76.6349
+    },
+    {
+      "countryCode": "IN",
+      "region": "Kerala",
+      "iata": "CCJ",
+      "icao": "VOCL",
+      "name": "Calicut International Airport",
+      "latitude": 11.1368,
+      "longitude": 75.9553
+    },
+    {
+      "countryCode": "IN",
+      "region": "Kerala",
+      "iata": "CNN",
+      "icao": "VOKN",
+      "name": "Kannur International Airport",
+      "latitude": 11.9186,
+      "longitude": 75.5472
+    },
+    {
+      "countryCode": "IN",
+      "region": "Kerala",
+      "iata": "COK",
+      "icao": "VOCI",
+      "name": "Cochin International Airport (Nedumbassery Airport)",
+      "latitude": 10.152,
+      "longitude": 76.4019
+    },
+    {
+      "countryCode": "IN",
+      "region": "Kerala",
+      "iata": "TRV",
+      "icao": "VOTV",
+      "name": "Trivandrum International Airport",
+      "latitude": 8.48212,
+      "longitude": 76.9201
+    },
+    {
+      "countryCode": "IN",
+      "region": "Lakshadweep",
+      "iata": "AGX",
+      "icao": "VOAT",
+      "name": "Agatti Aerodrome",
+      "latitude": 10.8237,
+      "longitude": 72.176
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "BHO",
+      "icao": "VABP",
+      "name": "Raja Bhoj Airport",
+      "latitude": 23.2875,
+      "longitude": 77.3374
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "GUX",
+      "icao": "VAGN",
+      "name": "Guna Airport",
+      "latitude": 24.6547,
+      "longitude": 77.3473
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "GWL",
+      "icao": "VIGR",
+      "name": "Rajmata Vijaya Raje Scindia Airport (Gwalior Airport)",
+      "latitude": 26.2933,
+      "longitude": 78.2278
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "HJR",
+      "icao": "VAKJ",
+      "name": "Civil Aerodrome Khajuraho",
+      "latitude": 24.8172,
+      "longitude": 79.9186
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "IDR",
+      "icao": "VAID",
+      "name": "Devi Ahilyabai Holkar International Airport",
+      "latitude": 22.7218,
+      "longitude": 75.8011
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "JLR",
+      "icao": "VAJB",
+      "name": "Jabalpur Airport (Dumna Airport)",
+      "latitude": 23.1778,
+      "longitude": 80.052
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "REW",
+      "icao": "",
+      "name": "Churhata Airport",
+      "latitude": 24.5034,
+      "longitude": 81.2203
+    },
+    {
+      "countryCode": "IN",
+      "region": "Madhya Pradesh",
+      "iata": "TNI",
+      "icao": "VIST",
+      "name": "Satna Airport",
+      "latitude": 24.5623,
+      "longitude": 80.8549
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "AKD",
+      "icao": "VAAK",
+      "name": "Akola Airport",
+      "latitude": 20.699,
+      "longitude": 77.0586
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "BOM",
+      "icao": "VABB",
+      "name": "Chhatrapati Shivaji International Airport",
+      "latitude": 19.0887,
+      "longitude": 72.8679
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "GDB",
+      "icao": "",
+      "name": "Birsi Gondia Airport",
+      "latitude": 21.522,
+      "longitude": 80.2907
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "ISK",
+      "icao": "VAOZ",
+      "name": "Nashik Airport",
+      "latitude": 20.1191,
+      "longitude": 73.9129
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "IXU",
+      "icao": "VAAU",
+      "name": "Aurangabad Airport (Chikkalthana Airport)",
+      "latitude": 19.8627,
+      "longitude": 75.3981
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "JLG",
+      "icao": "VAJL",
+      "name": "Jalgaon Airport",
+      "latitude": 20.9614,
+      "longitude": 75.6192
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "KLH",
+      "icao": "VAKP",
+      "name": "Kolhapur Airport",
+      "latitude": 16.6647,
+      "longitude": 74.2894
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "LTU",
+      "icao": "VALT",
+      "name": "Latur Airport",
+      "latitude": 18.4115,
+      "longitude": 76.4647
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "NAG",
+      "icao": "VANP",
+      "name": "Dr. Babasaheb Ambedkar International Airport",
+      "latitude": 21.0922,
+      "longitude": 79.0472
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "NDC",
+      "icao": "VAND",
+      "name": "Shri Guru Gobind Singh Ji Airport",
+      "latitude": 19.1833,
+      "longitude": 77.3167
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "PNQ",
+      "icao": "VAPO",
+      "name": "Pune Airport",
+      "latitude": 18.5821,
+      "longitude": 73.9197
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "RTC",
+      "icao": "VARG",
+      "name": "Ratnagiri Airport",
+      "latitude": 17.0136,
+      "longitude": 73.3278
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "SAG",
+      "icao": "",
+      "name": "Shirdi Airport",
+      "latitude": 19.6886,
+      "longitude": 74.3789
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "SDW",
+      "icao": "",
+      "name": "Sindhudurg Airport",
+      "latitude": 15.9989,
+      "longitude": 73.5342
+    },
+    {
+      "countryCode": "IN",
+      "region": "Maharashtra",
+      "iata": "SSE",
+      "icao": "VASL",
+      "name": "Solapur Airport",
+      "latitude": 17.628,
+      "longitude": 75.9348
+    },
+    {
+      "countryCode": "IN",
+      "region": "Manipur",
+      "iata": "IMF",
+      "icao": "VEIM",
+      "name": "Imphal International Airport (Tulihal Airport)",
+      "latitude": 24.76,
+      "longitude": 93.8967
+    },
+    {
+      "countryCode": "IN",
+      "region": "Meghalaya",
+      "iata": "SHL",
+      "icao": "VEBI",
+      "name": "Shillong Airport (Barapani Airport)",
+      "latitude": 25.7036,
+      "longitude": 91.9787
+    },
+    {
+      "countryCode": "IN",
+      "region": "Mizoram",
+      "iata": "AJL",
+      "icao": "VELP",
+      "name": "Lengpui Airport",
+      "latitude": 23.8406,
+      "longitude": 92.6197
+    },
+    {
+      "countryCode": "IN",
+      "region": "Nagaland",
+      "iata": "DMU",
+      "icao": "VEMR",
+      "name": "Dimapur Airport",
+      "latitude": 25.8839,
+      "longitude": 93.7711
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "BBI",
+      "icao": "VEBS",
+      "name": "Biju Patnaik International Airport",
+      "latitude": 20.2444,
+      "longitude": 85.8178
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "JRG",
+      "icao": "VEJH",
+      "name": "Veer Surendra Sai Jharsuguda Airport",
+      "latitude": 21.9159,
+      "longitude": 84.0464
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "JSA",
+      "icao": "VIJR",
+      "name": "Jaisalmer Airport",
+      "latitude": 26.8887,
+      "longitude": 70.865
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "PYB",
+      "icao": "VEJP",
+      "name": "Jeypore Airport",
+      "latitude": 18.88,
+      "longitude": 82.552
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "RRK",
+      "icao": "VERK",
+      "name": "Rourkela Airport",
+      "latitude": 22.2567,
+      "longitude": 84.8146
+    },
+    {
+      "countryCode": "IN",
+      "region": "Odisha",
+      "iata": "UKE",
+      "icao": "VEUK",
+      "name": "Utkela Airport",
+      "latitude": 20.0976,
+      "longitude": 83.1829
+    },
+    {
+      "countryCode": "IN",
+      "region": "Puducherry",
+      "iata": "PNY",
+      "icao": "VOPC",
+      "name": "Puducherry Airport",
+      "latitude": 11.968,
+      "longitude": 79.812
+    },
+    {
+      "countryCode": "IN",
+      "region": "Punjab",
+      "iata": "AIP",
+      "icao": "VIAX",
+      "name": "Adampur Airport",
+      "latitude": 31.4331,
+      "longitude": 75.7606
+    },
+    {
+      "countryCode": "IN",
+      "region": "Punjab",
+      "iata": "ATQ",
+      "icao": "VIAR",
+      "name": "Sri Guru Ram Dass Jee International Airport",
+      "latitude": 31.7096,
+      "longitude": 74.7973
+    },
+    {
+      "countryCode": "IN",
+      "region": "Punjab",
+      "iata": "BUP",
+      "icao": "VIBT",
+      "name": "Bathinda Airport (Bhisiana Air Force Station)",
+      "latitude": 30.2701,
+      "longitude": 74.7558
+    },
+    {
+      "countryCode": "IN",
+      "region": "Punjab",
+      "iata": "IXP",
+      "icao": "VIPK",
+      "name": "Pathankot Airport",
+      "latitude": 32.2336,
+      "longitude": 75.6344
+    },
+    {
+      "countryCode": "IN",
+      "region": "Punjab",
+      "iata": "LUH",
+      "icao": "VILD",
+      "name": "Sahnewal Airport (Ludhiana Airport)",
+      "latitude": 30.8547,
+      "longitude": 75.9526
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "BKB",
+      "icao": "VIBK",
+      "name": "Nal Airport",
+      "latitude": 28.0706,
+      "longitude": 73.2072
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "JAI",
+      "icao": "VIJP",
+      "name": "Jaipur International Airport",
+      "latitude": 26.8242,
+      "longitude": 75.8122
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "JDH",
+      "icao": "VIJO",
+      "name": "Jodhpur Airport",
+      "latitude": 26.2511,
+      "longitude": 73.0489
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "KQH",
+      "icao": "VIKG",
+      "name": "Ajmer Kishangarh Airport",
+      "latitude": 26.6015,
+      "longitude": 74.8141
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "KTU",
+      "icao": "VIKO",
+      "name": "Kota Airport",
+      "latitude": 25.1602,
+      "longitude": 75.8456
+    },
+    {
+      "countryCode": "IN",
+      "region": "Rajasthan",
+      "iata": "UDR",
+      "icao": "VAUD",
+      "name": "Maharana Pratap Airport",
+      "latitude": 24.6177,
+      "longitude": 73.8961
+    },
+    {
+      "countryCode": "IN",
+      "region": "Sikkim",
+      "iata": "PYG",
+      "icao": "",
+      "name": "Pakyong Airport",
+      "latitude": 27.2266,
+      "longitude": 88.5875
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "CJB",
+      "icao": "VOCB",
+      "name": "Coimbatore International Airport",
+      "latitude": 11.03,
+      "longitude": 77.0434
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "IXM",
+      "icao": "VOMD",
+      "name": "Madurai Airport",
+      "latitude": 9.83451,
+      "longitude": 78.0934
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "MAA",
+      "icao": "VOMM",
+      "name": "Chennai International Airport",
+      "latitude": 12.99,
+      "longitude": 80.1693
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "NVY",
+      "icao": "VONV",
+      "name": "Neyveli Airport",
+      "latitude": 11.613,
+      "longitude": 79.5274
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "SXV",
+      "icao": "VOSM",
+      "name": "Salem Airport",
+      "latitude": 11.7833,
+      "longitude": 78.0656
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "TCR",
+      "icao": "VOTK",
+      "name": "Tuticorin Airport",
+      "latitude": 8.72424,
+      "longitude": 78.0258
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "TJV",
+      "icao": "VOTJ",
+      "name": "Thanjavur Air Force Station",
+      "latitude": 10.7224,
+      "longitude": 79.1016
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tamil Nadu",
+      "iata": "TRZ",
+      "icao": "VOTR",
+      "name": "Tiruchirappalli International Airport",
+      "latitude": 10.7654,
+      "longitude": 78.7097
+    },
+    {
+      "countryCode": "IN",
+      "region": "Telangana",
+      "iata": "BPM",
+      "icao": "VOHY",
+      "name": "Begumpet Airport",
+      "latitude": 17.4531,
+      "longitude": 78.4676
+    },
+    {
+      "countryCode": "IN",
+      "region": "Telangana",
+      "iata": "HYD",
+      "icao": "VOHS",
+      "name": "Rajiv Gandhi International Airport",
+      "latitude": 17.2313,
+      "longitude": 78.4299
+    },
+    {
+      "countryCode": "IN",
+      "region": "Telangana",
+      "iata": "RMD",
+      "icao": "VORG",
+      "name": "Ramagundam Airport (Basanth Nagar Airport)",
+      "latitude": 18.701,
+      "longitude": 79.3923
+    },
+    {
+      "countryCode": "IN",
+      "region": "Telangana",
+      "iata": "WGC",
+      "icao": "VOWA",
+      "name": "Warangal Airport",
+      "latitude": 17.9144,
+      "longitude": 79.6022
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tripura",
+      "iata": "IXA",
+      "icao": "VEAT",
+      "name": "Agartala Airport (Singerbhil Airport)",
+      "latitude": 23.887,
+      "longitude": 91.2404
+    },
+    {
+      "countryCode": "IN",
+      "region": "Tripura",
+      "iata": "IXH",
+      "icao": "VEKR",
+      "name": "Kailashahar Airport",
+      "latitude": 24.3082,
+      "longitude": 92.0072
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "AGR",
+      "icao": "VIAG",
+      "name": "Agra Airport",
+      "latitude": 27.1558,
+      "longitude": 77.9609
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "AYJ",
+      "icao": "",
+      "name": "Ayodhya Faizabad Airport",
+      "latitude": 26.7474,
+      "longitude": 82.1505
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "AZH",
+      "icao": "",
+      "name": "Azamgarh Airport",
+      "latitude": 26.1615,
+      "longitude": 83.112
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "CWK",
+      "icao": "",
+      "name": "Chitrakoot Airport",
+      "latitude": 25.169,
+      "longitude": 80.9362
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "GOP",
+      "icao": "VEGK",
+      "name": "Gorakhpur Airport",
+      "latitude": 26.7397,
+      "longitude": 83.4497
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "HDO",
+      "icao": "VIDX",
+      "name": "Ghaziabad Hindon Airport",
+      "latitude": 28.705,
+      "longitude": 77.342
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "HRH",
+      "icao": "",
+      "name": "Aligarh Airport",
+      "latitude": 27.8588,
+      "longitude": 78.1486
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "IXD",
+      "icao": "VIAL",
+      "name": "Allahabad Airport (Bamrauli Air Force Base)",
+      "latitude": 25.4401,
+      "longitude": 81.7339
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "KNU",
+      "icao": "VIKA",
+      "name": "Kanpur Airport (Chakeri Air Force Station)",
+      "latitude": 26.4043,
+      "longitude": 80.4101
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "LKO",
+      "icao": "VILK",
+      "name": "Chaudhary Charan Singh International Airport",
+      "latitude": 26.7606,
+      "longitude": 80.8893
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "VNS",
+      "icao": "VEBN",
+      "name": "Lal Bahadur Shastri Airport",
+      "latitude": 25.4524,
+      "longitude": 82.8593
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttar Pradesh",
+      "iata": "VSV",
+      "icao": "",
+      "name": "Shravasti Airport",
+      "latitude": 27.5023,
+      "longitude": 82.0265
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttarakhand",
+      "iata": "DED",
+      "icao": "VIDN",
+      "name": "Jolly Grant Airport",
+      "latitude": 30.1897,
+      "longitude": 78.1803
+    },
+    {
+      "countryCode": "IN",
+      "region": "Uttarakhand",
+      "iata": "PGH",
+      "icao": "VIPT",
+      "name": "Pantnagar Airport",
+      "latitude": 29.0334,
+      "longitude": 79.4737
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "CCU",
+      "icao": "VECC",
+      "name": "Netaji Subhas Chandra Bose International Airport",
+      "latitude": 22.6547,
+      "longitude": 88.4467
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "COH",
+      "icao": "VECO",
+      "name": "Cooch Behar Airport",
+      "latitude": 26.3305,
+      "longitude": 89.4672
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "IXB",
+      "icao": "VEBD",
+      "name": "Bagdogra Airport",
+      "latitude": 26.6812,
+      "longitude": 88.3286
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "LDA",
+      "icao": "VEMH",
+      "name": "Malda Airport",
+      "latitude": 25.033,
+      "longitude": 88.133
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "RDP",
+      "icao": "VEDG",
+      "name": "Kazi Nazrul Islam Airport",
+      "latitude": 23.6225,
+      "longitude": 87.243
+    },
+    {
+      "countryCode": "IN",
+      "region": "West Bengal",
+      "iata": "RGH",
+      "icao": "VEBG",
+      "name": "Balurghat Airport",
+      "latitude": 25.2617,
+      "longitude": 88.7956
+    }
+  ]
 }

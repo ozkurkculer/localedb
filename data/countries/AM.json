@@ -233,5 +233,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AM",
+      "region": "Erevan",
+      "iata": "EVN",
+      "icao": "UDYZ",
+      "name": "Zvartnots International Airport",
+      "latitude": 40.1473,
+      "longitude": 44.3959
+    },
+    {
+      "countryCode": "AM",
+      "region": "Sirak",
+      "iata": "LWN",
+      "icao": "UDSG",
+      "name": "Gyumri Shirak Airport",
+      "latitude": 40.7504,
+      "longitude": 43.8593
+    }
+  ]
 }

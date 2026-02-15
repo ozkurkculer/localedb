@@ -233,5 +233,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SI",
+      "region": "Cerklje na Gorenjskem",
+      "iata": "LJU",
+      "icao": "LJLJ",
+      "name": "Ljubljana Joze Pucnik Airport (Brnik Airport)",
+      "latitude": 46.2237,
+      "longitude": 14.4576
+    },
+    {
+      "countryCode": "SI",
+      "region": "Hoce-Slivnica",
+      "iata": "MBX",
+      "icao": "LJMB",
+      "name": "Maribor Edvard Rusjan Airport",
+      "latitude": 46.4799,
+      "longitude": 15.6861
+    },
+    {
+      "countryCode": "SI",
+      "region": "Piran",
+      "iata": "POW",
+      "icao": "LJPZ",
+      "name": "Portoroz Airport",
+      "latitude": 45.4734,
+      "longitude": 13.615
+    }
+  ]
 }

@@ -232,5 +232,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GH",
+      "region": "Ashanti",
+      "iata": "KMS",
+      "icao": "DGSI",
+      "name": "Kumasi Airport",
+      "latitude": 6.71456,
+      "longitude": -1.59082
+    },
+    {
+      "countryCode": "GH",
+      "region": "Brong-Ahafo",
+      "iata": "NYI",
+      "icao": "DGSN",
+      "name": "Sunyani Airport",
+      "latitude": 7.36183,
+      "longitude": -2.32876
+    },
+    {
+      "countryCode": "GH",
+      "region": "Greater Accra",
+      "iata": "ACC",
+      "icao": "DGAA",
+      "name": "Kotoka International Airport",
+      "latitude": 5.60519,
+      "longitude": -0.166786
+    },
+    {
+      "countryCode": "GH",
+      "region": "Northern",
+      "iata": "TML",
+      "icao": "DGLE",
+      "name": "Tamale Airport",
+      "latitude": 9.55719,
+      "longitude": -0.863214
+    },
+    {
+      "countryCode": "GH",
+      "region": "Upper West",
+      "iata": "WZA",
+      "icao": "DGLW",
+      "name": "Wa Airport",
+      "latitude": 10.0795,
+      "longitude": -2.5109
+    },
+    {
+      "countryCode": "GH",
+      "region": "Western",
+      "iata": "TKD",
+      "icao": "DGTK",
+      "name": "Takoradi Airport",
+      "latitude": 4.89606,
+      "longitude": -1.77476
+    }
+  ]
 }

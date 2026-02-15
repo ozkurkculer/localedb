@@ -243,5 +243,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CZ",
+      "region": "Jihocesky kraj",
+      "iata": "JCL",
+      "icao": "LKCS",
+      "name": "Ceske Budejovice Airport (Plana Airport)",
+      "latitude": 48.9464,
+      "longitude": 14.4275
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Jihomoravsky kraj",
+      "iata": "BRQ",
+      "icao": "LKTB",
+      "name": "Brno-Turany Airport",
+      "latitude": 49.1513,
+      "longitude": 16.6944
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Karlovarsky kraj",
+      "iata": "KLV",
+      "icao": "LKKV",
+      "name": "Karlovy Vary Airport",
+      "latitude": 50.203,
+      "longitude": 12.915
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Karlovarsky kraj",
+      "iata": "MKA",
+      "icao": "LKMR",
+      "name": "Marianske Lazne Airport",
+      "latitude": 49.9228,
+      "longitude": 12.7247
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Moravskoslezsky kraj",
+      "iata": "OSR",
+      "icao": "LKMT",
+      "name": "Leos Janacek Airport",
+      "latitude": 49.6963,
+      "longitude": 18.1111
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Moravskoslezsky kraj",
+      "iata": "ZBE",
+      "icao": "LKZA",
+      "name": "Zabreh Airport",
+      "latitude": 49.9283,
+      "longitude": 18.0783
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Olomoucky kraj",
+      "iata": "OLO",
+      "icao": "LKOL",
+      "name": "Olomouc Airport (Neredin Airport)",
+      "latitude": 49.5878,
+      "longitude": 17.2108
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Olomoucky kraj",
+      "iata": "PRV",
+      "icao": "LKPO",
+      "name": "Prerov Airport",
+      "latitude": 49.4258,
+      "longitude": 17.4047
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Pardubicky kraj",
+      "iata": "PED",
+      "icao": "LKPD",
+      "name": "Pardubice Airport",
+      "latitude": 50.0134,
+      "longitude": 15.7386
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Stredocesky kraj",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "name": "Vaclav Havel Airport Prague",
+      "latitude": 50.1008,
+      "longitude": 14.26
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Stredocesky kraj",
+      "iata": "VOD",
+      "icao": "LKVO",
+      "name": "Vodochody Airport",
+      "latitude": 50.2166,
+      "longitude": 14.3958
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Zlinsky kraj",
+      "iata": "GTW",
+      "icao": "LKHO",
+      "name": "Holesov Airport",
+      "latitude": 49.3144,
+      "longitude": 17.5689
+    },
+    {
+      "countryCode": "CZ",
+      "region": "Zlinsky kraj",
+      "iata": "UHE",
+      "icao": "LKKU",
+      "name": "Kunovice Airport",
+      "latitude": 49.0294,
+      "longitude": 17.4397
+    }
+  ]
 }

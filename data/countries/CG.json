@@ -244,5 +244,241 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CG",
+      "region": "Bouenza",
+      "iata": "MUY",
+      "icao": "FCBM",
+      "name": "Mouyondzi Airport",
+      "latitude": -4.01487,
+      "longitude": 13.9661
+    },
+    {
+      "countryCode": "CG",
+      "region": "Bouenza",
+      "iata": "NKY",
+      "icao": "FCBY",
+      "name": "Yokangassi Airport",
+      "latitude": -4.22308,
+      "longitude": 13.2863
+    },
+    {
+      "countryCode": "CG",
+      "region": "Brazzaville",
+      "iata": "ANJ",
+      "icao": "FCBZ",
+      "name": "Zanaga Airport",
+      "latitude": -2.85,
+      "longitude": 13.817
+    },
+    {
+      "countryCode": "CG",
+      "region": "Brazzaville",
+      "iata": "BZV",
+      "icao": "FCBB",
+      "name": "Maya-Maya Airport",
+      "latitude": -4.2517,
+      "longitude": 15.253
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette",
+      "iata": "BOE",
+      "icao": "FCOB",
+      "name": "Boundji Airport",
+      "latitude": -1.033,
+      "longitude": 15.383
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette",
+      "iata": "FTX",
+      "icao": "FCOO",
+      "name": "Owando Airport",
+      "latitude": -0.53135,
+      "longitude": 15.9501
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette",
+      "iata": "MKJ",
+      "icao": "FCOM",
+      "name": "Makoua Airport",
+      "latitude": -0.017,
+      "longitude": 15.583
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette",
+      "iata": "OKG",
+      "icao": "",
+      "name": "Okoyo Airport",
+      "latitude": -1.44833,
+      "longitude": 15.0733
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette",
+      "iata": "OLL",
+      "icao": "",
+      "name": "Oyo Ollombo Airport",
+      "latitude": -1.22667,
+      "longitude": 15.91
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette-Ouest",
+      "iata": "EWO",
+      "icao": "FCOE",
+      "name": "Ewo Airport",
+      "latitude": -0.883,
+      "longitude": 14.8
+    },
+    {
+      "countryCode": "CG",
+      "region": "Cuvette-Ouest",
+      "iata": "KEE",
+      "icao": "FCOK",
+      "name": "Kelle Airport",
+      "latitude": -0.083,
+      "longitude": 14.533
+    },
+    {
+      "countryCode": "CG",
+      "region": "Lekoumou",
+      "iata": "SIB",
+      "icao": "FCBS",
+      "name": "Sibiti Airport",
+      "latitude": -3.683,
+      "longitude": 13.35
+    },
+    {
+      "countryCode": "CG",
+      "region": "Likouala",
+      "iata": "BTB",
+      "icao": "FCOT",
+      "name": "Betou Airport",
+      "latitude": 3.05,
+      "longitude": 18.5
+    },
+    {
+      "countryCode": "CG",
+      "region": "Likouala",
+      "iata": "ION",
+      "icao": "FCOI",
+      "name": "Impfondo Airport",
+      "latitude": 1.617,
+      "longitude": 18.067
+    },
+    {
+      "countryCode": "CG",
+      "region": "Niari",
+      "iata": "DIS",
+      "icao": "FCPL",
+      "name": "Dolisie Airport",
+      "latitude": -4.20635,
+      "longitude": 12.6599
+    },
+    {
+      "countryCode": "CG",
+      "region": "Niari",
+      "iata": "KMK",
+      "icao": "FCPA",
+      "name": "Makabana Airport",
+      "latitude": -3.483,
+      "longitude": 12.617
+    },
+    {
+      "countryCode": "CG",
+      "region": "Niari",
+      "iata": "MSX",
+      "icao": "FCMM",
+      "name": "Mossendjo Airport",
+      "latitude": -2.95,
+      "longitude": 12.7
+    },
+    {
+      "countryCode": "CG",
+      "region": "Plateaux",
+      "iata": "DJM",
+      "icao": "FCBD",
+      "name": "Djambala Airport",
+      "latitude": -2.533,
+      "longitude": 14.75
+    },
+    {
+      "countryCode": "CG",
+      "region": "Plateaux",
+      "iata": "GMM",
+      "icao": "FCOG",
+      "name": "Gamboma Airport",
+      "latitude": -1.8294,
+      "longitude": 15.8852
+    },
+    {
+      "countryCode": "CG",
+      "region": "Plateaux",
+      "iata": "LCO",
+      "icao": "FCBL",
+      "name": "Lague Airport",
+      "latitude": -2.45,
+      "longitude": 14.533
+    },
+    {
+      "countryCode": "CG",
+      "region": "Plateaux",
+      "iata": "LKC",
+      "icao": "",
+      "name": "Lekana Airport",
+      "latitude": -2.313,
+      "longitude": 14.606
+    },
+    {
+      "countryCode": "CG",
+      "region": "Pointe-Noire",
+      "iata": "PNR",
+      "icao": "FCPP",
+      "name": "Pointe Noire Airport",
+      "latitude": -4.81603,
+      "longitude": 11.8866
+    },
+    {
+      "countryCode": "CG",
+      "region": "Pool",
+      "iata": "KNJ",
+      "icao": "FCBK",
+      "name": "Kindamba Airport",
+      "latitude": -3.95,
+      "longitude": 14.517
+    },
+    {
+      "countryCode": "CG",
+      "region": "Sangha",
+      "iata": "EPN",
+      "icao": "",
+      "name": "Epena Airport",
+      "latitude": 1.36667,
+      "longitude": 17.4833
+    },
+    {
+      "countryCode": "CG",
+      "region": "Sangha",
+      "iata": "OUE",
+      "icao": "FCOU",
+      "name": "Ouesso Airport",
+      "latitude": 1.61599,
+      "longitude": 16.0379
+    },
+    {
+      "countryCode": "CG",
+      "region": "Sangha",
+      "iata": "SOE",
+      "icao": "FCOS",
+      "name": "Souanke Airport",
+      "latitude": 2.067,
+      "longitude": 14.133
+    }
+  ]
 }

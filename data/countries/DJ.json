@@ -242,5 +242,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DJ",
+      "region": "Ali Sabieh",
+      "iata": "AII",
+      "icao": "HDAS",
+      "name": "Ali-Sabieh Airport",
+      "latitude": 11.1469,
+      "longitude": 42.72
+    },
+    {
+      "countryCode": "DJ",
+      "region": "Djibouti",
+      "iata": "JIB",
+      "icao": "HDAM",
+      "name": "Djibouti-Ambouli International Airport",
+      "latitude": 11.5473,
+      "longitude": 43.1595
+    },
+    {
+      "countryCode": "DJ",
+      "region": "Obock",
+      "iata": "OBC",
+      "icao": "HDOB",
+      "name": "Obock Airport",
+      "latitude": 11.967,
+      "longitude": 43.267
+    },
+    {
+      "countryCode": "DJ",
+      "region": "Tadjourah",
+      "iata": "MHI",
+      "icao": "HDMO",
+      "name": "Moucha Airport",
+      "latitude": 11.7167,
+      "longitude": 43.2
+    },
+    {
+      "countryCode": "DJ",
+      "region": "Tadjourah",
+      "iata": "TDJ",
+      "icao": "HDTJ",
+      "name": "Tadjoura Airport",
+      "latitude": 11.783,
+      "longitude": 42.917
+    }
+  ]
 }

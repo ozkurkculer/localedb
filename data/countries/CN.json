@@ -249,5 +249,2518 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "AQG",
+      "icao": "ZSAQ",
+      "name": "Anqing Tianzhushan Airport",
+      "latitude": 30.5822,
+      "longitude": 117.05
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "BFU",
+      "icao": "ZSBB",
+      "name": "Bengbu Airport",
+      "latitude": 32.8477,
+      "longitude": 117.32
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "FUG",
+      "icao": "ZSFY",
+      "name": "Fuyang Xiguan Airport",
+      "latitude": 32.8822,
+      "longitude": 115.734
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "HFE",
+      "icao": "ZSOF",
+      "name": "Hefei Xinqiao International Airport",
+      "latitude": 31.78,
+      "longitude": 117.298
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "JUH",
+      "icao": "",
+      "name": "Chizhou Jiuhuashan Airport",
+      "latitude": 30.7403,
+      "longitude": 117.686
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "TXN",
+      "icao": "ZSTX",
+      "name": "Huangshan Tunxi International Airport",
+      "latitude": 29.7333,
+      "longitude": 118.256
+    },
+    {
+      "countryCode": "CN",
+      "region": "Anhui",
+      "iata": "WHA",
+      "icao": "ZSWA",
+      "name": "Wuhu Airport",
+      "latitude": 31.3906,
+      "longitude": 118.409
+    },
+    {
+      "countryCode": "CN",
+      "region": "Beijing",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "name": "Beijing Capital International Airport",
+      "latitude": 40.0725,
+      "longitude": 116.598
+    },
+    {
+      "countryCode": "CN",
+      "region": "Beijing",
+      "iata": "PKX",
+      "icao": "ZBAD",
+      "name": "Daxing International Airport",
+      "latitude": 39.5101,
+      "longitude": 116.4101
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing Shi",
+      "iata": "CQW",
+      "icao": "ZUWL",
+      "name": "Chongqing Xiannyushan Airport",
+      "latitude": 29.4658,
+      "longitude": 107.692
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing Shi",
+      "iata": "WSK",
+      "icao": "ZUWS",
+      "name": "Chongqing Wushan Airport",
+      "latitude": 31.064,
+      "longitude": 109.706
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing",
+      "iata": "CKG",
+      "icao": "ZUCK",
+      "name": "Chongqing Jiangbei International Airport",
+      "latitude": 29.7192,
+      "longitude": 106.642
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing",
+      "iata": "DZU",
+      "icao": "ZUDZ",
+      "name": "Dazu Air Base",
+      "latitude": 29.6362,
+      "longitude": 105.774
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing",
+      "iata": "JIQ",
+      "icao": "ZUQJ",
+      "name": "Qianjiang Wulingshan Airport",
+      "latitude": 29.5133,
+      "longitude": 108.831
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing",
+      "iata": "LIA",
+      "icao": "ZULP",
+      "name": "Liangping Airport",
+      "latitude": 30.6794,
+      "longitude": 107.786
+    },
+    {
+      "countryCode": "CN",
+      "region": "Chongqing",
+      "iata": "WXN",
+      "icao": "ZUWX",
+      "name": "Wanzhou Wuqiao Airport",
+      "latitude": 30.8017,
+      "longitude": 108.433
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "FOC",
+      "icao": "ZSFZ",
+      "name": "Fuzhou Changle International Airport",
+      "latitude": 25.9351,
+      "longitude": 119.663
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "JJN",
+      "icao": "ZSQZ",
+      "name": "Quanzhou Jinjiang International Airport",
+      "latitude": 24.7964,
+      "longitude": 118.59
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "LCX",
+      "icao": "ZSLO",
+      "name": "Longyan Guanzhishan Airport",
+      "latitude": 25.6747,
+      "longitude": 116.747
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "SQJ",
+      "icao": "ZSSM",
+      "name": "Sanming Shaxian Airport",
+      "latitude": 26.4263,
+      "longitude": 117.834
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "WUS",
+      "icao": "ZSWY",
+      "name": "Wuyishan Airport",
+      "latitude": 27.7019,
+      "longitude": 118.001
+    },
+    {
+      "countryCode": "CN",
+      "region": "Fujian",
+      "iata": "XMN",
+      "icao": "ZSAM",
+      "name": "Xiamen Gaoqi International Airport",
+      "latitude": 24.544,
+      "longitude": 118.128
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "DNH",
+      "icao": "ZLDH",
+      "name": "Dunhuang Airport",
+      "latitude": 40.1611,
+      "longitude": 94.8092
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "GXH",
+      "icao": "ZLXH",
+      "name": "Gannan Xiahe Airport",
+      "latitude": 34.8105,
+      "longitude": 102.645
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "IQN",
+      "icao": "ZLQY",
+      "name": "Qingyang Airport",
+      "latitude": 35.7997,
+      "longitude": 107.603
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "JGN",
+      "icao": "ZLJQ",
+      "name": "Jiayuguan Airport",
+      "latitude": 39.8569,
+      "longitude": 98.3414
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "JIC",
+      "icao": "ZLJC",
+      "name": "Jinchang Jinchuan Airport",
+      "latitude": 38.5422,
+      "longitude": 102.348
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "LHW",
+      "icao": "ZLLL",
+      "name": "Lanzhou Zhongchuan International Airport",
+      "latitude": 36.5152,
+      "longitude": 103.62
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "LNL",
+      "icao": "ZLLN",
+      "name": "Longnan Chengzhou Airport",
+      "latitude": 33.788,
+      "longitude": 105.797
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "THQ",
+      "icao": "ZLTS",
+      "name": "Tianshui Maijishan Airport",
+      "latitude": 34.5594,
+      "longitude": 105.86
+    },
+    {
+      "countryCode": "CN",
+      "region": "Gansu",
+      "iata": "YZY",
+      "icao": "ZLZY",
+      "name": "Zhangye Ganzhou Airport",
+      "latitude": 38.8019,
+      "longitude": 100.675
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "name": "Guangzhou Baiyun International Airport",
+      "latitude": 23.3924,
+      "longitude": 113.299
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "FUO",
+      "icao": "ZGFS",
+      "name": "Foshan Shadi Airport",
+      "latitude": 23.0833,
+      "longitude": 113.07
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "HSC",
+      "icao": "",
+      "name": "Shaoguan Guitou Airport",
+      "latitude": 24.9786,
+      "longitude": 113.421
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "HUZ",
+      "icao": "ZGHZ",
+      "name": "Huizhou Pingtan Airport",
+      "latitude": 23.05,
+      "longitude": 114.6
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "MXZ",
+      "icao": "ZGMX",
+      "name": "Meixian Airport",
+      "latitude": 24.35,
+      "longitude": 116.133
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "SWA",
+      "icao": "ZGOW",
+      "name": "Jieyang Chaoshan International Airport",
+      "latitude": 23.552,
+      "longitude": 116.503
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "SZX",
+      "icao": "ZGSZ",
+      "name": "Shenzhen Bao'an International Airport",
+      "latitude": 22.6393,
+      "longitude": 113.811
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "XIN",
+      "icao": "ZGXN",
+      "name": "Xingning Air Base",
+      "latitude": 24.1492,
+      "longitude": 115.758
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "ZHA",
+      "icao": "ZGZJ",
+      "name": "Zhanjiang Airport",
+      "latitude": 21.2144,
+      "longitude": 110.358
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangdong",
+      "iata": "ZUH",
+      "icao": "ZGSD",
+      "name": "Zhuhai Jinwan Airport (Zhuhai Sanzao Airport)",
+      "latitude": 22.0064,
+      "longitude": 113.376
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "AEB",
+      "icao": "ZGBS",
+      "name": "Baise Bama Airport",
+      "latitude": 23.7206,
+      "longitude": 106.96
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "name": "Beihai Fucheng Airport",
+      "latitude": 21.5394,
+      "longitude": 109.294
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "HCJ",
+      "icao": "ZGHC",
+      "name": "Hechi Jinchengjiang Airport",
+      "latitude": 24.805,
+      "longitude": 107.7
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "KWL",
+      "icao": "ZGKL",
+      "name": "Guilin Liangjiang International Airport",
+      "latitude": 25.2181,
+      "longitude": 110.039
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "LZH",
+      "icao": "ZGZH",
+      "name": "Liuzhou Bailian Airport",
+      "latitude": 24.2075,
+      "longitude": 109.391
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "NNG",
+      "icao": "ZGNN",
+      "name": "Nanning Wuxu International Airport",
+      "latitude": 22.6083,
+      "longitude": 108.172
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "WUZ",
+      "icao": "ZGWZ",
+      "name": "Wuzhou Xijiang Airport",
+      "latitude": 23.4567,
+      "longitude": 111.248
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guangxi",
+      "iata": "YLX",
+      "icao": "",
+      "name": "Yulin Fumian Airport",
+      "latitude": 22.4382,
+      "longitude": 110.1187
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "ACX",
+      "icao": "ZUYI",
+      "name": "Xingyi Wanfenglin Airport",
+      "latitude": 25.0864,
+      "longitude": 104.959
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "AVA",
+      "icao": "ZUAS",
+      "name": "Anshun Huangguoshu Airport",
+      "latitude": 26.2606,
+      "longitude": 105.873
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "BFJ",
+      "icao": "ZUBJ",
+      "name": "Bijie Feixiong Airport",
+      "latitude": 27.2671,
+      "longitude": 105.472
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "HZH",
+      "icao": "ZUNP",
+      "name": "Liping Airport",
+      "latitude": 26.3222,
+      "longitude": 109.15
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "KJH",
+      "icao": "",
+      "name": "Kaili Huangping Airport",
+      "latitude": 26.972,
+      "longitude": 107.988
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "KWE",
+      "icao": "ZUGY",
+      "name": "Guiyang Longdongbao International Airport",
+      "latitude": 26.5385,
+      "longitude": 106.801
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "LLB",
+      "icao": "ZULB",
+      "name": "Libo Airport (Qiannan Airport)",
+      "latitude": 25.4525,
+      "longitude": 107.962
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "LPF",
+      "icao": "ZUPS",
+      "name": "Liupanshui Yuezhao Airport",
+      "latitude": 26.6094,
+      "longitude": 104.979
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "TEN",
+      "icao": "ZUTR",
+      "name": "Tongren Fenghuang Airport",
+      "latitude": 27.8833,
+      "longitude": 109.309
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "WMT",
+      "icao": "ZUMT",
+      "name": "Zunyi Maotai Airport",
+      "latitude": 27.8164,
+      "longitude": 106.333
+    },
+    {
+      "countryCode": "CN",
+      "region": "Guizhou",
+      "iata": "ZYI",
+      "icao": "ZUZY",
+      "name": "Zunyi Xinzhou Airport",
+      "latitude": 27.5895,
+      "longitude": 107.001
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hainan",
+      "iata": "BAR",
+      "icao": "",
+      "name": "Qionghai Bo'ao Airport",
+      "latitude": 19.1382,
+      "longitude": 110.455
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hainan",
+      "iata": "HAK",
+      "icao": "ZJHK",
+      "name": "Haikou Meilan International Airport",
+      "latitude": 19.9349,
+      "longitude": 110.459
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hainan",
+      "iata": "SYX",
+      "icao": "ZJSY",
+      "name": "Sanya Phoenix International Airport",
+      "latitude": 18.3029,
+      "longitude": 109.412
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "BPE",
+      "icao": "ZBDH",
+      "name": "Qinhuangdao Beidaihe Airport",
+      "latitude": 39.6664,
+      "longitude": 119.059
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "CDE",
+      "icao": "ZBCD",
+      "name": "Chengde Puning Airport",
+      "latitude": 41.1225,
+      "longitude": 118.074
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "HDG",
+      "icao": "ZBHD",
+      "name": "Handan Airport",
+      "latitude": 36.5258,
+      "longitude": 114.426
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "SJW",
+      "icao": "ZBSJ",
+      "name": "Shijiazhuang Zhengding International Airport",
+      "latitude": 38.2807,
+      "longitude": 114.697
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "TVS",
+      "icao": "ZBTS",
+      "name": "Tangshan Sannuhe Airport",
+      "latitude": 39.7178,
+      "longitude": 118.003
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "XNT",
+      "icao": "ZBXT",
+      "name": "Xingtai Dalian Airport",
+      "latitude": 36.8831,
+      "longitude": 114.429
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hebei",
+      "iata": "ZQZ",
+      "icao": "ZBZJ",
+      "name": "Zhangjiakou Ningyuan Airport",
+      "latitude": 40.7386,
+      "longitude": 114.93
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "DQA",
+      "icao": "ZYDQ",
+      "name": "Daqing Sartu Airport",
+      "latitude": 46.7464,
+      "longitude": 125.141
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "DTU",
+      "icao": "",
+      "name": "Wudalianchi Airport",
+      "latitude": 48.445,
+      "longitude": 126.133
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "FYJ",
+      "icao": "ZYFY",
+      "name": "Fuyuan Dongji Airport",
+      "latitude": 48.1995,
+      "longitude": 134.366
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "HEK",
+      "icao": "ZYHE",
+      "name": "Heihe Airport",
+      "latitude": 50.1716,
+      "longitude": 127.309
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "HRB",
+      "icao": "ZYHB",
+      "name": "Harbin Taiping International Airport",
+      "latitude": 45.6234,
+      "longitude": 126.25
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "JGD",
+      "icao": "ZYJD",
+      "name": "Jiagedaqi Airport",
+      "latitude": 50.3714,
+      "longitude": 124.118
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "JMU",
+      "icao": "ZYJM",
+      "name": "Jiamusi Dongjiao Airport",
+      "latitude": 46.8434,
+      "longitude": 130.465
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "JSJ",
+      "icao": "ZYJS",
+      "name": "Jiansanjiang Airport",
+      "latitude": 47.11,
+      "longitude": 132.66
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "JXA",
+      "icao": "ZYJX",
+      "name": "Jixi Xingkaihu Airport",
+      "latitude": 45.293,
+      "longitude": 131.193
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "LDS",
+      "icao": "ZYLD",
+      "name": "Yichun Lindu Airport",
+      "latitude": 47.7521,
+      "longitude": 129.019
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "MDG",
+      "icao": "ZYMD",
+      "name": "Mudanjiang Hailang Airport",
+      "latitude": 44.5241,
+      "longitude": 129.569
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "NDG",
+      "icao": "ZYQQ",
+      "name": "Qiqihar Sanjiazi Airport",
+      "latitude": 47.2396,
+      "longitude": 123.918
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "OHE",
+      "icao": "ZYMH",
+      "name": "Mohe Gulian Airport",
+      "latitude": 52.9128,
+      "longitude": 122.43
+    },
+    {
+      "countryCode": "CN",
+      "region": "Heilongjiang",
+      "iata": "YLN",
+      "icao": "ZYYL",
+      "name": "Yilan Airport",
+      "latitude": 46.317,
+      "longitude": 129.567
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan Sheng",
+      "iata": "XAI",
+      "icao": "ZHXY",
+      "name": "Xinyang Minggang Airport",
+      "latitude": 32.5414,
+      "longitude": 114.078
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "AYN",
+      "icao": "ZHAY",
+      "name": "Anyang Airport",
+      "latitude": 36.1339,
+      "longitude": 114.344
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "CGO",
+      "icao": "ZHCC",
+      "name": "Zhengzhou Xinzheng International Airport",
+      "latitude": 34.5197,
+      "longitude": 113.841
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "HQQ",
+      "icao": "",
+      "name": "Anyang Hongqiqu Airport",
+      "latitude": 35.8706,
+      "longitude": 114.4618
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "HSJ",
+      "icao": "",
+      "name": "Zhengzhou Shangjie Airport",
+      "latitude": 34.8422,
+      "longitude": 113.274
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "LYA",
+      "icao": "ZHLY",
+      "name": "Luoyang Beijiao Airport",
+      "latitude": 34.7411,
+      "longitude": 112.388
+    },
+    {
+      "countryCode": "CN",
+      "region": "Henan",
+      "iata": "NNY",
+      "icao": "ZHNY",
+      "name": "Nanyang Jiangying Airport",
+      "latitude": 32.9808,
+      "longitude": 112.615
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei Sheng",
+      "iata": "EHU",
+      "icao": "ZHEC",
+      "name": "Ezhou Huahu Airport",
+      "latitude": 30.3429,
+      "longitude": 115.03
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "ENH",
+      "icao": "ZHES",
+      "name": "Enshi Xujiaping Airport",
+      "latitude": 30.3203,
+      "longitude": 109.485
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "HPG",
+      "icao": "ZHSN",
+      "name": "Shennongjia Hongping Airport",
+      "latitude": 31.626,
+      "longitude": 110.34
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "LHK",
+      "icao": "ZHGH",
+      "name": "Laohekou Airport",
+      "latitude": 32.3894,
+      "longitude": 111.695
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "SHS",
+      "icao": "ZHSS",
+      "name": "Shashi Airport",
+      "latitude": 30.3243,
+      "longitude": 112.28
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "WDS",
+      "icao": "ZHSY",
+      "name": "Shiyan Wudangshan Airport",
+      "latitude": 32.5917,
+      "longitude": 110.908
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "WUH",
+      "icao": "ZHHH",
+      "name": "Wuhan Tianhe International Airport",
+      "latitude": 30.7838,
+      "longitude": 114.208
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "name": "Xiangyang Liuji Airport",
+      "latitude": 32.1506,
+      "longitude": 112.291
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hubei",
+      "iata": "YIH",
+      "icao": "ZHYC",
+      "name": "Yichang Sanxia Airport",
+      "latitude": 30.5565,
+      "longitude": 111.48
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan Sheng",
+      "iata": "HCZ",
+      "icao": "ZGCZ",
+      "name": "Chenzhou Beihu Airport",
+      "latitude": 25.7506,
+      "longitude": 112.846
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan Sheng",
+      "iata": "YYA",
+      "icao": "ZGYY",
+      "name": "Yueyang Sanhe Airport",
+      "latitude": 29.314,
+      "longitude": 113.278
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "CGD",
+      "icao": "ZGCD",
+      "name": "Changde Taohuayuan Airport",
+      "latitude": 28.9189,
+      "longitude": 111.64
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "CSX",
+      "icao": "ZGHA",
+      "name": "Changsha Huanghua International Airport",
+      "latitude": 28.1892,
+      "longitude": 113.22
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "DXJ",
+      "icao": "",
+      "name": "Xiangxi Biancheng Airport",
+      "latitude": 28.4963,
+      "longitude": 109.5208
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "DYG",
+      "icao": "ZGDY",
+      "name": "Zhangjiajie Hehua Airport",
+      "latitude": 29.1028,
+      "longitude": 110.443
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "HJJ",
+      "icao": "ZGCJ",
+      "name": "Huaihua Zhijiang Airport",
+      "latitude": 27.4411,
+      "longitude": 109.7
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "HNY",
+      "icao": "ZGHY",
+      "name": "Hengyang Nanyue Airport",
+      "latitude": 26.9053,
+      "longitude": 112.628
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "LLF",
+      "icao": "ZGLG",
+      "name": "Yongzhou Lingling Airport",
+      "latitude": 26.3387,
+      "longitude": 111.61
+    },
+    {
+      "countryCode": "CN",
+      "region": "Hunan",
+      "iata": "WGN",
+      "icao": "ZGSY",
+      "name": "Shaoyang Wugang Airport",
+      "latitude": 26.802,
+      "longitude": 110.642
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "CZX",
+      "icao": "ZSCG",
+      "name": "Changzhou Benniu Airport",
+      "latitude": 31.9197,
+      "longitude": 119.779
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "HIA",
+      "icao": "ZSSH",
+      "name": "Huai'an Lianshui Airport",
+      "latitude": 33.7908,
+      "longitude": 119.125
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "LYG",
+      "icao": "ZSLG",
+      "name": "Lianyungang Baitabu Airport",
+      "latitude": 34.5717,
+      "longitude": 118.874
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "NKG",
+      "icao": "ZSNJ",
+      "name": "Nanjing Lukou International Airport",
+      "latitude": 31.742,
+      "longitude": 118.862
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "NTG",
+      "icao": "ZSNT",
+      "name": "Nantong Xingdong Airport",
+      "latitude": 32.0708,
+      "longitude": 120.976
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "RUG",
+      "icao": "ZSRG",
+      "name": "Rugao Air Base",
+      "latitude": 32.2579,
+      "longitude": 120.502
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "SZV",
+      "icao": "ZSSZ",
+      "name": "Suzhou Guangfu Airport",
+      "latitude": 31.2631,
+      "longitude": 120.401
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "WUX",
+      "icao": "ZSWX",
+      "name": "Sunan Shuofang International Airport",
+      "latitude": 31.4944,
+      "longitude": 120.429
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "XUZ",
+      "icao": "ZSXZ",
+      "name": "Xuzhou Guanyin Airport",
+      "latitude": 34.0591,
+      "longitude": 117.555
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "YNZ",
+      "icao": "ZSYN",
+      "name": "Yancheng Nanyang International Airport",
+      "latitude": 33.4258,
+      "longitude": 120.203
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangsu",
+      "iata": "YTY",
+      "icao": "ZSYA",
+      "name": "Yangzhou Taizhou Airport",
+      "latitude": 32.5602,
+      "longitude": 119.717
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "JDZ",
+      "icao": "ZSJD",
+      "name": "Jingdezhen Luojia Airport",
+      "latitude": 29.3386,
+      "longitude": 117.176
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "JGS",
+      "icao": "ZSJA",
+      "name": "Jinggangshan Airport",
+      "latitude": 26.8569,
+      "longitude": 114.737
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "JIU",
+      "icao": "ZSJJ",
+      "name": "Jiujiang Lushan Airport",
+      "latitude": 29.4769,
+      "longitude": 115.801
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "KHN",
+      "icao": "ZSCN",
+      "name": "Nanchang Changbei International Airport",
+      "latitude": 28.865,
+      "longitude": 115.9
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "KOW",
+      "icao": "ZSGZ",
+      "name": "Ganzhou Huangjin Airport",
+      "latitude": 25.8533,
+      "longitude": 114.779
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "SQD",
+      "icao": "ZSSR",
+      "name": "Shangrao Sanqingshan Airport",
+      "latitude": 28.3797,
+      "longitude": 117.964
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jiangxi",
+      "iata": "YIC",
+      "icao": "ZSYC",
+      "name": "Yichun Mingyueshan Airport",
+      "latitude": 27.8025,
+      "longitude": 114.306
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "CGQ",
+      "icao": "ZYCC",
+      "name": "Changchun Longjia International Airport",
+      "latitude": 43.9962,
+      "longitude": 125.685
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "DBC",
+      "icao": "ZYBA",
+      "name": "Baicheng Chang'an Airport",
+      "latitude": 45.5053,
+      "longitude": 123.02
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "JIL",
+      "icao": "ZYJL",
+      "name": "Jilin Ertaizi Airport",
+      "latitude": 44.0022,
+      "longitude": 126.396
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "NBS",
+      "icao": "ZYBS",
+      "name": "Changbaishan Airport",
+      "latitude": 42.0669,
+      "longitude": 127.602
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "TNH",
+      "icao": "ZYTN",
+      "name": "Tonghua Sanyuanpu Airport",
+      "latitude": 42.2539,
+      "longitude": 125.703
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "YNJ",
+      "icao": "ZYYJ",
+      "name": "Yanji Chaoyangchuan Airport",
+      "latitude": 42.8828,
+      "longitude": 129.451
+    },
+    {
+      "countryCode": "CN",
+      "region": "Jilin",
+      "iata": "YSQ",
+      "icao": "ZYSQ",
+      "name": "Songyuan Chaganhu Airport",
+      "latitude": 44.9381,
+      "longitude": 124.55
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "AOG",
+      "icao": "ZYAS",
+      "name": "Anshan Teng'ao Airport",
+      "latitude": 41.1053,
+      "longitude": 122.854
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "CHG",
+      "icao": "ZYCY",
+      "name": "Chaoyang Airport",
+      "latitude": 41.5381,
+      "longitude": 120.435
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "CNI",
+      "icao": "ZYCH",
+      "name": "Changhai Airport",
+      "latitude": 39.2667,
+      "longitude": 122.667
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "DDG",
+      "icao": "ZYDD",
+      "name": "Dandong Langtou Airport",
+      "latitude": 40.0247,
+      "longitude": 124.286
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "DLC",
+      "icao": "ZYTL",
+      "name": "Dalian Zhoushuizi International Airport",
+      "latitude": 38.9657,
+      "longitude": 121.539
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "JNZ",
+      "icao": "ZYJZ",
+      "name": "Jinzhou Bay Airport",
+      "latitude": 41.1014,
+      "longitude": 121.062
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "SHE",
+      "icao": "ZYTX",
+      "name": "Shenyang Taoxian International Airport",
+      "latitude": 41.6398,
+      "longitude": 123.483
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "XEN",
+      "icao": "ZYXC",
+      "name": "Xingcheng Airport",
+      "latitude": 40.5803,
+      "longitude": 120.698
+    },
+    {
+      "countryCode": "CN",
+      "region": "Liaoning",
+      "iata": "YKH",
+      "icao": "ZYYK",
+      "name": "Yingkou Lanqi Airport",
+      "latitude": 40.5425,
+      "longitude": 122.359
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "AEQ",
+      "icao": "",
+      "name": "Ar Horqin Airport",
+      "latitude": 43.8704,
+      "longitude": 120.16
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "AXF",
+      "icao": "",
+      "name": "Alxa Left Banner Bayanhot Airport",
+      "latitude": 38.7483,
+      "longitude": 105.589
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "BAV",
+      "icao": "ZBOW",
+      "name": "Baotou Airport",
+      "latitude": 40.56,
+      "longitude": 109.997
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "CIF",
+      "icao": "ZBCF",
+      "name": "Chifeng Yulong Airport",
+      "latitude": 42.235,
+      "longitude": 118.908
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "DSN",
+      "icao": "ZBDS",
+      "name": "Ordos Ejin Horo Airport",
+      "latitude": 39.49,
+      "longitude": 109.861
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "EJN",
+      "icao": "",
+      "name": "Ejin Banner Taolai Airport",
+      "latitude": 42.0155,
+      "longitude": 101.001
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "ERL",
+      "icao": "ZBER",
+      "name": "Erenhot Saiwusu International Airport",
+      "latitude": 43.4225,
+      "longitude": 112.097
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "HET",
+      "icao": "ZBHH",
+      "name": "Hohhot Baita International Airport",
+      "latitude": 40.8514,
+      "longitude": 111.824
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "HLD",
+      "icao": "ZBLA",
+      "name": "Hulunbuir Hailar Airport",
+      "latitude": 49.205,
+      "longitude": 119.825
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "HLH",
+      "icao": "ZBUL",
+      "name": "Ulanhot Airport",
+      "latitude": 46.1953,
+      "longitude": 122.008
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "HUO",
+      "icao": "ZBHZ",
+      "name": "Holingol Huolinhe Airport",
+      "latitude": 45.4872,
+      "longitude": 119.407
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "NZH",
+      "icao": "ZBMZ",
+      "name": "Manzhouli Xijiao Airport",
+      "latitude": 49.5667,
+      "longitude": 117.33
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "NZL",
+      "icao": "",
+      "name": "Zhalantun Chengjisihan Airport",
+      "latitude": 47.8658,
+      "longitude": 122.768
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "RHT",
+      "icao": "",
+      "name": "Alxa Right Banner Badanjilin Airport",
+      "latitude": 39.225,
+      "longitude": 101.546
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "RLK",
+      "icao": "ZBYZ",
+      "name": "Bayannur Tianjitai Airport",
+      "latitude": 40.926,
+      "longitude": 107.743
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "TGO",
+      "icao": "ZBTL",
+      "name": "Tongliao Airport",
+      "latitude": 43.5567,
+      "longitude": 122.2
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "UCB",
+      "icao": "",
+      "name": "Ulanqab Airport",
+      "latitude": 41.1297,
+      "longitude": 113.108
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "WUA",
+      "icao": "ZBUH",
+      "name": "Wuhai Airport",
+      "latitude": 39.7934,
+      "longitude": 106.799
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "WZQ",
+      "icao": "",
+      "name": "Urad Middle Banner Airport",
+      "latitude": 41.4596,
+      "longitude": 108.535
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "XIL",
+      "icao": "ZBXH",
+      "name": "Xilinhot Airport",
+      "latitude": 43.9156,
+      "longitude": 115.964
+    },
+    {
+      "countryCode": "CN",
+      "region": "Nei Mongol",
+      "iata": "YIE",
+      "icao": "ZBES",
+      "name": "Arxan Yi'ershi Airport",
+      "latitude": 47.3106,
+      "longitude": 119.912
+    },
+    {
+      "countryCode": "CN",
+      "region": "Ningxia",
+      "iata": "GYU",
+      "icao": "ZLGY",
+      "name": "Guyuan Liupanshan Airport",
+      "latitude": 36.0789,
+      "longitude": 106.217
+    },
+    {
+      "countryCode": "CN",
+      "region": "Ningxia",
+      "iata": "INC",
+      "icao": "ZLIC",
+      "name": "Yinchuan Hedong International Airport",
+      "latitude": 38.3228,
+      "longitude": 106.393
+    },
+    {
+      "countryCode": "CN",
+      "region": "Ningxia",
+      "iata": "ZHY",
+      "icao": "ZLZW",
+      "name": "Zhongwei Shapotou Airport (Zhongwei Xiangshan Airport)",
+      "latitude": 37.5731,
+      "longitude": 105.154
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai Sheng",
+      "iata": "HBQ",
+      "icao": "ZLHB",
+      "name": "Haibei Qilian Airport",
+      "latitude": 38.012,
+      "longitude": 100.644
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "GMQ",
+      "icao": "ZLGL",
+      "name": "Golog Maqin Airport",
+      "latitude": 34.4181,
+      "longitude": 100.301
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "GOQ",
+      "icao": "ZLGM",
+      "name": "Golmud Airport",
+      "latitude": 36.4006,
+      "longitude": 94.7861
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "HTT",
+      "icao": "",
+      "name": "Huatugou Airport",
+      "latitude": 38.202,
+      "longitude": 90.8415
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "HXD",
+      "icao": "ZLDL",
+      "name": "Delingha Airport",
+      "latitude": 37.1253,
+      "longitude": 97.2687
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "XNN",
+      "icao": "ZLXN",
+      "name": "Xining Caojiabao Airport",
+      "latitude": 36.5275,
+      "longitude": 102.043
+    },
+    {
+      "countryCode": "CN",
+      "region": "Qinghai",
+      "iata": "YUS",
+      "icao": "ZLYS",
+      "name": "Yushu Batang Airport",
+      "latitude": 32.8364,
+      "longitude": 97.0364
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "AKA",
+      "icao": "ZLAK",
+      "name": "Ankang Wulipu Airport",
+      "latitude": 32.7081,
+      "longitude": 108.931
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "ENY",
+      "icao": "ZLYA",
+      "name": "Yan'an Nanniwan (formerly Ershilipu) Airport",
+      "latitude": 36.6369,
+      "longitude": 109.554
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "HZG",
+      "icao": "ZLHZ",
+      "name": "Hanzhong Chenggu Airport",
+      "latitude": 33.1341,
+      "longitude": 107.206
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "SIA",
+      "icao": "ZLSN",
+      "name": "Xi'an Xiguan Airport",
+      "latitude": 34.3767,
+      "longitude": 109.12
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "UYN",
+      "icao": "ZLYL",
+      "name": "Yulin Yuyang Airport",
+      "latitude": 38.3597,
+      "longitude": 109.591
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shaanxi",
+      "iata": "XIY",
+      "icao": "ZLXY",
+      "name": "Xi'an Xianyang International Airport",
+      "latitude": 34.4471,
+      "longitude": 108.752
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong Sheng",
+      "iata": "HZA",
+      "icao": "ZSHZ",
+      "name": "Heze Mudan Airport",
+      "latitude": 35.2133,
+      "longitude": 115.737
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "DOY",
+      "icao": "ZSDY",
+      "name": "Dongying Shengli Airport",
+      "latitude": 37.5086,
+      "longitude": 118.788
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "JNG",
+      "icao": "ZLJN",
+      "name": "Jining Qufu Airport",
+      "latitude": 35.2928,
+      "longitude": 116.347
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "LYI",
+      "icao": "ZSLY",
+      "name": "Linyi Shubuling Airport",
+      "latitude": 35.0461,
+      "longitude": 118.412
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "PNJ",
+      "icao": "",
+      "name": "Penglai Shahekou Airport",
+      "latitude": 42.4464,
+      "longitude": 119.574
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "RIZ",
+      "icao": "",
+      "name": "Rizhao Shanzihe Airport",
+      "latitude": 35.405,
+      "longitude": 119.324
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "TAO",
+      "icao": "ZSQD",
+      "name": "Qingdao Liuting International Airport",
+      "latitude": 36.2661,
+      "longitude": 120.374
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "TNA",
+      "icao": "ZSJN",
+      "name": "Jinan Yaoqiang International Airport",
+      "latitude": 36.8572,
+      "longitude": 117.216
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "WEF",
+      "icao": "ZSWF",
+      "name": "Weifang Airport",
+      "latitude": 36.6467,
+      "longitude": 119.119
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "WEH",
+      "icao": "ZSWH",
+      "name": "Weihai Dashuibo Airport",
+      "latitude": 37.1871,
+      "longitude": 122.229
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shandong",
+      "iata": "YNT",
+      "icao": "ZSYT",
+      "name": "Yantai Penglai International Airport",
+      "latitude": 37.6572,
+      "longitude": 120.987
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanghai",
+      "iata": "PVG",
+      "icao": "ZSPD",
+      "name": "Shanghai Pudong International Airport",
+      "latitude": 31.1434,
+      "longitude": 121.805
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanghai",
+      "iata": "SHA",
+      "icao": "ZSSS",
+      "name": "Shanghai Hongqiao International Airport",
+      "latitude": 31.1979,
+      "longitude": 121.336
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "CIH",
+      "icao": "ZBCZ",
+      "name": "Changzhi Wangcun Airport",
+      "latitude": 36.2475,
+      "longitude": 113.126
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "DAT",
+      "icao": "ZBDT",
+      "name": "Datong Yungang Airport",
+      "latitude": 40.0603,
+      "longitude": 113.482
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "LFQ",
+      "icao": "",
+      "name": "Linfen Qiaoli Airport",
+      "latitude": 36.1326,
+      "longitude": 111.641
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "LLV",
+      "icao": "ZBLL",
+      "name": "Luliang Airport",
+      "latitude": 37.6833,
+      "longitude": 111.143
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "SZH",
+      "icao": "ZBSG",
+      "name": "Shuozhou Zirun Airport",
+      "latitude": 39.273,
+      "longitude": 112.6911
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "TYN",
+      "icao": "ZBYN",
+      "name": "Taiyuan Wusu International Airport",
+      "latitude": 37.7469,
+      "longitude": 112.628
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "WUT",
+      "icao": "ZBXZ",
+      "name": "Xinzhou Wutaishan Airport",
+      "latitude": 38.5975,
+      "longitude": 112.969
+    },
+    {
+      "countryCode": "CN",
+      "region": "Shanxi",
+      "iata": "YCU",
+      "icao": "ZBYC",
+      "name": "Yuncheng Guangong Airport",
+      "latitude": 35.1164,
+      "longitude": 111.031
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan Sheng",
+      "iata": "DZH",
+      "icao": "ZUDA",
+      "name": "Dazhou Jinya Airport",
+      "latitude": 31.04,
+      "longitude": 107.44
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "AHJ",
+      "icao": "ZUHY",
+      "name": "Hongyuan Airport",
+      "latitude": 32.5315,
+      "longitude": 102.352
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "BZX",
+      "icao": "",
+      "name": "Bazhong Enyang Airport",
+      "latitude": 31.7384,
+      "longitude": 106.645
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "CTU",
+      "icao": "ZUUU",
+      "name": "Chengdu Shuangliu International Airport",
+      "latitude": 30.5785,
+      "longitude": 103.947
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "DAX",
+      "icao": "ZUDX",
+      "name": "Dazhou Heshi Airport",
+      "latitude": 31.1302,
+      "longitude": 107.429
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "DCY",
+      "icao": "ZUDC",
+      "name": "Daocheng Yading Airport",
+      "latitude": 29.3231,
+      "longitude": 100.053
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "GHN",
+      "icao": "ZUGH",
+      "name": "Guanghan Airport",
+      "latitude": 30.9485,
+      "longitude": 104.33
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "GYS",
+      "icao": "ZUGU",
+      "name": "Guangyuan Panlong Airport",
+      "latitude": 32.3911,
+      "longitude": 105.702
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "GZG",
+      "icao": "ZUGZ",
+      "name": "Garze Gesar Airport",
+      "latitude": 31.7579,
+      "longitude": 99.5525
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "JZH",
+      "icao": "ZUJZ",
+      "name": "Jiuzhai Huanglong Airport",
+      "latitude": 32.8533,
+      "longitude": 103.682
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "KGT",
+      "icao": "ZUKD",
+      "name": "Kangding Airport",
+      "latitude": 30.1575,
+      "longitude": 101.735
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "LZG",
+      "icao": "",
+      "name": "Langzhong Gucheng Airport",
+      "latitude": 31.5077,
+      "longitude": 106.0426
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "LZO",
+      "icao": "ZULZ",
+      "name": "Luzhou Yunlong Airport",
+      "latitude": 29.03,
+      "longitude": 105.47
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "MIG",
+      "icao": "ZUMY",
+      "name": "Mianyang Nanjiao Airport",
+      "latitude": 31.4281,
+      "longitude": 104.741
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "NAO",
+      "icao": "ZUNC",
+      "name": "Nanchong Gaoping Airport",
+      "latitude": 30.7955,
+      "longitude": 106.163
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "PZI",
+      "icao": "ZUZH",
+      "name": "Panzhihua Bao'anying Airport",
+      "latitude": 26.54,
+      "longitude": 101.799
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "name": "Chengdu Tianfu International Airport",
+      "latitude": 30.319,
+      "longitude": 104.445
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "XIC",
+      "icao": "ZUXC",
+      "name": "Xichang Qingshan Airport",
+      "latitude": 27.9891,
+      "longitude": 102.184
+    },
+    {
+      "countryCode": "CN",
+      "region": "Sichuan",
+      "iata": "YBP",
+      "icao": "ZUYB",
+      "name": "Yibin Caiba Airport",
+      "latitude": 28.8006,
+      "longitude": 104.545
+    },
+    {
+      "countryCode": "CN",
+      "region": "Tianjin",
+      "iata": "TSN",
+      "icao": "ZBTJ",
+      "name": "Tianjin Binhai International Airport",
+      "latitude": 39.1244,
+      "longitude": 117.346
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "AAT",
+      "icao": "ZWAT",
+      "name": "Altay Airport",
+      "latitude": 47.7499,
+      "longitude": 88.0858
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "ACF",
+      "icao": "",
+      "name": "Aral Talim Airport",
+      "latitude": 40.4394,
+      "longitude": 81.2601
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "AKU",
+      "icao": "ZWAK",
+      "name": "Aksu Airport",
+      "latitude": 41.2625,
+      "longitude": 80.2917
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "BPL",
+      "icao": "ZWBL",
+      "name": "Bole Alashankou Airport",
+      "latitude": 44.895,
+      "longitude": 82.3
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "FYN",
+      "icao": "ZWFY",
+      "name": "Fuyun Koktokay Airport",
+      "latitude": 46.8042,
+      "longitude": 89.512
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "HMI",
+      "icao": "ZWHM",
+      "name": "Hami Airport (Kumul Airport)",
+      "latitude": 42.8414,
+      "longitude": 93.6692
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "HQL",
+      "icao": "",
+      "name": "Tashkurgan Khunjerab Airport",
+      "latitude": 37.6628,
+      "longitude": 75.292
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "HTN",
+      "icao": "ZWTN",
+      "name": "Hotan Airport",
+      "latitude": 37.0385,
+      "longitude": 79.8649
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "IQM",
+      "icao": "ZWCM",
+      "name": "Qiemo Airport",
+      "latitude": 38.2336,
+      "longitude": 85.4656
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "JBK",
+      "icao": "",
+      "name": "Qitai Jiangbulake Airport (formerly Berkeley)",
+      "latitude": 44.183,
+      "longitude": 89.5945
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "KCA",
+      "icao": "ZWKC",
+      "name": "Kuqa Qiuci Airport",
+      "latitude": 41.6779,
+      "longitude": 82.8729
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "KHG",
+      "icao": "ZWSH",
+      "name": "Kashgar Airport (Kashi Airport)",
+      "latitude": 39.5429,
+      "longitude": 76.02
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "KJI",
+      "icao": "ZWKN",
+      "name": "Kanas Airport",
+      "latitude": 48.2223,
+      "longitude": 86.9959
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "KRL",
+      "icao": "ZWKL",
+      "name": "Korla Airport",
+      "latitude": 41.6978,
+      "longitude": 86.1289
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "KRY",
+      "icao": "ZWKM",
+      "name": "Karamay Airport",
+      "latitude": 45.4665,
+      "longitude": 84.9527
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "NLT",
+      "icao": "ZWNL",
+      "name": "Xinyuan Nalati Airport",
+      "latitude": 43.4318,
+      "longitude": 83.3786
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "QSZ",
+      "icao": "",
+      "name": "Shache Airport",
+      "latitude": 38.2811,
+      "longitude": 77.0752
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "RQA",
+      "icao": "ZWRQ",
+      "name": "Ruoqiang Loulan Airport",
+      "latitude": 38.9747,
+      "longitude": 88.0083
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "SHF",
+      "icao": "ZWHZ",
+      "name": "Shihezi Huayuan Airport",
+      "latitude": 44.2421,
+      "longitude": 85.8905
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "SXJ",
+      "icao": "ZWSS",
+      "name": "Shanshan Airport",
+      "latitude": 42.9117,
+      "longitude": 90.2475
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "TCG",
+      "icao": "ZWTC",
+      "name": "Tacheng Airport",
+      "latitude": 46.6725,
+      "longitude": 83.3408
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "TLQ",
+      "icao": "ZWTL",
+      "name": "Turpan Jiaohe Airport",
+      "latitude": 43.0308,
+      "longitude": 89.0987
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "TWC",
+      "icao": "",
+      "name": "Tumushuke Tangwangcheng Airport",
+      "latitude": 39.8893,
+      "longitude": 79.2322
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "URC",
+      "icao": "ZWWW",
+      "name": "Urumqi Diwopu International Airport",
+      "latitude": 43.9071,
+      "longitude": 87.4742
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "YIN",
+      "icao": "ZWYN",
+      "name": "Yining Airport",
+      "latitude": 43.9558,
+      "longitude": 81.3303
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "YTW",
+      "icao": "ZWYT",
+      "name": "Yutian Wanfang Airport",
+      "latitude": 36.812,
+      "longitude": 81.7817
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xinjiang",
+      "iata": "ZFL",
+      "icao": "",
+      "name": "Zhaosu Tianma Airport",
+      "latitude": 43.0927,
+      "longitude": 81.2247
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "BPX",
+      "icao": "ZUBD",
+      "name": "Qamdo Bamda Airport",
+      "latitude": 30.5536,
+      "longitude": 97.1083
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "DDR",
+      "icao": "",
+      "name": "Xigaze/Rikaze Dingri Airport",
+      "latitude": 28.6014,
+      "longitude": 86.8018
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "LGZ",
+      "icao": "",
+      "name": "Shannan Lizang Airport",
+      "latitude": 28.4275,
+      "longitude": 92.3447
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "LXA",
+      "icao": "ZULS",
+      "name": "Lhasa Gonggar Airport",
+      "latitude": 29.2978,
+      "longitude": 90.9119
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "LZY",
+      "icao": "ZUNZ",
+      "name": "Nyingchi Mainling Airport",
+      "latitude": 29.3033,
+      "longitude": 94.3353
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "NGQ",
+      "icao": "ZUAL",
+      "name": "Ngari Gunsa Airport",
+      "latitude": 32.1,
+      "longitude": 80.0531
+    },
+    {
+      "countryCode": "CN",
+      "region": "Xizang",
+      "iata": "RKZ",
+      "icao": "ZURK",
+      "name": "Shigatse Peace Airport",
+      "latitude": 29.3519,
+      "longitude": 89.3114
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "BSD",
+      "icao": "ZPBS",
+      "name": "Baoshan Yunduan Airport",
+      "latitude": 25.0533,
+      "longitude": 99.1683
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "CWJ",
+      "icao": "ZPCW",
+      "name": "Cangyuan Washan Airport",
+      "latitude": 23.2739,
+      "longitude": 99.3736
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "DIG",
+      "icao": "ZPDQ",
+      "name": "Diqing Shangri-La Airport",
+      "latitude": 27.7936,
+      "longitude": 99.6772
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "DLU",
+      "icao": "ZPDL",
+      "name": "Dali Airport",
+      "latitude": 25.6494,
+      "longitude": 100.319
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "JHG",
+      "icao": "ZPJH",
+      "name": "Xishuangbanna Gasa Airport",
+      "latitude": 21.9739,
+      "longitude": 100.76
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "JMJ",
+      "icao": "ZPJM",
+      "name": "Lancang Jingmai Airport",
+      "latitude": 22.4158,
+      "longitude": 99.7864
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "KMG",
+      "icao": "ZPPP",
+      "name": "Kunming Changshui International Airport",
+      "latitude": 25.1019,
+      "longitude": 102.929
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "LJG",
+      "icao": "ZPLJ",
+      "name": "Lijiang Sanyi Airport",
+      "latitude": 26.68,
+      "longitude": 100.246
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "LNJ",
+      "icao": "ZPLC",
+      "name": "Lincang Airport",
+      "latitude": 23.7381,
+      "longitude": 100.025
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "LUM",
+      "icao": "ZPMS",
+      "name": "Dehong Mangshi Airport",
+      "latitude": 24.4011,
+      "longitude": 98.5317
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "NLH",
+      "icao": "",
+      "name": "Ninglang Luguhu Airport",
+      "latitude": 27.5403,
+      "longitude": 100.759
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "SYM",
+      "icao": "ZPSM",
+      "name": "Pu'er Simao Airport",
+      "latitude": 22.7933,
+      "longitude": 100.959
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "TCZ",
+      "icao": "ZUTC",
+      "name": "Tengchong Tuofeng Airport",
+      "latitude": 24.9381,
+      "longitude": 98.4858
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "WNH",
+      "icao": "ZPWS",
+      "name": "Wenshan Puzhehei Airport",
+      "latitude": 23.5583,
+      "longitude": 104.326
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "YUA",
+      "icao": "ZPYM",
+      "name": "Yuanmou Air Base",
+      "latitude": 25.7375,
+      "longitude": 101.882
+    },
+    {
+      "countryCode": "CN",
+      "region": "Yunnan",
+      "iata": "ZAT",
+      "icao": "ZPZT",
+      "name": "Zhaotong Airport",
+      "latitude": 27.3256,
+      "longitude": 103.755
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "HGH",
+      "icao": "ZSHC",
+      "name": "Hangzhou Xiaoshan International Airport",
+      "latitude": 30.2295,
+      "longitude": 120.434
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "HSN",
+      "icao": "ZSZS",
+      "name": "Zhoushan Putuoshan Airport",
+      "latitude": 29.9342,
+      "longitude": 122.362
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "HYN",
+      "icao": "ZSLQ",
+      "name": "Taizhou Luqiao Airport",
+      "latitude": 28.5622,
+      "longitude": 121.429
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "JUZ",
+      "icao": "ZSJU",
+      "name": "Quzhou Airport",
+      "latitude": 28.9658,
+      "longitude": 118.899
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "name": "Ningbo Lishe International Airport",
+      "latitude": 29.8267,
+      "longitude": 121.462
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "WNZ",
+      "icao": "ZSWZ",
+      "name": "Wenzhou Longwan International Airport",
+      "latitude": 27.9122,
+      "longitude": 120.852
+    },
+    {
+      "countryCode": "CN",
+      "region": "Zhejiang",
+      "iata": "YIW",
+      "icao": "ZSYW",
+      "name": "Yiwu Airport",
+      "latitude": 29.3447,
+      "longitude": 120.032
+    }
+  ]
 }

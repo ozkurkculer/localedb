@@ -228,5 +228,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "FK",
+      "region": "Falkland Islands (Malvinas)",
+      "iata": "FAE",
+      "icao": "EKVG",
+      "name": "Vagar Airport",
+      "latitude": 62.0636,
+      "longitude": -7.27722
+    },
+    {
+      "countryCode": "FK",
+      "region": "Falkland Islands (Malvinas)",
+      "iata": "MPN",
+      "icao": "EGYP",
+      "name": "RAF Mount Pleasant",
+      "latitude": -51.8228,
+      "longitude": -58.4472
+    },
+    {
+      "countryCode": "FK",
+      "region": "Falkland Islands (Malvinas)",
+      "iata": "PSY",
+      "icao": "SFAL",
+      "name": "Port Stanley Airport",
+      "latitude": -51.6857,
+      "longitude": -57.7776
+    }
+  ]
 }

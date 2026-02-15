@@ -233,5 +233,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PS",
+      "region": "Gaza",
+      "iata": "GZA",
+      "icao": "LVGZ",
+      "name": "Yasser Arafat International Airport",
+      "latitude": 31.2464,
+      "longitude": 34.2761
+    }
+  ]
 }

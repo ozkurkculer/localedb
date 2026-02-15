@@ -234,5 +234,79 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AZ",
+      "region": "Baki",
+      "iata": "GYD",
+      "icao": "UBBB",
+      "name": "Heydar Aliyev International Airport",
+      "latitude": 40.4675,
+      "longitude": 50.0467
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Fuzuli",
+      "iata": "FZL",
+      "icao": "UBBF",
+      "name": "Fuzuli Airport",
+      "latitude": 39.5955,
+      "longitude": 47.1973
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Ganca",
+      "iata": "GNJ",
+      "icao": "UBBG",
+      "name": "Ganja International Airport (formerly KVD)",
+      "latitude": 40.7377,
+      "longitude": 46.3176
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Lankaran",
+      "iata": "LLK",
+      "icao": "UBBL",
+      "name": "Lankaran International Airport",
+      "latitude": 38.7464,
+      "longitude": 48.818
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Naxcivan",
+      "iata": "NAJ",
+      "icao": "UBBN",
+      "name": "Nakhchivan International Airport",
+      "latitude": 39.1888,
+      "longitude": 45.4584
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Qabala",
+      "iata": "GBB",
+      "icao": "UBBQ",
+      "name": "Qabala International Airport",
+      "latitude": 40.8267,
+      "longitude": 47.7125
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Yevlax",
+      "iata": "YLV",
+      "icao": "UBEE",
+      "name": "Yevlakh Airport",
+      "latitude": 40.6319,
+      "longitude": 47.1419
+    },
+    {
+      "countryCode": "AZ",
+      "region": "Zaqatala",
+      "iata": "ZTU",
+      "icao": "UBBY",
+      "name": "Zaqatala International Airport",
+      "latitude": 41.5622,
+      "longitude": 46.6672
+    }
+  ]
 }

@@ -228,5 +228,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "JM",
+      "region": "Kingston",
+      "iata": "KTP",
+      "icao": "MKTP",
+      "name": "Tinson Pen Aerodrome",
+      "latitude": 17.9886,
+      "longitude": -76.8238
+    },
+    {
+      "countryCode": "JM",
+      "region": "Portland",
+      "iata": "POT",
+      "icao": "MKKJ",
+      "name": "Ken Jones Aerodrome",
+      "latitude": 18.1988,
+      "longitude": -76.5345
+    },
+    {
+      "countryCode": "JM",
+      "region": "Saint Andrew",
+      "iata": "KIN",
+      "icao": "MKJP",
+      "name": "Norman Manley International Airport",
+      "latitude": 17.9357,
+      "longitude": -76.7875
+    },
+    {
+      "countryCode": "JM",
+      "region": "Saint James",
+      "iata": "MBJ",
+      "icao": "MKJS",
+      "name": "Sangster International Airport",
+      "latitude": 18.5037,
+      "longitude": -77.9134
+    },
+    {
+      "countryCode": "JM",
+      "region": "Saint Mary",
+      "iata": "OCJ",
+      "icao": "MKBS",
+      "name": "Ian Fleming International Airport",
+      "latitude": 18.4042,
+      "longitude": -76.969
+    },
+    {
+      "countryCode": "JM",
+      "region": "Westmoreland",
+      "iata": "NEG",
+      "icao": "MKNG",
+      "name": "Negril Aerodrome",
+      "latitude": 18.3428,
+      "longitude": -78.3321
+    }
+  ]
 }

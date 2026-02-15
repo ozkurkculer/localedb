@@ -236,5 +236,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "HU",
+      "region": "Baranya",
+      "iata": "PEV",
+      "icao": "LHPP",
+      "name": "Pecs-Pogany International Airport",
+      "latitude": 45.9909,
+      "longitude": 18.241
+    },
+    {
+      "countryCode": "HU",
+      "region": "Budapest",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "name": "Budapest Ferenc Liszt International Airport",
+      "latitude": 47.4298,
+      "longitude": 19.2611
+    },
+    {
+      "countryCode": "HU",
+      "region": "Gyor-Moson-Sopron",
+      "iata": "MCQ",
+      "icao": "LHMC",
+      "name": "Miskolc Airport",
+      "latitude": 48.1369,
+      "longitude": 20.7914
+    },
+    {
+      "countryCode": "HU",
+      "region": "Hajdu-Bihar",
+      "iata": "DEB",
+      "icao": "LHDC",
+      "name": "Debrecen International Airport",
+      "latitude": 47.4889,
+      "longitude": 21.6153
+    },
+    {
+      "countryCode": "HU",
+      "region": "Zala",
+      "iata": "SOB",
+      "icao": "LHSM",
+      "name": "Heviz-Balaton Airport",
+      "latitude": 46.6864,
+      "longitude": 17.1591
+    }
+  ]
 }

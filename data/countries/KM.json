@@ -238,5 +238,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KM",
+      "region": "Anjouan",
+      "iata": "AJN",
+      "icao": "FMCV",
+      "name": "Ouani Airport",
+      "latitude": -12.1317,
+      "longitude": 44.4303
+    },
+    {
+      "countryCode": "KM",
+      "region": "Grande Comore",
+      "iata": "HAH",
+      "icao": "FMCH",
+      "name": "Prince Said Ibrahim International Airport",
+      "latitude": -11.5337,
+      "longitude": 43.2719
+    },
+    {
+      "countryCode": "KM",
+      "region": "Grande Comore",
+      "iata": "YVA",
+      "icao": "FMCN",
+      "name": "Iconi Airport",
+      "latitude": -11.7125,
+      "longitude": 43.2431
+    },
+    {
+      "countryCode": "KM",
+      "region": "Moheli",
+      "iata": "NWA",
+      "icao": "FMCI",
+      "name": "Moheli Bandar Es Eslam Airport",
+      "latitude": -12.2981,
+      "longitude": 43.7664
+    }
+  ]
 }

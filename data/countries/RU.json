@@ -253,5 +253,2050 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "RU",
+      "region": "Altay, Respublika",
+      "iata": "RGK",
+      "icao": "UNBG",
+      "name": "Gorno-Altaysk Airport",
+      "latitude": 51.9667,
+      "longitude": 85.8333
+    },
+    {
+      "countryCode": "RU",
+      "region": "Altayskiy kray",
+      "iata": "BAX",
+      "icao": "UNBB",
+      "name": "Barnaul Airport",
+      "latitude": 53.3638,
+      "longitude": 83.5385
+    },
+    {
+      "countryCode": "RU",
+      "region": "Amurskaya oblast'",
+      "iata": "BQS",
+      "icao": "UHBB",
+      "name": "Ignatyevo Airport",
+      "latitude": 50.4254,
+      "longitude": 127.412
+    },
+    {
+      "countryCode": "RU",
+      "region": "Amurskaya oblast'",
+      "iata": "EYA",
+      "icao": "",
+      "name": "Zeya Airport",
+      "latitude": 53.6919,
+      "longitude": 127.0883
+    },
+    {
+      "countryCode": "RU",
+      "region": "Amurskaya oblast'",
+      "iata": "GDG",
+      "icao": "UHBI",
+      "name": "Magdagachi Airport",
+      "latitude": 53.4733,
+      "longitude": 125.795
+    },
+    {
+      "countryCode": "RU",
+      "region": "Amurskaya oblast'",
+      "iata": "TYD",
+      "icao": "UHBW",
+      "name": "Tynda Airport",
+      "latitude": 55.2842,
+      "longitude": 124.779
+    },
+    {
+      "countryCode": "RU",
+      "region": "Arkhangel'skaya oblast'",
+      "iata": "ARH",
+      "icao": "ULAA",
+      "name": "Talagi Airport",
+      "latitude": 64.6003,
+      "longitude": 40.7167
+    },
+    {
+      "countryCode": "RU",
+      "region": "Arkhangel'skaya oblast'",
+      "iata": "CSH",
+      "icao": "ULAS",
+      "name": "Solovki Airport",
+      "latitude": 65.03,
+      "longitude": 35.7333
+    },
+    {
+      "countryCode": "RU",
+      "region": "Arkhangel'skaya oblast'",
+      "iata": "KSZ",
+      "icao": "ULKK",
+      "name": "Kotlas Airport",
+      "latitude": 61.2358,
+      "longitude": 46.6975
+    },
+    {
+      "countryCode": "RU",
+      "region": "Arkhangel'skaya oblast'",
+      "iata": "LDG",
+      "icao": "ULAL",
+      "name": "Leshukonskoye Airport",
+      "latitude": 64.896,
+      "longitude": 45.723
+    },
+    {
+      "countryCode": "RU",
+      "region": "Astrakhanskaya oblast'",
+      "iata": "ASF",
+      "icao": "URWA",
+      "name": "Narimanovo Airport",
+      "latitude": 46.2833,
+      "longitude": 48.0063
+    },
+    {
+      "countryCode": "RU",
+      "region": "Bashkortostan, Respublika",
+      "iata": "BCX",
+      "icao": "UWUB",
+      "name": "Beloretsk Airport",
+      "latitude": 53.9381,
+      "longitude": 58.34
+    },
+    {
+      "countryCode": "RU",
+      "region": "Bashkortostan, Respublika",
+      "iata": "NEF",
+      "icao": "UWUF",
+      "name": "Neftekamsk Airport",
+      "latitude": 56.1069,
+      "longitude": 54.3472
+    },
+    {
+      "countryCode": "RU",
+      "region": "Bashkortostan, Respublika",
+      "iata": "OKT",
+      "icao": "UWUK",
+      "name": "Oktyabrsky Airport",
+      "latitude": 54.44,
+      "longitude": 53.3883
+    },
+    {
+      "countryCode": "RU",
+      "region": "Bashkortostan, Respublika",
+      "iata": "UFA",
+      "icao": "UWUU",
+      "name": "Ufa International Airport",
+      "latitude": 54.5575,
+      "longitude": 55.8744
+    },
+    {
+      "countryCode": "RU",
+      "region": "Belgorodskaya oblast'",
+      "iata": "EGO",
+      "icao": "UUOB",
+      "name": "Belgorod International Airport",
+      "latitude": 50.6438,
+      "longitude": 36.5901
+    },
+    {
+      "countryCode": "RU",
+      "region": "Bryanskaya oblast'",
+      "iata": "BZK",
+      "icao": "UUBP",
+      "name": "Bryansk International Airport",
+      "latitude": 53.2142,
+      "longitude": 34.1764
+    },
+    {
+      "countryCode": "RU",
+      "region": "Buryatiya, Respublika",
+      "iata": "NZG",
+      "icao": "",
+      "name": "Nizhneangarsk International Airport",
+      "latitude": 55.8013,
+      "longitude": 109.5986
+    },
+    {
+      "countryCode": "RU",
+      "region": "Buryatiya, Respublika",
+      "iata": "TKM",
+      "icao": "",
+      "name": "Taksimo Airport",
+      "latitude": 56.36,
+      "longitude": 114.9236
+    },
+    {
+      "countryCode": "RU",
+      "region": "Buryatiya, Respublika",
+      "iata": "TLK",
+      "icao": "UECT",
+      "name": "Talakan Airport",
+      "latitude": 59.8764,
+      "longitude": 111.044
+    },
+    {
+      "countryCode": "RU",
+      "region": "Buryatiya, Respublika",
+      "iata": "UUD",
+      "icao": "UIUU",
+      "name": "Baikal International Airport",
+      "latitude": 51.8078,
+      "longitude": 107.438
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chechenskaya Respublika",
+      "iata": "GRV",
+      "icao": "URMG",
+      "name": "Grozny Airport",
+      "latitude": 43.3883,
+      "longitude": 45.6986
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chelyabinskaya oblast'",
+      "iata": "CEK",
+      "icao": "USCC",
+      "name": "Chelyabinsk Airport",
+      "latitude": 55.3058,
+      "longitude": 61.5033
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chelyabinskaya oblast'",
+      "iata": "MQF",
+      "icao": "USCM",
+      "name": "Magnitogorsk International Airport",
+      "latitude": 53.3931,
+      "longitude": 58.7557
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chukotskiy avtonomnyy okrug",
+      "iata": "DYR",
+      "icao": "UHMA",
+      "name": "Ugolny Airport",
+      "latitude": 64.7349,
+      "longitude": 177.741
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chukotskiy avtonomnyy okrug",
+      "iata": "KPW",
+      "icao": "UHMK",
+      "name": "Keperveyem Airport",
+      "latitude": 67.845,
+      "longitude": 166.14
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chukotskiy avtonomnyy okrug",
+      "iata": "KVM",
+      "icao": "UHMO",
+      "name": "Markovo Airport",
+      "latitude": 64.667,
+      "longitude": 170.417
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chukotskiy avtonomnyy okrug",
+      "iata": "PVS",
+      "icao": "UHMD",
+      "name": "Provideniya Bay Airport",
+      "latitude": 64.3781,
+      "longitude": -173.243
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chukotskiy avtonomnyy okrug",
+      "iata": "PWE",
+      "icao": "UHMP",
+      "name": "Pevek Airport",
+      "latitude": 69.7833,
+      "longitude": 170.597
+    },
+    {
+      "countryCode": "RU",
+      "region": "Chuvashskaya Respublika",
+      "iata": "CSY",
+      "icao": "UWKS",
+      "name": "Cheboksary Airport",
+      "latitude": 56.0903,
+      "longitude": 47.3473
+    },
+    {
+      "countryCode": "RU",
+      "region": "Dagestan, Respublika",
+      "iata": "MCX",
+      "icao": "URML",
+      "name": "Uytash Airport",
+      "latitude": 42.8168,
+      "longitude": 47.6523
+    },
+    {
+      "countryCode": "RU",
+      "region": "Ingushetiya, Respublika",
+      "iata": "IGT",
+      "icao": "URMS",
+      "name": "Magas Airport (Sleptsovskaya Airport)",
+      "latitude": 43.3223,
+      "longitude": 45.0126
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "BTK",
+      "icao": "UIBB",
+      "name": "Bratsk Airport",
+      "latitude": 56.3706,
+      "longitude": 101.698
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "ERG",
+      "icao": "UIKE",
+      "name": "Erbogachen Airport",
+      "latitude": 61.275,
+      "longitude": 108.03
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "IKT",
+      "icao": "UIII",
+      "name": "International Airport Irkutsk",
+      "latitude": 52.268,
+      "longitude": 104.389
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "IWA",
+      "icao": "UUBI",
+      "name": "Ivanovo Yuzhny Airport",
+      "latitude": 56.9394,
+      "longitude": 40.9408
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "KCK",
+      "icao": "UIKK",
+      "name": "Kirensk Airport",
+      "latitude": 57.773,
+      "longitude": 108.064
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "ODO",
+      "icao": "UIKB",
+      "name": "Bodaybo Airport",
+      "latitude": 57.8661,
+      "longitude": 114.243
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "UIK",
+      "icao": "UIBS",
+      "name": "Ust-Ilimsk Airport",
+      "latitude": 58.1361,
+      "longitude": 102.565
+    },
+    {
+      "countryCode": "RU",
+      "region": "Irkutskaya oblast'",
+      "iata": "UKX",
+      "icao": "UITT",
+      "name": "Ust-Kut Airport",
+      "latitude": 56.8567,
+      "longitude": 105.73
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kabardino-Balkarskaya Respublika",
+      "iata": "NAL",
+      "icao": "URMN",
+      "name": "Nalchik Airport",
+      "latitude": 43.5129,
+      "longitude": 43.6366
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kaliningradskaya oblast'",
+      "iata": "KGD",
+      "icao": "UMKK",
+      "name": "Khrabrovo Airport",
+      "latitude": 54.89,
+      "longitude": 20.5926
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kalmykiya, Respublika",
+      "iata": "ESL",
+      "icao": "URWI",
+      "name": "Elista Airport",
+      "latitude": 46.3739,
+      "longitude": 44.3309
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kaluzhskaya oblast'",
+      "iata": "KLF",
+      "icao": "UUBC",
+      "name": "Grabtsevo Airport",
+      "latitude": 54.55,
+      "longitude": 36.3667
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kamchatskiy kray",
+      "iata": "PKC",
+      "icao": "UHPP",
+      "name": "Petropavlovsk-Kamchatsky Airport (Yelizovo Airport)",
+      "latitude": 53.1679,
+      "longitude": 158.454
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kareliya, Respublika",
+      "iata": "PES",
+      "icao": "ULPB",
+      "name": "Petrozavodsk Airport (Besovets Airport)",
+      "latitude": 61.8852,
+      "longitude": 34.1547
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kemerovskaya oblast'",
+      "iata": "KEJ",
+      "icao": "UNEE",
+      "name": "Kemerovo International Airport",
+      "latitude": 55.2701,
+      "longitude": 86.1072
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kemerovskaya oblast'",
+      "iata": "NOZ",
+      "icao": "UNWW",
+      "name": "Spichenkovo Airport",
+      "latitude": 53.8114,
+      "longitude": 86.8772
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "BQG",
+      "icao": "UHNB",
+      "name": "Bogorodskoye Airport",
+      "latitude": 52.38,
+      "longitude": 140.448
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "GVN",
+      "icao": "UHKM",
+      "name": "Sovetskaya Gavan Airport",
+      "latitude": 48.927,
+      "longitude": 140.034
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "KHV",
+      "icao": "UHHH",
+      "name": "Khabarovsk Novy Airport",
+      "latitude": 48.528,
+      "longitude": 135.188
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "KXK",
+      "icao": "UHKK",
+      "name": "Komsomolsk-on-Amur Airport",
+      "latitude": 50.409,
+      "longitude": 136.934
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "NLI",
+      "icao": "UHNN",
+      "name": "Nikolayevsk-on-Amur Airport",
+      "latitude": 53.155,
+      "longitude": 140.65
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khabarovskiy kray",
+      "iata": "OHO",
+      "icao": "UHOO",
+      "name": "Okhotsk Airport",
+      "latitude": 59.4101,
+      "longitude": 143.057
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khakasiya, Respublika",
+      "iata": "ABA",
+      "icao": "UNAA",
+      "name": "Abakan International Airport",
+      "latitude": 53.74,
+      "longitude": 91.385
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "EYK",
+      "icao": "USHQ",
+      "name": "Beloyarsk Airport",
+      "latitude": 63.6869,
+      "longitude": 66.6986
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "EZV",
+      "icao": "",
+      "name": "Beryozovo Airport",
+      "latitude": 63.921,
+      "longitude": 65.0305
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "HMA",
+      "icao": "USHH",
+      "name": "Khanty-Mansiysk Airport",
+      "latitude": 61.0285,
+      "longitude": 69.0861
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "IRM",
+      "icao": "USHI",
+      "name": "Igrim Airport",
+      "latitude": 63.1988,
+      "longitude": 64.4393
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "KGP",
+      "icao": "USRK",
+      "name": "Kogalym International Airport",
+      "latitude": 62.1904,
+      "longitude": 74.5338
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "KXD",
+      "icao": "USHK",
+      "name": "Kondinskoye Airport",
+      "latitude": 59.6551,
+      "longitude": 67.43
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "NFG",
+      "icao": "USRN",
+      "name": "Nefteyugansk Airport",
+      "latitude": 61.1083,
+      "longitude": 72.65
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "NJC",
+      "icao": "USNN",
+      "name": "Nizhnevartovsk Airport",
+      "latitude": 60.9493,
+      "longitude": 76.4836
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "NYA",
+      "icao": "USHN",
+      "name": "Nyagan Airport",
+      "latitude": 62.11,
+      "longitude": 65.615
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "OVS",
+      "icao": "USHS",
+      "name": "Sovetsky Airport",
+      "latitude": 61.3266,
+      "longitude": 63.6019
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "RAT",
+      "icao": "USNR",
+      "name": "Raduzhny Airport",
+      "latitude": 62.1586,
+      "longitude": 77.3289
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "SGC",
+      "icao": "USRR",
+      "name": "Surgut International Airport",
+      "latitude": 61.3437,
+      "longitude": 73.4018
+    },
+    {
+      "countryCode": "RU",
+      "region": "Khanty-Mansiyskiy avtonomnyy okrug",
+      "iata": "URJ",
+      "icao": "USHU",
+      "name": "Uray Airport",
+      "latitude": 60.1033,
+      "longitude": 64.8267
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kirovskaya oblast'",
+      "iata": "KVX",
+      "icao": "USKK",
+      "name": "Pobedilovo Airport",
+      "latitude": 58.5033,
+      "longitude": 49.3483
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "INA",
+      "icao": "UUYI",
+      "name": "Inta Airport",
+      "latitude": 66.0548,
+      "longitude": 60.1103
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "PEX",
+      "icao": "UUYP",
+      "name": "Pechora Airport",
+      "latitude": 65.1211,
+      "longitude": 57.1308
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "SCW",
+      "icao": "UUYY",
+      "name": "Syktyvkar Airport",
+      "latitude": 61.647,
+      "longitude": 50.8451
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "UCT",
+      "icao": "UUYH",
+      "name": "Ukhta Airport",
+      "latitude": 63.5669,
+      "longitude": 53.8047
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "USK",
+      "icao": "UUYS",
+      "name": "Usinsk Airport",
+      "latitude": 66.0047,
+      "longitude": 57.3672
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "UTS",
+      "icao": "UUYX",
+      "name": "Ust-Tsilma Airport",
+      "latitude": 65.4373,
+      "longitude": 52.2003
+    },
+    {
+      "countryCode": "RU",
+      "region": "Komi, Respublika",
+      "iata": "VKT",
+      "icao": "UUYW",
+      "name": "Vorkuta Airport",
+      "latitude": 67.4886,
+      "longitude": 63.9931
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kostromskaya oblast'",
+      "iata": "KMW",
+      "icao": "UUBA",
+      "name": "Kostroma Airport",
+      "latitude": 57.7969,
+      "longitude": 41.0194
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "AAQ",
+      "icao": "URKA",
+      "name": "Anapa Airport",
+      "latitude": 45.0021,
+      "longitude": 37.3473
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "AER",
+      "icao": "URSS",
+      "name": "Sochi International Airport",
+      "latitude": 43.4499,
+      "longitude": 39.9566
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "EIK",
+      "icao": "",
+      "name": "Yeysk Airport",
+      "latitude": 46.68,
+      "longitude": 38.21
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "GDZ",
+      "icao": "URKG",
+      "name": "Gelendzhik Airport",
+      "latitude": 44.5821,
+      "longitude": 38.0125
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "KRR",
+      "icao": "URKK",
+      "name": "Krasnodar International Airport (Pashkovsky Airport)",
+      "latitude": 45.0347,
+      "longitude": 39.1705
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnodarskiy kray",
+      "iata": "NOI",
+      "icao": "",
+      "name": "Novorossiysk Airport",
+      "latitude": 44.4016,
+      "longitude": 37.7779
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "ACS",
+      "icao": "UNKS",
+      "name": "Achinsk Airport",
+      "latitude": 56.2683,
+      "longitude": 90.5708
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "BGS",
+      "icao": "",
+      "name": "Boguchani Airport / Webb Air Force Base",
+      "latitude": 58.3816,
+      "longitude": 97.4678
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "DKS",
+      "icao": "UODD",
+      "name": "Dikson Airport",
+      "latitude": 73.5178,
+      "longitude": 80.3797
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "EIE",
+      "icao": "UNII",
+      "name": "Yeniseysk Airport",
+      "latitude": 58.4742,
+      "longitude": 92.1125
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "GOY",
+      "icao": "",
+      "name": "Tura Tour Mountain Airport",
+      "latitude": 64.3297,
+      "longitude": 100.4305
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "HTG",
+      "icao": "UOHH",
+      "name": "Khatanga Airport",
+      "latitude": 71.9781,
+      "longitude": 102.491
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "IAA",
+      "icao": "UOII",
+      "name": "Igarka Airport",
+      "latitude": 67.4372,
+      "longitude": 86.6219
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "KCY",
+      "icao": "",
+      "name": "Cheremshanka Krasnoyarsk Airport",
+      "latitude": 56.1773,
+      "longitude": 92.5245
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "KJA",
+      "icao": "UNKL",
+      "name": "Yemelyanovo International Airport",
+      "latitude": 56.1729,
+      "longitude": 92.4933
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "KNY",
+      "icao": "",
+      "name": "Kodinsk Airport",
+      "latitude": 58.4789,
+      "longitude": 99.1017
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "NSK",
+      "icao": "UOOO",
+      "name": "Alykel Airport",
+      "latitude": 69.3111,
+      "longitude": 87.3322
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "SES",
+      "icao": "",
+      "name": "Svetlogorsk Selfield Airport",
+      "latitude": 66.8425,
+      "longitude": 88.4098
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "TGP",
+      "icao": "UNIP",
+      "name": "Podkamennaya Tunguska Airport",
+      "latitude": 61.5897,
+      "longitude": 89.994
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "THX",
+      "icao": "UOTT",
+      "name": "Turukhansk Airport",
+      "latitude": 65.7972,
+      "longitude": 87.9353
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "VAQ",
+      "icao": "",
+      "name": "Vanavara Airport",
+      "latitude": 60.3553,
+      "longitude": 102.3076
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "VEO",
+      "icao": "",
+      "name": "Severo-Yeniseyskiy Airport",
+      "latitude": 60.3728,
+      "longitude": 93.016
+    },
+    {
+      "countryCode": "RU",
+      "region": "Krasnoyarskiy kray",
+      "iata": "YAE",
+      "icao": "",
+      "name": "Yartsevo Airport",
+      "latitude": 60.2525,
+      "longitude": 90.2031
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kurganskaya oblast'",
+      "iata": "KRO",
+      "icao": "USUU",
+      "name": "Kurgan Airport",
+      "latitude": 55.4753,
+      "longitude": 65.4156
+    },
+    {
+      "countryCode": "RU",
+      "region": "Kurskaya oblast'",
+      "iata": "URS",
+      "icao": "UUOK",
+      "name": "Kursk Vostochny Airport",
+      "latitude": 51.7506,
+      "longitude": 36.2956
+    },
+    {
+      "countryCode": "RU",
+      "region": "Leningradskaja oblast",
+      "iata": "RVH",
+      "icao": "ULSS",
+      "name": "Rzhevka Airport",
+      "latitude": 59.98,
+      "longitude": 30.5883
+    },
+    {
+      "countryCode": "RU",
+      "region": "Leningradskaya oblast'",
+      "iata": "LED",
+      "icao": "ULLI",
+      "name": "Pulkovo Airport",
+      "latitude": 59.8003,
+      "longitude": 30.2625
+    },
+    {
+      "countryCode": "RU",
+      "region": "Lipetskaya oblast'",
+      "iata": "LPK",
+      "icao": "UUOL",
+      "name": "Lipetsk Airport",
+      "latitude": 52.7028,
+      "longitude": 39.5378
+    },
+    {
+      "countryCode": "RU",
+      "region": "Magadanskaya oblast'",
+      "iata": "GDX",
+      "icao": "UHMM",
+      "name": "Sokol Airport",
+      "latitude": 59.911,
+      "longitude": 150.72
+    },
+    {
+      "countryCode": "RU",
+      "region": "Magadanskaya oblast'",
+      "iata": "SWV",
+      "icao": "UHMW",
+      "name": "Severo-Evensk Airport",
+      "latitude": 29.1667,
+      "longitude": 70.4333
+    },
+    {
+      "countryCode": "RU",
+      "region": "Mariy El, Respublika",
+      "iata": "JOK",
+      "icao": "UWKJ",
+      "name": "Yoshkar-Ola Airport",
+      "latitude": 56.7006,
+      "longitude": 47.9047
+    },
+    {
+      "countryCode": "RU",
+      "region": "Mordoviya, Respublika",
+      "iata": "SKX",
+      "icao": "UWPS",
+      "name": "Saransk Airport",
+      "latitude": 54.1251,
+      "longitude": 45.2123
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskovskaya Oblast",
+      "iata": "BKA",
+      "icao": "UUBB",
+      "name": "Bykovo Airport",
+      "latitude": 55.6226,
+      "longitude": 38.0661
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskovskaya Oblast",
+      "iata": "DME",
+      "icao": "UUDD",
+      "name": "Domodedovo Airport",
+      "latitude": 55.4102,
+      "longitude": 37.902
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskovskaya oblast",
+      "iata": "SVO",
+      "icao": "UUEE",
+      "name": "Sheremetyevo Alexander S. Pushkin International Airport",
+      "latitude": 55.9728,
+      "longitude": 37.4147
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskovskaya oblast'",
+      "iata": "CKL",
+      "icao": "UUMU",
+      "name": "Chkalovsky Airport",
+      "latitude": 55.8783,
+      "longitude": 38.0617
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskva",
+      "iata": "OSF",
+      "icao": "UUMO",
+      "name": "Ostafyevo International Airport",
+      "latitude": 55.5117,
+      "longitude": 37.5072
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskva",
+      "iata": "VKO",
+      "icao": "UUWW",
+      "name": "Vnukovo International Airport",
+      "latitude": 55.5979,
+      "longitude": 37.2709
+    },
+    {
+      "countryCode": "RU",
+      "region": "Moskva",
+      "iata": "ZIA",
+      "icao": "UUBW",
+      "name": "Ramenskoye Airport (Zhukovsky Airport)",
+      "latitude": 55.5533,
+      "longitude": 38.15
+    },
+    {
+      "countryCode": "RU",
+      "region": "Murmanskaya oblast'",
+      "iata": "KVK",
+      "icao": "ULMK",
+      "name": "Kirovsk-Apatity Airport (Khibiny Airport)",
+      "latitude": 67.4633,
+      "longitude": 33.5883
+    },
+    {
+      "countryCode": "RU",
+      "region": "Murmanskaya oblast'",
+      "iata": "MMK",
+      "icao": "ULMM",
+      "name": "Murmansk Airport",
+      "latitude": 68.7817,
+      "longitude": 32.7508
+    },
+    {
+      "countryCode": "RU",
+      "region": "Nenetskiy avtonomnyy okrug",
+      "iata": "AMV",
+      "icao": "ULDD",
+      "name": "Amderma Airport",
+      "latitude": 69.7633,
+      "longitude": 61.5564
+    },
+    {
+      "countryCode": "RU",
+      "region": "Nenetskiy avtonomnyy okrug",
+      "iata": "NNM",
+      "icao": "ULAM",
+      "name": "Naryan-Mar Airport",
+      "latitude": 67.64,
+      "longitude": 53.1219
+    },
+    {
+      "countryCode": "RU",
+      "region": "Nenetskiy avtonomnyy okrug",
+      "iata": "VRI",
+      "icao": "ULDW",
+      "name": "Varandey Airport",
+      "latitude": 68.8485,
+      "longitude": 58.2014
+    },
+    {
+      "countryCode": "RU",
+      "region": "Nizhegorodskaya oblast",
+      "iata": "NVR",
+      "icao": "ULNN",
+      "name": "Novgorod Airport",
+      "latitude": 58.4933,
+      "longitude": 31.2417
+    },
+    {
+      "countryCode": "RU",
+      "region": "Nizhegorodskaya oblast'",
+      "iata": "GOJ",
+      "icao": "UWGG",
+      "name": "Nizhny Novgorod International Airport (Strigino Airport)",
+      "latitude": 56.2301,
+      "longitude": 43.784
+    },
+    {
+      "countryCode": "RU",
+      "region": "Novosibirskaya oblast'",
+      "iata": "OVB",
+      "icao": "UNNT",
+      "name": "Tolmachevo Airport",
+      "latitude": 55.0126,
+      "longitude": 82.6507
+    },
+    {
+      "countryCode": "RU",
+      "region": "Omskaya oblast'",
+      "iata": "OMS",
+      "icao": "UNOO",
+      "name": "Omsk Tsentralny Airport",
+      "latitude": 54.967,
+      "longitude": 73.3105
+    },
+    {
+      "countryCode": "RU",
+      "region": "Orenburgskaya oblast'",
+      "iata": "OSW",
+      "icao": "UWOR",
+      "name": "Orsk Airport",
+      "latitude": 51.0725,
+      "longitude": 58.5956
+    },
+    {
+      "countryCode": "RU",
+      "region": "Orenburgskaya oblast'",
+      "iata": "REN",
+      "icao": "UWOO",
+      "name": "Orenburg Tsentralny Airport",
+      "latitude": 51.7958,
+      "longitude": 55.4567
+    },
+    {
+      "countryCode": "RU",
+      "region": "Orlovskaya oblast'",
+      "iata": "OEL",
+      "icao": "UUOR",
+      "name": "Oryol Yuzhny Airport",
+      "latitude": 52.9347,
+      "longitude": 36.0022
+    },
+    {
+      "countryCode": "RU",
+      "region": "Penzenskaya oblast'",
+      "iata": "PEZ",
+      "icao": "UWPP",
+      "name": "Penza Airport (Ternovka Airport)",
+      "latitude": 53.1106,
+      "longitude": 45.0211
+    },
+    {
+      "countryCode": "RU",
+      "region": "Permskiy kray",
+      "iata": "PEE",
+      "icao": "USPP",
+      "name": "Perm International Airport (Bolshoye Savino Airport)",
+      "latitude": 57.9145,
+      "longitude": 56.0212
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "AEM",
+      "icao": "UHTG",
+      "name": "Amgu Airport",
+      "latitude": 45.8413,
+      "longitude": 137.674
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "DHG",
+      "icao": "",
+      "name": "Dalnegorsk Airport",
+      "latitude": 44.5589,
+      "longitude": 135.4911
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "EDN",
+      "icao": "",
+      "name": "Yedinka Airport",
+      "latitude": 47.1792,
+      "longitude": 138.6504
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "ETL",
+      "icao": "",
+      "name": "Svetlaya Airport",
+      "latitude": 46.5414,
+      "longitude": 138.3219
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "KVR",
+      "icao": "",
+      "name": "Kavalerovo Airport",
+      "latitude": 44.2726,
+      "longitude": 135.029
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "NEI",
+      "icao": "",
+      "name": "Terney Airport",
+      "latitude": 45.0814,
+      "longitude": 136.5901
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "RZH",
+      "icao": "",
+      "name": "Preobrazheniye Airport",
+      "latitude": 42.9194,
+      "longitude": 133.9011
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "TLY",
+      "icao": "UHWP",
+      "name": "Plastun Airport",
+      "latitude": 44.815,
+      "longitude": 136.292
+    },
+    {
+      "countryCode": "RU",
+      "region": "Primorskiy kray",
+      "iata": "VVO",
+      "icao": "UHWW",
+      "name": "Vladivostok International Airport",
+      "latitude": 43.399,
+      "longitude": 132.148
+    },
+    {
+      "countryCode": "RU",
+      "region": "Pskovskaya oblast'",
+      "iata": "PKV",
+      "icao": "ULOO",
+      "name": "Pskov Airport",
+      "latitude": 57.7839,
+      "longitude": 28.3956
+    },
+    {
+      "countryCode": "RU",
+      "region": "Pskovskaya oblast'",
+      "iata": "VLU",
+      "icao": "ULOL",
+      "name": "Velikiye Luki Airport",
+      "latitude": 56.3811,
+      "longitude": 30.6081
+    },
+    {
+      "countryCode": "RU",
+      "region": "Rostovskaya Oblast",
+      "iata": "RVI",
+      "icao": "URRR",
+      "name": "Rostov-on-Don Airport",
+      "latitude": 47.2583,
+      "longitude": 39.8183
+    },
+    {
+      "countryCode": "RU",
+      "region": "Rostovskaya oblast'",
+      "iata": "ROV",
+      "icao": "URRP",
+      "name": "Platov International Airport",
+      "latitude": 47.4939,
+      "longitude": 39.9247
+    },
+    {
+      "countryCode": "RU",
+      "region": "Rostovskaya oblast'",
+      "iata": "TGK",
+      "icao": "URRT",
+      "name": "Taganrog Airport",
+      "latitude": 47.1983,
+      "longitude": 38.8492
+    },
+    {
+      "countryCode": "RU",
+      "region": "Rostovskaya oblast'",
+      "iata": "VLK",
+      "icao": "URRY",
+      "name": "Volgodonsk Airport",
+      "latitude": 47.6821,
+      "longitude": 42.0728
+    },
+    {
+      "countryCode": "RU",
+      "region": "Ryazanskaya oblast'",
+      "iata": "RZN",
+      "icao": "UUWR",
+      "name": "Turlatovo Airport",
+      "latitude": 54.5559,
+      "longitude": 39.8552
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "ADH",
+      "icao": "UEEA",
+      "name": "Aldan Airport",
+      "latitude": 58.6028,
+      "longitude": 125.409
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "BGN",
+      "icao": "UESG",
+      "name": "Belaya Gora Airport",
+      "latitude": 68.5566,
+      "longitude": 146.232
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "BQJ",
+      "icao": "",
+      "name": "Batagay Airport",
+      "latitude": 67.648,
+      "longitude": 134.695
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "CKH",
+      "icao": "UESO",
+      "name": "Chokurdakh Airport",
+      "latitude": 70.6231,
+      "longitude": 147.902
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "CYX",
+      "icao": "UESS",
+      "name": "Chersky Airport",
+      "latitude": 68.7406,
+      "longitude": 161.338
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "DPT",
+      "icao": "",
+      "name": "Deputatsky Airport",
+      "latitude": 69.3925,
+      "longitude": 139.89
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "GYG",
+      "icao": "UEMM",
+      "name": "Magan Airport",
+      "latitude": 62.1035,
+      "longitude": 129.545
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "IKS",
+      "icao": "UEST",
+      "name": "Tiksi Airport",
+      "latitude": 71.6977,
+      "longitude": 128.903
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "KDY",
+      "icao": "UEMH",
+      "name": "Teply Klyuch Airport",
+      "latitude": 62.789,
+      "longitude": 136.855
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "MJZ",
+      "icao": "UERR",
+      "name": "Mirny Airport",
+      "latitude": 62.5347,
+      "longitude": 114.039
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "MQJ",
+      "icao": "UEMA",
+      "name": "Moma Airport",
+      "latitude": 66.4509,
+      "longitude": 143.262
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "NER",
+      "icao": "UELL",
+      "name": "Chulman Neryungri Airport",
+      "latitude": 56.9139,
+      "longitude": 124.914
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "NYR",
+      "icao": "UENN",
+      "name": "Nyurba Airport",
+      "latitude": 63.295,
+      "longitude": 118.337
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "OLZ",
+      "icao": "UEMO",
+      "name": "Olyokminsk Airport",
+      "latitude": 60.3975,
+      "longitude": 120.471
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "ONK",
+      "icao": "UERO",
+      "name": "Olenyok Airport",
+      "latitude": 68.515,
+      "longitude": 112.48
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "PYJ",
+      "icao": "UERP",
+      "name": "Polyarny Airport",
+      "latitude": 66.4004,
+      "longitude": 112.03
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "SEK",
+      "icao": "UESK",
+      "name": "Srednekolymsk Airport",
+      "latitude": 67.4805,
+      "longitude": 153.736
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "SUK",
+      "icao": "UEBS",
+      "name": "Sakkyryr Airport",
+      "latitude": 67.792,
+      "longitude": 130.394
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "SUY",
+      "icao": "UENS",
+      "name": "Suntar Airport",
+      "latitude": 62.185,
+      "longitude": 117.635
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "SYS",
+      "icao": "UERS",
+      "name": "Saskylakh Airport",
+      "latitude": 71.9279,
+      "longitude": 114.08
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "UKG",
+      "icao": "UEBT",
+      "name": "Ust-Kuyga Airport",
+      "latitude": 70.011,
+      "longitude": 135.645
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "ULK",
+      "icao": "UERL",
+      "name": "Lensk Airport",
+      "latitude": 60.7206,
+      "longitude": 114.826
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "UMS",
+      "icao": "UEMU",
+      "name": "Ust-Maya Airport",
+      "latitude": 60.357,
+      "longitude": 134.435
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "USR",
+      "icao": "UEMT",
+      "name": "Ust-Nera Airport",
+      "latitude": 64.55,
+      "longitude": 143.115
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "VHV",
+      "icao": "UENI",
+      "name": "Verkhnevilyuysk Airport",
+      "latitude": 63.4581,
+      "longitude": 120.269
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "VYI",
+      "icao": "UENW",
+      "name": "Vilyuysk Airport",
+      "latitude": 63.7567,
+      "longitude": 121.693
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "YKS",
+      "icao": "UEEE",
+      "name": "Yakutsk Airport",
+      "latitude": 62.0933,
+      "longitude": 129.771
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "ZIX",
+      "icao": "UEVV",
+      "name": "Zhigansk Airport",
+      "latitude": 66.7965,
+      "longitude": 123.361
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saha, Respublika",
+      "iata": "ZKP",
+      "icao": "UESU",
+      "name": "Zyryanka Airport",
+      "latitude": 65.7485,
+      "longitude": 150.889
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "BVV",
+      "icao": "UHSB",
+      "name": "Burevestnik Airport",
+      "latitude": 44.92,
+      "longitude": 147.622
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "DEE",
+      "icao": "UHSM",
+      "name": "Yuzhno-Kurilsk Mendeleyevo Airport",
+      "latitude": 43.9584,
+      "longitude": 145.683
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "EKS",
+      "icao": "UHSK",
+      "name": "Shakhtyorsk Airport",
+      "latitude": 49.1903,
+      "longitude": 142.083
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "ITU",
+      "icao": "UHSI",
+      "name": "Iturup Airport",
+      "latitude": 45.2564,
+      "longitude": 147.955
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "NGK",
+      "icao": "UHSN",
+      "name": "Nogliki Airport",
+      "latitude": 51.7801,
+      "longitude": 143.139
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "OHH",
+      "icao": "UHSH",
+      "name": "Okha Airport (Novostroyka Airport)",
+      "latitude": 53.52,
+      "longitude": 142.89
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "UHS",
+      "icao": "",
+      "name": "Alexandrovsk-Sakhalinsky Airport",
+      "latitude": 50.8782,
+      "longitude": 142.1759
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "UUS",
+      "icao": "UHSS",
+      "name": "Yuzhno-Sakhalinsk Airport (Khomutovo Airport)",
+      "latitude": 46.8887,
+      "longitude": 142.718
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sakhalinskaya oblast'",
+      "iata": "ZZO",
+      "icao": "UHSO",
+      "name": "Zonalnoye Airport",
+      "latitude": 50.6692,
+      "longitude": 142.761
+    },
+    {
+      "countryCode": "RU",
+      "region": "Samarskaya oblast'",
+      "iata": "KUF",
+      "icao": "UWWW",
+      "name": "Kurumoch International Airport",
+      "latitude": 53.5049,
+      "longitude": 50.1643
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saratovskaya oblast'",
+      "iata": "BWO",
+      "icao": "UWSB",
+      "name": "Balakovo Airport",
+      "latitude": 51.8583,
+      "longitude": 47.7456
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saratovskaya oblast'",
+      "iata": "GSV",
+      "icao": "",
+      "name": "Saratov Gagarin Airport",
+      "latitude": 51.7128,
+      "longitude": 46.1711
+    },
+    {
+      "countryCode": "RU",
+      "region": "Saratovskaya oblast'",
+      "iata": "RTW",
+      "icao": "UWSS",
+      "name": "Saratov Tsentralny Airport",
+      "latitude": 51.565,
+      "longitude": 46.0467
+    },
+    {
+      "countryCode": "RU",
+      "region": "Severnaya Osetiya, Respublika",
+      "iata": "OGZ",
+      "icao": "URMO",
+      "name": "Beslan Airport",
+      "latitude": 43.2051,
+      "longitude": 44.6066
+    },
+    {
+      "countryCode": "RU",
+      "region": "Smolenskaya oblast'",
+      "iata": "LNX",
+      "icao": "UUBS",
+      "name": "Smolensk South Airport",
+      "latitude": 54.824,
+      "longitude": 32.025
+    },
+    {
+      "countryCode": "RU",
+      "region": "Stavropol'skiy kray",
+      "iata": "MRV",
+      "icao": "URMM",
+      "name": "Mineralnye Vody Airport",
+      "latitude": 44.2251,
+      "longitude": 43.0819
+    },
+    {
+      "countryCode": "RU",
+      "region": "Stavropol'skiy kray",
+      "iata": "STW",
+      "icao": "URMT",
+      "name": "Stavropol Shpakovskoye Airport",
+      "latitude": 45.1092,
+      "longitude": 42.1128
+    },
+    {
+      "countryCode": "RU",
+      "region": "Sverdlovskaya oblast'",
+      "iata": "SVX",
+      "icao": "USSS",
+      "name": "Koltsovo International Airport",
+      "latitude": 56.7431,
+      "longitude": 60.8027
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tambovskaya oblast'",
+      "iata": "TBW",
+      "icao": "UUOT",
+      "name": "Tambov Donskoye Airport",
+      "latitude": 52.8061,
+      "longitude": 41.4828
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tatarstan, Respublika",
+      "iata": "KZN",
+      "icao": "UWKD",
+      "name": "Kazan International Airport",
+      "latitude": 55.6062,
+      "longitude": 49.2787
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tatarstan, Respublika",
+      "iata": "NBC",
+      "icao": "UWKE",
+      "name": "Begishevo Airport",
+      "latitude": 55.5647,
+      "longitude": 52.0925
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tatarstan, Respublika",
+      "iata": "UUA",
+      "icao": "UWKB",
+      "name": "Bugulma Airport",
+      "latitude": 54.64,
+      "longitude": 52.8017
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tomskaya oblast'",
+      "iata": "SWT",
+      "icao": "UNSS",
+      "name": "Strezhevoy Airport",
+      "latitude": 60.7094,
+      "longitude": 77.66
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tomskaya oblast'",
+      "iata": "TOF",
+      "icao": "UNTT",
+      "name": "Bogashevo Airport",
+      "latitude": 56.3803,
+      "longitude": 85.2083
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tul'skaya oblast'",
+      "iata": "TYA",
+      "icao": "UUBT",
+      "name": "Klokovo Airport",
+      "latitude": 54.239,
+      "longitude": 37.6
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tverskaya oblast'",
+      "iata": "KLD",
+      "icao": "UUEM",
+      "name": "Migalovo Air Base",
+      "latitude": 56.8247,
+      "longitude": 35.7577
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tyumenskaya oblast",
+      "iata": "RMZ",
+      "icao": "",
+      "name": "Tobolsk Remezov Airport",
+      "latitude": 58.0617,
+      "longitude": 68.33
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tyumenskaya oblast'",
+      "iata": "TJM",
+      "icao": "USTR",
+      "name": "Roshchino International Airport",
+      "latitude": 57.1896,
+      "longitude": 65.3243
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tyumenskaya oblast'",
+      "iata": "TOX",
+      "icao": "USTO",
+      "name": "Tobolsk Airport",
+      "latitude": 58.1358,
+      "longitude": 68.2319
+    },
+    {
+      "countryCode": "RU",
+      "region": "Tyva, Respublika",
+      "iata": "KYZ",
+      "icao": "UNKY",
+      "name": "Kyzyl Airport",
+      "latitude": 51.6694,
+      "longitude": 94.4006
+    },
+    {
+      "countryCode": "RU",
+      "region": "Udmurtskaya Respublika",
+      "iata": "IJK",
+      "icao": "USII",
+      "name": "Izhevsk Airport",
+      "latitude": 56.8281,
+      "longitude": 53.4575
+    },
+    {
+      "countryCode": "RU",
+      "region": "Ul'yanovskaya oblast'",
+      "iata": "ULV",
+      "icao": "UWLL",
+      "name": "Ulyanovsk Baratayevka Airport",
+      "latitude": 54.2683,
+      "longitude": 48.2267
+    },
+    {
+      "countryCode": "RU",
+      "region": "Ul'yanovskaya oblast'",
+      "iata": "ULY",
+      "icao": "UWLW",
+      "name": "Ulyanovsk Vostochny Airport",
+      "latitude": 54.401,
+      "longitude": 48.8027
+    },
+    {
+      "countryCode": "RU",
+      "region": "Vologodskaya oblast'",
+      "iata": "CEE",
+      "icao": "ULWC",
+      "name": "Cherepovets Airport",
+      "latitude": 59.2736,
+      "longitude": 38.0158
+    },
+    {
+      "countryCode": "RU",
+      "region": "Vologodskaya oblast'",
+      "iata": "VGD",
+      "icao": "ULWW",
+      "name": "Vologda Airport",
+      "latitude": 59.2825,
+      "longitude": 39.9444
+    },
+    {
+      "countryCode": "RU",
+      "region": "Vologodskaya oblast'",
+      "iata": "VOG",
+      "icao": "URWW",
+      "name": "Volgograd International Airport",
+      "latitude": 48.7825,
+      "longitude": 44.3455
+    },
+    {
+      "countryCode": "RU",
+      "region": "Vologodskaya oblast'",
+      "iata": "VUS",
+      "icao": "ULWU",
+      "name": "Veliky Ustyug Airport",
+      "latitude": 60.7883,
+      "longitude": 46.26
+    },
+    {
+      "countryCode": "RU",
+      "region": "Voronezhskaya oblast'",
+      "iata": "VOZ",
+      "icao": "UUOO",
+      "name": "Voronezh International Airport (Chertovitskoye Airport)",
+      "latitude": 51.8142,
+      "longitude": 39.2296
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "BVJ",
+      "icao": "USDB",
+      "name": "Bovanenkovo Airport",
+      "latitude": 70.3153,
+      "longitude": 68.3336
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "KKQ",
+      "icao": "USDP",
+      "name": "Krasnoselkup Airport",
+      "latitude": 65.717,
+      "longitude": 82.455
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "NOJ",
+      "icao": "USRO",
+      "name": "Noyabrsk Airport",
+      "latitude": 63.1833,
+      "longitude": 75.27
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "NUX",
+      "icao": "USMU",
+      "name": "Novy Urengoy Airport",
+      "latitude": 66.0694,
+      "longitude": 76.5203
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "NYM",
+      "icao": "USMM",
+      "name": "Nadym Airport",
+      "latitude": 65.4809,
+      "longitude": 72.6989
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "SBT",
+      "icao": "USDA",
+      "name": "Sabetta International Airport",
+      "latitude": 71.2192,
+      "longitude": 72.0522
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "SLY",
+      "icao": "USDD",
+      "name": "Salekhard Airport",
+      "latitude": 66.5908,
+      "longitude": 66.611
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "TQL",
+      "icao": "USDS",
+      "name": "Tarko-Sale Airport",
+      "latitude": 64.9308,
+      "longitude": 77.8181
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "UEN",
+      "icao": "USDU",
+      "name": "Urengoy Airport",
+      "latitude": 65.96,
+      "longitude": 78.437
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yamalo-Nenetskiy avtonomnyy okrug",
+      "iata": "YMK",
+      "icao": "USDK",
+      "name": "Mys-Kamenny Airport",
+      "latitude": 68.483,
+      "longitude": 73.567
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yaroslavskaya oblast'",
+      "iata": "IAR",
+      "icao": "UUDL",
+      "name": "Tunoshna Airport",
+      "latitude": 57.5607,
+      "longitude": 40.1574
+    },
+    {
+      "countryCode": "RU",
+      "region": "Yaroslavskaya oblast'",
+      "iata": "RYB",
+      "icao": "UUBK",
+      "name": "Staroselye Airport",
+      "latitude": 58.1042,
+      "longitude": 38.9294
+    },
+    {
+      "countryCode": "RU",
+      "region": "Zabaykal'skiy kray",
+      "iata": "CZR",
+      "icao": "",
+      "name": "Chara Airport",
+      "latitude": 56.9127,
+      "longitude": 118.2718
+    },
+    {
+      "countryCode": "RU",
+      "region": "Zabaykal'skiy kray",
+      "iata": "HTA",
+      "icao": "UIAA",
+      "name": "Chita International Airport (Kadala Airport)",
+      "latitude": 52.0263,
+      "longitude": 113.306
+    }
+  ]
 }

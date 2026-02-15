@@ -244,5 +244,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AQ",
+      "region": "Antarctica",
+      "iata": "TNM",
+      "icao": "SCRM",
+      "name": "Teniente R. Marsh Airport",
+      "latitude": -62.1908,
+      "longitude": -58.9867
+    }
+  ]
 }

@@ -242,5 +242,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PY",
+      "region": "Alto Paraguay",
+      "iata": "OLK",
+      "icao": "SGOL",
+      "name": "Fuerte Olimpo Airport",
+      "latitude": -21.0452,
+      "longitude": -57.8825
+    },
+    {
+      "countryCode": "PY",
+      "region": "Alto Paraguay",
+      "iata": "PCJ",
+      "icao": "",
+      "name": "Puerto La Victoria Airport",
+      "latitude": -22.295,
+      "longitude": -57.8663
+    },
+    {
+      "countryCode": "PY",
+      "region": "Alto Parana",
+      "iata": "AGT",
+      "icao": "SGES",
+      "name": "Guarani  International Airport",
+      "latitude": -25.4545,
+      "longitude": -54.8427
+    },
+    {
+      "countryCode": "PY",
+      "region": "Amambay",
+      "iata": "PJC",
+      "icao": "SGPJ",
+      "name": "Dr. Augusto Roberto Fuster International Airport",
+      "latitude": -22.64,
+      "longitude": -55.83
+    },
+    {
+      "countryCode": "PY",
+      "region": "Boqueron",
+      "iata": "ESG",
+      "icao": "SGME",
+      "name": "Dr. Luis Maria Argana International Airport",
+      "latitude": -22.05,
+      "longitude": -60.62
+    },
+    {
+      "countryCode": "PY",
+      "region": "Boqueron",
+      "iata": "FLM",
+      "icao": "SGFI",
+      "name": "Filadelfia Airport",
+      "latitude": -22.3605,
+      "longitude": -60.0536
+    },
+    {
+      "countryCode": "PY",
+      "region": "Central",
+      "iata": "ASU",
+      "icao": "SGAS",
+      "name": "Silvio Pettirossi International Airport",
+      "latitude": -25.24,
+      "longitude": -57.52
+    },
+    {
+      "countryCode": "PY",
+      "region": "Concepcion",
+      "iata": "BFA",
+      "icao": "SGBN",
+      "name": "Bahia Negra Airport",
+      "latitude": -20.2246,
+      "longitude": -58.1792
+    },
+    {
+      "countryCode": "PY",
+      "region": "Concepcion",
+      "iata": "CIO",
+      "icao": "SGCO",
+      "name": "Teniente Coronel Carmelo Peralta Airport",
+      "latitude": -23.4424,
+      "longitude": -57.4273
+    },
+    {
+      "countryCode": "PY",
+      "region": "Concepcion",
+      "iata": "PBT",
+      "icao": "",
+      "name": "Puerto Leda Airport",
+      "latitude": -20.9046,
+      "longitude": -57.9271
+    },
+    {
+      "countryCode": "PY",
+      "region": "Concepcion",
+      "iata": "VMI",
+      "icao": "",
+      "name": "Dr. Juan Plate Airport",
+      "latitude": -22.1591,
+      "longitude": -57.9426
+    },
+    {
+      "countryCode": "PY",
+      "region": "Itapua",
+      "iata": "ENO",
+      "icao": "SGEN",
+      "name": "Teniente Amin Ayub Gonzalez Airport",
+      "latitude": -27.2274,
+      "longitude": -55.8375
+    },
+    {
+      "countryCode": "PY",
+      "region": "Misiones",
+      "iata": "AYO",
+      "icao": "SGAY",
+      "name": "Juan de Ayolas Airport",
+      "latitude": -27.3706,
+      "longitude": -56.8541
+    },
+    {
+      "countryCode": "PY",
+      "region": "Neembucu",
+      "iata": "PIL",
+      "icao": "SGPI",
+      "name": "Carlos Miguel Jimenez Airport",
+      "latitude": -26.8812,
+      "longitude": -58.318
+    }
+  ]
 }

@@ -228,5 +228,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "VI",
+      "region": "Virgin Islands, U.S.",
+      "iata": "SJF",
+      "icao": "",
+      "name": "Cruz Bay Seaplane Base",
+      "latitude": 18.3315,
+      "longitude": -64.796
+    },
+    {
+      "countryCode": "VI",
+      "region": "Virgin Islands, U.S.",
+      "iata": "SPB",
+      "icao": "",
+      "name": "Charlotte Amalie Harbor Seaplane Base (St. Thomas Seaplane Base)",
+      "latitude": 18.3386,
+      "longitude": -64.9407
+    },
+    {
+      "countryCode": "VI",
+      "region": "Virgin Islands, U.S.",
+      "iata": "SSB",
+      "icao": "",
+      "name": "Christiansted Harbor Seaplane Base (St. Croix Seaplane Base)",
+      "latitude": 17.7472,
+      "longitude": -64.7049
+    },
+    {
+      "countryCode": "VI",
+      "region": "Virgin Islands, U.S.",
+      "iata": "STT",
+      "icao": "TIST",
+      "name": "Cyril E. King Airport",
+      "latitude": 18.3373,
+      "longitude": -64.9734
+    },
+    {
+      "countryCode": "VI",
+      "region": "Virgin Islands, U.S.",
+      "iata": "STX",
+      "icao": "TISX",
+      "name": "Henry E. Rohlsen Airport",
+      "latitude": 17.7019,
+      "longitude": -64.7986
+    }
+  ]
 }

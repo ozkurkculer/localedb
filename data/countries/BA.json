@@ -252,5 +252,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BA",
+      "region": "Federacija Bosne i Hercegovine",
+      "iata": "OMO",
+      "icao": "LQMO",
+      "name": "Mostar Airport",
+      "latitude": 43.2829,
+      "longitude": 17.8459
+    },
+    {
+      "countryCode": "BA",
+      "region": "Federacija Bosne i Hercegovine",
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "latitude": 43.8246,
+      "longitude": 18.3315
+    },
+    {
+      "countryCode": "BA",
+      "region": "Federacija Bosne i Hercegovine",
+      "iata": "TZL",
+      "icao": "LQTZ",
+      "name": "Tuzla International Airport",
+      "latitude": 44.4587,
+      "longitude": 18.7248
+    },
+    {
+      "countryCode": "BA",
+      "region": "Republika Srpska",
+      "iata": "BNX",
+      "icao": "LQBK",
+      "name": "Banja Luka International Airport",
+      "latitude": 44.9414,
+      "longitude": 17.2975
+    }
+  ]
 }

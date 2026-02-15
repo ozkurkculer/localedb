@@ -243,5 +243,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "XK",
+      "region": "Pristina",
+      "iata": "PRN",
+      "icao": "BKPR",
+      "name": "Pristina Adem Jashari Airport",
+      "latitude": 42.5745,
+      "longitude": 21.0294
+    }
+  ]
 }

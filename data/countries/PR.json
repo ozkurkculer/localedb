@@ -238,5 +238,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PR",
+      "region": "Carolina",
+      "iata": "SJU",
+      "icao": "TJSJ",
+      "name": "Luis Munoz Marin International Airport",
+      "latitude": 18.4394,
+      "longitude": -66.0018
+    },
+    {
+      "countryCode": "PR",
+      "region": "Ponce",
+      "iata": "PSE",
+      "icao": "TJPS",
+      "name": "Mercedita Airport",
+      "latitude": 18.0083,
+      "longitude": -66.563
+    },
+    {
+      "countryCode": "PR",
+      "region": "San Juan",
+      "iata": "SIG",
+      "icao": "TJIG",
+      "name": "Fernando Luis Ribas Dominicci Airport",
+      "latitude": 18.4568,
+      "longitude": -66.0981
+    }
+  ]
 }

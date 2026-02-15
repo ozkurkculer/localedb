@@ -244,5 +244,70 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BY",
+      "region": "Brestskaya voblasts'",
+      "iata": "BQT",
+      "icao": "UMBB",
+      "name": "Brest Airport",
+      "latitude": 52.1083,
+      "longitude": 23.8981
+    },
+    {
+      "countryCode": "BY",
+      "region": "Homyel'skaya voblasts'",
+      "iata": "GME",
+      "icao": "UMGG",
+      "name": "Gomel Airport",
+      "latitude": 52.527,
+      "longitude": 31.0167
+    },
+    {
+      "countryCode": "BY",
+      "region": "Hrodzenskaya voblasts'",
+      "iata": "GNA",
+      "icao": "UMMG",
+      "name": "Grodno Airport",
+      "latitude": 53.602,
+      "longitude": 24.0538
+    },
+    {
+      "countryCode": "BY",
+      "region": "Mahilyowskaya voblasts'",
+      "iata": "MVQ",
+      "icao": "UMOO",
+      "name": "Mogilev Airport",
+      "latitude": 53.9549,
+      "longitude": 30.0951
+    },
+    {
+      "countryCode": "BY",
+      "region": "Minskaya voblasts'",
+      "iata": "MHP",
+      "icao": "UMMM",
+      "name": "Minsk-1 Airport",
+      "latitude": 53.8645,
+      "longitude": 27.5397
+    },
+    {
+      "countryCode": "BY",
+      "region": "Minskaya voblasts'",
+      "iata": "MSQ",
+      "icao": "UMMS",
+      "name": "Minsk National Airport",
+      "latitude": 53.8825,
+      "longitude": 28.0307
+    },
+    {
+      "countryCode": "BY",
+      "region": "Vitsyebskaya voblasts'",
+      "iata": "VTB",
+      "icao": "UMII",
+      "name": "Vitebsk Vostochny Airport",
+      "latitude": 55.1265,
+      "longitude": 30.3496
+    }
+  ]
 }

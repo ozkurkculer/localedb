@@ -233,5 +233,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AL",
+      "region": "Tirana",
+      "iata": "TIA",
+      "icao": "LATI",
+      "name": "Tirana International Airport",
+      "latitude": 41.4147,
+      "longitude": 19.7206
+    }
+  ]
 }

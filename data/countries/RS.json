@@ -238,5 +238,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "RS",
+      "region": "Beograd",
+      "iata": "BEG",
+      "icao": "LYBE",
+      "name": "Belgrade Nikola Tesla Airport",
+      "latitude": 44.8184,
+      "longitude": 20.3091
+    },
+    {
+      "countryCode": "RS",
+      "region": "Beograd",
+      "iata": "BJY",
+      "icao": "LYBT",
+      "name": "Batajnica Air Base",
+      "latitude": 44.9353,
+      "longitude": 20.2575
+    },
+    {
+      "countryCode": "RS",
+      "region": "Nisavski okrug",
+      "iata": "INI",
+      "icao": "LYNI",
+      "name": "Nis Constantine the Great Airport",
+      "latitude": 43.3373,
+      "longitude": 21.8537
+    },
+    {
+      "countryCode": "RS",
+      "region": "Raski okrug",
+      "iata": "KVO",
+      "icao": "LYKV",
+      "name": "Morava Aerodrom",
+      "latitude": 43.8274,
+      "longitude": 20.5812
+    },
+    {
+      "countryCode": "RS",
+      "region": "Zlatiborski okrug",
+      "iata": "UZC",
+      "icao": "LYUZ",
+      "name": "Uzice-Ponikve Airport",
+      "latitude": 43.898,
+      "longitude": 19.6972
+    }
+  ]
 }

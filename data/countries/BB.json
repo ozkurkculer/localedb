@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BB",
+      "region": "Christ Church",
+      "iata": "BGI",
+      "icao": "TBPB",
+      "name": "Grantley Adams International Airport",
+      "latitude": 13.0746,
+      "longitude": -59.4925
+    }
+  ]
 }

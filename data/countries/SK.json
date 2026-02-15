@@ -234,5 +234,79 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SK",
+      "region": "Banskobystricky kraj",
+      "iata": "LUE",
+      "icao": "LZLU",
+      "name": "Bolkovce Airport",
+      "latitude": 48.3394,
+      "longitude": 19.7358
+    },
+    {
+      "countryCode": "SK",
+      "region": "Banskobystricky kraj",
+      "iata": "SLD",
+      "icao": "LZSL",
+      "name": "Sliac Airport",
+      "latitude": 48.6378,
+      "longitude": 19.1341
+    },
+    {
+      "countryCode": "SK",
+      "region": "Bratislavsky kraj",
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Stefanik Airport",
+      "latitude": 48.1702,
+      "longitude": 17.2127
+    },
+    {
+      "countryCode": "SK",
+      "region": "Kosicky kraj",
+      "iata": "KSC",
+      "icao": "LZKZ",
+      "name": "Kosice International Airport",
+      "latitude": 48.6631,
+      "longitude": 21.2411
+    },
+    {
+      "countryCode": "SK",
+      "region": "Presovsky kraj",
+      "iata": "POV",
+      "icao": "LZPW",
+      "name": "Presov Air Base",
+      "latitude": 49.0297,
+      "longitude": 21.3156
+    },
+    {
+      "countryCode": "SK",
+      "region": "Presovsky kraj",
+      "iata": "TAT",
+      "icao": "LZTT",
+      "name": "Poprad-Tatry Airport",
+      "latitude": 49.0736,
+      "longitude": 20.2411
+    },
+    {
+      "countryCode": "SK",
+      "region": "Trnavsky kraj",
+      "iata": "PZY",
+      "icao": "LZPP",
+      "name": "Piestany Airport",
+      "latitude": 48.6252,
+      "longitude": 17.8284
+    },
+    {
+      "countryCode": "SK",
+      "region": "Zilinsky kraj",
+      "iata": "ILZ",
+      "icao": "LZZI",
+      "name": "Zilina Airport",
+      "latitude": 49.2315,
+      "longitude": 18.6135
+    }
+  ]
 }

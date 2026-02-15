@@ -238,5 +238,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "BDI",
+      "icao": "FSSB",
+      "name": "Bird Island Airport",
+      "latitude": -3.72472,
+      "longitude": 55.2053
+    },
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "DEI",
+      "icao": "FSSD",
+      "name": "Denis Island Airport",
+      "latitude": -3.80222,
+      "longitude": 55.6669
+    },
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "DES",
+      "icao": "FSDR",
+      "name": "Desroches Airport",
+      "latitude": -5.6967,
+      "longitude": 53.6558
+    },
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "FRK",
+      "icao": "FSSF",
+      "name": "Fregate Island Airport",
+      "latitude": -4.583,
+      "longitude": 55.95
+    },
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "PRI",
+      "icao": "FSPP",
+      "name": "Praslin Island Airport",
+      "latitude": -4.31929,
+      "longitude": 55.6914
+    },
+    {
+      "countryCode": "SC",
+      "region": "English River",
+      "iata": "SEZ",
+      "icao": "FSIA",
+      "name": "Seychelles International Airport",
+      "latitude": -4.67434,
+      "longitude": 55.5218
+    }
+  ]
 }

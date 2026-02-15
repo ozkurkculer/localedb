@@ -252,5 +252,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LU",
+      "region": "Luxembourg",
+      "iata": "LUX",
+      "icao": "ELLX",
+      "name": "Luxembourg Findel Airport",
+      "latitude": 49.6233,
+      "longitude": 6.20444
+    }
+  ]
 }

@@ -29,6 +29,10 @@ export const mainNav: NavItem[] = [
     href: "/currencies",
   },
   {
+    title: "Airports",
+    href: "/airports",
+  },
+  {
     title: "Locale Codes",
     href: "/locale-codes",
   },

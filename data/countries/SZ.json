@@ -241,5 +241,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SZ",
+      "region": "Manzini",
+      "iata": "MTS",
+      "icao": "FDMS",
+      "name": "Matsapha Airport",
+      "latitude": -26.529,
+      "longitude": 31.3075
+    },
+    {
+      "countryCode": "SZ",
+      "region": "Manzini",
+      "iata": "SHO",
+      "icao": "FDSK",
+      "name": "King Mswati III International Airport (Sikhuphe Int'l)",
+      "latitude": 38.1421,
+      "longitude": 128.598
+    }
+  ]
 }

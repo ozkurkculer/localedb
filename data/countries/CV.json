@@ -228,5 +228,97 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CV",
+      "region": "Boa Vista",
+      "iata": "BVC",
+      "icao": "GVBA",
+      "name": "Aristides Pereira International Airport (Rabil Airport)",
+      "latitude": 16.1365,
+      "longitude": -22.8889
+    },
+    {
+      "countryCode": "CV",
+      "region": "Brava",
+      "iata": "BVR",
+      "icao": "GVBR",
+      "name": "Esperadinha Airport",
+      "latitude": 14.8643,
+      "longitude": -24.746
+    },
+    {
+      "countryCode": "CV",
+      "region": "Maio",
+      "iata": "MMO",
+      "icao": "GVMA",
+      "name": "Maio Airport",
+      "latitude": 15.1559,
+      "longitude": -23.2137
+    },
+    {
+      "countryCode": "CV",
+      "region": "Ribeira Grande de Santiago",
+      "iata": "RAI",
+      "icao": "GVNP",
+      "name": "Nelson Mandela International Airport",
+      "latitude": 14.9245,
+      "longitude": -23.4935
+    },
+    {
+      "countryCode": "CV",
+      "region": "Ribeira Grande",
+      "iata": "NTO",
+      "icao": "GVAN",
+      "name": "Agostinho Neto Airport",
+      "latitude": 17.2028,
+      "longitude": -25.0906
+    },
+    {
+      "countryCode": "CV",
+      "region": "Ribeira Grande",
+      "iata": "SNE",
+      "icao": "GVSN",
+      "name": "Preguica Airport",
+      "latitude": 16.5884,
+      "longitude": -24.2847
+    },
+    {
+      "countryCode": "CV",
+      "region": "Sal",
+      "iata": "SID",
+      "icao": "GVAC",
+      "name": "Amilcar Cabral International Airport",
+      "latitude": 16.7414,
+      "longitude": -22.9494
+    },
+    {
+      "countryCode": "CV",
+      "region": "Sao Filipe",
+      "iata": "MTI",
+      "icao": "GVMT",
+      "name": "Mosteiros Airport",
+      "latitude": 15.045,
+      "longitude": -24.3392
+    },
+    {
+      "countryCode": "CV",
+      "region": "Sao Filipe",
+      "iata": "SFL",
+      "icao": "GVSF",
+      "name": "Sao Filipe Airport",
+      "latitude": 14.885,
+      "longitude": -24.48
+    },
+    {
+      "countryCode": "CV",
+      "region": "Sao Vicente",
+      "iata": "VXE",
+      "icao": "GVSV",
+      "name": "Cesaria Evora Airport",
+      "latitude": 16.8332,
+      "longitude": -25.0553
+    }
+  ]
 }

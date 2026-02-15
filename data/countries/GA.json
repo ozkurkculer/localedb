@@ -232,5 +232,376 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GA",
+      "region": "Estuaire",
+      "iata": "LBV",
+      "icao": "FOOL",
+      "name": "Léon-Mba International Airport",
+      "latitude": 0.458611,
+      "longitude": 9.41222
+    },
+    {
+      "countryCode": "GA",
+      "region": "Estuaire",
+      "iata": "NKA",
+      "icao": "",
+      "name": "Nkan Airport",
+      "latitude": 0.7,
+      "longitude": 9.98333
+    },
+    {
+      "countryCode": "GA",
+      "region": "Estuaire",
+      "iata": "OWE",
+      "icao": "",
+      "name": "Owendo Airport",
+      "latitude": 0.3,
+      "longitude": 9.5
+    },
+    {
+      "countryCode": "GA",
+      "region": "Haut-Ogooue",
+      "iata": "AKE",
+      "icao": "FOGA",
+      "name": "Akieni Airport",
+      "latitude": -1.13967,
+      "longitude": 13.9036
+    },
+    {
+      "countryCode": "GA",
+      "region": "Haut-Ogooue",
+      "iata": "LEO",
+      "icao": "",
+      "name": "Lekoni Airport",
+      "latitude": -1.5724,
+      "longitude": 14.2878
+    },
+    {
+      "countryCode": "GA",
+      "region": "Haut-Ogooue",
+      "iata": "MFF",
+      "icao": "FOOD",
+      "name": "Moanda Airport",
+      "latitude": -1.533,
+      "longitude": 13.267
+    },
+    {
+      "countryCode": "GA",
+      "region": "Haut-Ogooue",
+      "iata": "MVB",
+      "icao": "FOON",
+      "name": "M'Vengue El Hadj Omar Bongo Ondimba International Airport",
+      "latitude": -1.65616,
+      "longitude": 13.438
+    },
+    {
+      "countryCode": "GA",
+      "region": "Haut-Ogooue",
+      "iata": "OKN",
+      "icao": "FOGQ",
+      "name": "Okondja Airport",
+      "latitude": -0.665214,
+      "longitude": 13.6731
+    },
+    {
+      "countryCode": "GA",
+      "region": "Moyen-Ogooue",
+      "iata": "GIM",
+      "icao": "",
+      "name": "Miele Mimbale Airport",
+      "latitude": -0.0166667,
+      "longitude": 11.4
+    },
+    {
+      "countryCode": "GA",
+      "region": "Moyen-Ogooue",
+      "iata": "GKO",
+      "icao": "",
+      "name": "Kongo Boumba Airport",
+      "latitude": -0.0833333,
+      "longitude": 11.4667
+    },
+    {
+      "countryCode": "GA",
+      "region": "Moyen-Ogooue",
+      "iata": "KDJ",
+      "icao": "FOGJ",
+      "name": "Ndjole Ville Airport",
+      "latitude": -0.183,
+      "longitude": 10.75
+    },
+    {
+      "countryCode": "GA",
+      "region": "Moyen-Ogooue",
+      "iata": "LBQ",
+      "icao": "FOGR",
+      "name": "Lambarene Airport",
+      "latitude": -0.704389,
+      "longitude": 10.2457
+    },
+    {
+      "countryCode": "GA",
+      "region": "Moyen-Ogooue",
+      "iata": "MVG",
+      "icao": "",
+      "name": "Mevang Airport",
+      "latitude": 0.08333,
+      "longitude": 11.0833
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ngounie",
+      "iata": "FOU",
+      "icao": "FOGF",
+      "name": "Fougamou Airport",
+      "latitude": -1.283,
+      "longitude": 10.617
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ngounie",
+      "iata": "KDN",
+      "icao": "FOGE",
+      "name": "Ndende Airport",
+      "latitude": -2.4,
+      "longitude": 11.367
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ngounie",
+      "iata": "MBC",
+      "icao": "FOGG",
+      "name": "Mbigou Airport",
+      "latitude": -1.883,
+      "longitude": 11.933
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ngounie",
+      "iata": "MGO",
+      "icao": "",
+      "name": "Manega Airport",
+      "latitude": -1.73333,
+      "longitude": 10.2167
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ngounie",
+      "iata": "MJL",
+      "icao": "FOGM",
+      "name": "Mouila Airport",
+      "latitude": -1.84514,
+      "longitude": 11.0567
+    },
+    {
+      "countryCode": "GA",
+      "region": "Nyanga",
+      "iata": "MGX",
+      "icao": "FOGI",
+      "name": "Moabi Airport",
+      "latitude": -2.433,
+      "longitude": 11
+    },
+    {
+      "countryCode": "GA",
+      "region": "Nyanga",
+      "iata": "MYB",
+      "icao": "FOOY",
+      "name": "Mayumba Airport",
+      "latitude": -3.45842,
+      "longitude": 10.6741
+    },
+    {
+      "countryCode": "GA",
+      "region": "Nyanga",
+      "iata": "TCH",
+      "icao": "FOOT",
+      "name": "Tchibanga Airport",
+      "latitude": -2.85,
+      "longitude": 11.017
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Ivindo",
+      "iata": "BGB",
+      "icao": "FOGB",
+      "name": "Booue Airport",
+      "latitude": -0.1075,
+      "longitude": 11.9438
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Ivindo",
+      "iata": "GAX",
+      "icao": "",
+      "name": "Gamba Airport",
+      "latitude": -2.78528,
+      "longitude": 10.0472
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Ivindo",
+      "iata": "MKB",
+      "icao": "FOOE",
+      "name": "Mekambo Airport",
+      "latitude": 1.017,
+      "longitude": 13.933
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Ivindo",
+      "iata": "MKU",
+      "icao": "FOOK",
+      "name": "Makokou Airport",
+      "latitude": 0.579211,
+      "longitude": 12.8909
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Ivindo",
+      "iata": "WGY",
+      "icao": "",
+      "name": "Wagny Airport",
+      "latitude": -0.6035,
+      "longitude": 12.2608
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Lolo",
+      "iata": "KOU",
+      "icao": "FOGK",
+      "name": "Koulamoutou Airport",
+      "latitude": -1.18461,
+      "longitude": 12.4413
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Lolo",
+      "iata": "LTL",
+      "icao": "FOOR",
+      "name": "Lastourville Airport",
+      "latitude": -0.826667,
+      "longitude": 12.7486
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "AWE",
+      "icao": "FOGW",
+      "name": "Alowe Airport",
+      "latitude": -0.545,
+      "longitude": 9.444
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "BAW",
+      "icao": "",
+      "name": "Biawonque Airport",
+      "latitude": -0.666667,
+      "longitude": 9.45
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "BGP",
+      "icao": "",
+      "name": "Bongo Airport",
+      "latitude": -2.1713,
+      "longitude": 10.2088
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "IGE",
+      "icao": "FOOI",
+      "name": "Tchongorove Airport",
+      "latitude": -1.9223,
+      "longitude": 9.3092
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "OMB",
+      "icao": "FOOH",
+      "name": "Omboue Hospital Airport",
+      "latitude": -1.57473,
+      "longitude": 9.26269
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "OUU",
+      "icao": "",
+      "name": "Ouanga Airport",
+      "latitude": -2.98333,
+      "longitude": 10.3
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "POG",
+      "icao": "FOOG",
+      "name": "Port-Gentil International Airport",
+      "latitude": -0.711739,
+      "longitude": 8.75438
+    },
+    {
+      "countryCode": "GA",
+      "region": "Ogooue-Maritime",
+      "iata": "WNE",
+      "icao": "",
+      "name": "Wora na Yeno Airport",
+      "latitude": -1.35,
+      "longitude": 9.33333
+    },
+    {
+      "countryCode": "GA",
+      "region": "Woleu-Ntem",
+      "iata": "BMM",
+      "icao": "FOOB",
+      "name": "Bitam Airport",
+      "latitude": 2.07564,
+      "longitude": 11.4932
+    },
+    {
+      "countryCode": "GA",
+      "region": "Woleu-Ntem",
+      "iata": "MDV",
+      "icao": "",
+      "name": "Medouneu Airport",
+      "latitude": 1.0085,
+      "longitude": 10.7552
+    },
+    {
+      "countryCode": "GA",
+      "region": "Woleu-Ntem",
+      "iata": "MVX",
+      "icao": "FOGV",
+      "name": "Minvoul Airport",
+      "latitude": 2.15,
+      "longitude": 12.133
+    },
+    {
+      "countryCode": "GA",
+      "region": "Woleu-Ntem",
+      "iata": "MZC",
+      "icao": "FOOM",
+      "name": "Mitzic Airport",
+      "latitude": 0.783,
+      "longitude": 11.55
+    },
+    {
+      "countryCode": "GA",
+      "region": "Woleu-Ntem",
+      "iata": "OYE",
+      "icao": "FOGO",
+      "name": "Oyem Airport",
+      "latitude": 1.54311,
+      "longitude": 11.5814
+    }
+  ]
 }

@@ -232,5 +232,556 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MY",
+      "region": "Johor",
+      "iata": "JHB",
+      "icao": "WMKJ",
+      "name": "Senai International Airport",
+      "latitude": 1.64131,
+      "longitude": 103.67
+    },
+    {
+      "countryCode": "MY",
+      "region": "Johor",
+      "iata": "MEP",
+      "icao": "WMAU",
+      "name": "Mersing Airport",
+      "latitude": 2.383,
+      "longitude": 103.867
+    },
+    {
+      "countryCode": "MY",
+      "region": "Johor",
+      "iata": "ZJT",
+      "icao": "",
+      "name": "Tanjung Pelepas Port Airport",
+      "latitude": 1.58333,
+      "longitude": 110.483
+    },
+    {
+      "countryCode": "MY",
+      "region": "Johor",
+      "iata": "ZLW",
+      "icao": "",
+      "name": "Pasir Gudang Port Airport",
+      "latitude": 5.95,
+      "longitude": 102.083
+    },
+    {
+      "countryCode": "MY",
+      "region": "Kedah",
+      "iata": "AOR",
+      "icao": "WMKA",
+      "name": "Sultan Abdul Halim Airport",
+      "latitude": 6.18967,
+      "longitude": 100.398
+    },
+    {
+      "countryCode": "MY",
+      "region": "Kedah",
+      "iata": "LGK",
+      "icao": "WMKL",
+      "name": "Langkawi International Airport",
+      "latitude": 6.32973,
+      "longitude": 99.7287
+    },
+    {
+      "countryCode": "MY",
+      "region": "Kelantan",
+      "iata": "KBR",
+      "icao": "WMKC",
+      "name": "Sultan Ismail Petra Airport",
+      "latitude": 6.16685,
+      "longitude": 102.293
+    },
+    {
+      "countryCode": "MY",
+      "region": "Melaka",
+      "iata": "MKZ",
+      "icao": "WMKM",
+      "name": "Malacca International Airport",
+      "latitude": 2.26336,
+      "longitude": 102.252
+    },
+    {
+      "countryCode": "MY",
+      "region": "Pahang",
+      "iata": "KUA",
+      "icao": "WMKD",
+      "name": "Sultan Haji Ahmad Shah Airport (RMAF Kuantan)",
+      "latitude": 3.77539,
+      "longitude": 103.209
+    },
+    {
+      "countryCode": "MY",
+      "region": "Pahang",
+      "iata": "SXT",
+      "icao": "WMAN",
+      "name": "Sungai Tiang Airport",
+      "latitude": 4.33028,
+      "longitude": 102.395
+    },
+    {
+      "countryCode": "MY",
+      "region": "Pahang",
+      "iata": "TOD",
+      "icao": "WMBT",
+      "name": "Tioman Airport",
+      "latitude": 2.81818,
+      "longitude": 104.16
+    },
+    {
+      "countryCode": "MY",
+      "region": "Perak",
+      "iata": "IPH",
+      "icao": "WMKI",
+      "name": "Sultan Azlan Shah Airport",
+      "latitude": 4.56797,
+      "longitude": 101.092
+    },
+    {
+      "countryCode": "MY",
+      "region": "Perak",
+      "iata": "PKG",
+      "icao": "WMPA",
+      "name": "Pangkor Airport",
+      "latitude": 4.24472,
+      "longitude": 100.553
+    },
+    {
+      "countryCode": "MY",
+      "region": "Perak",
+      "iata": "SWY",
+      "icao": "WMBA",
+      "name": "Sitiawan Airport",
+      "latitude": 4.2222,
+      "longitude": 100.699
+    },
+    {
+      "countryCode": "MY",
+      "region": "Perak",
+      "iata": "TPG",
+      "icao": "WMBI",
+      "name": "Taiping Airport",
+      "latitude": 4.867,
+      "longitude": 100.717
+    },
+    {
+      "countryCode": "MY",
+      "region": "Pulau Pinang",
+      "iata": "BWH",
+      "icao": "WMKB",
+      "name": "RMAF Butterworth",
+      "latitude": 5.46592,
+      "longitude": 100.391
+    },
+    {
+      "countryCode": "MY",
+      "region": "Pulau Pinang",
+      "iata": "PEN",
+      "icao": "WMKP",
+      "name": "Penang International Airport",
+      "latitude": 5.29714,
+      "longitude": 100.277
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "BKI",
+      "icao": "WBKK",
+      "name": "Kota Kinabalu International Airport",
+      "latitude": 5.93721,
+      "longitude": 116.051
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "GSA",
+      "icao": "WBKN",
+      "name": "Long Pasia Airport",
+      "latitude": 4.4,
+      "longitude": 115.717
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "KGU",
+      "icao": "WBKG",
+      "name": "Keningau Airport",
+      "latitude": 5.35749,
+      "longitude": 116.162
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "KUD",
+      "icao": "WBKT",
+      "name": "Kudat Airport",
+      "latitude": 6.9225,
+      "longitude": 116.836
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "LAC",
+      "icao": "",
+      "name": "Layang-Layang Airport (Swallow Reef Airport)",
+      "latitude": 7.37157,
+      "longitude": 113.844
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "LBU",
+      "icao": "WBKL",
+      "name": "Labuan Airport",
+      "latitude": 5.30068,
+      "longitude": 115.25
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "LDU",
+      "icao": "WBKD",
+      "name": "Lahad Datu Airport",
+      "latitude": 5.03225,
+      "longitude": 118.324
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "PAY",
+      "icao": "WBKP",
+      "name": "Pamol Airport",
+      "latitude": 5.9993,
+      "longitude": 117.4
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "RNU",
+      "icao": "WBKR",
+      "name": "Ranau Airport",
+      "latitude": 5.95,
+      "longitude": 116.667
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "SDK",
+      "icao": "WBKS",
+      "name": "Sandakan Airport",
+      "latitude": 5.9009,
+      "longitude": 118.059
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "SMM",
+      "icao": "WBKA",
+      "name": "Semporna Airport",
+      "latitude": 4.45,
+      "longitude": 118.583
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "SPE",
+      "icao": "WBKO",
+      "name": "Sepulot Airport",
+      "latitude": 4.733,
+      "longitude": 116.467
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "SPT",
+      "icao": "",
+      "name": "Sipitang Airstrip",
+      "latitude": 5.08333,
+      "longitude": 115.55
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "SXS",
+      "icao": "WBKH",
+      "name": "Sahabat Airport",
+      "latitude": 5.08778,
+      "longitude": 119.094
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "TEL",
+      "icao": "WBKE",
+      "name": "Telupid Airport",
+      "latitude": 5.62861,
+      "longitude": 117.126
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "TMG",
+      "icao": "WBKM",
+      "name": "Tommanggong Airport",
+      "latitude": 5.40257,
+      "longitude": 118.658
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sabah",
+      "iata": "TWU",
+      "icao": "WBKW",
+      "name": "Tawau Airport",
+      "latitude": 4.32016,
+      "longitude": 118.128
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "BBN",
+      "icao": "WBGZ",
+      "name": "Bario Airport",
+      "latitude": 3.73389,
+      "longitude": 115.479
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "BKM",
+      "icao": "WBGQ",
+      "name": "Bakelalan Airport",
+      "latitude": 3.974,
+      "longitude": 115.618
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "BLG",
+      "icao": "WBGC",
+      "name": "Belaga Airport",
+      "latitude": 2.65,
+      "longitude": 113.767
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "BSE",
+      "icao": "WBGN",
+      "name": "Sematan Airport",
+      "latitude": 1.81361,
+      "longitude": 109.763
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "BTU",
+      "icao": "WBGB",
+      "name": "Bintulu Airport",
+      "latitude": 3.12385,
+      "longitude": 113.02
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "KCH",
+      "icao": "WBGG",
+      "name": "Kuching International Airport",
+      "latitude": 1.4847,
+      "longitude": 110.347
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "KPI",
+      "icao": "WBGP",
+      "name": "Kapit Airport",
+      "latitude": 2.01052,
+      "longitude": 112.931
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LBP",
+      "icao": "",
+      "name": "Long Banga Airport",
+      "latitude": 3.202,
+      "longitude": 115.402
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LGL",
+      "icao": "WBGF",
+      "name": "Long Lellang Airport",
+      "latitude": 3.421,
+      "longitude": 115.154
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LKH",
+      "icao": "WBGL",
+      "name": "Long Akah Airport",
+      "latitude": 3.3,
+      "longitude": 114.783
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LMN",
+      "icao": "WBGJ",
+      "name": "Limbang Airport",
+      "latitude": 4.8083,
+      "longitude": 115.01
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LSM",
+      "icao": "WBGD",
+      "name": "Long Semado Airport",
+      "latitude": 4.217,
+      "longitude": 115.6
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LSU",
+      "icao": "WBGU",
+      "name": "Long Sukang Airport",
+      "latitude": 4.55222,
+      "longitude": 115.494
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "LWY",
+      "icao": "WBGW",
+      "name": "Lawas Airport",
+      "latitude": 4.84917,
+      "longitude": 115.408
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "MKM",
+      "icao": "WBGK",
+      "name": "Mukah Airport",
+      "latitude": 2.90639,
+      "longitude": 112.08
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "MUR",
+      "icao": "WBGM",
+      "name": "Marudi Airport",
+      "latitude": 4.17898,
+      "longitude": 114.329
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "MYY",
+      "icao": "WBGR",
+      "name": "Miri Airport",
+      "latitude": 4.32201,
+      "longitude": 113.987
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "MZV",
+      "icao": "WBMU",
+      "name": "Mulu Airport",
+      "latitude": 4.04833,
+      "longitude": 114.805
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "ODN",
+      "icao": "WBGI",
+      "name": "Long Seridan Airport",
+      "latitude": 3.967,
+      "longitude": 115.05
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "SBW",
+      "icao": "WBGS",
+      "name": "Sibu Airport",
+      "latitude": 2.2616,
+      "longitude": 111.985
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "SGG",
+      "icao": "WBGY",
+      "name": "Simanggang Airport",
+      "latitude": 1.20872,
+      "longitude": 111.453
+    },
+    {
+      "countryCode": "MY",
+      "region": "Sarawak",
+      "iata": "TGC",
+      "icao": "WBTM",
+      "name": "Tanjung Manis Airport",
+      "latitude": 2.17784,
+      "longitude": 111.202
+    },
+    {
+      "countryCode": "MY",
+      "region": "Selangor",
+      "iata": "KUL",
+      "icao": "WMKK",
+      "name": "Kuala Lumpur International Airport",
+      "latitude": 2.74558,
+      "longitude": 101.71
+    },
+    {
+      "countryCode": "MY",
+      "region": "Selangor",
+      "iata": "SZB",
+      "icao": "WMSA",
+      "name": "Sultan Abdul Aziz Shah Airport",
+      "latitude": 3.13058,
+      "longitude": 101.549
+    },
+    {
+      "countryCode": "MY",
+      "region": "Terengganu",
+      "iata": "KTE",
+      "icao": "WMKE",
+      "name": "Kerteh Airport",
+      "latitude": 4.53722,
+      "longitude": 103.427
+    },
+    {
+      "countryCode": "MY",
+      "region": "Terengganu",
+      "iata": "RDN",
+      "icao": "WMPR",
+      "name": "Redang Airport",
+      "latitude": 5.76528,
+      "longitude": 103.007
+    },
+    {
+      "countryCode": "MY",
+      "region": "Terengganu",
+      "iata": "TGG",
+      "icao": "WMKN",
+      "name": "Sultan Mahmud Airport",
+      "latitude": 5.38264,
+      "longitude": 103.103
+    }
+  ]
 }

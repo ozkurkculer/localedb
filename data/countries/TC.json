@@ -228,5 +228,70 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "GDT",
+      "icao": "MBGT",
+      "name": "JAGS McCartney International Airport (Grand Turk Int'l)",
+      "latitude": 21.4445,
+      "longitude": -71.1423
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "MDS",
+      "icao": "MBMC",
+      "name": "Middle Caicos Airport",
+      "latitude": 21.826,
+      "longitude": -71.8025
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "NCA",
+      "icao": "MBNC",
+      "name": "North Caicos Airport",
+      "latitude": 21.9175,
+      "longitude": -71.9396
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "PIC",
+      "icao": "MBPI",
+      "name": "Pine Cay Airport",
+      "latitude": 21.8749,
+      "longitude": -72.0923
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "PLS",
+      "icao": "MBPV",
+      "name": "Providenciales International Airport",
+      "latitude": 21.7736,
+      "longitude": -72.2659
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "SLX",
+      "icao": "MBSY",
+      "name": "Salt Cay Airport",
+      "latitude": 21.333,
+      "longitude": -71.2
+    },
+    {
+      "countryCode": "TC",
+      "region": "Turks and Caicos Islands",
+      "iata": "XSC",
+      "icao": "MBSC",
+      "name": "South Caicos Airport",
+      "latitude": 21.5157,
+      "longitude": -71.5285
+    }
+  ]
 }

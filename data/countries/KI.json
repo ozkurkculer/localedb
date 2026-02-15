@@ -230,5 +230,196 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "AAK",
+      "icao": "NGUK",
+      "name": "Aranuka Airport",
+      "latitude": 0.185278,
+      "longitude": 173.637
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "ABF",
+      "icao": "NGAB",
+      "name": "Abaiang Atoll Airport",
+      "latitude": 1.79861,
+      "longitude": 173.041
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "AEA",
+      "icao": "NGTB",
+      "name": "Abemama Atoll Airport",
+      "latitude": 0.490833,
+      "longitude": 173.829
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "AIS",
+      "icao": "NGTR",
+      "name": "Arorae Island Airport",
+      "latitude": -2.61611,
+      "longitude": 176.803
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "BBG",
+      "icao": "NGTU",
+      "name": "Butaritari Atoll Airport",
+      "latitude": 3.08583,
+      "longitude": 172.811
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "BEZ",
+      "icao": "NGBR",
+      "name": "Beru Island Airport",
+      "latitude": -1.35472,
+      "longitude": 176.007
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "KUC",
+      "icao": "NGKT",
+      "name": "Kuria Airport",
+      "latitude": 0.218611,
+      "longitude": 173.442
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "MNK",
+      "icao": "NGMA",
+      "name": "Maiana Airport",
+      "latitude": 1.00361,
+      "longitude": 173.031
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "MTK",
+      "icao": "NGMN",
+      "name": "Makin Airport",
+      "latitude": 3.37444,
+      "longitude": 172.992
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "MZK",
+      "icao": "NGMK",
+      "name": "Marakei Airport",
+      "latitude": 2.05861,
+      "longitude": 173.271
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "NIG",
+      "icao": "NGNU",
+      "name": "Nikunau Airport",
+      "latitude": -1.31444,
+      "longitude": 176.41
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "NON",
+      "icao": "NGTO",
+      "name": "Nonouti Airport",
+      "latitude": -0.639722,
+      "longitude": 174.428
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "OOT",
+      "icao": "NGON",
+      "name": "Onotoa Airport",
+      "latitude": -1.79611,
+      "longitude": 175.526
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "TBF",
+      "icao": "NGTE",
+      "name": "Tabiteuea North Airport",
+      "latitude": -1.22447,
+      "longitude": 174.776
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "TMN",
+      "icao": "NGTM",
+      "name": "Tamana Airport",
+      "latitude": -2.48583,
+      "longitude": 175.97
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "TRW",
+      "icao": "NGTA",
+      "name": "Bonriki International Airport",
+      "latitude": 1.38164,
+      "longitude": 173.147
+    },
+    {
+      "countryCode": "KI",
+      "region": "Gilbert Islands",
+      "iata": "TSU",
+      "icao": "NGTS",
+      "name": "Tabiteuea South Airport",
+      "latitude": -1.47444,
+      "longitude": 175.064
+    },
+    {
+      "countryCode": "KI",
+      "region": "Line Islands",
+      "iata": "CIS",
+      "icao": "PCIS",
+      "name": "Canton Island Airport",
+      "latitude": -2.76812,
+      "longitude": -171.71
+    },
+    {
+      "countryCode": "KI",
+      "region": "Line Islands",
+      "iata": "CXI",
+      "icao": "PLCH",
+      "name": "Cassidy International Airport",
+      "latitude": 1.98616,
+      "longitude": -157.35
+    },
+    {
+      "countryCode": "KI",
+      "region": "Line Islands",
+      "iata": "TNQ",
+      "icao": "",
+      "name": "Teraina Airport",
+      "latitude": 4.69836,
+      "longitude": -160.394
+    },
+    {
+      "countryCode": "KI",
+      "region": "Line Islands",
+      "iata": "TNV",
+      "icao": "",
+      "name": "Tabuaeran Island Airport",
+      "latitude": 3.89944,
+      "longitude": -159.389
+    }
+  ]
 }

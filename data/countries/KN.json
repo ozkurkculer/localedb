@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KN",
+      "region": "Saint John Figtree",
+      "iata": "SKB",
+      "icao": "TKPK",
+      "name": "Robert L. Bradshaw International Airport",
+      "latitude": 17.3112,
+      "longitude": -62.7187
+    },
+    {
+      "countryCode": "KN",
+      "region": "Saint Paul Charlestown",
+      "iata": "NEV",
+      "icao": "TKPN",
+      "name": "Vance W. Amory International Airport",
+      "latitude": 17.2057,
+      "longitude": -62.5899
+    }
+  ]
 }

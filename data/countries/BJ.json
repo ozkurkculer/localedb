@@ -233,5 +233,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BJ",
+      "region": "Alibori",
+      "iata": "KDC",
+      "icao": "DBBK",
+      "name": "Kandi Airport",
+      "latitude": 11.1448,
+      "longitude": 2.94038
+    },
+    {
+      "countryCode": "BJ",
+      "region": "Atacora",
+      "iata": "NAE",
+      "icao": "DBBN",
+      "name": "Boundetingou Airport",
+      "latitude": 10.377,
+      "longitude": 1.36051
+    },
+    {
+      "countryCode": "BJ",
+      "region": "Borgou",
+      "iata": "PKO",
+      "icao": "DBBP",
+      "name": "Parakou Airport",
+      "latitude": 9.35769,
+      "longitude": 2.60968
+    },
+    {
+      "countryCode": "BJ",
+      "region": "Collines",
+      "iata": "SVF",
+      "icao": "DBBS",
+      "name": "Save Airport",
+      "latitude": 8.01817,
+      "longitude": 2.46458
+    },
+    {
+      "countryCode": "BJ",
+      "region": "Donga",
+      "iata": "DJA",
+      "icao": "DBBD",
+      "name": "Djougou Airport",
+      "latitude": 9.69208,
+      "longitude": 1.63778
+    },
+    {
+      "countryCode": "BJ",
+      "region": "Littoral",
+      "iata": "COO",
+      "icao": "DBBB",
+      "name": "Cadjehoun Airport",
+      "latitude": 6.35723,
+      "longitude": 2.38435
+    }
+  ]
 }

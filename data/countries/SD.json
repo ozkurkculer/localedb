@@ -246,5 +246,232 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SD",
+      "region": "Blue Nile",
+      "iata": "HGI",
+      "icao": "HSFA",
+      "name": "Paloich Airport",
+      "latitude": 10.5292,
+      "longitude": 32.5006
+    },
+    {
+      "countryCode": "SD",
+      "region": "Blue Nile",
+      "iata": "RSS",
+      "icao": "HSDZ",
+      "name": "Damazin Airport",
+      "latitude": 11.7859,
+      "longitude": 34.3367
+    },
+    {
+      "countryCode": "SD",
+      "region": "East Darfur",
+      "iata": "ADV",
+      "icao": "",
+      "name": "Ed Daein Airport",
+      "latitude": 11.4023,
+      "longitude": 26.1186
+    },
+    {
+      "countryCode": "SD",
+      "region": "Gezira",
+      "iata": "DNI",
+      "icao": "HSWD",
+      "name": "Wad Medani Airport",
+      "latitude": 14.3836,
+      "longitude": 33.5264
+    },
+    {
+      "countryCode": "SD",
+      "region": "Kassala",
+      "iata": "GBU",
+      "icao": "HSKG",
+      "name": "Khashm el Girba Airport",
+      "latitude": 14.925,
+      "longitude": 35.878
+    },
+    {
+      "countryCode": "SD",
+      "region": "Kassala",
+      "iata": "GSU",
+      "icao": "HSGF",
+      "name": "Azaza Airport",
+      "latitude": 14.133,
+      "longitude": 35.317
+    },
+    {
+      "countryCode": "SD",
+      "region": "Kassala",
+      "iata": "KSL",
+      "icao": "HSKA",
+      "name": "Kassala Airport",
+      "latitude": 15.3875,
+      "longitude": 36.3288
+    },
+    {
+      "countryCode": "SD",
+      "region": "Kassala",
+      "iata": "NHF",
+      "icao": "HSNW",
+      "name": "New Halfa Airport",
+      "latitude": 15.3556,
+      "longitude": 35.7278
+    },
+    {
+      "countryCode": "SD",
+      "region": "Khartoum",
+      "iata": "KRT",
+      "icao": "HSSK",
+      "name": "Khartoum International Airport",
+      "latitude": 15.5895,
+      "longitude": 32.5532
+    },
+    {
+      "countryCode": "SD",
+      "region": "North Darfur",
+      "iata": "ELF",
+      "icao": "HSFS",
+      "name": "El Fasher Airport",
+      "latitude": 13.6149,
+      "longitude": 25.3246
+    },
+    {
+      "countryCode": "SD",
+      "region": "Northern",
+      "iata": "DOG",
+      "icao": "HSDN",
+      "name": "Dongola Airport",
+      "latitude": 19.1539,
+      "longitude": 30.4301
+    },
+    {
+      "countryCode": "SD",
+      "region": "Northern",
+      "iata": "EDB",
+      "icao": "HSDB",
+      "name": "El Debba Airport",
+      "latitude": 18.0146,
+      "longitude": 30.9595
+    },
+    {
+      "countryCode": "SD",
+      "region": "Northern",
+      "iata": "MWE",
+      "icao": "HSMN",
+      "name": "Merowe Airport",
+      "latitude": 18.4433,
+      "longitude": 31.8433
+    },
+    {
+      "countryCode": "SD",
+      "region": "Northern",
+      "iata": "WHF",
+      "icao": "HSSW",
+      "name": "Wadi Halfa Airport",
+      "latitude": 21.8027,
+      "longitude": 31.5216
+    },
+    {
+      "countryCode": "SD",
+      "region": "Red Sea",
+      "iata": "PZU",
+      "icao": "HSPN",
+      "name": "Port Sudan New International Airport",
+      "latitude": 19.4336,
+      "longitude": 37.2341
+    },
+    {
+      "countryCode": "SD",
+      "region": "River Nile",
+      "iata": "ATB",
+      "icao": "HSAT",
+      "name": "Atbara Airport",
+      "latitude": 17.7103,
+      "longitude": 34.057
+    },
+    {
+      "countryCode": "SD",
+      "region": "Sennar",
+      "iata": "DNX",
+      "icao": "HSGG",
+      "name": "Galegu Airport",
+      "latitude": 12.533,
+      "longitude": 35.067
+    },
+    {
+      "countryCode": "SD",
+      "region": "South Darfur",
+      "iata": "UYL",
+      "icao": "HSNN",
+      "name": "Nyala Airport",
+      "latitude": 12.0535,
+      "longitude": 24.9562
+    },
+    {
+      "countryCode": "SD",
+      "region": "South Kordofan",
+      "iata": "BJE",
+      "icao": "",
+      "name": "Baleela Airport",
+      "latitude": 11.1994,
+      "longitude": 28.5231
+    },
+    {
+      "countryCode": "SD",
+      "region": "South Kordofan",
+      "iata": "EBD",
+      "icao": "HSOB",
+      "name": "El Obeid Airport",
+      "latitude": 13.1532,
+      "longitude": 30.2327
+    },
+    {
+      "countryCode": "SD",
+      "region": "South Kordofan",
+      "iata": "KDX",
+      "icao": "HSLI",
+      "name": "Kadugli Airport",
+      "latitude": 11.138,
+      "longitude": 29.7011
+    },
+    {
+      "countryCode": "SD",
+      "region": "South Kordofan",
+      "iata": "NUD",
+      "icao": "HSNH",
+      "name": "En Nahud Airport",
+      "latitude": 12.667,
+      "longitude": 28.333
+    },
+    {
+      "countryCode": "SD",
+      "region": "West Darfur",
+      "iata": "EGN",
+      "icao": "HSGN",
+      "name": "Geneina Airport",
+      "latitude": 13.4817,
+      "longitude": 22.4672
+    },
+    {
+      "countryCode": "SD",
+      "region": "West Darfur",
+      "iata": "ZLX",
+      "icao": "HSZA",
+      "name": "Zalingei Airport",
+      "latitude": 12.9437,
+      "longitude": 23.5631
+    },
+    {
+      "countryCode": "SD",
+      "region": "White Nile",
+      "iata": "KST",
+      "icao": "HSKI",
+      "name": "Rabak Airport",
+      "latitude": 13.183,
+      "longitude": 32.733
+    }
+  ]
 }

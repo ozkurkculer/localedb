@@ -228,5 +228,403 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SB",
+      "region": "Central",
+      "iata": "SVY",
+      "icao": "",
+      "name": "Savo Airport",
+      "latitude": -9.167,
+      "longitude": 159.833
+    },
+    {
+      "countryCode": "SB",
+      "region": "Central",
+      "iata": "TLG",
+      "icao": "AGTI",
+      "name": "Tulaghi Heliport",
+      "latitude": -9.108,
+      "longitude": 160.149
+    },
+    {
+      "countryCode": "SB",
+      "region": "Central",
+      "iata": "XYA",
+      "icao": "AGGY",
+      "name": "Yandina Airport",
+      "latitude": -9.09282,
+      "longitude": 159.218
+    },
+    {
+      "countryCode": "SB",
+      "region": "Choiseul",
+      "iata": "CHY",
+      "icao": "AGGC",
+      "name": "Choiseul Bay Airport",
+      "latitude": -6.71194,
+      "longitude": 156.396
+    },
+    {
+      "countryCode": "SB",
+      "region": "Choiseul",
+      "iata": "KGE",
+      "icao": "AGKG",
+      "name": "Kaghau Airport",
+      "latitude": -7.3305,
+      "longitude": 157.585
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "AVU",
+      "icao": "AGGJ",
+      "name": "Avu Avu Airport",
+      "latitude": -9.86833,
+      "longitude": 160.411
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "HIR",
+      "icao": "AGGH",
+      "name": "Honiara International Airport",
+      "latitude": -9.428,
+      "longitude": 160.055
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "KWS",
+      "icao": "AGKW",
+      "name": "Kwailabesi Airport",
+      "latitude": -8.36051,
+      "longitude": 160.775
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "MBU",
+      "icao": "AGGI",
+      "name": "Mbambanakira Airport",
+      "latitude": -9.7475,
+      "longitude": 159.839
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "NAZ",
+      "icao": "AGNA",
+      "name": "Nana Airport",
+      "latitude": -10.6758,
+      "longitude": 162.205
+    },
+    {
+      "countryCode": "SB",
+      "region": "Guadalcanal",
+      "iata": "PRS",
+      "icao": "AGGP",
+      "name": "Parasi Airport",
+      "latitude": -9.64167,
+      "longitude": 161.425
+    },
+    {
+      "countryCode": "SB",
+      "region": "Isabel",
+      "iata": "FRE",
+      "icao": "AGGF",
+      "name": "Fera Airport (Fera/Maringe Airport)",
+      "latitude": -8.1075,
+      "longitude": 159.577
+    },
+    {
+      "countryCode": "SB",
+      "region": "Isabel",
+      "iata": "JJA",
+      "icao": "AGJO",
+      "name": "Jajao Airport",
+      "latitude": -11.4179,
+      "longitude": -58.7082
+    },
+    {
+      "countryCode": "SB",
+      "region": "Isabel",
+      "iata": "VAO",
+      "icao": "AGGV",
+      "name": "Suavanao Airport",
+      "latitude": -7.58556,
+      "longitude": 158.731
+    },
+    {
+      "countryCode": "SB",
+      "region": "Makira-Ulawa",
+      "iata": "IRA",
+      "icao": "AGGK",
+      "name": "Kirakira Airport (Ngorangora Airstrip)",
+      "latitude": -10.4497,
+      "longitude": 161.898
+    },
+    {
+      "countryCode": "SB",
+      "region": "Makira-Ulawa",
+      "iata": "NNB",
+      "icao": "AGGT",
+      "name": "Santa Ana Airport",
+      "latitude": -10.848,
+      "longitude": 162.454
+    },
+    {
+      "countryCode": "SB",
+      "region": "Makira-Ulawa",
+      "iata": "RNA",
+      "icao": "AGAR",
+      "name": "Ulawa Airport",
+      "latitude": -9.86054,
+      "longitude": 161.98
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "AFT",
+      "icao": "AGAF",
+      "name": "Afutara Airport",
+      "latitude": -9.19139,
+      "longitude": 160.949
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "AKS",
+      "icao": "AGGA",
+      "name": "Auki Gwaunaru'u Airport",
+      "latitude": -8.70257,
+      "longitude": 160.682
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "ATD",
+      "icao": "AGAT",
+      "name": "Uru Harbour Airport",
+      "latitude": -8.87333,
+      "longitude": 161.011
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "KWR",
+      "icao": "",
+      "name": "Kwai Harbour Airport",
+      "latitude": -8.86981,
+      "longitude": 161.004
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malatia",
+      "iata": "MHM",
+      "icao": "",
+      "name": "Manaoba Island Baenalu Airport",
+      "latitude": -8.3229,
+      "longitude": 160.7962
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "ONE",
+      "icao": "",
+      "name": "Onepusu Airport",
+      "latitude": -9.16667,
+      "longitude": 161.067
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "OTV",
+      "icao": "AGGQ",
+      "name": "Ontong Java Airport",
+      "latitude": -5.515,
+      "longitude": 159.528
+    },
+    {
+      "countryCode": "SB",
+      "region": "Malaita",
+      "iata": "TAA",
+      "icao": "",
+      "name": "Tarapaina Airport",
+      "latitude": -9.414,
+      "longitude": 161.358
+    },
+    {
+      "countryCode": "SB",
+      "region": "Rennell and Bellona",
+      "iata": "BNY",
+      "icao": "AGGB",
+      "name": "Bellona/Anua Airport",
+      "latitude": -11.3022,
+      "longitude": 159.798
+    },
+    {
+      "countryCode": "SB",
+      "region": "Rennell and Bellona",
+      "iata": "RNL",
+      "icao": "AGGR",
+      "name": "Rennell/Tingoa Airport",
+      "latitude": -11.5339,
+      "longitude": 160.063
+    },
+    {
+      "countryCode": "SB",
+      "region": "Rennell and Bellona",
+      "iata": "RUS",
+      "icao": "AGGU",
+      "name": "Marau Airport",
+      "latitude": -9.86167,
+      "longitude": 160.825
+    },
+    {
+      "countryCode": "SB",
+      "region": "Temotu",
+      "iata": "LLM",
+      "icao": "",
+      "name": "Lomlom Airport",
+      "latitude": -10.2969,
+      "longitude": 166.3276
+    },
+    {
+      "countryCode": "SB",
+      "region": "Temotu",
+      "iata": "SCZ",
+      "icao": "AGGL",
+      "name": "Santa Cruz/Graciosa Bay/Luova Airport",
+      "latitude": -10.7203,
+      "longitude": 165.795
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "BAS",
+      "icao": "AGGE",
+      "name": "Balalae Airport",
+      "latitude": -6.99075,
+      "longitude": 155.887
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "BPF",
+      "icao": "AGBT",
+      "name": "Batuna Airport",
+      "latitude": -8.56203,
+      "longitude": 158.119
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "EGM",
+      "icao": "AGGS",
+      "name": "Seghe Airport",
+      "latitude": -8.57889,
+      "longitude": 157.876
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "GEF",
+      "icao": "AGEV",
+      "name": "Geva Airport",
+      "latitude": -7.57583,
+      "longitude": 156.597
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "GTA",
+      "icao": "AGOK",
+      "name": "Gatokae Aerodrome",
+      "latitude": -8.73917,
+      "longitude": 158.203
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "GZO",
+      "icao": "AGGN",
+      "name": "Nusatupe Airport",
+      "latitude": -8.09778,
+      "longitude": 156.864
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "KUE",
+      "icao": "AGKU",
+      "name": "Kukundu Airport",
+      "latitude": -8.0262,
+      "longitude": 156.948
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "MNY",
+      "icao": "AGGO",
+      "name": "Mono Airport",
+      "latitude": -7.41694,
+      "longitude": 155.565
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "MUA",
+      "icao": "AGGM",
+      "name": "Munda Airport",
+      "latitude": -8.32797,
+      "longitude": 157.263
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "RBV",
+      "icao": "AGRM",
+      "name": "Ramata Airport",
+      "latitude": -8.16806,
+      "longitude": 157.643
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "RIN",
+      "icao": "AGRC",
+      "name": "Ringgi Cove Airport",
+      "latitude": -8.12639,
+      "longitude": 157.143
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "RRI",
+      "icao": "",
+      "name": "Barora Airport",
+      "latitude": -7.983,
+      "longitude": 157.567
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "VEV",
+      "icao": "AGBA",
+      "name": "Barakoma Airport",
+      "latitude": -7.91278,
+      "longitude": 156.706
+    },
+    {
+      "countryCode": "SB",
+      "region": "Western",
+      "iata": "VIU",
+      "icao": "",
+      "name": "Viru Harbour Airport",
+      "latitude": -8.5085,
+      "longitude": 157.69
+    }
+  ]
 }

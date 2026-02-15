@@ -242,5 +242,295 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "FI",
+      "region": "Etela-Karjala",
+      "iata": "LPP",
+      "icao": "EFLP",
+      "name": "Lappeenranta Airport",
+      "latitude": 61.0446,
+      "longitude": 28.1447
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Pohjanmaa",
+      "iata": "KAU",
+      "icao": "EFKA",
+      "name": "Kauhava Airfield",
+      "latitude": 63.1271,
+      "longitude": 23.0514
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Pohjanmaa",
+      "iata": "KHJ",
+      "icao": "EFKJ",
+      "name": "Kauhajoki Airfield",
+      "latitude": 62.4625,
+      "longitude": 22.3931
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Pohjanmaa",
+      "iata": "SJY",
+      "icao": "EFSI",
+      "name": "Seinajoki Airport",
+      "latitude": 62.6921,
+      "longitude": 22.8323
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Savo",
+      "iata": "MIK",
+      "icao": "EFMI",
+      "name": "Mikkeli Airport",
+      "latitude": 61.6866,
+      "longitude": 27.2018
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Savo",
+      "iata": "SVL",
+      "icao": "EFSA",
+      "name": "Savonlinna Airport",
+      "latitude": 61.9431,
+      "longitude": 28.9451
+    },
+    {
+      "countryCode": "FI",
+      "region": "Etela-Savo",
+      "iata": "VRK",
+      "icao": "EFVR",
+      "name": "Varkaus Airport",
+      "latitude": 62.1711,
+      "longitude": 27.8686
+    },
+    {
+      "countryCode": "FI",
+      "region": "Kainuu",
+      "iata": "KAJ",
+      "icao": "EFKI",
+      "name": "Kajaani Airport",
+      "latitude": 64.2855,
+      "longitude": 27.6924
+    },
+    {
+      "countryCode": "FI",
+      "region": "Keski-Suomi",
+      "iata": "JYV",
+      "icao": "EFJY",
+      "name": "Jyvaskyla Airport",
+      "latitude": 62.3995,
+      "longitude": 25.6783
+    },
+    {
+      "countryCode": "FI",
+      "region": "Keski-Suomi",
+      "iata": "KEV",
+      "icao": "EFHA",
+      "name": "Halli Airport",
+      "latitude": 61.856,
+      "longitude": 24.7867
+    },
+    {
+      "countryCode": "FI",
+      "region": "Kymenlaakso",
+      "iata": "UTI",
+      "icao": "EFUT",
+      "name": "Utti Airport",
+      "latitude": 60.8964,
+      "longitude": 26.9384
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "ENF",
+      "icao": "EFET",
+      "name": "Enontekio Airport",
+      "latitude": 68.3626,
+      "longitude": 23.4243
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "IVL",
+      "icao": "EFIV",
+      "name": "Ivalo Airport",
+      "latitude": 68.6073,
+      "longitude": 27.4053
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "KEM",
+      "icao": "EFKE",
+      "name": "Kemi-Tornio Airport",
+      "latitude": 65.7787,
+      "longitude": 24.5821
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "KTT",
+      "icao": "EFKT",
+      "name": "Kittila Airport",
+      "latitude": 67.701,
+      "longitude": 24.8468
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "RVN",
+      "icao": "EFRO",
+      "name": "Rovaniemi Airport",
+      "latitude": 66.5648,
+      "longitude": 25.8304
+    },
+    {
+      "countryCode": "FI",
+      "region": "Lappi",
+      "iata": "SOT",
+      "icao": "EFSO",
+      "name": "Sodankyla Airfield",
+      "latitude": 67.395,
+      "longitude": 26.6191
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pirkanmaa",
+      "iata": "TMP",
+      "icao": "EFTP",
+      "name": "Tampere-Pirkkala Airport",
+      "latitude": 61.4141,
+      "longitude": 23.6044
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjanmaa",
+      "iata": "KOK",
+      "icao": "EFKK",
+      "name": "Kokkola-Pietarsaari Airport",
+      "latitude": 63.7212,
+      "longitude": 23.1431
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjanmaa",
+      "iata": "VAA",
+      "icao": "EFVA",
+      "name": "Vaasa Airport",
+      "latitude": 63.0507,
+      "longitude": 21.7622
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Karjala",
+      "iata": "JOE",
+      "icao": "EFJO",
+      "name": "Joensuu Airport",
+      "latitude": 62.6629,
+      "longitude": 29.6075
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Karjala",
+      "iata": "KTQ",
+      "icao": "EFIT",
+      "name": "Kitee Airfield",
+      "latitude": 62.1661,
+      "longitude": 30.0736
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Pohjanmaa",
+      "iata": "KAO",
+      "icao": "EFKS",
+      "name": "Kuusamo Airport",
+      "latitude": 65.9876,
+      "longitude": 29.2394
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Pohjanmaa",
+      "iata": "OUL",
+      "icao": "EFOU",
+      "name": "Oulu Airport",
+      "latitude": 64.9301,
+      "longitude": 25.3546
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Pohjanmaa",
+      "iata": "YLI",
+      "icao": "EFYL",
+      "name": "Ylivieska Airfield",
+      "latitude": 64.0547,
+      "longitude": 24.7253
+    },
+    {
+      "countryCode": "FI",
+      "region": "Pohjois-Savo",
+      "iata": "KUO",
+      "icao": "EFKU",
+      "name": "Kuopio Airport",
+      "latitude": 63.0071,
+      "longitude": 27.7978
+    },
+    {
+      "countryCode": "FI",
+      "region": "Satakunta",
+      "iata": "POR",
+      "icao": "EFPO",
+      "name": "Pori Airport",
+      "latitude": 61.4617,
+      "longitude": 21.8
+    },
+    {
+      "countryCode": "FI",
+      "region": "Uusimaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "name": "Helsinki Airport (Helsinki-Vantaa Airport)",
+      "latitude": 60.3172,
+      "longitude": 24.9633
+    },
+    {
+      "countryCode": "FI",
+      "region": "Uusimaa",
+      "iata": "HEM",
+      "icao": "EFHF",
+      "name": "Helsinki-Malmi Airport",
+      "latitude": 60.2546,
+      "longitude": 25.0428
+    },
+    {
+      "countryCode": "FI",
+      "region": "Uusimaa",
+      "iata": "HYV",
+      "icao": "EFHV",
+      "name": "Hyvink- Airfield",
+      "latitude": 60.6544,
+      "longitude": 24.8811
+    },
+    {
+      "countryCode": "FI",
+      "region": "Varsinais-Suomi",
+      "iata": "MHQ",
+      "icao": "EFMA",
+      "name": "Mariehamn Airport",
+      "latitude": 60.1222,
+      "longitude": 19.8982
+    },
+    {
+      "countryCode": "FI",
+      "region": "Varsinais-Suomi",
+      "iata": "TKU",
+      "icao": "EFTU",
+      "name": "Turku Airport",
+      "latitude": 60.5141,
+      "longitude": 22.2628
+    }
+  ]
 }

@@ -235,5 +235,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "JO",
+      "region": "Al 'Aqabah",
+      "iata": "AQJ",
+      "icao": "OJAQ",
+      "name": "King Hussein International Airport",
+      "latitude": 29.6116,
+      "longitude": 35.0181
+    },
+    {
+      "countryCode": "JO",
+      "region": "Al 'Asimah",
+      "iata": "ADJ",
+      "icao": "OJAM",
+      "name": "Amman Civil Airport (Marka International Airport)",
+      "latitude": 31.9727,
+      "longitude": 35.9916
+    },
+    {
+      "countryCode": "JO",
+      "region": "Al Mafraq",
+      "iata": "OMF",
+      "icao": "OJMF",
+      "name": "King Hussein Air Base",
+      "latitude": 32.3564,
+      "longitude": 36.2592
+    },
+    {
+      "countryCode": "JO",
+      "region": "Ma'an",
+      "iata": "MPQ",
+      "icao": "OJMN",
+      "name": "Ma'an Airport",
+      "latitude": 30.1667,
+      "longitude": 35.7833
+    },
+    {
+      "countryCode": "JO",
+      "region": "Madaba",
+      "iata": "AMM",
+      "icao": "OJAI",
+      "name": "Queen Alia International Airport",
+      "latitude": 31.7226,
+      "longitude": 35.9932
+    }
+  ]
 }

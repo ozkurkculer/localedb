@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BH",
+      "region": "Al Muharraq",
+      "iata": "BAH",
+      "icao": "OBBI",
+      "name": "Bahrain International Airport",
+      "latitude": 26.2708,
+      "longitude": 50.6336
+    }
+  ]
 }

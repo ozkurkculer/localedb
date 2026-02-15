@@ -241,5 +241,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LB",
+      "region": "Beyrouth",
+      "iata": "BEY",
+      "icao": "OLBA",
+      "name": "Beirut-Rafic Hariri International Airport / Beirut Air Base",
+      "latitude": 33.8209,
+      "longitude": 35.4884
+    },
+    {
+      "countryCode": "LB",
+      "region": "Nabatiye",
+      "iata": "KYE",
+      "icao": "OLKA",
+      "name": "Rene Mouawad Air Base (Kleyate Airport)",
+      "latitude": 34.5893,
+      "longitude": 36.0113
+    }
+  ]
 }

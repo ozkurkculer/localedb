@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PW",
+      "region": "Airai",
+      "iata": "ROR",
+      "icao": "PTRO",
+      "name": "Roman Tmetuchl International Airport",
+      "latitude": 7.36731,
+      "longitude": 134.544
+    }
+  ]
 }

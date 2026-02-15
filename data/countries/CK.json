@@ -238,5 +238,88 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "AIT",
+      "icao": "NCAI",
+      "name": "Aitutaki Airport",
+      "latitude": -18.8309,
+      "longitude": -159.764
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "AIU",
+      "icao": "NCAT",
+      "name": "Enua Airport",
+      "latitude": -19.9678,
+      "longitude": -158.119
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "MGS",
+      "icao": "NCMG",
+      "name": "Mangaia Airport",
+      "latitude": -21.896,
+      "longitude": -157.907
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "MHX",
+      "icao": "NCMH",
+      "name": "Manihiki Island Airport",
+      "latitude": -10.3767,
+      "longitude": -161.002
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "MOI",
+      "icao": "NCMR",
+      "name": "Mitiaro Airport (Nukuroa Airport)",
+      "latitude": -19.8425,
+      "longitude": -157.703
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "MUK",
+      "icao": "NCMK",
+      "name": "Mauke Airport",
+      "latitude": -20.1361,
+      "longitude": -157.345
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "PYE",
+      "icao": "NCPY",
+      "name": "Tongareva Airport",
+      "latitude": -9.01437,
+      "longitude": -158.032
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "PZK",
+      "icao": "NCPK",
+      "name": "Pukapuka Island Airfield",
+      "latitude": -10.9145,
+      "longitude": -165.839
+    },
+    {
+      "countryCode": "CK",
+      "region": "Cook Islands",
+      "iata": "RAR",
+      "icao": "NCRG",
+      "name": "Rarotonga International Airport",
+      "latitude": -21.2027,
+      "longitude": -159.806
+    }
+  ]
 }

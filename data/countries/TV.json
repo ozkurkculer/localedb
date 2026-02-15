@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TV",
+      "region": "Funafuti",
+      "iata": "FUN",
+      "icao": "NGFU",
+      "name": "Funafuti International Airport",
+      "latitude": -8.525,
+      "longitude": 179.196
+    }
+  ]
 }

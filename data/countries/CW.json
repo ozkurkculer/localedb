@@ -248,5 +248,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CW",
+      "region": "Curacao",
+      "iata": "CUR",
+      "icao": "TNCC",
+      "name": "Curacao International Airport (Hato Int'l Airport)",
+      "latitude": 12.1889,
+      "longitude": -68.9598
+    }
+  ]
 }

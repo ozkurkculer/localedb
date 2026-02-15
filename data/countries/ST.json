@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ST",
+      "region": "Principe",
+      "iata": "PCP",
+      "icao": "FPPR",
+      "name": "Principe Airport",
+      "latitude": 1.66294,
+      "longitude": 7.41174
+    },
+    {
+      "countryCode": "ST",
+      "region": "Sao Tome",
+      "iata": "TMS",
+      "icao": "FPST",
+      "name": "Sao Tome International Airport",
+      "latitude": 0.378175,
+      "longitude": 6.71215
+    }
+  ]
 }

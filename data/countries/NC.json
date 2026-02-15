@@ -228,5 +228,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "BMY",
+      "icao": "NWWC",
+      "name": "Ile Art - Waala Airport",
+      "latitude": -19.7206,
+      "longitude": 163.661
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "KNQ",
+      "icao": "NWWD",
+      "name": "Kone Airport",
+      "latitude": -21.0543,
+      "longitude": 164.837
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "KOC",
+      "icao": "NWWK",
+      "name": "Koumac Airport",
+      "latitude": -20.5463,
+      "longitude": 164.256
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "PDC",
+      "icao": "NWWQ",
+      "name": "Mueo/Nickel Airport",
+      "latitude": -21.3164,
+      "longitude": 164.999
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "PUV",
+      "icao": "NWWP",
+      "name": "Malabou Airport",
+      "latitude": -20.2892,
+      "longitude": 164.099
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Nord",
+      "iata": "TOU",
+      "icao": "NWWU",
+      "name": "Touho Airport",
+      "latitude": -20.79,
+      "longitude": 165.259
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Sud",
+      "iata": "GEA",
+      "icao": "NWWM",
+      "name": "Noumea Magenta Airport",
+      "latitude": -22.2583,
+      "longitude": 166.473
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Sud",
+      "iata": "ILP",
+      "icao": "NWWE",
+      "name": "Ile des Pins Airport",
+      "latitude": -22.5889,
+      "longitude": 167.456
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Sud",
+      "iata": "NOU",
+      "icao": "NWWW",
+      "name": "La Tontouta International Airport",
+      "latitude": -22.0146,
+      "longitude": 166.213
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province Sud",
+      "iata": "TGJ",
+      "icao": "NWWA",
+      "name": "Tiga Airport",
+      "latitude": -21.0961,
+      "longitude": 167.804
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province des iles Loyaute",
+      "iata": "LIF",
+      "icao": "NWWL",
+      "name": "Ouanaham Airport",
+      "latitude": -20.7748,
+      "longitude": 167.24
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province des iles Loyaute",
+      "iata": "MEE",
+      "icao": "NWWR",
+      "name": "Mare Airport",
+      "latitude": -21.4817,
+      "longitude": 168.038
+    },
+    {
+      "countryCode": "NC",
+      "region": "Province des iles Loyaute",
+      "iata": "UVE",
+      "icao": "NWWV",
+      "name": "Ouvea Airport (Ouloup Airp",
+      "latitude": -20.6406,
+      "longitude": 166.573
+    }
+  ]
 }

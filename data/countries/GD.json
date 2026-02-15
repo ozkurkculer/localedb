@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GD",
+      "region": "Saint George",
+      "iata": "GND",
+      "icao": "TGPY",
+      "name": "Maurice Bishop International Airport",
+      "latitude": 12.0042,
+      "longitude": -61.7862
+    },
+    {
+      "countryCode": "GD",
+      "region": "Southern Grenadine Islands",
+      "iata": "CRU",
+      "icao": "",
+      "name": "Lauriston Airport (Carriacou Island Airport)",
+      "latitude": 12.4761,
+      "longitude": -61.4728
+    }
+  ]
 }

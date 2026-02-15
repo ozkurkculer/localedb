@@ -238,5 +238,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MP",
+      "region": "Northern Mariana Islands",
+      "iata": "ROP",
+      "icao": "PGRO",
+      "name": "Rota International Airport",
+      "latitude": 14.1743,
+      "longitude": 145.243
+    },
+    {
+      "countryCode": "MP",
+      "region": "Northern Mariana Islands",
+      "iata": "SPN",
+      "icao": "PGSN",
+      "name": "Saipan International Airport (Francisco C. Ada Int'l)",
+      "latitude": 15.119,
+      "longitude": 145.729
+    },
+    {
+      "countryCode": "MP",
+      "region": "Northern Mariana Islands",
+      "iata": "TIQ",
+      "icao": "PGWT",
+      "name": "Tinian International Airport (West Tinian Airport)",
+      "latitude": 14.9992,
+      "longitude": 145.619
+    }
+  ]
 }

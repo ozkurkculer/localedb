@@ -244,5 +244,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "UG",
+      "region": "Arua",
+      "iata": "RUA",
+      "icao": "HUAR",
+      "name": "Arua Airport",
+      "latitude": 3.05,
+      "longitude": 30.917
+    },
+    {
+      "countryCode": "UG",
+      "region": "Gulu",
+      "iata": "ULU",
+      "icao": "HUGU",
+      "name": "Gulu Airport",
+      "latitude": 2.80556,
+      "longitude": 32.2718
+    },
+    {
+      "countryCode": "UG",
+      "region": "Jinja",
+      "iata": "JIN",
+      "icao": "HUJI",
+      "name": "Jinja Airport",
+      "latitude": 0.45,
+      "longitude": 33.2
+    },
+    {
+      "countryCode": "UG",
+      "region": "Kabale",
+      "iata": "KBG",
+      "icao": "HUKF",
+      "name": "Kabalega Falls Airport",
+      "latitude": 2.32872,
+      "longitude": 31.4997
+    },
+    {
+      "countryCode": "UG",
+      "region": "Kampala",
+      "iata": "EBB",
+      "icao": "HUEN",
+      "name": "Entebbe International Airport",
+      "latitude": 0.042386,
+      "longitude": 32.4435
+    },
+    {
+      "countryCode": "UG",
+      "region": "Kanungu",
+      "iata": "KHX",
+      "icao": "",
+      "name": "Kihihi Airstrip",
+      "latitude": -0.7165,
+      "longitude": 29.6997
+    },
+    {
+      "countryCode": "UG",
+      "region": "Kasese",
+      "iata": "KSE",
+      "icao": "HUKS",
+      "name": "Kasese Airport",
+      "latitude": 0.183,
+      "longitude": 30.1
+    },
+    {
+      "countryCode": "UG",
+      "region": "Kisoro",
+      "iata": "KXO",
+      "icao": "",
+      "name": "Kisoro Airport",
+      "latitude": -1.2835,
+      "longitude": 29.7184
+    },
+    {
+      "countryCode": "UG",
+      "region": "Masindi",
+      "iata": "KCU",
+      "icao": "HUMI",
+      "name": "Masindi Airport",
+      "latitude": 1.75806,
+      "longitude": 31.7367
+    },
+    {
+      "countryCode": "UG",
+      "region": "Mbarara",
+      "iata": "MBQ",
+      "icao": "HUMA",
+      "name": "Mbarara Airport",
+      "latitude": -0.555278,
+      "longitude": 30.5994
+    },
+    {
+      "countryCode": "UG",
+      "region": "Moyo",
+      "iata": "OYG",
+      "icao": "",
+      "name": "Moyo Airport",
+      "latitude": 3.6444,
+      "longitude": 31.7628
+    },
+    {
+      "countryCode": "UG",
+      "region": "Nwoya",
+      "iata": "PAF",
+      "icao": "HUPA",
+      "name": "Pakuba Airfield",
+      "latitude": 2.32639,
+      "longitude": 31.4978
+    },
+    {
+      "countryCode": "UG",
+      "region": "Soroti",
+      "iata": "SRT",
+      "icao": "HUSO",
+      "name": "Soroti Airport",
+      "latitude": 1.72769,
+      "longitude": 33.6228
+    },
+    {
+      "countryCode": "UG",
+      "region": "Tororo",
+      "iata": "TRY",
+      "icao": "HUTO",
+      "name": "Tororo Airport",
+      "latitude": 0.683,
+      "longitude": 34.167
+    }
+  ]
 }

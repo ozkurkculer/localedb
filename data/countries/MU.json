@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MU",
+      "region": "Grand Port",
+      "iata": "MRU",
+      "icao": "FIMP",
+      "name": "Sir Seewoosagur Ramgoolam International Airport",
+      "latitude": -20.4302,
+      "longitude": 57.6836
+    },
+    {
+      "countryCode": "MU",
+      "region": "Rodrigues Islands",
+      "iata": "RRG",
+      "icao": "FIMR",
+      "name": "Sir Gaetan Duval Airport",
+      "latitude": -19.7577,
+      "longitude": 63.361
+    }
+  ]
 }

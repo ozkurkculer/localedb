@@ -237,5 +237,367 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DZ",
+      "region": "Adrar",
+      "iata": "AZR",
+      "icao": "DAUA",
+      "name": "Touat-Cheikh Sidi Mohamed Belkebir Airport",
+      "latitude": 27.8376,
+      "longitude": -0.186414
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Adrar",
+      "iata": "BMW",
+      "icao": "DATM",
+      "name": "Bordj Mokhtar Airport",
+      "latitude": 21.375,
+      "longitude": 0.923889
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Adrar",
+      "iata": "TMX",
+      "icao": "DAUT",
+      "name": "Timimoun Airport",
+      "latitude": 29.2371,
+      "longitude": 0.276033
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Alger",
+      "iata": "ALG",
+      "icao": "DAAG",
+      "name": "Houari Boumediene Airport",
+      "latitude": 36.691,
+      "longitude": 3.21541
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Annaba",
+      "iata": "AAE",
+      "icao": "DABB",
+      "name": "Rabah Bitat Airport (Les Salines Airport)",
+      "latitude": 36.8222,
+      "longitude": 7.80917
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Batna",
+      "iata": "BLJ",
+      "icao": "DABT",
+      "name": "Mostepha Ben Boulaid Airport",
+      "latitude": 35.7521,
+      "longitude": 6.30859
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Bechar",
+      "iata": "CBH",
+      "icao": "DAOR",
+      "name": "Boudghene Ben Ali Lotfi Airport",
+      "latitude": 31.6457,
+      "longitude": -2.26986
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Bejaia",
+      "iata": "BJA",
+      "icao": "DAAE",
+      "name": "Soummam - Abane Ramdane Airport",
+      "latitude": 36.712,
+      "longitude": 5.06992
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Biskra",
+      "iata": "BSK",
+      "icao": "DAUB",
+      "name": "Biskra Airport",
+      "latitude": 34.7933,
+      "longitude": 5.73823
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Chlef",
+      "iata": "CFK",
+      "icao": "DAOI",
+      "name": "Chlef International Airport",
+      "latitude": 36.2127,
+      "longitude": 1.33177
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Constantine",
+      "iata": "CZL",
+      "icao": "DABC",
+      "name": "Mohamed Boudiaf International Airport",
+      "latitude": 36.276,
+      "longitude": 6.62039
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Djelfa",
+      "iata": "BUJ",
+      "icao": "DAAD",
+      "name": "Bou Saada Airport",
+      "latitude": 35.3325,
+      "longitude": 4.20639
+    },
+    {
+      "countryCode": "DZ",
+      "region": "El Bayadh",
+      "iata": "EBH",
+      "icao": "DAOY",
+      "name": "El Bayadh Airport",
+      "latitude": 33.7217,
+      "longitude": 1.0925
+    },
+    {
+      "countryCode": "DZ",
+      "region": "El Oued",
+      "iata": "ELU",
+      "icao": "DAUO",
+      "name": "Guemar Airport",
+      "latitude": 33.5114,
+      "longitude": 6.77679
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Ghardaia",
+      "iata": "ELG",
+      "icao": "DAUE",
+      "name": "El Golea Airport",
+      "latitude": 30.5713,
+      "longitude": 2.85959
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Ghardaia",
+      "iata": "GHA",
+      "icao": "DAUG",
+      "name": "Noumerat - Moufdi Zakaria Airport",
+      "latitude": 32.3841,
+      "longitude": 3.79411
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Illizi",
+      "iata": "DJG",
+      "icao": "DAAJ",
+      "name": "Tiska Djanet Airport",
+      "latitude": 24.2928,
+      "longitude": 9.45244
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Illizi",
+      "iata": "IAM",
+      "icao": "DAUZ",
+      "name": "In Amenas Airport (Zarzaitine Airport)",
+      "latitude": 28.0515,
+      "longitude": 9.64291
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Illizi",
+      "iata": "VVZ",
+      "icao": "DAAP",
+      "name": "Takhamalt Airport",
+      "latitude": 26.7235,
+      "longitude": 8.62265
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Jijel",
+      "iata": "GJL",
+      "icao": "DAAV",
+      "name": "Jijel Ferhat Abbas Airport",
+      "latitude": 36.7951,
+      "longitude": 5.87361
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Laghouat",
+      "iata": "HRM",
+      "icao": "DAFH",
+      "name": "Hassi R'Mel Airport (Tilrempt Airport)",
+      "latitude": 32.9304,
+      "longitude": 3.31154
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Laghouat",
+      "iata": "LOO",
+      "icao": "DAUL",
+      "name": "L'Mekrareg Airport (Laghouat Airport)",
+      "latitude": 33.7644,
+      "longitude": 2.92834
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Mascara",
+      "iata": "MUW",
+      "icao": "DAOV",
+      "name": "Ghriss Airport",
+      "latitude": 35.2077,
+      "longitude": 0.147142
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Mostaganem",
+      "iata": "MQV",
+      "icao": "",
+      "name": "Mostaganem Airport",
+      "latitude": 35.9088,
+      "longitude": 0.149383
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Naama",
+      "iata": "MZW",
+      "icao": "DAAY",
+      "name": "Mecheria Airport",
+      "latitude": 33.5359,
+      "longitude": -0.242353
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Oran",
+      "iata": "ORN",
+      "icao": "DAOO",
+      "name": "Oran Es Senia Airport",
+      "latitude": 35.6239,
+      "longitude": -0.621183
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Oran",
+      "iata": "TAF",
+      "icao": "DAOL",
+      "name": "Oran Tafaraoui Airport",
+      "latitude": 35.5424,
+      "longitude": -0.532278
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Ouargla",
+      "iata": "HME",
+      "icao": "DAUH",
+      "name": "Oued Irara-Krim Belkacem Airport",
+      "latitude": 31.673,
+      "longitude": 6.14044
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Ouargla",
+      "iata": "OGX",
+      "icao": "DAUU",
+      "name": "Ain Beida Airport",
+      "latitude": 31.9172,
+      "longitude": 5.41278
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Ouargla",
+      "iata": "TGR",
+      "icao": "DAUK",
+      "name": "Sidi Mahdi Airport",
+      "latitude": 33.0678,
+      "longitude": 6.08867
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Setif",
+      "iata": "QSF",
+      "icao": "DAAS",
+      "name": "Ain Arnat Airport",
+      "latitude": 36.1781,
+      "longitude": 5.32449
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Sidi Bel Abbes",
+      "iata": "BFW",
+      "icao": "DAOS",
+      "name": "Sidi Bel Abbes Airport",
+      "latitude": 35.1718,
+      "longitude": -0.593275
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Skikda",
+      "iata": "SKI",
+      "icao": "DABP",
+      "name": "Skikda Airport",
+      "latitude": 36.8641,
+      "longitude": 6.9516
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tamanrasset",
+      "iata": "INF",
+      "icao": "DATG",
+      "name": "In Guezzam Airport",
+      "latitude": 19.567,
+      "longitude": 5.75
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tamanrasset",
+      "iata": "INZ",
+      "icao": "DAUI",
+      "name": "In Salah Airport",
+      "latitude": 27.251,
+      "longitude": 2.51202
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tamanrasset",
+      "iata": "TMR",
+      "icao": "DAAT",
+      "name": "Aguenar -Hadj Bey Akhamok Airport",
+      "latitude": 22.8115,
+      "longitude": 5.45108
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tebessa",
+      "iata": "TEE",
+      "icao": "DABS",
+      "name": "Cheikh Larbi Tebessi Airport",
+      "latitude": 35.4316,
+      "longitude": 8.12072
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tiaret",
+      "iata": "TID",
+      "icao": "DAOB",
+      "name": "Abdelhafid Boussouf Bou Chekif Airport",
+      "latitude": 35.3411,
+      "longitude": 1.46315
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tindouf",
+      "iata": "TIN",
+      "icao": "DAOF",
+      "name": "Tindouf Airport",
+      "latitude": 27.7004,
+      "longitude": -8.1671
+    },
+    {
+      "countryCode": "DZ",
+      "region": "Tlemcen",
+      "iata": "TLM",
+      "icao": "DAON",
+      "name": "Zenata - Messali El Hadj Airport",
+      "latitude": 35.0167,
+      "longitude": -1.45
+    }
+  ]
 }
