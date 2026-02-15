@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Sao Tome and Principe",
-    "officialName": "Sao Tome and Principe",
+    "officialName": "Democratic Republic of São Tomé and Príncipe",
     "nativeName": "São Tomé e Príncipe",
-    "officialNativeName": "",
+    "officialNativeName": "República Democrática do São Tomé e Príncipe",
     "capital": "São Tomé",
     "capitalCoordinates": [
       0.33654,
       6.72732
     ],
     "coordinates": [
-      0,
-      0
+      1,
+      7
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 964,
     "flagEmoji": "🇸🇹",
     "tld": [
-      "st"
+      ".st"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Sao Tomean"
   },
   "codes": {
     "iso3166Alpha2": "ST",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 STD",
+    "accountingExample": "(1235 STD)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+239",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+239 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

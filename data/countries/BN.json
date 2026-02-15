@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Brunei",
-    "officialName": "Brunei",
+    "officialName": "Nation of Brunei, Abode of Peace",
     "nativeName": "Brunei",
-    "officialNativeName": "",
+    "officialNativeName": "Nation of Brunei, Abode Damai",
     "capital": "Bandar Seri Begawan",
     "capitalCoordinates": [
       4.94029,
       114.94806
     ],
     "coordinates": [
-      0,
-      0
+      4.5,
+      114.66666666
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 5765,
     "flagEmoji": "🇧🇳",
     "tld": [
-      "bn"
+      ".bn"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bruneian"
   },
   "codes": {
     "iso3166Alpha2": "BN",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$ 123.456,79",
+    "accountingExample": "($1.234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+673",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+673 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

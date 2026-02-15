@@ -11,15 +11,15 @@
     "name": "Saint Pierre and Miquelon",
     "officialName": "Saint Pierre and Miquelon",
     "nativeName": "Saint-Pierre-et-Miquelon",
-    "officialNativeName": "",
+    "officialNativeName": "Collectivité territoriale de Saint-Pierre-et-Miquelon",
     "capital": "Saint-Pierre",
     "capitalCoordinates": [
       46.77914,
       -56.1773
     ],
     "coordinates": [
-      0,
-      0
+      46.83333333,
+      -56.33333333
     ],
     "continent": "North America",
     "region": "North America",
@@ -28,7 +28,7 @@
     "area": 242,
     "flagEmoji": "🇵🇲",
     "tld": [
-      "pm"
+      ".pm"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Saint-Pierrais, Miquelonnais"
   },
   "codes": {
     "iso3166Alpha2": "PM",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+508",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+508 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -11,15 +11,15 @@
     "name": "Iceland",
     "officialName": "Iceland",
     "nativeName": "Ísland",
-    "officialNativeName": "",
+    "officialNativeName": "Ísland",
     "capital": "Reykjavík",
     "capitalCoordinates": [
       64.13548,
       -21.89541
     ],
     "coordinates": [
-      0,
-      0
+      65,
+      -18
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 103000,
     "flagEmoji": "🇮🇸",
     "tld": [
-      "is"
+      ".is"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Icelander"
   },
   "codes": {
     "iso3166Alpha2": "IS",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Aurar",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.457 kr.",
+    "accountingExample": "-1.235 kr."
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+354",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+354 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

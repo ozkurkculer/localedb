@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "San Marino",
-    "officialName": "San Marino",
+    "officialName": "Most Serene Republic of San Marino",
     "nativeName": "San Marino",
-    "officialNativeName": "",
+    "officialNativeName": "Serenissima Repubblica di San Marino",
     "capital": "San Marino",
     "capitalCoordinates": [
       43.93667,
       12.44639
     ],
     "coordinates": [
-      0,
-      0
+      43.76666666,
+      12.41666666
     ],
     "continent": "Europe",
     "region": "Southern Europe",
@@ -28,7 +28,7 @@
     "area": 61,
     "flagEmoji": "🇸🇲",
     "tld": [
-      "sm"
+      ".sm"
     ],
     "landlocked": true,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Sammarinese"
   },
   "codes": {
     "iso3166Alpha2": "SM",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "-1.234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+378",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+378 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

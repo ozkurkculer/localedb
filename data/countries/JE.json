@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Jersey",
-    "officialName": "Jersey",
+    "officialName": "Bailiwick of Jersey",
     "nativeName": "Jersey",
-    "officialNativeName": "",
+    "officialNativeName": "Bailiwick of Jersey",
     "capital": "Saint Helier",
     "capitalCoordinates": [
       49.18804,
       -2.10491
     ],
     "coordinates": [
-      0,
-      0
+      49.25,
+      -2.16666666
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 116,
     "flagEmoji": "🇯🇪",
     "tld": [
-      "je"
+      ".je"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Channel Islander"
   },
   "codes": {
     "iso3166Alpha2": "JE",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Penny",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "JEP 123,456.79",
+    "accountingExample": "(JEP 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+44",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+44 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Equatorial Guinea",
-    "officialName": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
     "nativeName": "Guinea Ecuatorial",
-    "officialNativeName": "",
+    "officialNativeName": "République de la Guinée Équatoriale",
     "capital": "Malabo",
     "capitalCoordinates": [
       3.75,
       8.78333
     ],
     "coordinates": [
-      0,
-      0
+      2,
+      10
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 28051,
     "flagEmoji": "🇬🇶",
     "tld": [
-      "gq"
+      ".gq"
     ],
     "landlocked": false,
     "borders": [
@@ -77,7 +77,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Equatorial Guinean"
   },
   "codes": {
     "iso3166Alpha2": "GQ",
@@ -112,8 +112,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "FCFA 123.457",
+    "accountingExample": "-1235 FCFA"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -230,15 +230,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+240",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+240 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Egypt",
-    "officialName": "Egypt",
+    "officialName": "Arab Republic of Egypt",
     "nativeName": "مصر",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية مصر العربية",
     "capital": "Cairo",
     "capitalCoordinates": [
       30.06263,
       31.24967
     ],
     "coordinates": [
-      0,
-      0
+      27,
+      30
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,8 @@
     "area": 1002450,
     "flagEmoji": "🇪🇬",
     "tld": [
-      "eg"
+      ".eg",
+      ".مصر"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Egyptian"
   },
   "codes": {
     "iso3166Alpha2": "EG",
@@ -84,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Piasters",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٩ ج.م.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦ ج.م.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +203,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+20",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+20 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

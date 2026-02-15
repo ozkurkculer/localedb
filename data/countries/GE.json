@@ -11,15 +11,15 @@
     "name": "Georgia",
     "officialName": "Georgia",
     "nativeName": "საქართველო",
-    "officialNativeName": "",
+    "officialNativeName": "საქართველო",
     "capital": "Tbilisi",
     "capitalCoordinates": [
       41.69411,
       44.83368
     ],
     "coordinates": [
-      0,
-      0
+      42,
+      43.5
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 69700,
     "flagEmoji": "🇬🇪",
     "tld": [
-      "ge"
+      ".ge"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Georgian"
   },
   "codes": {
     "iso3166Alpha2": "GE",
@@ -84,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Tetri",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 ₾",
+    "accountingExample": "-1234,56 ₾"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+995",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+995 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

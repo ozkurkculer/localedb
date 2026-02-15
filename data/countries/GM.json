@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Gambia",
-    "officialName": "Gambia",
+    "officialName": "Republic of the Gambia",
     "nativeName": "Gambia",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of the Gambia",
     "capital": "Banjul",
     "capitalCoordinates": [
       13.45274,
       -16.57803
     ],
     "coordinates": [
-      0,
-      0
+      13.46666666,
+      -16.56666666
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 10689,
     "flagEmoji": "🇬🇲",
     "tld": [
-      "gm"
+      ".gm"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Gambian"
   },
   "codes": {
     "iso3166Alpha2": "GM",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Bututs",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "D 123,456.79",
+    "accountingExample": "(D 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+220",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+220 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

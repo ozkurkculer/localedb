@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Somalia",
-    "officialName": "Somalia",
+    "officialName": "Federal Republic of Somalia",
     "nativeName": "Soomaaliya",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية الصومال الفيدرالية",
     "capital": "Mogadishu",
     "capitalCoordinates": [
       2.03711,
       45.34375
     ],
     "coordinates": [
-      0,
-      0
+      10,
+      49
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 637657,
     "flagEmoji": "🇸🇴",
     "tld": [
-      "so"
+      ".so"
     ],
     "landlocked": false,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Somali"
   },
   "codes": {
     "iso3166Alpha2": "SO",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Centesimi",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "S 123,457",
+    "accountingExample": "(S 1,235)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+252",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+252 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

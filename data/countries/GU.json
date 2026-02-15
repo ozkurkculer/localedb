@@ -11,15 +11,15 @@
     "name": "Guam",
     "officialName": "Guam",
     "nativeName": "Guam",
-    "officialNativeName": "",
+    "officialNativeName": "Guåhån",
     "capital": "Hagåtña",
     "capitalCoordinates": [
       13.47567,
       144.74886
     ],
     "coordinates": [
-      0,
-      0
+      13.46666666,
+      144.78333333
     ],
     "continent": "Oceania",
     "region": "Micronesia",
@@ -28,7 +28,7 @@
     "area": 549,
     "flagEmoji": "🇬🇺",
     "tld": [
-      "gu"
+      ".gu"
     ],
     "landlocked": false,
     "borders": [],
@@ -64,7 +64,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guamanian"
   },
   "codes": {
     "iso3166Alpha2": "GU",
@@ -99,8 +99,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -217,15 +217,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1671",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1671 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

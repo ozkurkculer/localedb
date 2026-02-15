@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Nigeria",
-    "officialName": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
     "nativeName": "Nigeria",
-    "officialNativeName": "",
+    "officialNativeName": "Federal Republic of Nigeria",
     "capital": "Abuja",
     "capitalCoordinates": [
       9.05785,
       7.49508
     ],
     "coordinates": [
-      0,
-      0
+      10,
+      8
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 923768,
     "flagEmoji": "🇳🇬",
     "tld": [
-      "ng"
+      ".ng"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Nigerian"
   },
   "codes": {
     "iso3166Alpha2": "NG",
@@ -84,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Kobo",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₦123,456.79",
+    "accountingExample": "(₦1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+234",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+234 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

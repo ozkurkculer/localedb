@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "China",
-    "officialName": "China",
+    "officialName": "People's Republic of China",
     "nativeName": "中国",
-    "officialNativeName": "",
+    "officialNativeName": "中华人民共和国",
     "capital": "Beijing",
     "capitalCoordinates": [
       39.9075,
       116.39723
     ],
     "coordinates": [
-      0,
-      0
+      35,
+      105
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,11 @@
     "area": 9706961,
     "flagEmoji": "🇨🇳",
     "tld": [
-      "cn"
+      ".cn",
+      ".中国",
+      ".中國",
+      ".公司",
+      ".网络"
     ],
     "landlocked": false,
     "borders": [
@@ -61,7 +65,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Chinese"
   },
   "codes": {
     "iso3166Alpha2": "CN",
@@ -96,8 +100,8 @@
     "subunitValue": 100,
     "subunitName": "Fen",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "¥123,456.79",
+    "accountingExample": "(¥1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +218,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+86",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+86 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

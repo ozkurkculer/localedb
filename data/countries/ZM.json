@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Zambia",
-    "officialName": "Zambia",
+    "officialName": "Republic of Zambia",
     "nativeName": "Zambia",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Zambia",
     "capital": "Lusaka",
     "capitalCoordinates": [
       -15.40669,
       28.28713
     ],
     "coordinates": [
-      0,
-      0
+      -15,
+      30
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 752612,
     "flagEmoji": "🇿🇲",
     "tld": [
-      "zm"
+      ".zm"
     ],
     "landlocked": true,
     "borders": [
@@ -53,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Zambian"
   },
   "codes": {
     "iso3166Alpha2": "ZM",
@@ -88,8 +88,8 @@
     "subunitValue": 100,
     "subunitName": "Ngwee",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "K 123,456.79",
+    "accountingExample": "(K 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -206,15 +206,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+260",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+260 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

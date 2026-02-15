@@ -11,15 +11,15 @@
     "name": "Tokelau",
     "officialName": "Tokelau",
     "nativeName": "Tokelau",
-    "officialNativeName": "",
+    "officialNativeName": "Tokelau",
     "capital": "",
     "capitalCoordinates": [
       null,
       null
     ],
     "coordinates": [
-      0,
-      0
+      -9,
+      -172
     ],
     "continent": "Oceania",
     "region": "Polynesia",
@@ -28,7 +28,7 @@
     "area": 12,
     "flagEmoji": "🇹🇰",
     "tld": [
-      "tk"
+      ".tk"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Tokelauan"
   },
   "codes": {
     "iso3166Alpha2": "TK",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+690",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+690 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

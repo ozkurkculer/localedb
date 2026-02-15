@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Austria",
-    "officialName": "Austria",
+    "officialName": "Republic of Austria",
     "nativeName": "Österreich",
-    "officialNativeName": "",
+    "officialNativeName": "Republik Österreich",
     "capital": "Vienna",
     "capitalCoordinates": [
       48.20849,
       16.37208
     ],
     "coordinates": [
-      0,
-      0
+      47.33333333,
+      13.33333333
     ],
     "continent": "Europe",
     "region": "Central Europe",
@@ -28,7 +28,7 @@
     "area": 83871,
     "flagEmoji": "🇦🇹",
     "tld": [
-      "at"
+      ".at"
     ],
     "landlocked": true,
     "borders": [
@@ -53,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Austrian"
   },
   "codes": {
     "iso3166Alpha2": "AT",
@@ -88,8 +88,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "€ 123.456,79",
+    "accountingExample": "-1.234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -206,15 +206,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+43",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+43 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

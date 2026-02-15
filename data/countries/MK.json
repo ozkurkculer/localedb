@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "North Macedonia",
-    "officialName": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
     "nativeName": "Северна Македонија",
-    "officialNativeName": "",
+    "officialNativeName": "Република Северна Македонија",
     "capital": "Skopje",
     "capitalCoordinates": [
       41.99646,
       21.43141
     ],
     "coordinates": [
-      0,
-      0
+      41.83333333,
+      22
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,7 @@
     "area": 25713,
     "flagEmoji": "🇲🇰",
     "tld": [
-      "mk"
+      ".mk"
     ],
     "landlocked": true,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Macedonian"
   },
   "codes": {
     "iso3166Alpha2": "MK",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Deni",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 ден.",
+    "accountingExample": "-1.234,56 ден."
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+389",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+389 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

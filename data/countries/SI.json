@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Slovenia",
-    "officialName": "Slovenia",
+    "officialName": "Republic of Slovenia",
     "nativeName": "Slovenija",
-    "officialNativeName": "",
+    "officialNativeName": "Republika Slovenija",
     "capital": "Ljubljana",
     "capitalCoordinates": [
       46.05108,
       14.50513
     ],
     "coordinates": [
-      0,
-      0
+      46.11666666,
+      14.81666666
     ],
     "continent": "Europe",
     "region": "Central Europe",
@@ -28,7 +28,7 @@
     "area": 20273,
     "flagEmoji": "🇸🇮",
     "tld": [
-      "si"
+      ".si"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Slovene"
   },
   "codes": {
     "iso3166Alpha2": "SI",
@@ -84,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "(1.234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+386",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+386 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

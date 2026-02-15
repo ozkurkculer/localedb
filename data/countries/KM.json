@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Comoros",
-    "officialName": "Comoros",
+    "officialName": "Union of the Comoros",
     "nativeName": "جزر القمر",
-    "officialNativeName": "",
+    "officialNativeName": "الاتحاد القمري",
     "capital": "Moroni",
     "capitalCoordinates": [
       -11.70216,
       43.25506
     ],
     "coordinates": [
-      0,
-      0
+      -12.16666666,
+      44.25
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 1862,
     "flagEmoji": "🇰🇲",
     "tld": [
-      "km"
+      ".km"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Comoran"
   },
   "codes": {
     "iso3166Alpha2": "KM",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٧ CF",
+    "accountingExample": "؜-‏١٬٢٣٥ CF"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+269",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+269 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

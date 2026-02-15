@@ -11,15 +11,15 @@
     "name": "Saint Helena, Ascension and Tristan da Cunha",
     "officialName": "Saint Helena, Ascension and Tristan da Cunha",
     "nativeName": "St. Helena",
-    "officialNativeName": "",
+    "officialNativeName": "Saint Helena, Ascension and Tristan da Cunha",
     "capital": "Jamestown",
     "capitalCoordinates": [
       -15.93872,
       -5.71675
     ],
     "coordinates": [
-      0,
-      0
+      -15.95,
+      -5.72
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,8 @@
     "area": 394,
     "flagEmoji": "🇸🇭",
     "tld": [
-      "sh"
+      ".sh",
+      ".ac"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +45,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Saint Helenian"
   },
   "codes": {
     "iso3166Alpha2": "SH",
@@ -79,8 +80,8 @@
     "subunitValue": 100,
     "subunitName": "Pence",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "£123,456.79",
+    "accountingExample": "(£1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +198,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+290",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+290 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "South Africa",
-    "officialName": "South Africa",
+    "officialName": "Republic of South Africa",
     "nativeName": "Suid-Afrika",
-    "officialNativeName": "",
+    "officialNativeName": "Republiek van Suid-Afrika",
     "capital": "Pretoria",
     "capitalCoordinates": [
       -25.74486,
       28.18783
     ],
     "coordinates": [
-      0,
-      0
+      -29,
+      24
     ],
     "continent": "Africa",
     "region": "Southern Africa",
@@ -28,7 +28,7 @@
     "area": 1221037,
     "flagEmoji": "🇿🇦",
     "tld": [
-      "za"
+      ".za"
     ],
     "landlocked": false,
     "borders": [
@@ -141,7 +141,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "South African"
   },
   "codes": {
     "iso3166Alpha2": "ZA",
@@ -176,8 +176,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "R 123 456,79",
+    "accountingExample": "(R 1 234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -294,15 +294,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+27",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+27 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

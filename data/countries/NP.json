@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Nepal",
-    "officialName": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
     "nativeName": "नेपाल",
-    "officialNativeName": "",
+    "officialNativeName": "नेपाल संघीय लोकतान्त्रिक गणतन्त्र",
     "capital": "Kathmandu",
     "capitalCoordinates": [
       27.70169,
       85.3206
     ],
     "coordinates": [
-      0,
-      0
+      28,
+      84
     ],
     "continent": "Asia",
     "region": "Southern Asia",
@@ -28,7 +28,7 @@
     "area": 147181,
     "flagEmoji": "🇳🇵",
     "tld": [
-      "np"
+      ".np"
     ],
     "landlocked": true,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Nepalese"
   },
   "codes": {
     "iso3166Alpha2": "NP",
@@ -82,8 +82,8 @@
     "subunitValue": 2,
     "subunitName": "Mohur",
     "pattern": "¤ #,##,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "नेरू १,२३,४५६.७९",
+    "accountingExample": "-नेरू १,२३४.५६"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "२५.५%",
+    "example": "१२,३४,५६७.८९",
     "numberingSystem": "deva"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+977",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+977 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

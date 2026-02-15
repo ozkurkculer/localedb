@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Moldova",
-    "officialName": "Moldova",
+    "officialName": "Republic of Moldova",
     "nativeName": "Republica Moldova",
-    "officialNativeName": "",
+    "officialNativeName": "Republica Moldova",
     "capital": "Chisinau",
     "capitalCoordinates": [
       47.00556,
       28.8575
     ],
     "coordinates": [
-      0,
-      0
+      47,
+      29
     ],
     "continent": "Europe",
     "region": "Eastern Europe",
@@ -28,7 +28,7 @@
     "area": 33846,
     "flagEmoji": "🇲🇩",
     "tld": [
-      "md"
+      ".md"
     ],
     "landlocked": true,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Moldovan"
   },
   "codes": {
     "iso3166Alpha2": "MD",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Bani",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 L",
+    "accountingExample": "(1.234,56 L)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+373",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+373 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

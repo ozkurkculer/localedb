@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Western Sahara",
-    "officialName": "Western Sahara",
+    "officialName": "Sahrawi Arab Democratic Republic",
     "nativeName": "Sáhara Occidental",
-    "officialNativeName": "",
+    "officialNativeName": "Sahrawi Arab Democratic Republic",
     "capital": "El Aaiún",
     "capitalCoordinates": [
       27.1418,
       -13.18797
     ],
     "coordinates": [
-      0,
-      0
+      24.5,
+      -13
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,7 @@
     "area": 266000,
     "flagEmoji": "🇪🇭",
     "tld": [
-      "eh"
+      ".eh"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Sahrawi"
   },
   "codes": {
     "iso3166Alpha2": "EH",
@@ -83,8 +83,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 MAD",
+    "accountingExample": "-1234,56 MAD"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+2125288",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+2125288 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

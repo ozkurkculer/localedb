@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "South Sudan",
-    "officialName": "South Sudan",
+    "officialName": "Republic of South Sudan",
     "nativeName": "South Sudan",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of South Sudan",
     "capital": "Juba",
     "capitalCoordinates": [
       4.85165,
       31.58247
     ],
     "coordinates": [
-      0,
-      0
+      7,
+      30
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 619745,
     "flagEmoji": "🇸🇸",
     "tld": [
-      "ss"
+      ".ss"
     ],
     "landlocked": true,
     "borders": [
@@ -51,7 +51,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "South Sudanese"
   },
   "codes": {
     "iso3166Alpha2": "SS",
@@ -86,8 +86,8 @@
     "subunitValue": 100,
     "subunitName": "Piaster",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "£123,456.79",
+    "accountingExample": "(£1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -204,15 +204,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+211",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+211 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

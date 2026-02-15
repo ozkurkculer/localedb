@@ -11,15 +11,15 @@
     "name": "Isle of Man",
     "officialName": "Isle of Man",
     "nativeName": "Isle of Man",
-    "officialNativeName": "",
+    "officialNativeName": "Isle of Man",
     "capital": "Douglas",
     "capitalCoordinates": [
       54.15,
       -4.48333
     ],
     "coordinates": [
-      0,
-      0
+      54.25,
+      -4.5
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 572,
     "flagEmoji": "🇮🇲",
     "tld": [
-      "im"
+      ".im"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Manx"
   },
   "codes": {
     "iso3166Alpha2": "IM",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Pence",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "IMP 123,456.79",
+    "accountingExample": "(IMP 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+44",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+44 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

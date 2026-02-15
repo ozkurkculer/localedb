@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Virgin Islands",
-    "officialName": "Virgin Islands",
+    "officialName": "Virgin Islands of the United States",
     "nativeName": "U.S. Virgin Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Virgin Islands of the United States",
     "capital": "Charlotte Amalie",
     "capitalCoordinates": [
       18.3419,
       -64.9307
     ],
     "coordinates": [
-      0,
-      0
+      18.35,
+      -64.933333
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 347,
     "flagEmoji": "🇻🇮",
     "tld": [
-      "vi"
+      ".vi"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Virgin Islander"
   },
   "codes": {
     "iso3166Alpha2": "VI",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1340",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1340 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

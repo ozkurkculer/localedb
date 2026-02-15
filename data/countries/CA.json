@@ -11,15 +11,15 @@
     "name": "Canada",
     "officialName": "Canada",
     "nativeName": "Canada",
-    "officialNativeName": "",
+    "officialNativeName": "Canada",
     "capital": "Ottawa",
     "capitalCoordinates": [
       45.41117,
       -75.69812
     ],
     "coordinates": [
-      0,
-      0
+      60,
+      -95
     ],
     "continent": "North America",
     "region": "North America",
@@ -28,7 +28,7 @@
     "area": 9984670,
     "flagEmoji": "🇨🇦",
     "tld": [
-      "ca"
+      ".ca"
     ],
     "landlocked": false,
     "borders": [
@@ -56,7 +56,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Canadian"
   },
   "codes": {
     "iso3166Alpha2": "CA",
@@ -91,8 +91,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1204",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1204 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

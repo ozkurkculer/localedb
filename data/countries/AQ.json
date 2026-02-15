@@ -18,7 +18,7 @@
       null
     ],
     "coordinates": [
-      0,
+      -90,
       0
     ],
     "continent": "Oceania",
@@ -28,7 +28,7 @@
     "area": 14000000,
     "flagEmoji": "🇦🇶",
     "tld": [
-      "aq"
+      ".aq"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Antarctican"
   },
   "codes": {
     "iso3166Alpha2": "AQ",
@@ -213,15 +213,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
     "callingCode": "",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": " 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

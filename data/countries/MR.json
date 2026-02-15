@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Mauritania",
-    "officialName": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
     "nativeName": "موريتانيا",
-    "officialNativeName": "",
+    "officialNativeName": "الجمهورية الإسلامية الموريتانية",
     "capital": "Nouakchott",
     "capitalCoordinates": [
       18.08581,
       -15.9785
     ],
     "coordinates": [
-      0,
-      0
+      20,
+      -12
     ],
     "continent": "Africa",
     "region": "Western Africa",
@@ -28,7 +28,7 @@
     "area": 1030700,
     "flagEmoji": "🇲🇷",
     "tld": [
-      "mr"
+      ".mr"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Mauritanian"
   },
   "codes": {
     "iso3166Alpha2": "MR",
@@ -84,8 +84,8 @@
     "subunitValue": 5,
     "subunitName": "Khoums",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٧ MRO",
+    "accountingExample": "؜-‏١٬٢٣٥ MRO"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+222",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+222 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

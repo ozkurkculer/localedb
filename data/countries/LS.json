@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Lesotho",
-    "officialName": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
     "nativeName": "Lesotho",
-    "officialNativeName": "",
+    "officialNativeName": "Kingdom of Lesotho",
     "capital": "Maseru",
     "capitalCoordinates": [
       -29.31667,
       27.48333
     ],
     "coordinates": [
-      0,
-      0
+      -29.5,
+      28.5
     ],
     "continent": "Africa",
     "region": "Southern Africa",
@@ -28,7 +28,7 @@
     "area": 30355,
     "flagEmoji": "🇱🇸",
     "tld": [
-      "ls"
+      ".ls"
     ],
     "landlocked": true,
     "borders": [
@@ -56,7 +56,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Mosotho"
   },
   "codes": {
     "iso3166Alpha2": "LS",
@@ -91,8 +91,8 @@
     "subunitValue": 100,
     "subunitName": "Lisente",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "LSL 123,456.79",
+    "accountingExample": "(LSL 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -209,15 +209,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+266",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+266 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

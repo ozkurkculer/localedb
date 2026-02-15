@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Latvia",
-    "officialName": "Latvia",
+    "officialName": "Republic of Latvia",
     "nativeName": "Latvija",
-    "officialNativeName": "",
+    "officialNativeName": "Latvijas Republikas",
     "capital": "Riga",
     "capitalCoordinates": [
       56.946,
       24.10589
     ],
     "coordinates": [
-      0,
-      0
+      57,
+      25
     ],
     "continent": "Europe",
     "region": "Northern Europe",
@@ -28,7 +28,7 @@
     "area": 64559,
     "flagEmoji": "🇱🇻",
     "tld": [
-      "lv"
+      ".lv"
     ],
     "landlocked": false,
     "borders": [
@@ -49,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Latvian"
   },
   "codes": {
     "iso3166Alpha2": "LV",
@@ -84,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "-1234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -202,15 +202,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+371",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+371 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

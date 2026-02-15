@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Papua New Guinea",
-    "officialName": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
     "nativeName": "Papua New Guinea",
-    "officialNativeName": "",
+    "officialNativeName": "Independent State of Papua New Guinea",
     "capital": "Port Moresby",
     "capitalCoordinates": [
       -9.44314,
       147.17972
     ],
     "coordinates": [
-      0,
-      0
+      -6,
+      147
     ],
     "continent": "Oceania",
     "region": "Melanesia",
@@ -28,7 +28,7 @@
     "area": 462840,
     "flagEmoji": "🇵🇬",
     "tld": [
-      "pg"
+      ".pg"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Papua New Guinean"
   },
   "codes": {
     "iso3166Alpha2": "PG",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Toea",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "K 123,456.79",
+    "accountingExample": "(K 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+675",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+675 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

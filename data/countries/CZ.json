@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Czechia",
-    "officialName": "Czechia",
+    "officialName": "Czech Republic",
     "nativeName": "Česko",
-    "officialNativeName": "",
+    "officialNativeName": "Česká republika",
     "capital": "Prague",
     "capitalCoordinates": [
       50.08804,
       14.42076
     ],
     "coordinates": [
-      0,
-      0
+      49.75,
+      15.5
     ],
     "continent": "Europe",
     "region": "Central Europe",
@@ -28,7 +28,7 @@
     "area": 78865,
     "flagEmoji": "🇨🇿",
     "tld": [
-      "cz"
+      ".cz"
     ],
     "landlocked": true,
     "borders": [
@@ -59,7 +59,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Czech"
   },
   "codes": {
     "iso3166Alpha2": "CZ",
@@ -94,8 +94,8 @@
     "subunitValue": 100,
     "subunitName": "Haleru",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 Kč",
+    "accountingExample": "-1 234,56 Kč"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -212,15 +212,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+420",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+420 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

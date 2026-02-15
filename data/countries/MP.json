@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Northern Mariana Islands",
-    "officialName": "Northern Mariana Islands",
+    "officialName": "Commonwealth of the Northern Mariana Islands",
     "nativeName": "Northern Mariana Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Commonwealth of the Northern Mariana Islands",
     "capital": "Saipan",
     "capitalCoordinates": [
       15.21233,
       145.7545
     ],
     "coordinates": [
-      0,
-      0
+      15.2,
+      145.75
     ],
     "continent": "Oceania",
     "region": "Micronesia",
@@ -28,7 +28,7 @@
     "area": 464,
     "flagEmoji": "🇲🇵",
     "tld": [
-      "mp"
+      ".mp"
     ],
     "landlocked": false,
     "borders": [],
@@ -54,7 +54,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "American"
   },
   "codes": {
     "iso3166Alpha2": "MP",
@@ -89,8 +89,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -207,15 +207,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1670",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1670 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Saudi Arabia",
-    "officialName": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
     "nativeName": "المملكة العربية السعودية",
-    "officialNativeName": "",
+    "officialNativeName": "المملكة العربية السعودية",
     "capital": "Riyadh",
     "capitalCoordinates": [
       24.68773,
       46.72185
     ],
     "coordinates": [
-      0,
-      0
+      25,
+      45
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,8 @@
     "area": 2149690,
     "flagEmoji": "🇸🇦",
     "tld": [
-      "sa"
+      ".sa",
+      ".السعودية"
     ],
     "landlocked": false,
     "borders": [
@@ -52,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Saudi Arabian"
   },
   "codes": {
     "iso3166Alpha2": "SA",
@@ -87,8 +88,8 @@
     "subunitValue": 20,
     "subunitName": "Qirshes",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٩ ر.س.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦ ر.س.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -205,15 +206,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+966",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+966 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

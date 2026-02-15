@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Ethiopia",
-    "officialName": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
     "nativeName": "ኢትዮጵያ",
-    "officialNativeName": "",
+    "officialNativeName": "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ",
     "capital": "Addis Ababa",
     "capitalCoordinates": [
       9.02497,
       38.74689
     ],
     "coordinates": [
-      0,
-      0
+      8,
+      38
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 1104300,
     "flagEmoji": "🇪🇹",
     "tld": [
-      "et"
+      ".et"
     ],
     "landlocked": true,
     "borders": [
@@ -51,7 +51,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Ethiopian"
   },
   "codes": {
     "iso3166Alpha2": "ET",
@@ -86,8 +86,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "ብር 123,456.79",
+    "accountingExample": "(ብር 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -204,15 +204,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+251",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+251 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

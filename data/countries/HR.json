@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Croatia",
-    "officialName": "Croatia",
+    "officialName": "Republic of Croatia",
     "nativeName": "Hrvatska",
-    "officialNativeName": "",
+    "officialNativeName": "Republika Hrvatska",
     "capital": "Zagreb",
     "capitalCoordinates": [
       45.81444,
       15.97798
     ],
     "coordinates": [
-      0,
-      0
+      45.16666666,
+      15.5
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,7 @@
     "area": 56594,
     "flagEmoji": "🇭🇷",
     "tld": [
-      "hr"
+      ".hr"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Croatian"
   },
   "codes": {
     "iso3166Alpha2": "HR",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "−1.234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+385",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+385 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

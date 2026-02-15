@@ -11,15 +11,15 @@
     "name": "Guadeloupe",
     "officialName": "Guadeloupe",
     "nativeName": "Guadeloupe",
-    "officialNativeName": "",
+    "officialNativeName": "Guadeloupe",
     "capital": "Basse-Terre",
     "capitalCoordinates": [
       15.99854,
       -61.72548
     ],
     "coordinates": [
-      0,
-      0
+      16.25,
+      -61.583333
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 1628,
     "flagEmoji": "🇬🇵",
     "tld": [
-      "gp"
+      ".gp"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guadeloupian"
   },
   "codes": {
     "iso3166Alpha2": "GP",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+590",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+590 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

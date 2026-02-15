@@ -11,15 +11,15 @@
     "name": "Saint Lucia",
     "officialName": "Saint Lucia",
     "nativeName": "St. Lucia",
-    "officialNativeName": "",
+    "officialNativeName": "Saint Lucia",
     "capital": "Castries",
     "capitalCoordinates": [
       13.9957,
       -61.00614
     ],
     "coordinates": [
-      0,
-      0
+      13.88333333,
+      -60.96666666
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 616,
     "flagEmoji": "🇱🇨",
     "tld": [
-      "lc"
+      ".lc"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Saint Lucian"
   },
   "codes": {
     "iso3166Alpha2": "LC",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1758",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1758 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

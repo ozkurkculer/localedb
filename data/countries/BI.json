@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Burundi",
-    "officialName": "Burundi",
+    "officialName": "Republic of Burundi",
     "nativeName": "Burundi",
-    "officialNativeName": "",
+    "officialNativeName": "République du Burundi",
     "capital": "Bujumbura",
     "capitalCoordinates": [
       -3.3822,
       29.3644
     ],
     "coordinates": [
-      0,
-      0
+      -3.5,
+      30
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 27834,
     "flagEmoji": "🇧🇮",
     "tld": [
-      "bi"
+      ".bi"
     ],
     "landlocked": true,
     "borders": [
@@ -58,7 +58,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Burundian"
   },
   "codes": {
     "iso3166Alpha2": "BI",
@@ -93,8 +93,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 FBu",
+    "accountingExample": "(1 235 FBu)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+257",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+257 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

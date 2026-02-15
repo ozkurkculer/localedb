@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Vatican City",
-    "officialName": "Vatican City",
+    "officialName": "Vatican City State",
     "nativeName": "Vaticanæ / Santa Sede / Città del Vaticano",
-    "officialNativeName": "",
+    "officialNativeName": "Stato della Città del Vaticano",
     "capital": "Vatican City",
     "capitalCoordinates": [
       41.902226,
       12.450713
     ],
     "coordinates": [
-      0,
-      0
+      41.9,
+      12.45
     ],
     "continent": "Europe",
     "region": "Southern Europe",
@@ -28,7 +28,7 @@
     "area": 0.44,
     "flagEmoji": "🇻🇦",
     "tld": [
-      "va"
+      ".va"
     ],
     "landlocked": true,
     "borders": [
@@ -76,7 +76,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Vatican"
   },
   "codes": {
     "iso3166Alpha2": "VA",
@@ -111,8 +111,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "€123,456.79",
+    "accountingExample": "(€1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -229,15 +229,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+3906698",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+3906698 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

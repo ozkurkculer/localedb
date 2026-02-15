@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Panama",
-    "officialName": "Panama",
+    "officialName": "Republic of Panama",
     "nativeName": "Panamá",
-    "officialNativeName": "",
+    "officialNativeName": "República de Panamá",
     "capital": "Panama City",
     "capitalCoordinates": [
       8.9936,
       -79.51973
     ],
     "coordinates": [
-      0,
-      0
+      9,
+      -80
     ],
     "continent": "Central America",
     "region": "Central America",
@@ -28,7 +28,7 @@
     "area": 75417,
     "flagEmoji": "🇵🇦",
     "tld": [
-      "pa"
+      ".pa"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Panamanian"
   },
   "codes": {
     "iso3166Alpha2": "PA",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Centesimos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "B/. 123,456.79",
+    "accountingExample": "-B/. 1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+507",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+507 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

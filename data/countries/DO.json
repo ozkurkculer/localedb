@@ -11,15 +11,15 @@
     "name": "Dominican Republic",
     "officialName": "Dominican Republic",
     "nativeName": "República Dominicana",
-    "officialNativeName": "",
+    "officialNativeName": "República Dominicana",
     "capital": "Santo Domingo",
     "capitalCoordinates": [
       18.50012,
       -69.98857
     ],
     "coordinates": [
-      0,
-      0
+      19,
+      -70.66666666
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 48671,
     "flagEmoji": "🇩🇴",
     "tld": [
-      "do"
+      ".do"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Dominican"
   },
   "codes": {
     "iso3166Alpha2": "DO",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "RD$123,456.79",
+    "accountingExample": "(RD$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1809",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1809 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

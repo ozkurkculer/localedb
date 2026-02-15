@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "France",
-    "officialName": "France",
+    "officialName": "French Republic",
     "nativeName": "France",
-    "officialNativeName": "",
+    "officialNativeName": "République française",
     "capital": "Paris",
     "capitalCoordinates": [
       48.85341,
       2.3488
     ],
     "coordinates": [
-      0,
-      0
+      46,
+      2
     ],
     "continent": "Europe",
     "region": "Western Europe",
@@ -28,7 +28,7 @@
     "area": 551695,
     "flagEmoji": "🇫🇷",
     "tld": [
-      "fr"
+      ".fr"
     ],
     "landlocked": false,
     "borders": [
@@ -53,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "French"
   },
   "codes": {
     "iso3166Alpha2": "FR",
@@ -88,8 +88,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -219,15 +219,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+33",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+33 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

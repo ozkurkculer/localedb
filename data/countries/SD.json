@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Sudan",
-    "officialName": "Sudan",
+    "officialName": "Republic of the Sudan",
     "nativeName": "السودان",
-    "officialNativeName": "",
+    "officialNativeName": "جمهورية السودان",
     "capital": "Khartoum",
     "capitalCoordinates": [
       15.55177,
       32.53241
     ],
     "coordinates": [
-      0,
-      0
+      15,
+      30
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,7 @@
     "area": 1886068,
     "flagEmoji": "🇸🇩",
     "tld": [
-      "sd"
+      ".sd"
     ],
     "landlocked": false,
     "borders": [
@@ -62,7 +62,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Sudanese"
   },
   "codes": {
     "iso3166Alpha2": "SD",
@@ -97,8 +97,8 @@
     "subunitValue": 100,
     "subunitName": "Piaster",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٩ ج.س.",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦ ج.س."
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -215,15 +215,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+249",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+249 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Lebanon",
-    "officialName": "Lebanon",
+    "officialName": "Lebanese Republic",
     "nativeName": "لبنان",
-    "officialNativeName": "",
+    "officialNativeName": "الجمهورية اللبنانية",
     "capital": "Beirut",
     "capitalCoordinates": [
       33.88894,
       35.49442
     ],
     "coordinates": [
-      0,
-      0
+      33.83333333,
+      35.83333333
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 10452,
     "flagEmoji": "🇱🇧",
     "tld": [
-      "lb"
+      ".lb"
     ],
     "landlocked": false,
     "borders": [
@@ -57,7 +57,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Lebanese"
   },
   "codes": {
     "iso3166Alpha2": "LB",
@@ -92,8 +92,8 @@
     "subunitValue": 100,
     "subunitName": "Piastres",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٧ ل.ل.‏",
+    "accountingExample": "؜-‏١٬٢٣٥ ل.ل.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -210,15 +210,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+961",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+961 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

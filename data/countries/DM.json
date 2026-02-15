@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Dominica",
-    "officialName": "Dominica",
+    "officialName": "Commonwealth of Dominica",
     "nativeName": "Dominica",
-    "officialNativeName": "",
+    "officialNativeName": "Commonwealth of Dominica",
     "capital": "Roseau",
     "capitalCoordinates": [
       15.30174,
       -61.38808
     ],
     "coordinates": [
-      0,
-      0
+      15.41666666,
+      -61.33333333
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 751,
     "flagEmoji": "🇩🇲",
     "tld": [
-      "dm"
+      ".dm"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Dominican"
   },
   "codes": {
     "iso3166Alpha2": "DM",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1767",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1767 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

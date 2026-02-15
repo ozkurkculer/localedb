@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Switzerland",
-    "officialName": "Switzerland",
+    "officialName": "Swiss Confederation",
     "nativeName": "Schweiz",
-    "officialNativeName": "",
+    "officialNativeName": "Confédération suisse",
     "capital": "Bern",
     "capitalCoordinates": [
       46.94809,
       7.44744
     ],
     "coordinates": [
-      0,
-      0
+      47,
+      8
     ],
     "continent": "Europe",
     "region": "Western Europe",
@@ -28,7 +28,7 @@
     "area": 41284,
     "flagEmoji": "🇨🇭",
     "tld": [
-      "ch"
+      ".ch"
     ],
     "landlocked": true,
     "borders": [
@@ -80,7 +80,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Swiss"
   },
   "codes": {
     "iso3166Alpha2": "CH",
@@ -115,8 +115,8 @@
     "subunitValue": 100,
     "subunitName": "Rappen",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "CHF 123’456.79",
+    "accountingExample": "-1’234.56 CHF"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -233,15 +233,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1’234’567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+41",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+41 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

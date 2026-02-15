@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Taiwan",
-    "officialName": "Taiwan",
+    "officialName": "Republic of China (Taiwan)",
     "nativeName": "台湾",
-    "officialNativeName": "",
+    "officialNativeName": "中華民國",
     "capital": "Taipei",
     "capitalCoordinates": [
       25.04776,
       121.53185
     ],
     "coordinates": [
-      0,
-      0
+      23.5,
+      121
     ],
     "continent": "Asia",
     "region": "Eastern Asia",
@@ -28,7 +28,9 @@
     "area": 36193,
     "flagEmoji": "🇹🇼",
     "tld": [
-      "tw"
+      ".tw",
+      ".台灣",
+      ".台湾"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Taiwanese"
   },
   "codes": {
     "iso3166Alpha2": "TW",
@@ -79,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +199,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+886",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+886 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

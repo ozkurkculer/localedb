@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Cuba",
-    "officialName": "Cuba",
+    "officialName": "Republic of Cuba",
     "nativeName": "Cuba",
-    "officialNativeName": "",
+    "officialNativeName": "República de Cuba",
     "capital": "Havana",
     "capitalCoordinates": [
       23.13302,
       -82.38304
     ],
     "coordinates": [
-      0,
-      0
+      21.5,
+      -80
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 109884,
     "flagEmoji": "🇨🇺",
     "tld": [
-      "cu"
+      ".cu"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Cuban"
   },
   "codes": {
     "iso3166Alpha2": "CU",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "-$1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+53",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+53 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

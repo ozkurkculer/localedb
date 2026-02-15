@@ -11,15 +11,15 @@
     "name": "Bouvet Island",
     "officialName": "Bouvet Island",
     "nativeName": "Bouvetøya",
-    "officialNativeName": "",
+    "officialNativeName": "Bouvetøya",
     "capital": "",
     "capitalCoordinates": [
       null,
       null
     ],
     "coordinates": [
-      0,
-      0
+      -54.43333333,
+      3.4
     ],
     "continent": "South America",
     "region": "",
@@ -28,7 +28,7 @@
     "area": 49,
     "flagEmoji": "🇧🇻",
     "tld": [
-      "bv"
+      ".bv"
     ],
     "landlocked": false,
     "borders": [],
@@ -99,8 +99,8 @@
     "subunitValue": 100,
     "subunitName": "Øre",
     "pattern": "#,##0.00 ¤;-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "kr 123 456,79",
+    "accountingExample": "(kr 1 234,56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -217,15 +217,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+47",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+47 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

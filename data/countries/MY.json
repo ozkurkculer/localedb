@@ -11,15 +11,15 @@
     "name": "Malaysia",
     "officialName": "Malaysia",
     "nativeName": "Malaysia",
-    "officialNativeName": "",
+    "officialNativeName": "Malaysia",
     "capital": "Kuala Lumpur",
     "capitalCoordinates": [
       3.1412,
       101.68653
     ],
     "coordinates": [
-      0,
-      0
+      2.5,
+      112.5
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 330803,
     "flagEmoji": "🇲🇾",
     "tld": [
-      "my"
+      ".my"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Malaysian"
   },
   "codes": {
     "iso3166Alpha2": "MY",
@@ -83,8 +83,8 @@
     "subunitValue": 100,
     "subunitName": "Sen",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "RM 123,456.79",
+    "accountingExample": "(RM 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+60",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+60 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

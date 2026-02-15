@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Uganda",
-    "officialName": "Uganda",
+    "officialName": "Republic of Uganda",
     "nativeName": "Uganda",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Uganda",
     "capital": "Kampala",
     "capitalCoordinates": [
       0.31628,
       32.58219
     ],
     "coordinates": [
-      0,
-      0
+      1,
+      32
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 241550,
     "flagEmoji": "🇺🇬",
     "tld": [
-      "ug"
+      ".ug"
     ],
     "landlocked": true,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Ugandan"
   },
   "codes": {
     "iso3166Alpha2": "UG",
@@ -95,8 +95,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "USh 123,457",
+    "accountingExample": "(USh 1,235)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+256",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+256 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

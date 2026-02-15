@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Rwanda",
-    "officialName": "Rwanda",
+    "officialName": "Republic of Rwanda",
     "nativeName": "U Rwanda",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Rwanda",
     "capital": "Kigali",
     "capitalCoordinates": [
       -1.94995,
       30.05885
     ],
     "coordinates": [
-      0,
-      0
+      -2,
+      30
     ],
     "continent": "Africa",
     "region": "Eastern Africa",
@@ -28,7 +28,7 @@
     "area": 26338,
     "flagEmoji": "🇷🇼",
     "tld": [
-      "rw"
+      ".rw"
     ],
     "landlocked": true,
     "borders": [
@@ -69,7 +69,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Rwandan"
   },
   "codes": {
     "iso3166Alpha2": "RW",
@@ -104,8 +104,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "RF 123.457",
+    "accountingExample": "-RF 1.235"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -222,15 +222,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+250",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+250 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

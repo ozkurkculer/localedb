@@ -11,15 +11,15 @@
     "name": "Federated States of Micronesia",
     "officialName": "Federated States of Micronesia",
     "nativeName": "Micronesia",
-    "officialNativeName": "",
+    "officialNativeName": "Federated States of Micronesia",
     "capital": "",
     "capitalCoordinates": [
       null,
       null
     ],
     "coordinates": [
-      0,
-      0
+      6.91666666,
+      158.25
     ],
     "continent": "Oceania",
     "region": "Micronesia",
@@ -28,7 +28,7 @@
     "area": 702,
     "flagEmoji": "🇫🇲",
     "tld": [
-      "fm"
+      ".fm"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Micronesian"
   },
   "codes": {
     "iso3166Alpha2": "FM",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "US$123,456.79",
+    "accountingExample": "(US$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -198,15 +198,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+691",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+691 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

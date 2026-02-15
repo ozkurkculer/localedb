@@ -11,15 +11,15 @@
     "name": "Central African Republic",
     "officialName": "Central African Republic",
     "nativeName": "République centrafricaine",
-    "officialNativeName": "",
+    "officialNativeName": "République centrafricaine",
     "capital": "Bangui",
     "capitalCoordinates": [
       4.36122,
       18.55496
     ],
     "coordinates": [
-      0,
-      0
+      7,
+      21
     ],
     "continent": "Africa",
     "region": "Middle Africa",
@@ -28,7 +28,7 @@
     "area": 622984,
     "flagEmoji": "🇨🇫",
     "tld": [
-      "cf"
+      ".cf"
     ],
     "landlocked": true,
     "borders": [
@@ -61,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Central African"
   },
   "codes": {
     "iso3166Alpha2": "CF",
@@ -96,8 +96,8 @@
     "subunitValue": 0,
     "subunitName": "",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 FCFA",
+    "accountingExample": "(1 235 FCFA)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -214,15 +214,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+236",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+236 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

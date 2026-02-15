@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Tunisia",
-    "officialName": "Tunisia",
+    "officialName": "Tunisian Republic",
     "nativeName": "تونس",
-    "officialNativeName": "",
+    "officialNativeName": "الجمهورية التونسية",
     "capital": "Tunis",
     "capitalCoordinates": [
       36.81897,
       10.16579
     ],
     "coordinates": [
-      0,
-      0
+      34,
+      9
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,7 @@
     "area": 163610,
     "flagEmoji": "🇹🇳",
     "tld": [
-      "tn"
+      ".tn"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Tunisian"
   },
   "codes": {
     "iso3166Alpha2": "TN",
@@ -82,8 +82,8 @@
     "subunitValue": 1000,
     "subunitName": "Millimes",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123.456,789 د.ت.‏",
+    "accountingExample": "(؜1.234,560 د.ت.‏)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5‎%‎",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+216",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+216 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

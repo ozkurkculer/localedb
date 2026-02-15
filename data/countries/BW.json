@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Botswana",
-    "officialName": "Botswana",
+    "officialName": "Republic of Botswana",
     "nativeName": "Botswana",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Botswana",
     "capital": "Gaborone",
     "capitalCoordinates": [
       -24.65451,
       25.90859
     ],
     "coordinates": [
-      0,
-      0
+      -22,
+      24
     ],
     "continent": "Africa",
     "region": "Southern Africa",
@@ -28,7 +28,7 @@
     "area": 582000,
     "flagEmoji": "🇧🇼",
     "tld": [
-      "bw"
+      ".bw"
     ],
     "landlocked": true,
     "borders": [
@@ -59,7 +59,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Motswana"
   },
   "codes": {
     "iso3166Alpha2": "BW",
@@ -94,8 +94,8 @@
     "subunitValue": 100,
     "subunitName": "Thebe",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "P 123,456.79",
+    "accountingExample": "(P 1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -212,15 +212,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+267",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+267 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

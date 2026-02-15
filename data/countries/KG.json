@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Kyrgyzstan",
-    "officialName": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
     "nativeName": "Кыргызстан",
-    "officialNativeName": "",
+    "officialNativeName": "Кыргыз Республикасы",
     "capital": "Bishkek",
     "capitalCoordinates": [
       42.87,
       74.59
     ],
     "coordinates": [
-      0,
-      0
+      41,
+      75
     ],
     "continent": "Asia",
     "region": "Central Asia",
@@ -28,7 +28,7 @@
     "area": 199951,
     "flagEmoji": "🇰🇬",
     "tld": [
-      "kg"
+      ".kg"
     ],
     "landlocked": true,
     "borders": [
@@ -59,7 +59,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Kirghiz"
   },
   "codes": {
     "iso3166Alpha2": "KG",
@@ -94,8 +94,8 @@
     "subunitValue": 100,
     "subunitName": "Tyiyn",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 сом",
+    "accountingExample": "-1 234,56 сом"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -212,15 +212,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+996",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+996 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "British Virgin Islands",
-    "officialName": "British Virgin Islands",
+    "officialName": "Virgin Islands",
     "nativeName": "British Virgin Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Virgin Islands",
     "capital": "Road Town",
     "capitalCoordinates": [
       18.42693,
       -64.62079
     ],
     "coordinates": [
-      0,
-      0
+      18.431383,
+      -64.62305
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 151,
     "flagEmoji": "🇻🇬",
     "tld": [
-      "vg"
+      ".vg"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Virgin Islander"
   },
   "codes": {
     "iso3166Alpha2": "VG",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "US$123,456.79",
+    "accountingExample": "(US$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1284",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1284 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

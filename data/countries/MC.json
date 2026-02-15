@@ -11,15 +11,15 @@
     "name": "Principality of Monaco",
     "officialName": "Principality of Monaco",
     "nativeName": "Monaco",
-    "officialNativeName": "",
+    "officialNativeName": "Principauté de Monaco",
     "capital": "Monaco",
     "capitalCoordinates": [
       43.73333,
       7.41667
     ],
     "coordinates": [
-      0,
-      0
+      43.73333333,
+      7.4
     ],
     "continent": "Europe",
     "region": "Western Europe",
@@ -28,7 +28,7 @@
     "area": 2.02,
     "flagEmoji": "🇲🇨",
     "tld": [
-      "mc"
+      ".mc"
     ],
     "landlocked": false,
     "borders": [
@@ -46,7 +46,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Monegasque"
   },
   "codes": {
     "iso3166Alpha2": "MC",
@@ -81,8 +81,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -199,15 +199,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+377",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+377 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

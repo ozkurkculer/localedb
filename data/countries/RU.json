@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Russia",
-    "officialName": "Russia",
+    "officialName": "Russian Federation",
     "nativeName": "Россия",
-    "officialNativeName": "",
+    "officialNativeName": "Российская Федерация",
     "capital": "Moscow",
     "capitalCoordinates": [
       55.75222,
       37.61556
     ],
     "coordinates": [
-      0,
-      0
+      60,
+      100
     ],
     "continent": "Europe",
     "region": "Eastern Europe",
@@ -28,7 +28,9 @@
     "area": 17098242,
     "flagEmoji": "🇷🇺",
     "tld": [
-      "ru"
+      ".ru",
+      ".su",
+      ".рф"
     ],
     "landlocked": false,
     "borders": [
@@ -59,7 +61,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Russian"
   },
   "codes": {
     "iso3166Alpha2": "RU",
@@ -94,8 +96,8 @@
     "subunitValue": 100,
     "subunitName": "Kopeken",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 ₽",
+    "accountingExample": "-1 234,56 ₽"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -220,15 +222,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+73",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+73 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

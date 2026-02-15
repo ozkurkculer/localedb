@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Myanmar",
-    "officialName": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
     "nativeName": "မြန်မာ",
-    "officialNativeName": "",
+    "officialNativeName": "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်",
     "capital": "Nay Pyi Taw",
     "capitalCoordinates": [
       19.745,
       96.12972
     ],
     "coordinates": [
-      0,
-      0
+      22,
+      98
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 676578,
     "flagEmoji": "🇲🇲",
     "tld": [
-      "mm"
+      ".mm"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Burmese"
   },
   "codes": {
     "iso3166Alpha2": "MM",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Pyas",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "၁၂၃,၄၅၇ K",
+    "accountingExample": "-K ၁,၂၃၅"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "၂၅.၅%",
+    "example": "၁,၂၃၄,၅၆၇.၈၉",
     "numberingSystem": "mymr"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+95",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+95 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

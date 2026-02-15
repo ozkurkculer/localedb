@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Algeria",
-    "officialName": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
     "nativeName": "الجزائر",
-    "officialNativeName": "",
+    "officialNativeName": "الجمهورية الديمقراطية الشعبية الجزائرية",
     "capital": "Algiers",
     "capitalCoordinates": [
       36.7525,
       3.04197
     ],
     "coordinates": [
-      0,
-      0
+      28,
+      3
     ],
     "continent": "Africa",
     "region": "Northern Africa",
@@ -28,7 +28,8 @@
     "area": 2381741,
     "flagEmoji": "🇩🇿",
     "tld": [
-      "dz"
+      ".dz",
+      "الجزائر."
     ],
     "landlocked": false,
     "borders": [
@@ -52,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Algerian"
   },
   "codes": {
     "iso3166Alpha2": "DZ",
@@ -87,8 +88,8 @@
     "subunitValue": 100,
     "subunitName": "Centimes",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏123.456,79 د.ج.‏",
+    "accountingExample": "(؜1.234,56 د.ج.‏)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -205,15 +206,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5‎%‎",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+213",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+213 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Vietnam",
-    "officialName": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
     "nativeName": "Việt Nam",
-    "officialNativeName": "",
+    "officialNativeName": "Cộng hòa xã hội chủ nghĩa Việt Nam",
     "capital": "Hanoi",
     "capitalCoordinates": [
       21.0245,
       105.84117
     ],
     "coordinates": [
-      0,
-      0
+      16.16666666,
+      107.83333333
     ],
     "continent": "Asia",
     "region": "South-Eastern Asia",
@@ -28,7 +28,7 @@
     "area": 331212,
     "flagEmoji": "🇻🇳",
     "tld": [
-      "vn"
+      ".vn"
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +48,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Vietnamese"
   },
   "codes": {
     "iso3166Alpha2": "VN",
@@ -83,8 +83,8 @@
     "subunitValue": 10,
     "subunitName": "Hào",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.457 ₫",
+    "accountingExample": "-1.235 ₫"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +201,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+84",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+84 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

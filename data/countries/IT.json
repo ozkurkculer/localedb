@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Italy",
-    "officialName": "Italy",
+    "officialName": "Italian Republic",
     "nativeName": "Italia",
-    "officialNativeName": "",
+    "officialNativeName": "Repubblica italiana",
     "capital": "Rome",
     "capitalCoordinates": [
       41.89193,
       12.51133
     ],
     "coordinates": [
-      0,
-      0
+      42.83333333,
+      12.83333333
     ],
     "continent": "Europe",
     "region": "Southern Europe",
@@ -28,7 +28,7 @@
     "area": 301336,
     "flagEmoji": "🇮🇹",
     "tld": [
-      "it"
+      ".it"
     ],
     "landlocked": false,
     "borders": [
@@ -51,7 +51,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Italian"
   },
   "codes": {
     "iso3166Alpha2": "IT",
@@ -86,8 +86,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123.456,79 €",
+    "accountingExample": "-1.234,56 €"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -204,15 +204,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+39",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+39 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "French Guiana",
-    "officialName": "French Guiana",
+    "officialName": "Guiana",
     "nativeName": "Guyane française",
-    "officialNativeName": "",
+    "officialNativeName": "Guyane",
     "capital": "Cayenne",
     "capitalCoordinates": [
       4.93333,
       -52.33333
     ],
     "coordinates": [
-      0,
-      0
+      4,
+      -53
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 83534,
     "flagEmoji": "🇬🇫",
     "tld": [
-      "gf"
+      ".gf"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Guianan"
   },
   "codes": {
     "iso3166Alpha2": "GF",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 €",
+    "accountingExample": "(1 234,56 €)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+594",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+594 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

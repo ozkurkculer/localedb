@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Belarus",
-    "officialName": "Belarus",
+    "officialName": "Republic of Belarus",
     "nativeName": "Беларусь",
-    "officialNativeName": "",
+    "officialNativeName": "Рэспубліка Беларусь",
     "capital": "Minsk",
     "capitalCoordinates": [
       53.9,
       27.56667
     ],
     "coordinates": [
-      0,
-      0
+      53,
+      28
     ],
     "continent": "Europe",
     "region": "Eastern Europe",
@@ -28,7 +28,7 @@
     "area": 207600,
     "flagEmoji": "🇧🇾",
     "tld": [
-      "by"
+      ".by"
     ],
     "landlocked": true,
     "borders": [
@@ -60,7 +60,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Belarusian"
   },
   "codes": {
     "iso3166Alpha2": "BY",
@@ -95,8 +95,8 @@
     "subunitValue": 100,
     "subunitName": "Kapejek",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 457 BYR",
+    "accountingExample": "-1235 BYR"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -213,15 +213,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+375",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+375 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

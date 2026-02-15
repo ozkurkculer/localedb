@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Brazil",
-    "officialName": "Brazil",
+    "officialName": "Federative Republic of Brazil",
     "nativeName": "Brasil",
-    "officialNativeName": "",
+    "officialNativeName": "República Federativa do Brasil",
     "capital": "Brasilia",
     "capitalCoordinates": [
       -15.77972,
       -47.92972
     ],
     "coordinates": [
-      0,
-      0
+      -10,
+      -55
     ],
     "continent": "South America",
     "region": "South America",
@@ -28,7 +28,7 @@
     "area": 8515767,
     "flagEmoji": "🇧🇷",
     "tld": [
-      "br"
+      ".br"
     ],
     "landlocked": false,
     "borders": [
@@ -55,7 +55,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Brazilian"
   },
   "codes": {
     "iso3166Alpha2": "BR",
@@ -90,8 +90,8 @@
     "subunitValue": 100,
     "subunitName": "Centavos",
     "pattern": "¤ #,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "R$ 123.456,79",
+    "accountingExample": "-R$ 1.234,56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -211,15 +211,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+55",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+55 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

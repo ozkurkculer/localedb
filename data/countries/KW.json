@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Kuwait",
-    "officialName": "Kuwait",
+    "officialName": "State of Kuwait",
     "nativeName": "الكويت",
-    "officialNativeName": "",
+    "officialNativeName": "دولة الكويت",
     "capital": "Kuwait City",
     "capitalCoordinates": [
       29.36972,
       47.97833
     ],
     "coordinates": [
-      0,
-      0
+      29.5,
+      45.75
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 17818,
     "flagEmoji": "🇰🇼",
     "tld": [
-      "kw"
+      ".kw"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Kuwaiti"
   },
   "codes": {
     "iso3166Alpha2": "KW",
@@ -82,8 +82,8 @@
     "subunitValue": 1000,
     "subunitName": "Fils",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٨٩ د.ك.‏",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦٠ د.ك.‏"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+965",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+965 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

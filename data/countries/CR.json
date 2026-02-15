@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Costa Rica",
-    "officialName": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
     "nativeName": "Costa Rica",
-    "officialNativeName": "",
+    "officialNativeName": "República de Costa Rica",
     "capital": "San José",
     "capitalCoordinates": [
       9.93333,
       -84.08333
     ],
     "coordinates": [
-      0,
-      0
+      10,
+      -84
     ],
     "continent": "Central America",
     "region": "Central America",
@@ -28,7 +28,7 @@
     "area": 51100,
     "flagEmoji": "🇨🇷",
     "tld": [
-      "cr"
+      ".cr"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Costa Rican"
   },
   "codes": {
     "iso3166Alpha2": "CR",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Céntimos",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "₡123 456,79",
+    "accountingExample": "-₡1 234,56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5 %",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+506",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+506 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

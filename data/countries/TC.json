@@ -11,15 +11,15 @@
     "name": "Turks and Caicos Islands",
     "officialName": "Turks and Caicos Islands",
     "nativeName": "Turks & Caicos Islands",
-    "officialNativeName": "",
+    "officialNativeName": "Turks and Caicos Islands",
     "capital": "Cockburn Town",
     "capitalCoordinates": [
       21.46122,
       -71.14188
     ],
     "coordinates": [
-      0,
-      0
+      21.75,
+      -71.58333333
     ],
     "continent": "Central America",
     "region": "Caribbean",
@@ -28,7 +28,7 @@
     "area": 948,
     "flagEmoji": "🇹🇨",
     "tld": [
-      "tc"
+      ".tc"
     ],
     "landlocked": false,
     "borders": [],
@@ -44,7 +44,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Turks and Caicos Islander"
   },
   "codes": {
     "iso3166Alpha2": "TC",
@@ -79,8 +79,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "US$123,456.79",
+    "accountingExample": "(US$1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -197,15 +197,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+1649",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+1649 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

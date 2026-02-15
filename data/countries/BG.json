@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Bulgaria",
-    "officialName": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
     "nativeName": "България",
-    "officialNativeName": "",
+    "officialNativeName": "Република България",
     "capital": "Sofia",
     "capitalCoordinates": [
       42.69751,
       23.32415
     ],
     "coordinates": [
-      0,
-      0
+      43,
+      25
     ],
     "continent": "Europe",
     "region": "Southeast Europe",
@@ -28,7 +28,7 @@
     "area": 110879,
     "flagEmoji": "🇧🇬",
     "tld": [
-      "bg"
+      ".bg"
     ],
     "landlocked": false,
     "borders": [
@@ -50,7 +50,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Bulgarian"
   },
   "codes": {
     "iso3166Alpha2": "BG",
@@ -85,8 +85,8 @@
     "subunitValue": 100,
     "subunitName": "Stotinki",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "123 456,79 лв.",
+    "accountingExample": "(1234,56 лв.)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -203,15 +203,15 @@
     "thousandsSeparator": " ",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25,5%",
+    "example": "1 234 567,89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+359",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+359 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

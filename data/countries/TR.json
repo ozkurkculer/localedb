@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Turkey",
-    "officialName": "Turkey",
+    "officialName": "Republic of Türkiye",
     "nativeName": "Türkiye",
-    "officialNativeName": "",
+    "officialNativeName": "Türkiye Cumhuriyeti",
     "capital": "Ankara",
     "capitalCoordinates": [
       39.91987,
       32.85427
     ],
     "coordinates": [
-      0,
-      0
+      39,
+      35
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,7 @@
     "area": 783562,
     "flagEmoji": "🇹🇷",
     "tld": [
-      "tr"
+      ".tr"
     ],
     "landlocked": false,
     "borders": [
@@ -53,7 +53,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Turkish"
   },
   "codes": {
     "iso3166Alpha2": "TR",
@@ -88,8 +88,8 @@
     "subunitValue": 100,
     "subunitName": "Kurus",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "₺123.456,79",
+    "accountingExample": "-₺1.234,56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -206,8 +206,8 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "%25,5",
+    "example": "1.234.567,89",
     "numberingSystem": "latn"
   },
   "phone": {

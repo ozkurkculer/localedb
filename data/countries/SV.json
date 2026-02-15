@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "El Salvador",
-    "officialName": "El Salvador",
+    "officialName": "Republic of El Salvador",
     "nativeName": "El Salvador",
-    "officialNativeName": "",
+    "officialNativeName": "República de El Salvador",
     "capital": "San Salvador",
     "capitalCoordinates": [
       13.68935,
       -89.18718
     ],
     "coordinates": [
-      0,
-      0
+      13.83333333,
+      -88.91666666
     ],
     "continent": "Central America",
     "region": "Central America",
@@ -28,7 +28,7 @@
     "area": 21041,
     "flagEmoji": "🇸🇻",
     "tld": [
-      "sv"
+      ".sv"
     ],
     "landlocked": false,
     "borders": [
@@ -47,7 +47,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Salvadoran"
   },
   "codes": {
     "iso3166Alpha2": "SV",
@@ -82,8 +82,8 @@
     "subunitValue": 100,
     "subunitName": "Cents",
     "pattern": "#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "-$1,234.56"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -200,15 +200,15 @@
     "thousandsSeparator": ".",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5 %",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+503",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+503 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

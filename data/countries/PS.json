@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Palestine",
-    "officialName": "Palestine",
+    "officialName": "State of Palestine",
     "nativeName": "الأراضي الفلسطينية",
-    "officialNativeName": "",
+    "officialNativeName": "دولة فلسطين",
     "capital": "Ramallah",
     "capitalCoordinates": [
       31.89964,
       35.20422
     ],
     "coordinates": [
-      0,
-      0
+      31.9,
+      35.2
     ],
     "continent": "Asia",
     "region": "Western Asia",
@@ -28,7 +28,8 @@
     "area": 6220,
     "flagEmoji": "🇵🇸",
     "tld": [
-      "ps"
+      ".ps",
+      "فلسطين."
     ],
     "landlocked": false,
     "borders": [
@@ -48,7 +49,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Palestinian"
   },
   "codes": {
     "iso3166Alpha2": "PS",
@@ -83,8 +84,8 @@
     "subunitValue": 100,
     "subunitName": "Agorot",
     "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
-    "example": "",
-    "accountingExample": ""
+    "example": "‏١٢٣٬٤٥٦٫٧٩ ₪",
+    "accountingExample": "؜-‏١٬٢٣٤٫٥٦ ₪"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -201,15 +202,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "٢٥٫٥٪؜",
+    "example": "١٬٢٣٤٬٥٦٧٫٨٩",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+970",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+970 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {

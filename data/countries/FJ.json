@@ -9,17 +9,17 @@
   ],
   "basics": {
     "name": "Fiji",
-    "officialName": "Fiji",
+    "officialName": "Republic of Fiji",
     "nativeName": "Fiji",
-    "officialNativeName": "",
+    "officialNativeName": "Republic of Fiji",
     "capital": "Suva",
     "capitalCoordinates": [
       -18.14161,
       178.44149
     ],
     "coordinates": [
-      0,
-      0
+      -18,
+      175
     ],
     "continent": "Oceania",
     "region": "Melanesia",
@@ -28,7 +28,7 @@
     "area": 18272,
     "flagEmoji": "🇫🇯",
     "tld": [
-      "fj"
+      ".fj"
     ],
     "landlocked": false,
     "borders": [],
@@ -74,7 +74,7 @@
         "countries": []
       }
     ],
-    "demonym": ""
+    "demonym": "Fijian"
   },
   "codes": {
     "iso3166Alpha2": "FJ",
@@ -109,8 +109,8 @@
     "subunitValue": 100,
     "subunitName": "Cent",
     "pattern": "¤#,##0.00",
-    "example": "",
-    "accountingExample": ""
+    "example": "$123,456.79",
+    "accountingExample": "($1,234.56)"
   },
   "dateTime": {
     "firstDayOfWeek": 1,
@@ -227,15 +227,15 @@
     "thousandsSeparator": ",",
     "digitGrouping": "3",
     "pattern": "#,##0.###",
-    "percentExample": "",
-    "example": "",
+    "percentExample": "25.5%",
+    "example": "1,234,567.89",
     "numberingSystem": "latn"
   },
   "phone": {
-    "callingCode": "",
+    "callingCode": "+679",
     "trunkPrefix": "0",
     "internationalPrefix": "00",
-    "exampleFormat": "",
+    "exampleFormat": "+679 555 123 4567",
     "subscriberNumberLengths": []
   },
   "addressFormat": {
