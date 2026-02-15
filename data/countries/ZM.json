@@ -237,5 +237,223 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ZM",
+      "region": "Central",
+      "iata": "CGX",
+      "icao": "",
+      "name": "Chunga Airstrip",
+      "latitude": -15.0532,
+      "longitude": 25.9869
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Copperbelt",
+      "iata": "CGJ",
+      "icao": "",
+      "name": "Kasompe Airport",
+      "latitude": -12.5728,
+      "longitude": 27.8939
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Copperbelt",
+      "iata": "KIW",
+      "icao": "FLSO",
+      "name": "Southdowns Airport",
+      "latitude": -12.9005,
+      "longitude": 28.1499
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Copperbelt",
+      "iata": "NLA",
+      "icao": "FLND",
+      "name": "Simon Mwansa Kapwepwe International Airport",
+      "latitude": -12.9981,
+      "longitude": 28.6649
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Eastern",
+      "iata": "CIP",
+      "icao": "FLCP",
+      "name": "Chipata Airport",
+      "latitude": -13.5583,
+      "longitude": 32.5872
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Eastern",
+      "iata": "MFU",
+      "icao": "FLMF",
+      "name": "Mfuwe Airport",
+      "latitude": -13.2589,
+      "longitude": 31.9366
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Luapula",
+      "iata": "MNS",
+      "icao": "FLMA",
+      "name": "Mansa Airport",
+      "latitude": -11.137,
+      "longitude": 28.8726
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Lusaka",
+      "iata": "JEK",
+      "icao": "",
+      "name": "Jeki Airstrip",
+      "latitude": -15.6334,
+      "longitude": 29.6036
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Lusaka",
+      "iata": "LUN",
+      "icao": "FLLS",
+      "name": "Kenneth Kaunda International Airport",
+      "latitude": -15.3308,
+      "longitude": 28.4526
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Lusaka",
+      "iata": "RYL",
+      "icao": "",
+      "name": "Royal Airstrip",
+      "latitude": -15.7255,
+      "longitude": 29.3021
+    },
+    {
+      "countryCode": "ZM",
+      "region": "North-Western",
+      "iata": "BBZ",
+      "icao": "FLZB",
+      "name": "Zambezi Airport",
+      "latitude": -13.537,
+      "longitude": 23.1081
+    },
+    {
+      "countryCode": "ZM",
+      "region": "North-Western",
+      "iata": "SLI",
+      "icao": "FLSW",
+      "name": "Solwezi Airport",
+      "latitude": -12.1737,
+      "longitude": 26.3651
+    },
+    {
+      "countryCode": "ZM",
+      "region": "North-Western",
+      "iata": "UMB",
+      "icao": "",
+      "name": "Kalumbila Airport",
+      "latitude": -12.2511,
+      "longitude": 25.4379
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Northern",
+      "iata": "KAA",
+      "icao": "FLKS",
+      "name": "Kasama Airport",
+      "latitude": -10.2167,
+      "longitude": 31.1333
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Northern",
+      "iata": "MMQ",
+      "icao": "FLBA",
+      "name": "Mbala Airport",
+      "latitude": -8.85917,
+      "longitude": 31.3364
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Northern",
+      "iata": "ZKB",
+      "icao": "FLKY",
+      "name": "Kasaba Bay Airport",
+      "latitude": -8.525,
+      "longitude": 30.663
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Southern",
+      "iata": "LVI",
+      "icao": "FLLI",
+      "name": "Harry Mwanga Nkumbula International Airport",
+      "latitude": -17.8218,
+      "longitude": 25.8227
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Southern",
+      "iata": "ZGM",
+      "icao": "FLNA",
+      "name": "Ngoma Airport",
+      "latitude": -15.9658,
+      "longitude": 25.9333
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "KLB",
+      "icao": "FLKL",
+      "name": "Kalabo Airport",
+      "latitude": -14.9983,
+      "longitude": 22.6454
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "KMZ",
+      "icao": "FLKO",
+      "name": "Kaoma Airport",
+      "latitude": -14.8,
+      "longitude": 24.783
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "LXU",
+      "icao": "FLLK",
+      "name": "Lukulu Airport",
+      "latitude": -14.3748,
+      "longitude": 23.2495
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "MNR",
+      "icao": "FLMG",
+      "name": "Mongu Airport",
+      "latitude": -15.2545,
+      "longitude": 23.1623
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "SJQ",
+      "icao": "FLSS",
+      "name": "Sesheke Airport",
+      "latitude": -17.4763,
+      "longitude": 24.3047
+    },
+    {
+      "countryCode": "ZM",
+      "region": "Western",
+      "iata": "SXG",
+      "icao": "FLSN",
+      "name": "Senanga Airport",
+      "latitude": -16.113,
+      "longitude": 23.2982
+    }
+  ]
 }

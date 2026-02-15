@@ -244,5 +244,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "UZ",
+      "region": "Andijon",
+      "iata": "AZN",
+      "icao": "UTKA",
+      "name": "Andizhan Airport",
+      "latitude": 40.7277,
+      "longitude": 72.294
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Buxoro",
+      "iata": "AFS",
+      "icao": "UTSN",
+      "name": "Zarafshan Airport",
+      "latitude": 41.6139,
+      "longitude": 64.2332
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Buxoro",
+      "iata": "BHK",
+      "icao": "UTSB",
+      "name": "Bukhara International Airport",
+      "latitude": 39.775,
+      "longitude": 64.4833
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Farg'ona",
+      "iata": "FEG",
+      "icao": "UTKF",
+      "name": "Fergana International Airport",
+      "latitude": 40.3588,
+      "longitude": 71.745
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Jizzax",
+      "iata": "OMN",
+      "icao": "",
+      "name": "Zaamin Airport",
+      "latitude": 40.0005,
+      "longitude": 68.4058
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Namangan",
+      "iata": "NMA",
+      "icao": "UTFN",
+      "name": "Namangan Airport",
+      "latitude": 40.9846,
+      "longitude": 71.5567
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Navoiy",
+      "iata": "NVI",
+      "icao": "UTSA",
+      "name": "Navoi International Airport",
+      "latitude": 40.1172,
+      "longitude": 65.1708
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Qashqadaryo",
+      "iata": "KSQ",
+      "icao": "UTSK",
+      "name": "Karshi Airport",
+      "latitude": 38.8336,
+      "longitude": 65.9215
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Qoraqalpog'iston Respublikasi",
+      "iata": "MOK",
+      "icao": "UTNM",
+      "name": "Muynaq Airport",
+      "latitude": 43.7574,
+      "longitude": 59.0294
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Qoraqalpog'iston Respublikasi",
+      "iata": "NCU",
+      "icao": "UTNN",
+      "name": "Nukus Airport",
+      "latitude": 42.4884,
+      "longitude": 59.6233
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Samarqand",
+      "iata": "SKD",
+      "icao": "UTSS",
+      "name": "Samarkand International Airport",
+      "latitude": 39.7005,
+      "longitude": 66.9838
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Surxondaryo",
+      "iata": "TMJ",
+      "icao": "UTST",
+      "name": "Termez Airport",
+      "latitude": 37.2867,
+      "longitude": 67.31
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Toshkent",
+      "iata": "TAS",
+      "icao": "UTTT",
+      "name": "Tashkent International Airport",
+      "latitude": 41.2579,
+      "longitude": 69.2812
+    },
+    {
+      "countryCode": "UZ",
+      "region": "Xorazm",
+      "iata": "UGC",
+      "icao": "UTNU",
+      "name": "Urgench International Airport",
+      "latitude": 41.5843,
+      "longitude": 60.6417
+    }
+  ]
 }

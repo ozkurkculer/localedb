@@ -232,5 +232,151 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "AAN",
+      "icao": "OMAL",
+      "name": "Al Ain International Airport",
+      "latitude": 24.2617,
+      "longitude": 55.6092
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "AUH",
+      "icao": "OMAA",
+      "name": "Abu Dhabi International Airport",
+      "latitude": 24.433,
+      "longitude": 54.6511
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "AYM",
+      "icao": "",
+      "name": "Yas Island Seaplane Base",
+      "latitude": 24.467,
+      "longitude": 54.6103
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "AZI",
+      "icao": "OMAD",
+      "name": "Al Bateen Executive Airport",
+      "latitude": 24.4283,
+      "longitude": 54.4581
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "DHF",
+      "icao": "OMAM",
+      "name": "Al Dhafra Air Base",
+      "latitude": 24.2482,
+      "longitude": 54.5477
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "XSB",
+      "icao": "OMBY",
+      "name": "Sir Bani Yas Airport",
+      "latitude": 24.2836,
+      "longitude": 52.5803
+    },
+    {
+      "countryCode": "AE",
+      "region": "Abu Zaby",
+      "iata": "ZDY",
+      "icao": "OMDL",
+      "name": "Dalma Airport",
+      "latitude": 24.51,
+      "longitude": 52.3352
+    },
+    {
+      "countryCode": "AE",
+      "region": "Al Fujayrah",
+      "iata": "FJR",
+      "icao": "OMFJ",
+      "name": "Fujairah International Airport",
+      "latitude": 25.1122,
+      "longitude": 56.324
+    },
+    {
+      "countryCode": "AE",
+      "region": "Ash Shariqah",
+      "iata": "SHJ",
+      "icao": "OMSJ",
+      "name": "Sharjah International Airport",
+      "latitude": 25.3286,
+      "longitude": 55.5172
+    },
+    {
+      "countryCode": "AE",
+      "region": "Dubayy",
+      "iata": "DCG",
+      "icao": "",
+      "name": "Dubai Creek Seaplane Base",
+      "latitude": 25.2422,
+      "longitude": 55.3314
+    },
+    {
+      "countryCode": "AE",
+      "region": "Dubayy",
+      "iata": "DJH",
+      "icao": "",
+      "name": "Jebel Ali Seaplane Base",
+      "latitude": 24.989,
+      "longitude": 55.0238
+    },
+    {
+      "countryCode": "AE",
+      "region": "Dubayy",
+      "iata": "DWC",
+      "icao": "OMDW",
+      "name": "Al Maktoum International Airport",
+      "latitude": 24.8964,
+      "longitude": 55.1614
+    },
+    {
+      "countryCode": "AE",
+      "region": "Dubayy",
+      "iata": "DXB",
+      "icao": "OMDB",
+      "name": "Dubai International Airport",
+      "latitude": 25.2528,
+      "longitude": 55.3644
+    },
+    {
+      "countryCode": "AE",
+      "region": "Dubayy",
+      "iata": "NHD",
+      "icao": "OMDM",
+      "name": "Al Minhad Air Base",
+      "latitude": 25.0268,
+      "longitude": 55.3662
+    },
+    {
+      "countryCode": "AE",
+      "region": "Ra's al Khaymah",
+      "iata": "RHR",
+      "icao": "",
+      "name": "Al Hamra Seaplane Base",
+      "latitude": 25.691,
+      "longitude": 55.778
+    },
+    {
+      "countryCode": "AE",
+      "region": "Ra's al Khaymah",
+      "iata": "RKT",
+      "icao": "OMRK",
+      "name": "Ras Al Khaimah International Airport",
+      "latitude": 25.6135,
+      "longitude": 55.9388
+    }
+  ]
 }

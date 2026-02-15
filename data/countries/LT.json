@@ -233,5 +233,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LT",
+      "region": "-",
+      "iata": "VNO",
+      "icao": "EYVI",
+      "name": "Vilnius Airport",
+      "latitude": 54.6341,
+      "longitude": 25.2858
+    },
+    {
+      "countryCode": "LT",
+      "region": "Kauno apskritis",
+      "iata": "KUN",
+      "icao": "EYKA",
+      "name": "Kaunas International Airport",
+      "latitude": 54.9639,
+      "longitude": 24.0848
+    },
+    {
+      "countryCode": "LT",
+      "region": "Klaipedos apskritis",
+      "iata": "PLQ",
+      "icao": "EYPA",
+      "name": "Palanga International Airport",
+      "latitude": 55.9732,
+      "longitude": 21.0939
+    },
+    {
+      "countryCode": "LT",
+      "region": "Panevezio apskritis",
+      "iata": "PNV",
+      "icao": "EYPP",
+      "name": "Panevezys Air Base (Pajuostis Airport)",
+      "latitude": 55.7294,
+      "longitude": 24.4608
+    },
+    {
+      "countryCode": "LT",
+      "region": "Siauliu apskritis",
+      "iata": "SQQ",
+      "icao": "EYSA",
+      "name": "Siauliai International Airport",
+      "latitude": 55.8939,
+      "longitude": 23.395
+    }
+  ]
 }

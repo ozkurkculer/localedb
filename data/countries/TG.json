@@ -232,5 +232,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TG",
+      "region": "Kara",
+      "iata": "LRL",
+      "icao": "DXNG",
+      "name": "Niamtougou International Airport",
+      "latitude": 9.76733,
+      "longitude": 1.09125
+    },
+    {
+      "countryCode": "TG",
+      "region": "Maritime",
+      "iata": "LFW",
+      "icao": "DXXX",
+      "name": "Lome-Tokoin Airport (Gnassingbe Eyadema Int'l)",
+      "latitude": 6.16561,
+      "longitude": 1.25451
+    }
+  ]
 }

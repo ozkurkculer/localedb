@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NU",
+      "region": "Niue",
+      "iata": "IUE",
+      "icao": "NIUE",
+      "name": "Niue International Airport (Hanan Int'l)",
+      "latitude": -19.079,
+      "longitude": -169.926
+    }
+  ]
 }

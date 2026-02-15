@@ -242,5 +242,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BI",
+      "region": "Bujumbura Mairie",
+      "iata": "BJM",
+      "icao": "HBBA",
+      "name": "Bujumbura International Airport",
+      "latitude": -3.32402,
+      "longitude": 29.3185
+    },
+    {
+      "countryCode": "BI",
+      "region": "Gitega",
+      "iata": "GID",
+      "icao": "HBBE",
+      "name": "Gitega Airport",
+      "latitude": -3.41721,
+      "longitude": 29.9113
+    },
+    {
+      "countryCode": "BI",
+      "region": "Kirundo",
+      "iata": "KRE",
+      "icao": "HBBO",
+      "name": "Kirundo Airport",
+      "latitude": -2.54477,
+      "longitude": 30.0946
+    }
+  ]
 }

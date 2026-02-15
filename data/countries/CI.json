@@ -234,5 +234,232 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CI",
+      "region": "Abidjan",
+      "iata": "ABJ",
+      "icao": "DIAP",
+      "name": "Port Bouet Airport (Felix Houphouet Boigny Int'l)",
+      "latitude": 5.26139,
+      "longitude": -3.92629
+    },
+    {
+      "countryCode": "CI",
+      "region": "Abidjan",
+      "iata": "OFI",
+      "icao": "DIOF",
+      "name": "Ouango Fitini Airport",
+      "latitude": 9.6,
+      "longitude": -4.05
+    },
+    {
+      "countryCode": "CI",
+      "region": "Bas-Sassandra",
+      "iata": "BBV",
+      "icao": "DIGN",
+      "name": "Nero-Mer Airport",
+      "latitude": 4.64341,
+      "longitude": -6.92396
+    },
+    {
+      "countryCode": "CI",
+      "region": "Bas-Sassandra",
+      "iata": "SPY",
+      "icao": "DISP",
+      "name": "San Pedro Airport",
+      "latitude": 4.74672,
+      "longitude": -6.66082
+    },
+    {
+      "countryCode": "CI",
+      "region": "Bas-Sassandra",
+      "iata": "TXU",
+      "icao": "DITB",
+      "name": "Tabou Airport",
+      "latitude": 4.43781,
+      "longitude": -7.36273
+    },
+    {
+      "countryCode": "CI",
+      "region": "Bas-Sassandra",
+      "iata": "ZSS",
+      "icao": "DISS",
+      "name": "Sassandra Airport",
+      "latitude": 4.92833,
+      "longitude": -6.13278
+    },
+    {
+      "countryCode": "CI",
+      "region": "Comoe",
+      "iata": "ABO",
+      "icao": "DIAO",
+      "name": "Aboisso Airport",
+      "latitude": 5.46194,
+      "longitude": -3.23472
+    },
+    {
+      "countryCode": "CI",
+      "region": "Comoe",
+      "iata": "OGO",
+      "icao": "DIAU",
+      "name": "Abengourou Airport",
+      "latitude": 6.71556,
+      "longitude": -3.47028
+    },
+    {
+      "countryCode": "CI",
+      "region": "Denguele",
+      "iata": "KEO",
+      "icao": "DIOD",
+      "name": "Odienne Airport",
+      "latitude": 9.5,
+      "longitude": -7.567
+    },
+    {
+      "countryCode": "CI",
+      "region": "Goh-Djiboua",
+      "iata": "DIV",
+      "icao": "DIDV",
+      "name": "Divo Airport",
+      "latitude": 6.90461,
+      "longitude": -5.36236
+    },
+    {
+      "countryCode": "CI",
+      "region": "Goh-Djiboua",
+      "iata": "GGN",
+      "icao": "DIGA",
+      "name": "Gagnoa Airport",
+      "latitude": 6.133,
+      "longitude": -5.95
+    },
+    {
+      "countryCode": "CI",
+      "region": "Lacs",
+      "iata": "DIM",
+      "icao": "DIDK",
+      "name": "Dimbokro Airport",
+      "latitude": 6.65167,
+      "longitude": -4.64056
+    },
+    {
+      "countryCode": "CI",
+      "region": "Montagnes",
+      "iata": "GGO",
+      "icao": "DIGL",
+      "name": "Guiglo Airport",
+      "latitude": 6.53471,
+      "longitude": -7.52685
+    },
+    {
+      "countryCode": "CI",
+      "region": "Montagnes",
+      "iata": "MJC",
+      "icao": "DIMN",
+      "name": "Man Airport",
+      "latitude": 7.27207,
+      "longitude": -7.58736
+    },
+    {
+      "countryCode": "CI",
+      "region": "Sassandra-Marahoue",
+      "iata": "DJO",
+      "icao": "DIDL",
+      "name": "Daloa Airport",
+      "latitude": 6.79281,
+      "longitude": -6.47319
+    },
+    {
+      "countryCode": "CI",
+      "region": "Savanes",
+      "iata": "BXI",
+      "icao": "DIBI",
+      "name": "Boundiali Airport",
+      "latitude": 9.533,
+      "longitude": -6.467
+    },
+    {
+      "countryCode": "CI",
+      "region": "Savanes",
+      "iata": "FEK",
+      "icao": "DIFK",
+      "name": "Ferkessedougou Airport",
+      "latitude": 9.6,
+      "longitude": -5.18333
+    },
+    {
+      "countryCode": "CI",
+      "region": "Savanes",
+      "iata": "HGO",
+      "icao": "DIKO",
+      "name": "Korhogo Airport",
+      "latitude": 9.38718,
+      "longitude": -5.55666
+    },
+    {
+      "countryCode": "CI",
+      "region": "Vallee du Bandama",
+      "iata": "BYK",
+      "icao": "DIBK",
+      "name": "Bouake Airport",
+      "latitude": 7.7388,
+      "longitude": -5.07367
+    },
+    {
+      "countryCode": "CI",
+      "region": "Vallee du Bandama",
+      "iata": "KTC",
+      "icao": "",
+      "name": "Katiola Airport",
+      "latitude": 8.1329,
+      "longitude": -5.0657
+    },
+    {
+      "countryCode": "CI",
+      "region": "Woroba",
+      "iata": "SEO",
+      "icao": "DISG",
+      "name": "Seguela Airport",
+      "latitude": 7.96833,
+      "longitude": -6.71083
+    },
+    {
+      "countryCode": "CI",
+      "region": "Woroba",
+      "iata": "TOZ",
+      "icao": "DITM",
+      "name": "Mahana Airport",
+      "latitude": 8.2934,
+      "longitude": -7.674
+    },
+    {
+      "countryCode": "CI",
+      "region": "Yamoussoukro",
+      "iata": "ASK",
+      "icao": "DIYO",
+      "name": "Yamoussoukro International Airport",
+      "latitude": 6.90317,
+      "longitude": -5.36558
+    },
+    {
+      "countryCode": "CI",
+      "region": "Zanzan",
+      "iata": "BDK",
+      "icao": "DIBU",
+      "name": "Soko Airport",
+      "latitude": 8.01722,
+      "longitude": -2.76194
+    },
+    {
+      "countryCode": "CI",
+      "region": "Zanzan",
+      "iata": "BQO",
+      "icao": "DIBN",
+      "name": "Tehini Airport",
+      "latitude": 9.2775,
+      "longitude": -3.02528
+    }
+  ]
 }

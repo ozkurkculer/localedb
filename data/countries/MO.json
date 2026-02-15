@@ -240,5 +240,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MO",
+      "region": "Macau",
+      "iata": "MFM",
+      "icao": "VMMC",
+      "name": "Macau International Airport",
+      "latitude": 22.1496,
+      "longitude": 113.592
+    },
+    {
+      "countryCode": "MO",
+      "region": "Macau",
+      "iata": "XZM",
+      "icao": "",
+      "name": "Macau Ferry Pier Heliport",
+      "latitude": 22.197,
+      "longitude": 113.559
+    }
+  ]
 }

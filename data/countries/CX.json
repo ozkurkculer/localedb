@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CX",
+      "region": "Christmas Island",
+      "iata": "XCH",
+      "icao": "YPXM",
+      "name": "Christmas Island Airport",
+      "latitude": -10.4506,
+      "longitude": 105.69
+    }
+  ]
 }

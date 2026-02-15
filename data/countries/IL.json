@@ -244,5 +244,142 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "BEV",
+      "icao": "LLBS",
+      "name": "Beersheba Airport",
+      "latitude": 31.287,
+      "longitude": 34.723
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "EIY",
+      "icao": "LLEY",
+      "name": "Ein Yahav Airfield",
+      "latitude": 30.6217,
+      "longitude": 35.2033
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "ETH",
+      "icao": "LLET",
+      "name": "J. Hozman Airport",
+      "latitude": 29.5613,
+      "longitude": 34.9601
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "ETM",
+      "icao": "LLER",
+      "name": "Ramon Airport",
+      "latitude": 29.7237,
+      "longitude": 35.0114
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "MIP",
+      "icao": "LLMR",
+      "name": "Mitzpe Ramon Airport",
+      "latitude": 30.7761,
+      "longitude": 34.6667
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "MTZ",
+      "icao": "LLMZ",
+      "name": "Bar Yehuda Airfield (Masada Airfield)",
+      "latitude": 31.3282,
+      "longitude": 35.3886
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "VDA",
+      "icao": "LLOV",
+      "name": "Ovda Airport",
+      "latitude": 29.9403,
+      "longitude": 34.9358
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "VTM",
+      "icao": "LLNV",
+      "name": "Nevatim Airbase",
+      "latitude": 31.2083,
+      "longitude": 35.0123
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaDarom",
+      "iata": "YOT",
+      "icao": "LLYT",
+      "name": "Yotvata Airfield",
+      "latitude": 29.9011,
+      "longitude": 35.0675
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaTsafon",
+      "iata": "KSW",
+      "icao": "LLKS",
+      "name": "Kiryat Shmona Airport",
+      "latitude": 33.2167,
+      "longitude": 35.6
+    },
+    {
+      "countryCode": "IL",
+      "region": "HaTsafon",
+      "iata": "RPN",
+      "icao": "LLIB",
+      "name": "Rosh Pina Airport",
+      "latitude": 32.981,
+      "longitude": 35.5719
+    },
+    {
+      "countryCode": "IL",
+      "region": "Hefa",
+      "iata": "HFA",
+      "icao": "LLHA",
+      "name": "Haifa Airport (Uri Michaeli Airport)",
+      "latitude": 32.8094,
+      "longitude": 35.0431
+    },
+    {
+      "countryCode": "IL",
+      "region": "Tel Aviv",
+      "iata": "SDV",
+      "icao": "LLSD",
+      "name": "Sde Dov Airport",
+      "latitude": 32.1147,
+      "longitude": 34.7822
+    },
+    {
+      "countryCode": "IL",
+      "region": "Tel Aviv",
+      "iata": "TLV",
+      "icao": "LLBG",
+      "name": "Ben Gurion Airport",
+      "latitude": 32.0114,
+      "longitude": 34.8867
+    },
+    {
+      "countryCode": "IL",
+      "region": "Yerushalayim",
+      "iata": "JRS",
+      "icao": "OJJR",
+      "name": "Atarot Airport (Jerusalem International Airport)",
+      "latitude": 31.8647,
+      "longitude": 35.2192
+    }
+  ]
 }

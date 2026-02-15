@@ -230,5 +230,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GI",
+      "region": "Gibraltar",
+      "iata": "GIB",
+      "icao": "LXGB",
+      "name": "Gibraltar International Airport (North Front Airport)",
+      "latitude": 36.1512,
+      "longitude": -5.34966
+    }
+  ]
 }

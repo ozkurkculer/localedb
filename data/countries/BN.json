@@ -230,5 +230,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BN",
+      "region": "Brunei-Muara",
+      "iata": "BWN",
+      "icao": "WBSB",
+      "name": "Brunei International Airport",
+      "latitude": 4.9442,
+      "longitude": 114.928
+    }
+  ]
 }

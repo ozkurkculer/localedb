@@ -245,5 +245,4363 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "HZP",
+      "icao": "CYNR",
+      "name": "Fort MacKay/Horizon Airport",
+      "latitude": 57.3817,
+      "longitude": -111.701
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "JHL",
+      "icao": "",
+      "name": "Fort MacKay/Albian Aerodrome",
+      "latitude": 57.2239,
+      "longitude": -111.419
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "NML",
+      "icao": "",
+      "name": "Fort McMurray/Mildred Lake Airport",
+      "latitude": 57.0556,
+      "longitude": -111.574
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "TIL",
+      "icao": "",
+      "name": "Cheadle Airport",
+      "latitude": 51.0575,
+      "longitude": -113.624
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "WPC",
+      "icao": "CZPC",
+      "name": "Pincher Creek Airport",
+      "latitude": 49.5206,
+      "longitude": -113.997
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YBA",
+      "icao": "CYBA",
+      "name": "Banff Airport",
+      "latitude": 51.2073,
+      "longitude": -115.542
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YBY",
+      "icao": "CYBF",
+      "name": "Bonnyville Airport",
+      "latitude": 54.3042,
+      "longitude": -110.744
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YCT",
+      "icao": "CYCT",
+      "name": "Coronation Airport",
+      "latitude": 52.075,
+      "longitude": -111.445
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YDC",
+      "icao": "",
+      "name": "Drayton Valley Industrial Airport",
+      "latitude": 53.2658,
+      "longitude": -114.96
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YEG",
+      "icao": "CYEG",
+      "name": "Edmonton International Airport",
+      "latitude": 53.31,
+      "longitude": -113.579
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YET",
+      "icao": "CYET",
+      "name": "Edson Airport",
+      "latitude": 53.5789,
+      "longitude": -116.465
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YFI",
+      "icao": "",
+      "name": "Fort MacKay/Firebag Aerodrome",
+      "latitude": 57.2758,
+      "longitude": -110.977
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YGC",
+      "icao": "",
+      "name": "Grande Cache Airport",
+      "latitude": 53.9169,
+      "longitude": -118.874
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YJA",
+      "icao": "CYJA",
+      "name": "Jasper Airport",
+      "latitude": 52.9967,
+      "longitude": -118.059
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YJP",
+      "icao": "",
+      "name": "Hinton/Jasper-Hinton Airport",
+      "latitude": 53.3192,
+      "longitude": -117.753
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YLB",
+      "icao": "CYLB",
+      "name": "Lac La Biche Airport",
+      "latitude": 54.7703,
+      "longitude": -112.032
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YLL",
+      "icao": "CYLL",
+      "name": "Lloydminster Airport",
+      "latitude": 53.3092,
+      "longitude": -110.073
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YMM",
+      "icao": "CYMM",
+      "name": "Fort McMurray International Airport",
+      "latitude": 56.6533,
+      "longitude": -111.222
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YOD",
+      "icao": "CYOD",
+      "name": "CFB Cold Lake (R.W. McNair Airport)",
+      "latitude": 54.405,
+      "longitude": -110.279
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YOE",
+      "icao": "",
+      "name": "Donnelly Airport",
+      "latitude": 55.7094,
+      "longitude": -117.094
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YOJ",
+      "icao": "CYOJ",
+      "name": "High Level Airport",
+      "latitude": 58.6214,
+      "longitude": -117.165
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YOP",
+      "icao": "CYOP",
+      "name": "Rainbow Lake Airport",
+      "latitude": 58.4914,
+      "longitude": -119.408
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YPE",
+      "icao": "CYPE",
+      "name": "Peace River Airport",
+      "latitude": 56.2269,
+      "longitude": -117.447
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YPY",
+      "icao": "CYPY",
+      "name": "Fort Chipewyan Airport",
+      "latitude": 58.7672,
+      "longitude": -111.117
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YQF",
+      "icao": "CYQF",
+      "name": "Red Deer Regional Airport",
+      "latitude": 52.1822,
+      "longitude": -113.894
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YQL",
+      "icao": "CYQL",
+      "name": "Lethbridge Airport",
+      "latitude": 49.6303,
+      "longitude": -112.8
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YQU",
+      "icao": "CYQU",
+      "name": "Grande Prairie Airport",
+      "latitude": 55.1797,
+      "longitude": -118.885
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YRM",
+      "icao": "CYRM",
+      "name": "Rocky Mountain House Airport",
+      "latitude": 52.4297,
+      "longitude": -114.904
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YSD",
+      "icao": "CYSD",
+      "name": "CFB Suffield",
+      "latitude": 50.2667,
+      "longitude": -111.183
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YVG",
+      "icao": "CYVG",
+      "name": "Vermilion Airport",
+      "latitude": 53.3558,
+      "longitude": -110.824
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YXH",
+      "icao": "CYXH",
+      "name": "Medicine Hat Airport",
+      "latitude": 50.0189,
+      "longitude": -110.721
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YYC",
+      "icao": "CYYC",
+      "name": "Calgary International Airport",
+      "latitude": 51.1139,
+      "longitude": -114.02
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YYM",
+      "icao": "CYYM",
+      "name": "Cowley Airport",
+      "latitude": 49.6364,
+      "longitude": -114.094
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YZH",
+      "icao": "CYZH",
+      "name": "Slave Lake Airport",
+      "latitude": 55.2931,
+      "longitude": -114.777
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "YZU",
+      "icao": "CYZU",
+      "name": "Whitecourt Airport",
+      "latitude": 54.1439,
+      "longitude": -115.787
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "ZFW",
+      "icao": "",
+      "name": "Fairview Airport",
+      "latitude": 56.0814,
+      "longitude": -118.435
+    },
+    {
+      "countryCode": "CA",
+      "region": "Alberta",
+      "iata": "ZHP",
+      "icao": "CZHP",
+      "name": "High Prairie Airport",
+      "latitude": 55.3936,
+      "longitude": -116.475
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "CFQ",
+      "icao": "",
+      "name": "Creston Aerodrome",
+      "latitude": 49.0369,
+      "longitude": -116.498
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "CJH",
+      "icao": "",
+      "name": "Chilko Lake (Tsylos Park Lodge) Aerodrome",
+      "latitude": 51.6261,
+      "longitude": -124.142
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "CXH",
+      "icao": "CYHC",
+      "name": "Vancouver Harbour Flight Centre (Coal Harbour Seaplane Base)",
+      "latitude": 49.2944,
+      "longitude": -123.111
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "DGF",
+      "icao": "",
+      "name": "Douglas Lake Airport",
+      "latitude": 50.1655,
+      "longitude": -120.171
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "DUQ",
+      "icao": "",
+      "name": "Duncan Airport",
+      "latitude": 48.7545,
+      "longitude": -123.71
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "QBC",
+      "icao": "CYBD",
+      "name": "Bella Coola Airport",
+      "latitude": 52.3875,
+      "longitude": -126.596
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "SYF",
+      "icao": "",
+      "name": "Silva Bay Seaplane Base",
+      "latitude": 49.15,
+      "longitude": -123.696
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "TUX",
+      "icao": "",
+      "name": "Tumbler Ridge Airport",
+      "latitude": 55.025,
+      "longitude": -120.935
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "WPL",
+      "icao": "",
+      "name": "Powell Lake Water Aerodrome",
+      "latitude": 49.8833,
+      "longitude": -124.533
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "XBB",
+      "icao": "",
+      "name": "Blubber Bay Seaplane Base",
+      "latitude": 49.794,
+      "longitude": -124.621
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "XQU",
+      "icao": "",
+      "name": "Qualicum Beach Airport",
+      "latitude": 49.3372,
+      "longitude": -124.394
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAA",
+      "icao": "",
+      "name": "Anahim Lake Airport",
+      "latitude": 52.4525,
+      "longitude": -125.303
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAJ",
+      "icao": "",
+      "name": "Lyall Harbour Seaplane Base",
+      "latitude": 48.7952,
+      "longitude": -123.182
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAL",
+      "icao": "CYAL",
+      "name": "Alert Bay Airport",
+      "latitude": 50.5822,
+      "longitude": -126.916
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAQ",
+      "icao": "",
+      "name": "Maple Bay Seaplane Base",
+      "latitude": 48.8167,
+      "longitude": -123.608
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAV",
+      "icao": "",
+      "name": "Mayne Island Water Aerodrome (Miner's Bay Seaplane Base)",
+      "latitude": 48.8667,
+      "longitude": -123.3
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YAZ",
+      "icao": "CYAZ",
+      "name": "Tofino/Long Beach Airport",
+      "latitude": 49.0798,
+      "longitude": -125.776
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBF",
+      "icao": "",
+      "name": "Bamfield Water Aerodrome",
+      "latitude": 48.8333,
+      "longitude": -125.133
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBH",
+      "icao": "CYBH",
+      "name": "Bull Harbour Waterdrome",
+      "latitude": 50.9179,
+      "longitude": -127.937
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBL",
+      "icao": "CYBL",
+      "name": "Campbell River Airport",
+      "latitude": 49.9508,
+      "longitude": -125.271
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBO",
+      "icao": "",
+      "name": "Bob Quinn Lake Airport",
+      "latitude": 56.9667,
+      "longitude": -130.25
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBQ",
+      "icao": "",
+      "name": "Telegraph Harbour Seaplane Base",
+      "latitude": 48.97,
+      "longitude": -123.664
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YBW",
+      "icao": "",
+      "name": "Bedwell Harbour Water Aerodrome",
+      "latitude": 48.75,
+      "longitude": -123.233
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCA",
+      "icao": "",
+      "name": "Courtenay Airpark",
+      "latitude": 49.6794,
+      "longitude": -124.982
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCD",
+      "icao": "CYCD",
+      "name": "Nanaimo Airport",
+      "latitude": 49.055,
+      "longitude": -123.87
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCF",
+      "icao": "",
+      "name": "Cortes Island Aerodrome",
+      "latitude": 50.063,
+      "longitude": -124.93
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCG",
+      "icao": "CYCG",
+      "name": "West Kootenay Regional Airport (Castlegar Airport)",
+      "latitude": 49.2964,
+      "longitude": -117.632
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCQ",
+      "icao": "CYCQ",
+      "name": "Chetwynd Airport",
+      "latitude": 55.6872,
+      "longitude": -121.627
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCW",
+      "icao": "CYCW",
+      "name": "Chilliwack Airport",
+      "latitude": 49.1528,
+      "longitude": -121.939
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YCZ",
+      "icao": "CYCZ",
+      "name": "Fairmont Hot Springs Airport",
+      "latitude": 50.3303,
+      "longitude": -115.873
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YDL",
+      "icao": "CYDL",
+      "name": "Dease Lake Airport",
+      "latitude": 58.4222,
+      "longitude": -130.032
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YDQ",
+      "icao": "CYDQ",
+      "name": "Dawson Creek Airport",
+      "latitude": 55.7423,
+      "longitude": -120.183
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YDT",
+      "icao": "CZBB",
+      "name": "Boundary Bay Airport",
+      "latitude": 49.0742,
+      "longitude": -123.012
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YGB",
+      "icao": "CYGB",
+      "name": "Texada/Gillies Bay Airport",
+      "latitude": 49.6942,
+      "longitude": -124.518
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YGE",
+      "icao": "",
+      "name": "Gorge Harbour Seaplane Base",
+      "latitude": 50.0994,
+      "longitude": -125.023
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YGG",
+      "icao": "",
+      "name": "Ganges Water Aerodrome",
+      "latitude": 48.8545,
+      "longitude": -123.497
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YGN",
+      "icao": "",
+      "name": "Greenway Sound Seaplane Base",
+      "latitude": 50.839,
+      "longitude": -126.775
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YHC",
+      "icao": "",
+      "name": "Hakai Passage Water Aerodrome",
+      "latitude": 51.733,
+      "longitude": -128.117
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YHE",
+      "icao": "CYHE",
+      "name": "Hope Aerodrome",
+      "latitude": 49.3683,
+      "longitude": -121.498
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YHH",
+      "icao": "",
+      "name": "Campbell River Water Aerodrome",
+      "latitude": 50.05,
+      "longitude": -125.25
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YHS",
+      "icao": "",
+      "name": "Sechelt Aerodrome",
+      "latitude": 49.4606,
+      "longitude": -123.719
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YIG",
+      "icao": "",
+      "name": "Big Bay Water Aerodrome",
+      "latitude": 50.3923,
+      "longitude": -125.137
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YKA",
+      "icao": "CYKA",
+      "name": "Kamloops Airport",
+      "latitude": 50.7022,
+      "longitude": -120.444
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YKK",
+      "icao": "",
+      "name": "Kitkatla Water Aerodrome",
+      "latitude": 53.8,
+      "longitude": -130.433
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YKT",
+      "icao": "",
+      "name": "Klemtu Water Aerodrome",
+      "latitude": 52.6076,
+      "longitude": -128.522
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YLW",
+      "icao": "CYLW",
+      "name": "Kelowna International Airport",
+      "latitude": 49.9561,
+      "longitude": -119.378
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YLY",
+      "icao": "CYNJ",
+      "name": "Langley Regional Airport",
+      "latitude": 49.1008,
+      "longitude": -122.631
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YMB",
+      "icao": "",
+      "name": "Merritt Airport",
+      "latitude": 50.1228,
+      "longitude": -120.747
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YMF",
+      "icao": "",
+      "name": "Montague Harbour Water Aerodrome",
+      "latitude": 48.817,
+      "longitude": -123.2
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YMP",
+      "icao": "",
+      "name": "Port McNeill Airport",
+      "latitude": 50.5756,
+      "longitude": -127.029
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YMU",
+      "icao": "",
+      "name": "Mansons Landing Water Aerodrome",
+      "latitude": 50.0667,
+      "longitude": -124.983
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YNH",
+      "icao": "CYNH",
+      "name": "Hudson's Hope Airport",
+      "latitude": 56.0356,
+      "longitude": -121.976
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPB",
+      "icao": "",
+      "name": "Alberni Valley Regional Airport",
+      "latitude": 49.3219,
+      "longitude": -124.931
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPI",
+      "icao": "",
+      "name": "Port Simpson Water Aerodrome",
+      "latitude": 54.5667,
+      "longitude": -130.433
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPR",
+      "icao": "CYPR",
+      "name": "Prince Rupert Airport",
+      "latitude": 54.2861,
+      "longitude": -130.445
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPT",
+      "icao": "",
+      "name": "Pender Harbour Water Aerodrome",
+      "latitude": 49.6238,
+      "longitude": -124.025
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPW",
+      "icao": "CYPW",
+      "name": "Powell River Airport",
+      "latitude": 49.8342,
+      "longitude": -124.5
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YPZ",
+      "icao": "CYPZ",
+      "name": "Burns Lake Airport",
+      "latitude": 54.3764,
+      "longitude": -125.951
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YQJ",
+      "icao": "",
+      "name": "April Point Seaplane Base",
+      "latitude": 50.065,
+      "longitude": -125.235
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YQQ",
+      "icao": "CYQQ",
+      "name": "CFB Comox",
+      "latitude": 49.7108,
+      "longitude": -124.887
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YQZ",
+      "icao": "CYQZ",
+      "name": "Quesnel Airport",
+      "latitude": 53.0261,
+      "longitude": -122.51
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YRC",
+      "icao": "",
+      "name": "Refuge Cove Water Aerodrome",
+      "latitude": 50.1234,
+      "longitude": -124.843
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YRD",
+      "icao": "",
+      "name": "Dean River Airport",
+      "latitude": 52.8237,
+      "longitude": -126.965
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YRN",
+      "icao": "",
+      "name": "Rivers Inlet Water Aerodrome",
+      "latitude": 51.684,
+      "longitude": -127.264
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YRR",
+      "icao": "",
+      "name": "Stuart Island Airport",
+      "latitude": 50.4094,
+      "longitude": -125.132
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YRV",
+      "icao": "CYRV",
+      "name": "Revelstoke Airport",
+      "latitude": 50.9667,
+      "longitude": -118.183
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YSE",
+      "icao": "CYSE",
+      "name": "Squamish Airport",
+      "latitude": 49.7817,
+      "longitude": -123.162
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YSN",
+      "icao": "CZAM",
+      "name": "Salmon Arm Airport",
+      "latitude": 50.6828,
+      "longitude": -119.229
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YSX",
+      "icao": "",
+      "name": "Bella Bella/Shearwater Water Aerodrome",
+      "latitude": 52.15,
+      "longitude": -128.083
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YTB",
+      "icao": "",
+      "name": "Hartley Bay Water Aerodrome",
+      "latitude": 53.4167,
+      "longitude": -129.25
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YTG",
+      "icao": "",
+      "name": "Sullivan Bay Water Aerodrome",
+      "latitude": 50.8854,
+      "longitude": -126.831
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YTP",
+      "icao": "",
+      "name": "Tofino Harbour Water Aerodrome",
+      "latitude": 49.155,
+      "longitude": -125.91
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YTU",
+      "icao": "",
+      "name": "Tasu Water Aerodrome",
+      "latitude": 52.7631,
+      "longitude": -132.04
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YTX",
+      "icao": "",
+      "name": "Telegraph Creek Airport",
+      "latitude": 57.9167,
+      "longitude": -131.117
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YVE",
+      "icao": "CYVK",
+      "name": "Vernon Regional Airport",
+      "latitude": 50.2481,
+      "longitude": -119.331
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YVR",
+      "icao": "CYVR",
+      "name": "Vancouver International Airport",
+      "latitude": 49.1939,
+      "longitude": -123.184
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YWH",
+      "icao": "CYWH",
+      "name": "Victoria Harbour Water Airport",
+      "latitude": 48.425,
+      "longitude": -123.389
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YWL",
+      "icao": "CYWL",
+      "name": "Williams Lake Airport",
+      "latitude": 52.1831,
+      "longitude": -122.054
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YWS",
+      "icao": "",
+      "name": "Whistler/Green Lake Water Aerodrome",
+      "latitude": 50.1436,
+      "longitude": -122.949
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YXC",
+      "icao": "CYXC",
+      "name": "Cranbrook/Canadian Rockies International Airport",
+      "latitude": 49.6108,
+      "longitude": -115.782
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YXJ",
+      "icao": "CYXJ",
+      "name": "Fort St. John Airport (North Peace Airport)",
+      "latitude": 56.2381,
+      "longitude": -120.74
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YXS",
+      "icao": "CYXS",
+      "name": "Prince George Airport",
+      "latitude": 53.8894,
+      "longitude": -122.679
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YXT",
+      "icao": "CYXT",
+      "name": "Northwest Regional Airport",
+      "latitude": 54.4685,
+      "longitude": -128.576
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YXX",
+      "icao": "CYXX",
+      "name": "Abbotsford International Airport",
+      "latitude": 49.0253,
+      "longitude": -122.361
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YYD",
+      "icao": "CYYD",
+      "name": "Smithers Airport",
+      "latitude": 54.8247,
+      "longitude": -127.183
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YYE",
+      "icao": "CYYE",
+      "name": "Northern Rockies Regional Airport",
+      "latitude": 58.8364,
+      "longitude": -122.597
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YYF",
+      "icao": "CYYF",
+      "name": "Penticton Regional Airport",
+      "latitude": 49.4631,
+      "longitude": -119.602
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YYJ",
+      "icao": "CYYJ",
+      "name": "Victoria International Airport",
+      "latitude": 48.6469,
+      "longitude": -123.426
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YZA",
+      "icao": "",
+      "name": "Cache Creek Airport (Ashcroft Regional Airport)",
+      "latitude": 50.7753,
+      "longitude": -121.321
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YZP",
+      "icao": "CYZP",
+      "name": "Sandspit Airport",
+      "latitude": 53.2543,
+      "longitude": -131.814
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YZT",
+      "icao": "CYZT",
+      "name": "Port Hardy Airport",
+      "latitude": 50.6806,
+      "longitude": -127.367
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "YZZ",
+      "icao": "",
+      "name": "Trail Airport",
+      "latitude": 49.0556,
+      "longitude": -117.609
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZAA",
+      "icao": "",
+      "name": "Alice Arm/Silver City Water Aerodrome",
+      "latitude": 55.4667,
+      "longitude": -129.483
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZEL",
+      "icao": "CBBC",
+      "name": "Bella Bella (Campbell Island) Airport",
+      "latitude": 52.185,
+      "longitude": -128.157
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZGF",
+      "icao": "CZGF",
+      "name": "Grand Forks Airport",
+      "latitude": 49.0156,
+      "longitude": -118.431
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZMH",
+      "icao": "CZML",
+      "name": "South Cariboo Regional Airport",
+      "latitude": 51.7361,
+      "longitude": -121.333
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZMT",
+      "icao": "CZMT",
+      "name": "Masset Airport",
+      "latitude": 54.0275,
+      "longitude": -132.125
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZNA",
+      "icao": "",
+      "name": "Nanaimo Harbour Water Airport",
+      "latitude": 49.1833,
+      "longitude": -123.95
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZNU",
+      "icao": "",
+      "name": "Namu Water Aerodrome",
+      "latitude": 51.8628,
+      "longitude": -127.869
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZOF",
+      "icao": "",
+      "name": "Ocean Falls Water Aerodrome",
+      "latitude": 52.3667,
+      "longitude": -127.717
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZQS",
+      "icao": "",
+      "name": "Queen Charlotte City Water Aerodrome",
+      "latitude": 53.267,
+      "longitude": -132.083
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZST",
+      "icao": "CZST",
+      "name": "Stewart Aerodrome",
+      "latitude": 55.9354,
+      "longitude": -129.982
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZSW",
+      "icao": "CZSW",
+      "name": "Prince Rupert/Seal Cove Water Airport",
+      "latitude": 54.3333,
+      "longitude": -130.283
+    },
+    {
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "iata": "ZTS",
+      "icao": "",
+      "name": "Tahsis Water Aerodrome",
+      "latitude": 49.9167,
+      "longitude": -126.667
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ILF",
+      "icao": "CZBD",
+      "name": "Ilford Airport",
+      "latitude": 56.0614,
+      "longitude": -95.6139
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "KES",
+      "icao": "CZEE",
+      "name": "Kelsey Airport",
+      "latitude": 56.0375,
+      "longitude": -96.5097
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "LRQ",
+      "icao": "",
+      "name": "Laurie River Airport",
+      "latitude": 56.2486,
+      "longitude": -101.304
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "PIW",
+      "icao": "CZMN",
+      "name": "Pikwitonei Airport",
+      "latitude": 55.5889,
+      "longitude": -97.1642
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XGL",
+      "icao": "",
+      "name": "Granville Lake Airport",
+      "latitude": 56.3,
+      "longitude": -100.5
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XLB",
+      "icao": "CZWH",
+      "name": "Lac Brochet Airport",
+      "latitude": 58.6175,
+      "longitude": -101.469
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XPK",
+      "icao": "CZFG",
+      "name": "Pukatawagan Airport",
+      "latitude": 55.7492,
+      "longitude": -101.266
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XPP",
+      "icao": "CZNG",
+      "name": "Poplar River Airport",
+      "latitude": 52.9965,
+      "longitude": -97.2742
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XSI",
+      "icao": "CZSN",
+      "name": "South Indian Lake Airport",
+      "latitude": 56.7928,
+      "longitude": -98.9072
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "XTL",
+      "icao": "CYBQ",
+      "name": "Tadoule Lake Airport",
+      "latitude": 58.7061,
+      "longitude": -98.5122
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YAD",
+      "icao": "",
+      "name": "Moose Lake Airport",
+      "latitude": 53.7063,
+      "longitude": -100.344
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YBR",
+      "icao": "CYBR",
+      "name": "Brandon Municipal Airport (McGill Field)",
+      "latitude": 49.91,
+      "longitude": -99.9519
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YBT",
+      "icao": "CYBT",
+      "name": "Brochet Airport",
+      "latitude": 57.8894,
+      "longitude": -101.679
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YBV",
+      "icao": "CYBV",
+      "name": "Berens River Airport",
+      "latitude": 52.3589,
+      "longitude": -97.0183
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YCR",
+      "icao": "CYCR",
+      "name": "Cross Lake (Charlie Sinclair Memorial) Airport",
+      "latitude": 54.6106,
+      "longitude": -97.7608
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YDN",
+      "icao": "CYDN",
+      "name": "Lt. Col W.G. (Billy) Barker VC Airport",
+      "latitude": 51.1008,
+      "longitude": -100.052
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YDV",
+      "icao": "CZTA",
+      "name": "Bloodvein River Airport",
+      "latitude": 51.7846,
+      "longitude": -96.6923
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YFO",
+      "icao": "CYFO",
+      "name": "Flin Flon Airport",
+      "latitude": 54.6781,
+      "longitude": -101.682
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YGM",
+      "icao": "CYGM",
+      "name": "Gimli Industrial Park Airport",
+      "latitude": 50.6281,
+      "longitude": -97.0433
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YGO",
+      "icao": "CYGO",
+      "name": "Gods Lake Narrows Airport",
+      "latitude": 54.5589,
+      "longitude": -94.4914
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YGX",
+      "icao": "CYGX",
+      "name": "Gillam Airport",
+      "latitude": 56.3575,
+      "longitude": -94.7106
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YIV",
+      "icao": "CYIV",
+      "name": "Island Lake Airport (Garden Hill Airport)",
+      "latitude": 53.8572,
+      "longitude": -94.6536
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YKE",
+      "icao": "",
+      "name": "Knee Lake Airport",
+      "latitude": 54.9153,
+      "longitude": -94.7981
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YLR",
+      "icao": "CYLR",
+      "name": "Leaf Rapids Airport",
+      "latitude": 56.5133,
+      "longitude": -99.9853
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YNE",
+      "icao": "CYNE",
+      "name": "Norway House Airport",
+      "latitude": 53.9583,
+      "longitude": -97.8442
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YOH",
+      "icao": "CYOH",
+      "name": "Oxford House Airport",
+      "latitude": 54.9333,
+      "longitude": -95.2789
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YPG",
+      "icao": "CYPG",
+      "name": "Portage la Prairie/Southport Airport",
+      "latitude": 49.9031,
+      "longitude": -98.2738
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YQD",
+      "icao": "CYQD",
+      "name": "The Pas Airport",
+      "latitude": 53.9714,
+      "longitude": -101.091
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YRS",
+      "icao": "CYRS",
+      "name": "Red Sucker Lake Airport",
+      "latitude": 54.1672,
+      "longitude": -93.5572
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YST",
+      "icao": "CYST",
+      "name": "St. Theresa Point Airport",
+      "latitude": 53.8456,
+      "longitude": -94.8519
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YTD",
+      "icao": "CZLQ",
+      "name": "Thicket Portage Airport",
+      "latitude": 55.3189,
+      "longitude": -97.7078
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YTH",
+      "icao": "CYTH",
+      "name": "Thompson Airport",
+      "latitude": 55.8011,
+      "longitude": -97.8642
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YWG",
+      "icao": "CYWG",
+      "name": "Winnipeg James Armstrong Richardson International Airport",
+      "latitude": 49.91,
+      "longitude": -97.2399
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YYI",
+      "icao": "CYYI",
+      "name": "Rivers Airport",
+      "latitude": 50.0101,
+      "longitude": -100.314
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YYL",
+      "icao": "CYYL",
+      "name": "Lynn Lake Airport",
+      "latitude": 56.8639,
+      "longitude": -101.076
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "YYQ",
+      "icao": "CYYQ",
+      "name": "Churchill Airport",
+      "latitude": 58.7392,
+      "longitude": -94.065
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZAC",
+      "icao": "CZAC",
+      "name": "York Landing Airport",
+      "latitude": 56.0894,
+      "longitude": -96.0892
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZGI",
+      "icao": "CZGI",
+      "name": "Gods River Airport",
+      "latitude": 54.8397,
+      "longitude": -94.0786
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZGR",
+      "icao": "CZGR",
+      "name": "Little Grand Rapids Airport",
+      "latitude": 52.0456,
+      "longitude": -95.4658
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZJG",
+      "icao": "CZJG",
+      "name": "Jenpeg Airport",
+      "latitude": 54.5189,
+      "longitude": -98.0461
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZJN",
+      "icao": "CZJN",
+      "name": "Swan River Airport",
+      "latitude": 52.1206,
+      "longitude": -101.236
+    },
+    {
+      "countryCode": "CA",
+      "region": "Manitoba",
+      "iata": "ZTM",
+      "icao": "CZTM",
+      "name": "Shamattawa Airport",
+      "latitude": 55.8656,
+      "longitude": -92.0814
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YCH",
+      "icao": "CYCH",
+      "name": "Miramichi Airport",
+      "latitude": 47.0078,
+      "longitude": -65.4492
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YCL",
+      "icao": "CYCL",
+      "name": "Charlo Airport",
+      "latitude": 47.9908,
+      "longitude": -66.3303
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YFC",
+      "icao": "CYFC",
+      "name": "Fredericton International Airport",
+      "latitude": 45.8689,
+      "longitude": -66.5372
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YQM",
+      "icao": "CYQM",
+      "name": "Greater Moncton International Airport",
+      "latitude": 46.1122,
+      "longitude": -64.6786
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YSJ",
+      "icao": "CYSJ",
+      "name": "Saint John Airport",
+      "latitude": 45.3161,
+      "longitude": -65.8903
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "YSL",
+      "icao": "CYSL",
+      "name": "Saint-Leonard Aerodrome",
+      "latitude": 47.1575,
+      "longitude": -67.8347
+    },
+    {
+      "countryCode": "CA",
+      "region": "New Brunswick",
+      "iata": "ZBF",
+      "icao": "CZBF",
+      "name": "Bathurst Airport (New Brunswick)",
+      "latitude": 47.6297,
+      "longitude": -65.7389
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YAY",
+      "icao": "CYAY",
+      "name": "St. Anthony Airport",
+      "latitude": 51.3919,
+      "longitude": -56.0831
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YBI",
+      "icao": "",
+      "name": "Black Tickle Airport",
+      "latitude": 53.4694,
+      "longitude": -55.785
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YDE",
+      "icao": "",
+      "name": "Paradise River Airport",
+      "latitude": 53.43,
+      "longitude": -57.2333
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YDF",
+      "icao": "CYDF",
+      "name": "Deer Lake Regional Airport",
+      "latitude": 49.2108,
+      "longitude": -57.3914
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YDP",
+      "icao": "CYDP",
+      "name": "Nain Airport",
+      "latitude": 56.5492,
+      "longitude": -61.6803
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YFX",
+      "icao": "",
+      "name": "St. Lewis (Fox Harbour) Airport",
+      "latitude": 52.3728,
+      "longitude": -55.6739
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YHA",
+      "icao": "",
+      "name": "Port Hope Simpson Airport",
+      "latitude": 52.5281,
+      "longitude": -56.2861
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YHG",
+      "icao": "",
+      "name": "Charlottetown Airport",
+      "latitude": 52.7655,
+      "longitude": -56.1182
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YHO",
+      "icao": "CYHO",
+      "name": "Hopedale Airport",
+      "latitude": 55.4483,
+      "longitude": -60.2286
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YJT",
+      "icao": "CYJT",
+      "name": "Stephenville International Airport",
+      "latitude": 48.5442,
+      "longitude": -58.55
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YMH",
+      "icao": "CYMH",
+      "name": "Mary's Harbour Airport",
+      "latitude": 52.3028,
+      "longitude": -55.8472
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YMN",
+      "icao": "CYFT",
+      "name": "Makkovik Airport",
+      "latitude": 55.0769,
+      "longitude": -59.1864
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YNP",
+      "icao": "",
+      "name": "Natuashish Airport",
+      "latitude": 55.9139,
+      "longitude": -61.1844
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YQX",
+      "icao": "CYQX",
+      "name": "Gander International Airport / CFB Gander",
+      "latitude": 48.9369,
+      "longitude": -54.5681
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YRF",
+      "icao": "CYCA",
+      "name": "Cartwright Airport",
+      "latitude": 53.6828,
+      "longitude": -57.0419
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YRG",
+      "icao": "",
+      "name": "Rigolet Airport",
+      "latitude": 54.1797,
+      "longitude": -58.4575
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YSO",
+      "icao": "",
+      "name": "Postville Airport",
+      "latitude": 54.9105,
+      "longitude": -59.7851
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YWK",
+      "icao": "CYWK",
+      "name": "Wabush Airport",
+      "latitude": 52.9219,
+      "longitude": -66.8644
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YWM",
+      "icao": "",
+      "name": "Williams Harbour Airport",
+      "latitude": 52.5669,
+      "longitude": -55.7847
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YYR",
+      "icao": "CYYR",
+      "name": "CFB Goose Bay",
+      "latitude": 53.3192,
+      "longitude": -60.4258
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "YYT",
+      "icao": "CYYT",
+      "name": "St. John's International Airport",
+      "latitude": 47.6186,
+      "longitude": -52.7519
+    },
+    {
+      "countryCode": "CA",
+      "region": "Newfoundland and Labrador",
+      "iata": "ZUM",
+      "icao": "CZUM",
+      "name": "Churchill Falls Airport",
+      "latitude": 53.5619,
+      "longitude": -64.1064
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "DAS",
+      "icao": "",
+      "name": "Great Bear Lake Airport",
+      "latitude": 66.7031,
+      "longitude": -119.707
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "DVK",
+      "icao": "",
+      "name": "Diavik Airport",
+      "latitude": 64.5114,
+      "longitude": -110.289
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "GHK",
+      "icao": "",
+      "name": "Gahcho Kue Aerodrome",
+      "latitude": 63.4265,
+      "longitude": -109.193
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "GSL",
+      "icao": "",
+      "name": "Taltheilei Narrows Airport",
+      "latitude": 62.5981,
+      "longitude": -111.543
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "LAK",
+      "icao": "CYKD",
+      "name": "Aklavik/Freddie Carmichael Airport",
+      "latitude": 68.2233,
+      "longitude": -135.006
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "TNS",
+      "icao": "",
+      "name": "Tungsten (Cantung) Airport",
+      "latitude": 61.9569,
+      "longitude": -128.203
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YCK",
+      "icao": "CYVL",
+      "name": "Colville Lake/Tommy Kochon Aerodrome",
+      "latitude": 67.02,
+      "longitude": -126.126
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YDU",
+      "icao": "",
+      "name": "Kasba Lake Airport",
+      "latitude": 60.2919,
+      "longitude": -102.502
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YDW",
+      "icao": "",
+      "name": "Obre Lake/North of Sixty Airport",
+      "latitude": 60.3164,
+      "longitude": -103.129
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YEV",
+      "icao": "CYEV",
+      "name": "Inuvik (Mike Zubko) Airport",
+      "latitude": 68.3042,
+      "longitude": -133.483
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YFJ",
+      "icao": "CYWE",
+      "name": "Wekweeti Airport",
+      "latitude": 64.1908,
+      "longitude": -114.077
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YFL",
+      "icao": "",
+      "name": "Fort Reliance Water Aerodrome (CJN8)",
+      "latitude": 62.7,
+      "longitude": -109.167
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YFR",
+      "icao": "CYFR",
+      "name": "Fort Resolution Airport",
+      "latitude": 61.1808,
+      "longitude": -113.69
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YFS",
+      "icao": "CYFS",
+      "name": "Fort Simpson Airport",
+      "latitude": 61.7602,
+      "longitude": -121.237
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YGH",
+      "icao": "CYGH",
+      "name": "Fort Good Hope Airport",
+      "latitude": 66.2408,
+      "longitude": -128.651
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YHI",
+      "icao": "CYHI",
+      "name": "Ulukhaktok/Holman Airport",
+      "latitude": 70.7628,
+      "longitude": -117.806
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YHY",
+      "icao": "CYHY",
+      "name": "Hay River/Merlyn Carter Airport",
+      "latitude": 60.8397,
+      "longitude": -115.783
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YJF",
+      "icao": "CYJF",
+      "name": "Fort Liard Airport",
+      "latitude": 60.2358,
+      "longitude": -123.469
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YLE",
+      "icao": "",
+      "name": "Whati Airport",
+      "latitude": 63.1317,
+      "longitude": -117.246
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YMD",
+      "icao": "CYMD",
+      "name": "Mould Bay Airport",
+      "latitude": 76.2392,
+      "longitude": -119.322
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YNX",
+      "icao": "",
+      "name": "Snap Lake Airport",
+      "latitude": 63.5936,
+      "longitude": -110.906
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YOA",
+      "icao": "CYOA",
+      "name": "Ekati Airport",
+      "latitude": 64.6989,
+      "longitude": -110.615
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YPC",
+      "icao": "CYPC",
+      "name": "Nora Aliqatchialuk Ruben Airport",
+      "latitude": 69.3608,
+      "longitude": -124.075
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YRA",
+      "icao": "CYRA",
+      "name": "Gameti/Rae Lakes Airport",
+      "latitude": 64.1161,
+      "longitude": -117.31
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YSG",
+      "icao": "CYLK",
+      "name": "Lutselk'e Airport",
+      "latitude": 62.4183,
+      "longitude": -110.682
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YSM",
+      "icao": "CYSM",
+      "name": "Fort Smith Airport",
+      "latitude": 60.0203,
+      "longitude": -111.962
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YSY",
+      "icao": "CYSY",
+      "name": "Sachs Harbour (David Nasogaluak Jr. Saaryuaq) Airport",
+      "latitude": 71.9939,
+      "longitude": -125.243
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YUB",
+      "icao": "CYUB",
+      "name": "Tuktoyaktuk/James Gruben Airport",
+      "latitude": 69.4333,
+      "longitude": -133.026
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YVQ",
+      "icao": "CYVQ",
+      "name": "Norman Wells Airport",
+      "latitude": 65.2816,
+      "longitude": -126.798
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YWJ",
+      "icao": "CYWJ",
+      "name": "Deline Airport",
+      "latitude": 65.2111,
+      "longitude": -123.436
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YWY",
+      "icao": "CYWY",
+      "name": "Wrigley Airport",
+      "latitude": 63.2094,
+      "longitude": -123.437
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "YZF",
+      "icao": "CYZF",
+      "name": "Yellowknife Airport",
+      "latitude": 62.4628,
+      "longitude": -114.44
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "ZFM",
+      "icao": "CZFM",
+      "name": "Fort McPherson Airport",
+      "latitude": 67.4075,
+      "longitude": -134.861
+    },
+    {
+      "countryCode": "CA",
+      "region": "Northwest Territories",
+      "iata": "ZFN",
+      "icao": "CZFN",
+      "name": "Tulita Airport",
+      "latitude": 64.9097,
+      "longitude": -125.573
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YDG",
+      "icao": "CYID",
+      "name": "Digby/Annapolis Regional Airport",
+      "latitude": 44.5458,
+      "longitude": -65.7854
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YHZ",
+      "icao": "CYHZ",
+      "name": "Halifax Stanfield International Airport",
+      "latitude": 44.8808,
+      "longitude": -63.5086
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YPS",
+      "icao": "CYPD",
+      "name": "Port Hawkesbury Airport",
+      "latitude": 45.6567,
+      "longitude": -61.3681
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YQI",
+      "icao": "CYQI",
+      "name": "Yarmouth Airport",
+      "latitude": 43.8269,
+      "longitude": -66.0881
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YQY",
+      "icao": "CYQY",
+      "name": "Sydney/J.A. Douglas McCurdy Airport",
+      "latitude": 46.1614,
+      "longitude": -60.0478
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YSA",
+      "icao": "",
+      "name": "Sable Island Aerodrome",
+      "latitude": 43.9303,
+      "longitude": -59.9603
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nova Scotia",
+      "iata": "YZX",
+      "icao": "CYZX",
+      "name": "CFB Greenwood",
+      "latitude": 44.9844,
+      "longitude": -64.9169
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "JOJ",
+      "icao": "",
+      "name": "Doris Lake Aerodrome",
+      "latitude": 68.1253,
+      "longitude": -106.585
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "UZM",
+      "icao": "",
+      "name": "Hope Bay Aerodrome",
+      "latitude": 68.156,
+      "longitude": -106.618
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YAB",
+      "icao": "CYAB",
+      "name": "Arctic Bay Airport",
+      "latitude": 73.0058,
+      "longitude": -85.0425
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YBB",
+      "icao": "CYBB",
+      "name": "Kugaaruk Airport",
+      "latitude": 68.5344,
+      "longitude": -89.8081
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YBK",
+      "icao": "CYBK",
+      "name": "Baker Lake Airport",
+      "latitude": 64.2989,
+      "longitude": -96.0778
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YCB",
+      "icao": "CYCB",
+      "name": "Cambridge Bay Airport",
+      "latitude": 69.1081,
+      "longitude": -105.138
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YCO",
+      "icao": "CYCO",
+      "name": "Kugluktuk Airport",
+      "latitude": 67.8167,
+      "longitude": -115.144
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YCS",
+      "icao": "CYCS",
+      "name": "Chesterfield Inlet Airport",
+      "latitude": 63.3469,
+      "longitude": -90.7311
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YCY",
+      "icao": "CYCY",
+      "name": "Clyde River Airport",
+      "latitude": 70.4861,
+      "longitude": -68.5167
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YEK",
+      "icao": "CYEK",
+      "name": "Arviat Airport",
+      "latitude": 61.0942,
+      "longitude": -94.0708
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YEU",
+      "icao": "CYEU",
+      "name": "Eureka Aerodrome",
+      "latitude": 79.9947,
+      "longitude": -85.8142
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YFB",
+      "icao": "CYFB",
+      "name": "Iqaluit Airport",
+      "latitude": 63.7564,
+      "longitude": -68.5558
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YGT",
+      "icao": "CYGT",
+      "name": "Igloolik Airport",
+      "latitude": 69.3647,
+      "longitude": -81.8161
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YGZ",
+      "icao": "CYGZ",
+      "name": "Grise Fiord Airport",
+      "latitude": 76.4261,
+      "longitude": -82.9092
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YHK",
+      "icao": "CYHK",
+      "name": "Gjoa Haven Airport",
+      "latitude": 68.6356,
+      "longitude": -95.8497
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YIO",
+      "icao": "CYIO",
+      "name": "Pond Inlet Airport",
+      "latitude": 72.6833,
+      "longitude": -77.9667
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YLC",
+      "icao": "CYLC",
+      "name": "Kimmirut Airport",
+      "latitude": 62.85,
+      "longitude": -69.8833
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YLT",
+      "icao": "CYLT",
+      "name": "Alert Airport",
+      "latitude": 82.5178,
+      "longitude": -62.2806
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YMV",
+      "icao": "",
+      "name": "Mary River Aerodrome",
+      "latitude": 71.3242,
+      "longitude": -79.3569
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YRB",
+      "icao": "CYRB",
+      "name": "Resolute Bay Airport",
+      "latitude": 74.7169,
+      "longitude": -94.9694
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YRT",
+      "icao": "CYRT",
+      "name": "Rankin Inlet Airport",
+      "latitude": 62.8114,
+      "longitude": -92.1158
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YSK",
+      "icao": "CYSK",
+      "name": "Sanikiluaq Airport",
+      "latitude": 56.5378,
+      "longitude": -79.2467
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YTE",
+      "icao": "CYTE",
+      "name": "Cape Dorset Airport",
+      "latitude": 64.23,
+      "longitude": -76.5267
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YUT",
+      "icao": "CYUT",
+      "name": "Repulse Bay Airport",
+      "latitude": 66.5214,
+      "longitude": -86.2247
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YUX",
+      "icao": "CYUX",
+      "name": "Hall Beach Airport",
+      "latitude": 68.7761,
+      "longitude": -81.2425
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YVM",
+      "icao": "CYVM",
+      "name": "Qikiqtarjuaq Airport",
+      "latitude": 67.5458,
+      "longitude": -64.0314
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YVN",
+      "icao": "CYVN",
+      "name": "Cape Dyer Airport",
+      "latitude": 66.593,
+      "longitude": -61.5776
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YXN",
+      "icao": "CYXN",
+      "name": "Whale Cove Airport",
+      "latitude": 62.24,
+      "longitude": -92.5981
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YXP",
+      "icao": "CYXP",
+      "name": "Pangnirtung Airport",
+      "latitude": 66.145,
+      "longitude": -65.7136
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YYH",
+      "icao": "CYYH",
+      "name": "Taloyoak Airport",
+      "latitude": 69.5467,
+      "longitude": -93.5767
+    },
+    {
+      "countryCode": "CA",
+      "region": "Nunavut",
+      "iata": "YZS",
+      "icao": "CYZS",
+      "name": "Coral Harbour Airport",
+      "latitude": 64.1933,
+      "longitude": -83.3594
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "KEW",
+      "icao": "",
+      "name": "Keewaywin Airport",
+      "latitude": 52.9911,
+      "longitude": -92.8364
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "KIF",
+      "icao": "",
+      "name": "Kingfisher Lake Airport",
+      "latitude": 53.0125,
+      "longitude": -89.8553
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "MSA",
+      "icao": "CZMD",
+      "name": "Muskrat Dam Airport",
+      "latitude": 53.4414,
+      "longitude": -91.7628
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "SUR",
+      "icao": "",
+      "name": "Summer Beaver Airport",
+      "latitude": 52.7086,
+      "longitude": -88.5419
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "WNN",
+      "icao": "",
+      "name": "Wunnummin Lake Airport",
+      "latitude": 52.8939,
+      "longitude": -89.2892
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "XBE",
+      "icao": "",
+      "name": "Bearskin Lake Airport",
+      "latitude": 53.9656,
+      "longitude": -91.0272
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "XBR",
+      "icao": "",
+      "name": "Brockville Regional Tackaberry Airport",
+      "latitude": 44.6394,
+      "longitude": -75.7503
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "XCM",
+      "icao": "CYCK",
+      "name": "Chatham-Kent Airport",
+      "latitude": 42.3064,
+      "longitude": -82.0819
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "XKS",
+      "icao": "CYAQ",
+      "name": "Kasabonika Airport",
+      "latitude": 53.5247,
+      "longitude": -88.6428
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YAC",
+      "icao": "CYAC",
+      "name": "Cat Lake Airport",
+      "latitude": 51.7272,
+      "longitude": -91.8244
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YAG",
+      "icao": "CYAG",
+      "name": "Fort Frances Municipal Airport",
+      "latitude": 48.6542,
+      "longitude": -93.4397
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YAM",
+      "icao": "CYAM",
+      "name": "Sault Ste. Marie Airport",
+      "latitude": 46.485,
+      "longitude": -84.5094
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YAT",
+      "icao": "CYAT",
+      "name": "Attawapiskat Airport",
+      "latitude": 52.9275,
+      "longitude": -82.4319
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YAX",
+      "icao": "",
+      "name": "Angling Lake/Wapekeka Airport",
+      "latitude": 53.8492,
+      "longitude": -89.5794
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YBS",
+      "icao": "",
+      "name": "Opapimiskan Lake Airport",
+      "latitude": 52.6067,
+      "longitude": -90.3769
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YCC",
+      "icao": "CYCC",
+      "name": "Cornwall Regional Airport",
+      "latitude": 45.0928,
+      "longitude": -74.5633
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YCE",
+      "icao": "CYCE",
+      "name": "Centralia/James T. Field Memorial Aerodrome",
+      "latitude": 43.2856,
+      "longitude": -81.5083
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YCM",
+      "icao": "CYSN",
+      "name": "St. Catharines/Niagara District Airport",
+      "latitude": 43.1917,
+      "longitude": -79.1717
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YCN",
+      "icao": "CYCN",
+      "name": "Cochrane Aerodrome",
+      "latitude": 49.1056,
+      "longitude": -81.0136
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YEB",
+      "icao": "",
+      "name": "Bar River Airport",
+      "latitude": 46.4203,
+      "longitude": -84.0922
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YEL",
+      "icao": "CYEL",
+      "name": "Elliot Lake Municipal Airport",
+      "latitude": 46.3514,
+      "longitude": -82.5614
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YEM",
+      "icao": "CYEM",
+      "name": "Manitowaning/Manitoulin East Municipal Airport",
+      "latitude": 45.8428,
+      "longitude": -81.8581
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YER",
+      "icao": "CYER",
+      "name": "Fort Severn Airport",
+      "latitude": 56.0189,
+      "longitude": -87.6761
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YFA",
+      "icao": "CYFA",
+      "name": "Fort Albany Airport",
+      "latitude": 52.2014,
+      "longitude": -81.6969
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YFH",
+      "icao": "CYFH",
+      "name": "Fort Hope Airport",
+      "latitude": 51.5619,
+      "longitude": -87.9078
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YGK",
+      "icao": "CYGK",
+      "name": "Kingston/Norman Rogers Airport",
+      "latitude": 44.2253,
+      "longitude": -76.5969
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YGQ",
+      "icao": "CYGQ",
+      "name": "Geraldton (Greenstone Regional) Airport",
+      "latitude": 49.7783,
+      "longitude": -86.9394
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YHD",
+      "icao": "CYHD",
+      "name": "Dryden Regional Airport",
+      "latitude": 49.8317,
+      "longitude": -92.7442
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YHF",
+      "icao": "CYHF",
+      "name": "Hearst Municipal Airport",
+      "latitude": 49.7142,
+      "longitude": -83.6861
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YHM",
+      "icao": "CYHM",
+      "name": "John C. Munro Hamilton International Airport",
+      "latitude": 43.1736,
+      "longitude": -79.935
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YHN",
+      "icao": "CYHN",
+      "name": "Hornepayne Municipal Airport",
+      "latitude": 49.1931,
+      "longitude": -84.7589
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YHP",
+      "icao": "CYHP",
+      "name": "Poplar Hill Airport",
+      "latitude": 52.1133,
+      "longitude": -94.2556
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YIB",
+      "icao": "CYIB",
+      "name": "Atikokan Municipal Airport",
+      "latitude": 48.7739,
+      "longitude": -91.6386
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YKD",
+      "icao": "CYKM",
+      "name": "Kincardine Municipal Airport",
+      "latitude": 44.2014,
+      "longitude": -81.6067
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YKF",
+      "icao": "CYKF",
+      "name": "Region of Waterloo International Airport",
+      "latitude": 43.4558,
+      "longitude": -80.3858
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YKX",
+      "icao": "CYKX",
+      "name": "Kirkland Lake Airport",
+      "latitude": 48.2103,
+      "longitude": -79.9814
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YLD",
+      "icao": "CYLD",
+      "name": "Chapleau Airport",
+      "latitude": 47.82,
+      "longitude": -83.3467
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YLH",
+      "icao": "CYLH",
+      "name": "Lansdowne House Airport",
+      "latitude": 52.1956,
+      "longitude": -87.9342
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YLK",
+      "icao": "CYLS",
+      "name": "Lake Simcoe Regional Airport",
+      "latitude": 44.4853,
+      "longitude": -79.5556
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YMG",
+      "icao": "CYMG",
+      "name": "Manitouwadge Airport",
+      "latitude": 49.0839,
+      "longitude": -85.8606
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YMO",
+      "icao": "CYMO",
+      "name": "Moosonee Airport",
+      "latitude": 51.2911,
+      "longitude": -80.6078
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YNO",
+      "icao": "",
+      "name": "North Spirit Lake Airport",
+      "latitude": 52.49,
+      "longitude": -92.9711
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YOG",
+      "icao": "CYKP",
+      "name": "Ogoki Post Airport",
+      "latitude": 51.6586,
+      "longitude": -85.9017
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YOO",
+      "icao": "CYOO",
+      "name": "Oshawa Airport",
+      "latitude": 43.9228,
+      "longitude": -78.895
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YOS",
+      "icao": "CYOS",
+      "name": "Billy Bishop Regional Airport",
+      "latitude": 44.5903,
+      "longitude": -80.8375
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YOW",
+      "icao": "CYOW",
+      "name": "Ottawa Macdonald-Cartier International Airport",
+      "latitude": 45.3225,
+      "longitude": -75.6692
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YPD",
+      "icao": "",
+      "name": "Parry Sound Area Municipal Airport",
+      "latitude": 45.2575,
+      "longitude": -79.8297
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YPL",
+      "icao": "CYPL",
+      "name": "Pickle Lake Airport",
+      "latitude": 51.4464,
+      "longitude": -90.2142
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YPM",
+      "icao": "CYPM",
+      "name": "Pikangikum Airport",
+      "latitude": 51.8197,
+      "longitude": -93.9733
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YPO",
+      "icao": "CYPO",
+      "name": "Peawanuck Airport",
+      "latitude": 54.9881,
+      "longitude": -85.4433
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YPQ",
+      "icao": "CYPQ",
+      "name": "Peterborough Airport",
+      "latitude": 44.23,
+      "longitude": -78.3633
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQA",
+      "icao": "CYQA",
+      "name": "Muskoka Airport",
+      "latitude": 44.9747,
+      "longitude": -79.3033
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQG",
+      "icao": "CYQG",
+      "name": "Windsor International Airport",
+      "latitude": 42.2756,
+      "longitude": -82.9556
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQK",
+      "icao": "CYQK",
+      "name": "Kenora Airport",
+      "latitude": 49.7883,
+      "longitude": -94.3631
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQN",
+      "icao": "CYQN",
+      "name": "Nakina Airport",
+      "latitude": 50.1828,
+      "longitude": -86.6964
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQS",
+      "icao": "CYQS",
+      "name": "St. Thomas Municipal Airport",
+      "latitude": 42.77,
+      "longitude": -81.1108
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YQT",
+      "icao": "CYQT",
+      "name": "Thunder Bay International Airport",
+      "latitude": 48.3719,
+      "longitude": -89.3239
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YRL",
+      "icao": "CYRL",
+      "name": "Red Lake Airport",
+      "latitude": 51.0669,
+      "longitude": -93.7931
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YRO",
+      "icao": "CYRO",
+      "name": "Ottawa/Rockcliffe Airport",
+      "latitude": 45.4603,
+      "longitude": -75.6461
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YSB",
+      "icao": "CYSB",
+      "name": "Sudbury Airport",
+      "latitude": 46.625,
+      "longitude": -80.7989
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YSH",
+      "icao": "CYSH",
+      "name": "Smiths Falls-Montague Airport",
+      "latitude": 44.9458,
+      "longitude": -75.9406
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YSI",
+      "icao": "",
+      "name": "Parry Sound/Frying Pan Island-Sans Souci Water Aerodrome",
+      "latitude": 45.1733,
+      "longitude": -80.1375
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YSP",
+      "icao": "CYSP",
+      "name": "Marathon Aerodrome",
+      "latitude": 48.7553,
+      "longitude": -86.3444
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YTA",
+      "icao": "CYTA",
+      "name": "Pembroke Airport",
+      "latitude": 45.8644,
+      "longitude": -77.2517
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YTL",
+      "icao": "CYTL",
+      "name": "Big Trout Lake Airport",
+      "latitude": 53.8178,
+      "longitude": -89.8969
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YTR",
+      "icao": "CYTR",
+      "name": "CFB Trenton",
+      "latitude": 44.1189,
+      "longitude": -77.5281
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YTS",
+      "icao": "CYTS",
+      "name": "Timmins/Victor M. Power Airport",
+      "latitude": 48.5697,
+      "longitude": -81.3767
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YTZ",
+      "icao": "CYTZ",
+      "name": "Billy Bishop Toronto City Airport",
+      "latitude": 43.6285,
+      "longitude": -79.396
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YVV",
+      "icao": "CYVV",
+      "name": "Wiarton Airport",
+      "latitude": 44.7458,
+      "longitude": -81.1072
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YVZ",
+      "icao": "CYVZ",
+      "name": "Deer Lake Airport",
+      "latitude": 52.6558,
+      "longitude": -94.0614
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YWA",
+      "icao": "CYWA",
+      "name": "Petawawa Airport",
+      "latitude": 45.9522,
+      "longitude": -77.3192
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YWP",
+      "icao": "CYWP",
+      "name": "Webequie Airport",
+      "latitude": 52.9594,
+      "longitude": -87.3749
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YWR",
+      "icao": "",
+      "name": "White River Water Aerodrome",
+      "latitude": 48.6269,
+      "longitude": -85.2233
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YXL",
+      "icao": "CYXL",
+      "name": "Sioux Lookout Airport",
+      "latitude": 50.1139,
+      "longitude": -91.9053
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YXR",
+      "icao": "CYXR",
+      "name": "Earlton (Timiskaming Regional) Airport",
+      "latitude": 47.6974,
+      "longitude": -79.8473
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YXU",
+      "icao": "CYXU",
+      "name": "London International Airport",
+      "latitude": 43.0356,
+      "longitude": -81.1539
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YXZ",
+      "icao": "CYXZ",
+      "name": "Wawa Airport",
+      "latitude": 47.9667,
+      "longitude": -84.7867
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YYB",
+      "icao": "CYYB",
+      "name": "North Bay/Jack Garland Airport",
+      "latitude": 46.3636,
+      "longitude": -79.4228
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YYU",
+      "icao": "CYYU",
+      "name": "Kapuskasing Airport",
+      "latitude": 49.4139,
+      "longitude": -82.4675
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YYW",
+      "icao": "CYYW",
+      "name": "Armstrong Airport",
+      "latitude": 50.2903,
+      "longitude": -88.9097
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YYZ",
+      "icao": "CYYZ",
+      "name": "Toronto Pearson International Airport",
+      "latitude": 43.6797,
+      "longitude": -79.6227
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YZE",
+      "icao": "CYZE",
+      "name": "Gore Bay-Manitoulin Airport",
+      "latitude": 45.8853,
+      "longitude": -82.5678
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "YZR",
+      "icao": "CYZR",
+      "name": "Sarnia Chris Hadfield Airport",
+      "latitude": 42.9994,
+      "longitude": -82.3089
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "ZKE",
+      "icao": "CZKE",
+      "name": "Kashechewan Airport",
+      "latitude": 52.2825,
+      "longitude": -81.6778
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "ZPB",
+      "icao": "CZPB",
+      "name": "Sachigo Lake Airport",
+      "latitude": 53.8911,
+      "longitude": -92.1964
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "ZRJ",
+      "icao": "CZRJ",
+      "name": "Round Lake (Weagamow Lake) Airport",
+      "latitude": 52.9436,
+      "longitude": -91.3128
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "ZSJ",
+      "icao": "CZSJ",
+      "name": "Sandy Lake Airport",
+      "latitude": 53.0642,
+      "longitude": -93.3444
+    },
+    {
+      "countryCode": "CA",
+      "region": "Ontario",
+      "iata": "ZUC",
+      "icao": "CZUC",
+      "name": "Ignace Municipal Airport",
+      "latitude": 49.4297,
+      "longitude": -91.7178
+    },
+    {
+      "countryCode": "CA",
+      "region": "Prince Edward Island",
+      "iata": "YSU",
+      "icao": "CYSU",
+      "name": "Summerside Airport",
+      "latitude": 46.4406,
+      "longitude": -63.8336
+    },
+    {
+      "countryCode": "CA",
+      "region": "Prince Edward Island",
+      "iata": "YYG",
+      "icao": "CYYG",
+      "name": "Charlottetown Airport",
+      "latitude": 46.29,
+      "longitude": -63.1211
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "AKV",
+      "icao": "CYKO",
+      "name": "Akulivik Airport",
+      "latitude": 60.8186,
+      "longitude": -78.1486
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "SSQ",
+      "icao": "",
+      "name": "La Sarre Airport",
+      "latitude": 48.9172,
+      "longitude": -79.1786
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "XGR",
+      "icao": "CYLU",
+      "name": "Kangiqsualujjuaq (Georges River) Airport",
+      "latitude": 58.7114,
+      "longitude": -65.9928
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YAH",
+      "icao": "CYAH",
+      "name": "La Grande-4 Airport",
+      "latitude": 53.7547,
+      "longitude": -73.6753
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YAR",
+      "icao": "CYAD",
+      "name": "La Grande-3 Airport",
+      "latitude": 53.5717,
+      "longitude": -76.1964
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YAU",
+      "icao": "",
+      "name": "Kattiniq/Donaldson Airport",
+      "latitude": 61.6622,
+      "longitude": -73.3214
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YBC",
+      "icao": "CYBC",
+      "name": "Baie-Comeau Airport",
+      "latitude": 49.1325,
+      "longitude": -68.2044
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YBG",
+      "icao": "CYBG",
+      "name": "Canadian Forces Base Bagotville",
+      "latitude": 48.3306,
+      "longitude": -70.9964
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YBJ",
+      "icao": "",
+      "name": "Baie-Johan-Beetz Seaplane Base",
+      "latitude": 50.2838,
+      "longitude": -62.8063
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YBX",
+      "icao": "CYBX",
+      "name": "Lourdes-de-Blanc-Sablon Airport",
+      "latitude": 51.4436,
+      "longitude": -57.1853
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YDO",
+      "icao": "CYDO",
+      "name": "Dolbeau-Saint-Felicien Airport",
+      "latitude": 48.7785,
+      "longitude": -72.375
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YEY",
+      "icao": "CYEY",
+      "name": "Amos/Magny Airport",
+      "latitude": 48.5639,
+      "longitude": -78.2497
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YFE",
+      "icao": "CYFE",
+      "name": "Forestville Airport",
+      "latitude": 48.7461,
+      "longitude": -69.0972
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YFG",
+      "icao": "",
+      "name": "Fontanges Airport",
+      "latitude": 54.5539,
+      "longitude": -71.1733
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YGL",
+      "icao": "CYGL",
+      "name": "La Grande Riviere Airport",
+      "latitude": 53.6253,
+      "longitude": -77.7042
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YGP",
+      "icao": "CYGP",
+      "name": "Michel-Pouliot Gaspe Airport",
+      "latitude": 48.7753,
+      "longitude": -64.4786
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YGR",
+      "icao": "CYGR",
+      "name": "Iles-de-la-Madeleine Airport",
+      "latitude": 47.4247,
+      "longitude": -61.7781
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YGV",
+      "icao": "CYGV",
+      "name": "Havre Saint-Pierre Airport",
+      "latitude": 50.2819,
+      "longitude": -63.6114
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YGW",
+      "icao": "CYGW",
+      "name": "Kuujjuarapik Airport",
+      "latitude": 55.2819,
+      "longitude": -77.7653
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YHR",
+      "icao": "CYHR",
+      "name": "Chevery Airport",
+      "latitude": 50.4689,
+      "longitude": -59.6367
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YHU",
+      "icao": "CYHU",
+      "name": "Montreal Saint-Hubert Longueuil Aiport",
+      "latitude": 45.5142,
+      "longitude": -73.4098
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YIF",
+      "icao": "CYIF",
+      "name": "Saint-Augustin Airport",
+      "latitude": 51.2117,
+      "longitude": -58.6583
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YIK",
+      "icao": "CYIK",
+      "name": "Ivujivik Airport",
+      "latitude": 62.4173,
+      "longitude": -77.9253
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YJN",
+      "icao": "CYJN",
+      "name": "Saint-Jean Airport",
+      "latitude": 45.2944,
+      "longitude": -73.2811
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YKG",
+      "icao": "CYAS",
+      "name": "Kangirsuk Airport",
+      "latitude": 60.0272,
+      "longitude": -69.9992
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YKL",
+      "icao": "CYKL",
+      "name": "Schefferville Airport",
+      "latitude": 54.8053,
+      "longitude": -66.8053
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YKQ",
+      "icao": "CYKQ",
+      "name": "Waskaganish Airport",
+      "latitude": 51.4733,
+      "longitude": -78.7583
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YKU",
+      "icao": "",
+      "name": "Chisasibi Airport",
+      "latitude": 53.8056,
+      "longitude": -78.9169
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YLP",
+      "icao": "CYLP",
+      "name": "Mingan Airport",
+      "latitude": 50.2869,
+      "longitude": -64.1528
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YLQ",
+      "icao": "CYLQ",
+      "name": "La Tuque Airport",
+      "latitude": 47.4097,
+      "longitude": -72.7889
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YLS",
+      "icao": "",
+      "name": "Lebel-sur-Quevillon Airport",
+      "latitude": 49.0303,
+      "longitude": -77.0172
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YME",
+      "icao": "CYME",
+      "name": "Matane Airport",
+      "latitude": 48.8569,
+      "longitude": -67.4533
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YML",
+      "icao": "CYML",
+      "name": "Charlevoix Airport",
+      "latitude": 47.5975,
+      "longitude": -70.2239
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YMT",
+      "icao": "CYMT",
+      "name": "Chibougamau/Chapais Airport",
+      "latitude": 49.7719,
+      "longitude": -74.5281
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YMW",
+      "icao": "CYMW",
+      "name": "Maniwaki Airport",
+      "latitude": 46.2728,
+      "longitude": -75.9906
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YMX",
+      "icao": "CYMX",
+      "name": "Montréal-Mirabel International Airport",
+      "latitude": 45.6702,
+      "longitude": -74.0324
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YNA",
+      "icao": "CYNA",
+      "name": "Natashquan Airport",
+      "latitude": 50.19,
+      "longitude": -61.7892
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YNC",
+      "icao": "CYNC",
+      "name": "Wemindji Airport",
+      "latitude": 53.0106,
+      "longitude": -78.8311
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YND",
+      "icao": "CYND",
+      "name": "Gatineau-Ottawa Executive Airport",
+      "latitude": 45.5217,
+      "longitude": -75.5636
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YNM",
+      "icao": "CYNM",
+      "name": "Matagami Airport",
+      "latitude": 49.7617,
+      "longitude": -77.8028
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YNS",
+      "icao": "CYHH",
+      "name": "Nemiscau Airport",
+      "latitude": 51.6911,
+      "longitude": -76.1356
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YOI",
+      "icao": "",
+      "name": "Opinaca Aerodrome",
+      "latitude": 52.2219,
+      "longitude": -76.6119
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YPH",
+      "icao": "CYPH",
+      "name": "Inukjuak Airport",
+      "latitude": 58.4719,
+      "longitude": -78.0769
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YPJ",
+      "icao": "CYLA",
+      "name": "Aupaluk Airport",
+      "latitude": 59.2967,
+      "longitude": -69.5997
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YPN",
+      "icao": "CYPN",
+      "name": "Port-Menier Airport",
+      "latitude": 49.8364,
+      "longitude": -64.2886
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YPX",
+      "icao": "CYPX",
+      "name": "Puvirnituq Airport",
+      "latitude": 60.0506,
+      "longitude": -77.2869
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YQB",
+      "icao": "CYQB",
+      "name": "Quebec City Jean Lesage International Airport",
+      "latitude": 46.7911,
+      "longitude": -71.3933
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YQC",
+      "icao": "CYHA",
+      "name": "Quaqtaq Airport",
+      "latitude": 61.0464,
+      "longitude": -69.6178
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YRI",
+      "icao": "CYRI",
+      "name": "Riviere-du-Loup Airport",
+      "latitude": 47.7644,
+      "longitude": -69.5847
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YRJ",
+      "icao": "CYRJ",
+      "name": "Roberval Airport",
+      "latitude": 48.52,
+      "longitude": -72.2656
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YRQ",
+      "icao": "CYRQ",
+      "name": "Trois-Rivieres Airport",
+      "latitude": 46.3528,
+      "longitude": -72.6794
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YSC",
+      "icao": "CYSC",
+      "name": "Sherbrooke Airport",
+      "latitude": 45.4386,
+      "longitude": -71.6914
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YTF",
+      "icao": "CYTF",
+      "name": "Alma Airport",
+      "latitude": 48.5089,
+      "longitude": -71.6419
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YTM",
+      "icao": "CYFJ",
+      "name": "Mont Tremblant International Airport",
+      "latitude": 46.4094,
+      "longitude": -74.78
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YTQ",
+      "icao": "CYTQ",
+      "name": "Tasiujaq Airport",
+      "latitude": 58.6678,
+      "longitude": -69.9558
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YUD",
+      "icao": "CYMU",
+      "name": "Umiujaq Airport",
+      "latitude": 56.5361,
+      "longitude": -76.5183
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YUL",
+      "icao": "CYUL",
+      "name": "Montréal-Pierre Elliott Trudeau International Airport",
+      "latitude": 45.4657,
+      "longitude": -73.7455
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YUY",
+      "icao": "CYUY",
+      "name": "Rouyn-Noranda Airport",
+      "latitude": 48.2061,
+      "longitude": -78.8356
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YVB",
+      "icao": "CYVB",
+      "name": "Bonaventure Airport",
+      "latitude": 48.0711,
+      "longitude": -65.4603
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YVO",
+      "icao": "CYVO",
+      "name": "Val-d'Or Airport",
+      "latitude": 48.0533,
+      "longitude": -77.7828
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YVP",
+      "icao": "CYVP",
+      "name": "Kuujjuaq Airport",
+      "latitude": 58.0961,
+      "longitude": -68.4269
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YWB",
+      "icao": "CYKG",
+      "name": "Kangiqsujuaq (Wakeham Bay) Airport",
+      "latitude": 61.5886,
+      "longitude": -71.9294
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YWQ",
+      "icao": "",
+      "name": "Chutes-des-Passes/Lac Margane Water Aerodrome",
+      "latitude": 49.9434,
+      "longitude": -71.138
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YXK",
+      "icao": "CYXK",
+      "name": "Rimouski Airport",
+      "latitude": 48.4781,
+      "longitude": -68.4969
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YYY",
+      "icao": "CYYY",
+      "name": "Mont-Joli Airport",
+      "latitude": 48.6086,
+      "longitude": -68.2081
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YZG",
+      "icao": "CYZG",
+      "name": "Salluit Airport",
+      "latitude": 62.1794,
+      "longitude": -75.6672
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "YZV",
+      "icao": "CYZV",
+      "name": "Sept-Iles Airport",
+      "latitude": 50.2233,
+      "longitude": -66.2656
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZBM",
+      "icao": "CZBM",
+      "name": "Roland-Desourdy Airport",
+      "latitude": 45.2908,
+      "longitude": -72.7414
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZEM",
+      "icao": "CZEM",
+      "name": "Eastmain River Airport",
+      "latitude": 52.2264,
+      "longitude": -78.5225
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZGS",
+      "icao": "",
+      "name": "La Romaine Airport",
+      "latitude": 50.2597,
+      "longitude": -60.6794
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZKG",
+      "icao": "",
+      "name": "Kegaska Airport",
+      "latitude": 50.1958,
+      "longitude": -61.2658
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZLT",
+      "icao": "",
+      "name": "La Tabatiere Airport",
+      "latitude": 50.8308,
+      "longitude": -58.9756
+    },
+    {
+      "countryCode": "CA",
+      "region": "Quebec",
+      "iata": "ZTB",
+      "icao": "",
+      "name": "Tete-a-la-Baleine Airport",
+      "latitude": 50.6744,
+      "longitude": -59.3836
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "XCL",
+      "icao": "",
+      "name": "Cluff Lake Airport",
+      "latitude": 58.3911,
+      "longitude": -109.516
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YBE",
+      "icao": "CYBE",
+      "name": "Uranium City Airport",
+      "latitude": 59.5614,
+      "longitude": -108.481
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YDJ",
+      "icao": "",
+      "name": "Hatchet Lake Airport",
+      "latitude": 58.6625,
+      "longitude": -103.538
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YEN",
+      "icao": "CYEN",
+      "name": "Estevan Regional Aerodrome",
+      "latitude": 49.2103,
+      "longitude": -102.966
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YHB",
+      "icao": "CYHB",
+      "name": "Hudson Bay Airport",
+      "latitude": 52.8167,
+      "longitude": -102.311
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YKC",
+      "icao": "CYKC",
+      "name": "Collins Bay Airport",
+      "latitude": 58.2361,
+      "longitude": -103.678
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YKJ",
+      "icao": "CYKJ",
+      "name": "Key Lake Airport",
+      "latitude": 57.2561,
+      "longitude": -105.618
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YKY",
+      "icao": "CYKY",
+      "name": "Kindersley Regional Airport",
+      "latitude": 51.5175,
+      "longitude": -109.181
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YLJ",
+      "icao": "CYLJ",
+      "name": "Meadow Lake Airport",
+      "latitude": 54.1253,
+      "longitude": -108.523
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YMJ",
+      "icao": "CYMJ",
+      "name": "CFB Moose Jaw (C.M. McEwen Airport)",
+      "latitude": 50.3303,
+      "longitude": -105.559
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YNL",
+      "icao": "CYNL",
+      "name": "Points North Landing Airport",
+      "latitude": 58.2767,
+      "longitude": -104.082
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YPA",
+      "icao": "CYPA",
+      "name": "Prince Albert (Glass Field) Airport",
+      "latitude": 53.2142,
+      "longitude": -105.673
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YQR",
+      "icao": "CYQR",
+      "name": "Regina International Airport",
+      "latitude": 50.4319,
+      "longitude": -104.666
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YQV",
+      "icao": "CYQV",
+      "name": "Yorkton Municipal Airport",
+      "latitude": 51.2647,
+      "longitude": -102.462
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YQW",
+      "icao": "CYQW",
+      "name": "North Battleford Airport (Cameron McIntosh Airport)",
+      "latitude": 52.7692,
+      "longitude": -108.244
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YSF",
+      "icao": "CYSF",
+      "name": "Stony Rapids Airport",
+      "latitude": 59.2503,
+      "longitude": -105.841
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YTT",
+      "icao": "",
+      "name": "Tisdale Airport",
+      "latitude": 52.8367,
+      "longitude": -104.067
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YVC",
+      "icao": "CYVC",
+      "name": "La Ronge (Barber Field) Airport",
+      "latitude": 55.1514,
+      "longitude": -105.262
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YVT",
+      "icao": "CYVT",
+      "name": "Buffalo Narrows Airport",
+      "latitude": 55.8419,
+      "longitude": -108.418
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YXE",
+      "icao": "CYXE",
+      "name": "Saskatoon John G. Diefenbaker International Airport",
+      "latitude": 52.1708,
+      "longitude": -106.7
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "YYN",
+      "icao": "CYYN",
+      "name": "Swift Current Airport",
+      "latitude": 50.2919,
+      "longitude": -107.691
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "ZFD",
+      "icao": "CZFD",
+      "name": "Fond-du-Lac Airport",
+      "latitude": 59.3344,
+      "longitude": -107.182
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "ZPO",
+      "icao": "CZPO",
+      "name": "Pinehouse Lake Airport",
+      "latitude": 55.5281,
+      "longitude": -106.582
+    },
+    {
+      "countryCode": "CA",
+      "region": "Saskatchewan",
+      "iata": "ZWL",
+      "icao": "CZWL",
+      "name": "Wollaston Lake Airport",
+      "latitude": 58.1069,
+      "longitude": -103.172
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "XMP",
+      "icao": "",
+      "name": "Macmillan Pass Airport",
+      "latitude": 63.1811,
+      "longitude": -130.202
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "XRR",
+      "icao": "CYDM",
+      "name": "Ross River Airport",
+      "latitude": 61.9706,
+      "longitude": -132.423
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YDA",
+      "icao": "CYDA",
+      "name": "Dawson City Airport",
+      "latitude": 64.0431,
+      "longitude": -139.128
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YDB",
+      "icao": "CYDB",
+      "name": "Burwash Airport",
+      "latitude": 61.3711,
+      "longitude": -139.041
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YHT",
+      "icao": "CYHT",
+      "name": "Haines Junction Airport",
+      "latitude": 60.7892,
+      "longitude": -137.546
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YLM",
+      "icao": "",
+      "name": "Clinton Creek Airport",
+      "latitude": 64.4755,
+      "longitude": -140.742
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YMA",
+      "icao": "CYMA",
+      "name": "Mayo Airport",
+      "latitude": 63.6164,
+      "longitude": -135.868
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YOC",
+      "icao": "CYOC",
+      "name": "Old Crow Airport",
+      "latitude": 67.5706,
+      "longitude": -139.839
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YQH",
+      "icao": "CYQH",
+      "name": "Watson Lake Airport",
+      "latitude": 60.1164,
+      "longitude": -128.822
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YXQ",
+      "icao": "CYXQ",
+      "name": "Beaver Creek Airport",
+      "latitude": 62.4103,
+      "longitude": -140.867
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YXY",
+      "icao": "CYXY",
+      "name": "Erik Nielsen Whitehorse International Airport",
+      "latitude": 60.7096,
+      "longitude": -135.067
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "YZW",
+      "icao": "CYZW",
+      "name": "Teslin Airport",
+      "latitude": 60.1728,
+      "longitude": -132.743
+    },
+    {
+      "countryCode": "CA",
+      "region": "Yukon",
+      "iata": "ZFA",
+      "icao": "CZFA",
+      "name": "Faro Airport (Yukon)",
+      "latitude": 62.2075,
+      "longitude": -133.376
+    }
+  ]
 }

@@ -175,5 +175,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "WS",
+      "region": "Fa'asaleleaga",
+      "iata": "MXS",
+      "icao": "NSMA",
+      "name": "Maota Airport",
+      "latitude": -13.7423,
+      "longitude": -172.258
+    },
+    {
+      "countryCode": "WS",
+      "region": "Tuamasaga",
+      "iata": "AAU",
+      "icao": "NSAU",
+      "name": "Asau Airport",
+      "latitude": -13.5051,
+      "longitude": -172.628
+    },
+    {
+      "countryCode": "WS",
+      "region": "Tuamasaga",
+      "iata": "APW",
+      "icao": "NSFA",
+      "name": "Faleolo International Airport",
+      "latitude": -13.83,
+      "longitude": -172.008
+    },
+    {
+      "countryCode": "WS",
+      "region": "Tuamasaga",
+      "iata": "FGI",
+      "icao": "NSFI",
+      "name": "Fagali'i Airport",
+      "latitude": -13.8487,
+      "longitude": -171.74
+    }
+  ]
 }

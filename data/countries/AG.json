@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AG",
+      "region": "Barbuda",
+      "iata": "BBQ",
+      "icao": "TAPH",
+      "name": "Barbuda Codrington Airport",
+      "latitude": 17.6358,
+      "longitude": -61.8286
+    },
+    {
+      "countryCode": "AG",
+      "region": "Saint George",
+      "iata": "ANU",
+      "icao": "TAPA",
+      "name": "V. C. Bird International Airport",
+      "latitude": 17.1367,
+      "longitude": -61.7927
+    }
+  ]
 }

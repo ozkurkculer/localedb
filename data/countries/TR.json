@@ -239,5 +239,601 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TR",
+      "region": "Adana",
+      "iata": "ADA",
+      "icao": "LTAF",
+      "name": "Adana Sakirpasa Airport",
+      "latitude": 36.9822,
+      "longitude": 35.2804
+    },
+    {
+      "countryCode": "TR",
+      "region": "Adana",
+      "iata": "UAB",
+      "icao": "LTAG",
+      "name": "Incirlik Air Base",
+      "latitude": 37.0021,
+      "longitude": 35.4259
+    },
+    {
+      "countryCode": "TR",
+      "region": "Adiyaman",
+      "iata": "ADF",
+      "icao": "LTCP",
+      "name": "Adiyaman Airport",
+      "latitude": 37.7314,
+      "longitude": 38.4689
+    },
+    {
+      "countryCode": "TR",
+      "region": "Afyonkarahisar",
+      "iata": "AFY",
+      "icao": "LTAH",
+      "name": "Afyon Airport",
+      "latitude": 38.7264,
+      "longitude": 30.6011
+    },
+    {
+      "countryCode": "TR",
+      "region": "Agri",
+      "iata": "AJI",
+      "icao": "LTCO",
+      "name": "Agri Airport",
+      "latitude": 39.6545,
+      "longitude": 43.026
+    },
+    {
+      "countryCode": "TR",
+      "region": "Amasya",
+      "iata": "MZH",
+      "icao": "LTAP",
+      "name": "Amasya Merzifon Airport",
+      "latitude": 40.8294,
+      "longitude": 35.522
+    },
+    {
+      "countryCode": "TR",
+      "region": "Ankara",
+      "iata": "ANK",
+      "icao": "LTAD",
+      "name": "Etimesgut Air Base",
+      "latitude": 39.9498,
+      "longitude": 32.6886
+    },
+    {
+      "countryCode": "TR",
+      "region": "Ankara",
+      "iata": "ESB",
+      "icao": "LTAC",
+      "name": "Ankara Esenboğa Airport",
+      "latitude": 40.1281,
+      "longitude": 32.995
+    },
+    {
+      "countryCode": "TR",
+      "region": "Antalya",
+      "iata": "AYT",
+      "icao": "LTAI",
+      "name": "Antalya Airport",
+      "latitude": 36.8987,
+      "longitude": 30.8005
+    },
+    {
+      "countryCode": "TR",
+      "region": "Antalya",
+      "iata": "GZP",
+      "icao": "LTFG",
+      "name": "Gazipasa-Alanya Airport",
+      "latitude": 36.2992,
+      "longitude": 32.3006
+    },
+    {
+      "countryCode": "TR",
+      "region": "Aydin",
+      "iata": "CII",
+      "icao": "LTBD",
+      "name": "Aydin Airport (Cildir Airport)",
+      "latitude": 37.815,
+      "longitude": 27.8953
+    },
+    {
+      "countryCode": "TR",
+      "region": "Balikesir",
+      "iata": "BDM",
+      "icao": "LTBG",
+      "name": "Bandirma Airport",
+      "latitude": 40.318,
+      "longitude": 27.9777
+    },
+    {
+      "countryCode": "TR",
+      "region": "Balikesir",
+      "iata": "BZI",
+      "icao": "LTBF",
+      "name": "Balikesir Airport (Merkez Airport)",
+      "latitude": 39.6193,
+      "longitude": 27.926
+    },
+    {
+      "countryCode": "TR",
+      "region": "Balikesir",
+      "iata": "EDO",
+      "icao": "LTFD",
+      "name": "Balikesir Koca Seyit Airport",
+      "latitude": 39.5546,
+      "longitude": 27.0138
+    },
+    {
+      "countryCode": "TR",
+      "region": "Batman",
+      "iata": "BAL",
+      "icao": "LTCJ",
+      "name": "Batman Airport",
+      "latitude": 37.929,
+      "longitude": 41.1166
+    },
+    {
+      "countryCode": "TR",
+      "region": "Bingol",
+      "iata": "BGG",
+      "icao": "LTCU",
+      "name": "Bingol Airport",
+      "latitude": 38.8593,
+      "longitude": 40.596
+    },
+    {
+      "countryCode": "TR",
+      "region": "Bursa",
+      "iata": "BTZ",
+      "icao": "LTBE",
+      "name": "Bursa Airport",
+      "latitude": 40.2333,
+      "longitude": 29.0092
+    },
+    {
+      "countryCode": "TR",
+      "region": "Bursa",
+      "iata": "YEI",
+      "icao": "LTBR",
+      "name": "Yenisehir Airport",
+      "latitude": 40.2552,
+      "longitude": 29.5626
+    },
+    {
+      "countryCode": "TR",
+      "region": "Canakkale",
+      "iata": "CKZ",
+      "icao": "LTBH",
+      "name": "Canakkale Airport",
+      "latitude": 40.1377,
+      "longitude": 26.4268
+    },
+    {
+      "countryCode": "TR",
+      "region": "Canakkale",
+      "iata": "GKD",
+      "icao": "LTFK",
+      "name": "Gokceada Airport",
+      "latitude": 40.2045,
+      "longitude": 25.8833
+    },
+    {
+      "countryCode": "TR",
+      "region": "Denizli",
+      "iata": "DNZ",
+      "icao": "LTAY",
+      "name": "Denizli Cardak Airport",
+      "latitude": 37.7856,
+      "longitude": 29.7013
+    },
+    {
+      "countryCode": "TR",
+      "region": "Diyarbakir",
+      "iata": "DIY",
+      "icao": "LTCC",
+      "name": "Diyarbakir Airport",
+      "latitude": 37.8939,
+      "longitude": 40.201
+    },
+    {
+      "countryCode": "TR",
+      "region": "Elazig",
+      "iata": "EZS",
+      "icao": "LTCA",
+      "name": "Elazig Airport",
+      "latitude": 38.6069,
+      "longitude": 39.2914
+    },
+    {
+      "countryCode": "TR",
+      "region": "Erzincan",
+      "iata": "ERC",
+      "icao": "LTCD",
+      "name": "Erzincan Airport",
+      "latitude": 39.7102,
+      "longitude": 39.527
+    },
+    {
+      "countryCode": "TR",
+      "region": "Erzincan",
+      "iata": "ERZ",
+      "icao": "LTCE",
+      "name": "Erzurum Airport",
+      "latitude": 39.9565,
+      "longitude": 41.1702
+    },
+    {
+      "countryCode": "TR",
+      "region": "Eskisehir",
+      "iata": "AOE",
+      "icao": "LTBY",
+      "name": "Anadolu Airport",
+      "latitude": 39.8099,
+      "longitude": 30.5194
+    },
+    {
+      "countryCode": "TR",
+      "region": "Eskisehir",
+      "iata": "ESK",
+      "icao": "LTBI",
+      "name": "Eskisehir Airport",
+      "latitude": 39.7841,
+      "longitude": 30.5821
+    },
+    {
+      "countryCode": "TR",
+      "region": "Gaziantep",
+      "iata": "GZT",
+      "icao": "LTAJ",
+      "name": "Gaziantep Oguzeli International Airport",
+      "latitude": 36.9472,
+      "longitude": 37.4787
+    },
+    {
+      "countryCode": "TR",
+      "region": "Hakkari",
+      "iata": "YKO",
+      "icao": "LTCW",
+      "name": "Hakkari Yuksekova Airport",
+      "latitude": 37.5497,
+      "longitude": 44.2381
+    },
+    {
+      "countryCode": "TR",
+      "region": "Hatay",
+      "iata": "HTY",
+      "icao": "LTDA",
+      "name": "Hatay Airport",
+      "latitude": 36.3628,
+      "longitude": 36.2822
+    },
+    {
+      "countryCode": "TR",
+      "region": "Igdir",
+      "iata": "IGD",
+      "icao": "LTCT",
+      "name": "Igdir Airport",
+      "latitude": 39.9766,
+      "longitude": 43.8766
+    },
+    {
+      "countryCode": "TR",
+      "region": "Isparta",
+      "iata": "ISE",
+      "icao": "LTFC",
+      "name": "Isparta Suleyman Demirel Airport",
+      "latitude": 37.8554,
+      "longitude": 30.3684
+    },
+    {
+      "countryCode": "TR",
+      "region": "Istanbul",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "name": "Istanbul Ataturk Airport",
+      "latitude": 40.9769,
+      "longitude": 28.8146
+    },
+    {
+      "countryCode": "TR",
+      "region": "Istanbul",
+      "iata": "IST",
+      "icao": "LTFM",
+      "name": "Istanbul Ataturk Airport",
+      "latitude": 41.2753,
+      "longitude": 28.7519
+    },
+    {
+      "countryCode": "TR",
+      "region": "Istanbul",
+      "iata": "SAW",
+      "icao": "LTFJ",
+      "name": "Sabiha Gokcen International Airport",
+      "latitude": 40.8986,
+      "longitude": 29.3092
+    },
+    {
+      "countryCode": "TR",
+      "region": "Izmir",
+      "iata": "ADB",
+      "icao": "LTBJ",
+      "name": "Izmir Adnan Menderes Airport",
+      "latitude": 38.2916,
+      "longitude": 27.1487
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kahramanmaras",
+      "iata": "KCM",
+      "icao": "LTCN",
+      "name": "Kahramanmaras Airport",
+      "latitude": 37.5388,
+      "longitude": 36.9535
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kars",
+      "iata": "KSY",
+      "icao": "LTCF",
+      "name": "Kars Harakani Airport",
+      "latitude": 40.5622,
+      "longitude": 43.115
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kastamonu",
+      "iata": "KFS",
+      "icao": "LTAL",
+      "name": "Kastamonu Airport",
+      "latitude": 41.3142,
+      "longitude": 33.7958
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kayseri",
+      "iata": "ASR",
+      "icao": "LTAU",
+      "name": "Erkilet International Airport",
+      "latitude": 38.7704,
+      "longitude": 35.4954
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kocaeli",
+      "iata": "KCO",
+      "icao": "LTBQ",
+      "name": "Cengiz Topel Naval Air Station",
+      "latitude": 40.735,
+      "longitude": 30.0833
+    },
+    {
+      "countryCode": "TR",
+      "region": "Konya",
+      "iata": "KYA",
+      "icao": "LTAN",
+      "name": "Konya Airport",
+      "latitude": 37.979,
+      "longitude": 32.5619
+    },
+    {
+      "countryCode": "TR",
+      "region": "Kutahya",
+      "iata": "KZR",
+      "icao": "LTBZ",
+      "name": "Zafer Airport",
+      "latitude": 39.1131,
+      "longitude": 30.1281
+    },
+    {
+      "countryCode": "TR",
+      "region": "Malatya",
+      "iata": "MLX",
+      "icao": "LTAT",
+      "name": "Malatya Erhac Airport",
+      "latitude": 38.4353,
+      "longitude": 38.091
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mardin",
+      "iata": "MQM",
+      "icao": "LTCR",
+      "name": "Mardin Airport",
+      "latitude": 37.2233,
+      "longitude": 40.6317
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mersin",
+      "iata": "COV",
+      "icao": "",
+      "name": "Cukurova International Airport (formerly Covilha)",
+      "latitude": 36.8969,
+      "longitude": 35.0675
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mugla",
+      "iata": "BJV",
+      "icao": "LTFE",
+      "name": "Milas-Bodrum Airport",
+      "latitude": 37.2506,
+      "longitude": 27.6643
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mugla",
+      "iata": "BXN",
+      "icao": "LTBV",
+      "name": "Bodrum-Imsik Airport",
+      "latitude": 37.1401,
+      "longitude": 27.6697
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mugla",
+      "iata": "DLM",
+      "icao": "LTBS",
+      "name": "Dalaman Airport",
+      "latitude": 36.7131,
+      "longitude": 28.7925
+    },
+    {
+      "countryCode": "TR",
+      "region": "Mus",
+      "iata": "MSR",
+      "icao": "LTCK",
+      "name": "Mus Airport",
+      "latitude": 38.7478,
+      "longitude": 41.6612
+    },
+    {
+      "countryCode": "TR",
+      "region": "Nevsehir",
+      "iata": "NAV",
+      "icao": "LTAZ",
+      "name": "Nevsehir Kapadokya Air",
+      "latitude": 38.7719,
+      "longitude": 34.5345
+    },
+    {
+      "countryCode": "TR",
+      "region": "Ordu",
+      "iata": "OGU",
+      "icao": "LTCB",
+      "name": "Ordu-Giresun Airport",
+      "latitude": 40.966,
+      "longitude": 38.081
+    },
+    {
+      "countryCode": "TR",
+      "region": "Rize",
+      "iata": "RZV",
+      "icao": "LTFO",
+      "name": "Rize Artvin Airport",
+      "latitude": 41.1692,
+      "longitude": 40.8289
+    },
+    {
+      "countryCode": "TR",
+      "region": "Samsun",
+      "iata": "SZF",
+      "icao": "LTFH",
+      "name": "Samsun-Carsamba Airport",
+      "latitude": 41.2545,
+      "longitude": 36.5671
+    },
+    {
+      "countryCode": "TR",
+      "region": "Sanliurfa",
+      "iata": "GNY",
+      "icao": "LTCS",
+      "name": "Sanliurfa GAP Airport",
+      "latitude": 37.4457,
+      "longitude": 38.8956
+    },
+    {
+      "countryCode": "TR",
+      "region": "Sanliurfa",
+      "iata": "SFQ",
+      "icao": "LTCH",
+      "name": "Sanliurfa Airport",
+      "latitude": 37.0943,
+      "longitude": 38.8471
+    },
+    {
+      "countryCode": "TR",
+      "region": "Siirt",
+      "iata": "SXZ",
+      "icao": "LTCL",
+      "name": "Siirt Airport",
+      "latitude": 37.9789,
+      "longitude": 41.8404
+    },
+    {
+      "countryCode": "TR",
+      "region": "Sinop",
+      "iata": "NOP",
+      "icao": "LTCM",
+      "name": "Sinop Airport",
+      "latitude": 42.0158,
+      "longitude": 35.0664
+    },
+    {
+      "countryCode": "TR",
+      "region": "Sirnak",
+      "iata": "NKT",
+      "icao": "LTCV",
+      "name": "Sirnak Airport",
+      "latitude": 37.3647,
+      "longitude": 42.0582
+    },
+    {
+      "countryCode": "TR",
+      "region": "Sivas",
+      "iata": "VAS",
+      "icao": "LTAR",
+      "name": "Sivas Airport",
+      "latitude": 39.8138,
+      "longitude": 36.9035
+    },
+    {
+      "countryCode": "TR",
+      "region": "Tekirdag",
+      "iata": "TEQ",
+      "icao": "LTBU",
+      "name": "Tekirdag Corlu Airport",
+      "latitude": 41.1382,
+      "longitude": 27.9191
+    },
+    {
+      "countryCode": "TR",
+      "region": "Tokat",
+      "iata": "TJK",
+      "icao": "LTAW",
+      "name": "Tokat Airport",
+      "latitude": 40.3074,
+      "longitude": 36.3674
+    },
+    {
+      "countryCode": "TR",
+      "region": "Trabzon",
+      "iata": "TZX",
+      "icao": "LTCG",
+      "name": "Trabzon Airport",
+      "latitude": 40.9951,
+      "longitude": 39.7897
+    },
+    {
+      "countryCode": "TR",
+      "region": "Usak",
+      "iata": "USQ",
+      "icao": "LTBO",
+      "name": "Usak Airport",
+      "latitude": 38.6815,
+      "longitude": 29.4717
+    },
+    {
+      "countryCode": "TR",
+      "region": "Van",
+      "iata": "VAN",
+      "icao": "LTCI",
+      "name": "Van Ferit Melen Airport",
+      "latitude": 38.4682,
+      "longitude": 43.3323
+    },
+    {
+      "countryCode": "TR",
+      "region": "Zonguldak",
+      "iata": "ONQ",
+      "icao": "LTAS",
+      "name": "Zonguldak Airport",
+      "latitude": 41.5064,
+      "longitude": 32.0886
+    }
+  ]
 }

@@ -234,5 +234,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MK",
+      "region": "Ohrid",
+      "iata": "OHD",
+      "icao": "LWOH",
+      "name": "Ohrid St. Paul the Apostle Airport",
+      "latitude": 41.18,
+      "longitude": 20.7423
+    },
+    {
+      "countryCode": "MK",
+      "region": "Skopje",
+      "iata": "SKP",
+      "icao": "LWSK",
+      "name": "Skopje Alexander the Great Airport",
+      "latitude": 41.9616,
+      "longitude": 21.6214
+    }
+  ]
 }

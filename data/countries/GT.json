@@ -233,5 +233,187 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GT",
+      "region": "Alta Verapaz",
+      "iata": "CBV",
+      "icao": "MGCB",
+      "name": "Coban Airport",
+      "latitude": 15.469,
+      "longitude": -90.4067
+    },
+    {
+      "countryCode": "GT",
+      "region": "Alta Verapaz",
+      "iata": "RUV",
+      "icao": "MGRB",
+      "name": "Rubelsanto Airport",
+      "latitude": 15.992,
+      "longitude": -90.4453
+    },
+    {
+      "countryCode": "GT",
+      "region": "Chiquimula",
+      "iata": "CIQ",
+      "icao": "",
+      "name": "Chiquimula Airport",
+      "latitude": 14.8309,
+      "longitude": -89.5209
+    },
+    {
+      "countryCode": "GT",
+      "region": "Escuintla",
+      "iata": "ENJ",
+      "icao": "",
+      "name": "El Naranjo Airport",
+      "latitude": 14.1069,
+      "longitude": -90.8175
+    },
+    {
+      "countryCode": "GT",
+      "region": "Escuintla",
+      "iata": "GSJ",
+      "icao": "MGSJ",
+      "name": "San Jose Airport",
+      "latitude": 13.9362,
+      "longitude": -90.8358
+    },
+    {
+      "countryCode": "GT",
+      "region": "Guatemala",
+      "iata": "GUA",
+      "icao": "MGGT",
+      "name": "La Aurora International Airport",
+      "latitude": 14.5817,
+      "longitude": -90.5267
+    },
+    {
+      "countryCode": "GT",
+      "region": "Huehuetenango",
+      "iata": "HUG",
+      "icao": "MGHT",
+      "name": "Huehuetenango Airport",
+      "latitude": 15.3274,
+      "longitude": -91.4624
+    },
+    {
+      "countryCode": "GT",
+      "region": "Izabal",
+      "iata": "LCF",
+      "icao": "MGRD",
+      "name": "Rio Dulce Airport (Las Vegas Airport)",
+      "latitude": 15.6684,
+      "longitude": -88.9618
+    },
+    {
+      "countryCode": "GT",
+      "region": "Izabal",
+      "iata": "PBR",
+      "icao": "MGPB",
+      "name": "Puerto Barrios Airport",
+      "latitude": 15.7309,
+      "longitude": -88.5838
+    },
+    {
+      "countryCode": "GT",
+      "region": "Peten",
+      "iata": "CMM",
+      "icao": "MGCR",
+      "name": "Carmelita Airport",
+      "latitude": 17.4612,
+      "longitude": -90.0537
+    },
+    {
+      "countryCode": "GT",
+      "region": "Peten",
+      "iata": "DON",
+      "icao": "",
+      "name": "Dos Lagunas Airport",
+      "latitude": 17.6124,
+      "longitude": -89.6884
+    },
+    {
+      "countryCode": "GT",
+      "region": "Peten",
+      "iata": "FRS",
+      "icao": "MGTK",
+      "name": "Mundo Maya International Airport",
+      "latitude": 16.9138,
+      "longitude": -89.8664
+    },
+    {
+      "countryCode": "GT",
+      "region": "Peten",
+      "iata": "PON",
+      "icao": "MGPP",
+      "name": "Poptun Airport",
+      "latitude": 16.3258,
+      "longitude": -89.4161
+    },
+    {
+      "countryCode": "GT",
+      "region": "Peten",
+      "iata": "UAX",
+      "icao": "",
+      "name": "Uaxactun Airport",
+      "latitude": 17.3939,
+      "longitude": -89.6327
+    },
+    {
+      "countryCode": "GT",
+      "region": "Quetzaltenango",
+      "iata": "AAZ",
+      "icao": "MGQZ",
+      "name": "Quetzaltenango Airport",
+      "latitude": 14.8656,
+      "longitude": -91.502
+    },
+    {
+      "countryCode": "GT",
+      "region": "Quetzaltenango",
+      "iata": "CTF",
+      "icao": "MGCT",
+      "name": "Coatepeque Airport",
+      "latitude": 14.6942,
+      "longitude": -91.8825
+    },
+    {
+      "countryCode": "GT",
+      "region": "Quiche",
+      "iata": "AQB",
+      "icao": "MGQC",
+      "name": "Quiche Airport",
+      "latitude": 15.0122,
+      "longitude": -91.1506
+    },
+    {
+      "countryCode": "GT",
+      "region": "Quiche",
+      "iata": "PKJ",
+      "icao": "MGPG",
+      "name": "Playa Grande Airport",
+      "latitude": 15.9975,
+      "longitude": -90.7417
+    },
+    {
+      "countryCode": "GT",
+      "region": "Retalhuleu",
+      "iata": "RER",
+      "icao": "MGRT",
+      "name": "Retalhuleu Airport",
+      "latitude": 14.521,
+      "longitude": -91.6973
+    },
+    {
+      "countryCode": "GT",
+      "region": "Zacapa",
+      "iata": "LOX",
+      "icao": "",
+      "name": "Los Tablones Airport",
+      "latitude": 14.5833,
+      "longitude": -90.5275
+    }
+  ]
 }

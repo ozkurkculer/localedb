@@ -246,5 +246,268 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KZ",
+      "region": "Almaty oblysy",
+      "iata": "USJ",
+      "icao": "UAAL",
+      "name": "Usharal Airport",
+      "latitude": 46.1903,
+      "longitude": 80.8314
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Almaty",
+      "iata": "ALA",
+      "icao": "UAAA",
+      "name": "Almaty International Airport",
+      "latitude": 43.3521,
+      "longitude": 77.0405
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Almaty",
+      "iata": "BXJ",
+      "icao": "UAAR",
+      "name": "Boraldai Airport",
+      "latitude": 43.3526,
+      "longitude": 76.8837
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Almaty",
+      "iata": "TDK",
+      "icao": "",
+      "name": "Taldykorgan Airport",
+      "latitude": 45.1262,
+      "longitude": 78.447
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Aqmola oblysy",
+      "iata": "ATX",
+      "icao": "",
+      "name": "Atbasar Airport",
+      "latitude": 51.8517,
+      "longitude": 68.3633
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Aqmola oblysy",
+      "iata": "HRC",
+      "icao": "",
+      "name": "Zhayrem Airport",
+      "latitude": 48.3974,
+      "longitude": 70.1915
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Aqmola oblysy",
+      "iata": "KOV",
+      "icao": "UACK",
+      "name": "Kokshetau Airport",
+      "latitude": 53.3291,
+      "longitude": 69.5946
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Aqtobe oblysy",
+      "iata": "AKX",
+      "icao": "UATT",
+      "name": "Aktobe Airport",
+      "latitude": 50.2458,
+      "longitude": 57.2067
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Astana",
+      "iata": "NQZ",
+      "icao": "UACC",
+      "name": "Nursultan Nazarbayev International Airport",
+      "latitude": 51.0222,
+      "longitude": 71.4669
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Atyrau oblysy",
+      "iata": "GUW",
+      "icao": "UATG",
+      "name": "Atyrau Airport",
+      "latitude": 47.1219,
+      "longitude": 51.8214
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Batys Qazaqstan oblysy",
+      "iata": "URA",
+      "icao": "UARR",
+      "name": "Oral Ak Zhol Airport",
+      "latitude": 51.1508,
+      "longitude": 51.5431
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Bayqongyr",
+      "iata": "BXY",
+      "icao": "UAOL",
+      "name": "Krayniy Airport",
+      "latitude": 45.622,
+      "longitude": 63.2108
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Mangghystau oblysy",
+      "iata": "SCO",
+      "icao": "UATE",
+      "name": "Aktau Airport",
+      "latitude": 43.8601,
+      "longitude": 51.092
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Ongtustik Qazaqstan oblysy",
+      "iata": "CIT",
+      "icao": "UAII",
+      "name": "Shymkent International Airport",
+      "latitude": 42.3642,
+      "longitude": 69.4789
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Ongtustik Qazaqstan oblysy",
+      "iata": "HSA",
+      "icao": "UAIT",
+      "name": "Hazret-Sultan Turkistan International Airport",
+      "latitude": 43.3152,
+      "longitude": 68.5471
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Pavlodar oblysy",
+      "iata": "EKB",
+      "icao": "UASB",
+      "name": "Ekibastuz Airport",
+      "latitude": 51.591,
+      "longitude": 75.215
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Pavlodar oblysy",
+      "iata": "PWQ",
+      "icao": "UASP",
+      "name": "Pavlodar Airport",
+      "latitude": 52.195,
+      "longitude": 77.0739
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qaraghandy oblysy",
+      "iata": "BXH",
+      "icao": "UAAH",
+      "name": "Balkhash Airport",
+      "latitude": 46.8933,
+      "longitude": 75.005
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qaraghandy oblysy",
+      "iata": "DZN",
+      "icao": "UAKD",
+      "name": "Zhezkazgan Airport",
+      "latitude": 47.7083,
+      "longitude": 67.7333
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qaraghandy oblysy",
+      "iata": "KGF",
+      "icao": "UAKK",
+      "name": "Sary-Arka Airport",
+      "latitude": 49.6708,
+      "longitude": 73.3344
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qostanay oblysy",
+      "iata": "AYK",
+      "icao": "UAUR",
+      "name": "Arkalyk Airport",
+      "latitude": 50.3186,
+      "longitude": 66.9528
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qostanay oblysy",
+      "iata": "KSN",
+      "icao": "UAUU",
+      "name": "Kostanay Airport",
+      "latitude": 53.2069,
+      "longitude": 63.5503
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Qyzylorda oblysy",
+      "iata": "KZO",
+      "icao": "UAOO",
+      "name": "Kyzylorda Airport",
+      "latitude": 44.7069,
+      "longitude": 65.5925
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Shyghys Qazaqstan oblysy",
+      "iata": "PLX",
+      "icao": "UASS",
+      "name": "Semey Airport",
+      "latitude": 50.3513,
+      "longitude": 80.2344
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Shyghys Qazaqstan oblysy",
+      "iata": "SZI",
+      "icao": "",
+      "name": "Zaysan Airport",
+      "latitude": 47.4875,
+      "longitude": 84.8877
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Shyghys Qazaqstan oblysy",
+      "iata": "UKK",
+      "icao": "UASK",
+      "name": "Oskemen Airport (Ust-Kamenogorsk Airport)",
+      "latitude": 50.0366,
+      "longitude": 82.4942
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Shyghys Qazaqstan oblysy",
+      "iata": "UZR",
+      "icao": "",
+      "name": "Urzhar Airport",
+      "latitude": 47.0911,
+      "longitude": 81.6652
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Soltustik Qazaqstan oblysy",
+      "iata": "PPK",
+      "icao": "UACP",
+      "name": "Petropavl Airport",
+      "latitude": 54.7747,
+      "longitude": 69.1839
+    },
+    {
+      "countryCode": "KZ",
+      "region": "Zhambyl oblysy",
+      "iata": "DMB",
+      "icao": "UADD",
+      "name": "Taraz Airport (Jambyl Airport)",
+      "latitude": 42.8536,
+      "longitude": 71.3036
+    }
+  ]
 }

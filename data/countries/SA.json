@@ -237,5 +237,313 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SA",
+      "region": "Al Bahah",
+      "iata": "ABT",
+      "icao": "OEBA",
+      "name": "Al-Baha Domestic Airport",
+      "latitude": 20.2961,
+      "longitude": 41.6343
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Hudud ash Shamaliyah",
+      "iata": "RAE",
+      "icao": "OERR",
+      "name": "Arar Domestic Airport",
+      "latitude": 30.9066,
+      "longitude": 41.1382
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Hudud ash Shamaliyah",
+      "iata": "RAH",
+      "icao": "OERF",
+      "name": "Rafha Domestic Airport",
+      "latitude": 29.6264,
+      "longitude": 43.4906
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Hudud ash Shamaliyah",
+      "iata": "TUI",
+      "icao": "OETR",
+      "name": "Turaif Domestic Airport",
+      "latitude": 31.6922,
+      "longitude": 38.7315
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Jawf",
+      "iata": "AJF",
+      "icao": "OESK",
+      "name": "Al-Jawf Domestic Airport",
+      "latitude": 29.7851,
+      "longitude": 40.1
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Jawf",
+      "iata": "URY",
+      "icao": "OEGT",
+      "name": "Gurayat Domestic Airport",
+      "latitude": 31.4124,
+      "longitude": 37.2789
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Madinah al Munawwarah",
+      "iata": "MED",
+      "icao": "OEMA",
+      "name": "Prince Mohammad bin Abdulaziz Airport",
+      "latitude": 24.5534,
+      "longitude": 39.7051
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Madinah al Munawwarah",
+      "iata": "ULH",
+      "icao": "OEAO",
+      "name": "Prince Abdul Majeed bin Abdulaziz Domestic Airport",
+      "latitude": 26.48,
+      "longitude": 38.1289
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Madinah al Munawwarah",
+      "iata": "YNB",
+      "icao": "OEYN",
+      "name": "Yanbu Airport (Yenbo Airport)",
+      "latitude": 24.1442,
+      "longitude": 38.0634
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Qasim",
+      "iata": "ELQ",
+      "icao": "OEGS",
+      "name": "Prince Nayef bin Abdulaziz Regional Airport",
+      "latitude": 26.3028,
+      "longitude": 43.7744
+    },
+    {
+      "countryCode": "SA",
+      "region": "Al Qasim",
+      "iata": "ZUL",
+      "icao": "OEZL",
+      "name": "Zilfi Airport",
+      "latitude": 26.35,
+      "longitude": 44.833
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ar Riyad",
+      "iata": "AKH",
+      "icao": "OEPS",
+      "name": "Prince Sultan Air Base",
+      "latitude": 24.0627,
+      "longitude": 47.5805
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ar Riyad",
+      "iata": "DWD",
+      "icao": "OEDW",
+      "name": "Dawadmi Domestic Airport (King Salman bin Abdul Aziz Domestic Airport)",
+      "latitude": 24.4499,
+      "longitude": 44.1212
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ar Riyad",
+      "iata": "RUH",
+      "icao": "OERK",
+      "name": "King Khalid International Airport",
+      "latitude": 24.9576,
+      "longitude": 46.6988
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ar Riyad",
+      "iata": "SLF",
+      "icao": "OESL",
+      "name": "Sulayel Airport",
+      "latitude": 20.4647,
+      "longitude": 45.6196
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ar Riyad",
+      "iata": "WAE",
+      "icao": "OEWD",
+      "name": "Wadi al-Dawasir Domestic Airport",
+      "latitude": 20.5043,
+      "longitude": 45.1996
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ash Sharqiyah",
+      "iata": "AQI",
+      "icao": "OEPA",
+      "name": "Al Qaisumah/Hafr Al Batin Airport",
+      "latitude": 28.3352,
+      "longitude": 46.1251
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ash Sharqiyah",
+      "iata": "DHA",
+      "icao": "OEDR",
+      "name": "King Abdulaziz Air Base",
+      "latitude": 26.2654,
+      "longitude": 50.152
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ash Sharqiyah",
+      "iata": "DMM",
+      "icao": "OEDF",
+      "name": "King Fahd International Airport",
+      "latitude": 26.4712,
+      "longitude": 49.7979
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ash Sharqiyah",
+      "iata": "HOF",
+      "icao": "OEAH",
+      "name": "Al-Ahsa International Airport",
+      "latitude": 25.2853,
+      "longitude": 49.4852
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ash Sharqiyah",
+      "iata": "KMC",
+      "icao": "OEKK",
+      "name": "King Khaled Military City Airport",
+      "latitude": 27.9009,
+      "longitude": 45.5282
+    },
+    {
+      "countryCode": "SA",
+      "region": "Asir",
+      "iata": "AHB",
+      "icao": "OEAB",
+      "name": "Abha Regional Airport",
+      "latitude": 18.2404,
+      "longitude": 42.6566
+    },
+    {
+      "countryCode": "SA",
+      "region": "Asir",
+      "iata": "BHH",
+      "icao": "OEBH",
+      "name": "Bisha Domestic Airport",
+      "latitude": 19.9844,
+      "longitude": 42.6209
+    },
+    {
+      "countryCode": "SA",
+      "region": "Asir",
+      "iata": "KMX",
+      "icao": "OEKM",
+      "name": "King Khalid Air Base",
+      "latitude": 18.2973,
+      "longitude": 42.8035
+    },
+    {
+      "countryCode": "SA",
+      "region": "Ha'il",
+      "iata": "HAS",
+      "icao": "OEHL",
+      "name": "Ha'il Regional Airport",
+      "latitude": 27.4379,
+      "longitude": 41.6863
+    },
+    {
+      "countryCode": "SA",
+      "region": "Jazan",
+      "iata": "GIZ",
+      "icao": "OEGN",
+      "name": "Jizan Regional Airport (King Abdullah bin Abdulaziz Airport)",
+      "latitude": 16.9011,
+      "longitude": 42.5858
+    },
+    {
+      "countryCode": "SA",
+      "region": "Makkah al Mukarramah",
+      "iata": "JED",
+      "icao": "OEJN",
+      "name": "King Abdulaziz International Airport",
+      "latitude": 21.6796,
+      "longitude": 39.1565
+    },
+    {
+      "countryCode": "SA",
+      "region": "Makkah al Mukarramah",
+      "iata": "TIF",
+      "icao": "OETF",
+      "name": "Ta'if Regional Airport",
+      "latitude": 21.483,
+      "longitude": 40.5434
+    },
+    {
+      "countryCode": "SA",
+      "region": "Najran",
+      "iata": "EAM",
+      "icao": "OENG",
+      "name": "Najran Domestic Airport",
+      "latitude": 17.6114,
+      "longitude": 44.4192
+    },
+    {
+      "countryCode": "SA",
+      "region": "Najran",
+      "iata": "SHW",
+      "icao": "OESH",
+      "name": "Sharurah Domestic Airport",
+      "latitude": 17.4669,
+      "longitude": 47.1214
+    },
+    {
+      "countryCode": "SA",
+      "region": "Tabuk",
+      "iata": "EJH",
+      "icao": "OEWJ",
+      "name": "Al Wajh Domestic Airport",
+      "latitude": 26.1986,
+      "longitude": 36.4764
+    },
+    {
+      "countryCode": "SA",
+      "region": "Tabuk",
+      "iata": "NUM",
+      "icao": "OENN",
+      "name": "Neom Bay Airport",
+      "latitude": 27.9276,
+      "longitude": 35.2887
+    },
+    {
+      "countryCode": "SA",
+      "region": "Tabuk",
+      "iata": "RSI",
+      "icao": "",
+      "name": "Red Sea International Airport",
+      "latitude": 25.6253,
+      "longitude": 37.0836
+    },
+    {
+      "countryCode": "SA",
+      "region": "Tabuk",
+      "iata": "TUU",
+      "icao": "OETB",
+      "name": "Tabuk Regional Airport",
+      "latitude": 28.3654,
+      "longitude": 36.6189
+    }
+  ]
 }

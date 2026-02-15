@@ -232,5 +232,142 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NL",
+      "region": "Drenthe",
+      "iata": "GRQ",
+      "icao": "EHGG",
+      "name": "Groningen Airport Eelde",
+      "latitude": 53.1197,
+      "longitude": 6.57944
+    },
+    {
+      "countryCode": "NL",
+      "region": "Flevoland",
+      "iata": "LEY",
+      "icao": "EHLE",
+      "name": "Lelystad Airport",
+      "latitude": 52.4603,
+      "longitude": 5.52722
+    },
+    {
+      "countryCode": "NL",
+      "region": "Fryslan",
+      "iata": "LWR",
+      "icao": "EHLW",
+      "name": "Leeuwarden Air Base",
+      "latitude": 53.2286,
+      "longitude": 5.76056
+    },
+    {
+      "countryCode": "NL",
+      "region": "Limburg",
+      "iata": "MST",
+      "icao": "EHBK",
+      "name": "Maastricht Aachen Airport",
+      "latitude": 50.9117,
+      "longitude": 5.77014
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Brabant",
+      "iata": "EIN",
+      "icao": "EHEH",
+      "name": "Eindhoven Airport",
+      "latitude": 51.4501,
+      "longitude": 5.37453
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Brabant",
+      "iata": "GLZ",
+      "icao": "EHGR",
+      "name": "Gilze-Rijen Air Base",
+      "latitude": 51.5674,
+      "longitude": 4.93183
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Brabant",
+      "iata": "UDE",
+      "icao": "EHVK",
+      "name": "Volkel Air Base",
+      "latitude": 51.6564,
+      "longitude": 5.70861
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Brabant",
+      "iata": "WOE",
+      "icao": "EHWO",
+      "name": "Woensdrecht Air Base",
+      "latitude": 51.4491,
+      "longitude": 4.34203
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Holland",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "name": "Amsterdam Airport Schiphol",
+      "latitude": 52.3086,
+      "longitude": 4.76389
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Holland",
+      "iata": "DHR",
+      "icao": "EHKD",
+      "name": "De Kooy Airfield",
+      "latitude": 52.9234,
+      "longitude": 4.78062
+    },
+    {
+      "countryCode": "NL",
+      "region": "Noord-Brabant",
+      "iata": "",
+      "icao": "EHSE",
+      "name": "Breda International Airport",
+      "latitude": 51.5549,
+      "longitude": 4.5526
+    },
+    {
+      "countryCode": "NL",
+      "region": "Gelderland",
+      "iata": "",
+      "icao": "EHTE",
+      "name": "Teuge International Airport",
+      "latitude": 52.242,
+      "longitude": 6.0518
+    },
+    {
+      "countryCode": "NL",
+      "region": "Overijssel",
+      "iata": "ENS",
+      "icao": "EHTW",
+      "name": "Enschede Airport Twente",
+      "latitude": 52.2758,
+      "longitude": 6.88917
+    },
+    {
+      "countryCode": "NL",
+      "region": "Utrecht",
+      "iata": "UTC",
+      "icao": "EHSB",
+      "name": "Soesterberg Air Base",
+      "latitude": 52.1273,
+      "longitude": 5.27619
+    },
+    {
+      "countryCode": "NL",
+      "region": "Zuid-Holland",
+      "iata": "RTM",
+      "icao": "EHRD",
+      "name": "Rotterdam The Hague Airport",
+      "latitude": 51.9569,
+      "longitude": 4.43722
+    }
+  ]
 }

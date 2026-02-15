@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SJ",
+      "region": "Svalbard and Jan Mayen",
+      "iata": "LYR",
+      "icao": "ENSB",
+      "name": "Svalbard Airport",
+      "latitude": 78.2461,
+      "longitude": 15.4656
+    }
+  ]
 }

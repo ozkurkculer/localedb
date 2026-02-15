@@ -242,5 +242,2959 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BR",
+      "region": "Acre",
+      "iata": "CZS",
+      "icao": "SBCZ",
+      "name": "Cruzeiro do Sul International Airport",
+      "latitude": -7.59991,
+      "longitude": -72.7695
+    },
+    {
+      "countryCode": "BR",
+      "region": "Acre",
+      "iata": "FEJ",
+      "icao": "SNOU",
+      "name": "Feijo Airport",
+      "latitude": -8.14083,
+      "longitude": -70.3472
+    },
+    {
+      "countryCode": "BR",
+      "region": "Acre",
+      "iata": "RBR",
+      "icao": "SBRB",
+      "name": "Placido de Castro International Airport",
+      "latitude": -9.86889,
+      "longitude": -67.8981
+    },
+    {
+      "countryCode": "BR",
+      "region": "Acre",
+      "iata": "TRQ",
+      "icao": "SBTK",
+      "name": "Jose Galera dos Santos Airport",
+      "latitude": -8.15526,
+      "longitude": -70.7833
+    },
+    {
+      "countryCode": "BR",
+      "region": "Acre",
+      "iata": "ZMD",
+      "icao": "SWSN",
+      "name": "Sena Madureira Airport",
+      "latitude": -9.116,
+      "longitude": -68.6108
+    },
+    {
+      "countryCode": "BR",
+      "region": "Alagoas",
+      "iata": "APQ",
+      "icao": "SNAL",
+      "name": "Arapiraca Airport",
+      "latitude": -9.77536,
+      "longitude": -36.6292
+    },
+    {
+      "countryCode": "BR",
+      "region": "Alagoas",
+      "iata": "MCZ",
+      "icao": "SBMO",
+      "name": "Zumbi dos Palmares International Airport",
+      "latitude": -9.51081,
+      "longitude": -35.7917
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amapa",
+      "iata": "MCP",
+      "icao": "SBMQ",
+      "name": "Alberto Alcolumbre International Airport",
+      "latitude": 0.050664,
+      "longitude": -51.0722
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amapa",
+      "iata": "OYK",
+      "icao": "SBOI",
+      "name": "Oiapoque Airport",
+      "latitude": 3.85549,
+      "longitude": -51.7969
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "BAZ",
+      "icao": "SWBC",
+      "name": "Barcelos Airport",
+      "latitude": -0.981292,
+      "longitude": -62.9196
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "BCR",
+      "icao": "SWNK",
+      "name": "Novo Campo Airport",
+      "latitude": -8.83456,
+      "longitude": -67.3124
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "CAF",
+      "icao": "SWCA",
+      "name": "Carauari Airport",
+      "latitude": -4.87152,
+      "longitude": -66.8975
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "CIZ",
+      "icao": "SWKO",
+      "name": "Coari Airport",
+      "latitude": -4.13406,
+      "longitude": -63.1326
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "ERN",
+      "icao": "SWEI",
+      "name": "Eirunepe Airport (Amaury Feitosa Tomaz Airport)",
+      "latitude": -6.63953,
+      "longitude": -69.8798
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "FBA",
+      "icao": "SWOB",
+      "name": "Fonte Boa Airport",
+      "latitude": -2.53261,
+      "longitude": -66.0832
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "HUW",
+      "icao": "SWHT",
+      "name": "Francisco Correa da Cruz Airport",
+      "latitude": -7.53212,
+      "longitude": -63.0721
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "IPG",
+      "icao": "SWII",
+      "name": "Ipiranga Airport",
+      "latitude": -2.93907,
+      "longitude": -69.694
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "IRZ",
+      "icao": "SWTP",
+      "name": "Tapuruquara Airport",
+      "latitude": -0.3786,
+      "longitude": -64.9923
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "ITA",
+      "icao": "SBIC",
+      "name": "Itacoatiara Airport",
+      "latitude": -3.12726,
+      "longitude": -58.4812
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "LBR",
+      "icao": "SWLB",
+      "name": "Labrea Airport",
+      "latitude": -7.27897,
+      "longitude": -64.7695
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "MAO",
+      "icao": "SBEG",
+      "name": "Eduardo Gomes International Airport",
+      "latitude": -3.03861,
+      "longitude": -60.0497
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "MBZ",
+      "icao": "SWMW",
+      "name": "Maues Airport",
+      "latitude": -3.37217,
+      "longitude": -57.7248
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "MNX",
+      "icao": "SBMY",
+      "name": "Manicore Airport",
+      "latitude": -5.81138,
+      "longitude": -61.2783
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "NVP",
+      "icao": "SWNA",
+      "name": "Novo Aripuana Airport",
+      "latitude": -5.11803,
+      "longitude": -60.3649
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "OLC",
+      "icao": "SDCG",
+      "name": "Senadora Eunice Michiles Airport",
+      "latitude": -3.46793,
+      "longitude": -68.9204
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "PIN",
+      "icao": "SWPI",
+      "name": "Julio Belem",
+      "latitude": -2.67302,
+      "longitude": -56.7772
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "PLL",
+      "icao": "SBMN",
+      "name": "Manaus Air Force Base",
+      "latitude": -3.14604,
+      "longitude": -59.9863
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "RBB",
+      "icao": "SWBR",
+      "name": "Borba Airport",
+      "latitude": -4.40634,
+      "longitude": -59.6024
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "SJL",
+      "icao": "SBUA",
+      "name": "Sao Gabriel da Cachoeira Airport",
+      "latitude": -0.14835,
+      "longitude": -66.9855
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "TBT",
+      "icao": "SBTT",
+      "name": "Tabatinga International Airport",
+      "latitude": -4.25567,
+      "longitude": -69.9358
+    },
+    {
+      "countryCode": "BR",
+      "region": "Amazonas",
+      "iata": "TFF",
+      "icao": "SBTF",
+      "name": "Tefe Airport",
+      "latitude": -3.38294,
+      "longitude": -64.7241
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "BMS",
+      "icao": "SNBU",
+      "name": "Socrates Mariani Bittencourt Airport",
+      "latitude": -14.2554,
+      "longitude": -41.8175
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "BPS",
+      "icao": "SBPS",
+      "name": "Porto Seguro Airport",
+      "latitude": -16.4386,
+      "longitude": -39.0809
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "BQQ",
+      "icao": "SNBX",
+      "name": "Barra Airport (Brazil)",
+      "latitude": -11.0808,
+      "longitude": -43.1475
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "BRA",
+      "icao": "SNBR",
+      "name": "Barreiras Airport",
+      "latitude": -12.0789,
+      "longitude": -45.009
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "BVM",
+      "icao": "SNBL",
+      "name": "Belmonte Airport",
+      "latitude": -15.8717,
+      "longitude": -38.8719
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "CNV",
+      "icao": "SNED",
+      "name": "Canavieiras Airport",
+      "latitude": -15.667,
+      "longitude": -38.9547
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "CRQ",
+      "icao": "SBCV",
+      "name": "Caravelas Airport",
+      "latitude": -17.6523,
+      "longitude": -39.2531
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "FEC",
+      "icao": "SNJD",
+      "name": "Feira de Santana Airport (Gov. Joao Durval Carneiro Airport)",
+      "latitude": -12.2003,
+      "longitude": -38.9068
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "GNM",
+      "icao": "SNGI",
+      "name": "Guanambi Airport",
+      "latitude": -14.2082,
+      "longitude": -42.7461
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "IOS",
+      "icao": "SBIL",
+      "name": "Ilheus Jorge Amado Airport",
+      "latitude": -14.816,
+      "longitude": -39.0332
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "IPU",
+      "icao": "SNIU",
+      "name": "Ipiau Airport",
+      "latitude": -14.1339,
+      "longitude": -39.7339
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "IRE",
+      "icao": "SNIC",
+      "name": "Irece Airport",
+      "latitude": -11.3399,
+      "longitude": -41.847
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "ITE",
+      "icao": "SNZW",
+      "name": "Itubera Airport",
+      "latitude": -13.7322,
+      "longitude": -39.1417
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "ITN",
+      "icao": "SNHA",
+      "name": "Itabuna Airport",
+      "latitude": -14.8105,
+      "longitude": -39.2904
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "JCM",
+      "icao": "SNJB",
+      "name": "Jacobina Airport",
+      "latitude": -11.1632,
+      "longitude": -40.5531
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "JEQ",
+      "icao": "SNJK",
+      "name": "Jequie Airport",
+      "latitude": -13.8777,
+      "longitude": -40.0716
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "LAZ",
+      "icao": "SBLP",
+      "name": "Bom Jesus da Lapa Airport",
+      "latitude": -13.2621,
+      "longitude": -43.4081
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "LEC",
+      "icao": "SBLE",
+      "name": "Coronel Horacio de Mattos Airport",
+      "latitude": -12.4823,
+      "longitude": -41.277
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "MVS",
+      "icao": "SNMU",
+      "name": "Mucuri Airport",
+      "latitude": -18.0489,
+      "longitude": -39.8642
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "MXQ",
+      "icao": "",
+      "name": "Terceira Praia Cairu Airport",
+      "latitude": -13.3866,
+      "longitude": -38.9086
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "PAV",
+      "icao": "SBUF",
+      "name": "Paulo Afonso Airport",
+      "latitude": -9.40088,
+      "longitude": -38.2506
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "PDF",
+      "icao": "SNRD",
+      "name": "Prado Airport",
+      "latitude": -17.2967,
+      "longitude": -39.2712
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "SSA",
+      "icao": "SBSV",
+      "name": "Deputado Luis Eduardo Magalhaes International Airport",
+      "latitude": -12.9086,
+      "longitude": -38.3225
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "TXF",
+      "icao": "SNTF",
+      "name": "Teixeira de Freitas Airport (9 de maio Airport)",
+      "latitude": -17.5245,
+      "longitude": -39.6685
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "UNA",
+      "icao": "SBTC",
+      "name": "Una-Comandatuba Airport",
+      "latitude": -15.3552,
+      "longitude": -38.999
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "VAL",
+      "icao": "SNVB",
+      "name": "Valenca Airport",
+      "latitude": -13.2965,
+      "longitude": -38.9924
+    },
+    {
+      "countryCode": "BR",
+      "region": "Bahia",
+      "iata": "VDC",
+      "icao": "SBQV",
+      "name": "Pedro Otacilio Figueiredo Airport",
+      "latitude": -14.8628,
+      "longitude": -40.8631
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "ARX",
+      "icao": "SBAC",
+      "name": "Aracati Airport",
+      "latitude": -4.56861,
+      "longitude": -37.8047
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "CMC",
+      "icao": "SNWC",
+      "name": "Camocim Airport",
+      "latitude": -2.89618,
+      "longitude": -40.858
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "FOR",
+      "icao": "SBFZ",
+      "name": "Pinto Martins - Fortaleza International Airport",
+      "latitude": -3.77628,
+      "longitude": -38.5326
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "JCS",
+      "icao": "",
+      "name": "Crateus - Dr. Lucio Lima Airport",
+      "latitude": -5.2125,
+      "longitude": -40.7047
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "JDO",
+      "icao": "SBJU",
+      "name": "Juazeiro do Norte Airport",
+      "latitude": -7.21896,
+      "longitude": -39.2701
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "JJD",
+      "icao": "SBJE",
+      "name": "Comte. Ariston Pessoa Regional Airport",
+      "latitude": -2.90667,
+      "longitude": -40.3581
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "JSB",
+      "icao": "",
+      "name": "Sao Benedito - Walfrido Salmito de Almeida Airport",
+      "latitude": -4.0432,
+      "longitude": -40.8861
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "JSO",
+      "icao": "",
+      "name": "Sobral - Coronel Virgilio Tavora Airport",
+      "latitude": -3.6807,
+      "longitude": -40.3403
+    },
+    {
+      "countryCode": "BR",
+      "region": "Ceara",
+      "iata": "QIG",
+      "icao": "",
+      "name": "Iguatu Airport",
+      "latitude": -6.348,
+      "longitude": -39.2943
+    },
+    {
+      "countryCode": "BR",
+      "region": "Distrito Federal",
+      "iata": "BSB",
+      "icao": "SBBR",
+      "name": "Brasilia International Airport (Presidente J. Kubitschek Int'l Airport)",
+      "latitude": -15.8692,
+      "longitude": -47.9208
+    },
+    {
+      "countryCode": "BR",
+      "region": "Espirito Santo",
+      "iata": "CDI",
+      "icao": "SNKI",
+      "name": "Cachoeiro de Itapemirim Airport (Raimundo de Andrade Airport)",
+      "latitude": -20.8343,
+      "longitude": -41.1856
+    },
+    {
+      "countryCode": "BR",
+      "region": "Espirito Santo",
+      "iata": "GUZ",
+      "icao": "SNGA",
+      "name": "Guarapari Airport",
+      "latitude": -20.6465,
+      "longitude": -40.4919
+    },
+    {
+      "countryCode": "BR",
+      "region": "Espirito Santo",
+      "iata": "LHN",
+      "icao": "",
+      "name": "Linhares-Antonio Edson De Azevedo Lima Airport",
+      "latitude": -19.358,
+      "longitude": -40.0699
+    },
+    {
+      "countryCode": "BR",
+      "region": "Espirito Santo",
+      "iata": "SBJ",
+      "icao": "SNMX",
+      "name": "Sao Mateus Airport",
+      "latitude": -18.7213,
+      "longitude": -39.8337
+    },
+    {
+      "countryCode": "BR",
+      "region": "Espirito Santo",
+      "iata": "VIX",
+      "icao": "SBVT",
+      "name": "Eurico de Aguiar Salles Airport",
+      "latitude": -20.2581,
+      "longitude": -40.2864
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "APS",
+      "icao": "SWNS",
+      "name": "Anapolis Airport",
+      "latitude": -16.3623,
+      "longitude": -48.9271
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "ARS",
+      "icao": "SWEC",
+      "name": "Aragarcas Airport",
+      "latitude": -15.8994,
+      "longitude": -52.2411
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "CLV",
+      "icao": "SBCN",
+      "name": "Caldas Novas Airport",
+      "latitude": -17.7253,
+      "longitude": -48.6075
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "GYN",
+      "icao": "SBGO",
+      "name": "Santa Genoveva Airport",
+      "latitude": -16.632,
+      "longitude": -49.2207
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "ITR",
+      "icao": "SBIT",
+      "name": "Itumbiara Airport",
+      "latitude": -18.4447,
+      "longitude": -49.2134
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "JTI",
+      "icao": "SWJW",
+      "name": "Jatai Airport",
+      "latitude": -17.8299,
+      "longitude": -51.773
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "MQH",
+      "icao": "SBMC",
+      "name": "Minacu Airport",
+      "latitude": -13.5491,
+      "longitude": -48.1953
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "NQL",
+      "icao": "SWNQ",
+      "name": "Niquelandia Air",
+      "latitude": -14.4349,
+      "longitude": -48.4915
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "RVD",
+      "icao": "SWLC",
+      "name": "General Leite de Castro Airport",
+      "latitude": -17.8347,
+      "longitude": -50.9561
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "SQM",
+      "icao": "SWUA",
+      "name": "Sao Miguel do Araguaia Airport",
+      "latitude": -13.3313,
+      "longitude": -50.1976
+    },
+    {
+      "countryCode": "BR",
+      "region": "Goias",
+      "iata": "TLZ",
+      "icao": "SWKT",
+      "name": "Catalao Airport",
+      "latitude": -18.2168,
+      "longitude": -47.8997
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "APY",
+      "icao": "SNAI",
+      "name": "Alto Parnaiba Airport",
+      "latitude": -9.08361,
+      "longitude": -45.9506
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "BDC",
+      "icao": "SNBC",
+      "name": "Barra do Corda Airport",
+      "latitude": -5.5025,
+      "longitude": -45.2158
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "BRB",
+      "icao": "SBRR",
+      "name": "Barreirinhas Airport",
+      "latitude": -2.75663,
+      "longitude": -42.8057
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "BSS",
+      "icao": "SNBS",
+      "name": "Balsas Airport",
+      "latitude": -7.52603,
+      "longitude": -46.0533
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "CLN",
+      "icao": "SBCI",
+      "name": "Carolina Airport",
+      "latitude": -7.32044,
+      "longitude": -47.4587
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "CPU",
+      "icao": "",
+      "name": "Cururupu Airport",
+      "latitude": -1.82111,
+      "longitude": -44.8669
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "CTP",
+      "icao": "SNCP",
+      "name": "Carutapera Airport",
+      "latitude": -1.25028,
+      "longitude": -46.0172
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "GMS",
+      "icao": "SNGM",
+      "name": "Guimaraes Airport",
+      "latitude": -2.10944,
+      "longitude": -44.6511
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "IMP",
+      "icao": "SBIZ",
+      "name": "Imperatriz Airport (Prefeito Renato Moreira Airport)",
+      "latitude": -5.53129,
+      "longitude": -47.46
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "PDR",
+      "icao": "",
+      "name": "Presidente Dutra Airport",
+      "latitude": -5.3098,
+      "longitude": -44.481
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "PHI",
+      "icao": "SNYE",
+      "name": "Pinheiro Airport",
+      "latitude": -2.48361,
+      "longitude": -45.0672
+    },
+    {
+      "countryCode": "BR",
+      "region": "Maranhao",
+      "iata": "SLZ",
+      "icao": "SBSL",
+      "name": "Marechal Cunha Machado International Airport",
+      "latitude": -2.58536,
+      "longitude": -44.2341
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "BYO",
+      "icao": "SBDB",
+      "name": "Bonito Airport",
+      "latitude": -21.2473,
+      "longitude": -56.4525
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "CGR",
+      "icao": "SBCG",
+      "name": "Campo Grande International Airport",
+      "latitude": -20.4687,
+      "longitude": -54.6725
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "CMG",
+      "icao": "SBCR",
+      "name": "Corumba International Airport",
+      "latitude": -19.0119,
+      "longitude": -57.6714
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "CSS",
+      "icao": "SSCL",
+      "name": "Cassilandia Airport",
+      "latitude": -19.1464,
+      "longitude": -51.6853
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "DOU",
+      "icao": "SSDO",
+      "name": "Dourados Airport (Francisco de Matos Pereira Airport)",
+      "latitude": -22.2019,
+      "longitude": -54.9266
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "PBB",
+      "icao": "SSPN",
+      "name": "Paranaiba Airport",
+      "latitude": -19.6512,
+      "longitude": -51.1994
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "PMG",
+      "icao": "SBPP",
+      "name": "Ponta Pora International Airport",
+      "latitude": -22.5496,
+      "longitude": -55.7026
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso do Sul",
+      "iata": "TJL",
+      "icao": "SBTG",
+      "name": "Plinio Alarcom Airport",
+      "latitude": -20.7542,
+      "longitude": -51.6842
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "AFL",
+      "icao": "SBAT",
+      "name": "Alta Floresta Airport",
+      "latitude": -9.86639,
+      "longitude": -56.105
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "AIR",
+      "icao": "SSOU",
+      "name": "Aripuana Airport",
+      "latitude": -10.1883,
+      "longitude": -59.4573
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "AZL",
+      "icao": "SWTU",
+      "name": "Fazenda Tucunare Airport",
+      "latitude": -13.4655,
+      "longitude": -58.8669
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "BPG",
+      "icao": "SBBW",
+      "name": "Barra do Garcas Airport",
+      "latitude": -15.8613,
+      "longitude": -52.3889
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "CCX",
+      "icao": "SWKC",
+      "name": "Caceres Airport",
+      "latitude": -16.0436,
+      "longitude": -57.6299
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "CFO",
+      "icao": "",
+      "name": "Confresa Airport",
+      "latitude": -10.6344,
+      "longitude": -51.5636
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "CGB",
+      "icao": "SBCY",
+      "name": "Marechal Rondon International Airport",
+      "latitude": -15.6529,
+      "longitude": -56.1167
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "CQA",
+      "icao": "SWEK",
+      "name": "Canarana Airport",
+      "latitude": -13.5744,
+      "longitude": -52.2706
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "DMT",
+      "icao": "SWDM",
+      "name": "Diamantino Airport",
+      "latitude": -14.3769,
+      "longitude": -56.4004
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "GGB",
+      "icao": "SWHP",
+      "name": "Agua Boa Airport",
+      "latitude": -14.0194,
+      "longitude": -52.1522
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "JIA",
+      "icao": "SWJN",
+      "name": "Juina Airport",
+      "latitude": -11.4194,
+      "longitude": -58.7017
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "JRN",
+      "icao": "SWJU",
+      "name": "Juruena Airport",
+      "latitude": -10.3058,
+      "longitude": -58.4894
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "JUA",
+      "icao": "SIZX",
+      "name": "Mauro Luiz Frizon Airport",
+      "latitude": -11.2966,
+      "longitude": -57.5495
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "LCB",
+      "icao": "",
+      "name": "Pontes e Lacerda Airport",
+      "latitude": -15.1934,
+      "longitude": -59.3848
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "LVR",
+      "icao": "SILC",
+      "name": "Bom Futuro Municipal Airport",
+      "latitude": -13.0379,
+      "longitude": -55.9502
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "MBK",
+      "icao": "SWXM",
+      "name": "Orlando Villas-Boas Regional Airport",
+      "latitude": -10.1703,
+      "longitude": -54.9528
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "MTG",
+      "icao": "SWVB",
+      "name": "Mato Grosso Airport",
+      "latitude": -14.9942,
+      "longitude": -59.9458
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "NOK",
+      "icao": "SWXV",
+      "name": "Nova Xavantina Airport",
+      "latitude": -14.6983,
+      "longitude": -52.3464
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "OPS",
+      "icao": "SWSI",
+      "name": "Presidente Joao Figueiredo Airport",
+      "latitude": -11.885,
+      "longitude": -55.5861
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "OTT",
+      "icao": "",
+      "name": "Andre Maggi Airport",
+      "latitude": -9.89861,
+      "longitude": -58.5819
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "PBV",
+      "icao": "SWPG",
+      "name": "Aeroporto de Porto dos Gauchos Airport",
+      "latitude": -11.5404,
+      "longitude": -57.3782
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "PBX",
+      "icao": "SWPQ",
+      "name": "Fazenda Piraguassu Airport",
+      "latitude": -10.8611,
+      "longitude": -51.685
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "ROO",
+      "icao": "SWRD",
+      "name": "Maestro Marinho Franco Airport",
+      "latitude": -16.586,
+      "longitude": -54.7248
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "SMT",
+      "icao": "",
+      "name": "Adolino Bedin Sorriso Airport",
+      "latitude": -12.4795,
+      "longitude": -55.6763
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "STZ",
+      "icao": "SWST",
+      "name": "Santa Terezinha Airport",
+      "latitude": -10.4647,
+      "longitude": -50.5186
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "SWM",
+      "icao": "",
+      "name": "Suia-Missu Airport",
+      "latitude": -11.6717,
+      "longitude": -51.4347
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "SXO",
+      "icao": "SWFX",
+      "name": "Sao Felix do Araguaia",
+      "latitude": -11.6324,
+      "longitude": -50.6896
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "TGQ",
+      "icao": "SWTS",
+      "name": "Tangara da Serra Airport",
+      "latitude": -14.662,
+      "longitude": -57.4435
+    },
+    {
+      "countryCode": "BR",
+      "region": "Mato Grosso",
+      "iata": "VLP",
+      "icao": "SWVC",
+      "name": "Vila Rica Municipal Airport",
+      "latitude": -9.97944,
+      "longitude": -51.1422
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "AAX",
+      "icao": "SBAX",
+      "name": "Araxa Airport",
+      "latitude": -19.5632,
+      "longitude": -46.9604
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "AMJ",
+      "icao": "SNAR",
+      "name": "Almenara Airport",
+      "latitude": -16.1839,
+      "longitude": -40.6672
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "CNF",
+      "icao": "SBCF",
+      "name": "Tancredo Neves International Airport",
+      "latitude": -19.6336,
+      "longitude": -43.9686
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "DIQ",
+      "icao": "SNDV",
+      "name": "Divinopolis Airport (Brigadeiro Cabral Airport)",
+      "latitude": -20.1807,
+      "longitude": -44.8709
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "DTI",
+      "icao": "SNDT",
+      "name": "Diamantina Airport",
+      "latitude": -18.232,
+      "longitude": -43.6504
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "ESI",
+      "icao": "",
+      "name": "Espinosa Airport",
+      "latitude": -14.9337,
+      "longitude": -42.81
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "GVR",
+      "icao": "SBGV",
+      "name": "Coronel Altino Machado de Oliveira Airport",
+      "latitude": -18.8952,
+      "longitude": -41.9822
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "IAL",
+      "icao": "",
+      "name": "Salinas Airport",
+      "latitude": -16.2085,
+      "longitude": -42.3225
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "IPN",
+      "icao": "SBIP",
+      "name": "Vale do Aco Regional Airport",
+      "latitude": -19.4707,
+      "longitude": -42.4876
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "ITI",
+      "icao": "",
+      "name": "Itambacuri Airport",
+      "latitude": -8.7,
+      "longitude": -51.1742
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "IZA",
+      "icao": "SBZM",
+      "name": "Presidente Itamar Franco Airport (Zona da Mata Regional Airport)",
+      "latitude": -21.5131,
+      "longitude": -43.1731
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "JDF",
+      "icao": "SBJF",
+      "name": "Francisco Alvares de Assis Airport",
+      "latitude": -21.7915,
+      "longitude": -43.3868
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "JDR",
+      "icao": "SNJR",
+      "name": "Prefeito Octavio de Almeida Neves Airport",
+      "latitude": -21.085,
+      "longitude": -44.2247
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "JMA",
+      "icao": "",
+      "name": "Elias Breder Airport (Manhuacu Regional)",
+      "latitude": -20.2643,
+      "longitude": -42.1828
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "JNA",
+      "icao": "SNJN",
+      "name": "Januaria Airport",
+      "latitude": -15.4738,
+      "longitude": -44.3855
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "LEP",
+      "icao": "SNDN",
+      "name": "Leopoldina Airport",
+      "latitude": -21.4661,
+      "longitude": -42.727
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "MOC",
+      "icao": "SBMK",
+      "name": "Montes Claros/Mario Ribeiro Airport",
+      "latitude": -16.7069,
+      "longitude": -43.8189
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "NNU",
+      "icao": "SNNU",
+      "name": "Nanuque Airport",
+      "latitude": -17.8233,
+      "longitude": -40.3299
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "PIV",
+      "icao": "SNPX",
+      "name": "Pirapora Airport",
+      "latitude": -17.3169,
+      "longitude": -44.8603
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "POJ",
+      "icao": "SNPD",
+      "name": "Pedro Pereira dos Santos Airport",
+      "latitude": -18.6728,
+      "longitude": -46.4912
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "POO",
+      "icao": "SBPC",
+      "name": "Pocos de Caldas Airport",
+      "latitude": -21.843,
+      "longitude": -46.5679
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "PPY",
+      "icao": "SNZA",
+      "name": "Pouso Alegre Airport",
+      "latitude": -22.2892,
+      "longitude": -45.9191
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "PSW",
+      "icao": "SNOS",
+      "name": "Municipal José Figueiredo Airport",
+      "latitude": -20.7322,
+      "longitude": -46.6618
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "PYT",
+      "icao": "",
+      "name": "Paracatu Airport",
+      "latitude": -17.2416,
+      "longitude": -46.8859
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "SSO",
+      "icao": "SNLO",
+      "name": "Sao Lourenco Airport",
+      "latitude": -22.0909,
+      "longitude": -45.0445
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "TFL",
+      "icao": "SNTO",
+      "name": "Teofilo Otoni Airport (Juscelino Kubitscheck Airport)",
+      "latitude": -17.8923,
+      "longitude": -41.5136
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "UBA",
+      "icao": "SBUR",
+      "name": "Mario de Almeida Franco Airport",
+      "latitude": -19.7647,
+      "longitude": -47.9661
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "UDI",
+      "icao": "SBUL",
+      "name": "Ten. Cel. Av. Cesar Bombonato Airport",
+      "latitude": -18.8836,
+      "longitude": -48.2253
+    },
+    {
+      "countryCode": "BR",
+      "region": "Minas Gerais",
+      "iata": "VAG",
+      "icao": "SBVG",
+      "name": "Major Brigadeiro Trompowsky Airport",
+      "latitude": -21.5901,
+      "longitude": -45.4733
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "ALT",
+      "icao": "",
+      "name": "Alenquer Airport",
+      "latitude": -1.917,
+      "longitude": -54.7231
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "ATM",
+      "icao": "SBHT",
+      "name": "Altamira Airport",
+      "latitude": -3.25391,
+      "longitude": -52.254
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "BEL",
+      "icao": "SBBE",
+      "name": "Val de Cans International Airport",
+      "latitude": -1.37925,
+      "longitude": -48.4763
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "BVS",
+      "icao": "SNVS",
+      "name": "Breves Airport",
+      "latitude": -1.63653,
+      "longitude": -50.4436
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "CDJ",
+      "icao": "SBAA",
+      "name": "Conceicao do Araguaia Airport",
+      "latitude": -8.34835,
+      "longitude": -49.3015
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "CKS",
+      "icao": "SBCJ",
+      "name": "Carajas Airport",
+      "latitude": -6.11528,
+      "longitude": -50.0014
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "CMP",
+      "icao": "SNKE",
+      "name": "Santana do Araguaia Airport",
+      "latitude": -9.31997,
+      "longitude": -50.3285
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "CMT",
+      "icao": "",
+      "name": "Cameta Airport",
+      "latitude": -2.2468,
+      "longitude": -49.56
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "GGF",
+      "icao": "SNYA",
+      "name": "Almeirim Airport",
+      "latitude": -1.47917,
+      "longitude": -52.5781
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "ITB",
+      "icao": "SBIH",
+      "name": "Itaituba Airport",
+      "latitude": -4.24234,
+      "longitude": -56.0007
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "JCR",
+      "icao": "SBEK",
+      "name": "Jacareacanga Airport",
+      "latitude": -6.23316,
+      "longitude": -57.7769
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "JPE",
+      "icao": "",
+      "name": "Nagib Demachki Paragominas Municipal Airport",
+      "latitude": -3.0189,
+      "longitude": -47.321
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "MAB",
+      "icao": "SBMA",
+      "name": "Joao Correa da Rocha Airport",
+      "latitude": -5.36859,
+      "longitude": -49.138
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "MEU",
+      "icao": "SBMD",
+      "name": "Serra do Areao Airport",
+      "latitude": -0.889839,
+      "longitude": -52.6022
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "MTE",
+      "icao": "SNMA",
+      "name": "Monte Alegre Airport",
+      "latitude": -1.9958,
+      "longitude": -54.0742
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "NPR",
+      "icao": "SJNP",
+      "name": "Novo Progresso Airport",
+      "latitude": -7.12583,
+      "longitude": -55.4008
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "OBI",
+      "icao": "SNTI",
+      "name": "Obidos Airport",
+      "latitude": -1.86717,
+      "longitude": -55.5144
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "OIA",
+      "icao": "SDOW",
+      "name": "Ourilandia do Norte Airport",
+      "latitude": -6.7631,
+      "longitude": -51.0499
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "OPP",
+      "icao": "",
+      "name": "Salinopolis Airport",
+      "latitude": -0.6942,
+      "longitude": -47.3281
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "ORX",
+      "icao": "SNOX",
+      "name": "Oriximina Airport",
+      "latitude": -1.71408,
+      "longitude": -55.8362
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "PTQ",
+      "icao": "SNMZ",
+      "name": "Porto de Moz Airport",
+      "latitude": -1.74145,
+      "longitude": -52.2361
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "RDC",
+      "icao": "SNDC",
+      "name": "Redencao Airport",
+      "latitude": -8.03329,
+      "longitude": -49.9799
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "SFK",
+      "icao": "SNSW",
+      "name": "Soure Airport",
+      "latitude": -0.699431,
+      "longitude": -48.521
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "STM",
+      "icao": "SBSN",
+      "name": "Santarem-Maestro Wilson Fonseca Airport",
+      "latitude": -2.42472,
+      "longitude": -54.7858
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "SXX",
+      "icao": "SNFX",
+      "name": "Sao Felix do Xingu Airport",
+      "latitude": -6.6413,
+      "longitude": -51.9523
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "TMT",
+      "icao": "SBTB",
+      "name": "Porto Trombetas Airport",
+      "latitude": -1.4896,
+      "longitude": -56.3968
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "TUZ",
+      "icao": "",
+      "name": "Tucuma Airport",
+      "latitude": -6.7488,
+      "longitude": -51.1478
+    },
+    {
+      "countryCode": "BR",
+      "region": "Para",
+      "iata": "XIG",
+      "icao": "",
+      "name": "Xinguara Municipal Airport",
+      "latitude": -7.0906,
+      "longitude": -49.9765
+    },
+    {
+      "countryCode": "BR",
+      "region": "Paraiba",
+      "iata": "CJZ",
+      "icao": "",
+      "name": "Cajazeiras Pedro Vieira Moreira Regional Airport",
+      "latitude": -6.8813,
+      "longitude": -38.6182
+    },
+    {
+      "countryCode": "BR",
+      "region": "Paraiba",
+      "iata": "CPV",
+      "icao": "SBKG",
+      "name": "Campina Grande Airport (Presidente Joao Suassuna Airport)",
+      "latitude": -7.26992,
+      "longitude": -35.8964
+    },
+    {
+      "countryCode": "BR",
+      "region": "Paraiba",
+      "iata": "JPA",
+      "icao": "SBJP",
+      "name": "Presidente Castro Pinto International Airport",
+      "latitude": -7.14583,
+      "longitude": -34.9486
+    },
+    {
+      "countryCode": "BR",
+      "region": "Paraiba",
+      "iata": "JPO",
+      "icao": "",
+      "name": "Patos de Paraiba Brigadeiro Firmino Ayres Regional Airport",
+      "latitude": -7.0373,
+      "longitude": -37.2517
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "AAG",
+      "icao": "SSYA",
+      "name": "Avelino Vieira Airport",
+      "latitude": -24.1039,
+      "longitude": -49.7891
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "APU",
+      "icao": "SSAP",
+      "name": "Apucarana Airport",
+      "latitude": -23.6095,
+      "longitude": -51.3845
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "APX",
+      "icao": "SSOG",
+      "name": "Arapongas Airport",
+      "latitude": -23.3529,
+      "longitude": -51.4917
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "BFH",
+      "icao": "SBBI",
+      "name": "Bacacheri Airport",
+      "latitude": -25.4051,
+      "longitude": -49.232
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "CAC",
+      "icao": "SBCA",
+      "name": "Cascavel Airport (Adalberto Mendes da Silva Airport)",
+      "latitude": -25.0003,
+      "longitude": -53.5008
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "CBW",
+      "icao": "SSKM",
+      "name": "Campo Mourao Airport",
+      "latitude": -24.0092,
+      "longitude": -52.3568
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "CKO",
+      "icao": "SSCP",
+      "name": "Cornelio Procopio Airport",
+      "latitude": -23.1525,
+      "longitude": -50.6025
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "CWB",
+      "icao": "SBCT",
+      "name": "Afonso Pena International Airport",
+      "latitude": -25.5285,
+      "longitude": -49.1758
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "FBE",
+      "icao": "SSFB",
+      "name": "Francisco Beltrao Airport (Paulo Abdala Airport)",
+      "latitude": -26.0592,
+      "longitude": -53.0635
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "GGH",
+      "icao": "SSCT",
+      "name": "Gastao Mesquita Airport",
+      "latitude": -23.6914,
+      "longitude": -52.6422
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "GGJ",
+      "icao": "SSGY",
+      "name": "Guaira Airport",
+      "latitude": -24.0797,
+      "longitude": -54.1881
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "GPB",
+      "icao": "SBGU",
+      "name": "Tancredo Thomas de Faria Airport",
+      "latitude": -25.3875,
+      "longitude": -51.5202
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "IGU",
+      "icao": "SBFI",
+      "name": "Foz do Iguacu International Airport",
+      "latitude": -25.6003,
+      "longitude": -54.485
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "LDB",
+      "icao": "SBLO",
+      "name": "Londrina-Governador Jose Richa Airport",
+      "latitude": -23.3336,
+      "longitude": -51.1301
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "MGF",
+      "icao": "SBMG",
+      "name": "Silvio Name Junior Regional Airport",
+      "latitude": -23.4761,
+      "longitude": -52.0162
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "PGZ",
+      "icao": "SSZW",
+      "name": "Comte. Antonio Amilton Beraldo Airport",
+      "latitude": -25.1847,
+      "longitude": -50.1441
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "PNG",
+      "icao": "SSPG",
+      "name": "Santos Dumont Airport",
+      "latitude": -25.5401,
+      "longitude": -48.5312
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "PTO",
+      "icao": "SSPB",
+      "name": "Juvenal Loureiro Cardoso Airport",
+      "latitude": -26.2172,
+      "longitude": -52.6945
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "PVI",
+      "icao": "SSPI",
+      "name": "Edu Chaves Airport",
+      "latitude": -23.0899,
+      "longitude": -52.4885
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "TEC",
+      "icao": "SBTL",
+      "name": "Telemaco Borba Airport",
+      "latitude": -24.3178,
+      "longitude": -50.6516
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "TOW",
+      "icao": "SBTD",
+      "name": "Luiz dal Canalle Filho Airport",
+      "latitude": -24.6863,
+      "longitude": -53.6975
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "TUR",
+      "icao": "SBTU",
+      "name": "Tucurui Airport",
+      "latitude": -3.78601,
+      "longitude": -49.7203
+    },
+    {
+      "countryCode": "BR",
+      "region": "Parana",
+      "iata": "UMU",
+      "icao": "SSUM",
+      "name": "Orlando de Carvalho Airport",
+      "latitude": -23.7987,
+      "longitude": -53.3138
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "CAU",
+      "icao": "SNRU",
+      "name": "Caruaru Airport (Oscar Laranjeiras Airport)",
+      "latitude": -8.28239,
+      "longitude": -36.0135
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "FEN",
+      "icao": "SBFN",
+      "name": "Fernando de Noronha Airport (Gov. Carlos Wilson Airport)",
+      "latitude": -3.85493,
+      "longitude": -32.4233
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "JAW",
+      "icao": "",
+      "name": "Araripina Comandante Mairson Rodrigues Bezerra Airport",
+      "latitude": -7.5854,
+      "longitude": -40.5352
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "PNZ",
+      "icao": "SBPL",
+      "name": "Senador Nilo Coelho Airport",
+      "latitude": -9.36241,
+      "longitude": -40.5691
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "QGP",
+      "icao": "SNGN",
+      "name": "Garanhuns Airport",
+      "latitude": -8.8381,
+      "longitude": -36.4696
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "REC",
+      "icao": "SBRF",
+      "name": "Recife/Guararapes-Gilberto Freyre International Airport",
+      "latitude": -8.12649,
+      "longitude": -34.9236
+    },
+    {
+      "countryCode": "BR",
+      "region": "Pernambuco",
+      "iata": "SET",
+      "icao": "SNHS",
+      "name": "Serra Talhada Santa Magalhaes Regional Airport",
+      "latitude": -8.0619,
+      "longitude": -38.324
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "FLB",
+      "icao": "SNQG",
+      "name": "Cangapara Airport",
+      "latitude": -6.84639,
+      "longitude": -43.0773
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "GDP",
+      "icao": "SNGD",
+      "name": "Guadalupe Airport",
+      "latitude": -6.78222,
+      "longitude": -43.5822
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "NSR",
+      "icao": "",
+      "name": "Serra da Capivara International Airport",
+      "latitude": -9.0807,
+      "longitude": -42.6429
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "PCS",
+      "icao": "SNPC",
+      "name": "Picos Airport",
+      "latitude": -7.06206,
+      "longitude": -41.5237
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "PHB",
+      "icao": "SBPB",
+      "name": "Parnaiba-Prefeito Dr. Joao Silva Filho International Airport",
+      "latitude": -2.89375,
+      "longitude": -41.732
+    },
+    {
+      "countryCode": "BR",
+      "region": "Piaui",
+      "iata": "THE",
+      "icao": "SBTE",
+      "name": "Teresina-Senador Petronio Portel Airport",
+      "latitude": -5.05994,
+      "longitude": -42.8235
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Norte",
+      "iata": "MVF",
+      "icao": "SBMS",
+      "name": "Gov. Dix-Sept Rosado Airport",
+      "latitude": -5.20192,
+      "longitude": -37.3643
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Norte",
+      "iata": "NAT",
+      "icao": "SBNT",
+      "name": "Sao Goncalo do Amarante-Governador Aluizio Alves International Airport",
+      "latitude": -5.76806,
+      "longitude": -35.3761
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "ALQ",
+      "icao": "SSLT",
+      "name": "Alegrete Airport",
+      "latitude": -29.8127,
+      "longitude": -55.8934
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "BGV",
+      "icao": "",
+      "name": "Bento Goncalves Airport",
+      "latitude": -29.1483,
+      "longitude": -51.5364
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "BGX",
+      "icao": "SBBG",
+      "name": "Comandante Gustavo Kraemer Airport",
+      "latitude": -31.3905,
+      "longitude": -54.1122
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "CEL",
+      "icao": "SSCN",
+      "name": "Canela Airport",
+      "latitude": -29.3706,
+      "longitude": -50.8322
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "CSU",
+      "icao": "SSSC",
+      "name": "Santa Cruz do Sul Airport",
+      "latitude": -29.6841,
+      "longitude": -52.4122
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "CTQ",
+      "icao": "SSVP",
+      "name": "Santa Vitoria do Palmar Airport",
+      "latitude": -33.5022,
+      "longitude": -53.3442
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "CXJ",
+      "icao": "SBCX",
+      "name": "Caxias do Sul Airport (Hugo Cantergiani Regional Airport)",
+      "latitude": -29.1971,
+      "longitude": -51.1875
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "CZB",
+      "icao": "",
+      "name": "Carlos Ruhl Airport",
+      "latitude": -28.6578,
+      "longitude": -53.6106
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "ERM",
+      "icao": "SSER",
+      "name": "Erechim Airport",
+      "latitude": -27.6619,
+      "longitude": -52.2683
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "GEL",
+      "icao": "SBNM",
+      "name": "Sepe Tiaraju Airport",
+      "latitude": -28.2817,
+      "longitude": -54.1691
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "HRZ",
+      "icao": "SSHZ",
+      "name": "Horizontina Airport",
+      "latitude": -27.6383,
+      "longitude": -54.3391
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "IJU",
+      "icao": "SSIJ",
+      "name": "Joao Batista Bos Filho Airport",
+      "latitude": -28.3687,
+      "longitude": -53.8466
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "ITQ",
+      "icao": "SSIQ",
+      "name": "Itaqui Airport",
+      "latitude": -29.1731,
+      "longitude": -56.5367
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "LVB",
+      "icao": "SNLB",
+      "name": "Livramento do Brumado Airport",
+      "latitude": -13.6506,
+      "longitude": -41.8339
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "PET",
+      "icao": "SBPK",
+      "name": "Joao Simoes Lopes Neto International Airport",
+      "latitude": -31.7184,
+      "longitude": -52.3277
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "PFB",
+      "icao": "SBPF",
+      "name": "Lauro Kurtz Airport",
+      "latitude": -28.244,
+      "longitude": -52.3266
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "POA",
+      "icao": "SBPA",
+      "name": "Salgado Filho International Airport",
+      "latitude": -29.9944,
+      "longitude": -51.1714
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "QNS",
+      "icao": "",
+      "name": "Canoas Air Force Base",
+      "latitude": -29.9406,
+      "longitude": -51.1509
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "RIA",
+      "icao": "SBSM",
+      "name": "Santa Maria Airport (Rio Grande do Sul)",
+      "latitude": -29.7114,
+      "longitude": -53.6882
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "RIG",
+      "icao": "SBRG",
+      "name": "Rio Grande Regional Airport",
+      "latitude": -32.0817,
+      "longitude": -52.1633
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "SQY",
+      "icao": "SSRU",
+      "name": "Sao Lourenco do Sul Airport",
+      "latitude": -31.3833,
+      "longitude": -52.0328
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "SRA",
+      "icao": "SSZR",
+      "name": "Santa Rosa Airport (Brazil)",
+      "latitude": -27.9067,
+      "longitude": -54.5204
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "TSQ",
+      "icao": "SBTR",
+      "name": "Torres Airport",
+      "latitude": -29.4149,
+      "longitude": -49.81
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio Grande do Sul",
+      "iata": "URG",
+      "icao": "SBUG",
+      "name": "Rubem Berta International Airport",
+      "latitude": -29.7822,
+      "longitude": -57.0382
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "BZC",
+      "icao": "SBBZ",
+      "name": "Umberto Modiano Airport",
+      "latitude": -22.7709,
+      "longitude": -41.9631
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "CAW",
+      "icao": "SBCP",
+      "name": "Bartolomeu Lysandro Airport",
+      "latitude": -21.6983,
+      "longitude": -41.3017
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "CFB",
+      "icao": "SBCB",
+      "name": "Cabo Frio International Airport",
+      "latitude": -22.9217,
+      "longitude": -42.0743
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "GIG",
+      "icao": "SBGL",
+      "name": "Galeao-Antonio Carlos Jobim International Airport",
+      "latitude": -22.81,
+      "longitude": -43.2506
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "ITP",
+      "icao": "SDUN",
+      "name": "Itaperuna Airport",
+      "latitude": -21.2193,
+      "longitude": -41.8759
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "MEA",
+      "icao": "SBME",
+      "name": "Benedito Lacerda Airport",
+      "latitude": -22.343,
+      "longitude": -41.766
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "REZ",
+      "icao": "SDRS",
+      "name": "Resende Airport",
+      "latitude": -22.4785,
+      "longitude": -44.4803
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "RRJ",
+      "icao": "SBJR",
+      "name": "Jacarepagua Airport",
+      "latitude": -22.9878,
+      "longitude": -43.3702
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rio de Janeiro",
+      "iata": "SDU",
+      "icao": "SBRJ",
+      "name": "Rio de Janeiro Santos Dumont Airport",
+      "latitude": -22.9103,
+      "longitude": -43.1655
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "AQM",
+      "icao": "",
+      "name": "Ariquemes Airport",
+      "latitude": -10.1781,
+      "longitude": -62.8256
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "BVH",
+      "icao": "SBVH",
+      "name": "Vilhena Airport (Brigadeiro Camarao Airport)",
+      "latitude": -12.6944,
+      "longitude": -60.0983
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "CQS",
+      "icao": "SWCQ",
+      "name": "Costa Marques Airport",
+      "latitude": -12.4211,
+      "longitude": -64.2516
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "GJM",
+      "icao": "SBGM",
+      "name": "Guajara-Mirim Airport",
+      "latitude": -10.7864,
+      "longitude": -65.2848
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "JPR",
+      "icao": "SWJI",
+      "name": "Jose Coleto Airport",
+      "latitude": -10.8708,
+      "longitude": -61.8465
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "OAL",
+      "icao": "SSKW",
+      "name": "Capital do Cafe Airport",
+      "latitude": -11.496,
+      "longitude": -61.4508
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "PBQ",
+      "icao": "SWPM",
+      "name": "Pimenta Bueno Airport",
+      "latitude": -11.6416,
+      "longitude": -61.1791
+    },
+    {
+      "countryCode": "BR",
+      "region": "Rondonia",
+      "iata": "PVH",
+      "icao": "SBPV",
+      "name": "Governador Jorge Teixeira de Oliveira International Airport",
+      "latitude": -8.70929,
+      "longitude": -63.9023
+    },
+    {
+      "countryCode": "BR",
+      "region": "Roraima",
+      "iata": "BVB",
+      "icao": "SBBV",
+      "name": "Boa Vista International Airport",
+      "latitude": 2.84139,
+      "longitude": -60.6922
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "AXE",
+      "icao": "",
+      "name": "Xanxerê - João Winckler Airport",
+      "latitude": -26.8756,
+      "longitude": -52.3731
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "BNU",
+      "icao": "SSBL",
+      "name": "Blumenau Airport",
+      "latitude": -26.8306,
+      "longitude": -49.0903
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "CCI",
+      "icao": "SSCK",
+      "name": "Concordia Airport",
+      "latitude": -27.1806,
+      "longitude": -52.0527
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "CCM",
+      "icao": "SBCM",
+      "name": "Diomicio Freitas Airport",
+      "latitude": -28.7244,
+      "longitude": -49.4214
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "CFC",
+      "icao": "SBCD",
+      "name": "Cacador Airport",
+      "latitude": -26.7884,
+      "longitude": -50.9398
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "EEA",
+      "icao": "SNCP",
+      "name": "Planalto Serrano Correia Regional Airport",
+      "latitude": -27.6286,
+      "longitude": -50.3508
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "FLN",
+      "icao": "SBFL",
+      "name": "Hercilio Luz International Airport",
+      "latitude": -27.6703,
+      "longitude": -48.5525
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "JCB",
+      "icao": "SSJA",
+      "name": "Santa Terezinha Municipal Airport",
+      "latitude": -27.1714,
+      "longitude": -51.5533
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "JJG",
+      "icao": "SBJA",
+      "name": "Humberto Ghizzo Bortoluzzi Regional Airport",
+      "latitude": -28.6753,
+      "longitude": -49.0596
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "JOI",
+      "icao": "SBJV",
+      "name": "Joinville-Lauro Carneiro de Loyola Airport",
+      "latitude": -26.2245,
+      "longitude": -48.7974
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "LAJ",
+      "icao": "SBLJ",
+      "name": "Antonio Correia Pinto de Macedo Airport",
+      "latitude": -27.7821,
+      "longitude": -50.2815
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "LOI",
+      "icao": "SSLN",
+      "name": "Helmuth Baungartem Airport",
+      "latitude": -27.16,
+      "longitude": -49.5425
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "NVT",
+      "icao": "SBNF",
+      "name": "Navegantes-Ministro Victor Konder International Airport",
+      "latitude": -26.88,
+      "longitude": -48.6514
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "SQX",
+      "icao": "SSOE",
+      "name": "Helio Wasum Airport",
+      "latitude": -26.7816,
+      "longitude": -53.5035
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "UVI",
+      "icao": "SSUV",
+      "name": "Uniao da Vitoria Airport",
+      "latitude": -26.2317,
+      "longitude": -51.0689
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "VIA",
+      "icao": "SSVI",
+      "name": "Angelo Ponzoni Municipal Airport",
+      "latitude": -26.9997,
+      "longitude": -51.1419
+    },
+    {
+      "countryCode": "BR",
+      "region": "Santa Catarina",
+      "iata": "XAP",
+      "icao": "SBCH",
+      "name": "Serafin Enoss Bertaso Airport",
+      "latitude": -27.1342,
+      "longitude": -52.6566
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "AIF",
+      "icao": "SBAS",
+      "name": "Assis Airport",
+      "latitude": -22.64,
+      "longitude": -50.4531
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "AQA",
+      "icao": "SBAQ",
+      "name": "Araraquara Airport",
+      "latitude": -21.812,
+      "longitude": -48.133
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "ARU",
+      "icao": "SBAU",
+      "name": "Aracatuba Airport",
+      "latitude": -21.1413,
+      "longitude": -50.4247
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "BAT",
+      "icao": "SBBT",
+      "name": "Chafei Amsei Airport",
+      "latitude": -20.5845,
+      "longitude": -48.5941
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "BAU",
+      "icao": "SBBU",
+      "name": "Bauru Airport",
+      "latitude": -22.3436,
+      "longitude": -49.0539
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "BJP",
+      "icao": "SBBP",
+      "name": "Arthur Siqueira-Braganca Paulista State Airport",
+      "latitude": -22.9792,
+      "longitude": -46.5375
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "CGH",
+      "icao": "SBSP",
+      "name": "Sao Paulo Congonhas Airport",
+      "latitude": -23.6282,
+      "longitude": -46.6572
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "CPQ",
+      "icao": "SDAM",
+      "name": "Campo dos Amarais Airport",
+      "latitude": -22.8592,
+      "longitude": -47.1081
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "FRC",
+      "icao": "SIMK",
+      "name": "Franca Airport (Ten. Lund Presotto-Franca State Airport)",
+      "latitude": -20.5922,
+      "longitude": -47.3829
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "GUJ",
+      "icao": "SBGW",
+      "name": "Guaratingueta Airport",
+      "latitude": -22.7916,
+      "longitude": -45.2048
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "GRU",
+      "icao": "SBGR",
+      "name": "Guarulhos International Airport",
+      "latitude": -23.4322,
+      "longitude": -46.4692
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "JLS",
+      "icao": "SDJL",
+      "name": "Jales Airport",
+      "latitude": -20.293,
+      "longitude": -50.5464
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "JTC",
+      "icao": "SBAE",
+      "name": "Moussa Nakhl Tobias-Bauru/Arealva State Airport",
+      "latitude": -22.1669,
+      "longitude": -49.0503
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "LIP",
+      "icao": "SBLN",
+      "name": "Lins Airport",
+      "latitude": -21.664,
+      "longitude": -49.7305
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "MII",
+      "icao": "SBML",
+      "name": "Frank Miloye Milenkowichi-Marilia State Airport",
+      "latitude": -22.1969,
+      "longitude": -49.9264
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "OUS",
+      "icao": "SDOU",
+      "name": "Jornalista Benedito Pimentel-Ourinhos State Airport",
+      "latitude": -22.9665,
+      "longitude": -49.9133
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "PPB",
+      "icao": "SBDN",
+      "name": "Presidente Prudente Airport",
+      "latitude": -22.1751,
+      "longitude": -51.4246
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "QSC",
+      "icao": "SDSC",
+      "name": "Mario Pereira Lopes Airport",
+      "latitude": -21.8754,
+      "longitude": -47.9037
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "RAO",
+      "icao": "SBRP",
+      "name": "Leite Lopes Airport",
+      "latitude": -21.1364,
+      "longitude": -47.7767
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "SFV",
+      "icao": "",
+      "name": "Santa Fe do Sul Airport",
+      "latitude": -20.183,
+      "longitude": -50.917
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "SJK",
+      "icao": "SBSJ",
+      "name": "Professor Urbano Ernesto Stumpf International Airport",
+      "latitude": -23.2292,
+      "longitude": -45.8615
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "SJP",
+      "icao": "SBSR",
+      "name": "Prof. Eribelto Manoel Reino State Airport",
+      "latitude": -20.8166,
+      "longitude": -49.4065
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "SOD",
+      "icao": "SDCO",
+      "name": "Sorocaba Airport",
+      "latitude": -23.478,
+      "longitude": -47.49
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "SSZ",
+      "icao": "SBST",
+      "name": "Santos Air Force Base",
+      "latitude": -23.9281,
+      "longitude": -46.2997
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "UBT",
+      "icao": "SDUB",
+      "name": "Ubatuba Airport",
+      "latitude": -23.4411,
+      "longitude": -45.0756
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "URB",
+      "icao": "SBUP",
+      "name": "Castilho Airport (Urubupunga Airport)",
+      "latitude": -20.7771,
+      "longitude": -51.5648
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "VCP",
+      "icao": "SBKP",
+      "name": "Viracopos-Campinas International Airport",
+      "latitude": -23.0081,
+      "longitude": -47.1344
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sao Paulo",
+      "iata": "VOT",
+      "icao": "SDVG",
+      "name": "Votuporanga Airport (Domingos Pignatari Airport)",
+      "latitude": -20.4632,
+      "longitude": -50.0045
+    },
+    {
+      "countryCode": "BR",
+      "region": "Sergipe",
+      "iata": "AJU",
+      "icao": "SBAR",
+      "name": "Santa Maria Airport (Sergipe)",
+      "latitude": -10.984,
+      "longitude": -37.0703
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "AAI",
+      "icao": "SWRA",
+      "name": "Arraias Airport",
+      "latitude": -13.0252,
+      "longitude": -46.8841
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "AUX",
+      "icao": "SWGN",
+      "name": "Araguaina Airport",
+      "latitude": -7.22787,
+      "longitude": -48.2405
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "DNO",
+      "icao": "SWDN",
+      "name": "Dianopolis Airport",
+      "latitude": -11.5954,
+      "longitude": -46.8467
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "GRP",
+      "icao": "SWGI",
+      "name": "Gurupi Airport",
+      "latitude": -11.7396,
+      "longitude": -49.1322
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "IDO",
+      "icao": "SWIY",
+      "name": "Santa Isabel do Morro Airport",
+      "latitude": -11.5723,
+      "longitude": -50.6662
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "NTM",
+      "icao": "",
+      "name": "Miracema do Tocantins Airport",
+      "latitude": -9.5669,
+      "longitude": -48.3919
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "PMW",
+      "icao": "SBPJ",
+      "name": "Palmas-Brigadeiro Lysias Rodrigues Airport",
+      "latitude": -10.2915,
+      "longitude": -48.357
+    },
+    {
+      "countryCode": "BR",
+      "region": "Tocantins",
+      "iata": "PNB",
+      "icao": "SBPN",
+      "name": "Porto Nacional Airport",
+      "latitude": -10.7194,
+      "longitude": -48.3997
+    }
+  ]
 }

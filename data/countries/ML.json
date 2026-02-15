@@ -236,5 +236,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ML",
+      "region": "Bamako",
+      "iata": "BKO",
+      "icao": "GABS",
+      "name": "Bamako-Senou International Airport",
+      "latitude": 12.5335,
+      "longitude": -7.94994
+    },
+    {
+      "countryCode": "ML",
+      "region": "Gao",
+      "iata": "GAQ",
+      "icao": "GAGO",
+      "name": "Gao International Airport (Korogoussou Airport)",
+      "latitude": 16.2484,
+      "longitude": -0.005456
+    },
+    {
+      "countryCode": "ML",
+      "region": "Kayes",
+      "iata": "EYL",
+      "icao": "GAYE",
+      "name": "Yelimane Airport",
+      "latitude": 15.133,
+      "longitude": -10.567
+    },
+    {
+      "countryCode": "ML",
+      "region": "Kayes",
+      "iata": "KNZ",
+      "icao": "GAKA",
+      "name": "Kenieba Airport",
+      "latitude": 12.833,
+      "longitude": -11.25
+    },
+    {
+      "countryCode": "ML",
+      "region": "Kayes",
+      "iata": "KYS",
+      "icao": "GAKY",
+      "name": "Kayes Airport (Dag-Dag Airport)",
+      "latitude": 14.4812,
+      "longitude": -11.4044
+    },
+    {
+      "countryCode": "ML",
+      "region": "Kayes",
+      "iata": "NIX",
+      "icao": "GANR",
+      "name": "Nioro Airport",
+      "latitude": 15.2381,
+      "longitude": -9.57611
+    },
+    {
+      "countryCode": "ML",
+      "region": "Koulikoro",
+      "iata": "NRM",
+      "icao": "GANK",
+      "name": "Keibane Airport",
+      "latitude": 15.217,
+      "longitude": -7.267
+    },
+    {
+      "countryCode": "ML",
+      "region": "Mopti",
+      "iata": "MZI",
+      "icao": "GAMB",
+      "name": "Mopti Airport (Ambodedjo Airport)",
+      "latitude": 14.5128,
+      "longitude": -4.07956
+    },
+    {
+      "countryCode": "ML",
+      "region": "Segou",
+      "iata": "SZU",
+      "icao": "",
+      "name": "Segou Airport",
+      "latitude": 13.4,
+      "longitude": -6.15
+    },
+    {
+      "countryCode": "ML",
+      "region": "Sikasso",
+      "iata": "KSS",
+      "icao": "GASK",
+      "name": "Sikasso Airport",
+      "latitude": 11.333,
+      "longitude": -5.7
+    },
+    {
+      "countryCode": "ML",
+      "region": "Sikasso",
+      "iata": "KTX",
+      "icao": "GAKO",
+      "name": "Koutiala Airport",
+      "latitude": 12.383,
+      "longitude": -5.467
+    },
+    {
+      "countryCode": "ML",
+      "region": "Tombouctou",
+      "iata": "GUD",
+      "icao": "GAGM",
+      "name": "Goundam Airport",
+      "latitude": 16.3614,
+      "longitude": -3.59972
+    },
+    {
+      "countryCode": "ML",
+      "region": "Tombouctou",
+      "iata": "TOM",
+      "icao": "GATB",
+      "name": "Timbuktu Airport",
+      "latitude": 16.7305,
+      "longitude": -3.00758
+    }
+  ]
 }

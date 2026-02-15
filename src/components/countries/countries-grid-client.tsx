@@ -150,7 +150,7 @@ function CountryCard({ country }: CountryCardProps) {
       <div className="mb-3 text-4xl">{country.flagEmoji}</div>
 
       {/* Country Name */}
-      <h3 className="mb-2 line-clamp-1 text-lg font-semibold transition-colors group-hover:text-primary">
+      <h3 className="mb-2 line-clamp-1 text-lg font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-indigo-500 transition-all">
         {country.name}
       </h3>
 

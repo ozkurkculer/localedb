@@ -238,5 +238,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AW",
+      "region": "Aruba",
+      "iata": "AUA",
+      "icao": "TNCA",
+      "name": "Queen Beatrix International Airport",
+      "latitude": 12.5014,
+      "longitude": -70.0152
+    }
+  ]
 }

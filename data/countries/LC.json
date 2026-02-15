@@ -228,5 +228,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LC",
+      "region": "Castries",
+      "iata": "SFG",
+      "icao": "TFFG",
+      "name": "L'Esperance Airport (Grand Case Airport)",
+      "latitude": 18.0999,
+      "longitude": -63.0472
+    },
+    {
+      "countryCode": "LC",
+      "region": "Castries",
+      "iata": "SLU",
+      "icao": "TLPC",
+      "name": "George F. L. Charles Airport",
+      "latitude": 14.0202,
+      "longitude": -60.9929
+    },
+    {
+      "countryCode": "LC",
+      "region": "Laborie",
+      "iata": "UVF",
+      "icao": "TLPL",
+      "name": "Hewanorra International Airport",
+      "latitude": 13.7332,
+      "longitude": -60.9526
+    }
+  ]
 }

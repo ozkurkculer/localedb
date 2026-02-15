@@ -235,5 +235,178 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LY",
+      "region": "Al Butnan",
+      "iata": "TOB",
+      "icao": "HLGN",
+      "name": "Tobruk Airport",
+      "latitude": 31.861,
+      "longitude": 23.907
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Jabal al Akhdar",
+      "iata": "LAQ",
+      "icao": "HLLQ",
+      "name": "Al Abraq International Airport",
+      "latitude": 32.7887,
+      "longitude": 21.9643
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Jabal al Gharbi",
+      "iata": "ZIS",
+      "icao": "HLZN",
+      "name": "Zintan Airport",
+      "latitude": 31.7749,
+      "longitude": 12.2501
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Jufrah",
+      "iata": "HUQ",
+      "icao": "HLON",
+      "name": "Hun Airport",
+      "latitude": 29.1101,
+      "longitude": 15.9656
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Kufrah",
+      "iata": "AKF",
+      "icao": "HLKF",
+      "name": "Kufra Airport",
+      "latitude": 24.1787,
+      "longitude": 23.314
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Wahat",
+      "iata": "LMQ",
+      "icao": "HLMB",
+      "name": "Marsa Brega Airport",
+      "latitude": 30.3781,
+      "longitude": 19.5764
+    },
+    {
+      "countryCode": "LY",
+      "region": "Al Wahat",
+      "iata": "NFR",
+      "icao": "HLNR",
+      "name": "Nafoora Airport",
+      "latitude": 29.2132,
+      "longitude": 21.5924
+    },
+    {
+      "countryCode": "LY",
+      "region": "Banghazi",
+      "iata": "BEN",
+      "icao": "HLLB",
+      "name": "Benina International Airport",
+      "latitude": 32.0968,
+      "longitude": 20.2695
+    },
+    {
+      "countryCode": "LY",
+      "region": "Darnah",
+      "iata": "DNF",
+      "icao": "",
+      "name": "Martuba Air Base",
+      "latitude": 32.542,
+      "longitude": 22.745
+    },
+    {
+      "countryCode": "LY",
+      "region": "Ghat",
+      "iata": "GHT",
+      "icao": "HLGT",
+      "name": "Ghat Airport",
+      "latitude": 25.1456,
+      "longitude": 10.1426
+    },
+    {
+      "countryCode": "LY",
+      "region": "Misratah",
+      "iata": "MRA",
+      "icao": "HLMS",
+      "name": "Misrata Airport",
+      "latitude": 32.325,
+      "longitude": 15.061
+    },
+    {
+      "countryCode": "LY",
+      "region": "Nalut",
+      "iata": "LTD",
+      "icao": "HLTD",
+      "name": "Ghadames Airport",
+      "latitude": 30.1517,
+      "longitude": 9.71531
+    },
+    {
+      "countryCode": "LY",
+      "region": "Sabha",
+      "iata": "BCQ",
+      "icao": "",
+      "name": "Brak Airport",
+      "latitude": 27.653,
+      "longitude": 14.272
+    },
+    {
+      "countryCode": "LY",
+      "region": "Sabha",
+      "iata": "SEB",
+      "icao": "HLLS",
+      "name": "Sabha Airport",
+      "latitude": 26.987,
+      "longitude": 14.4725
+    },
+    {
+      "countryCode": "LY",
+      "region": "Surt",
+      "iata": "SRX",
+      "icao": "HLGD",
+      "name": "Gardabya Airport",
+      "latitude": 31.0635,
+      "longitude": 16.595
+    },
+    {
+      "countryCode": "LY",
+      "region": "Tarabulus",
+      "iata": "MJI",
+      "icao": "HLLM",
+      "name": "Mitiga International Airport",
+      "latitude": 32.8941,
+      "longitude": 13.276
+    },
+    {
+      "countryCode": "LY",
+      "region": "Tarabulus",
+      "iata": "TIP",
+      "icao": "HLLT",
+      "name": "Tripoli International Airport",
+      "latitude": 32.6635,
+      "longitude": 13.159
+    },
+    {
+      "countryCode": "LY",
+      "region": "Tarabulus",
+      "iata": "WAX",
+      "icao": "HLZW",
+      "name": "Zuwarah Airport",
+      "latitude": 32.9523,
+      "longitude": 12.0155
+    },
+    {
+      "countryCode": "LY",
+      "region": "Wadi al Hayat",
+      "iata": "QUB",
+      "icao": "HLUB",
+      "name": "Ubari Airport",
+      "latitude": 26.5675,
+      "longitude": 12.8231
+    }
+  ]
 }

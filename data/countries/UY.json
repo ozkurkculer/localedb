@@ -231,5 +231,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "UY",
+      "region": "Artigas",
+      "iata": "ATI",
+      "icao": "SUAG",
+      "name": "Artigas International Airport",
+      "latitude": -30.4007,
+      "longitude": -56.5079
+    },
+    {
+      "countryCode": "UY",
+      "region": "Artigas",
+      "iata": "BUV",
+      "icao": "SUBU",
+      "name": "Placeres Airport",
+      "latitude": -30.3333,
+      "longitude": -57.0833
+    },
+    {
+      "countryCode": "UY",
+      "region": "Cerro Largo",
+      "iata": "MLZ",
+      "icao": "SUMO",
+      "name": "Cerro Largo International Airport",
+      "latitude": -32.3379,
+      "longitude": -54.2167
+    },
+    {
+      "countryCode": "UY",
+      "region": "Colonia",
+      "iata": "CYR",
+      "icao": "SUCA",
+      "name": "Colonia Airport (Laguna de los Patos Intn'l Airport)",
+      "latitude": -34.4564,
+      "longitude": -57.7706
+    },
+    {
+      "countryCode": "UY",
+      "region": "Durazno",
+      "iata": "DZO",
+      "icao": "SUDU",
+      "name": "Santa Bernardina International Airport",
+      "latitude": -33.3589,
+      "longitude": -56.4992
+    },
+    {
+      "countryCode": "UY",
+      "region": "Maldonado",
+      "iata": "PDP",
+      "icao": "SULS",
+      "name": "Capitan de Corbeta Carlos A. Curbelo International Airport",
+      "latitude": -34.8551,
+      "longitude": -55.0943
+    },
+    {
+      "countryCode": "UY",
+      "region": "Montevideo",
+      "iata": "MVD",
+      "icao": "SUMU",
+      "name": "Carrasco Gral. Cesareo L. Berisso International Airport",
+      "latitude": -34.8384,
+      "longitude": -56.0308
+    },
+    {
+      "countryCode": "UY",
+      "region": "Paysandu",
+      "iata": "PDU",
+      "icao": "SUPU",
+      "name": "Tydeo Larre Borges International Airport",
+      "latitude": -32.3633,
+      "longitude": -58.0619
+    },
+    {
+      "countryCode": "UY",
+      "region": "Rivera",
+      "iata": "RVY",
+      "icao": "SURV",
+      "name": "Pres. Gral. Oscar D. Gestido International Airport",
+      "latitude": -30.9746,
+      "longitude": -55.4762
+    },
+    {
+      "countryCode": "UY",
+      "region": "Rivera",
+      "iata": "VCH",
+      "icao": "SUVO",
+      "name": "Vichadero Airport",
+      "latitude": -31.767,
+      "longitude": -54.617
+    },
+    {
+      "countryCode": "UY",
+      "region": "Salto",
+      "iata": "STY",
+      "icao": "SUSO",
+      "name": "Nueva Hesperides International Airport",
+      "latitude": -31.4385,
+      "longitude": -57.9853
+    },
+    {
+      "countryCode": "UY",
+      "region": "Tacuarembo",
+      "iata": "TAW",
+      "icao": "SUTB",
+      "name": "Tacuarembo Airport",
+      "latitude": -31.749,
+      "longitude": -55.9258
+    },
+    {
+      "countryCode": "UY",
+      "region": "Treinta y Tres",
+      "iata": "TYT",
+      "icao": "SUTR",
+      "name": "Treinta y Tres Airport",
+      "latitude": -33.1957,
+      "longitude": -54.3472
+    }
+  ]
 }

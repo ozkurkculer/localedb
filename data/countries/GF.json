@@ -231,5 +231,70 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "CAY",
+      "icao": "SOCA",
+      "name": "Cayenne - Felix Eboue Airport",
+      "latitude": 4.81981,
+      "longitude": -52.3604
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "GSI",
+      "icao": "SOGS",
+      "name": "Grand-Santi Airport",
+      "latitude": 4.28583,
+      "longitude": -54.3731
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "LDX",
+      "icao": "SOOM",
+      "name": "Saint-Laurent-du-Maroni Airport",
+      "latitude": 5.48306,
+      "longitude": -54.0344
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "MPY",
+      "icao": "SOOA",
+      "name": "Maripasoula Airport",
+      "latitude": 3.6575,
+      "longitude": -54.0372
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "OYP",
+      "icao": "SOOG",
+      "name": "Saint-Georges-de-l'Oyapock Airport",
+      "latitude": 3.8976,
+      "longitude": -51.8041
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "REI",
+      "icao": "SOOR",
+      "name": "Regina Airport",
+      "latitude": 4.31472,
+      "longitude": -52.1317
+    },
+    {
+      "countryCode": "GF",
+      "region": "Guyane",
+      "iata": "XAU",
+      "icao": "SOOS",
+      "name": "Saul Airport",
+      "latitude": 3.61361,
+      "longitude": -53.2042
+    }
+  ]
 }

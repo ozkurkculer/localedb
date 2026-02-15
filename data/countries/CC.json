@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CC",
+      "region": "Cocos (Keeling) Islands",
+      "iata": "CCK",
+      "icao": "YPCC",
+      "name": "Cocos (Keeling) Islands Airport",
+      "latitude": -12.1886,
+      "longitude": 96.8306
+    }
+  ]
 }

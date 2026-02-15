@@ -235,5 +235,547 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "IT",
+      "region": "Abruzzo",
+      "iata": "PSR",
+      "icao": "LIBP",
+      "name": "Abruzzo Airport",
+      "latitude": 42.4317,
+      "longitude": 14.1811
+    },
+    {
+      "countryCode": "IT",
+      "region": "Abruzzo",
+      "iata": "QAQ",
+      "icao": "LIAP",
+      "name": "L'Aquila-Preturo Airport",
+      "latitude": 42.3799,
+      "longitude": 13.3092
+    },
+    {
+      "countryCode": "IT",
+      "region": "Calabria",
+      "iata": "CRV",
+      "icao": "LIBC",
+      "name": "Crotone Airport (Sant'Anna Airport)",
+      "latitude": 38.9972,
+      "longitude": 17.0802
+    },
+    {
+      "countryCode": "IT",
+      "region": "Calabria",
+      "iata": "REG",
+      "icao": "LICR",
+      "name": "Reggio di Calabria Airport",
+      "latitude": 38.0712,
+      "longitude": 15.6516
+    },
+    {
+      "countryCode": "IT",
+      "region": "Calabria",
+      "iata": "SUF",
+      "icao": "LICA",
+      "name": "Lamezia Terme International Airport",
+      "latitude": 38.9054,
+      "longitude": 16.2423
+    },
+    {
+      "countryCode": "IT",
+      "region": "Campania",
+      "iata": "NAP",
+      "icao": "LIRN",
+      "name": "Naples International Airport",
+      "latitude": 40.886,
+      "longitude": 14.2908
+    },
+    {
+      "countryCode": "IT",
+      "region": "Campania",
+      "iata": "QSR",
+      "icao": "LIRI",
+      "name": "Salerno Costa d'Amalfi Airport (Pontecagnano Airport)",
+      "latitude": 40.6204,
+      "longitude": 14.9113
+    },
+    {
+      "countryCode": "IT",
+      "region": "Emilia-Romagna",
+      "iata": "BLQ",
+      "icao": "LIPE",
+      "name": "Bologna Guglielmo Marconi Airport",
+      "latitude": 44.5354,
+      "longitude": 11.2887
+    },
+    {
+      "countryCode": "IT",
+      "region": "Emilia-Romagna",
+      "iata": "FRL",
+      "icao": "LIPK",
+      "name": "Forli International Airport (Luigi Ridolfi Airport)",
+      "latitude": 44.1948,
+      "longitude": 12.0701
+    },
+    {
+      "countryCode": "IT",
+      "region": "Emilia-Romagna",
+      "iata": "PMF",
+      "icao": "LIMP",
+      "name": "Giuseppe Verdi Parma International Airport",
+      "latitude": 44.82122,
+      "longitude": 10.2974
+    },
+    {
+      "countryCode": "IT",
+      "region": "Emilia-Romagna",
+      "iata": "RAN",
+      "icao": "LIDR",
+      "name": "Ravenna Airport",
+      "latitude": 44.3639,
+      "longitude": 12.225
+    },
+    {
+      "countryCode": "IT",
+      "region": "Emilia-Romagna",
+      "iata": "RMI",
+      "icao": "LIPR",
+      "name": "Federico Fellini International Airport",
+      "latitude": 44.0203,
+      "longitude": 12.6117
+    },
+    {
+      "countryCode": "IT",
+      "region": "Friuli-Venezia Giulia",
+      "iata": "AVB",
+      "icao": "LIPA",
+      "name": "Aviano Air Base",
+      "latitude": 46.0319,
+      "longitude": 12.5965
+    },
+    {
+      "countryCode": "IT",
+      "region": "Friuli-Venezia Giulia",
+      "iata": "TRS",
+      "icao": "LIPQ",
+      "name": "Trieste - Friuli Venezia Giulia Airport",
+      "latitude": 45.8275,
+      "longitude": 13.4722
+    },
+    {
+      "countryCode": "IT",
+      "region": "Friuli-Venezia Giulia",
+      "iata": "UDN",
+      "icao": "LIPD",
+      "name": "Campoformido Airport",
+      "latitude": 46.0322,
+      "longitude": 13.1868
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lazio",
+      "iata": "CIA",
+      "icao": "LIRA",
+      "name": "Rome-Ciampino International Airport",
+      "latitude": 41.7991,
+      "longitude": 12.5929
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lazio",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "name": "Rome–Fiumicino International Airport",
+      "latitude": 41.8003,
+      "longitude": 12.2389
+    },
+    {
+      "countryCode": "IT",
+      "region": "Liguria",
+      "iata": "ALL",
+      "icao": "LIMG",
+      "name": "Albenga Airport",
+      "latitude": 44.0506,
+      "longitude": 8.12743
+    },
+    {
+      "countryCode": "IT",
+      "region": "Liguria",
+      "iata": "GOA",
+      "icao": "LIMJ",
+      "name": "Genoa Cristoforo Colombo Airport",
+      "latitude": 44.4133,
+      "longitude": 8.8375
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lombardia",
+      "iata": "BGY",
+      "icao": "LIME",
+      "name": "Milan Bergamo Airport",
+      "latitude": 45.66546,
+      "longitude": 9.69948
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lombardia",
+      "iata": "LIN",
+      "icao": "LIML",
+      "name": "Milan-Linate Airport",
+      "latitude": 45.4494,
+      "longitude": 9.2783
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lombardia",
+      "iata": "MXP",
+      "icao": "LIMC",
+      "name": "Milan-Malpensa Airport",
+      "latitude": 45.6306,
+      "longitude": 8.72811
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lombardia",
+      "iata": "VBS",
+      "icao": "LIPO",
+      "name": "Brescia Airport (Gabriele D'Annunzio Airport)",
+      "latitude": 45.4289,
+      "longitude": 10.3306
+    },
+    {
+      "countryCode": "IT",
+      "region": "Lombardia",
+      "iata": "",
+      "icao": "LILN",
+      "name": "Varese-Venegono Airport",
+      "latitude": 45.741389,
+      "longitude": 8.886667
+    },
+    {
+      "countryCode": "IT",
+      "region": "Marche",
+      "iata": "AOI",
+      "icao": "LIPY",
+      "name": "Ancona Falconara Airport",
+      "latitude": 43.6163,
+      "longitude": 13.3623
+    },
+    {
+      "countryCode": "IT",
+      "region": "Piemonte",
+      "iata": "CUF",
+      "icao": "LIMZ",
+      "name": "Cuneo International Airport",
+      "latitude": 44.547,
+      "longitude": 7.62322
+    },
+    {
+      "countryCode": "IT",
+      "region": "Piemonte",
+      "iata": "TRN",
+      "icao": "LIMF",
+      "name": "Turin Airport (Caselle Airport)",
+      "latitude": 45.2008,
+      "longitude": 7.64963
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "BDS",
+      "icao": "LIBR",
+      "name": "Brindisi - Salento Airport",
+      "latitude": 40.6576,
+      "longitude": 17.947
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "BRI",
+      "icao": "LIBD",
+      "name": "Bari Karol Wojtyla Airport",
+      "latitude": 41.1389,
+      "longitude": 16.7606
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "FOG",
+      "icao": "LIBF",
+      "name": "Foggia Gino Lisa Airport",
+      "latitude": 41.4329,
+      "longitude": 15.535
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "LCC",
+      "icao": "LIBN",
+      "name": "Galatina Air Base",
+      "latitude": 40.2392,
+      "longitude": 18.1333
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "TAR",
+      "icao": "LIBG",
+      "name": "Taranto-Grottaglie Airport",
+      "latitude": 40.5175,
+      "longitude": 17.4032
+    },
+    {
+      "countryCode": "IT",
+      "region": "Puglia",
+      "iata": "TQR",
+      "icao": "",
+      "name": "San Domino Island Heliport",
+      "latitude": 42.1175,
+      "longitude": 15.4907
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "AHO",
+      "icao": "LIEA",
+      "name": "Alghero-Fertilia Airport",
+      "latitude": 40.6321,
+      "longitude": 8.29077
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "CAG",
+      "icao": "LIEE",
+      "name": "Cagliari Elmas Airport",
+      "latitude": 39.2515,
+      "longitude": 9.05428
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "DCI",
+      "icao": "LIED",
+      "name": "Decimomannu Air Base",
+      "latitude": 39.3542,
+      "longitude": 8.97248
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "FNU",
+      "icao": "LIER",
+      "name": "Oristano-Fenosu Airport",
+      "latitude": 39.8953,
+      "longitude": 8.64266
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "OLB",
+      "icao": "LIEO",
+      "name": "Olbia Costa Smeralda Airport",
+      "latitude": 40.8987,
+      "longitude": 9.51763
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sardegna",
+      "iata": "TTB",
+      "icao": "LIET",
+      "name": "Tortoli Airport (Arbatax Airport)",
+      "latitude": 39.9188,
+      "longitude": 9.68298
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "CIY",
+      "icao": "LICB",
+      "name": "Comiso Airport",
+      "latitude": 36.9946,
+      "longitude": 14.6072
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "CTA",
+      "icao": "LICC",
+      "name": "Catania-Fontanarossa Airport",
+      "latitude": 37.4668,
+      "longitude": 15.0664
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "LMP",
+      "icao": "LICD",
+      "name": "Lampedusa Airport",
+      "latitude": 35.4979,
+      "longitude": 12.6181
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "NSY",
+      "icao": "LICZ",
+      "name": "Naval Air Station Sigonella",
+      "latitude": 37.4017,
+      "longitude": 14.9224
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "PMO",
+      "icao": "LICJ",
+      "name": "Falcone-Borsellino Airport (Punta Raisi Airport)",
+      "latitude": 38.176,
+      "longitude": 13.091
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "PNL",
+      "icao": "LICG",
+      "name": "Pantelleria Airport",
+      "latitude": 36.8165,
+      "longitude": 11.9689
+    },
+    {
+      "countryCode": "IT",
+      "region": "Sicilia",
+      "iata": "TPS",
+      "icao": "LICT",
+      "name": "Vincenzo Florio Airport",
+      "latitude": 37.9114,
+      "longitude": 12.488
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "EBA",
+      "icao": "LIRJ",
+      "name": "Marina di Campo Airport",
+      "latitude": 42.7603,
+      "longitude": 10.2394
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "FLR",
+      "icao": "LIRQ",
+      "name": "Florence Airport",
+      "latitude": 43.81,
+      "longitude": 11.2051
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "GRS",
+      "icao": "LIRS",
+      "name": "Grosseto Airport",
+      "latitude": 42.7597,
+      "longitude": 11.0719
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "LCV",
+      "icao": "LIQL",
+      "name": "Lucca-Tassignano Airport",
+      "latitude": 43.8258,
+      "longitude": 10.5779
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "PSA",
+      "icao": "LIRP",
+      "name": "Pisa International Airport (Galileo Galilei Airport)",
+      "latitude": 43.6839,
+      "longitude": 10.3927
+    },
+    {
+      "countryCode": "IT",
+      "region": "Toscana",
+      "iata": "SAY",
+      "icao": "LIQS",
+      "name": "Siena-Ampugnano Airport",
+      "latitude": 43.2563,
+      "longitude": 11.255
+    },
+    {
+      "countryCode": "IT",
+      "region": "Trentino-Alto Adige",
+      "iata": "BZO",
+      "icao": "LIPB",
+      "name": "Bolzano Airport",
+      "latitude": 46.4602,
+      "longitude": 11.3264
+    },
+    {
+      "countryCode": "IT",
+      "region": "Umbria",
+      "iata": "PEG",
+      "icao": "LIRZ",
+      "name": "Perugia San Francesco d'Assisi - Umbria International Airport",
+      "latitude": 43.0959,
+      "longitude": 12.5132
+    },
+    {
+      "countryCode": "IT",
+      "region": "Valle d'Aosta",
+      "iata": "AOT",
+      "icao": "LIMW",
+      "name": "Aosta Valley Airport",
+      "latitude": 45.7385,
+      "longitude": 7.36872
+    },
+    {
+      "countryCode": "IT",
+      "region": "Veneto",
+      "iata": "BLX",
+      "icao": "LIDB",
+      "name": "Belluno Airport",
+      "latitude": 46.1665,
+      "longitude": 12.2504
+    },
+    {
+      "countryCode": "IT",
+      "region": "Veneto",
+      "iata": "TSF",
+      "icao": "LIPH",
+      "name": "Treviso-Sant'Angelo Airport",
+      "latitude": 45.6484,
+      "longitude": 12.1944
+    },
+    {
+      "countryCode": "IT",
+      "region": "Veneto",
+      "iata": "VCE",
+      "icao": "LIPZ",
+      "name": "Venice Marco Polo Airport",
+      "latitude": 45.5053,
+      "longitude": 12.3519
+    },
+    {
+      "countryCode": "IT",
+      "region": "Veneto",
+      "iata": "VIC",
+      "icao": "LIPT",
+      "name": "Vicenza Airport",
+      "latitude": 45.5734,
+      "longitude": 11.5295
+    },
+    {
+      "countryCode": "IT",
+      "region": "Veneto",
+      "iata": "VRN",
+      "icao": "LIPX",
+      "name": "Verona Villafranca Airport",
+      "latitude": 45.3957,
+      "longitude": 10.8885
+    }
+  ]
 }

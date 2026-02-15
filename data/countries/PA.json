@@ -231,5 +231,349 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PA",
+      "region": "Bocas del Toro",
+      "iata": "BOC",
+      "icao": "MPBO",
+      "name": "Bocas del Toro Isla Colon International Airport",
+      "latitude": 9.34085,
+      "longitude": -82.2508
+    },
+    {
+      "countryCode": "PA",
+      "region": "Bocas del Toro",
+      "iata": "CHX",
+      "icao": "MPCH",
+      "name": "Changuinola Capitan Manuel Nino International Airport",
+      "latitude": 9.45896,
+      "longitude": -82.5151
+    },
+    {
+      "countryCode": "PA",
+      "region": "Chiriqui",
+      "iata": "AML",
+      "icao": "",
+      "name": "Puerto Armuelles Airport",
+      "latitude": 8.26806,
+      "longitude": -82.8649
+    },
+    {
+      "countryCode": "PA",
+      "region": "Chiriqui",
+      "iata": "DAV",
+      "icao": "MPDA",
+      "name": "Enrique Malek International Airport",
+      "latitude": 8.391,
+      "longitude": -82.435
+    },
+    {
+      "countryCode": "PA",
+      "region": "Cocle",
+      "iata": "RIH",
+      "icao": "MPSM",
+      "name": "Scarlett Martinez International Airport",
+      "latitude": 8.37588,
+      "longitude": -80.1279
+    },
+    {
+      "countryCode": "PA",
+      "region": "Colon",
+      "iata": "ONX",
+      "icao": "MPEJ",
+      "name": "Enrique Adolfo Jimenez Airport",
+      "latitude": 9.35664,
+      "longitude": -79.8674
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "AIL",
+      "icao": "",
+      "name": "Ailigandi Airport",
+      "latitude": 9.2226,
+      "longitude": -78.0236
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "BFQ",
+      "icao": "",
+      "name": "Bahia Pina Airport",
+      "latitude": 7.583,
+      "longitude": -78.2
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "ELE",
+      "icao": "",
+      "name": "El Real Airport",
+      "latitude": 8.1072,
+      "longitude": -77.7252
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "GHE",
+      "icao": "",
+      "name": "Garachine Airport",
+      "latitude": 8.0644,
+      "longitude": -78.3673
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "JQE",
+      "icao": "MPJE",
+      "name": "Jaque Airport",
+      "latitude": 7.51778,
+      "longitude": -78.1572
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "MPI",
+      "icao": "",
+      "name": "Mamitupo Airport",
+      "latitude": 9.1851,
+      "longitude": -77.9841
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "MPP",
+      "icao": "",
+      "name": "Mulatupo Airport",
+      "latitude": 8.9453,
+      "longitude": -77.7331
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "NGN",
+      "icao": "",
+      "name": "Nargana Airport",
+      "latitude": 9.06667,
+      "longitude": -78.0167
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "OGM",
+      "icao": "",
+      "name": "Ustupu-Ogobsucum Airport",
+      "latitude": 9.1383,
+      "longitude": -77.9339
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "PLP",
+      "icao": "MPLP",
+      "name": "Captain Ramon Xatruch Airport",
+      "latitude": 8.40667,
+      "longitude": -78.1417
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "PUE",
+      "icao": "MPOA",
+      "name": "Puerto Obaldia Airport",
+      "latitude": 8.667,
+      "longitude": -77.418
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "PYC",
+      "icao": "",
+      "name": "Playon Chico Airport",
+      "latitude": 9.30518,
+      "longitude": -78.2359
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "PYV",
+      "icao": "",
+      "name": "Yaviza Airport",
+      "latitude": 8.1528,
+      "longitude": -77.687
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "SAX",
+      "icao": "",
+      "name": "Sambu Airport",
+      "latitude": 8.017,
+      "longitude": -78.2
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "TJC",
+      "icao": "",
+      "name": "Ticantiqui Airport",
+      "latitude": 9.4185,
+      "longitude": -78.4896
+    },
+    {
+      "countryCode": "PA",
+      "region": "Darien",
+      "iata": "UTU",
+      "icao": "",
+      "name": "Ustupo Airport",
+      "latitude": 9.1283,
+      "longitude": -77.9337
+    },
+    {
+      "countryCode": "PA",
+      "region": "Herrera",
+      "iata": "CTD",
+      "icao": "MPCE",
+      "name": "Chitre Alonso Valderrama Airport",
+      "latitude": 7.98784,
+      "longitude": -80.4097
+    },
+    {
+      "countryCode": "PA",
+      "region": "Los Santos",
+      "iata": "PDM",
+      "icao": "",
+      "name": "Pedasi Airport (Capt. J. Montenegro Airport)",
+      "latitude": 7.55688,
+      "longitude": -80.0233
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "ACU",
+      "icao": "",
+      "name": "Achutupo Airport",
+      "latitude": 8.43166,
+      "longitude": -77.9652
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "BLB",
+      "icao": "MPHO",
+      "name": "Panama Pacifico International Airport",
+      "latitude": 8.91479,
+      "longitude": -79.5996
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "CTE",
+      "icao": "",
+      "name": "Carti Airport",
+      "latitude": 9.31347,
+      "longitude": -79.1016
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "CZJ",
+      "icao": "",
+      "name": "Corazon de Jesus Airport",
+      "latitude": 9.4446,
+      "longitude": -78.5888
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "IVI",
+      "icao": "",
+      "name": "Viveros Island Airport",
+      "latitude": 8.4693,
+      "longitude": -79.0016
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "NBL",
+      "icao": "MPWN",
+      "name": "Wannukandi Airport",
+      "latitude": 9.4496,
+      "longitude": -78.9795
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "NMG",
+      "icao": "",
+      "name": "San Miguel Airport",
+      "latitude": 8.4566,
+      "longitude": -78.9339
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "OTD",
+      "icao": "",
+      "name": "Contadora Airport",
+      "latitude": 8.62876,
+      "longitude": -79.0347
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "PAC",
+      "icao": "MPMG",
+      "name": "Albrook Marcos A. Gelabert International Airport",
+      "latitude": 8.97334,
+      "longitude": -79.5556
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "PTY",
+      "icao": "MPTO",
+      "name": "Tocumen International Airport",
+      "latitude": 9.07136,
+      "longitude": -79.3835
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "PVE",
+      "icao": "MPVR",
+      "name": "El Porvenir Airport",
+      "latitude": 9.558,
+      "longitude": -78.947
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "SIC",
+      "icao": "",
+      "name": "San Jose Airport",
+      "latitude": 8.2622,
+      "longitude": -79.078
+    },
+    {
+      "countryCode": "PA",
+      "region": "Panama",
+      "iata": "TUW",
+      "icao": "",
+      "name": "Tubala Airport",
+      "latitude": 9.52,
+      "longitude": -79.03
+    },
+    {
+      "countryCode": "PA",
+      "region": "Veraguas",
+      "iata": "SYP",
+      "icao": "MPSA",
+      "name": "Ruben Cantu Airport",
+      "latitude": 8.0856,
+      "longitude": -80.9453
+    }
+  ]
 }

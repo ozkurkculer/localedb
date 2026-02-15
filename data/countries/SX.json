@@ -240,5 +240,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SX",
+      "region": "Sint Maarten (Dutch Part)",
+      "iata": "SXM",
+      "icao": "TNCM",
+      "name": "Princess Juliana International Airport",
+      "latitude": 18.041,
+      "longitude": -63.1089
+    }
+  ]
 }

@@ -248,5 +248,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GU",
+      "region": "Barrigada",
+      "iata": "GUM",
+      "icao": "PGUM",
+      "name": "Antonio B. Won Pat International Airport (Guam Int'l)",
+      "latitude": 13.4834,
+      "longitude": 144.796
+    },
+    {
+      "countryCode": "GU",
+      "region": "Yigo",
+      "iata": "UAM",
+      "icao": "PGUA",
+      "name": "Andersen Air Force Base",
+      "latitude": 13.584,
+      "longitude": 144.93
+    }
+  ]
 }

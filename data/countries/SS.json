@@ -235,5 +235,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SS",
+      "region": "Central Equatoria",
+      "iata": "JUB",
+      "icao": "HJJJ",
+      "name": "Juba International Airport",
+      "latitude": 4.87201,
+      "longitude": 31.6011
+    },
+    {
+      "countryCode": "SS",
+      "region": "Lakes",
+      "iata": "RBX",
+      "icao": "HSMK",
+      "name": "Rumbek Airport",
+      "latitude": 6.825,
+      "longitude": 29.669
+    },
+    {
+      "countryCode": "SS",
+      "region": "Upper Nile",
+      "iata": "AEE",
+      "icao": "",
+      "name": "Adareil Airport",
+      "latitude": 10.0536,
+      "longitude": 32.9594
+    },
+    {
+      "countryCode": "SS",
+      "region": "Upper Nile",
+      "iata": "MAK",
+      "icao": "HSSM",
+      "name": "Malakal Airport",
+      "latitude": 9.55897,
+      "longitude": 31.6522
+    },
+    {
+      "countryCode": "SS",
+      "region": "Western Bahr el Ghazal",
+      "iata": "WUU",
+      "icao": "HSWW",
+      "name": "Wau Airport",
+      "latitude": 7.72583,
+      "longitude": 27.975
+    }
+  ]
 }

@@ -60,7 +60,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
       {/* Header */}
       <div className="mb-12 text-center">
         <div className="mb-4 text-8xl">{country.basics.flagEmoji}</div>
-        <h1 className="mb-2 text-4xl font-bold">{country.basics.name}</h1>
+        <h1 className="mb-2 text-4xl font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent">{country.basics.name}</h1>
         <p className="text-xl text-muted-foreground">
           {country.basics.officialName}
         </p>
@@ -127,6 +127,39 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
       {/* Data Sections */}
       <div className="mx-auto max-w-6xl space-y-8">
+
+
+        {/* Airports [NEW] */}
+        <Section title={`Airports (${country.airports?.length || 0})`}>
+          {country.airports && country.airports.length > 0 ? (
+            <div className="space-y-4">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {country.airports.slice(0, 9).map((airport) => (
+                  <div key={airport.iata || airport.icao} className="flex flex-col justify-between rounded-lg border border-border/40 bg-card p-3">
+                    <div>
+                      <div className="mb-1 flex items-center justify-between">
+                        <span className="font-bold">{airport.iata}</span>
+                        {airport.icao && <span className="text-xs text-muted-foreground">{airport.icao}</span>}
+                      </div>
+                      <div className="line-clamp-1 text-sm font-medium" title={airport.name}>{airport.name}</div>
+                      <div className="text-xs text-muted-foreground">{airport.region}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {country.airports.length > 9 && (
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground">
+                    and {country.airports.length - 9} more airports...
+                  </p>
+                </div>
+              )}
+            </div>
+          ) : (
+             <p className="text-muted-foreground">No airports listed.</p>
+          )}
+        </Section>
+
         {/* Codes */}
         <Section title="Country Codes">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

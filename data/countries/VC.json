@@ -228,5 +228,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "VC",
+      "region": "Grenadines",
+      "iata": "BQU",
+      "icao": "TVSB",
+      "name": "J. F. Mitchell Airport",
+      "latitude": 12.9884,
+      "longitude": -61.262
+    },
+    {
+      "countryCode": "VC",
+      "region": "Grenadines",
+      "iata": "CIW",
+      "icao": "TVSC",
+      "name": "Canouan Airport",
+      "latitude": 12.699,
+      "longitude": -61.3424
+    },
+    {
+      "countryCode": "VC",
+      "region": "Grenadines",
+      "iata": "MQS",
+      "icao": "TVSM",
+      "name": "Mustique Airport",
+      "latitude": 12.8879,
+      "longitude": -61.1802
+    },
+    {
+      "countryCode": "VC",
+      "region": "Grenadines",
+      "iata": "PLI",
+      "icao": "",
+      "name": "Palm Island Airport",
+      "latitude": 12.587,
+      "longitude": -61.397
+    },
+    {
+      "countryCode": "VC",
+      "region": "Grenadines",
+      "iata": "UNI",
+      "icao": "TVSU",
+      "name": "Union Island Airport",
+      "latitude": 12.6001,
+      "longitude": -61.4119
+    },
+    {
+      "countryCode": "VC",
+      "region": "Saint George",
+      "iata": "SVD",
+      "icao": "TVSA",
+      "name": "Argyle International Airport",
+      "latitude": 13.1443,
+      "longitude": -61.2109
+    }
+  ]
 }

@@ -232,5 +232,205 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "OM",
+      "region": "Ad Dakhiliyah",
+      "iata": "AOM",
+      "icao": "",
+      "name": "Adam Airport",
+      "latitude": 22.4919,
+      "longitude": 57.3839
+    },
+    {
+      "countryCode": "OM",
+      "region": "Ad Dakhiliyah",
+      "iata": "MCT",
+      "icao": "OOMS",
+      "name": "Muscat International Airport",
+      "latitude": 23.5933,
+      "longitude": 58.2844
+    },
+    {
+      "countryCode": "OM",
+      "region": "Ad Dakhiliyah",
+      "iata": "RNM",
+      "icao": "OOGB",
+      "name": "Qarn Alam Airport",
+      "latitude": 21.383,
+      "longitude": 57.05
+    },
+    {
+      "countryCode": "OM",
+      "region": "Al Buraymi",
+      "iata": "RMB",
+      "icao": "OOBR",
+      "name": "Buraimi Airport",
+      "latitude": 24.2411,
+      "longitude": 55.7847
+    },
+    {
+      "countryCode": "OM",
+      "region": "Al Wusta",
+      "iata": "BJQ",
+      "icao": "",
+      "name": "Bahja Airport",
+      "latitude": 19.8731,
+      "longitude": 56.0678
+    },
+    {
+      "countryCode": "OM",
+      "region": "Al Wusta",
+      "iata": "DQM",
+      "icao": "",
+      "name": "Duqm International Airport",
+      "latitude": 19.5019,
+      "longitude": 57.6342
+    },
+    {
+      "countryCode": "OM",
+      "region": "Al Wusta",
+      "iata": "JNJ",
+      "icao": "",
+      "name": "Duqm Jaaluni Airport",
+      "latitude": 19.4749,
+      "longitude": 57.3083
+    },
+    {
+      "countryCode": "OM",
+      "region": "Al Wusta",
+      "iata": "UKH",
+      "icao": "",
+      "name": "Mukhaizna Airport",
+      "latitude": 19.3864,
+      "longitude": 56.4014
+    },
+    {
+      "countryCode": "OM",
+      "region": "Az Zahirah",
+      "iata": "FAU",
+      "icao": "OOFD",
+      "name": "Fahud Airport",
+      "latitude": 22.3548,
+      "longitude": 56.4841
+    },
+    {
+      "countryCode": "OM",
+      "region": "Az Zahirah",
+      "iata": "LKW",
+      "icao": "OOLK",
+      "name": "Lekhwair Airport",
+      "latitude": 22.805,
+      "longitude": 55.3734
+    },
+    {
+      "countryCode": "OM",
+      "region": "Janub al Batinah",
+      "iata": "OHS",
+      "icao": "OOSH",
+      "name": "Sohar Airport",
+      "latitude": 24.386,
+      "longitude": 56.6254
+    },
+    {
+      "countryCode": "OM",
+      "region": "Janub ash Sharqiyah",
+      "iata": "NMN",
+      "icao": "AYNO",
+      "name": "Nomane Airport",
+      "latitude": -6.32183,
+      "longitude": 145.071
+    },
+    {
+      "countryCode": "OM",
+      "region": "Musandam",
+      "iata": "BYB",
+      "icao": "",
+      "name": "Dibba Airport",
+      "latitude": 25.6142,
+      "longitude": 56.2444
+    },
+    {
+      "countryCode": "OM",
+      "region": "Musandam",
+      "iata": "KHS",
+      "icao": "OOKB",
+      "name": "Khasab Airport",
+      "latitude": 26.171,
+      "longitude": 56.2406
+    },
+    {
+      "countryCode": "OM",
+      "region": "Shamal al Batinah",
+      "iata": "MNH",
+      "icao": "OORQ",
+      "name": "Al-Musannah Airport",
+      "latitude": 23.6406,
+      "longitude": 57.4875
+    },
+    {
+      "countryCode": "OM",
+      "region": "Shamal ash Sharqiyah",
+      "iata": "MSH",
+      "icao": "OOMA",
+      "name": "Masirah Air Base",
+      "latitude": 20.6754,
+      "longitude": 58.8905
+    },
+    {
+      "countryCode": "OM",
+      "region": "Shamal ash Sharqiyah",
+      "iata": "SUH",
+      "icao": "OOSR",
+      "name": "Sur Airport",
+      "latitude": 22.533,
+      "longitude": 59.483
+    },
+    {
+      "countryCode": "OM",
+      "region": "Zufar",
+      "iata": "KMN",
+      "icao": "FZSB",
+      "name": "Kamina Airport (Kamina Ville Airport)",
+      "latitude": -8.64202,
+      "longitude": 25.2529
+    },
+    {
+      "countryCode": "OM",
+      "region": "Zufar",
+      "iata": "LRM",
+      "icao": "MDLR",
+      "name": "La Romana International Airport (Casa de Campo International Airport)",
+      "latitude": 18.4507,
+      "longitude": -68.9118
+    },
+    {
+      "countryCode": "OM",
+      "region": "Zufar",
+      "iata": "OMM",
+      "icao": "OOMX",
+      "name": "Marmul Airport",
+      "latitude": 18.136,
+      "longitude": 55.1821
+    },
+    {
+      "countryCode": "OM",
+      "region": "Zufar",
+      "iata": "SLL",
+      "icao": "OOSA",
+      "name": "Salalah International Airport",
+      "latitude": 17.0387,
+      "longitude": 54.0913
+    },
+    {
+      "countryCode": "OM",
+      "region": "Zufar",
+      "iata": "TTH",
+      "icao": "OOTH",
+      "name": "RAFO Thumrait",
+      "latitude": 17.666,
+      "longitude": 54.0246
+    }
+  ]
 }

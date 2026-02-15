@@ -234,5 +234,169 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "RO",
+      "region": "Arad",
+      "iata": "ARW",
+      "icao": "LRAR",
+      "name": "Arad International Airport",
+      "latitude": 46.1766,
+      "longitude": 21.262
+    },
+    {
+      "countryCode": "RO",
+      "region": "Bacau",
+      "iata": "BCM",
+      "icao": "LRBC",
+      "name": "Bacau International Airport",
+      "latitude": 46.5219,
+      "longitude": 26.9103
+    },
+    {
+      "countryCode": "RO",
+      "region": "Bihor",
+      "iata": "OMR",
+      "icao": "LROD",
+      "name": "Oradea International Airport",
+      "latitude": 47.0253,
+      "longitude": 21.9025
+    },
+    {
+      "countryCode": "RO",
+      "region": "Brasov",
+      "iata": "GHV",
+      "icao": "LRBV",
+      "name": "Brasov Airport",
+      "latitude": 45.6942,
+      "longitude": 25.5172
+    },
+    {
+      "countryCode": "RO",
+      "region": "Bucuresti",
+      "iata": "BBU",
+      "icao": "LRBS",
+      "name": "Aurel Vlaicu International Airport",
+      "latitude": 44.496,
+      "longitude": 26.0814
+    },
+    {
+      "countryCode": "RO",
+      "region": "Caras-Severin",
+      "iata": "CSB",
+      "icao": "LRCS",
+      "name": "Caransebes Airport",
+      "latitude": 45.42,
+      "longitude": 22.2533
+    },
+    {
+      "countryCode": "RO",
+      "region": "Cluj",
+      "iata": "CLJ",
+      "icao": "LRCL",
+      "name": "Cluj-Napoca International Airport",
+      "latitude": 46.7852,
+      "longitude": 23.6862
+    },
+    {
+      "countryCode": "RO",
+      "region": "Constanta",
+      "iata": "CND",
+      "icao": "LRCK",
+      "name": "Mihail Kogalniceanu International Airport",
+      "latitude": 44.3622,
+      "longitude": 28.4883
+    },
+    {
+      "countryCode": "RO",
+      "region": "Dolj",
+      "iata": "CRA",
+      "icao": "LRCV",
+      "name": "Craiova International Airport",
+      "latitude": 44.3181,
+      "longitude": 23.8886
+    },
+    {
+      "countryCode": "RO",
+      "region": "Iasi",
+      "iata": "IAS",
+      "icao": "LRIA",
+      "name": "Iasi International Airport",
+      "latitude": 47.1785,
+      "longitude": 27.6206
+    },
+    {
+      "countryCode": "RO",
+      "region": "Ilfov",
+      "iata": "OTP",
+      "icao": "LROP",
+      "name": "Bucharest Henri Coandă International Airport",
+      "latitude": 44.5711,
+      "longitude": 26.085
+    },
+    {
+      "countryCode": "RO",
+      "region": "Maramures",
+      "iata": "BAY",
+      "icao": "LRBM",
+      "name": "Baia Mare Airport",
+      "latitude": 47.6606,
+      "longitude": 23.4673
+    },
+    {
+      "countryCode": "RO",
+      "region": "Mures",
+      "iata": "TGM",
+      "icao": "LRTM",
+      "name": "Targu Mures International Airport",
+      "latitude": 46.4677,
+      "longitude": 24.4125
+    },
+    {
+      "countryCode": "RO",
+      "region": "Satu Mare",
+      "iata": "SUJ",
+      "icao": "LRSM",
+      "name": "Satu Mare International Airport",
+      "latitude": 47.7033,
+      "longitude": 22.8857
+    },
+    {
+      "countryCode": "RO",
+      "region": "Sibiu",
+      "iata": "SBZ",
+      "icao": "LRSB",
+      "name": "Sibiu International Airport",
+      "latitude": 45.7856,
+      "longitude": 24.0913
+    },
+    {
+      "countryCode": "RO",
+      "region": "Suceava",
+      "iata": "SCV",
+      "icao": "LRSV",
+      "name": "Suceava International Airport (Stefan cel Mare Int'l)",
+      "latitude": 47.6875,
+      "longitude": 26.3541
+    },
+    {
+      "countryCode": "RO",
+      "region": "Timis",
+      "iata": "TSR",
+      "icao": "LRTR",
+      "name": "Timisoara Traian Vuia International Airport",
+      "latitude": 45.8099,
+      "longitude": 21.3379
+    },
+    {
+      "countryCode": "RO",
+      "region": "Tulcea",
+      "iata": "TCE",
+      "icao": "LRTC",
+      "name": "Tulcea Danube Delta Airport",
+      "latitude": 45.0625,
+      "longitude": 28.7143
+    }
+  ]
 }

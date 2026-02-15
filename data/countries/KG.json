@@ -243,5 +243,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KG",
+      "region": "Chuy",
+      "iata": "FRU",
+      "icao": "UAFM",
+      "name": "Manas International Airport",
+      "latitude": 43.0613,
+      "longitude": 74.4776
+    },
+    {
+      "countryCode": "KG",
+      "region": "Osh",
+      "iata": "OSS",
+      "icao": "UAFO",
+      "name": "Osh Airport",
+      "latitude": 40.609,
+      "longitude": 72.7933
+    },
+    {
+      "countryCode": "KG",
+      "region": "Issyk-Kul",
+      "iata": "IKU",
+      "icao": "UCFL",
+      "name": "Issyk-Kul International Airport",
+      "latitude": 42.5851,
+      "longitude": 76.7064
+    }
+  ]
 }

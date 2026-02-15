@@ -244,5 +244,385 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KE",
+      "region": "Baringo",
+      "iata": "LBN",
+      "icao": "",
+      "name": "Lake Baringo Airport",
+      "latitude": 0.666103,
+      "longitude": 36.1042
+    },
+    {
+      "countryCode": "KE",
+      "region": "Elgeyo/Marakwet",
+      "iata": "KRV",
+      "icao": "",
+      "name": "Kimwarer Airport (Kerio Valley Airport)",
+      "latitude": 0.319638,
+      "longitude": 35.6626
+    },
+    {
+      "countryCode": "KE",
+      "region": "Elgeyo/Marakwet",
+      "iata": "NBO",
+      "icao": "HKJK",
+      "name": "Jomo Kenyatta International Airport",
+      "latitude": -1.31924,
+      "longitude": 36.9278
+    },
+    {
+      "countryCode": "KE",
+      "region": "Garissa",
+      "iata": "GAS",
+      "icao": "HKGA",
+      "name": "Garissa Airport",
+      "latitude": -0.463508,
+      "longitude": 39.6483
+    },
+    {
+      "countryCode": "KE",
+      "region": "Garissa",
+      "iata": "LBK",
+      "icao": "",
+      "name": "Liboi Airport",
+      "latitude": 0.348333,
+      "longitude": 40.8817
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kajiado",
+      "iata": "ASV",
+      "icao": "HKAM",
+      "name": "Amboseli Airport",
+      "latitude": -2.64505,
+      "longitude": 37.2531
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kakamega",
+      "iata": "GGM",
+      "icao": "HKKG",
+      "name": "Kakamega Airport",
+      "latitude": 0.271342,
+      "longitude": 34.7873
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kericho",
+      "iata": "KEY",
+      "icao": "HKKR",
+      "name": "Kericho Airport",
+      "latitude": -0.3899,
+      "longitude": 35.2421
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kilifi",
+      "iata": "MYD",
+      "icao": "HKML",
+      "name": "Malindi Airport",
+      "latitude": -3.22931,
+      "longitude": 40.1017
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kilifi",
+      "iata": "VPG",
+      "icao": "",
+      "name": "Vipingo Airport",
+      "latitude": -3.80667,
+      "longitude": 39.7974
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kisumu",
+      "iata": "KIS",
+      "icao": "HKKI",
+      "name": "Kisumu International Airport",
+      "latitude": -0.086139,
+      "longitude": 34.7289
+    },
+    {
+      "countryCode": "KE",
+      "region": "Kwale",
+      "iata": "UKA",
+      "icao": "HKUK",
+      "name": "Ukunda Airport (Diani Airport)",
+      "latitude": -4.29333,
+      "longitude": 39.5711
+    },
+    {
+      "countryCode": "KE",
+      "region": "Laikipia",
+      "iata": "NYK",
+      "icao": "HKNY",
+      "name": "Nanyuki Airport",
+      "latitude": -0.062399,
+      "longitude": 37.041
+    },
+    {
+      "countryCode": "KE",
+      "region": "Lamu",
+      "iata": "KIU",
+      "icao": "",
+      "name": "Kiunga Airport",
+      "latitude": -1.74383,
+      "longitude": 41.4843
+    },
+    {
+      "countryCode": "KE",
+      "region": "Lamu",
+      "iata": "KWY",
+      "icao": "",
+      "name": "Kiwayu Airport",
+      "latitude": -1.96056,
+      "longitude": 41.2975
+    },
+    {
+      "countryCode": "KE",
+      "region": "Lamu",
+      "iata": "LAU",
+      "icao": "HKLU",
+      "name": "Manda Airport",
+      "latitude": -2.25242,
+      "longitude": 40.9131
+    },
+    {
+      "countryCode": "KE",
+      "region": "Mandera",
+      "iata": "NDE",
+      "icao": "HKMA",
+      "name": "Mandera Airport",
+      "latitude": 3.933,
+      "longitude": 41.85
+    },
+    {
+      "countryCode": "KE",
+      "region": "Marsabit",
+      "iata": "OYL",
+      "icao": "HKMY",
+      "name": "Moyale Airport",
+      "latitude": 3.46972,
+      "longitude": 39.1014
+    },
+    {
+      "countryCode": "KE",
+      "region": "Marsabit",
+      "iata": "RBT",
+      "icao": "HKMB",
+      "name": "Marsabit Airport",
+      "latitude": 2.34425,
+      "longitude": 38
+    },
+    {
+      "countryCode": "KE",
+      "region": "Meru",
+      "iata": "JJM",
+      "icao": "HKMK",
+      "name": "Mulika Lodge Airport",
+      "latitude": 0.165083,
+      "longitude": 38.1951
+    },
+    {
+      "countryCode": "KE",
+      "region": "Mombasa",
+      "iata": "BMQ",
+      "icao": "",
+      "name": "Bamburi Airport",
+      "latitude": -3.98191,
+      "longitude": 39.7308
+    },
+    {
+      "countryCode": "KE",
+      "region": "Mombasa",
+      "iata": "MBA",
+      "icao": "HKMO",
+      "name": "Moi International Airport",
+      "latitude": -4.03483,
+      "longitude": 39.5942
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nairobi City",
+      "iata": "WIL",
+      "icao": "HKNW",
+      "name": "Wilson Airport",
+      "latitude": -1.32172,
+      "longitude": 36.8148
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nakuru",
+      "iata": "NUU",
+      "icao": "HKNK",
+      "name": "Nakuru Airport",
+      "latitude": -0.298067,
+      "longitude": 36.1593
+    },
+    {
+      "countryCode": "KE",
+      "region": "Narok",
+      "iata": "KEU",
+      "icao": "HKKE",
+      "name": "Keekorok Airport",
+      "latitude": -1.583,
+      "longitude": 35.25
+    },
+    {
+      "countryCode": "KE",
+      "region": "Narok",
+      "iata": "MRE",
+      "icao": "",
+      "name": "Mara Serena Airport",
+      "latitude": -1.40611,
+      "longitude": 35.0081
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nyamira",
+      "iata": "ANA",
+      "icao": "",
+      "name": "Angama Airstrip",
+      "latitude": -1.27156,
+      "longitude": 34.9555
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nyamira",
+      "iata": "KTJ",
+      "icao": "",
+      "name": "Kichwa Tembo Airport",
+      "latitude": -1.2635,
+      "longitude": 35.0275
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nyamira",
+      "iata": "OLX",
+      "icao": "",
+      "name": "Olkiombo Airstrip",
+      "latitude": -1.40859,
+      "longitude": 35.1107
+    },
+    {
+      "countryCode": "KE",
+      "region": "Nyeri",
+      "iata": "NYE",
+      "icao": "HKNI",
+      "name": "Nyeri Airport",
+      "latitude": -0.364414,
+      "longitude": 36.9785
+    },
+    {
+      "countryCode": "KE",
+      "region": "Samburu",
+      "iata": "UAS",
+      "icao": "HKSB",
+      "name": "Samburu Airport (Buffalo Spring Airport)",
+      "latitude": 0.530583,
+      "longitude": 37.5342
+    },
+    {
+      "countryCode": "KE",
+      "region": "Taita/Taveta",
+      "iata": "ILU",
+      "icao": "HKKL",
+      "name": "Kilaguni Airport",
+      "latitude": -2.91061,
+      "longitude": 38.0652
+    },
+    {
+      "countryCode": "KE",
+      "region": "Tana River",
+      "iata": "HOA",
+      "icao": "HKHO",
+      "name": "Hola Airport",
+      "latitude": -1.522,
+      "longitude": 40.004
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "EYS",
+      "icao": "HKES",
+      "name": "Eliye Springs Airport",
+      "latitude": 3.21667,
+      "longitude": 35.9667
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "KLK",
+      "icao": "HKFG",
+      "name": "Kalokol Airport (Fergusons Gulf Airport)",
+      "latitude": 3.49161,
+      "longitude": 35.8368
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "LKG",
+      "icao": "HKLK",
+      "name": "Lokichogio Airport",
+      "latitude": 4.20412,
+      "longitude": 34.3482
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "LKU",
+      "icao": "",
+      "name": "Lake Turkana Airport",
+      "latitude": 3.41667,
+      "longitude": 35.8833
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "LOK",
+      "icao": "HKLO",
+      "name": "Lodwar Airport",
+      "latitude": 3.12197,
+      "longitude": 35.6087
+    },
+    {
+      "countryCode": "KE",
+      "region": "Turkana",
+      "iata": "LOY",
+      "icao": "HKLY",
+      "name": "Loiyangalani Airport",
+      "latitude": 2.75,
+      "longitude": 36.717
+    },
+    {
+      "countryCode": "KE",
+      "region": "Uasin Gishu",
+      "iata": "EDL",
+      "icao": "HKEL",
+      "name": "Eldoret International Airport",
+      "latitude": 0.404458,
+      "longitude": 35.2389
+    },
+    {
+      "countryCode": "KE",
+      "region": "Uasin Gishu",
+      "iata": "KTL",
+      "icao": "HKKT",
+      "name": "Kitale Airport",
+      "latitude": 0.971989,
+      "longitude": 34.9586
+    },
+    {
+      "countryCode": "KE",
+      "region": "Wajir",
+      "iata": "WJR",
+      "icao": "HKWJ",
+      "name": "Wajir Airport",
+      "latitude": 1.73324,
+      "longitude": 40.0916
+    }
+  ]
 }

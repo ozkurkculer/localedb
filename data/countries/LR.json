@@ -232,5 +232,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LR",
+      "region": "Grand Bassa",
+      "iata": "UCN",
+      "icao": "GLBU",
+      "name": "Buchanan Airport",
+      "latitude": 5.90417,
+      "longitude": -10.0583
+    },
+    {
+      "countryCode": "LR",
+      "region": "Grand Gedeh",
+      "iata": "THC",
+      "icao": "GLTN",
+      "name": "Tchien Airport",
+      "latitude": 6.04565,
+      "longitude": -8.13872
+    },
+    {
+      "countryCode": "LR",
+      "region": "Grand Kru",
+      "iata": "GRC",
+      "icao": "",
+      "name": "Grand Cess Airport",
+      "latitude": 4.571,
+      "longitude": -8.2076
+    },
+    {
+      "countryCode": "LR",
+      "region": "Grand Kru",
+      "iata": "SAZ",
+      "icao": "GLST",
+      "name": "Sasstown Airport",
+      "latitude": 4.66667,
+      "longitude": -8.43333
+    },
+    {
+      "countryCode": "LR",
+      "region": "Lofa",
+      "iata": "FOY",
+      "icao": "",
+      "name": "Foya Airport",
+      "latitude": 8.3513,
+      "longitude": -10.2269
+    },
+    {
+      "countryCode": "LR",
+      "region": "Lofa",
+      "iata": "VOI",
+      "icao": "GLVA",
+      "name": "Voinjama Airport (Tenebu Airport)",
+      "latitude": 8.4,
+      "longitude": -9.767
+    },
+    {
+      "countryCode": "LR",
+      "region": "Margibi",
+      "iata": "ROB",
+      "icao": "GLRB",
+      "name": "Roberts International Airport",
+      "latitude": 6.23379,
+      "longitude": -10.3623
+    },
+    {
+      "countryCode": "LR",
+      "region": "Maryland",
+      "iata": "CPA",
+      "icao": "GLCP",
+      "name": "Cape Palmas Airport",
+      "latitude": 4.37902,
+      "longitude": -7.69695
+    },
+    {
+      "countryCode": "LR",
+      "region": "Montserrado",
+      "iata": "BYL",
+      "icao": "",
+      "name": "Bella Yella Airport",
+      "latitude": 7.36917,
+      "longitude": -9.99372
+    },
+    {
+      "countryCode": "LR",
+      "region": "Montserrado",
+      "iata": "MLW",
+      "icao": "GLMR",
+      "name": "Spriggs Payne Airport",
+      "latitude": 6.28906,
+      "longitude": -10.7587
+    },
+    {
+      "countryCode": "LR",
+      "region": "Montserrado",
+      "iata": "RVC",
+      "icao": "",
+      "name": "River Cess Airport",
+      "latitude": 5.47133,
+      "longitude": -9.58537
+    },
+    {
+      "countryCode": "LR",
+      "region": "Nimba",
+      "iata": "NIA",
+      "icao": "GLNA",
+      "name": "Nimba Airport",
+      "latitude": 7.5,
+      "longitude": -8.6
+    },
+    {
+      "countryCode": "LR",
+      "region": "Nimba",
+      "iata": "TPT",
+      "icao": "",
+      "name": "Tapeta Airport",
+      "latitude": 6.4948,
+      "longitude": -8.873
+    },
+    {
+      "countryCode": "LR",
+      "region": "Sinoe",
+      "iata": "SNI",
+      "icao": "GLGE",
+      "name": "Greenville/Sinoe Airport (R.E. Murray Airport)",
+      "latitude": 5.03431,
+      "longitude": -9.0668
+    }
+  ]
 }

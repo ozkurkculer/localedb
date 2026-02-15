@@ -248,5 +248,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CY",
+      "region": "Ammochostos",
+      "iata": "GEC",
+      "icao": "LCGK",
+      "name": "Gecitkale Air Base",
+      "latitude": 35.2359,
+      "longitude": 33.7244
+    },
+    {
+      "countryCode": "CY",
+      "region": "Larnaka",
+      "iata": "LCA",
+      "icao": "LCLK",
+      "name": "Larnaca International Airport",
+      "latitude": 34.8751,
+      "longitude": 33.6249
+    },
+    {
+      "countryCode": "CY",
+      "region": "Lefkosia",
+      "iata": "ECN",
+      "icao": "LCEN",
+      "name": "Ercan International Airport",
+      "latitude": 35.1547,
+      "longitude": 33.4961
+    },
+    {
+      "countryCode": "CY",
+      "region": "Lemesos",
+      "iata": "AKT",
+      "icao": "LCRA",
+      "name": "RAF Akrotiri",
+      "latitude": 34.5904,
+      "longitude": 32.9879
+    },
+    {
+      "countryCode": "CY",
+      "region": "Pafos",
+      "iata": "PFO",
+      "icao": "LCPH",
+      "name": "Paphos International Airport",
+      "latitude": 34.718,
+      "longitude": 32.4857
+    }
+  ]
 }

@@ -236,5 +236,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NE",
+      "region": "Agadez",
+      "iata": "AJY",
+      "icao": "DRZA",
+      "name": "Mano Dayak International Airport",
+      "latitude": 16.966,
+      "longitude": 8.00011
+    },
+    {
+      "countryCode": "NE",
+      "region": "Agadez",
+      "iata": "RLT",
+      "icao": "DRZL",
+      "name": "Arlit Airport",
+      "latitude": 18.7904,
+      "longitude": 7.36595
+    },
+    {
+      "countryCode": "NE",
+      "region": "Maradi",
+      "iata": "MFQ",
+      "icao": "DRRM",
+      "name": "Maradi Airport",
+      "latitude": 13.5025,
+      "longitude": 7.12675
+    },
+    {
+      "countryCode": "NE",
+      "region": "Niamey",
+      "iata": "NIM",
+      "icao": "DRRN",
+      "name": "Diori Hamani International Airport",
+      "latitude": 13.4815,
+      "longitude": 2.18361
+    },
+    {
+      "countryCode": "NE",
+      "region": "Tahoua",
+      "iata": "THZ",
+      "icao": "DRRT",
+      "name": "Tahoua Airport",
+      "latitude": 14.8757,
+      "longitude": 5.26536
+    },
+    {
+      "countryCode": "NE",
+      "region": "Zinder",
+      "iata": "ZND",
+      "icao": "DRZR",
+      "name": "Zinder Airport",
+      "latitude": 13.779,
+      "longitude": 8.98376
+    }
+  ]
 }

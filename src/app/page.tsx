@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Globe2, Code2, Coins, Languages } from "lucide-react";
+import { ArrowRight, Globe2, Code2, Coins, Languages, Plane } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
@@ -91,24 +91,35 @@ export default function Home() {
             title="Currency Formats"
             description="Symbol position, separators, and patterns for every currency in the world."
             href="/currencies"
+            variant="gold"
+          />
+          <FeatureCard
+             icon={<Plane className="h-10 w-10" />}
+            title="Airports"
+            description="Database of 7,000+ airports with IATA/ICAO codes, coordinates, and regions."
+            href="/airports"
+            variant="sky"
           />
           <FeatureCard
              icon={<Globe2 className="h-10 w-10" />}
             title="Countries"
             description="Browse localization data for 250+ countries including codes, currencies, and formatting."
             href="/countries"
+            variant="blue"
           />
           <FeatureCard
             icon={<Languages className="h-10 w-10" />}
             title="Languages"
             description="Explore processed data for world languages, including native names and countries."
             href="/languages"
+            variant="green"
           />
           <FeatureCard
              icon={<Code2 className="h-10 w-10" />}
             title="Locale Codes"
             description="ISO 3166, BCP47, RFC4647, and all international standards reference."
             href="/locale-codes"
+            variant="default"
           />
         </div>
       </motion.section>
@@ -122,17 +133,53 @@ interface FeatureCardProps {
   description: string;
   href?: string;
   disabled?: boolean;
+  variant?: "default" | "gold" | "green" | "blue" | "sky";
 }
 
-function FeatureCard({ icon, title, description, href, disabled }: FeatureCardProps) {
+function FeatureCard({ icon, title, description, href, disabled, variant = "default" }: FeatureCardProps) {
+  const variants = {
+    default: {
+      icon: "text-primary",
+      iconBg: "bg-primary/10",
+      title: "text-foreground", 
+      borderHover: "hover:border-primary/50",
+    },
+    gold: {
+      icon: "text-amber-500",
+      iconBg: "bg-amber-500/10",
+      title: "bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent",
+      borderHover: "hover:border-amber-500/50",
+    },
+    green: {
+      icon: "text-emerald-500",
+      iconBg: "bg-emerald-500/10",
+      title: "bg-gradient-to-br from-emerald-400 to-green-600 bg-clip-text text-transparent",
+      borderHover: "hover:border-emerald-500/50",
+    },
+    blue: {
+      icon: "text-blue-500",
+      iconBg: "bg-blue-500/10",
+      title: "bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent",
+      borderHover: "hover:border-blue-500/50",
+    },
+    sky: {
+      icon: "text-sky-500",
+      iconBg: "bg-sky-500/10",
+      title: "bg-gradient-to-br from-sky-400 to-blue-500 bg-clip-text text-transparent",
+      borderHover: "hover:border-sky-500/50",
+    },
+  };
+
+  const styles = variants[variant];
+
   const Content = (
-    <div className={`group relative h-full overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : 'hover:border-border hover:shadow-md'}`}>
+    <div className={`group relative h-full overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : `hover:border-border hover:shadow-md ${styles.borderHover}`}`}>
       {icon && (
-        <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 text-primary">
+        <div className={`mb-4 inline-flex rounded-lg p-3 ${styles.icon} ${styles.iconBg}`}>
           {icon}
         </div>
       )}
-      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
+      <h3 className={`mb-2 text-xl font-bold ${styles.title}`}>{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
     </div>
   );

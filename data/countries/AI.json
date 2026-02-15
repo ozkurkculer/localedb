@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "AI",
+      "region": "Anguilla",
+      "iata": "AXA",
+      "icao": "TQPF",
+      "name": "Clayton J. Lloyd International Airport",
+      "latitude": 18.2048,
+      "longitude": -63.0551
+    }
+  ]
 }

@@ -228,5 +228,250 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CU",
+      "region": "Artemisa",
+      "iata": "UPB",
+      "icao": "MUPB",
+      "name": "Playa Baracoa Airport",
+      "latitude": 23.0328,
+      "longitude": -82.5794
+    },
+    {
+      "countryCode": "CU",
+      "region": "Camaguey",
+      "iata": "CMW",
+      "icao": "MUCM",
+      "name": "Ignacio Agramonte International Airport",
+      "latitude": 21.4203,
+      "longitude": -77.8475
+    },
+    {
+      "countryCode": "CU",
+      "region": "Ciego de Avila",
+      "iata": "AVI",
+      "icao": "MUCA",
+      "name": "Maximo Gomez  Airport",
+      "latitude": 22.0271,
+      "longitude": -78.7896
+    },
+    {
+      "countryCode": "CU",
+      "region": "Ciego de Avila",
+      "iata": "CCC",
+      "icao": "MUCC",
+      "name": "Jardines del Rey Airport",
+      "latitude": 22.461,
+      "longitude": -78.3284
+    },
+    {
+      "countryCode": "CU",
+      "region": "Cienfuegos",
+      "iata": "CFG",
+      "icao": "MUCF",
+      "name": "Jaime Gonzalez Airport",
+      "latitude": 22.15,
+      "longitude": -80.4142
+    },
+    {
+      "countryCode": "CU",
+      "region": "Granma",
+      "iata": "BYM",
+      "icao": "MUBY",
+      "name": "Carlos Manuel de Cespedes Airport",
+      "latitude": 20.3964,
+      "longitude": -76.6214
+    },
+    {
+      "countryCode": "CU",
+      "region": "Granma",
+      "iata": "MZO",
+      "icao": "MUMZ",
+      "name": "Sierra Maestra Airport",
+      "latitude": 20.2881,
+      "longitude": -77.0892
+    },
+    {
+      "countryCode": "CU",
+      "region": "Guantanamo",
+      "iata": "BCA",
+      "icao": "MUBA",
+      "name": "Gustavo Rizo Airport",
+      "latitude": 20.3653,
+      "longitude": -74.5062
+    },
+    {
+      "countryCode": "CU",
+      "region": "Guantanamo",
+      "iata": "GAO",
+      "icao": "MUGT",
+      "name": "Mariana Grajales Airport",
+      "latitude": 20.0853,
+      "longitude": -75.1583
+    },
+    {
+      "countryCode": "CU",
+      "region": "Guantanamo",
+      "iata": "NBW",
+      "icao": "MUGM",
+      "name": "Guantanamo Bay Naval Base",
+      "latitude": 19.9065,
+      "longitude": -75.2071
+    },
+    {
+      "countryCode": "CU",
+      "region": "Guantanamo",
+      "iata": "UMA",
+      "icao": "",
+      "name": "Punta de Maisi Airport",
+      "latitude": 20.2506,
+      "longitude": -74.1505
+    },
+    {
+      "countryCode": "CU",
+      "region": "Holguin",
+      "iata": "HOG",
+      "icao": "MUHG",
+      "name": "Frank Pais Airport",
+      "latitude": 20.7856,
+      "longitude": -76.3151
+    },
+    {
+      "countryCode": "CU",
+      "region": "Holguin",
+      "iata": "MOA",
+      "icao": "MUMO",
+      "name": "Orestes Acosta Airport",
+      "latitude": 20.6539,
+      "longitude": -74.9222
+    },
+    {
+      "countryCode": "CU",
+      "region": "Isla de la Juventud",
+      "iata": "CYO",
+      "icao": "MUCL",
+      "name": "Vilo Acuna Airport",
+      "latitude": 21.6165,
+      "longitude": -81.546
+    },
+    {
+      "countryCode": "CU",
+      "region": "Isla de la Juventud",
+      "iata": "GER",
+      "icao": "MUNG",
+      "name": "Rafael Cabrera Mustelier Airport",
+      "latitude": 21.8347,
+      "longitude": -82.7838
+    },
+    {
+      "countryCode": "CU",
+      "region": "Isla de la Juventud",
+      "iata": "SZJ",
+      "icao": "MUSN",
+      "name": "Siguanea Airport",
+      "latitude": 21.6425,
+      "longitude": -82.9551
+    },
+    {
+      "countryCode": "CU",
+      "region": "La Habana",
+      "iata": "HAV",
+      "icao": "MUHA",
+      "name": "Jose Marti International Airport",
+      "latitude": 22.9892,
+      "longitude": -82.4091
+    },
+    {
+      "countryCode": "CU",
+      "region": "Las Tunas",
+      "iata": "VTU",
+      "icao": "MUVT",
+      "name": "Hermanos Ameijeiras Airport",
+      "latitude": 20.9876,
+      "longitude": -76.9358
+    },
+    {
+      "countryCode": "CU",
+      "region": "Matanzas",
+      "iata": "VRA",
+      "icao": "MUVR",
+      "name": "Juan Gualberto Gomez Airport",
+      "latitude": 23.0344,
+      "longitude": -81.4353
+    },
+    {
+      "countryCode": "CU",
+      "region": "Matanzas",
+      "iata": "VRO",
+      "icao": "MUKW",
+      "name": "Kawama Airport",
+      "latitude": 23.124,
+      "longitude": -81.3016
+    },
+    {
+      "countryCode": "CU",
+      "region": "Pinar del Rio",
+      "iata": "LCL",
+      "icao": "MULM",
+      "name": "La Coloma Airport",
+      "latitude": 22.3361,
+      "longitude": -83.6419
+    },
+    {
+      "countryCode": "CU",
+      "region": "Pinar del Rio",
+      "iata": "SNJ",
+      "icao": "MUSJ",
+      "name": "San Julian Air Base",
+      "latitude": 22.0953,
+      "longitude": -84.152
+    },
+    {
+      "countryCode": "CU",
+      "region": "Sancti Spiritus",
+      "iata": "TND",
+      "icao": "MUTD",
+      "name": "Alberto Delgado Airport",
+      "latitude": 21.7883,
+      "longitude": -79.9972
+    },
+    {
+      "countryCode": "CU",
+      "region": "Sancti Spiritus",
+      "iata": "USS",
+      "icao": "MUSS",
+      "name": "Sancti Spiritus Airport",
+      "latitude": 21.9704,
+      "longitude": -79.4427
+    },
+    {
+      "countryCode": "CU",
+      "region": "Santiago de Cuba",
+      "iata": "SCU",
+      "icao": "MUCU",
+      "name": "Antonio Maceo International Airport",
+      "latitude": 19.9698,
+      "longitude": -75.8354
+    },
+    {
+      "countryCode": "CU",
+      "region": "Villa Clara",
+      "iata": "BWW",
+      "icao": "MUBR",
+      "name": "Las Brujas Airport",
+      "latitude": 22.6213,
+      "longitude": -79.1472
+    },
+    {
+      "countryCode": "CU",
+      "region": "Villa Clara",
+      "iata": "SNU",
+      "icao": "MUSC",
+      "name": "Abel Santamaria Airport",
+      "latitude": 22.4922,
+      "longitude": -79.9436
+    }
+  ]
 }

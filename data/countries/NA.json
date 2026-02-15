@@ -243,5 +243,295 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NA",
+      "region": "Erongo",
+      "iata": "ADI",
+      "icao": "FYAR",
+      "name": "Arandis Airport",
+      "latitude": -22.4622,
+      "longitude": 14.98
+    },
+    {
+      "countryCode": "NA",
+      "region": "Erongo",
+      "iata": "MJO",
+      "icao": "FYME",
+      "name": "Mount Etjo Airport",
+      "latitude": -21.0233,
+      "longitude": 16.4528
+    },
+    {
+      "countryCode": "NA",
+      "region": "Erongo",
+      "iata": "SWP",
+      "icao": "FYSM",
+      "name": "Swakopmund Airport",
+      "latitude": -22.6619,
+      "longitude": 14.5681
+    },
+    {
+      "countryCode": "NA",
+      "region": "Erongo",
+      "iata": "WVB",
+      "icao": "FYWB",
+      "name": "Walvis Bay Airport",
+      "latitude": -22.9799,
+      "longitude": 14.6453
+    },
+    {
+      "countryCode": "NA",
+      "region": "Hardap",
+      "iata": "SZM",
+      "icao": "FYSS",
+      "name": "Sesriem Airport",
+      "latitude": -24.5128,
+      "longitude": 15.7467
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "AIW",
+      "icao": "FYAA",
+      "name": "Ai-Ais Airport",
+      "latitude": -27.995,
+      "longitude": 17.5966
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "KAS",
+      "icao": "FYKB",
+      "name": "Karasburg Airport",
+      "latitude": -28.0297,
+      "longitude": 18.7385
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "KMP",
+      "icao": "FYKT",
+      "name": "Keetmanshoop Airport",
+      "latitude": -26.5398,
+      "longitude": 18.1114
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "LUD",
+      "icao": "FYLZ",
+      "name": "Luderitz Airport",
+      "latitude": -26.6874,
+      "longitude": 15.2429
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "OMD",
+      "icao": "FYOG",
+      "name": "Oranjemund Airport",
+      "latitude": -28.5847,
+      "longitude": 16.4467
+    },
+    {
+      "countryCode": "NA",
+      "region": "Karas",
+      "iata": "RHN",
+      "icao": "FYSA",
+      "name": "Skorpion Mine Airport",
+      "latitude": -27.8764,
+      "longitude": 16.6478
+    },
+    {
+      "countryCode": "NA",
+      "region": "Kavango East",
+      "iata": "BQI",
+      "icao": "",
+      "name": "Bagani Airport",
+      "latitude": -18.1181,
+      "longitude": 21.6244
+    },
+    {
+      "countryCode": "NA",
+      "region": "Kavango East",
+      "iata": "NDU",
+      "icao": "FYRU",
+      "name": "Rundu Airport",
+      "latitude": -17.9565,
+      "longitude": 19.7194
+    },
+    {
+      "countryCode": "NA",
+      "region": "Khomas",
+      "iata": "ERS",
+      "icao": "FYWE",
+      "name": "Eros Airport",
+      "latitude": -22.6122,
+      "longitude": 17.0804
+    },
+    {
+      "countryCode": "NA",
+      "region": "Khomas",
+      "iata": "MQG",
+      "icao": "FYMG",
+      "name": "Midgard Airport",
+      "latitude": -22.0106,
+      "longitude": 17.37
+    },
+    {
+      "countryCode": "NA",
+      "region": "Khomas",
+      "iata": "OGV",
+      "icao": "FYNG",
+      "name": "Ongava Airstrip",
+      "latitude": -22.1833,
+      "longitude": 18.5333
+    },
+    {
+      "countryCode": "NA",
+      "region": "Khomas",
+      "iata": "WDH",
+      "icao": "FYWH",
+      "name": "Hosea Kutako International Airport",
+      "latitude": -22.4799,
+      "longitude": 17.4709
+    },
+    {
+      "countryCode": "NA",
+      "region": "Kunene",
+      "iata": "OPW",
+      "icao": "FYOP",
+      "name": "Opuwa Airport",
+      "latitude": -18.0614,
+      "longitude": 13.8505
+    },
+    {
+      "countryCode": "NA",
+      "region": "Kunene",
+      "iata": "TCY",
+      "icao": "FYTE",
+      "name": "Terrace Bay Airport",
+      "latitude": -19.9713,
+      "longitude": 13.0249
+    },
+    {
+      "countryCode": "NA",
+      "region": "Omaheke",
+      "iata": "GOG",
+      "icao": "FYGB",
+      "name": "Gobabis Airport",
+      "latitude": -22.5044,
+      "longitude": 18.9731
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshana",
+      "iata": "OHI",
+      "icao": "FYOS",
+      "name": "Oshakati Airport",
+      "latitude": -17.797,
+      "longitude": 15.6993
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshana",
+      "iata": "OND",
+      "icao": "FYOA",
+      "name": "Ondangwa Airport",
+      "latitude": -17.8782,
+      "longitude": 15.9526
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshikoto",
+      "iata": "HAL",
+      "icao": "FYHI",
+      "name": "Halali Airport",
+      "latitude": -19.0285,
+      "longitude": 16.4585
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshikoto",
+      "iata": "NNI",
+      "icao": "FYNA",
+      "name": "Namutoni Airport",
+      "latitude": -18.8064,
+      "longitude": 16.9272
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshikoto",
+      "iata": "OKF",
+      "icao": "FYOO",
+      "name": "Okaukuejo Airport",
+      "latitude": -19.1492,
+      "longitude": 15.9119
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshikoto",
+      "iata": "OKU",
+      "icao": "FYMO",
+      "name": "Mokuti Lodge Airport",
+      "latitude": -18.8128,
+      "longitude": 17.0594
+    },
+    {
+      "countryCode": "NA",
+      "region": "Oshikoto",
+      "iata": "TSB",
+      "icao": "FYTM",
+      "name": "Tsumeb Airport",
+      "latitude": -19.2619,
+      "longitude": 17.7325
+    },
+    {
+      "countryCode": "NA",
+      "region": "Otjozondjupa",
+      "iata": "GFY",
+      "icao": "FYGF",
+      "name": "Grootfontein Air Base",
+      "latitude": -19.6022,
+      "longitude": 18.1227
+    },
+    {
+      "countryCode": "NA",
+      "region": "Otjozondjupa",
+      "iata": "OTJ",
+      "icao": "FYOW",
+      "name": "Otjiwarongo Airport",
+      "latitude": -20.4347,
+      "longitude": 16.6608
+    },
+    {
+      "countryCode": "NA",
+      "region": "Zambezi",
+      "iata": "LHU",
+      "icao": "FYLS",
+      "name": "Lianshulu Airport",
+      "latitude": -18.1167,
+      "longitude": 23.3933
+    },
+    {
+      "countryCode": "NA",
+      "region": "Zambezi",
+      "iata": "MPA",
+      "icao": "FYKM",
+      "name": "Katima Mulilo Airport (Mpacha Airport)",
+      "latitude": -17.6344,
+      "longitude": 24.1767
+    },
+    {
+      "countryCode": "NA",
+      "region": "Zambezi",
+      "iata": "OMG",
+      "icao": "FYOE",
+      "name": "Omega Airport",
+      "latitude": -18.0303,
+      "longitude": 22.1897
+    }
+  ]
 }

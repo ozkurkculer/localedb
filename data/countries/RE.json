@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "RE",
+      "region": "Reunion",
+      "iata": "RUN",
+      "icao": "FMEE",
+      "name": "Roland Garros Airport",
+      "latitude": -20.8871,
+      "longitude": 55.5103
+    },
+    {
+      "countryCode": "RE",
+      "region": "Reunion",
+      "iata": "ZSE",
+      "icao": "FMEP",
+      "name": "Pierrefonds Airport",
+      "latitude": -21.3209,
+      "longitude": 55.425
+    }
+  ]
 }

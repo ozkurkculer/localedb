@@ -235,5 +235,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SY",
+      "region": "Al Hasakah",
+      "iata": "KAC",
+      "icao": "OSKL",
+      "name": "Kamishly Airport",
+      "latitude": 37.0206,
+      "longitude": 41.1914
+    },
+    {
+      "countryCode": "SY",
+      "region": "Al Ladhiqiyah",
+      "iata": "LTK",
+      "icao": "OSLK",
+      "name": "Bassel Al-Assad International Airport",
+      "latitude": 35.4011,
+      "longitude": 35.9487
+    },
+    {
+      "countryCode": "SY",
+      "region": "Dayr az Zawr",
+      "iata": "DEZ",
+      "icao": "OSDZ",
+      "name": "Deir ez-Zor Airport",
+      "latitude": 35.2854,
+      "longitude": 40.176
+    },
+    {
+      "countryCode": "SY",
+      "region": "Dimashq",
+      "iata": "DAM",
+      "icao": "OSDI",
+      "name": "Damascus International Airport",
+      "latitude": 33.4115,
+      "longitude": 36.5156
+    },
+    {
+      "countryCode": "SY",
+      "region": "Halab",
+      "iata": "ALP",
+      "icao": "OSAP",
+      "name": "Aleppo International Airport",
+      "latitude": 36.1807,
+      "longitude": 37.2244
+    },
+    {
+      "countryCode": "SY",
+      "region": "Hims",
+      "iata": "PMS",
+      "icao": "OSPR",
+      "name": "Palmyra Airport",
+      "latitude": 34.5574,
+      "longitude": 38.3169
+    }
+  ]
 }

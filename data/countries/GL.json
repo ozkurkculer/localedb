@@ -231,5 +231,529 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "AOQ",
+      "icao": "",
+      "name": "Aappilattoq Heliport",
+      "latitude": 72.887,
+      "longitude": -55.5961
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "IKE",
+      "icao": "",
+      "name": "Ikerasak Heliport",
+      "latitude": 70.4981,
+      "longitude": -51.3031
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "IUI",
+      "icao": "",
+      "name": "Innarsuit Heliport",
+      "latitude": 73.2023,
+      "longitude": -56.0113
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "JAV",
+      "icao": "BGJN",
+      "name": "Ilulissat Airport",
+      "latitude": 69.2432,
+      "longitude": -51.0571
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "JGO",
+      "icao": "",
+      "name": "Qeqertarsuaq Heliport",
+      "latitude": 69.2511,
+      "longitude": -53.5153
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "JQA",
+      "icao": "BGUQ",
+      "name": "Qaarsut Airport (Uummannaq/Qaarsut Airport)",
+      "latitude": 70.7342,
+      "longitude": -52.6962
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "JUK",
+      "icao": "",
+      "name": "Ukussissat Heliport",
+      "latitude": 71.0512,
+      "longitude": -51.8842
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "JUV",
+      "icao": "BGUK",
+      "name": "Upernavik Airport",
+      "latitude": 72.7902,
+      "longitude": -56.1306
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "KGQ",
+      "icao": "",
+      "name": "Kangersuatsiaq Heliport",
+      "latitude": 72.3811,
+      "longitude": -55.5363
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "KHQ",
+      "icao": "",
+      "name": "Kullorsuaq Heliport",
+      "latitude": 74.5791,
+      "longitude": -57.2351
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "NAQ",
+      "icao": "BGQQ",
+      "name": "Qaanaaq Airport",
+      "latitude": 77.4886,
+      "longitude": -69.3887
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "NIQ",
+      "icao": "",
+      "name": "Niaqornat Heliport",
+      "latitude": 70.7896,
+      "longitude": -53.6562
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "NSQ",
+      "icao": "",
+      "name": "Nussuaq Heliport",
+      "latitude": 74.1095,
+      "longitude": -57.0644
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "PQT",
+      "icao": "",
+      "name": "Qeqertaq Heliport",
+      "latitude": 69.9994,
+      "longitude": -51.3039
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "QUP",
+      "icao": "",
+      "name": "Saqqaq Heliport",
+      "latitude": 70.0115,
+      "longitude": -51.9322
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "SAE",
+      "icao": "",
+      "name": "Saattut Keliport",
+      "latitude": 70.8071,
+      "longitude": -51.6303
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "SRK",
+      "icao": "",
+      "name": "Siorapaluk Heliport",
+      "latitude": 77.7864,
+      "longitude": -70.6384
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "SVR",
+      "icao": "",
+      "name": "Savissivik Heliport",
+      "latitude": 76.018,
+      "longitude": -65.1176
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "THU",
+      "icao": "BGTL",
+      "name": "Pituffik Space Base",
+      "latitude": 76.5312,
+      "longitude": -68.7032
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "TQA",
+      "icao": "",
+      "name": "Tasiusaq Heliport",
+      "latitude": 73.3735,
+      "longitude": -56.062
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "UMD",
+      "icao": "BGUM",
+      "name": "Uummannaq Heliport",
+      "latitude": 70.6804,
+      "longitude": -52.1116
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "UPK",
+      "icao": "",
+      "name": "Upernavik Kujalleq Heliport",
+      "latitude": 72.1527,
+      "longitude": -55.531
+    },
+    {
+      "countryCode": "GL",
+      "region": "Avannaata Kommunia",
+      "iata": "XIQ",
+      "icao": "",
+      "name": "Ilimanaq Heliport",
+      "latitude": 69.0822,
+      "longitude": -51.1088
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "JJU",
+      "icao": "",
+      "name": "Mittarfik Qaqortoq Heliport",
+      "latitude": 60.7156,
+      "longitude": -46.0299
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "JNN",
+      "icao": "",
+      "name": "Nanortalik Heliport",
+      "latitude": 60.1418,
+      "longitude": -45.233
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "JNS",
+      "icao": "",
+      "name": "Narsaq Heliport",
+      "latitude": 60.9172,
+      "longitude": -46.06
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "LLU",
+      "icao": "",
+      "name": "Alluitsup Paa Heliport",
+      "latitude": 60.4645,
+      "longitude": -45.5691
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "QFN",
+      "icao": "",
+      "name": "Narsaq Kujalleq Narsarmijit Heliport",
+      "latitude": 60.0051,
+      "longitude": -44.6579
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "QUV",
+      "icao": "",
+      "name": "Aappilattoq-Nanortaliq Heliport",
+      "latitude": 60.1483,
+      "longitude": -44.2869
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "QUW",
+      "icao": "",
+      "name": "Ammassivik Heliport",
+      "latitude": 60.5953,
+      "longitude": -45.382
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "UAK",
+      "icao": "BGBW",
+      "name": "Narsarsuaq Airport",
+      "latitude": 61.1605,
+      "longitude": -45.426
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Kujalleq",
+      "iata": "XEQ",
+      "icao": "",
+      "name": "Tasiusaq Heliport",
+      "latitude": 60.1937,
+      "longitude": -44.8115
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "JCH",
+      "icao": "BGCH",
+      "name": "Qasigiannguit Heliport",
+      "latitude": 68.8228,
+      "longitude": -51.1734
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "JEG",
+      "icao": "BGAA",
+      "name": "Aasiaat Airport",
+      "latitude": 68.7218,
+      "longitude": -52.7847
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QCU",
+      "icao": "",
+      "name": "Akunnaaq Heliport",
+      "latitude": 68.7441,
+      "longitude": -52.329
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QFI",
+      "icao": "",
+      "name": "Iginniarfik Heliport",
+      "latitude": 68.1458,
+      "longitude": -53.1692
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QGQ",
+      "icao": "",
+      "name": "Attu Heliport",
+      "latitude": 67.943,
+      "longitude": -53.6223
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QJE",
+      "icao": "",
+      "name": "Kitsissuarsuit Heliport",
+      "latitude": 68.8558,
+      "longitude": -53.1185
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QJI",
+      "icao": "",
+      "name": "Ikamiut Heliport",
+      "latitude": 68.6321,
+      "longitude": -51.8337
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QMK",
+      "icao": "",
+      "name": "Niaqornaarsuk Heliport",
+      "latitude": 68.2342,
+      "longitude": -52.8546
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QPW",
+      "icao": "",
+      "name": "Kangaatsiaq Heliport",
+      "latitude": 68.3079,
+      "longitude": -53.4592
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommune Qeqertalik",
+      "iata": "QRY",
+      "icao": "",
+      "name": "Ikerasaarsuk Heliport",
+      "latitude": 68.1409,
+      "longitude": -53.4414
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommunegarfik Sermersooq",
+      "iata": "AGM",
+      "icao": "",
+      "name": "Tasiilaq Heliport",
+      "latitude": 65.6122,
+      "longitude": -37.6184
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "CNP",
+      "icao": "BGCO",
+      "name": "Nerlerit Inaat Airport",
+      "latitude": 70.7431,
+      "longitude": -22.6505
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "GOH",
+      "icao": "BGGH",
+      "name": "Nuuk Airport",
+      "latitude": 64.1909,
+      "longitude": -51.6781
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "IOQ",
+      "icao": "",
+      "name": "Isortoq Heliport",
+      "latitude": 65.5465,
+      "longitude": -38.9778
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "JFR",
+      "icao": "BGPT",
+      "name": "Paamiut Airport",
+      "latitude": 62.0147,
+      "longitude": -49.6709
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "JRK",
+      "icao": "",
+      "name": "Arsuk Heliport",
+      "latitude": 61.1768,
+      "longitude": -48.4198
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "KUS",
+      "icao": "BGKK",
+      "name": "Kulusuk Airport",
+      "latitude": 65.5736,
+      "longitude": -37.1236
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "KUZ",
+      "icao": "",
+      "name": "Kuummiit Heliport",
+      "latitude": 65.8638,
+      "longitude": -36.9954
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "OBY",
+      "icao": "",
+      "name": "Ittoqqortoormiit Heliport",
+      "latitude": 70.4881,
+      "longitude": -21.9716
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "SGG",
+      "icao": "",
+      "name": "Sermiligaaq Heliport",
+      "latitude": 65.9059,
+      "longitude": -36.3781
+    },
+    {
+      "countryCode": "GL",
+      "region": "Kommuneqarfik Sermersooq",
+      "iata": "TQI",
+      "icao": "",
+      "name": "Tiniteqilaaq Heliport",
+      "latitude": 65.892,
+      "longitude": -37.7833
+    },
+    {
+      "countryCode": "GL",
+      "region": "Qeqqata Kommunia",
+      "iata": "JHS",
+      "icao": "BGSS",
+      "name": "Sisimiut Airport",
+      "latitude": 66.9513,
+      "longitude": -53.7293
+    },
+    {
+      "countryCode": "GL",
+      "region": "Qeqqata Kommunia",
+      "iata": "JSU",
+      "icao": "BGMQ",
+      "name": "Maniitsoq Airport",
+      "latitude": 65.4125,
+      "longitude": -52.9394
+    },
+    {
+      "countryCode": "GL",
+      "region": "Qeqqata Kommunia",
+      "iata": "QJG",
+      "icao": "",
+      "name": "Itilleq Heliport",
+      "latitude": 66.5791,
+      "longitude": -53.5014
+    },
+    {
+      "countryCode": "GL",
+      "region": "Qeqqata Kommunia",
+      "iata": "SFJ",
+      "icao": "BGSF",
+      "name": "Kangerlussuaq Airport",
+      "latitude": 67.0122,
+      "longitude": -50.7116
+    },
+    {
+      "countryCode": "GL",
+      "region": "Qeqqata Kommunia",
+      "iata": "SZC",
+      "icao": "",
+      "name": "Sarfannguit Heliport",
+      "latitude": 66.8964,
+      "longitude": -52.8657
+    }
+  ]
 }

@@ -235,5 +235,493 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "AGP",
+      "icao": "LEMG",
+      "name": "Malaga Airport",
+      "latitude": 36.6749,
+      "longitude": -4.49911
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "GRX",
+      "icao": "LEGR",
+      "name": "Federico Garcia Lorca Airport (Granada Jaen Airport)",
+      "latitude": 37.1887,
+      "longitude": -3.77736
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "LEI",
+      "icao": "LEAM",
+      "name": "Almeria Airport",
+      "latitude": 36.8439,
+      "longitude": -2.3701
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "ODB",
+      "icao": "LEBA",
+      "name": "Cordoba Airport",
+      "latitude": 37.842,
+      "longitude": -4.84888
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "OZP",
+      "icao": "LEMO",
+      "name": "Moron Air Base",
+      "latitude": 37.1749,
+      "longitude": -5.61594
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "ROZ",
+      "icao": "LERT",
+      "name": "Naval Station Rota",
+      "latitude": 36.6452,
+      "longitude": -6.34946
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "SVQ",
+      "icao": "LEZL",
+      "name": "Seville Airport",
+      "latitude": 37.418,
+      "longitude": -5.89311
+    },
+    {
+      "countryCode": "ES",
+      "region": "Andalucia",
+      "iata": "XRY",
+      "icao": "LEJR",
+      "name": "Jerez Airport (La Parra Airport)",
+      "latitude": 36.7446,
+      "longitude": -6.06011
+    },
+    {
+      "countryCode": "ES",
+      "region": "Aragon",
+      "iata": "HSK",
+      "icao": "LEHC",
+      "name": "Huesca-Pirineos Airport",
+      "latitude": 42.0761,
+      "longitude": -0.316667
+    },
+    {
+      "countryCode": "ES",
+      "region": "Aragon",
+      "iata": "TEV",
+      "icao": "LETL",
+      "name": "Teruel Airport",
+      "latitude": 40.403,
+      "longitude": -1.2183
+    },
+    {
+      "countryCode": "ES",
+      "region": "Aragon",
+      "iata": "ZAZ",
+      "icao": "LEZG",
+      "name": "Zaragoza Airport",
+      "latitude": 41.6662,
+      "longitude": -1.04155
+    },
+    {
+      "countryCode": "ES",
+      "region": "Asturias, Principado de",
+      "iata": "OVD",
+      "icao": "LEAS",
+      "name": "Asturias Airport (Oviedo Airport)",
+      "latitude": 43.5636,
+      "longitude": -6.03462
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "ACE",
+      "icao": "GCRR",
+      "name": "Lanzarote Airport",
+      "latitude": 28.9455,
+      "longitude": -13.6052
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "FUE",
+      "icao": "GCFV",
+      "name": "Fuerteventura Airport",
+      "latitude": 28.4527,
+      "longitude": -13.8638
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "GMZ",
+      "icao": "GCGM",
+      "name": "La Gomera Airport",
+      "latitude": 28.0296,
+      "longitude": -17.2146
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "LPA",
+      "icao": "GCLP",
+      "name": "Gran Canaria Airport",
+      "latitude": 27.9319,
+      "longitude": -15.3866
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "SPC",
+      "icao": "GCLA",
+      "name": "La Palma Airport",
+      "latitude": 28.6265,
+      "longitude": -17.7556
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "TFN",
+      "icao": "GCXO",
+      "name": "Tenerife North Airport",
+      "latitude": 28.4847,
+      "longitude": -16.3439
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "TFS",
+      "icao": "GCTS",
+      "name": "Tenerife South Airport",
+      "latitude": 28.046,
+      "longitude": -16.5728
+    },
+    {
+      "countryCode": "ES",
+      "region": "Canarias",
+      "iata": "VDE",
+      "icao": "GCHI",
+      "name": "El Hierro Airport",
+      "latitude": 27.8148,
+      "longitude": -17.8871
+    },
+    {
+      "countryCode": "ES",
+      "region": "Cantabria",
+      "iata": "SDR",
+      "icao": "LEXJ",
+      "name": "Santander Airport",
+      "latitude": 43.4271,
+      "longitude": -3.82001
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla y Leon",
+      "iata": "CQM",
+      "icao": "LERL",
+      "name": "Ciudad Real Central Airport",
+      "latitude": 38.8564,
+      "longitude": -3.97
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla y Leon",
+      "iata": "LEN",
+      "icao": "LELN",
+      "name": "Leon Airport",
+      "latitude": 42.589,
+      "longitude": -5.65556
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla y Leon",
+      "iata": "RGS",
+      "icao": "LEBG",
+      "name": "Burgos Airport",
+      "latitude": 42.3576,
+      "longitude": -3.62076
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla y Leon",
+      "iata": "SLM",
+      "icao": "LESA",
+      "name": "Salamanca Airport",
+      "latitude": 40.9521,
+      "longitude": -5.50199
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla y Leon",
+      "iata": "VLL",
+      "icao": "LEVD",
+      "name": "Valladolid Airport",
+      "latitude": 41.7061,
+      "longitude": -4.85194
+    },
+    {
+      "countryCode": "ES",
+      "region": "Castilla-La Mancha",
+      "iata": "ABC",
+      "icao": "LEAB",
+      "name": "Albacete Airport",
+      "latitude": 38.9485,
+      "longitude": -1.86352
+    },
+    {
+      "countryCode": "ES",
+      "region": "Catalunya",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "name": "Barcelona El Prat Airport",
+      "latitude": 41.2971,
+      "longitude": 2.07846
+    },
+    {
+      "countryCode": "ES",
+      "region": "Catalunya",
+      "iata": "GRO",
+      "icao": "LEGE",
+      "name": "Girona-Costa Brava Airport",
+      "latitude": 41.901,
+      "longitude": 2.76055
+    },
+    {
+      "countryCode": "ES",
+      "region": "Catalunya",
+      "iata": "ILD",
+      "icao": "LEDA",
+      "name": "Lleida-Alguaire Airport",
+      "latitude": 41.7282,
+      "longitude": 0.535023
+    },
+    {
+      "countryCode": "ES",
+      "region": "Catalunya",
+      "iata": "LEU",
+      "icao": "LESU",
+      "name": "Andorra–La Seu d'Urgell Airport",
+      "latitude": 42.3386,
+      "longitude": 1.40917
+    },
+    {
+      "countryCode": "ES",
+      "region": "Catalunya",
+      "iata": "REU",
+      "icao": "LERS",
+      "name": "Reus Airport",
+      "latitude": 41.1474,
+      "longitude": 1.16717
+    },
+    {
+      "countryCode": "ES",
+      "region": "Extremadura",
+      "iata": "BJZ",
+      "icao": "LEBZ",
+      "name": "Badajoz Airport (Talavera la Real Air Base)",
+      "latitude": 38.8913,
+      "longitude": -6.82133
+    },
+    {
+      "countryCode": "ES",
+      "region": "Galicia",
+      "iata": "LCG",
+      "icao": "LECO",
+      "name": "A Coruna Airport",
+      "latitude": 43.3021,
+      "longitude": -8.37726
+    },
+    {
+      "countryCode": "ES",
+      "region": "Galicia",
+      "iata": "SCQ",
+      "icao": "LEST",
+      "name": "Santiago de Compostela Airport",
+      "latitude": 42.8963,
+      "longitude": -8.41514
+    },
+    {
+      "countryCode": "ES",
+      "region": "Galicia",
+      "iata": "VGO",
+      "icao": "LEVX",
+      "name": "Vigo-Peinador Airport",
+      "latitude": 42.2318,
+      "longitude": -8.62677
+    },
+    {
+      "countryCode": "ES",
+      "region": "Illes Balears",
+      "iata": "IBZ",
+      "icao": "LEIB",
+      "name": "Ibiza Airport",
+      "latitude": 38.8729,
+      "longitude": 1.37312
+    },
+    {
+      "countryCode": "ES",
+      "region": "Illes Balears",
+      "iata": "MAH",
+      "icao": "LEMH",
+      "name": "Menorca Airport (Mahon Airport)",
+      "latitude": 39.8626,
+      "longitude": 4.21865
+    },
+    {
+      "countryCode": "ES",
+      "region": "Illes Balears",
+      "iata": "PMI",
+      "icao": "LEPA",
+      "name": "Palma de Mallorca Airport",
+      "latitude": 39.5517,
+      "longitude": 2.73881
+    },
+    {
+      "countryCode": "ES",
+      "region": "Illes Balears",
+      "iata": "",
+      "icao": "LESL",
+      "name": "San Luis Aerodrome",
+      "latitude": 39.862222,
+      "longitude": 4.258333
+    },
+    {
+      "countryCode": "ES",
+      "region": "Illes Balears",
+      "iata": "",
+      "icao": "LESB",
+      "name": "Son Bonet Aerodrome",
+      "latitude": 39.598889,
+      "longitude": 2.702778
+    },
+    {
+      "countryCode": "ES",
+      "region": "La Rioja",
+      "iata": "RJL",
+      "icao": "LELO",
+      "name": "Logrono-Agoncilo",
+      "latitude": 42.461,
+      "longitude": -2.32224
+    },
+    {
+      "countryCode": "ES",
+      "region": "Madrid, Comunidad de",
+      "iata": "MAD",
+      "icao": "LEMD",
+      "name": "Adolfo Suarez Madrid-Barajas Airport",
+      "latitude": 40.4719,
+      "longitude": -3.56264
+    },
+    {
+      "countryCode": "ES",
+      "region": "Madrid, Comunidad de",
+      "iata": "TOJ",
+      "icao": "LETO",
+      "name": "Madrid-Torrejon Airport",
+      "latitude": 40.4967,
+      "longitude": -3.44587
+    },
+    {
+      "countryCode": "ES",
+      "region": "Melilla",
+      "iata": "MLN",
+      "icao": "GEML",
+      "name": "Melilla Airport",
+      "latitude": 35.2798,
+      "longitude": -2.95626
+    },
+    {
+      "countryCode": "ES",
+      "region": "Murcia, Region de",
+      "iata": "MJV",
+      "icao": "LELC",
+      "name": "Murcia-San Javier Airport",
+      "latitude": 37.775,
+      "longitude": -0.812389
+    },
+    {
+      "countryCode": "ES",
+      "region": "Murcia, Region de",
+      "iata": "RMU",
+      "icao": "LEMI",
+      "name": "Region de Murcia International Airport",
+      "latitude": 37.803,
+      "longitude": -1.125
+    },
+    {
+      "countryCode": "ES",
+      "region": "Navarra, Comunidad Foral de",
+      "iata": "PNA",
+      "icao": "LEPP",
+      "name": "Pamplona Airport",
+      "latitude": 42.77,
+      "longitude": -1.64633
+    },
+    {
+      "countryCode": "ES",
+      "region": "Pais Vasco",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "name": "Bilbao Airport",
+      "latitude": 43.3011,
+      "longitude": -2.91061
+    },
+    {
+      "countryCode": "ES",
+      "region": "Pais Vasco",
+      "iata": "EAS",
+      "icao": "LESO",
+      "name": "San Sebastian Airport",
+      "latitude": 43.3565,
+      "longitude": -1.79061
+    },
+    {
+      "countryCode": "ES",
+      "region": "Pais Vasco",
+      "iata": "VIT",
+      "icao": "LEVT",
+      "name": "Vitoria Airport",
+      "latitude": 42.8828,
+      "longitude": -2.72447
+    },
+    {
+      "countryCode": "ES",
+      "region": "Valenciana, Comunidad",
+      "iata": "ALC",
+      "icao": "LEAL",
+      "name": "Alicante-Elche Airport",
+      "latitude": 38.2822,
+      "longitude": -0.558156
+    },
+    {
+      "countryCode": "ES",
+      "region": "Valenciana, Comunidad",
+      "iata": "CDT",
+      "icao": "LECH",
+      "name": "Castellon-Costa Azahar Airport",
+      "latitude": 40.2139,
+      "longitude": 0.073333
+    },
+    {
+      "countryCode": "ES",
+      "region": "Valenciana, Comunidad",
+      "iata": "VLC",
+      "icao": "LEVC",
+      "name": "Valencia Airport",
+      "latitude": 39.4893,
+      "longitude": -0.481625
+    }
+  ]
 }

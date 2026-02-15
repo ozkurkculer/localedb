@@ -238,5 +238,304 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MH",
+      "region": "Ailinglaplap",
+      "iata": "AIC",
+      "icao": "",
+      "name": "Ailinglaplap Airok Airport",
+      "latitude": 7.27942,
+      "longitude": 168.826
+    },
+    {
+      "countryCode": "MH",
+      "region": "Ailinglaplap",
+      "iata": "JEJ",
+      "icao": "",
+      "name": "Jeh Airport",
+      "latitude": 7.56535,
+      "longitude": 168.962
+    },
+    {
+      "countryCode": "MH",
+      "region": "Ailinglaplap",
+      "iata": "WJA",
+      "icao": "",
+      "name": "Woja Airport",
+      "latitude": 7.45083,
+      "longitude": 168.55
+    },
+    {
+      "countryCode": "MH",
+      "region": "Ailuk",
+      "iata": "AIM",
+      "icao": "",
+      "name": "Ailuk Airport",
+      "latitude": 10.2168,
+      "longitude": 169.983
+    },
+    {
+      "countryCode": "MH",
+      "region": "Arno",
+      "iata": "IMI",
+      "icao": "",
+      "name": "Ine Airport",
+      "latitude": 7.00555,
+      "longitude": 171.657
+    },
+    {
+      "countryCode": "MH",
+      "region": "Arno",
+      "iata": "TIC",
+      "icao": "",
+      "name": "Tinak Airport",
+      "latitude": 7.13333,
+      "longitude": 171.917
+    },
+    {
+      "countryCode": "MH",
+      "region": "Aur",
+      "iata": "AUL",
+      "icao": "",
+      "name": "Aur Airport",
+      "latitude": 8.14528,
+      "longitude": 171.173
+    },
+    {
+      "countryCode": "MH",
+      "region": "Bikini & Kili",
+      "iata": "BII",
+      "icao": "",
+      "name": "Bikini Atoll Airport",
+      "latitude": 11.5225,
+      "longitude": 165.565
+    },
+    {
+      "countryCode": "MH",
+      "region": "Bikini & Kili",
+      "iata": "KIO",
+      "icao": "",
+      "name": "Kili Airport",
+      "latitude": 5.64452,
+      "longitude": 169.12
+    },
+    {
+      "countryCode": "MH",
+      "region": "Ebon",
+      "iata": "EBO",
+      "icao": "",
+      "name": "Ebon Airport",
+      "latitude": 4.5982,
+      "longitude": 168.752
+    },
+    {
+      "countryCode": "MH",
+      "region": "Enewetak & Ujelang",
+      "iata": "ENT",
+      "icao": "PKMA",
+      "name": "Enewetak Auxiliary Airfield",
+      "latitude": 11.3407,
+      "longitude": 162.328
+    },
+    {
+      "countryCode": "MH",
+      "region": "Jabat",
+      "iata": "JAT",
+      "icao": "",
+      "name": "Jabot Airport",
+      "latitude": 7.74977,
+      "longitude": 168.978
+    },
+    {
+      "countryCode": "MH",
+      "region": "Jaluit",
+      "iata": "UIT",
+      "icao": "",
+      "name": "Jaluit Airport",
+      "latitude": 5.90924,
+      "longitude": 169.637
+    },
+    {
+      "countryCode": "MH",
+      "region": "Kwajalein",
+      "iata": "EAL",
+      "icao": "",
+      "name": "Elenak Airport",
+      "latitude": 9.31931,
+      "longitude": 166.848
+    },
+    {
+      "countryCode": "MH",
+      "region": "Kwajalein",
+      "iata": "EBN",
+      "icao": "",
+      "name": "Ebadon Airstrip",
+      "latitude": 9.33056,
+      "longitude": 166.82
+    },
+    {
+      "countryCode": "MH",
+      "region": "Kwajalein",
+      "iata": "KWA",
+      "icao": "PKWA",
+      "name": "Bucholz Army Airfield",
+      "latitude": 8.72012,
+      "longitude": 167.732
+    },
+    {
+      "countryCode": "MH",
+      "region": "Kwajalein",
+      "iata": "LOF",
+      "icao": "",
+      "name": "Loen Airport",
+      "latitude": 7.7575,
+      "longitude": 168.236
+    },
+    {
+      "countryCode": "MH",
+      "region": "Kwajalein",
+      "iata": "WTE",
+      "icao": "",
+      "name": "Wotje Airport",
+      "latitude": 9.45833,
+      "longitude": 170.239
+    },
+    {
+      "countryCode": "MH",
+      "region": "Lae",
+      "iata": "LML",
+      "icao": "",
+      "name": "Lae Airport",
+      "latitude": 8.92111,
+      "longitude": 166.265
+    },
+    {
+      "countryCode": "MH",
+      "region": "Likiep",
+      "iata": "LIK",
+      "icao": "",
+      "name": "Likiep Airport",
+      "latitude": 9.82316,
+      "longitude": 169.308
+    },
+    {
+      "countryCode": "MH",
+      "region": "Majuro",
+      "iata": "MAJ",
+      "icao": "PKMJ",
+      "name": "Marshall Islands International Airport (Amata Kabua Int'l)",
+      "latitude": 7.06476,
+      "longitude": 171.272
+    },
+    {
+      "countryCode": "MH",
+      "region": "Majuro",
+      "iata": "TBV",
+      "icao": "",
+      "name": "Tabal Airport",
+      "latitude": 8.3027,
+      "longitude": 171.161
+    },
+    {
+      "countryCode": "MH",
+      "region": "Maloelap",
+      "iata": "KBT",
+      "icao": "",
+      "name": "Kaben Airport",
+      "latitude": 8.90056,
+      "longitude": 170.844
+    },
+    {
+      "countryCode": "MH",
+      "region": "Maloelap",
+      "iata": "MAV",
+      "icao": "",
+      "name": "Maloelap Airport",
+      "latitude": 8.70444,
+      "longitude": 171.23
+    },
+    {
+      "countryCode": "MH",
+      "region": "Mejit",
+      "iata": "MJB",
+      "icao": "",
+      "name": "Mejit Airport",
+      "latitude": 10.2833,
+      "longitude": 170.869
+    },
+    {
+      "countryCode": "MH",
+      "region": "Mili",
+      "iata": "EJT",
+      "icao": "",
+      "name": "Enejit Airport",
+      "latitude": 6.0404,
+      "longitude": 171.985
+    },
+    {
+      "countryCode": "MH",
+      "region": "Mili",
+      "iata": "MIJ",
+      "icao": "MLIP",
+      "name": "Mili Airport",
+      "latitude": 6.08333,
+      "longitude": 171.733
+    },
+    {
+      "countryCode": "MH",
+      "region": "Namdrik",
+      "iata": "NDK",
+      "icao": "",
+      "name": "Namorik Airport (Namdrik Airport)",
+      "latitude": 5.63167,
+      "longitude": 168.125
+    },
+    {
+      "countryCode": "MH",
+      "region": "Namu",
+      "iata": "MJE",
+      "icao": "",
+      "name": "Majkin Airport",
+      "latitude": 7.76291,
+      "longitude": 168.266
+    },
+    {
+      "countryCode": "MH",
+      "region": "Rongelap",
+      "iata": "RNP",
+      "icao": "",
+      "name": "Rongelap Airport",
+      "latitude": 11.1572,
+      "longitude": 166.887
+    },
+    {
+      "countryCode": "MH",
+      "region": "Ujae",
+      "iata": "UJE",
+      "icao": "",
+      "name": "Ujae Airport",
+      "latitude": 8.92806,
+      "longitude": 165.762
+    },
+    {
+      "countryCode": "MH",
+      "region": "Utrik",
+      "iata": "UTK",
+      "icao": "",
+      "name": "Utirik Airport",
+      "latitude": 11.222,
+      "longitude": 169.852
+    },
+    {
+      "countryCode": "MH",
+      "region": "Wotho",
+      "iata": "WTO",
+      "icao": "",
+      "name": "Wotho Airport",
+      "latitude": 10.1733,
+      "longitude": 166.003
+    }
+  ]
 }

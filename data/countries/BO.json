@@ -254,5 +254,376 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BO",
+      "region": "Chuquisaca",
+      "iata": "MHW",
+      "icao": "SLAG",
+      "name": "Monteagudo Airport",
+      "latitude": -19.827,
+      "longitude": -63.961
+    },
+    {
+      "countryCode": "BO",
+      "region": "Chuquisaca",
+      "iata": "SRE",
+      "icao": "SLSU",
+      "name": "Juana Azurduy de Padilla International Airport",
+      "latitude": -19.2468,
+      "longitude": -65.1496
+    },
+    {
+      "countryCode": "BO",
+      "region": "Chuquisaca",
+      "iata": "SRJ",
+      "icao": "SLSB",
+      "name": "Capitan German Quiroga Guardia Airport",
+      "latitude": -14.8592,
+      "longitude": -66.7375
+    },
+    {
+      "countryCode": "BO",
+      "region": "Cochabamba",
+      "iata": "CBB",
+      "icao": "SLCB",
+      "name": "Jorge Wilstermann International Airport",
+      "latitude": -17.4211,
+      "longitude": -66.1771
+    },
+    {
+      "countryCode": "BO",
+      "region": "Cochabamba",
+      "iata": "CCA",
+      "icao": "SLHI",
+      "name": "Chimore Airport",
+      "latitude": -16.9889,
+      "longitude": -65.1417
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "BVK",
+      "icao": "SLHJ",
+      "name": "Huacaraje Airport",
+      "latitude": -13.55,
+      "longitude": -63.7479
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "BVL",
+      "icao": "SLBU",
+      "name": "Baures Airport",
+      "latitude": -13.5833,
+      "longitude": -63.5833
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "GYA",
+      "icao": "SLGY",
+      "name": "Guayaramerin Airport",
+      "latitude": -10.8206,
+      "longitude": -65.3456
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "MGD",
+      "icao": "SLMG",
+      "name": "Magdalena Airport",
+      "latitude": -13.2607,
+      "longitude": -64.0608
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "RBQ",
+      "icao": "SLRQ",
+      "name": "Rurrenabaque Airport",
+      "latitude": -14.4279,
+      "longitude": -67.4968
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "REY",
+      "icao": "SLRY",
+      "name": "Reyes Airport",
+      "latitude": -14.3044,
+      "longitude": -67.3534
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "RIB",
+      "icao": "SLRI",
+      "name": "Riberalta Airport",
+      "latitude": -11,
+      "longitude": -66
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "SBL",
+      "icao": "SLSA",
+      "name": "Santa Ana del Yacuma Airport",
+      "latitude": -13.7622,
+      "longitude": -65.4352
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "SJB",
+      "icao": "SLJO",
+      "name": "San Joaquin Airport",
+      "latitude": -13.0528,
+      "longitude": -64.6617
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "SNM",
+      "icao": "SLSM",
+      "name": "San Ignacio de Moxos Airport",
+      "latitude": -14.9658,
+      "longitude": -65.6338
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "SRB",
+      "icao": "SLSR",
+      "name": "Santa Rosa Airport (Bolivia)",
+      "latitude": -14.0662,
+      "longitude": -66.7868
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "SRD",
+      "icao": "SLRA",
+      "name": "San Ramon Airport",
+      "latitude": -13.2639,
+      "longitude": -64.6039
+    },
+    {
+      "countryCode": "BO",
+      "region": "El Beni",
+      "iata": "TDD",
+      "icao": "SLTR",
+      "name": "Teniente Jorge Henrich Arauz Airport",
+      "latitude": -14.8187,
+      "longitude": -64.918
+    },
+    {
+      "countryCode": "BO",
+      "region": "La Paz",
+      "iata": "APB",
+      "icao": "SLAP",
+      "name": "Apolo Airport",
+      "latitude": -14.7356,
+      "longitude": -68.4119
+    },
+    {
+      "countryCode": "BO",
+      "region": "La Paz",
+      "iata": "LPB",
+      "icao": "SLLP",
+      "name": "El Alto International Airport",
+      "latitude": -16.5133,
+      "longitude": -68.1923
+    },
+    {
+      "countryCode": "BO",
+      "region": "Oruro",
+      "iata": "ORU",
+      "icao": "SLOR",
+      "name": "Juan Mendoza Airport",
+      "latitude": -17.9626,
+      "longitude": -67.0762
+    },
+    {
+      "countryCode": "BO",
+      "region": "Pando",
+      "iata": "CIJ",
+      "icao": "SLCO",
+      "name": "Captain Anibal Arab Airport",
+      "latitude": -11.0404,
+      "longitude": -68.783
+    },
+    {
+      "countryCode": "BO",
+      "region": "Pando",
+      "iata": "PUR",
+      "icao": "SLPR",
+      "name": "Puerto Rico Airport",
+      "latitude": -11.1077,
+      "longitude": -67.5512
+    },
+    {
+      "countryCode": "BO",
+      "region": "Potosi",
+      "iata": "POI",
+      "icao": "SLPO",
+      "name": "Captain Nicolas Rojas Airport",
+      "latitude": -19.5433,
+      "longitude": -65.7237
+    },
+    {
+      "countryCode": "BO",
+      "region": "Potosi",
+      "iata": "UYU",
+      "icao": "SLUY",
+      "name": "Uyuni Airport (Joya Andina Airport)",
+      "latitude": -20.4463,
+      "longitude": -66.8484
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "ASC",
+      "icao": "SLAS",
+      "name": "Ascencion de Guarayos Airport",
+      "latitude": -15.9303,
+      "longitude": -63.1567
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "CAM",
+      "icao": "SLCA",
+      "name": "Camiri Airport",
+      "latitude": -20.0064,
+      "longitude": -63.5278
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "CEP",
+      "icao": "SLCP",
+      "name": "Concepcion Airport",
+      "latitude": -16.1383,
+      "longitude": -62.0286
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "MQK",
+      "icao": "SLTI",
+      "name": "San Matias Airport",
+      "latitude": -16.3392,
+      "longitude": -58.4019
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "PSZ",
+      "icao": "SLPS",
+      "name": "Puerto Suarez International Airport",
+      "latitude": -18.9753,
+      "longitude": -57.8206
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "RBO",
+      "icao": "SLRB",
+      "name": "Robore Airport",
+      "latitude": -18.3292,
+      "longitude": -59.765
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "SJS",
+      "icao": "SLJE",
+      "name": "San Jose de Chiquitos Airport",
+      "latitude": -17.8308,
+      "longitude": -60.7431
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "SJV",
+      "icao": "SLJV",
+      "name": "San Javier Airport (Bolivia)",
+      "latitude": -16.2708,
+      "longitude": -62.4703
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "SNG",
+      "icao": "SLSI",
+      "name": "Capitan Av. Juan Cochamanidis Air",
+      "latitude": -16.3836,
+      "longitude": -60.9628
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "SRZ",
+      "icao": "SLET",
+      "name": "El Trompillo Airport",
+      "latitude": -17.8116,
+      "longitude": -63.1715
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "VAH",
+      "icao": "SLVG",
+      "name": "Cap. Av. Vidal Villagomez Toledo Airport",
+      "latitude": -18.4825,
+      "longitude": -64.0994
+    },
+    {
+      "countryCode": "BO",
+      "region": "Santa Cruz",
+      "iata": "VVI",
+      "icao": "SLVR",
+      "name": "Viru Viru International Airport",
+      "latitude": -17.6448,
+      "longitude": -63.1354
+    },
+    {
+      "countryCode": "BO",
+      "region": "Tarija",
+      "iata": "BJO",
+      "icao": "SLBJ",
+      "name": "Bermejo Airport",
+      "latitude": -22.7733,
+      "longitude": -64.3129
+    },
+    {
+      "countryCode": "BO",
+      "region": "Tarija",
+      "iata": "BYC",
+      "icao": "SLYA",
+      "name": "Yacuiba Airport",
+      "latitude": -21.9609,
+      "longitude": -63.6517
+    },
+    {
+      "countryCode": "BO",
+      "region": "Tarija",
+      "iata": "TJA",
+      "icao": "SLTJ",
+      "name": "Capitan Oriel Lea Plaza Airport",
+      "latitude": -21.5557,
+      "longitude": -64.7013
+    },
+    {
+      "countryCode": "BO",
+      "region": "Tarija",
+      "iata": "VLM",
+      "icao": "SLVM",
+      "name": "Lieutenant Colonel Rafael Pabon Airport",
+      "latitude": -21.2552,
+      "longitude": -63.4056
+    }
+  ]
 }

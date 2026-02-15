@@ -231,5 +231,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BT",
+      "region": "Bumthang",
+      "iata": "BUT",
+      "icao": "VQBT",
+      "name": "Bathpalathang Airport",
+      "latitude": 27.5622,
+      "longitude": 90.7471
+    },
+    {
+      "countryCode": "BT",
+      "region": "Paro",
+      "iata": "PBH",
+      "icao": "VQPR",
+      "name": "Paro International Airport",
+      "latitude": 27.4032,
+      "longitude": 89.4246
+    },
+    {
+      "countryCode": "BT",
+      "region": "Sarpang",
+      "iata": "GLU",
+      "icao": "VQGP",
+      "name": "Gelephu Airport",
+      "latitude": 26.8846,
+      "longitude": 90.4641
+    },
+    {
+      "countryCode": "BT",
+      "region": "Trashigang",
+      "iata": "YON",
+      "icao": "VQTY",
+      "name": "Yongphulla Airport (Yonphula Airport)",
+      "latitude": 27.2564,
+      "longitude": 91.5145
+    }
+  ]
 }

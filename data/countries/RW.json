@@ -253,5 +253,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "RW",
+      "region": "Nord",
+      "iata": "RHG",
+      "icao": "HRYU",
+      "name": "Ruhengeri Airport",
+      "latitude": -1.5,
+      "longitude": 29.633
+    },
+    {
+      "countryCode": "RW",
+      "region": "Ouest",
+      "iata": "GYI",
+      "icao": "HRYG",
+      "name": "Gisenyi Airport",
+      "latitude": -1.6772,
+      "longitude": 29.2589
+    },
+    {
+      "countryCode": "RW",
+      "region": "Ouest",
+      "iata": "KME",
+      "icao": "HRZA",
+      "name": "Kamembe Airport",
+      "latitude": -2.46224,
+      "longitude": 28.9079
+    },
+    {
+      "countryCode": "RW",
+      "region": "Sud",
+      "iata": "BTQ",
+      "icao": "HRYI",
+      "name": "Butare Airport",
+      "latitude": -2.59583,
+      "longitude": 29.7367
+    },
+    {
+      "countryCode": "RW",
+      "region": "Ville de Kigali",
+      "iata": "KGL",
+      "icao": "HRYR",
+      "name": "Kigali International Airport (Kanombe Airport)",
+      "latitude": -1.96863,
+      "longitude": 30.1395
+    }
+  ]
 }

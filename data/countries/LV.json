@@ -233,5 +233,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LV",
+      "region": "Daugavpils novads",
+      "iata": "DGP",
+      "icao": "EVDA",
+      "name": "Daugavpils International Airport",
+      "latitude": 55.9447,
+      "longitude": 26.665
+    },
+    {
+      "countryCode": "LV",
+      "region": "Riga",
+      "iata": "RIX",
+      "icao": "EVRA",
+      "name": "Riga International Airport",
+      "latitude": 56.9236,
+      "longitude": 23.9711
+    },
+    {
+      "countryCode": "LV",
+      "region": "Ventspils novads",
+      "iata": "LPX",
+      "icao": "EVLA",
+      "name": "Liepaja International Airport",
+      "latitude": 56.5175,
+      "longitude": 21.0969
+    },
+    {
+      "countryCode": "LV",
+      "region": "Ventspils novads",
+      "iata": "VNT",
+      "icao": "EVVA",
+      "name": "Ventspils International Airport",
+      "latitude": 57.3578,
+      "longitude": 21.5442
+    }
+  ]
 }

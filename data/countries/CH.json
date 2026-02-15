@@ -264,5 +264,214 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CH",
+      "region": "Basel-City",
+      "iata": "BSL",
+      "icao": "LFSB",
+      "name": "EuroAirport Basel Mulhouse Freiburg",
+      "latitude": 47.59,
+      "longitude": 7.52916
+    },
+    {
+      "countryCode": "CH",
+      "region": "Bern",
+      "iata": "BRN",
+      "icao": "LSZB",
+      "name": "Bern Airport",
+      "latitude": 46.9141,
+      "longitude": 7.49715
+    },
+    {
+      "countryCode": "CH",
+      "region": "Bern",
+      "iata": "",
+      "icao": "LSPL",
+      "name": "Langenthal Airport",
+      "latitude": 47.1828,
+      "longitude": 7.7408
+    },
+    {
+      "countryCode": "CH",
+      "region": "Fribourg",
+      "iata": "",
+      "icao": "LSGE",
+      "name": "Ecuvillens Airfield",
+      "latitude": 46.7548,
+      "longitude": 7.0762
+    },
+    {
+      "countryCode": "CH",
+      "region": "Geneve",
+      "iata": "GVA",
+      "icao": "LSGG",
+      "name": "Geneva Airport",
+      "latitude": 46.2381,
+      "longitude": 6.10895
+    },
+    {
+      "countryCode": "CH",
+      "region": "Lausanne",
+      "iata": "",
+      "icao": "LSGL",
+      "name": "Lausanne-Blécherette Airport",
+      "latitude": 46.5452,
+      "longitude": 6.6166
+    },
+    {
+      "countryCode": "CH",
+      "region": "Fribourg",
+      "iata": "",
+      "icao": "LSGT",
+      "name": "Gruyère Airport",
+      "latitude": 46.5942,
+      "longitude": 7.0944
+    },
+    {
+      "countryCode": "CH",
+      "region": "Graubunden",
+      "iata": "SMV",
+      "icao": "LSZS",
+      "name": "Samedan Airport (Engadin Airport)",
+      "latitude": 46.5341,
+      "longitude": 9.88411
+    },
+    {
+      "countryCode": "CH",
+      "region": "Glarus",
+      "iata": "",
+      "icao": "LSZM",
+      "name": "Mollis Airport",
+      "latitude": 47.07835,
+      "longitude": 9.06466
+    },
+    {
+      "countryCode": "CH",
+      "region": "Obwalden",
+      "iata": "",
+      "icao": "LSMA",
+      "name": "Alpnach",
+      "latitude": 46.9386,
+      "longitude": 8.2841
+    },
+    {
+      "countryCode": "CH",
+      "region": "Obwalden",
+      "iata": "",
+      "icao": "LSPG",
+      "name": "Kagiswil Airport",
+      "latitude": 46.9082,
+      "longitude": 8.2541
+    },
+    {
+      "countryCode": "CH",
+      "region": "Luzern",
+      "iata": "EML",
+      "icao": "LSME",
+      "name": "Emmen Air Base",
+      "latitude": 47.0924,
+      "longitude": 8.30518
+    },
+    {
+      "countryCode": "CH",
+      "region": "Nidwalden",
+      "iata": "BXO",
+      "icao": "LSZC",
+      "name": "Buochs Airport",
+      "latitude": 46.9744,
+      "longitude": 8.39694
+    },
+    {
+      "countryCode": "CH",
+      "region": "Neuchâtel",
+      "iata": "",
+      "icao": "LSTO",
+      "name": "Môtiers Airport",
+      "latitude": 46.9166,
+      "longitude": 6.615
+    },
+    {
+      "countryCode": "CH",
+      "region": "Neuchâtel",
+      "iata": "",
+      "icao": "LSGC",
+      "name": "Les Eplatures Airport",
+      "latitude": 47.083889,
+      "longitude": 6.792778
+    },
+    {
+      "countryCode": "CH",
+      "region": "Sankt Gallen",
+      "iata": "ACH",
+      "icao": "LSZR",
+      "name": "St. Gallen-Altenrhein Airport",
+      "latitude": 47.485,
+      "longitude": 9.56077
+    },
+    {
+      "countryCode": "CH",
+      "region": "Sankt Gallen",
+      "iata": "",
+      "icao": "LSZX",
+      "name": "Schanis Airport",
+      "latitude": 47.1717,
+      "longitude": 9.03944
+    },
+    {
+      "countryCode": "CH",
+      "region": "Ticino",
+      "iata": "LUG",
+      "icao": "LSZA",
+      "name": "Lugano Airport",
+      "latitude": 46.0043,
+      "longitude": 8.91058
+    },
+    {
+      "countryCode": "CH",
+      "region": "Valais",
+      "iata": "SIR",
+      "icao": "LSGS",
+      "name": "Sion Airport",
+      "latitude": 46.2196,
+      "longitude": 7.32676
+    },
+    {
+      "countryCode": "CH",
+      "region": "Valais",
+      "iata": "",
+      "icao": "LSTA",
+      "name": "Raron Airport",
+      "latitude": 46.30458333,
+      "longitude": 7.818055556
+    },
+    {
+      "countryCode": "CH",
+      "region": "Vaud",
+      "iata": "",
+      "icao": "LSMP",
+      "name": "Payerne Air Base",
+      "latitude": 46.843333,
+      "longitude": 6.915
+    },
+    {
+      "countryCode": "CH",
+      "region": "Zurich",
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "name": "Zurich Airport",
+      "latitude": 47.4647,
+      "longitude": 8.54917
+    },
+    {
+      "countryCode": "CH",
+      "region": "Solothurn",
+      "iata": "",
+      "icao": "LSZG",
+      "name": "Grenchen Airport",
+      "latitude": 47.181389,
+      "longitude": 7.416944
+    }
+  ]
 }

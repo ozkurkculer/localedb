@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "YT",
+      "region": "Dzaoudzi",
+      "iata": "DZA",
+      "icao": "FMCZ",
+      "name": "Dzaoudzi-Pamandzi International Airport",
+      "latitude": -12.8047,
+      "longitude": 45.2811
+    }
+  ]
 }

@@ -228,5 +228,304 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BS",
+      "region": "Acklins",
+      "iata": "AXP",
+      "icao": "MYAP",
+      "name": "Spring Point Airport",
+      "latitude": 22.4418,
+      "longitude": -73.9709
+    },
+    {
+      "countryCode": "BS",
+      "region": "Berry Islands",
+      "iata": "GHC",
+      "icao": "MYBG",
+      "name": "Great Harbour Cay Airport",
+      "latitude": 25.7383,
+      "longitude": -77.8401
+    },
+    {
+      "countryCode": "BS",
+      "region": "Bimini",
+      "iata": "BIM",
+      "icao": "MYBS",
+      "name": "South Bimini Airport",
+      "latitude": 25.6999,
+      "longitude": -79.2647
+    },
+    {
+      "countryCode": "BS",
+      "region": "Bimini",
+      "iata": "NSB",
+      "icao": "",
+      "name": "North Seaplane Base",
+      "latitude": 25.767,
+      "longitude": -79.25
+    },
+    {
+      "countryCode": "BS",
+      "region": "Cat Island",
+      "iata": "TBI",
+      "icao": "MYCB",
+      "name": "New Bight Airport",
+      "latitude": 24.3153,
+      "longitude": -75.4523
+    },
+    {
+      "countryCode": "BS",
+      "region": "Central Andros",
+      "iata": "ASD",
+      "icao": "MYAF",
+      "name": "Andros Town International Airport",
+      "latitude": 24.6979,
+      "longitude": -77.7956
+    },
+    {
+      "countryCode": "BS",
+      "region": "Central Andros",
+      "iata": "CCZ",
+      "icao": "MYBC",
+      "name": "Chub Cay International Airport",
+      "latitude": 25.4171,
+      "longitude": -77.8809
+    },
+    {
+      "countryCode": "BS",
+      "region": "Central Andros",
+      "iata": "MAY",
+      "icao": "MYAB",
+      "name": "Clarence A. Bain Airport",
+      "latitude": 24.2877,
+      "longitude": -77.6846
+    },
+    {
+      "countryCode": "BS",
+      "region": "Central Andros",
+      "iata": "SAQ",
+      "icao": "MYAN",
+      "name": "San Andros Airport",
+      "latitude": 25.0538,
+      "longitude": -78.049
+    },
+    {
+      "countryCode": "BS",
+      "region": "City of Freeport",
+      "iata": "CXY",
+      "icao": "MYCC",
+      "name": "Cat Cay Airport",
+      "latitude": 25.5546,
+      "longitude": -79.2752
+    },
+    {
+      "countryCode": "BS",
+      "region": "City of Freeport",
+      "iata": "WKR",
+      "icao": "MYAW",
+      "name": "Walker's Cay Airport",
+      "latitude": 27.2667,
+      "longitude": -78.3997
+    },
+    {
+      "countryCode": "BS",
+      "region": "East Grand Bahama",
+      "iata": "FPO",
+      "icao": "MYGF",
+      "name": "Grand Bahama International Airport",
+      "latitude": 26.5587,
+      "longitude": -78.6956
+    },
+    {
+      "countryCode": "BS",
+      "region": "Exuma",
+      "iata": "GGT",
+      "icao": "MYEF",
+      "name": "Exuma International Airport",
+      "latitude": 23.5626,
+      "longitude": -75.878
+    },
+    {
+      "countryCode": "BS",
+      "region": "Exuma",
+      "iata": "NMC",
+      "icao": "MYEN",
+      "name": "Norman's Cay Airport",
+      "latitude": 24.5943,
+      "longitude": -76.8202
+    },
+    {
+      "countryCode": "BS",
+      "region": "Exuma",
+      "iata": "TYM",
+      "icao": "MYES",
+      "name": "Staniel Cay Airport",
+      "latitude": 24.1691,
+      "longitude": -76.4391
+    },
+    {
+      "countryCode": "BS",
+      "region": "Harbour Island",
+      "iata": "ELH",
+      "icao": "MYEH",
+      "name": "North Eleuthera Airport",
+      "latitude": 25.4749,
+      "longitude": -76.6835
+    },
+    {
+      "countryCode": "BS",
+      "region": "Hope Town",
+      "iata": "MHH",
+      "icao": "MYAM",
+      "name": "Marsh Harbour Airport",
+      "latitude": 26.5114,
+      "longitude": -77.0835
+    },
+    {
+      "countryCode": "BS",
+      "region": "Hope Town",
+      "iata": "TCB",
+      "icao": "MYAT",
+      "name": "Treasure Cay Airport",
+      "latitude": 26.7453,
+      "longitude": -77.3913
+    },
+    {
+      "countryCode": "BS",
+      "region": "Inagua",
+      "iata": "IGA",
+      "icao": "MYIG",
+      "name": "Inagua Airport (Matthew Town Airport)",
+      "latitude": 20.975,
+      "longitude": -73.6669
+    },
+    {
+      "countryCode": "BS",
+      "region": "Long Island",
+      "iata": "CRI",
+      "icao": "MYCI",
+      "name": "Colonel Hill Airport (Crooked Island Airport)",
+      "latitude": 22.7456,
+      "longitude": -74.1824
+    },
+    {
+      "countryCode": "BS",
+      "region": "Long Island",
+      "iata": "DCT",
+      "icao": "MYRD",
+      "name": "Duncan Town Airport",
+      "latitude": 22.1818,
+      "longitude": -75.7295
+    },
+    {
+      "countryCode": "BS",
+      "region": "Long Island",
+      "iata": "LGI",
+      "icao": "MYLD",
+      "name": "Deadman's Cay Airport",
+      "latitude": 23.179,
+      "longitude": -75.0936
+    },
+    {
+      "countryCode": "BS",
+      "region": "Long Island",
+      "iata": "PWN",
+      "icao": "MYCP",
+      "name": "Pitts Town Airport",
+      "latitude": 22.8297,
+      "longitude": -74.3461
+    },
+    {
+      "countryCode": "BS",
+      "region": "Long Island",
+      "iata": "SML",
+      "icao": "MYLS",
+      "name": "Stella Maris Airport",
+      "latitude": 23.5823,
+      "longitude": -75.2686
+    },
+    {
+      "countryCode": "BS",
+      "region": "Mayaguana",
+      "iata": "MYG",
+      "icao": "MYMM",
+      "name": "Mayaguana Airport (Abraham's Bay Airport)",
+      "latitude": 22.3795,
+      "longitude": -73.0135
+    },
+    {
+      "countryCode": "BS",
+      "region": "New Providence",
+      "iata": "NAS",
+      "icao": "MYNN",
+      "name": "Lynden Pindling International Airport",
+      "latitude": 25.039,
+      "longitude": -77.4662
+    },
+    {
+      "countryCode": "BS",
+      "region": "Rum Cay",
+      "iata": "RCY",
+      "icao": "MYRP",
+      "name": "Port Nelson Airport",
+      "latitude": 23.6844,
+      "longitude": -74.8362
+    },
+    {
+      "countryCode": "BS",
+      "region": "San Salvador",
+      "iata": "ZSA",
+      "icao": "MYSM",
+      "name": "San Salvador Airport (Cockburn Town Airport)",
+      "latitude": 24.0633,
+      "longitude": -74.524
+    },
+    {
+      "countryCode": "BS",
+      "region": "South Andros",
+      "iata": "TZN",
+      "icao": "MYAK",
+      "name": "South Andros Airport",
+      "latitude": 24.1589,
+      "longitude": -77.5897
+    },
+    {
+      "countryCode": "BS",
+      "region": "South Eleuthera",
+      "iata": "ATC",
+      "icao": "MYCA",
+      "name": "Arthur's Town Airport",
+      "latitude": 24.6294,
+      "longitude": -75.6738
+    },
+    {
+      "countryCode": "BS",
+      "region": "South Eleuthera",
+      "iata": "GHB",
+      "icao": "MYEM",
+      "name": "Governor's Harbour Airport",
+      "latitude": 25.2847,
+      "longitude": -76.331
+    },
+    {
+      "countryCode": "BS",
+      "region": "South Eleuthera",
+      "iata": "RSD",
+      "icao": "MYER",
+      "name": "Rock Sound International Airport",
+      "latitude": 24.8951,
+      "longitude": -76.1769
+    },
+    {
+      "countryCode": "BS",
+      "region": "West Grand Bahama",
+      "iata": "WTD",
+      "icao": "MYGW",
+      "name": "West End Airport",
+      "latitude": 26.6853,
+      "longitude": -78.975
+    }
+  ]
 }

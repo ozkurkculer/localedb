@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NF",
+      "region": "Norfolk Island",
+      "iata": "NLK",
+      "icao": "YSNF",
+      "name": "Norfolk Island Airport",
+      "latitude": -29.0416,
+      "longitude": 167.939
+    }
+  ]
 }

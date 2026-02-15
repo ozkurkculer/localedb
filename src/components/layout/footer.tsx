@@ -4,9 +4,8 @@ import { footerNav } from "@/config/navigation";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/40">
-      <div className="container max-w-screen-2xl py-12 md:py-16">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+    <footer className="border-t border-border/40 py-12 md:py-16">
+        <div className="grid container grid-cols-2 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center space-x-2">
@@ -63,27 +62,28 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/40 pt-8 md:flex-row">
-          <p className="text-sm text-muted-foreground">
-            Built with ❤️ by developers, for developers.
-          </p>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            {footerNav.legal.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="transition-colors hover:text-foreground"
-                {...(item.external && {
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                })}
-              >
-                {item.title}
-              </Link>
-            ))}
+        <div className="mt-12 border-t border-border/40">
+          <div className="container flex flex-col items-center justify-between gap-4 pt-8 md:flex-row">
+            <p className="text-sm text-muted-foreground">
+              Built with ❤️ by developers, for developers.
+            </p>
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              {footerNav.legal.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="transition-colors hover:text-foreground"
+                  {...(item.external && {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
     </footer>
   );
 }

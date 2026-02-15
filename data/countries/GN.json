@@ -245,5 +245,106 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GN",
+      "region": "Boke",
+      "iata": "BKJ",
+      "icao": "GUOK",
+      "name": "Boke Baralande Airport",
+      "latitude": 10.9658,
+      "longitude": -14.2811
+    },
+    {
+      "countryCode": "GN",
+      "region": "Boke",
+      "iata": "SBI",
+      "icao": "GUSB",
+      "name": "Sambailo Airport",
+      "latitude": 12.5727,
+      "longitude": -13.3585
+    },
+    {
+      "countryCode": "GN",
+      "region": "Conakry",
+      "iata": "CKY",
+      "icao": "GUCY",
+      "name": "Ahmed Sékou Touré International Airport",
+      "latitude": 9.57689,
+      "longitude": -13.612
+    },
+    {
+      "countryCode": "GN",
+      "region": "Faranah",
+      "iata": "FAA",
+      "icao": "GUFH",
+      "name": "Faranah Airport",
+      "latitude": 10.0355,
+      "longitude": -10.7698
+    },
+    {
+      "countryCode": "GN",
+      "region": "Faranah",
+      "iata": "FIG",
+      "icao": "GUFA",
+      "name": "Fria Airport",
+      "latitude": 10.3506,
+      "longitude": -13.5692
+    },
+    {
+      "countryCode": "GN",
+      "region": "Kankan",
+      "iata": "GII",
+      "icao": "GUSI",
+      "name": "Siguiri Airport",
+      "latitude": 11.433,
+      "longitude": -9.167
+    },
+    {
+      "countryCode": "GN",
+      "region": "Kankan",
+      "iata": "KNN",
+      "icao": "GUXN",
+      "name": "Kankan Airport (Diankana Airport)",
+      "latitude": 10.4484,
+      "longitude": -9.22876
+    },
+    {
+      "countryCode": "GN",
+      "region": "Labe",
+      "iata": "KSI",
+      "icao": "GUKU",
+      "name": "Kissidougou Airport",
+      "latitude": 9.16056,
+      "longitude": -10.1244
+    },
+    {
+      "countryCode": "GN",
+      "region": "Labe",
+      "iata": "LEK",
+      "icao": "GULB",
+      "name": "Tata Airport",
+      "latitude": 11.3261,
+      "longitude": -12.2868
+    },
+    {
+      "countryCode": "GN",
+      "region": "Nzerekore",
+      "iata": "MCA",
+      "icao": "GUMA",
+      "name": "Macenta Airport",
+      "latitude": 8.48186,
+      "longitude": -9.52507
+    },
+    {
+      "countryCode": "GN",
+      "region": "Nzerekore",
+      "iata": "NZE",
+      "icao": "GUNZ",
+      "name": "Nzerekore Airport",
+      "latitude": 7.80602,
+      "longitude": -8.7018
+    }
+  ]
 }

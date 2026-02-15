@@ -232,5 +232,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KH",
+      "region": "Baat Dambang",
+      "iata": "BBM",
+      "icao": "VDBG",
+      "name": "Battambang Airport",
+      "latitude": 13.0956,
+      "longitude": 103.224
+    },
+    {
+      "countryCode": "KH",
+      "region": "Kampong Chhnang",
+      "iata": "KZC",
+      "icao": "VDKH",
+      "name": "Kampong Chhnang Airport",
+      "latitude": 12.2552,
+      "longitude": 104.564
+    },
+    {
+      "countryCode": "KH",
+      "region": "Kampot",
+      "iata": "KMT",
+      "icao": "",
+      "name": "Kampot Airport",
+      "latitude": 10.6343,
+      "longitude": 104.162
+    },
+    {
+      "countryCode": "KH",
+      "region": "Kaoh Kong",
+      "iata": "KKZ",
+      "icao": "VDKK",
+      "name": "Koh Kong Airport",
+      "latitude": 11.6134,
+      "longitude": 102.997
+    },
+    {
+      "countryCode": "KH",
+      "region": "Kracheh",
+      "iata": "KTI",
+      "icao": "VDKT",
+      "name": "Kratie Airport",
+      "latitude": 12.488,
+      "longitude": 106.055
+    },
+    {
+      "countryCode": "KH",
+      "region": "Krong Preah Sihanouk",
+      "iata": "KOS",
+      "icao": "VDSV",
+      "name": "Sihanoukville International Airport (Kaong Kang Airport)",
+      "latitude": 10.5797,
+      "longitude": 103.637
+    },
+    {
+      "countryCode": "KH",
+      "region": "Mondol Kiri",
+      "iata": "MWV",
+      "icao": "VDMK",
+      "name": "Mondulkiri Airport",
+      "latitude": 12.4636,
+      "longitude": 107.187
+    },
+    {
+      "countryCode": "KH",
+      "region": "Phnom Penh",
+      "iata": "PNH",
+      "icao": "VDPP",
+      "name": "Phnom Penh International Airport",
+      "latitude": 11.5466,
+      "longitude": 104.844
+    },
+    {
+      "countryCode": "KH",
+      "region": "Phnom Penh",
+      "iata": "TNX",
+      "icao": "VDST",
+      "name": "Steung Treng Airport",
+      "latitude": 13.5319,
+      "longitude": 106.015
+    },
+    {
+      "countryCode": "KH",
+      "region": "Pousaat",
+      "iata": "KZD",
+      "icao": "",
+      "name": "Krakor Airport",
+      "latitude": 12.5385,
+      "longitude": 104.149
+    },
+    {
+      "countryCode": "KH",
+      "region": "Preah Vihear",
+      "iata": "OMY",
+      "icao": "",
+      "name": "Thbeng Meanchey Airport (Preah Vinhear Airport)",
+      "latitude": 13.7597,
+      "longitude": 104.972
+    },
+    {
+      "countryCode": "KH",
+      "region": "Rotanak Kiri",
+      "iata": "RBE",
+      "icao": "VDRK",
+      "name": "Ratanakiri Airport",
+      "latitude": 13.73,
+      "longitude": 106.987
+    },
+    {
+      "countryCode": "KH",
+      "region": "Siem Reab",
+      "iata": "REP",
+      "icao": "VDSR",
+      "name": "Siem Reap International Airport (Angkor Int'l)",
+      "latitude": 13.4107,
+      "longitude": 103.813
+    },
+    {
+      "countryCode": "KH",
+      "region": "Siem Reab",
+      "iata": "SAI",
+      "icao": "VDSA",
+      "name": "Siem Reap Angkor International Airport",
+      "latitude": 13.3758,
+      "longitude": 104.2197
+    }
+  ]
 }

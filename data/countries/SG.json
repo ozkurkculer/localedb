@@ -260,5 +260,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SG",
+      "region": "Singapore",
+      "iata": "QPG",
+      "icao": "WSAP",
+      "name": "Paya Lebar Air Base",
+      "latitude": 1.36042,
+      "longitude": 103.91
+    },
+    {
+      "countryCode": "SG",
+      "region": "Singapore",
+      "iata": "SIN",
+      "icao": "WSSS",
+      "name": "Singapore Changi Airport",
+      "latitude": 1.35019,
+      "longitude": 103.994
+    },
+    {
+      "countryCode": "SG",
+      "region": "Singapore",
+      "iata": "TGA",
+      "icao": "WSAT",
+      "name": "Tengah Air Base",
+      "latitude": 1.38726,
+      "longitude": 103.709
+    },
+    {
+      "countryCode": "SG",
+      "region": "Singapore",
+      "iata": "XSP",
+      "icao": "WSSL",
+      "name": "Seletar Airport",
+      "latitude": 1.41695,
+      "longitude": 103.868
+    }
+  ]
 }

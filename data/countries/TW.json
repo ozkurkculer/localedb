@@ -230,5 +230,187 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TW",
+      "region": "Chiayi",
+      "iata": "CYI",
+      "icao": "RCKU",
+      "name": "Chiayi Airport",
+      "latitude": 23.4618,
+      "longitude": 120.393
+    },
+    {
+      "countryCode": "TW",
+      "region": "Hsinchu",
+      "iata": "HSZ",
+      "icao": "RCPO",
+      "name": "Hsinchu Air Base",
+      "latitude": 24.818,
+      "longitude": 120.939
+    },
+    {
+      "countryCode": "TW",
+      "region": "Hualien",
+      "iata": "HUN",
+      "icao": "RCYU",
+      "name": "Hualien Airport",
+      "latitude": 24.0231,
+      "longitude": 121.618
+    },
+    {
+      "countryCode": "TW",
+      "region": "Kaohsiung",
+      "iata": "DSX",
+      "icao": "RCLM",
+      "name": "Dongsha Island Airport",
+      "latitude": 20.7066,
+      "longitude": 116.721
+    },
+    {
+      "countryCode": "TW",
+      "region": "Kaohsiung",
+      "iata": "KHH",
+      "icao": "RCKH",
+      "name": "Kaohsiung International Airport",
+      "latitude": 22.5771,
+      "longitude": 120.35
+    },
+    {
+      "countryCode": "TW",
+      "region": "Kinmen",
+      "iata": "KNH",
+      "icao": "RCBS",
+      "name": "Kinmen Airport (Shang Yi Airport)",
+      "latitude": 24.4279,
+      "longitude": 118.359
+    },
+    {
+      "countryCode": "TW",
+      "region": "Lienchiang",
+      "iata": "LZN",
+      "icao": "RCFG",
+      "name": "Matsu Nangan Airport",
+      "latitude": 26.1598,
+      "longitude": 119.958
+    },
+    {
+      "countryCode": "TW",
+      "region": "Lienchiang",
+      "iata": "MFK",
+      "icao": "RCMT",
+      "name": "Matsu Beigan Airport",
+      "latitude": 26.2242,
+      "longitude": 120.003
+    },
+    {
+      "countryCode": "TW",
+      "region": "Penghu",
+      "iata": "CMJ",
+      "icao": "RCCM",
+      "name": "Qimei Airport",
+      "latitude": 23.2131,
+      "longitude": 119.418
+    },
+    {
+      "countryCode": "TW",
+      "region": "Penghu",
+      "iata": "MZG",
+      "icao": "RCQC",
+      "name": "Magong Airport",
+      "latitude": 23.5687,
+      "longitude": 119.628
+    },
+    {
+      "countryCode": "TW",
+      "region": "Penghu",
+      "iata": "WOT",
+      "icao": "RCWA",
+      "name": "Wang-an Airport",
+      "latitude": 23.3674,
+      "longitude": 119.503
+    },
+    {
+      "countryCode": "TW",
+      "region": "Pingtung",
+      "iata": "HCN",
+      "icao": "RCKW",
+      "name": "Hengchun Airport",
+      "latitude": 22.0411,
+      "longitude": 120.73
+    },
+    {
+      "countryCode": "TW",
+      "region": "Pingtung",
+      "iata": "PIF",
+      "icao": "RCDC",
+      "name": "Pingtung South Airport",
+      "latitude": 22.7002,
+      "longitude": 120.482
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taichung",
+      "iata": "RMQ",
+      "icao": "RCMQ",
+      "name": "Taichung Airport (Taichung Ching Chuan Kang Airport)",
+      "latitude": 24.2647,
+      "longitude": 120.621
+    },
+    {
+      "countryCode": "TW",
+      "region": "Tainan",
+      "iata": "TNN",
+      "icao": "RCNN",
+      "name": "Tainan Airport",
+      "latitude": 22.9504,
+      "longitude": 120.206
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taipei",
+      "iata": "TSA",
+      "icao": "RCSS",
+      "name": "Taipei Songshan Airport",
+      "latitude": 25.0694,
+      "longitude": 121.552
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taitung",
+      "iata": "GNI",
+      "icao": "RCGI",
+      "name": "Lyudao Airport (Green Island Airport)",
+      "latitude": 22.6739,
+      "longitude": 121.466
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taitung",
+      "iata": "KYD",
+      "icao": "RCLY",
+      "name": "Lanyu Airport",
+      "latitude": 22.027,
+      "longitude": 121.535
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taitung",
+      "iata": "TTT",
+      "icao": "RCFN",
+      "name": "Taitung Airport (Taitung Fongnian Airport)",
+      "latitude": 22.755,
+      "longitude": 121.102
+    },
+    {
+      "countryCode": "TW",
+      "region": "Taoyuan",
+      "iata": "TPE",
+      "icao": "RCTP",
+      "name": "Taiwan Taoyuan International Airport",
+      "latitude": 25.0777,
+      "longitude": 121.233
+    }
+  ]
 }

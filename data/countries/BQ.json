@@ -229,5 +229,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BQ",
+      "region": "Bonaire",
+      "iata": "BON",
+      "icao": "TNCB",
+      "name": "Flamingo International Airport",
+      "latitude": 12.131,
+      "longitude": -68.2685
+    },
+    {
+      "countryCode": "BQ",
+      "region": "Saba",
+      "iata": "SAB",
+      "icao": "TNCS",
+      "name": "Juancho E. Yrausquin Airport",
+      "latitude": 17.645,
+      "longitude": -63.22
+    },
+    {
+      "countryCode": "BQ",
+      "region": "Sint Eustatius",
+      "iata": "EUX",
+      "icao": "TNCE",
+      "name": "F. D. Roosevelt Airport",
+      "latitude": 17.4965,
+      "longitude": -62.9794
+    }
+  ]
 }

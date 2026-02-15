@@ -241,5 +241,178 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BZ",
+      "region": "Belize",
+      "iata": "BZE",
+      "icao": "MZBZ",
+      "name": "Philip S. W. Goldson International Airport",
+      "latitude": 17.5391,
+      "longitude": -88.3082
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Belize",
+      "iata": "CUK",
+      "icao": "",
+      "name": "Caye Caulker Airport",
+      "latitude": 17.7347,
+      "longitude": -88.0325
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Belize",
+      "iata": "CYC",
+      "icao": "",
+      "name": "Caye Chapel Airport",
+      "latitude": 17.7008,
+      "longitude": -88.0411
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Belize",
+      "iata": "SPR",
+      "icao": "",
+      "name": "John Greif II Airport",
+      "latitude": 17.9139,
+      "longitude": -87.9711
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Belize",
+      "iata": "TZA",
+      "icao": "",
+      "name": "Belize City Municipal Airport",
+      "latitude": 17.5164,
+      "longitude": -88.1944
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Cayo",
+      "iata": "BCV",
+      "icao": "",
+      "name": "Hector Silva Airstrip",
+      "latitude": 17.2696,
+      "longitude": -88.7765
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Cayo",
+      "iata": "CYD",
+      "icao": "",
+      "name": "San Ignacio Town Airstrip",
+      "latitude": 17.1049,
+      "longitude": -89.1011
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Cayo",
+      "iata": "MZE",
+      "icao": "",
+      "name": "Manatee Airport",
+      "latitude": 17.2785,
+      "longitude": -89.0238
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Cayo",
+      "iata": "SQS",
+      "icao": "",
+      "name": "Matthew Spain Airport",
+      "latitude": 17.1859,
+      "longitude": -89.0098
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Corozal",
+      "iata": "CZH",
+      "icao": "",
+      "name": "Corozal Airport",
+      "latitude": 18.3822,
+      "longitude": -88.4119
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Corozal",
+      "iata": "SJX",
+      "icao": "",
+      "name": "Sarteneja Airport",
+      "latitude": 18.3561,
+      "longitude": -88.1308
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Orange Walk",
+      "iata": "ORZ",
+      "icao": "",
+      "name": "Orange Walk Airport",
+      "latitude": 18.0468,
+      "longitude": -88.5839
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "BGK",
+      "icao": "",
+      "name": "Big Creek Airport",
+      "latitude": 16.5194,
+      "longitude": -88.4079
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "DGA",
+      "icao": "",
+      "name": "Dangriga Airport",
+      "latitude": 16.9825,
+      "longitude": -88.231
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "INB",
+      "icao": "",
+      "name": "Independence Airport (Belize)",
+      "latitude": 16.5345,
+      "longitude": -88.4413
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "MDB",
+      "icao": "",
+      "name": "Melinda Airport",
+      "latitude": 17.0043,
+      "longitude": -88.3042
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "PLJ",
+      "icao": "MZPL",
+      "name": "Placencia Airport",
+      "latitude": 16.537,
+      "longitude": -88.3615
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Stann Creek",
+      "iata": "SVK",
+      "icao": "",
+      "name": "Silver Creek Airport",
+      "latitude": 16.7253,
+      "longitude": -88.34
+    },
+    {
+      "countryCode": "BZ",
+      "region": "Toledo",
+      "iata": "PND",
+      "icao": "",
+      "name": "Punta Gorda Airport",
+      "latitude": 16.1024,
+      "longitude": -88.8083
+    }
+  ]
 }

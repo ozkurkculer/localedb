@@ -228,5 +228,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "KY",
+      "region": "Cayman Islands",
+      "iata": "CYB",
+      "icao": "MWCB",
+      "name": "Charles Kirkconnell International Airport",
+      "latitude": 19.687,
+      "longitude": -79.8828
+    },
+    {
+      "countryCode": "KY",
+      "region": "Cayman Islands",
+      "iata": "GCM",
+      "icao": "MWCR",
+      "name": "Owen Roberts International Airport",
+      "latitude": 19.2928,
+      "longitude": -81.3577
+    },
+    {
+      "countryCode": "KY",
+      "region": "Cayman Islands",
+      "iata": "LYB",
+      "icao": "MWCL",
+      "name": "Edward Bodden Airfield",
+      "latitude": 19.6602,
+      "longitude": -80.0888
+    }
+  ]
 }

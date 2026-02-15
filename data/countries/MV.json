@@ -228,5 +228,133 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MV",
+      "region": "Baa",
+      "iata": "DRV",
+      "icao": "VRMD",
+      "name": "Dharavandhoo Airport",
+      "latitude": 5.1561,
+      "longitude": 73.1302
+    },
+    {
+      "countryCode": "MV",
+      "region": "Baa",
+      "iata": "NMF",
+      "icao": "",
+      "name": "Maafaru International Airport",
+      "latitude": 5.82222,
+      "longitude": 73.4747
+    },
+    {
+      "countryCode": "MV",
+      "region": "Baa",
+      "iata": "VAM",
+      "icao": "VRMV",
+      "name": "Villa International Airport",
+      "latitude": 3.47056,
+      "longitude": 72.8358
+    },
+    {
+      "countryCode": "MV",
+      "region": "Dhaalu",
+      "iata": "DDD",
+      "icao": "VRMU",
+      "name": "Dhaalu Atoll Kudahuvadhoo Airport",
+      "latitude": 2.6673,
+      "longitude": 72.8929
+    },
+    {
+      "countryCode": "MV",
+      "region": "Gaafu Dhaalu",
+      "iata": "KDM",
+      "icao": "VRMT",
+      "name": "Kaadedhdhoo Airport",
+      "latitude": 0.488131,
+      "longitude": 72.9969
+    },
+    {
+      "countryCode": "MV",
+      "region": "Gnaviyani",
+      "iata": "FVM",
+      "icao": "VRMF",
+      "name": "Fuvahmulah Airport",
+      "latitude": -0.309722,
+      "longitude": 73.435
+    },
+    {
+      "countryCode": "MV",
+      "region": "Haa Dhaalu",
+      "iata": "FND",
+      "icao": "",
+      "name": "Funadhoo Airport",
+      "latitude": 6.16111,
+      "longitude": 73.2872
+    },
+    {
+      "countryCode": "MV",
+      "region": "Haa Dhaalu",
+      "iata": "HAQ",
+      "icao": "VRMH",
+      "name": "Hanimaadhoo International Airport",
+      "latitude": 6.74423,
+      "longitude": 73.1705
+    },
+    {
+      "countryCode": "MV",
+      "region": "Kaafu",
+      "iata": "MLE",
+      "icao": "VRMM",
+      "name": "Velana International Airport",
+      "latitude": 4.19183,
+      "longitude": 73.5291
+    },
+    {
+      "countryCode": "MV",
+      "region": "Laamu",
+      "iata": "GKK",
+      "icao": "VRMO",
+      "name": "Kooddoo Airport",
+      "latitude": 0.7324,
+      "longitude": 73.4336
+    },
+    {
+      "countryCode": "MV",
+      "region": "Laamu",
+      "iata": "KDO",
+      "icao": "VRMK",
+      "name": "Kadhdhoo Airport",
+      "latitude": 1.85917,
+      "longitude": 73.5219
+    },
+    {
+      "countryCode": "MV",
+      "region": "Noonu",
+      "iata": "IFU",
+      "icao": "VREI",
+      "name": "Ifuru Airport",
+      "latitude": 5.7083,
+      "longitude": 73.025
+    },
+    {
+      "countryCode": "MV",
+      "region": "Seenu",
+      "iata": "GAN",
+      "icao": "VRMG",
+      "name": "Gan International Airport",
+      "latitude": -0.693342,
+      "longitude": 73.1556
+    },
+    {
+      "countryCode": "MV",
+      "region": "Thaa",
+      "iata": "TMF",
+      "icao": "VRNT",
+      "name": "Thimarafushi Airport",
+      "latitude": 2.211,
+      "longitude": 73.1533
+    }
+  ]
 }

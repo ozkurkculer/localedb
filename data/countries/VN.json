@@ -232,5 +232,304 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "VN",
+      "region": "An Giang",
+      "iata": "XLO",
+      "icao": "",
+      "name": "Long Xuyen Airport",
+      "latitude": 10.3301,
+      "longitude": 105.473
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ba Ria - Vung Tau",
+      "iata": "HOO",
+      "icao": "",
+      "name": "Nhon Co Airport",
+      "latitude": 11.9787,
+      "longitude": 107.564
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ba Ria - Vung Tau",
+      "iata": "VCS",
+      "icao": "VVCS",
+      "name": "Con Dao Airport",
+      "latitude": 8.73183,
+      "longitude": 106.633
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ba Ria - Vung Tau",
+      "iata": "VTG",
+      "icao": "VVVT",
+      "name": "Vung Tau Airport",
+      "latitude": 10.3725,
+      "longitude": 107.095
+    },
+    {
+      "countryCode": "VN",
+      "region": "Binh Dinh",
+      "iata": "UIH",
+      "icao": "VVPC",
+      "name": "Phu Cat Airport",
+      "latitude": 13.955,
+      "longitude": 109.042
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ca Mau",
+      "iata": "CAH",
+      "icao": "VVCM",
+      "name": "Ca Mau Airport",
+      "latitude": 9.17767,
+      "longitude": 105.178
+    },
+    {
+      "countryCode": "VN",
+      "region": "Can Tho",
+      "iata": "VCA",
+      "icao": "VVCT",
+      "name": "Can Tho International Airport",
+      "latitude": 10.0851,
+      "longitude": 105.712
+    },
+    {
+      "countryCode": "VN",
+      "region": "Da Nang",
+      "iata": "DAD",
+      "icao": "VVDN",
+      "name": "Da Nang International Airport",
+      "latitude": 16.0439,
+      "longitude": 108.199
+    },
+    {
+      "countryCode": "VN",
+      "region": "Dak Lak",
+      "iata": "BMV",
+      "icao": "VVBM",
+      "name": "Buon Ma Thuot Airport",
+      "latitude": 12.6683,
+      "longitude": 108.12
+    },
+    {
+      "countryCode": "VN",
+      "region": "Dien Bien",
+      "iata": "DIN",
+      "icao": "VVDB",
+      "name": "Dien Bien Phu Airport",
+      "latitude": 21.3975,
+      "longitude": 103.008
+    },
+    {
+      "countryCode": "VN",
+      "region": "Gia Lai",
+      "iata": "PXU",
+      "icao": "VVPK",
+      "name": "Pleiku Airport",
+      "latitude": 14.0045,
+      "longitude": 108.017
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ha Noi",
+      "iata": "HAN",
+      "icao": "VVNB",
+      "name": "Noi Bai International Airport",
+      "latitude": 21.2212,
+      "longitude": 105.807
+    },
+    {
+      "countryCode": "VN",
+      "region": "Hai Phong",
+      "iata": "HPH",
+      "icao": "VVCI",
+      "name": "Cat Bi International Airport",
+      "latitude": 20.8194,
+      "longitude": 106.725
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ho Chi Minh",
+      "iata": "SGN",
+      "icao": "VVTS",
+      "name": "Tan Son Nhat International Airport",
+      "latitude": 10.8188,
+      "longitude": 106.652
+    },
+    {
+      "countryCode": "VN",
+      "region": "Khanh Hoa",
+      "iata": "CXR",
+      "icao": "VVCR",
+      "name": "Cam Ranh International Airport",
+      "latitude": 11.9982,
+      "longitude": 109.219
+    },
+    {
+      "countryCode": "VN",
+      "region": "Khanh Hoa",
+      "iata": "NHA",
+      "icao": "VVNT",
+      "name": "Nha Trang Air Base",
+      "latitude": 12.2275,
+      "longitude": 109.192
+    },
+    {
+      "countryCode": "VN",
+      "region": "Kien Giang",
+      "iata": "PQC",
+      "icao": "VVPQ",
+      "name": "Phu Quoc International Airport",
+      "latitude": 10.1698,
+      "longitude": 103.993
+    },
+    {
+      "countryCode": "VN",
+      "region": "Kien Giang",
+      "iata": "VKG",
+      "icao": "VVRG",
+      "name": "Rach Gia Airport",
+      "latitude": 9.95803,
+      "longitude": 105.132
+    },
+    {
+      "countryCode": "VN",
+      "region": "Kon Tum",
+      "iata": "KON",
+      "icao": "",
+      "name": "Kontum Airport",
+      "latitude": 14.35,
+      "longitude": 108.017
+    },
+    {
+      "countryCode": "VN",
+      "region": "Lam Dong",
+      "iata": "DLI",
+      "icao": "VVDL",
+      "name": "Lien Khuong Airport",
+      "latitude": 11.75,
+      "longitude": 108.367
+    },
+    {
+      "countryCode": "VN",
+      "region": "Nghe An",
+      "iata": "VII",
+      "icao": "VVVH",
+      "name": "Vinh International Airport",
+      "latitude": 18.7376,
+      "longitude": 105.671
+    },
+    {
+      "countryCode": "VN",
+      "region": "Ninh Thuan",
+      "iata": "PHA",
+      "icao": "VVPR",
+      "name": "Phan Rang Air Base",
+      "latitude": 11.6335,
+      "longitude": 108.952
+    },
+    {
+      "countryCode": "VN",
+      "region": "Phu Yen",
+      "iata": "TBB",
+      "icao": "VVTH",
+      "name": "Dong Tac Airport",
+      "latitude": 13.0496,
+      "longitude": 109.334
+    },
+    {
+      "countryCode": "VN",
+      "region": "Quang Binh",
+      "iata": "VDH",
+      "icao": "VVDH",
+      "name": "Dong Hoi Airport",
+      "latitude": 17.515,
+      "longitude": 106.591
+    },
+    {
+      "countryCode": "VN",
+      "region": "Quang Nam",
+      "iata": "TMK",
+      "icao": "",
+      "name": "Tam Ky Airport",
+      "latitude": 27.0522,
+      "longitude": 86.8619
+    },
+    {
+      "countryCode": "VN",
+      "region": "Quang Nam",
+      "iata": "VCL",
+      "icao": "VVCA",
+      "name": "Chu Lai International Airport",
+      "latitude": 15.4033,
+      "longitude": 108.706
+    },
+    {
+      "countryCode": "VN",
+      "region": "Quang Ngai",
+      "iata": "XNG",
+      "icao": "",
+      "name": "Quang Ngai Airport",
+      "latitude": 15.1155,
+      "longitude": 108.772
+    },
+    {
+      "countryCode": "VN",
+      "region": "Quang Ninh",
+      "iata": "VDO",
+      "icao": "VVVD",
+      "name": "Van Don International Airport",
+      "latitude": 21.1178,
+      "longitude": 107.414
+    },
+    {
+      "countryCode": "VN",
+      "region": "Soc Trang",
+      "iata": "SOA",
+      "icao": "",
+      "name": "Soc Trang Airfield",
+      "latitude": 9.5814,
+      "longitude": 105.96
+    },
+    {
+      "countryCode": "VN",
+      "region": "Son La",
+      "iata": "SQH",
+      "icao": "VVNS",
+      "name": "Na San Airport",
+      "latitude": 21.217,
+      "longitude": 104.033
+    },
+    {
+      "countryCode": "VN",
+      "region": "Thanh Hoa",
+      "iata": "THD",
+      "icao": "VVTX",
+      "name": "Tho Xuan Airport",
+      "latitude": 19.9017,
+      "longitude": 105.468
+    },
+    {
+      "countryCode": "VN",
+      "region": "Thua Thien-Hue",
+      "iata": "HUI",
+      "icao": "VVPB",
+      "name": "Phu Bai International Airport",
+      "latitude": 16.4015,
+      "longitude": 107.703
+    },
+    {
+      "countryCode": "VN",
+      "region": "Vinh Long",
+      "iata": "XVL",
+      "icao": "",
+      "name": "Vinh Long Airport",
+      "latitude": 10.2509,
+      "longitude": 105.945
+    }
+  ]
 }

@@ -232,5 +232,277 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "EC",
+      "region": "Azuay",
+      "iata": "CUE",
+      "icao": "SECU",
+      "name": "Mariscal Lamar International Airport",
+      "latitude": -2.88947,
+      "longitude": -78.9844
+    },
+    {
+      "countryCode": "EC",
+      "region": "Carchi",
+      "iata": "TUA",
+      "icao": "SETU",
+      "name": "Teniente Coronel Luis a Mantilla International Airport",
+      "latitude": 0.809506,
+      "longitude": -77.7081
+    },
+    {
+      "countryCode": "EC",
+      "region": "Cotopaxi",
+      "iata": "LTX",
+      "icao": "",
+      "name": "Cotopaxi International Airport",
+      "latitude": -0.906833,
+      "longitude": -78.6158
+    },
+    {
+      "countryCode": "EC",
+      "region": "El Oro",
+      "iata": "ETR",
+      "icao": "SERO",
+      "name": "Santa Rosa International Airport",
+      "latitude": -3.44199,
+      "longitude": -79.997
+    },
+    {
+      "countryCode": "EC",
+      "region": "El Oro",
+      "iata": "MCH",
+      "icao": "SEMH",
+      "name": "General Manuel Serrano Airport",
+      "latitude": -3.2689,
+      "longitude": -79.9616
+    },
+    {
+      "countryCode": "EC",
+      "region": "Esmeraldas",
+      "iata": "ESM",
+      "icao": "SETN",
+      "name": "Carlos Concha Torres International Airport",
+      "latitude": 0.978519,
+      "longitude": -79.6266
+    },
+    {
+      "countryCode": "EC",
+      "region": "Galapagos",
+      "iata": "GPS",
+      "icao": "SEGS",
+      "name": "Seymour Airport",
+      "latitude": -0.453758,
+      "longitude": -90.2659
+    },
+    {
+      "countryCode": "EC",
+      "region": "Galapagos",
+      "iata": "IBB",
+      "icao": "SEII",
+      "name": "General Villamil Airport",
+      "latitude": -0.942628,
+      "longitude": -90.953
+    },
+    {
+      "countryCode": "EC",
+      "region": "Galapagos",
+      "iata": "SCY",
+      "icao": "SEST",
+      "name": "San Cristobal Airport",
+      "latitude": -0.910206,
+      "longitude": -89.6174
+    },
+    {
+      "countryCode": "EC",
+      "region": "Guayas",
+      "iata": "GYE",
+      "icao": "SEGU",
+      "name": "Jose Joaquin de Olmedo International Airport",
+      "latitude": -2.15742,
+      "longitude": -79.8836
+    },
+    {
+      "countryCode": "EC",
+      "region": "Loja",
+      "iata": "LOH",
+      "icao": "SETM",
+      "name": "Ciudad de Catamayo Airport",
+      "latitude": -3.99589,
+      "longitude": -79.3719
+    },
+    {
+      "countryCode": "EC",
+      "region": "Loja",
+      "iata": "MRR",
+      "icao": "SEMA",
+      "name": "Jose Maria Velasco Ibarra Airport",
+      "latitude": -4.37823,
+      "longitude": -79.941
+    },
+    {
+      "countryCode": "EC",
+      "region": "Manabi",
+      "iata": "BHA",
+      "icao": "SESV",
+      "name": "Los Perales Airport",
+      "latitude": -0.608111,
+      "longitude": -80.4027
+    },
+    {
+      "countryCode": "EC",
+      "region": "Manabi",
+      "iata": "JIP",
+      "icao": "SEJI",
+      "name": "Jipijapa Airport",
+      "latitude": -1,
+      "longitude": -80.6667
+    },
+    {
+      "countryCode": "EC",
+      "region": "Manabi",
+      "iata": "MEC",
+      "icao": "SEMT",
+      "name": "Eloy Alfaro International Airport",
+      "latitude": -0.946078,
+      "longitude": -80.6788
+    },
+    {
+      "countryCode": "EC",
+      "region": "Manabi",
+      "iata": "PVO",
+      "icao": "SEPV",
+      "name": "Reales Tamarindos Airport",
+      "latitude": -1.04165,
+      "longitude": -80.4722
+    },
+    {
+      "countryCode": "EC",
+      "region": "Morona Santiago",
+      "iata": "MZD",
+      "icao": "",
+      "name": "Mendez Airport",
+      "latitude": -2.73333,
+      "longitude": -78.3167
+    },
+    {
+      "countryCode": "EC",
+      "region": "Morona Santiago",
+      "iata": "SUQ",
+      "icao": "SESC",
+      "name": "Sucua Airport",
+      "latitude": -2.483,
+      "longitude": -78.167
+    },
+    {
+      "countryCode": "EC",
+      "region": "Morona Santiago",
+      "iata": "TSC",
+      "icao": "SETH",
+      "name": "Taisha Airport",
+      "latitude": -2.38167,
+      "longitude": -77.5028
+    },
+    {
+      "countryCode": "EC",
+      "region": "Morona Santiago",
+      "iata": "XMS",
+      "icao": "SEMC",
+      "name": "Edmundo Carvajal Airport",
+      "latitude": -2.29917,
+      "longitude": -78.1208
+    },
+    {
+      "countryCode": "EC",
+      "region": "Napo",
+      "iata": "TNW",
+      "icao": "SEJD",
+      "name": "Jumandy Airport",
+      "latitude": -1.05972,
+      "longitude": -77.5833
+    },
+    {
+      "countryCode": "EC",
+      "region": "Orellana",
+      "iata": "OCC",
+      "icao": "SECO",
+      "name": "Francisco de Orellana Airport",
+      "latitude": -0.462886,
+      "longitude": -76.9868
+    },
+    {
+      "countryCode": "EC",
+      "region": "Orellana",
+      "iata": "TPN",
+      "icao": "SETI",
+      "name": "Tiputini Airport",
+      "latitude": -0.776111,
+      "longitude": -75.5264
+    },
+    {
+      "countryCode": "EC",
+      "region": "Pastaza",
+      "iata": "PTZ",
+      "icao": "SESM",
+      "name": "Rio Amazonas Airport",
+      "latitude": -1.50524,
+      "longitude": -78.0627
+    },
+    {
+      "countryCode": "EC",
+      "region": "Pichincha",
+      "iata": "UIO",
+      "icao": "SEQM",
+      "name": "Mariscal Sucre International Airport",
+      "latitude": -0.129167,
+      "longitude": -78.3575
+    },
+    {
+      "countryCode": "EC",
+      "region": "Santa Elena",
+      "iata": "SNC",
+      "icao": "SESA",
+      "name": "General Ulpiano Paez Airport",
+      "latitude": -2.20499,
+      "longitude": -80.9889
+    },
+    {
+      "countryCode": "EC",
+      "region": "Sucumbios",
+      "iata": "LGQ",
+      "icao": "SENL",
+      "name": "Lago Agrio Airport",
+      "latitude": 0.093056,
+      "longitude": -76.8675
+    },
+    {
+      "countryCode": "EC",
+      "region": "Sucumbios",
+      "iata": "PYO",
+      "icao": "SEPT",
+      "name": "Putumayo Airport",
+      "latitude": 0.115949,
+      "longitude": -75.8502
+    },
+    {
+      "countryCode": "EC",
+      "region": "Sucumbios",
+      "iata": "TPC",
+      "icao": "SETR",
+      "name": "Tarapoa Airport",
+      "latitude": -0.122956,
+      "longitude": -76.3378
+    },
+    {
+      "countryCode": "EC",
+      "region": "Tungurahua",
+      "iata": "ATF",
+      "icao": "SEAM",
+      "name": "Chachoan Airport",
+      "latitude": -1.21207,
+      "longitude": -78.5746
+    }
+  ]
 }

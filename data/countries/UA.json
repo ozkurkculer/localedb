@@ -237,5 +237,331 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "UA",
+      "region": "Avtonomna Respublika Krym",
+      "iata": "KHC",
+      "icao": "UKFK",
+      "name": "Kerch Airport (Voykovo Airport)",
+      "latitude": 45.3725,
+      "longitude": 36.4014
+    },
+    {
+      "countryCode": "UA",
+      "region": "Avtonomna Respublika Krym",
+      "iata": "SIP",
+      "icao": "UKFF",
+      "name": "Simferopol International Airport",
+      "latitude": 45.0522,
+      "longitude": 33.9751
+    },
+    {
+      "countryCode": "UA",
+      "region": "Cherkaska oblast",
+      "iata": "CKC",
+      "icao": "UKKE",
+      "name": "Cherkasy International Airport",
+      "latitude": 49.4156,
+      "longitude": 31.9953
+    },
+    {
+      "countryCode": "UA",
+      "region": "Chernihivska oblast",
+      "iata": "CEJ",
+      "icao": "UKKL",
+      "name": "Chernihiv Airport",
+      "latitude": 51.4033,
+      "longitude": 31.16
+    },
+    {
+      "countryCode": "UA",
+      "region": "Chernihivska oblast",
+      "iata": "CWC",
+      "icao": "UKLN",
+      "name": "Chernivtsi International Airport",
+      "latitude": 48.2593,
+      "longitude": 25.9808
+    },
+    {
+      "countryCode": "UA",
+      "region": "Dnipropetrovska oblast",
+      "iata": "DNK",
+      "icao": "UKDD",
+      "name": "Dnipropetrovsk International Airport",
+      "latitude": 48.3572,
+      "longitude": 35.1006
+    },
+    {
+      "countryCode": "UA",
+      "region": "Dnipropetrovska oblast",
+      "iata": "KWG",
+      "icao": "UKDR",
+      "name": "Kryvyi Rih International Airport",
+      "latitude": 48.0433,
+      "longitude": 33.21
+    },
+    {
+      "countryCode": "UA",
+      "region": "Donetska oblast",
+      "iata": "DOK",
+      "icao": "UKCC",
+      "name": "Donetsk International Airport",
+      "latitude": 48.0736,
+      "longitude": 37.7397
+    },
+    {
+      "countryCode": "UA",
+      "region": "Donetska oblast",
+      "iata": "KRQ",
+      "icao": "UKCK",
+      "name": "Kramatorsk Airport",
+      "latitude": 48.7056,
+      "longitude": 37.6289
+    },
+    {
+      "countryCode": "UA",
+      "region": "Donetska oblast",
+      "iata": "MPW",
+      "icao": "UKCM",
+      "name": "Mariupol International Airport",
+      "latitude": 47.0761,
+      "longitude": 37.4496
+    },
+    {
+      "countryCode": "UA",
+      "region": "Ivano-Frankivska oblast",
+      "iata": "IFO",
+      "icao": "UKLI",
+      "name": "Ivano-Frankivsk International Airport",
+      "latitude": 48.8842,
+      "longitude": 24.6861
+    },
+    {
+      "countryCode": "UA",
+      "region": "Kharkivska oblast",
+      "iata": "HRK",
+      "icao": "UKHH",
+      "name": "Kharkiv International Airport (Osnova Airport)",
+      "latitude": 49.9248,
+      "longitude": 36.29
+    },
+    {
+      "countryCode": "UA",
+      "region": "Khersonska oblast",
+      "iata": "KHE",
+      "icao": "UKOH",
+      "name": "Kherson International Airport",
+      "latitude": 46.6758,
+      "longitude": 32.5064
+    },
+    {
+      "countryCode": "UA",
+      "region": "Khmelnytska oblast",
+      "iata": "HMJ",
+      "icao": "UKLH",
+      "name": "Khmelnytskyi Airport",
+      "latitude": 49.3597,
+      "longitude": 26.9334
+    },
+    {
+      "countryCode": "UA",
+      "region": "Khmelnytska oblast",
+      "iata": "KCP",
+      "icao": "",
+      "name": "Kamianets-Podilskyi Airport",
+      "latitude": 48.2669,
+      "longitude": 25.9672
+    },
+    {
+      "countryCode": "UA",
+      "region": "Kirovohradska oblast",
+      "iata": "KGO",
+      "icao": "UKKG",
+      "name": "Kirovohrad Airport",
+      "latitude": 48.5428,
+      "longitude": 32.285
+    },
+    {
+      "countryCode": "UA",
+      "region": "Kyiv",
+      "iata": "IEV",
+      "icao": "UKKK",
+      "name": "Kyiv International Airport (Zhuliany)",
+      "latitude": 50.4019,
+      "longitude": 30.4519
+    },
+    {
+      "countryCode": "UA",
+      "region": "Kyiv",
+      "iata": "KBP",
+      "icao": "UKBB",
+      "name": "Boryspil International Airport",
+      "latitude": 50.345,
+      "longitude": 30.8947
+    },
+    {
+      "countryCode": "UA",
+      "region": "Luhanska oblast",
+      "iata": "SEV",
+      "icao": "",
+      "name": "Severodonetsk Airport",
+      "latitude": 48.9003,
+      "longitude": 38.5417
+    },
+    {
+      "countryCode": "UA",
+      "region": "Luhanska oblast",
+      "iata": "VSG",
+      "icao": "UKCW",
+      "name": "Luhansk International Airport",
+      "latitude": 48.4174,
+      "longitude": 39.3741
+    },
+    {
+      "countryCode": "UA",
+      "region": "Lvivska oblast",
+      "iata": "LWO",
+      "icao": "UKLL",
+      "name": "Lviv Danylo Halytskyi International Airport",
+      "latitude": 49.8125,
+      "longitude": 23.9561
+    },
+    {
+      "countryCode": "UA",
+      "region": "Mykolaivska oblast",
+      "iata": "NLV",
+      "icao": "UKON",
+      "name": "Mykolaiv International Airport",
+      "latitude": 47.0579,
+      "longitude": 31.9198
+    },
+    {
+      "countryCode": "UA",
+      "region": "Odeska oblast",
+      "iata": "ODS",
+      "icao": "UKOO",
+      "name": "Odessa International Airport",
+      "latitude": 46.4268,
+      "longitude": 30.6765
+    },
+    {
+      "countryCode": "UA",
+      "region": "Poltavska oblast",
+      "iata": "KHU",
+      "icao": "",
+      "name": "Kremenchuk Airport",
+      "latitude": 49.1342,
+      "longitude": 33.4766
+    },
+    {
+      "countryCode": "UA",
+      "region": "Poltavska oblast",
+      "iata": "MXR",
+      "icao": "",
+      "name": "Myrhorod Air Base",
+      "latitude": 13.6457,
+      "longitude": 16.5014
+    },
+    {
+      "countryCode": "UA",
+      "region": "Poltavska oblast",
+      "iata": "PLV",
+      "icao": "UKHP",
+      "name": "Poltava Airport",
+      "latitude": 49.5686,
+      "longitude": 34.3972
+    },
+    {
+      "countryCode": "UA",
+      "region": "Rivnenska oblast",
+      "iata": "RWN",
+      "icao": "UKLR",
+      "name": "Rivne International Airport",
+      "latitude": 50.6071,
+      "longitude": 26.1416
+    },
+    {
+      "countryCode": "UA",
+      "region": "Sevastopol",
+      "iata": "UKS",
+      "icao": "UKFB",
+      "name": "Sevastopol International Airport",
+      "latitude": 44.689,
+      "longitude": 33.571
+    },
+    {
+      "countryCode": "UA",
+      "region": "Sumska oblast",
+      "iata": "UMY",
+      "icao": "UKHS",
+      "name": "Sumy Airport",
+      "latitude": 50.8583,
+      "longitude": 34.7625
+    },
+    {
+      "countryCode": "UA",
+      "region": "Ternopilska oblast",
+      "iata": "TNL",
+      "icao": "UKLT",
+      "name": "Ternopil International Airport",
+      "latitude": 49.5242,
+      "longitude": 25.7001
+    },
+    {
+      "countryCode": "UA",
+      "region": "Vinnytska oblast",
+      "iata": "VIN",
+      "icao": "UKWW",
+      "name": "Havryshivka Vinnytsia International Airport",
+      "latitude": 49.2425,
+      "longitude": 28.6138
+    },
+    {
+      "countryCode": "UA",
+      "region": "Volynska oblast",
+      "iata": "UCK",
+      "icao": "UKLC",
+      "name": "Lutsk Airport",
+      "latitude": 50.6784,
+      "longitude": 25.4872
+    },
+    {
+      "countryCode": "UA",
+      "region": "Zakarpatska oblast",
+      "iata": "UDJ",
+      "icao": "UKLU",
+      "name": "Uzhhorod International Airport",
+      "latitude": 48.6343,
+      "longitude": 22.2634
+    },
+    {
+      "countryCode": "UA",
+      "region": "Zaporizka oblast",
+      "iata": "ERD",
+      "icao": "UKDB",
+      "name": "Berdiansk Airport",
+      "latitude": 46.815,
+      "longitude": 36.7581
+    },
+    {
+      "countryCode": "UA",
+      "region": "Zaporizka oblast",
+      "iata": "OZH",
+      "icao": "UKDE",
+      "name": "Zaporizhia International Airport",
+      "latitude": 47.867,
+      "longitude": 35.3157
+    },
+    {
+      "countryCode": "UA",
+      "region": "Zhytomyrska oblast",
+      "iata": "ZTR",
+      "icao": "UKKV",
+      "name": "Zhytomyr Airport",
+      "latitude": 50.2706,
+      "longitude": 28.7386
+    }
+  ]
 }

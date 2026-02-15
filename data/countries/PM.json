@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "PM",
+      "region": "Saint Pierre and Miquelon",
+      "iata": "FSP",
+      "icao": "LFVP",
+      "name": "Saint-Pierre Airport",
+      "latitude": 46.7629,
+      "longitude": -56.1731
+    },
+    {
+      "countryCode": "PM",
+      "region": "Saint Pierre and Miquelon",
+      "iata": "MQC",
+      "icao": "LFVM",
+      "name": "Miquelon Airport",
+      "latitude": 47.0955,
+      "longitude": -56.3803
+    }
+  ]
 }

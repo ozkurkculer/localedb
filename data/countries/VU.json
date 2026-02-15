@@ -185,5 +185,277 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "CCV",
+      "icao": "NVSF",
+      "name": "Craig Cove Airport",
+      "latitude": -16.265,
+      "longitude": 167.924
+    },
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "LPM",
+      "icao": "NVSL",
+      "name": "Malekoula Airport (Lamap Airport)",
+      "latitude": -16.4611,
+      "longitude": 167.829
+    },
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "NUS",
+      "icao": "NVSP",
+      "name": "Norsup Airport",
+      "latitude": -16.0797,
+      "longitude": 167.401
+    },
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "PBJ",
+      "icao": "NVSI",
+      "name": "Paama Airport",
+      "latitude": -16.439,
+      "longitude": 168.257
+    },
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "SWJ",
+      "icao": "NVSX",
+      "name": "South West Bay Airport",
+      "latitude": -16.4864,
+      "longitude": 167.447
+    },
+    {
+      "countryCode": "VU",
+      "region": "Malampa",
+      "iata": "ULB",
+      "icao": "NVSU",
+      "name": "Ulei Airport",
+      "latitude": -16.3297,
+      "longitude": 168.301
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "LNE",
+      "icao": "NVSO",
+      "name": "Lonorore Airport",
+      "latitude": -15.8656,
+      "longitude": 168.172
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "LOD",
+      "icao": "NVSG",
+      "name": "Longana Airport",
+      "latitude": -15.3067,
+      "longitude": 167.967
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "MWF",
+      "icao": "NVSN",
+      "name": "Maewo-Naone Airport",
+      "latitude": -15,
+      "longitude": 168.083
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "RCL",
+      "icao": "NVSR",
+      "name": "Redcliffe Airport",
+      "latitude": -15.472,
+      "longitude": 167.835
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "SSR",
+      "icao": "NVSH",
+      "name": "Sara Airport",
+      "latitude": -15.4708,
+      "longitude": 168.152
+    },
+    {
+      "countryCode": "VU",
+      "region": "Penama",
+      "iata": "WLH",
+      "icao": "NVSW",
+      "name": "Walaha Airport",
+      "latitude": -15.412,
+      "longitude": 167.691
+    },
+    {
+      "countryCode": "VU",
+      "region": "Sanma",
+      "iata": "OLJ",
+      "icao": "NVSZ",
+      "name": "Olpoi Airport (North West Santo Airport)",
+      "latitude": -14.8817,
+      "longitude": 166.558
+    },
+    {
+      "countryCode": "VU",
+      "region": "Sanma",
+      "iata": "SON",
+      "icao": "NVSS",
+      "name": "Santo-Pekoa International Airport",
+      "latitude": -15.505,
+      "longitude": 167.22
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "EAE",
+      "icao": "NVSE",
+      "name": "Siwo Airport",
+      "latitude": -17.0903,
+      "longitude": 168.343
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "LNB",
+      "icao": "NVSM",
+      "name": "Lamen Bay Airport",
+      "latitude": -16.5842,
+      "longitude": 168.159
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "TGH",
+      "icao": "NVST",
+      "name": "Tongoa Airport",
+      "latitude": -16.8911,
+      "longitude": 168.551
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "UIQ",
+      "icao": "NVVQ",
+      "name": "Quoin Hill Airfield",
+      "latitude": -17.54,
+      "longitude": 168.442
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "VLI",
+      "icao": "NVVV",
+      "name": "Bauerfield International Airport",
+      "latitude": -17.6993,
+      "longitude": 168.32
+    },
+    {
+      "countryCode": "VU",
+      "region": "Shefa",
+      "iata": "VLS",
+      "icao": "NVSV",
+      "name": "Valesdir Airport",
+      "latitude": -16.7961,
+      "longitude": 168.177
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "AUY",
+      "icao": "NVVA",
+      "name": "Anatom Airport",
+      "latitude": -20.2492,
+      "longitude": 169.771
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "AWD",
+      "icao": "NVVB",
+      "name": "Aniwa Airport",
+      "latitude": -19.2346,
+      "longitude": 169.601
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "DLY",
+      "icao": "NVVD",
+      "name": "Dillon's Bay Airport",
+      "latitude": -18.7694,
+      "longitude": 169.001
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "FTA",
+      "icao": "NVVF",
+      "name": "Futuna Airport",
+      "latitude": -19.5164,
+      "longitude": 170.232
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "IPA",
+      "icao": "NVVI",
+      "name": "Ipota Airport",
+      "latitude": -18.8564,
+      "longitude": 169.283
+    },
+    {
+      "countryCode": "VU",
+      "region": "Tafea",
+      "iata": "TAH",
+      "icao": "NVVW",
+      "name": "Whitegrass Airport",
+      "latitude": -19.4551,
+      "longitude": 169.224
+    },
+    {
+      "countryCode": "VU",
+      "region": "Torba",
+      "iata": "MTV",
+      "icao": "NVSA",
+      "name": "Mota Lava Airport",
+      "latitude": -13.666,
+      "longitude": 167.712
+    },
+    {
+      "countryCode": "VU",
+      "region": "Torba",
+      "iata": "SLH",
+      "icao": "NVSC",
+      "name": "Vanua Lava Airport",
+      "latitude": -13.8517,
+      "longitude": 167.537
+    },
+    {
+      "countryCode": "VU",
+      "region": "Torba",
+      "iata": "TOH",
+      "icao": "NVSD",
+      "name": "Torres Airport",
+      "latitude": -13.328,
+      "longitude": 166.638
+    },
+    {
+      "countryCode": "VU",
+      "region": "Torba",
+      "iata": "ZGU",
+      "icao": "NVSQ",
+      "name": "Gaua Airport",
+      "latitude": -14.2181,
+      "longitude": 167.587
+    }
+  ]
 }

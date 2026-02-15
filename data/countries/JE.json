@@ -238,5 +238,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "JE",
+      "region": "Jersey",
+      "iata": "JER",
+      "icao": "EGJJ",
+      "name": "Jersey Airport",
+      "latitude": 49.2081,
+      "longitude": -2.19528
+    }
+  ]
 }

@@ -245,5 +245,178 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TD",
+      "region": "Batha",
+      "iata": "ATV",
+      "icao": "FTTI",
+      "name": "Ati Airport",
+      "latitude": 13.2389,
+      "longitude": 18.3133
+    },
+    {
+      "countryCode": "TD",
+      "region": "Batha",
+      "iata": "OUM",
+      "icao": "",
+      "name": "Oum Hadjer Airport",
+      "latitude": 13.2782,
+      "longitude": 19.7103
+    },
+    {
+      "countryCode": "TD",
+      "region": "Borkou",
+      "iata": "FYT",
+      "icao": "FTTY",
+      "name": "Faya-Largeau Airport",
+      "latitude": 17.9171,
+      "longitude": 19.1111
+    },
+    {
+      "countryCode": "TD",
+      "region": "Chari-Baguirmi",
+      "iata": "OUT",
+      "icao": "FTTS",
+      "name": "Bousso Airport",
+      "latitude": 10.483,
+      "longitude": 16.717
+    },
+    {
+      "countryCode": "TD",
+      "region": "Guera",
+      "iata": "MEF",
+      "icao": "",
+      "name": "Melfi Airport",
+      "latitude": 11.0602,
+      "longitude": 17.9445
+    },
+    {
+      "countryCode": "TD",
+      "region": "Guera",
+      "iata": "MVO",
+      "icao": "FTTM",
+      "name": "Mongo Airport",
+      "latitude": 12.167,
+      "longitude": 18.675
+    },
+    {
+      "countryCode": "TD",
+      "region": "Hadjer Lamis",
+      "iata": "BKR",
+      "icao": "FTTK",
+      "name": "Bokoro Airport",
+      "latitude": 12.383,
+      "longitude": 17.067
+    },
+    {
+      "countryCode": "TD",
+      "region": "Hadjer Lamis",
+      "iata": "NDJ",
+      "icao": "FTTJ",
+      "name": "N'Djamena International Airport",
+      "latitude": 12.1337,
+      "longitude": 15.034
+    },
+    {
+      "countryCode": "TD",
+      "region": "Kanem",
+      "iata": "AMO",
+      "icao": "FTTU",
+      "name": "Mao Airport",
+      "latitude": 14.1456,
+      "longitude": 15.3144
+    },
+    {
+      "countryCode": "TD",
+      "region": "Lac",
+      "iata": "OTC",
+      "icao": "FTTL",
+      "name": "Bol-Berim Airport",
+      "latitude": 13.4433,
+      "longitude": 14.7394
+    },
+    {
+      "countryCode": "TD",
+      "region": "Logone-Occidental",
+      "iata": "MQQ",
+      "icao": "FTTD",
+      "name": "Moundou Airport",
+      "latitude": 8.62441,
+      "longitude": 16.0714
+    },
+    {
+      "countryCode": "TD",
+      "region": "Logone-Occidental",
+      "iata": "PLF",
+      "icao": "FTTP",
+      "name": "Pala Airport",
+      "latitude": 9.37806,
+      "longitude": 14.925
+    },
+    {
+      "countryCode": "TD",
+      "region": "Mayo-Kebbi-Est",
+      "iata": "OGR",
+      "icao": "FTTB",
+      "name": "Bongor Airport",
+      "latitude": 10.2881,
+      "longitude": 15.3811
+    },
+    {
+      "countryCode": "TD",
+      "region": "Moyen-Chari",
+      "iata": "SRH",
+      "icao": "FTTA",
+      "name": "Sarh Airport",
+      "latitude": 9.14444,
+      "longitude": 18.3744
+    },
+    {
+      "countryCode": "TD",
+      "region": "Ouaddai",
+      "iata": "AEH",
+      "icao": "FTTC",
+      "name": "Abeche Airport",
+      "latitude": 13.847,
+      "longitude": 20.8443
+    },
+    {
+      "countryCode": "TD",
+      "region": "Salamat",
+      "iata": "AKM",
+      "icao": "",
+      "name": "Zakouma Airport",
+      "latitude": 10.8903,
+      "longitude": 19.8172
+    },
+    {
+      "countryCode": "TD",
+      "region": "Salamat",
+      "iata": "AMC",
+      "icao": "FTTN",
+      "name": "Am Timan Airport",
+      "latitude": 11.034,
+      "longitude": 20.274
+    },
+    {
+      "countryCode": "TD",
+      "region": "Salamat",
+      "iata": "AOD",
+      "icao": "",
+      "name": "Abou-Deia Airport",
+      "latitude": 11.4773,
+      "longitude": 19.2874
+    },
+    {
+      "countryCode": "TD",
+      "region": "Tandjile",
+      "iata": "LTC",
+      "icao": "FTTH",
+      "name": "Lai Airport",
+      "latitude": 9.3979,
+      "longitude": 16.3125
+    }
+  ]
 }

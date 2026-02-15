@@ -245,5 +245,187 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "CM",
+      "region": "Adamaoua",
+      "iata": "NGE",
+      "icao": "FKKN",
+      "name": "Ngaoundere Airport",
+      "latitude": 7.35701,
+      "longitude": 13.5592
+    },
+    {
+      "countryCode": "CM",
+      "region": "Centre",
+      "iata": "NSI",
+      "icao": "FKYS",
+      "name": "Yaounde Nsimalen International Airport",
+      "latitude": 3.72256,
+      "longitude": 11.5533
+    },
+    {
+      "countryCode": "CM",
+      "region": "Centre",
+      "iata": "YAO",
+      "icao": "FKKY",
+      "name": "Yaounde Airport",
+      "latitude": 3.83604,
+      "longitude": 11.5235
+    },
+    {
+      "countryCode": "CM",
+      "region": "Est",
+      "iata": "BTA",
+      "icao": "FKKO",
+      "name": "Bertoua Airport",
+      "latitude": 4.54861,
+      "longitude": 13.7261
+    },
+    {
+      "countryCode": "CM",
+      "region": "Est",
+      "iata": "OUR",
+      "icao": "FKKI",
+      "name": "Batouri Airport",
+      "latitude": 4.475,
+      "longitude": 14.3625
+    },
+    {
+      "countryCode": "CM",
+      "region": "Extreme-Nord",
+      "iata": "GXX",
+      "icao": "FKKJ",
+      "name": "Yagoua Airport",
+      "latitude": 10.3561,
+      "longitude": 15.2372
+    },
+    {
+      "countryCode": "CM",
+      "region": "Extreme-Nord",
+      "iata": "KLE",
+      "icao": "FKKH",
+      "name": "Kaele Airport",
+      "latitude": 10.0925,
+      "longitude": 14.4456
+    },
+    {
+      "countryCode": "CM",
+      "region": "Extreme-Nord",
+      "iata": "MVR",
+      "icao": "FKKL",
+      "name": "Salak Airport",
+      "latitude": 10.4514,
+      "longitude": 14.2574
+    },
+    {
+      "countryCode": "CM",
+      "region": "Littoral",
+      "iata": "DLA",
+      "icao": "FKKD",
+      "name": "Douala International Airport",
+      "latitude": 4.00608,
+      "longitude": 9.71948
+    },
+    {
+      "countryCode": "CM",
+      "region": "Littoral",
+      "iata": "NKS",
+      "icao": "FKAN",
+      "name": "Nkongsamba Airport",
+      "latitude": 4.95,
+      "longitude": 9.933
+    },
+    {
+      "countryCode": "CM",
+      "region": "Nord",
+      "iata": "GOU",
+      "icao": "FKKR",
+      "name": "Garoua International Airport",
+      "latitude": 9.33589,
+      "longitude": 13.3701
+    },
+    {
+      "countryCode": "CM",
+      "region": "Nord-Ouest",
+      "iata": "BLC",
+      "icao": "FKKG",
+      "name": "Bali Airport",
+      "latitude": 5.89528,
+      "longitude": 10.0339
+    },
+    {
+      "countryCode": "CM",
+      "region": "Nord-Ouest",
+      "iata": "BPC",
+      "icao": "FKKV",
+      "name": "Bamenda Airport",
+      "latitude": 6.03924,
+      "longitude": 10.1226
+    },
+    {
+      "countryCode": "CM",
+      "region": "Ouest",
+      "iata": "BFX",
+      "icao": "FKKU",
+      "name": "Bafoussam Airport",
+      "latitude": 5.53692,
+      "longitude": 10.3546
+    },
+    {
+      "countryCode": "CM",
+      "region": "Ouest",
+      "iata": "DSC",
+      "icao": "FKKS",
+      "name": "Dschang Airport",
+      "latitude": 5.45,
+      "longitude": 10.067
+    },
+    {
+      "countryCode": "CM",
+      "region": "Ouest",
+      "iata": "FOM",
+      "icao": "FKKM",
+      "name": "Foumban Nkounja Airport",
+      "latitude": 5.63692,
+      "longitude": 10.7508
+    },
+    {
+      "countryCode": "CM",
+      "region": "Sud",
+      "iata": "EBW",
+      "icao": "FKKW",
+      "name": "Ebolowa Airport",
+      "latitude": 2.876,
+      "longitude": 11.185
+    },
+    {
+      "countryCode": "CM",
+      "region": "Sud",
+      "iata": "KBI",
+      "icao": "FKKB",
+      "name": "Kribi Airport",
+      "latitude": 2.87389,
+      "longitude": 9.97778
+    },
+    {
+      "countryCode": "CM",
+      "region": "Sud-Ouest",
+      "iata": "MMF",
+      "icao": "FKKF",
+      "name": "Mamfe Airport",
+      "latitude": 5.70417,
+      "longitude": 9.30639
+    },
+    {
+      "countryCode": "CM",
+      "region": "Sud-Ouest",
+      "iata": "TKC",
+      "icao": "FKKC",
+      "name": "Tiko Airport",
+      "latitude": 4.08919,
+      "longitude": 9.36053
+    }
+  ]
 }

@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MS",
+      "region": "Saint Peter",
+      "iata": "MNI",
+      "icao": "TRPG",
+      "name": "John A. Osborne Airport",
+      "latitude": 16.7914,
+      "longitude": -62.1933
+    }
+  ]
 }

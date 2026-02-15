@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BL",
+      "region": "Saint Barthelemy",
+      "iata": "SBH",
+      "icao": "TFFJ",
+      "name": "Gustaf III Airport",
+      "latitude": 17.9044,
+      "longitude": -62.8436
+    }
+  ]
 }

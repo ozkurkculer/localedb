@@ -231,5 +231,79 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "SL",
+      "region": "Eastern",
+      "iata": "KEN",
+      "icao": "GFKE",
+      "name": "Kenema Airport",
+      "latitude": 7.89129,
+      "longitude": -11.1766
+    },
+    {
+      "countryCode": "SL",
+      "region": "Eastern",
+      "iata": "WYE",
+      "icao": "GFYE",
+      "name": "Yengema Airport",
+      "latitude": 8.61047,
+      "longitude": -11.0454
+    },
+    {
+      "countryCode": "SL",
+      "region": "Northern",
+      "iata": "KBA",
+      "icao": "GFKB",
+      "name": "Kabala Airport",
+      "latitude": 9.63832,
+      "longitude": -11.5156
+    },
+    {
+      "countryCode": "SL",
+      "region": "Southern",
+      "iata": "BTE",
+      "icao": "GFBN",
+      "name": "Sherbro International Airport",
+      "latitude": 7.53242,
+      "longitude": -12.5189
+    },
+    {
+      "countryCode": "SL",
+      "region": "Southern",
+      "iata": "GBK",
+      "icao": "GFGK",
+      "name": "Gbangbatok Airport",
+      "latitude": 7.767,
+      "longitude": -12.383
+    },
+    {
+      "countryCode": "SL",
+      "region": "Southern",
+      "iata": "KBS",
+      "icao": "GFBO",
+      "name": "Bo Airport",
+      "latitude": 7.9444,
+      "longitude": -11.761
+    },
+    {
+      "countryCode": "SL",
+      "region": "Western Area",
+      "iata": "FNA",
+      "icao": "GFLL",
+      "name": "Lungi International Airport",
+      "latitude": 8.61644,
+      "longitude": -13.1955
+    },
+    {
+      "countryCode": "SL",
+      "region": "Western Area",
+      "iata": "HGS",
+      "icao": "GFHA",
+      "name": "Hastings Airport",
+      "latitude": 8.39713,
+      "longitude": -13.1291
+    }
+  ]
 }

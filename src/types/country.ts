@@ -100,8 +100,9 @@ export interface CodeSystems {
 // ─── Currency ────────────────────────────────────────────────────
 
 import { CurrencyInfo } from "./currency";
+import { Airport } from "./airport";
 
-export type { CurrencyInfo };
+export type { CurrencyInfo, Airport };
 
 // ─── Date and Time ───────────────────────────────────────────────
 
@@ -278,6 +279,7 @@ export interface CountryLocaleData {
   numberFormat: NumberFormatInfo;
   phone: PhoneInfo;
   addressFormat: AddressFormatInfo;
+  airports: Airport[];
   locale: LocaleMiscInfo;
 }
 

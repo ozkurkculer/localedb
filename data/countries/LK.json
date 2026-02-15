@@ -242,5 +242,295 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "ADP",
+      "icao": "VCCG",
+      "name": "Ampara Airport",
+      "latitude": 7.33776,
+      "longitude": 81.6259
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "AYY",
+      "icao": "",
+      "name": "Arugam Bay Seaplane Base",
+      "latitude": 6.86,
+      "longitude": 81.8239
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "BTC",
+      "icao": "VCCB",
+      "name": "Batticaloa Airport",
+      "latitude": 7.70576,
+      "longitude": 81.6788
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "DBU",
+      "icao": "",
+      "name": "Dambulu Oya Tank Seaplane Base",
+      "latitude": 7.8604,
+      "longitude": 80.6304
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "GIU",
+      "icao": "VCCS",
+      "name": "Sigiriya Airport",
+      "latitude": 7.95667,
+      "longitude": 80.7285
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "KDW",
+      "icao": "",
+      "name": "Victoria Reservoir Seaplane Base",
+      "latitude": 7.2415,
+      "longitude": 80.7834
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "KDZ",
+      "icao": "",
+      "name": "Polgolla Reservoir Seaplane Base",
+      "latitude": 7.3251,
+      "longitude": 80.6422
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "NUA",
+      "icao": "",
+      "name": "Gregory Lake Seaplane Base",
+      "latitude": 6.95717,
+      "longitude": 80.7795
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "NUF",
+      "icao": "",
+      "name": "Castlereigh Reservoir Seaplane Base",
+      "latitude": 6.86,
+      "longitude": 80.584
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "PQD",
+      "icao": "",
+      "name": "Batticaloa Seaplane Base",
+      "latitude": 7.92311,
+      "longitude": 81.5677
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "THW",
+      "icao": "",
+      "name": "Trincomalee Harbour Seaplane Base",
+      "latitude": 8.56,
+      "longitude": 81.22
+    },
+    {
+      "countryCode": "LK",
+      "region": "Central Province",
+      "iata": "TRR",
+      "icao": "VCCT",
+      "name": "China Bay Airport",
+      "latitude": 8.53851,
+      "longitude": 81.1819
+    },
+    {
+      "countryCode": "LK",
+      "region": "Eastern Province",
+      "iata": "AFK",
+      "icao": "",
+      "name": "Kondavattavan Tank Seaplane Base",
+      "latitude": 7.284,
+      "longitude": 81.644
+    },
+    {
+      "countryCode": "LK",
+      "region": "North Central Province",
+      "iata": "ACJ",
+      "icao": "VCCA",
+      "name": "Anuradhapura Airport",
+      "latitude": 8.30149,
+      "longitude": 80.4279
+    },
+    {
+      "countryCode": "LK",
+      "region": "North Central Province",
+      "iata": "HIM",
+      "icao": "VCCH",
+      "name": "Hingurakgoda Airport (Minneriya Airport)",
+      "latitude": 8.04981,
+      "longitude": 80.9814
+    },
+    {
+      "countryCode": "LK",
+      "region": "Northern Province",
+      "iata": "DBK",
+      "icao": "",
+      "name": "Dutch Bay Seaplane Base",
+      "latitude": 8.273,
+      "longitude": 79.756
+    },
+    {
+      "countryCode": "LK",
+      "region": "Northern Province",
+      "iata": "IRU",
+      "icao": "",
+      "name": "Iranamadu Waterdrome",
+      "latitude": 9.29975,
+      "longitude": 80.4486
+    },
+    {
+      "countryCode": "LK",
+      "region": "Northern Province",
+      "iata": "JAF",
+      "icao": "VCCJ",
+      "name": "Jaffna Airport",
+      "latitude": 9.79233,
+      "longitude": 80.0701
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "BJT",
+      "icao": "",
+      "name": "Bentota River Airport",
+      "latitude": 6.431,
+      "longitude": 79.996
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "DIW",
+      "icao": "",
+      "name": "Mawella Lagoon Seaplane Base",
+      "latitude": 5.99019,
+      "longitude": 80.7331
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "HBT",
+      "icao": "",
+      "name": "Hambantota Sea Plane Base",
+      "latitude": 6.12404,
+      "longitude": 81.103
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "HRI",
+      "icao": "VCRI",
+      "name": "Mattala Rajapaksa International Airport",
+      "latitude": 6.28447,
+      "longitude": 81.1241
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "KCT",
+      "icao": "VCCK",
+      "name": "Koggala Airport",
+      "latitude": 5.99368,
+      "longitude": 80.3203
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "TTW",
+      "icao": "",
+      "name": "Tissa Tank Waterdrome",
+      "latitude": 6.2876,
+      "longitude": 81.2906
+    },
+    {
+      "countryCode": "LK",
+      "region": "Southern Province",
+      "iata": "WRZ",
+      "icao": "VCCW",
+      "name": "Weerawila Airport",
+      "latitude": 6.25449,
+      "longitude": 81.2352
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "BYV",
+      "icao": "",
+      "name": "Beira Lake Seaplane Base",
+      "latitude": 6.92944,
+      "longitude": 79.8542
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "CMB",
+      "icao": "VCBI",
+      "name": "Bandaranaike International Airport",
+      "latitude": 7.18076,
+      "longitude": 79.8841
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "DGM",
+      "icao": "",
+      "name": "Dandugama Seaplane Base",
+      "latitude": 7.1079,
+      "longitude": 79.8721
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "DWO",
+      "icao": "",
+      "name": "Diyawanna Oya Seaplane Base",
+      "latitude": 6.90659,
+      "longitude": 79.909
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "KEZ",
+      "icao": "",
+      "name": "Kelani River-Peliyagoda Waterdrome",
+      "latitude": 6.95,
+      "longitude": 79.93
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "KTY",
+      "icao": "VCCN",
+      "name": "Katukurunda Airport",
+      "latitude": 6.55212,
+      "longitude": 79.9775
+    },
+    {
+      "countryCode": "LK",
+      "region": "Western Province",
+      "iata": "RML",
+      "icao": "VCCC",
+      "name": "Ratmalana Airport",
+      "latitude": 6.82199,
+      "longitude": 79.8862
+    }
+  ]
 }

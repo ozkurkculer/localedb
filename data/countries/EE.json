@@ -231,5 +231,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "EE",
+      "region": "Harjumaa",
+      "iata": "TLL",
+      "icao": "EETN",
+      "name": "Tallinn Airport (Lennart Meri Tallinn Airport)",
+      "latitude": 59.4133,
+      "longitude": 24.8328
+    },
+    {
+      "countryCode": "EE",
+      "region": "Hiiumaa",
+      "iata": "KDL",
+      "icao": "EEKA",
+      "name": "Kardla Airport",
+      "latitude": 58.9908,
+      "longitude": 22.8307
+    },
+    {
+      "countryCode": "EE",
+      "region": "Parnumaa",
+      "iata": "EPU",
+      "icao": "EEPU",
+      "name": "Parnu Airport",
+      "latitude": 58.419,
+      "longitude": 24.4728
+    },
+    {
+      "countryCode": "EE",
+      "region": "Saaremaa",
+      "iata": "URE",
+      "icao": "EEKE",
+      "name": "Kuressaare Airport",
+      "latitude": 58.2299,
+      "longitude": 22.5095
+    },
+    {
+      "countryCode": "EE",
+      "region": "Tartumaa",
+      "iata": "TAY",
+      "icao": "EETU",
+      "name": "Tartu Airport",
+      "latitude": 58.3075,
+      "longitude": 26.6904
+    }
+  ]
 }

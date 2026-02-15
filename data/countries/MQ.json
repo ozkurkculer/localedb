@@ -228,5 +228,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MQ",
+      "region": "Martinique",
+      "iata": "FDF",
+      "icao": "TFFF",
+      "name": "Martinique Aime Cesaire International Airport",
+      "latitude": 14.591,
+      "longitude": -61.0032
+    }
+  ]
 }

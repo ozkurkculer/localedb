@@ -238,5 +238,61 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TO",
+      "region": "Ha'apai",
+      "iata": "HPA",
+      "icao": "NFTL",
+      "name": "Lifuka Island Airport (Salote Pilolevu Airport)",
+      "latitude": -19.777,
+      "longitude": -174.341
+    },
+    {
+      "countryCode": "TO",
+      "region": "Niuas",
+      "iata": "NFO",
+      "icao": "NFTO",
+      "name": "Niuafo'ou Airport",
+      "latitude": -15.5708,
+      "longitude": -175.633
+    },
+    {
+      "countryCode": "TO",
+      "region": "Niuas",
+      "iata": "NTT",
+      "icao": "NFTP",
+      "name": "Niuatoputapu Airport",
+      "latitude": -15.9773,
+      "longitude": -173.791
+    },
+    {
+      "countryCode": "TO",
+      "region": "Tongatapu",
+      "iata": "EUA",
+      "icao": "NFTE",
+      "name": "Eua Airport (Kaufana Airport)",
+      "latitude": -21.3783,
+      "longitude": -174.958
+    },
+    {
+      "countryCode": "TO",
+      "region": "Tongatapu",
+      "iata": "TBU",
+      "icao": "NFTF",
+      "name": "Fua'amotu International Airport",
+      "latitude": -21.2412,
+      "longitude": -175.15
+    },
+    {
+      "countryCode": "TO",
+      "region": "Vava'u",
+      "iata": "VAV",
+      "icao": "NFTV",
+      "name": "Vava'u International Airport",
+      "latitude": -18.5853,
+      "longitude": -173.962
+    }
+  ]
 }

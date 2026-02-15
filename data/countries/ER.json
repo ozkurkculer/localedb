@@ -312,5 +312,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ER",
+      "region": "Al Awsat",
+      "iata": "ASM",
+      "icao": "HHAS",
+      "name": "Asmara International Airport",
+      "latitude": 15.2919,
+      "longitude": 38.9107
+    },
+    {
+      "countryCode": "ER",
+      "region": "Janubi al Bahri al Ahmar",
+      "iata": "ASA",
+      "icao": "HHSB",
+      "name": "Assab International Airport",
+      "latitude": 13.0718,
+      "longitude": 42.645
+    },
+    {
+      "countryCode": "ER",
+      "region": "Qash-Barkah",
+      "iata": "TES",
+      "icao": "HHTS",
+      "name": "Teseney Airport",
+      "latitude": 15.1043,
+      "longitude": 36.6817
+    },
+    {
+      "countryCode": "ER",
+      "region": "Shimali al Bahri al Ahmar",
+      "iata": "MSW",
+      "icao": "HHMS",
+      "name": "Massawa International Airport",
+      "latitude": 15.67,
+      "longitude": 39.3701
+    }
+  ]
 }

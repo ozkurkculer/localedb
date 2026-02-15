@@ -231,5 +231,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MD",
+      "region": "Balti",
+      "iata": "BZY",
+      "icao": "LUBL",
+      "name": "Balti International Airport",
+      "latitude": 47.8431,
+      "longitude": 27.7772
+    },
+    {
+      "countryCode": "MD",
+      "region": "Chisinau",
+      "iata": "RMO",
+      "icao": "LUKK",
+      "name": "Chisinau International Airport",
+      "latitude": 46.9277,
+      "longitude": 28.931
+    }
+  ]
 }

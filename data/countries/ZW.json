@@ -253,5 +253,124 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "ZW",
+      "region": "Bulawayo",
+      "iata": "BUQ",
+      "icao": "FVBU",
+      "name": "Joshua Mqabuko Nkomo International Airport",
+      "latitude": -20.0174,
+      "longitude": 28.6179
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Harare",
+      "iata": "HRE",
+      "icao": "FVRG",
+      "name": "Robert Gabriel Mugabe International Airport",
+      "latitude": -17.9318,
+      "longitude": 31.0928
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Manicaland",
+      "iata": "CHJ",
+      "icao": "FVCH",
+      "name": "Chipinge Airport",
+      "latitude": -20.2067,
+      "longitude": 32.6283
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Manicaland",
+      "iata": "UTA",
+      "icao": "FVMU",
+      "name": "Mutare Airport",
+      "latitude": -18.9975,
+      "longitude": 32.6272
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Mashonaland West",
+      "iata": "BZH",
+      "icao": "",
+      "name": "Bumi Hills Airstrip",
+      "latitude": -16.817,
+      "longitude": 28.35
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Mashonaland West",
+      "iata": "KAB",
+      "icao": "FVKB",
+      "name": "Kariba Airport",
+      "latitude": -16.5198,
+      "longitude": 28.885
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Masvingo",
+      "iata": "BFO",
+      "icao": "FVCZ",
+      "name": "Buffalo Range Airport",
+      "latitude": -21.0081,
+      "longitude": 31.5786
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Masvingo",
+      "iata": "MJW",
+      "icao": "FVMH",
+      "name": "Mahenye Airport",
+      "latitude": -21.231,
+      "longitude": 32.3336
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Masvingo",
+      "iata": "MVZ",
+      "icao": "FVMV",
+      "name": "Masvingo Airport",
+      "latitude": -20.0553,
+      "longitude": 30.8591
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Matabeleland North",
+      "iata": "HWN",
+      "icao": "FVWN",
+      "name": "Hwange National Park Airport",
+      "latitude": -18.6299,
+      "longitude": 27.021
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Matabeleland North",
+      "iata": "VFA",
+      "icao": "FVFA",
+      "name": "Victoria Falls Airport",
+      "latitude": -18.0959,
+      "longitude": 25.839
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Matabeleland North",
+      "iata": "WKI",
+      "icao": "FVWT",
+      "name": "Hwange Town Airport",
+      "latitude": -18.363,
+      "longitude": 26.5198
+    },
+    {
+      "countryCode": "ZW",
+      "region": "Midlands",
+      "iata": "GWE",
+      "icao": "FVTL",
+      "name": "Thornhill Air Base",
+      "latitude": -19.4364,
+      "longitude": 29.8619
+    }
+  ]
 }

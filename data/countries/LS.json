@@ -240,5 +240,160 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "LS",
+      "region": "Leribe",
+      "iata": "LRB",
+      "icao": "FXLR",
+      "name": "Leribe Airport",
+      "latitude": -28.8556,
+      "longitude": 28.0528
+    },
+    {
+      "countryCode": "LS",
+      "region": "Leribe",
+      "iata": "PEL",
+      "icao": "FXPG",
+      "name": "Pelaneng Airport",
+      "latitude": -29.1206,
+      "longitude": 28.5053
+    },
+    {
+      "countryCode": "LS",
+      "region": "Leribe",
+      "iata": "SHZ",
+      "icao": "FXSS",
+      "name": "Seshutes Airport",
+      "latitude": -29.2676,
+      "longitude": 28.5523
+    },
+    {
+      "countryCode": "LS",
+      "region": "Mafeteng",
+      "iata": "MFC",
+      "icao": "FXMF",
+      "name": "Mafeteng Airport",
+      "latitude": -29.8011,
+      "longitude": 27.2436
+    },
+    {
+      "countryCode": "LS",
+      "region": "Maseru",
+      "iata": "MSU",
+      "icao": "FXMM",
+      "name": "Moshoeshoe I International Airport",
+      "latitude": -29.4623,
+      "longitude": 27.5525
+    },
+    {
+      "countryCode": "LS",
+      "region": "Maseru",
+      "iata": "SOK",
+      "icao": "FXSM",
+      "name": "Semonkong Airport",
+      "latitude": -29.8386,
+      "longitude": 28.06
+    },
+    {
+      "countryCode": "LS",
+      "region": "Mohale's Hoek",
+      "iata": "NKU",
+      "icao": "FXNK",
+      "name": "Nkaus Airport",
+      "latitude": -30.0217,
+      "longitude": 28.1969
+    },
+    {
+      "countryCode": "LS",
+      "region": "Mokhotlong",
+      "iata": "MKH",
+      "icao": "FXMK",
+      "name": "Mokhotlong Airport",
+      "latitude": -29.2818,
+      "longitude": 29.0728
+    },
+    {
+      "countryCode": "LS",
+      "region": "Mokhotlong",
+      "iata": "TKO",
+      "icao": "FXTK",
+      "name": "Tlokoeng Airport",
+      "latitude": -29.233,
+      "longitude": 28.883
+    },
+    {
+      "countryCode": "LS",
+      "region": "Qacha's Nek",
+      "iata": "LEF",
+      "icao": "FXLK",
+      "name": "Lebakeng Airport",
+      "latitude": -29.8908,
+      "longitude": 28.6556
+    },
+    {
+      "countryCode": "LS",
+      "region": "Qacha's Nek",
+      "iata": "SKQ",
+      "icao": "FXSK",
+      "name": "Sekake Airport",
+      "latitude": -30.0389,
+      "longitude": 28.3703
+    },
+    {
+      "countryCode": "LS",
+      "region": "Qacha's Nek",
+      "iata": "UNE",
+      "icao": "FXQN",
+      "name": "Qacha's Nek Airport",
+      "latitude": -30.1117,
+      "longitude": 28.6719
+    },
+    {
+      "countryCode": "LS",
+      "region": "Quthing",
+      "iata": "UTG",
+      "icao": "FXQG",
+      "name": "Quthing Airport",
+      "latitude": -30.4075,
+      "longitude": 27.6933
+    },
+    {
+      "countryCode": "LS",
+      "region": "Thaba-Tseka",
+      "iata": "LES",
+      "icao": "FXLS",
+      "name": "Lesobeng Airport",
+      "latitude": -29.7829,
+      "longitude": 28.3167
+    },
+    {
+      "countryCode": "LS",
+      "region": "Thaba-Tseka",
+      "iata": "MSG",
+      "icao": "FXMA",
+      "name": "Matsaile Airport",
+      "latitude": -29.8408,
+      "longitude": 28.7764
+    },
+    {
+      "countryCode": "LS",
+      "region": "Thaba-Tseka",
+      "iata": "SHK",
+      "icao": "FXSH",
+      "name": "Sehonghong Airport",
+      "latitude": -29.7309,
+      "longitude": 28.7689
+    },
+    {
+      "countryCode": "LS",
+      "region": "Thaba-Tseka",
+      "iata": "THB",
+      "icao": "FXTA",
+      "name": "Thaba Tseka Airport",
+      "latitude": -29.5228,
+      "longitude": 28.6158
+    }
+  ]
 }

@@ -231,5 +231,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GW",
+      "region": "Bissau",
+      "iata": "OXB",
+      "icao": "GGOV",
+      "name": "Osvaldo Vieira International Airport",
+      "latitude": 11.8948,
+      "longitude": -15.6537
+    },
+    {
+      "countryCode": "GW",
+      "region": "Bolama",
+      "iata": "BQE",
+      "icao": "GGBU",
+      "name": "Bubaque Airport",
+      "latitude": 11.2974,
+      "longitude": -15.8381
+    }
+  ]
 }

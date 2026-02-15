@@ -243,5 +243,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "TJ",
+      "region": "Dushanbe",
+      "iata": "DYU",
+      "icao": "UTDD",
+      "name": "Dushanbe International Airport",
+      "latitude": 38.5433,
+      "longitude": 68.825
+    },
+    {
+      "countryCode": "TJ",
+      "region": "Khatlon",
+      "iata": "KQT",
+      "icao": "UTDT",
+      "name": "Bokhtar International Airport",
+      "latitude": 37.8664,
+      "longitude": 68.8647
+    },
+    {
+      "countryCode": "TJ",
+      "region": "Khatlon",
+      "iata": "TJU",
+      "icao": "UTDK",
+      "name": "Kulob Airport",
+      "latitude": 37.9881,
+      "longitude": 69.805
+    },
+    {
+      "countryCode": "TJ",
+      "region": "Sughd",
+      "iata": "LBD",
+      "icao": "UTDL",
+      "name": "Khujand Airport",
+      "latitude": 40.2154,
+      "longitude": 69.6947
+    }
+  ]
 }

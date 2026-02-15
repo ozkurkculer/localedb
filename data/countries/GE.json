@@ -233,5 +233,43 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "GE",
+      "region": "Abkhazia",
+      "iata": "SUI",
+      "icao": "UGSS",
+      "name": "Sukhumi Babushara Airport (Dranda Airport)",
+      "latitude": 42.8582,
+      "longitude": 41.1281
+    },
+    {
+      "countryCode": "GE",
+      "region": "Ajaria",
+      "iata": "BUS",
+      "icao": "UGSB",
+      "name": "Batumi International Airport (Alexander Kartveli Batumi Int'l Airport)",
+      "latitude": 41.6103,
+      "longitude": 41.5997
+    },
+    {
+      "countryCode": "GE",
+      "region": "Imereti",
+      "iata": "KUT",
+      "icao": "UGKO",
+      "name": "David the Builder Kutaisi International Airport",
+      "latitude": 42.1767,
+      "longitude": 42.4826
+    },
+    {
+      "countryCode": "GE",
+      "region": "Tbilisi",
+      "iata": "TBS",
+      "icao": "UGTB",
+      "name": "Tbilisi International Airport",
+      "latitude": 41.6692,
+      "longitude": 44.9547
+    }
+  ]
 }

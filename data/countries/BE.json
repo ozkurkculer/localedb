@@ -253,5 +253,70 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "BE",
+      "region": "Antwerpen",
+      "iata": "ANR",
+      "icao": "EBAW",
+      "name": "Antwerp International Airport",
+      "latitude": 51.1894,
+      "longitude": 4.46028
+    },
+    {
+      "countryCode": "BE",
+      "region": "Antwerpen",
+      "iata": "OBL",
+      "icao": "EBZR",
+      "name": "Oostmalle Airfield",
+      "latitude": 51.2647,
+      "longitude": 4.75333
+    },
+    {
+      "countryCode": "BE",
+      "region": "Brussels Hoofdstedelijk Gewest",
+      "iata": "BRU",
+      "icao": "EBBR",
+      "name": "Brussels Airport (Zaventem Airport)",
+      "latitude": 50.9014,
+      "longitude": 4.48444
+    },
+    {
+      "countryCode": "BE",
+      "region": "Hainaut",
+      "iata": "CRL",
+      "icao": "EBCI",
+      "name": "Brussels South Charleroi Airport",
+      "latitude": 50.4592,
+      "longitude": 4.45382
+    },
+    {
+      "countryCode": "BE",
+      "region": "Liege",
+      "iata": "LGG",
+      "icao": "EBLG",
+      "name": "Liege Airport",
+      "latitude": 50.6374,
+      "longitude": 5.44322
+    },
+    {
+      "countryCode": "BE",
+      "region": "West-Vlaanderen",
+      "iata": "KJK",
+      "icao": "EBKT",
+      "name": "Kortrijk-Wevelgem International Airport",
+      "latitude": 50.8172,
+      "longitude": 3.20472
+    },
+    {
+      "countryCode": "BE",
+      "region": "West-Vlaanderen",
+      "iata": "OST",
+      "icao": "EBOS",
+      "name": "Ostend-Bruges International Airport",
+      "latitude": 51.1989,
+      "longitude": 2.86222
+    }
+  ]
 }

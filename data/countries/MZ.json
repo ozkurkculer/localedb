@@ -235,5 +235,376 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "IBO",
+      "icao": "FQIB",
+      "name": "Ibo Island Airport",
+      "latitude": -12.3502,
+      "longitude": 40.6023
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "LFB",
+      "icao": "FQLU",
+      "name": "Lumbo Airport",
+      "latitude": -15.0331,
+      "longitude": 40.6717
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "LMZ",
+      "icao": "",
+      "name": "Palma Airport",
+      "latitude": -10.7506,
+      "longitude": 40.4702
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "MTU",
+      "icao": "",
+      "name": "Montepuez Airport",
+      "latitude": -13.1219,
+      "longitude": 39.0528
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "MUD",
+      "icao": "FQMD",
+      "name": "Mueda Airport",
+      "latitude": -11.6729,
+      "longitude": 39.5631
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "MZB",
+      "icao": "FQMP",
+      "name": "Mocimboa da Praia Air",
+      "latitude": -11.3618,
+      "longitude": 40.3549
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "NND",
+      "icao": "",
+      "name": "Nangade Airport",
+      "latitude": -11.073,
+      "longitude": 39.68
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Cabo Delgado",
+      "iata": "POL",
+      "icao": "FQPB",
+      "name": "Pemba Airport",
+      "latitude": -12.9918,
+      "longitude": 40.524
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Gaza",
+      "iata": "TGS",
+      "icao": "",
+      "name": "Chokwe Airport",
+      "latitude": -24.5206,
+      "longitude": 32.9653
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Gaza",
+      "iata": "VJB",
+      "icao": "FQXA",
+      "name": "Xai-Xai Airport",
+      "latitude": -25.0378,
+      "longitude": 33.6274
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "BCW",
+      "icao": "",
+      "name": "Benguerra Island Airport",
+      "latitude": -21.8533,
+      "longitude": 35.4383
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "BZB",
+      "icao": "",
+      "name": "Bazaruto Island Airport",
+      "latitude": -21.5411,
+      "longitude": 35.4729
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "DGK",
+      "icao": "",
+      "name": "Dugong Beach Lodge Airstrip",
+      "latitude": -22.1342,
+      "longitude": 35.4436
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "IBL",
+      "icao": "",
+      "name": "Indigo Bay Lodge Airport",
+      "latitude": -21.708,
+      "longitude": 35.4528
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "INH",
+      "icao": "FQIN",
+      "name": "Inhambane Airport",
+      "latitude": -23.8764,
+      "longitude": 35.4085
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "MFW",
+      "icao": "",
+      "name": "Magaruque Airport",
+      "latitude": -21.9672,
+      "longitude": 35.4247
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Inhambane",
+      "iata": "VNX",
+      "icao": "FQVL",
+      "name": "Vilankulo Airport",
+      "latitude": -22.0184,
+      "longitude": 35.3133
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Manica",
+      "iata": "VPY",
+      "icao": "FQCH",
+      "name": "Chimoio Airport",
+      "latitude": -19.1513,
+      "longitude": 33.429
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Maputo",
+      "iata": "IHC",
+      "icao": "FQIA",
+      "name": "Inhaca Airport",
+      "latitude": -25.9971,
+      "longitude": 32.9294
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Maputo",
+      "iata": "MPM",
+      "icao": "FQMA",
+      "name": "Maputo International Airport",
+      "latitude": -25.9208,
+      "longitude": 32.5726
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Maputo",
+      "iata": "PDD",
+      "icao": "FQPO",
+      "name": "Ponta do Ouro Airport",
+      "latitude": -26.8286,
+      "longitude": 32.8377
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Nampula",
+      "iata": "AME",
+      "icao": "",
+      "name": "Alto Molocue Airport",
+      "latitude": -15.6103,
+      "longitude": 37.6814
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Nampula",
+      "iata": "ANO",
+      "icao": "FQAG",
+      "name": "Angoche Airport",
+      "latitude": -16.1819,
+      "longitude": 39.9452
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Nampula",
+      "iata": "APL",
+      "icao": "FQNP",
+      "name": "Nampula Airport",
+      "latitude": -15.1056,
+      "longitude": 39.2818
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Nampula",
+      "iata": "MMW",
+      "icao": "",
+      "name": "Moma Airport",
+      "latitude": -16.75,
+      "longitude": 39.2167
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Nampula",
+      "iata": "MNC",
+      "icao": "FQNC",
+      "name": "Nacala Airport",
+      "latitude": -14.4882,
+      "longitude": 40.7122
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Niassa",
+      "iata": "FXO",
+      "icao": "FQCB",
+      "name": "Cuamba Airport",
+      "latitude": -14.815,
+      "longitude": 36.53
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Niassa",
+      "iata": "VXC",
+      "icao": "FQLC",
+      "name": "Lichinga Airport",
+      "latitude": -13.274,
+      "longitude": 35.2663
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Sofala",
+      "iata": "BEW",
+      "icao": "FQBR",
+      "name": "Beira Airport",
+      "latitude": -19.7964,
+      "longitude": 34.9076
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Sofala",
+      "iata": "CMZ",
+      "icao": "",
+      "name": "Caia Airport",
+      "latitude": -17.8331,
+      "longitude": 35.3341
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Sofala",
+      "iata": "IMG",
+      "icao": "",
+      "name": "Inhaminga Airport",
+      "latitude": -18.41,
+      "longitude": 35.0045
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Sofala",
+      "iata": "NTC",
+      "icao": "",
+      "name": "Santa Carolina Airport",
+      "latitude": -21.615,
+      "longitude": 35.338
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Sofala",
+      "iata": "RRM",
+      "icao": "",
+      "name": "Marromeu Airport",
+      "latitude": -18.2929,
+      "longitude": 35.9345
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Tete",
+      "iata": "TET",
+      "icao": "FQTT",
+      "name": "Chingozi Airport",
+      "latitude": -16.1048,
+      "longitude": 33.6402
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "BJN",
+      "icao": "",
+      "name": "Bajone Airport",
+      "latitude": -17.1833,
+      "longitude": 37.95
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "INE",
+      "icao": "",
+      "name": "Chinde Airport",
+      "latitude": -18.59,
+      "longitude": 36.4489
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "LBM",
+      "icao": "",
+      "name": "Luabo Airport",
+      "latitude": -18.4139,
+      "longitude": 36.1068
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "MJS",
+      "icao": "",
+      "name": "Maganja da Costa Airport",
+      "latitude": -17.3087,
+      "longitude": 37.5
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "PEB",
+      "icao": "",
+      "name": "Pebane Airport",
+      "latitude": -17.267,
+      "longitude": 38.167
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "UEL",
+      "icao": "FQQL",
+      "name": "Quelimane Airport",
+      "latitude": -17.8555,
+      "longitude": 36.8691
+    },
+    {
+      "countryCode": "MZ",
+      "region": "Zambezia",
+      "iata": "VJQ",
+      "icao": "",
+      "name": "Gurue Airport",
+      "latitude": -15.5062,
+      "longitude": 36.9904
+    }
+  ]
 }

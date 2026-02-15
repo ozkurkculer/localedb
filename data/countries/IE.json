@@ -240,5 +240,160 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "IE",
+      "region": "Clare",
+      "iata": "SNN",
+      "icao": "EINN",
+      "name": "Shannon Airport",
+      "latitude": 52.702,
+      "longitude": -8.92482
+    },
+    {
+      "countryCode": "IE",
+      "region": "Cork",
+      "iata": "BYT",
+      "icao": "EIBN",
+      "name": "Bantry Aerodrome",
+      "latitude": 51.6686,
+      "longitude": -9.48417
+    },
+    {
+      "countryCode": "IE",
+      "region": "Cork",
+      "iata": "ORK",
+      "icao": "EICK",
+      "name": "Cork Airport",
+      "latitude": 51.8413,
+      "longitude": -8.49111
+    },
+    {
+      "countryCode": "IE",
+      "region": "Donegal",
+      "iata": "CFN",
+      "icao": "EIDL",
+      "name": "Donegal Airport",
+      "latitude": 55.0442,
+      "longitude": -8.341
+    },
+    {
+      "countryCode": "IE",
+      "region": "Donegal",
+      "iata": "LTR",
+      "icao": "EILT",
+      "name": "Letterkenny Airfield",
+      "latitude": 54.9513,
+      "longitude": -7.67283
+    },
+    {
+      "countryCode": "IE",
+      "region": "Dublin",
+      "iata": "DUB",
+      "icao": "EIDW",
+      "name": "Dublin Airport",
+      "latitude": 53.4213,
+      "longitude": -6.27007
+    },
+    {
+      "countryCode": "IE",
+      "region": "Galway",
+      "iata": "GWY",
+      "icao": "EICM",
+      "name": "Galway Airport",
+      "latitude": 53.3002,
+      "longitude": -8.94159
+    },
+    {
+      "countryCode": "IE",
+      "region": "Galway",
+      "iata": "IIA",
+      "icao": "EIMN",
+      "name": "Inishmaan Aerodrome",
+      "latitude": 53.093,
+      "longitude": -9.56806
+    },
+    {
+      "countryCode": "IE",
+      "region": "Galway",
+      "iata": "INQ",
+      "icao": "EIIR",
+      "name": "Inisheer Aerodrome",
+      "latitude": 53.0647,
+      "longitude": -9.5109
+    },
+    {
+      "countryCode": "IE",
+      "region": "Galway",
+      "iata": "IOR",
+      "icao": "EIIM",
+      "name": "Inishmore Aerodrome (Kilronan Airport)",
+      "latitude": 53.1067,
+      "longitude": -9.65361
+    },
+    {
+      "countryCode": "IE",
+      "region": "Galway",
+      "iata": "NNR",
+      "icao": "EICA",
+      "name": "Connemara Airport",
+      "latitude": 53.2303,
+      "longitude": -9.46778
+    },
+    {
+      "countryCode": "IE",
+      "region": "Kerry",
+      "iata": "KIR",
+      "icao": "EIKY",
+      "name": "Kerry Airport (Farranfore Airport)",
+      "latitude": 52.1809,
+      "longitude": -9.52378
+    },
+    {
+      "countryCode": "IE",
+      "region": "Kilkenny",
+      "iata": "KKY",
+      "icao": "EIKK",
+      "name": "Kilkenny Airport",
+      "latitude": 52.6508,
+      "longitude": -7.29611
+    },
+    {
+      "countryCode": "IE",
+      "region": "Mayo",
+      "iata": "BLY",
+      "icao": "EIBT",
+      "name": "Belmullet Aerodrome",
+      "latitude": 54.2228,
+      "longitude": -10.0308
+    },
+    {
+      "countryCode": "IE",
+      "region": "Mayo",
+      "iata": "NOC",
+      "icao": "EIKN",
+      "name": "Ireland West Airport Knock",
+      "latitude": 53.9103,
+      "longitude": -8.81849
+    },
+    {
+      "countryCode": "IE",
+      "region": "Sligo",
+      "iata": "SXL",
+      "icao": "EISG",
+      "name": "Sligo Airport",
+      "latitude": 54.2802,
+      "longitude": -8.59921
+    },
+    {
+      "countryCode": "IE",
+      "region": "Waterford",
+      "iata": "WAT",
+      "icao": "EIWF",
+      "name": "Waterford Airport",
+      "latitude": 52.1872,
+      "longitude": -7.08696
+    }
+  ]
 }

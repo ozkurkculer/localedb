@@ -231,5 +231,34 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "QA",
+      "region": "Ad Dawhah",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "name": "Doha International Airport",
+      "latitude": 25.2611,
+      "longitude": 51.5651
+    },
+    {
+      "countryCode": "QA",
+      "region": "Ad Dawhah",
+      "iata": "DOH",
+      "icao": "OTHH",
+      "name": "Hamad International Airport",
+      "latitude": 25.2731,
+      "longitude": 51.6081
+    },
+    {
+      "countryCode": "QA",
+      "region": "Ar Rayyan",
+      "iata": "XJD",
+      "icao": "OTBH",
+      "name": "Al Udeid Air Base",
+      "latitude": 25.1173,
+      "longitude": 51.315
+    }
+  ]
 }

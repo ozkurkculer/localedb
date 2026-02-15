@@ -230,5 +230,97 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DO",
+      "region": "Barahona",
+      "iata": "BRX",
+      "icao": "MDBH",
+      "name": "Maria Montez International Airport",
+      "latitude": 18.2515,
+      "longitude": -71.1204
+    },
+    {
+      "countryCode": "DO",
+      "region": "Distrito Nacional (Santo Domingo)",
+      "iata": "JBQ",
+      "icao": "MDJB",
+      "name": "La Isabela International Airport (Dr. Joaquin Balaguer Int'l)",
+      "latitude": 18.5725,
+      "longitude": -69.9856
+    },
+    {
+      "countryCode": "DO",
+      "region": "La Altagracia",
+      "iata": "PUJ",
+      "icao": "MDPC",
+      "name": "Punta Cana International Airport",
+      "latitude": 18.5674,
+      "longitude": -68.3634
+    },
+    {
+      "countryCode": "DO",
+      "region": "La Vega",
+      "iata": "COZ",
+      "icao": "MDCZ",
+      "name": "Constanza Airport",
+      "latitude": 18.9075,
+      "longitude": -70.7219
+    },
+    {
+      "countryCode": "DO",
+      "region": "Monte Plata",
+      "iata": "SDQ",
+      "icao": "MDSD",
+      "name": "Las Americas International Airport",
+      "latitude": 18.4297,
+      "longitude": -69.6689
+    },
+    {
+      "countryCode": "DO",
+      "region": "Pedernales",
+      "iata": "CBJ",
+      "icao": "MDCR",
+      "name": "Cabo Rojo Airport",
+      "latitude": 17.929,
+      "longitude": -71.6448
+    },
+    {
+      "countryCode": "DO",
+      "region": "Puerto Plata",
+      "iata": "POP",
+      "icao": "MDPP",
+      "name": "Gregorio Luperon International Airport",
+      "latitude": 19.7579,
+      "longitude": -70.57
+    },
+    {
+      "countryCode": "DO",
+      "region": "Samana",
+      "iata": "AZS",
+      "icao": "MDCY",
+      "name": "Samana El Catey International Airport",
+      "latitude": 19.267,
+      "longitude": -69.742
+    },
+    {
+      "countryCode": "DO",
+      "region": "Samana",
+      "iata": "EPS",
+      "icao": "MDAB",
+      "name": "Arroyo Barril Airport",
+      "latitude": 19.3214,
+      "longitude": -69.4959
+    },
+    {
+      "countryCode": "DO",
+      "region": "Santiago",
+      "iata": "STI",
+      "icao": "MDST",
+      "name": "Cibao International Airport",
+      "latitude": 19.4061,
+      "longitude": -70.6047
+    }
+  ]
 }

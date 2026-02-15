@@ -232,5 +232,286 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "HN",
+      "region": "Atlantida",
+      "iata": "LCE",
+      "icao": "MHLC",
+      "name": "Goloson International Airport",
+      "latitude": 15.7425,
+      "longitude": -86.853
+    },
+    {
+      "countryCode": "HN",
+      "region": "Atlantida",
+      "iata": "TEA",
+      "icao": "MHTE",
+      "name": "Tela Airport",
+      "latitude": 15.7759,
+      "longitude": -87.4758
+    },
+    {
+      "countryCode": "HN",
+      "region": "Colon",
+      "iata": "IRN",
+      "icao": "MHIR",
+      "name": "Iriona Airport",
+      "latitude": 15.9392,
+      "longitude": -85.1372
+    },
+    {
+      "countryCode": "HN",
+      "region": "Colon",
+      "iata": "LMH",
+      "icao": "",
+      "name": "Limon Airport",
+      "latitude": 14.3819,
+      "longitude": -87.6211
+    },
+    {
+      "countryCode": "HN",
+      "region": "Colon",
+      "iata": "TCF",
+      "icao": "",
+      "name": "Tocoa Airport",
+      "latitude": 15.65,
+      "longitude": -85.983
+    },
+    {
+      "countryCode": "HN",
+      "region": "Colon",
+      "iata": "TJI",
+      "icao": "MHTJ",
+      "name": "Trujillo Airport (Capiro Airport)",
+      "latitude": 15.9268,
+      "longitude": -85.9382
+    },
+    {
+      "countryCode": "HN",
+      "region": "Comayagua",
+      "iata": "XPL",
+      "icao": "MHSC",
+      "name": "Soto Cano Air Base",
+      "latitude": 14.3824,
+      "longitude": -87.6212
+    },
+    {
+      "countryCode": "HN",
+      "region": "Copan",
+      "iata": "RUY",
+      "icao": "MHRU",
+      "name": "Copan Ruinas Airport",
+      "latitude": 14.9149,
+      "longitude": -89.0078
+    },
+    {
+      "countryCode": "HN",
+      "region": "Copan",
+      "iata": "SDH",
+      "icao": "MHSR",
+      "name": "Santa Rosa de Copan Airport",
+      "latitude": 14.7779,
+      "longitude": -88.775
+    },
+    {
+      "countryCode": "HN",
+      "region": "Cortes",
+      "iata": "LLH",
+      "icao": "",
+      "name": "Las Limas Airport",
+      "latitude": 15.4422,
+      "longitude": -87.8988
+    },
+    {
+      "countryCode": "HN",
+      "region": "Cortes",
+      "iata": "SAP",
+      "icao": "MHLM",
+      "name": "Ramon Villeda Morales International Airport",
+      "latitude": 15.4526,
+      "longitude": -87.9236
+    },
+    {
+      "countryCode": "HN",
+      "region": "Francisco Morazan",
+      "iata": "TGU",
+      "icao": "MHTG",
+      "name": "Toncontin International Airport",
+      "latitude": 14.0609,
+      "longitude": -87.2172
+    },
+    {
+      "countryCode": "HN",
+      "region": "Gracias a Dios",
+      "iata": "AHS",
+      "icao": "MHAH",
+      "name": "Ahuas Airport",
+      "latitude": 15.4722,
+      "longitude": -84.3522
+    },
+    {
+      "countryCode": "HN",
+      "region": "Gracias a Dios",
+      "iata": "BHG",
+      "icao": "",
+      "name": "Brus Laguna Airport",
+      "latitude": 15.7631,
+      "longitude": -84.5436
+    },
+    {
+      "countryCode": "HN",
+      "region": "Gracias a Dios",
+      "iata": "CDD",
+      "icao": "",
+      "name": "Cauquira Airport",
+      "latitude": 15.3167,
+      "longitude": -83.5917
+    },
+    {
+      "countryCode": "HN",
+      "region": "Gracias a Dios",
+      "iata": "PCH",
+      "icao": "MHPC",
+      "name": "Palacios Airport",
+      "latitude": 15.955,
+      "longitude": -84.9414
+    },
+    {
+      "countryCode": "HN",
+      "region": "Gracias a Dios",
+      "iata": "PEU",
+      "icao": "MHPL",
+      "name": "Puerto Lempira Airport",
+      "latitude": 15.2622,
+      "longitude": -83.7812
+    },
+    {
+      "countryCode": "HN",
+      "region": "Intibuca",
+      "iata": "LEZ",
+      "icao": "MHLE",
+      "name": "La Esperanza Airport",
+      "latitude": 14.2911,
+      "longitude": -88.175
+    },
+    {
+      "countryCode": "HN",
+      "region": "Islas de la Bahia",
+      "iata": "GJA",
+      "icao": "MHNJ",
+      "name": "Guanaja Airport",
+      "latitude": 16.4454,
+      "longitude": -85.9066
+    },
+    {
+      "countryCode": "HN",
+      "region": "Islas de la Bahia",
+      "iata": "RTB",
+      "icao": "MHRO",
+      "name": "Juan Manuel Galvez International Airport",
+      "latitude": 16.3168,
+      "longitude": -86.523
+    },
+    {
+      "countryCode": "HN",
+      "region": "Islas de la Bahia",
+      "iata": "UII",
+      "icao": "MHUT",
+      "name": "Utila Airport",
+      "latitude": 16.1131,
+      "longitude": -86.8803
+    },
+    {
+      "countryCode": "HN",
+      "region": "La Paz",
+      "iata": "MRJ",
+      "icao": "MHMA",
+      "name": "Marcala Airport",
+      "latitude": 14.1619,
+      "longitude": -88.0344
+    },
+    {
+      "countryCode": "HN",
+      "region": "Lempira",
+      "iata": "EDQ",
+      "icao": "",
+      "name": "Erandique Airport",
+      "latitude": 14.2358,
+      "longitude": -88.4372
+    },
+    {
+      "countryCode": "HN",
+      "region": "Lempira",
+      "iata": "GAC",
+      "icao": "MHGS",
+      "name": "Gracias Airport",
+      "latitude": 14.5735,
+      "longitude": -88.5958
+    },
+    {
+      "countryCode": "HN",
+      "region": "Olancho",
+      "iata": "CAA",
+      "icao": "MHGE",
+      "name": "El Aguacate Airport",
+      "latitude": 14.917,
+      "longitude": -85.9
+    },
+    {
+      "countryCode": "HN",
+      "region": "Olancho",
+      "iata": "JUT",
+      "icao": "MHJU",
+      "name": "Juticalpa Airport",
+      "latitude": 14.6526,
+      "longitude": -86.2203
+    },
+    {
+      "countryCode": "HN",
+      "region": "Olancho",
+      "iata": "LUI",
+      "icao": "",
+      "name": "La Union Airport",
+      "latitude": 15.0332,
+      "longitude": -86.6923
+    },
+    {
+      "countryCode": "HN",
+      "region": "Yoro",
+      "iata": "CYL",
+      "icao": "MHCS",
+      "name": "Coyoles Airport",
+      "latitude": 15.4456,
+      "longitude": -86.6753
+    },
+    {
+      "countryCode": "HN",
+      "region": "Yoro",
+      "iata": "OAN",
+      "icao": "MHEA",
+      "name": "El Arrayan Airport",
+      "latitude": 15.5056,
+      "longitude": -86.5747
+    },
+    {
+      "countryCode": "HN",
+      "region": "Yoro",
+      "iata": "ORO",
+      "icao": "MHYR",
+      "name": "Yoro Airport",
+      "latitude": 15.1275,
+      "longitude": -87.135
+    },
+    {
+      "countryCode": "HN",
+      "region": "Yoro",
+      "iata": "SCD",
+      "icao": "MHUL",
+      "name": "Sulaco Airport",
+      "latitude": 14.9072,
+      "longitude": -87.2634
+    }
+  ]
 }

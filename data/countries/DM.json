@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "DM",
+      "region": "Saint Andrew",
+      "iata": "DOM",
+      "icao": "TDPD",
+      "name": "Douglas-Charles Airport",
+      "latitude": 15.547,
+      "longitude": -61.3
+    },
+    {
+      "countryCode": "DM",
+      "region": "Saint George",
+      "iata": "DCF",
+      "icao": "TDCF",
+      "name": "Canefield Airport",
+      "latitude": 15.3367,
+      "longitude": -61.3922
+    }
+  ]
 }

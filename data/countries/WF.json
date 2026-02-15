@@ -228,5 +228,25 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "WF",
+      "region": "Uvea",
+      "iata": "FUT",
+      "icao": "NLWF",
+      "name": "Pointe Vele Airport",
+      "latitude": -14.3114,
+      "longitude": -178.066
+    },
+    {
+      "countryCode": "WF",
+      "region": "Uvea",
+      "iata": "WLS",
+      "icao": "NLWW",
+      "name": "Hihifo Airport",
+      "latitude": -13.2383,
+      "longitude": -176.199
+    }
+  ]
 }

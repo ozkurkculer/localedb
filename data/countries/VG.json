@@ -228,5 +228,52 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "VG",
+      "region": "Virgin Islands, British",
+      "iata": "EIS",
+      "icao": "TUPJ",
+      "name": "Terrance B. Lettsome International Airport",
+      "latitude": 18.4448,
+      "longitude": -64.543
+    },
+    {
+      "countryCode": "VG",
+      "region": "Virgin Islands, British",
+      "iata": "NGD",
+      "icao": "TUPA",
+      "name": "Auguste George Airport",
+      "latitude": 18.7272,
+      "longitude": -64.3297
+    },
+    {
+      "countryCode": "VG",
+      "region": "Virgin Islands, British",
+      "iata": "RAD",
+      "icao": "",
+      "name": "Road Town Seaplane Base",
+      "latitude": 18.45,
+      "longitude": -64.6
+    },
+    {
+      "countryCode": "VG",
+      "region": "Virgin Islands, British",
+      "iata": "TOV",
+      "icao": "",
+      "name": "West End Seaplane Base",
+      "latitude": 18.45,
+      "longitude": -64.5833
+    },
+    {
+      "countryCode": "VG",
+      "region": "Virgin Islands, British",
+      "iata": "VIJ",
+      "icao": "TUPW",
+      "name": "Virgin Gorda Airport",
+      "latitude": 18.4464,
+      "longitude": -64.4275
+    }
+  ]
 }

@@ -238,5 +238,16 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NR",
+      "region": "Yaren",
+      "iata": "INU",
+      "icao": "ANYN",
+      "name": "Nauru International Airport",
+      "latitude": -0.547458,
+      "longitude": 166.919
+    }
+  ]
 }

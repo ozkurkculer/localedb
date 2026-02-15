@@ -233,5 +233,241 @@
     "paperSize": "A4",
     "drivingSide": "right",
     "weekNumbering": "ISO"
-  }
+  },
+  "airports": [
+    {
+      "countryCode": "NG",
+      "region": "Abuja Federal Capital Territory",
+      "iata": "ABV",
+      "icao": "DNAA",
+      "name": "Nnamdi Azikiwe International Airport",
+      "latitude": 9.00679,
+      "longitude": 7.26317
+    },
+    {
+      "countryCode": "NG",
+      "region": "Abuja Federal Capital Territory",
+      "iata": "JOS",
+      "icao": "DNJO",
+      "name": "Yakubu Gowon Airport",
+      "latitude": 9.63983,
+      "longitude": 8.86905
+    },
+    {
+      "countryCode": "NG",
+      "region": "Adamawa",
+      "iata": "YOL",
+      "icao": "DNYO",
+      "name": "Yola Airport",
+      "latitude": 9.25755,
+      "longitude": 12.4304
+    },
+    {
+      "countryCode": "NG",
+      "region": "Akwa Ibom",
+      "iata": "QUO",
+      "icao": "DNAI",
+      "name": "Akwa Ibom International Airport",
+      "latitude": 4.8725,
+      "longitude": 8.093
+    },
+    {
+      "countryCode": "NG",
+      "region": "Bauchi",
+      "iata": "BCU",
+      "icao": "",
+      "name": "Bauchi State Airport",
+      "latitude": 10.4828,
+      "longitude": 9.744
+    },
+    {
+      "countryCode": "NG",
+      "region": "Benue",
+      "iata": "MDI",
+      "icao": "DNMK",
+      "name": "Makurdi Airport",
+      "latitude": 7.70388,
+      "longitude": 8.61394
+    },
+    {
+      "countryCode": "NG",
+      "region": "Borno",
+      "iata": "MIU",
+      "icao": "DNMA",
+      "name": "Maiduguri International Airport",
+      "latitude": 11.8553,
+      "longitude": 13.0809
+    },
+    {
+      "countryCode": "NG",
+      "region": "Cross River",
+      "iata": "CBQ",
+      "icao": "DNCA",
+      "name": "Margaret Ekpo International Airport",
+      "latitude": 4.97602,
+      "longitude": 8.3472
+    },
+    {
+      "countryCode": "NG",
+      "region": "Delta",
+      "iata": "ABB",
+      "icao": "DNAS",
+      "name": "Asaba International Airport",
+      "latitude": 6.20417,
+      "longitude": 6.66528
+    },
+    {
+      "countryCode": "NG",
+      "region": "Delta",
+      "iata": "QRW",
+      "icao": "DNSU",
+      "name": "Warri Airport (Osubi Airport)",
+      "latitude": 5.59611,
+      "longitude": 5.81778
+    },
+    {
+      "countryCode": "NG",
+      "region": "Edo",
+      "iata": "BNI",
+      "icao": "DNBE",
+      "name": "Benin Airport",
+      "latitude": 6.31698,
+      "longitude": 5.5995
+    },
+    {
+      "countryCode": "NG",
+      "region": "Enugu",
+      "iata": "ENU",
+      "icao": "DNEN",
+      "name": "Akanu Ibiam International Airport",
+      "latitude": 6.47427,
+      "longitude": 7.56196
+    },
+    {
+      "countryCode": "NG",
+      "region": "Gombe",
+      "iata": "GMO",
+      "icao": "DNGO",
+      "name": "Gombe Lawanti International Airport",
+      "latitude": 10.2983,
+      "longitude": 10.8964
+    },
+    {
+      "countryCode": "NG",
+      "region": "Imo",
+      "iata": "QOW",
+      "icao": "DNIM",
+      "name": "Sam Mbakwe Airport",
+      "latitude": 5.42706,
+      "longitude": 7.20603
+    },
+    {
+      "countryCode": "NG",
+      "region": "Kaduna",
+      "iata": "KAD",
+      "icao": "DNKA",
+      "name": "Kaduna Airport",
+      "latitude": 10.696,
+      "longitude": 7.32011
+    },
+    {
+      "countryCode": "NG",
+      "region": "Kaduna",
+      "iata": "ZAR",
+      "icao": "DNZA",
+      "name": "Zaria Airport",
+      "latitude": 11.1302,
+      "longitude": 7.68581
+    },
+    {
+      "countryCode": "NG",
+      "region": "Kano",
+      "iata": "KAN",
+      "icao": "DNKN",
+      "name": "Mallam Aminu Kano International Airport",
+      "latitude": 12.0476,
+      "longitude": 8.52462
+    },
+    {
+      "countryCode": "NG",
+      "region": "Katsina",
+      "iata": "DKA",
+      "icao": "",
+      "name": "Katsina Airport",
+      "latitude": 13.0078,
+      "longitude": 7.66045
+    },
+    {
+      "countryCode": "NG",
+      "region": "Kwara",
+      "iata": "ILR",
+      "icao": "DNIL",
+      "name": "Ilorin International Airport",
+      "latitude": 8.44021,
+      "longitude": 4.49392
+    },
+    {
+      "countryCode": "NG",
+      "region": "Lagos",
+      "iata": "LOS",
+      "icao": "DNMM",
+      "name": "Murtala Muhammed International Airport",
+      "latitude": 6.57737,
+      "longitude": 3.32116
+    },
+    {
+      "countryCode": "NG",
+      "region": "Niger",
+      "iata": "MXJ",
+      "icao": "DNMN",
+      "name": "Minna Airport",
+      "latitude": 9.65217,
+      "longitude": 6.46226
+    },
+    {
+      "countryCode": "NG",
+      "region": "Ondo",
+      "iata": "AKR",
+      "icao": "DNAK",
+      "name": "Akure Airport",
+      "latitude": 7.24674,
+      "longitude": 5.30101
+    },
+    {
+      "countryCode": "NG",
+      "region": "Oyo",
+      "iata": "IBA",
+      "icao": "DNIB",
+      "name": "Ibadan Airport",
+      "latitude": 7.36246,
+      "longitude": 3.97833
+    },
+    {
+      "countryCode": "NG",
+      "region": "Rivers",
+      "iata": "PHC",
+      "icao": "DNPO",
+      "name": "Port Harcourt International Airport",
+      "latitude": 5.01549,
+      "longitude": 6.94959
+    },
+    {
+      "countryCode": "NG",
+      "region": "Rivers",
+      "iata": "PHG",
+      "icao": "",
+      "name": "Port Harcourt City Airport",
+      "latitude": 4.84611,
+      "longitude": 7.02139
+    },
+    {
+      "countryCode": "NG",
+      "region": "Sokoto",
+      "iata": "SKO",
+      "icao": "DNSO",
+      "name": "Sadiq Abubakar III International Airport",
+      "latitude": 12.9163,
+      "longitude": 5.20719
+    }
+  ]
 }
