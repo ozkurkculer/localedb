@@ -23,7 +23,7 @@ const fadeInUp = {
   animate: { opacity: 1, y: 0 },
 };
 
-type SortKey = "name" | "code" | "native";
+type SortKey = "name" | "code" | "native" | "usage";
 type SortOrder = "asc" | "desc";
 
 export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
@@ -36,7 +36,7 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
       setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     } else {
       setSortKey(key);
-      setSortOrder("asc");
+      setSortOrder("desc"); // Default to desc for usage
     }
   };
 
@@ -53,6 +53,12 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
     });
 
     result.sort((a, b) => {
+      if (sortKey === "usage") {
+         return sortOrder === "asc" 
+            ? a.countriesCount - b.countriesCount
+            : b.countriesCount - a.countriesCount;
+      }
+
       let valA = "";
       let valB = "";
 
@@ -119,6 +125,9 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("native")}>
               Native Name
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("usage")}>
+              Usage Count
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

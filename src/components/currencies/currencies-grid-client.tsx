@@ -23,7 +23,7 @@ const fadeInUp = {
   animate: { opacity: 1, y: 0 },
 };
 
-type SortKey = "name" | "code" | "symbol";
+type SortKey = "name" | "code" | "symbol" | "usage";
 type SortOrder = "asc" | "desc";
 
 export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) {
@@ -36,7 +36,7 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
       setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     } else {
       setSortKey(key);
-      setSortOrder("asc");
+      setSortOrder("desc"); // Default to desc for usage count usually
     }
   };
 
@@ -53,6 +53,12 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
     });
 
     result.sort((a, b) => {
+      if (sortKey === "usage") {
+         return sortOrder === "asc" 
+            ? a.countriesCount - b.countriesCount
+            : b.countriesCount - a.countriesCount;
+      }
+
       let valA = "";
       let valB = "";
 
@@ -119,6 +125,9 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleSort("symbol")}>
                 Symbol
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleSort("usage")}>
+                Usage Count
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

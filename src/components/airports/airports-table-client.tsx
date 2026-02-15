@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { Search, X, Plane, ArrowUpDown, Copy, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -24,11 +25,26 @@ type SortKey = "iata" | "icao" | "name" | "country" | "region";
 type SortOrder = "asc" | "desc";
 
 export function AirportsTableClient({ airports, countryMap }: AirportsTableClientProps) {
-  const [search, setSearch] = React.useState("");
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  
+  const [search, setSearch] = React.useState(searchParams.get("search") || "");
   const [page, setPage] = React.useState(1);
   const [sortKey, setSortKey] = React.useState<SortKey>("iata");
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
   const itemsPerPage = 50;
+
+  // Update URL when search changes (debounced)
+  React.useEffect(() => {
+    const params = new URLSearchParams(searchParams);
+    if (search) {
+      params.set("search", search);
+    } else {
+      params.delete("search");
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  }, [search, pathname, router, searchParams]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -165,15 +181,36 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
             {displayedAirports.map((airport) => {
               const country = countryMap[airport.countryCode];
               const key = airport.iata || airport.icao || `${airport.latitude}-${airport.longitude}`;
-              const airportText = `${airport.name} (${airport.iata}/${airport.icao})`;
               
               return (
                 <TableRow key={key} className="group hover:bg-red-500/5">
-                  <TableCell className="font-mono font-bold text-red-600 dark:text-red-400">
-                    {airport.iata}
+                  <TableCell>
+                    <div className="flex items-center justify-between gap-2">
+                        <span className="font-mono font-bold text-red-600 dark:text-red-400">{airport.iata}</span>
+                        {airport.iata && (
+                            <button 
+                                onClick={() => copyToClipboard(airport.iata, "IATA Code")}
+                                className="opacity-0 transition-opacity group-hover:opacity-100 p-1 hover:bg-muted rounded text-muted-foreground hover:text-foreground"
+                                title="Copy IATA"
+                            >
+                                <Copy className="h-3 w-3" />
+                            </button>
+                        )}
+                    </div>
                   </TableCell>
-                  <TableCell className="font-mono text-muted-foreground">
-                    {airport.icao}
+                  <TableCell>
+                    <div className="flex items-center justify-between gap-2">
+                        <span className="font-mono text-muted-foreground">{airport.icao}</span>
+                        {airport.icao && (
+                            <button 
+                                onClick={() => copyToClipboard(airport.icao, "ICAO Code")}
+                                className="opacity-0 transition-opacity group-hover:opacity-100 p-1 hover:bg-muted rounded text-muted-foreground hover:text-foreground"
+                                title="Copy ICAO"
+                            >
+                                <Copy className="h-3 w-3" />
+                            </button>
+                        )}
+                    </div>
                   </TableCell>
                   <TableCell className="font-medium">
                     <div className="flex items-center gap-2">
@@ -191,16 +228,7 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
                     {airport.region}
                   </TableCell>
                   <TableCell>
-                     <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-8 w-8 opacity-0 group-hover:opacity-100"
-                        onClick={() => copyToClipboard(airportText, airport.name)}
-                        title="Copy details"
-                     >
-                        <Copy className="h-4 w-4" />
-                        <span className="sr-only">Copy</span>
-                     </Button>
+                     {/* Removed row copy since we have granular copy now, or keep it as generic copy */}
                   </TableCell>
                 </TableRow>
               );
