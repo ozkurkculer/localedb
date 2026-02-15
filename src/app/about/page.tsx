@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <div className="container py-12">
       <div className="mx-auto max-w-3xl">
-        <h1 className="mb-6 text-4xl font-bold">About LocaleDB</h1>
+        <h1 className="mb-6 text-2xl font-bold sm:text-3xl md:text-4xl">About LocaleDB</h1>
 
         <div className="prose prose-zinc dark:prose-invert max-w-none">
           <p className="text-xl text-muted-foreground">
