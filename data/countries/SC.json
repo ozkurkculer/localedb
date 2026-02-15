@@ -1,0 +1,240 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Seychelles",
+    "officialName": "Seychelles",
+    "nativeName": "Seychelles",
+    "officialNativeName": "",
+    "capital": "Victoria",
+    "capitalCoordinates": [
+      -4.61667,
+      55.45
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "subregion": "Eastern Africa",
+    "population": 0,
+    "area": 452,
+    "flagEmoji": "🇸🇨",
+    "tld": "sc",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "fr",
+        "iso639_2": "fra",
+        "iso639_3": "fra",
+        "name": "French",
+        "nativeName": "français",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "SC",
+    "iso3166Alpha3": "SYC",
+    "iso3166Numeric": "690",
+    "bcp47": [
+      "fr-SC"
+    ],
+    "internetTld": "sc",
+    "ioc": "SEY",
+    "fifa": "SEY",
+    "vehicleCode": "SY",
+    "fips10": "SE",
+    "unLocode": "SC",
+    "stanag1059": "SYC",
+    "itu": "SEY",
+    "uic": "",
+    "maritime": 664,
+    "mmc": 633
+  },
+  "currency": {
+    "code": "SCR",
+    "numericCode": 690,
+    "name": "Seychelles Rupee",
+    "nativeName": "Seychellois rupee",
+    "symbol": "₨",
+    "narrowSymbol": "₨",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd/MM/y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "janvier",
+        "février",
+        "mars",
+        "avril",
+        "mai",
+        "juin",
+        "juillet",
+        "août",
+        "septembre",
+        "octobre",
+        "novembre",
+        "décembre"
+      ],
+      "abbreviated": [
+        "janv.",
+        "févr.",
+        "mars",
+        "avr.",
+        "mai",
+        "juin",
+        "juil.",
+        "août",
+        "sept.",
+        "oct.",
+        "nov.",
+        "déc."
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "dimanche",
+        "lundi",
+        "mardi",
+        "mercredi",
+        "jeudi",
+        "vendredi",
+        "samedi"
+      ],
+      "abbreviated": [
+        "dim.",
+        "lun.",
+        "mar.",
+        "mer.",
+        "jeu.",
+        "ven.",
+        "sam."
+      ],
+      "narrow": [
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "primaryTimezone": "UTC+04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "",
+    "postalCodeRegex": "",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

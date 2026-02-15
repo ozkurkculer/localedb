@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ro",
+    "iso639_2": "ron",
+    "iso639_3": "ron",
+    "name": "Romanian",
+    "nativeName": "Română",
+    "direction": "ltr",
+    "countries": [
+      "MD",
+      "RO"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ms",
+    "iso639_2": "zsm",
+    "iso639_3": "msa",
+    "name": "Malaysian",
+    "nativeName": "بهاس مليسيا",
+    "direction": "ltr",
+    "countries": [
+      "BN",
+      "MY",
+      "SG"
+    ]
+  }
+}

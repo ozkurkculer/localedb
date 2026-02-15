@@ -1,0 +1,7 @@
+{
+  "addressFormat": {
+     "postalCodeFormat": "#####-####",
+     "postalCodeRegex": "^\\d{5}(-\\d{4})?$",
+     "stateCodeType": "ANSI"
+  }
+}

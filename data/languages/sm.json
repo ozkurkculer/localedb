@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "sm",
+    "iso639_2": "smo",
+    "iso639_3": "smo",
+    "name": "Samoan",
+    "nativeName": "gagana fa'a Samoa",
+    "direction": "ltr",
+    "countries": [
+      "AS",
+      "WS"
+    ]
+  }
+}

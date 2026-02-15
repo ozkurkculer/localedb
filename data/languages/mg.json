@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "mg",
+    "iso639_2": "mlg",
+    "iso639_3": "mlg",
+    "name": "Malagasy",
+    "nativeName": "fiteny malagasy",
+    "direction": "ltr",
+    "countries": [
+      "MG"
+    ]
+  }
+}

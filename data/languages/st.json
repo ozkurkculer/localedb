@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "st",
+    "iso639_2": "sot",
+    "iso639_3": "sot",
+    "name": "Southern Sotho",
+    "nativeName": "Sesotho",
+    "direction": "ltr",
+    "countries": [
+      "LS",
+      "ZA"
+    ]
+  }
+}

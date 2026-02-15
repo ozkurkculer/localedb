@@ -1,0 +1,245 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Czechia",
+    "officialName": "Czechia",
+    "nativeName": "Česko",
+    "officialNativeName": "",
+    "capital": "Prague",
+    "capitalCoordinates": [
+      50.08804,
+      14.42076
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Europe",
+    "region": "Central Europe",
+    "subregion": "Central Europe",
+    "population": 0,
+    "area": 78865,
+    "flagEmoji": "🇨🇿",
+    "tld": "cz",
+    "landlocked": true,
+    "borders": [
+      "AT",
+      "DE",
+      "PL",
+      "SK"
+    ],
+    "languages": [
+      {
+        "code": "cs",
+        "iso639_2": "ces",
+        "iso639_3": "ces",
+        "name": "Czech",
+        "nativeName": "čeština",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "sk",
+        "iso639_2": "slk",
+        "iso639_3": "slk",
+        "name": "Slovak",
+        "nativeName": "slovenčina",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "CZ",
+    "iso3166Alpha3": "CZE",
+    "iso3166Numeric": "203",
+    "bcp47": [
+      "cs-CZ"
+    ],
+    "internetTld": "cz",
+    "ioc": "CZE",
+    "fifa": "CZE",
+    "vehicleCode": "CZ",
+    "fips10": "EZ",
+    "unLocode": "CZ",
+    "stanag1059": "CZE",
+    "itu": "CZE",
+    "uic": "54 CZ",
+    "maritime": 270,
+    "mmc": 230
+  },
+  "currency": {
+    "code": "CZK",
+    "numericCode": 203,
+    "name": "Czech Krone",
+    "nativeName": "Czech koruna",
+    "symbol": "Kč",
+    "narrowSymbol": "Kč",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Haleru",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "d. M. y",
+      "short": "dd.MM.yy"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss, zzzz",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMd",
+      "short": "yyMMdd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "ledna",
+        "února",
+        "března",
+        "dubna",
+        "května",
+        "června",
+        "července",
+        "srpna",
+        "září",
+        "října",
+        "listopadu",
+        "prosince"
+      ],
+      "abbreviated": [
+        "led",
+        "úno",
+        "bře",
+        "dub",
+        "kvě",
+        "čvn",
+        "čvc",
+        "srp",
+        "zář",
+        "říj",
+        "lis",
+        "pro"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "neděle",
+        "pondělí",
+        "úterý",
+        "středa",
+        "čtvrtek",
+        "pátek",
+        "sobota"
+      ],
+      "abbreviated": [
+        "ne",
+        "po",
+        "út",
+        "st",
+        "čt",
+        "pá",
+        "so"
+      ],
+      "narrow": [
+        "N",
+        "P",
+        "Ú",
+        "S",
+        "Č",
+        "P",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "primaryTimezone": "UTC+01:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "### ##",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

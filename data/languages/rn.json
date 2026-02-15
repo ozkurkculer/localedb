@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "rn",
+    "iso639_2": "run",
+    "iso639_3": "run",
+    "name": "Kirundi",
+    "nativeName": "Ikirundi",
+    "direction": "ltr",
+    "countries": [
+      "BI"
+    ]
+  }
+}

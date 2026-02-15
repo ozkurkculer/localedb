@@ -1,0 +1,232 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
+    "nativeName": "República Dominicana",
+    "officialNativeName": "",
+    "capital": "Santo Domingo",
+    "capitalCoordinates": [
+      18.50012,
+      -69.98857
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Central America",
+    "region": "Caribbean",
+    "subregion": "Caribbean",
+    "population": 0,
+    "area": 48671,
+    "flagEmoji": "🇩🇴",
+    "tld": "do",
+    "landlocked": false,
+    "borders": [
+      "HT"
+    ],
+    "languages": [
+      {
+        "code": "es",
+        "iso639_2": "spa",
+        "iso639_3": "spa",
+        "name": "Spanish",
+        "nativeName": "Español",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "DO",
+    "iso3166Alpha3": "DOM",
+    "iso3166Numeric": "214",
+    "bcp47": [
+      "es-DO"
+    ],
+    "internetTld": "do",
+    "ioc": "DOM",
+    "fifa": "DOM",
+    "vehicleCode": "DOM",
+    "fips10": "DR",
+    "unLocode": "DO",
+    "stanag1059": "DOM",
+    "itu": "DOM",
+    "uic": "",
+    "maritime": 327,
+    "mmc": 370
+  },
+  "currency": {
+    "code": "DOP",
+    "numericCode": 214,
+    "name": "Dominican Peso",
+    "nativeName": "Dominican peso",
+    "symbol": "$",
+    "narrowSymbol": "$",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centavos",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d 'de' MMMM 'de' y",
+      "long": "d 'de' MMMM 'de' y",
+      "medium": "d MMM y",
+      "short": "d/M/yy"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss (zzzz)",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre"
+      ],
+      "abbreviated": [
+        "ene",
+        "feb",
+        "mar",
+        "abr",
+        "may",
+        "jun",
+        "jul",
+        "ago",
+        "sept",
+        "oct",
+        "nov",
+        "dic"
+      ],
+      "narrow": [
+        "E",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "domingo",
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado"
+      ],
+      "abbreviated": [
+        "dom",
+        "lun",
+        "mar",
+        "mié",
+        "jue",
+        "vie",
+        "sáb"
+      ],
+      "narrow": [
+        "D",
+        "L",
+        "M",
+        "X",
+        "J",
+        "V",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "primaryTimezone": "UTC-04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "#####",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

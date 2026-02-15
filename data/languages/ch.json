@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ch",
+    "iso639_2": "cha",
+    "iso639_3": "cha",
+    "name": "Chamorro",
+    "nativeName": "Chamoru",
+    "direction": "ltr",
+    "countries": [
+      "GU",
+      "MP"
+    ]
+  }
+}

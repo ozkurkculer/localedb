@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "am",
+    "iso639_2": "amh",
+    "iso639_3": "amh",
+    "name": "Amharic",
+    "nativeName": "አማርኛ",
+    "direction": "ltr",
+    "countries": [
+      "ET"
+    ]
+  }
+}

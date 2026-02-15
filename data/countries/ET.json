@@ -1,0 +1,237 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Ethiopia",
+    "officialName": "Ethiopia",
+    "nativeName": "ኢትዮጵያ",
+    "officialNativeName": "",
+    "capital": "Addis Ababa",
+    "capitalCoordinates": [
+      9.02497,
+      38.74689
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "subregion": "Eastern Africa",
+    "population": 0,
+    "area": 1104300,
+    "flagEmoji": "🇪🇹",
+    "tld": "et",
+    "landlocked": true,
+    "borders": [
+      "DJ",
+      "ER",
+      "KE",
+      "SO",
+      "SS",
+      "SD"
+    ],
+    "languages": [
+      {
+        "code": "am",
+        "iso639_2": "amh",
+        "iso639_3": "amh",
+        "name": "Amharic",
+        "nativeName": "አማርኛ",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "ET",
+    "iso3166Alpha3": "ETH",
+    "iso3166Numeric": "231",
+    "bcp47": [
+      "am-ET"
+    ],
+    "internetTld": "et",
+    "ioc": "ETH",
+    "fifa": "ETH",
+    "vehicleCode": "ETH",
+    "fips10": "ET",
+    "unLocode": "ET",
+    "stanag1059": "ETH",
+    "itu": "ETH",
+    "uic": "",
+    "maritime": 624,
+    "mmc": 636
+  },
+  "currency": {
+    "code": "ETB",
+    "numericCode": 230,
+    "name": "Birr",
+    "nativeName": "Ethiopian birr",
+    "symbol": "Br",
+    "narrowSymbol": "Br",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd/MM/y"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "ጃንዋሪ",
+        "ፌብሩዋሪ",
+        "ማርች",
+        "ኤፕሪል",
+        "ሜይ",
+        "ጁን",
+        "ጁላይ",
+        "ኦገስት",
+        "ሴፕቴምበር",
+        "ኦክቶበር",
+        "ኖቬምበር",
+        "ዲሴምበር"
+      ],
+      "abbreviated": [
+        "ጃን",
+        "ፌብ",
+        "ማርች",
+        "ኤፕሪ",
+        "ሜይ",
+        "ጁን",
+        "ጁላይ",
+        "ኦገስ",
+        "ሴፕቴ",
+        "ኦክቶ",
+        "ኖቬም",
+        "ዲሴም"
+      ],
+      "narrow": [
+        "ጃ",
+        "ፌ",
+        "ማ",
+        "ኤ",
+        "ሜ",
+        "ጁ",
+        "ጁ",
+        "ኦ",
+        "ሴ",
+        "ኦ",
+        "ኖ",
+        "ዲ"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "እሑድ",
+        "ሰኞ",
+        "ማክሰኞ",
+        "ረቡዕ",
+        "ሐሙስ",
+        "ዓርብ",
+        "ቅዳሜ"
+      ],
+      "abbreviated": [
+        "እሑድ",
+        "ሰኞ",
+        "ማክሰ",
+        "ረቡዕ",
+        "ሐሙስ",
+        "ዓርብ",
+        "ቅዳሜ"
+      ],
+      "narrow": [
+        "እ",
+        "ሰ",
+        "ማ",
+        "ረ",
+        "ሐ",
+        "ዓ",
+        "ቅ"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "primaryTimezone": "UTC+03:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "####",
+    "postalCodeRegex": "^(\\d{4})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

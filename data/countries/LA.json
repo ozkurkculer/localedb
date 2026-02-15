@@ -1,0 +1,236 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Laos",
+    "officialName": "Laos",
+    "nativeName": "ລາວ",
+    "officialNativeName": "",
+    "capital": "Vientiane",
+    "capitalCoordinates": [
+      17.96667,
+      102.6
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "South-Eastern Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 0,
+    "area": 236800,
+    "flagEmoji": "🇱🇦",
+    "tld": "la",
+    "landlocked": true,
+    "borders": [
+      "MM",
+      "KH",
+      "CN",
+      "TH",
+      "VN"
+    ],
+    "languages": [
+      {
+        "code": "lo",
+        "iso639_2": "lao",
+        "iso639_3": "lao",
+        "name": "Lao",
+        "nativeName": "ພາສາລາວ",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "LA",
+    "iso3166Alpha3": "LAO",
+    "iso3166Numeric": "418",
+    "bcp47": [
+      "lo-LA"
+    ],
+    "internetTld": "la",
+    "ioc": "LAO",
+    "fifa": "LAO",
+    "vehicleCode": "LAO",
+    "fips10": "LA",
+    "unLocode": "LA",
+    "stanag1059": "LAO",
+    "itu": "LAO",
+    "uic": "",
+    "maritime": 531,
+    "mmc": 457
+  },
+  "currency": {
+    "code": "LAK",
+    "numericCode": 418,
+    "name": "Kip",
+    "nativeName": "Lao kip",
+    "symbol": "₭",
+    "narrowSymbol": "₭",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "At",
+    "pattern": "¤#,##0.00;¤-#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "d/M/y"
+    },
+    "timeFormats": {
+      "full": "H ໂມງ m ນາທີ ss ວິນາທີ zzzz",
+      "long": "H ໂມງ m ນາທີ ss ວິນາທີ z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "GyMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "Hmsszzzz",
+      "long": "Hmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "ມັງກອນ",
+        "ກຸມພາ",
+        "ມີນາ",
+        "ເມສາ",
+        "ພຶດສະພາ",
+        "ມິຖຸນາ",
+        "ກໍລະກົດ",
+        "ສິງຫາ",
+        "ກັນຍາ",
+        "ຕຸລາ",
+        "ພະຈິກ",
+        "ທັນວາ"
+      ],
+      "abbreviated": [
+        "ມ.ກ.",
+        "ກ.ພ.",
+        "ມ.ນ.",
+        "ມ.ສ.",
+        "ພ.ພ.",
+        "ມິ.ຖ.",
+        "ກ.ລ.",
+        "ສ.ຫ.",
+        "ກ.ຍ.",
+        "ຕ.ລ.",
+        "ພ.ຈ.",
+        "ທ.ວ."
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "ວັນອາທິດ",
+        "ວັນຈັນ",
+        "ວັນອັງຄານ",
+        "ວັນພຸດ",
+        "ວັນພະຫັດ",
+        "ວັນສຸກ",
+        "ວັນເສົາ"
+      ],
+      "abbreviated": [
+        "ອາທິດ",
+        "ຈັນ",
+        "ອັງຄານ",
+        "ພຸດ",
+        "ພະຫັດ",
+        "ສຸກ",
+        "ເສົາ"
+      ],
+      "narrow": [
+        "ອາ",
+        "ຈ",
+        "ອ",
+        "ພ",
+        "ພຫ",
+        "ສຸ",
+        "ສ"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "primaryTimezone": "UTC+07:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "#####",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

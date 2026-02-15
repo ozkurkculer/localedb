@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "lt",
+    "iso639_2": "lit",
+    "iso639_3": "lit",
+    "name": "Lithuanian",
+    "nativeName": "lietuvių kalba",
+    "direction": "ltr",
+    "countries": [
+      "LT"
+    ]
+  }
+}

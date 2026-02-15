@@ -1,0 +1,240 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Madagascar",
+    "officialName": "Madagascar",
+    "nativeName": "Madagascar",
+    "officialNativeName": "",
+    "capital": "Antananarivo",
+    "capitalCoordinates": [
+      -18.91368,
+      47.53613
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "subregion": "Eastern Africa",
+    "population": 0,
+    "area": 587041,
+    "flagEmoji": "🇲🇬",
+    "tld": "mg",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "fr",
+        "iso639_2": "fra",
+        "iso639_3": "fra",
+        "name": "French",
+        "nativeName": "français",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "mg",
+        "iso639_2": "mlg",
+        "iso639_3": "mlg",
+        "name": "Malagasy",
+        "nativeName": "fiteny malagasy",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "MG",
+    "iso3166Alpha3": "MDG",
+    "iso3166Numeric": "450",
+    "bcp47": [
+      "fr-MG"
+    ],
+    "internetTld": "mg",
+    "ioc": "MAD",
+    "fifa": "MAD",
+    "vehicleCode": "RM",
+    "fips10": "MA",
+    "unLocode": "MG",
+    "stanag1059": "MDG",
+    "itu": "MDG",
+    "uic": "",
+    "maritime": 647,
+    "mmc": 646
+  },
+  "currency": {
+    "code": "MGA",
+    "numericCode": "",
+    "name": "Malagasy Ariary",
+    "nativeName": "Malagasy ariary",
+    "symbol": "Ar",
+    "narrowSymbol": "Ar",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 5,
+    "subunitName": "Iraimbilanja",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd/MM/y"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "janvier",
+        "février",
+        "mars",
+        "avril",
+        "mai",
+        "juin",
+        "juillet",
+        "août",
+        "septembre",
+        "octobre",
+        "novembre",
+        "décembre"
+      ],
+      "abbreviated": [
+        "janv.",
+        "févr.",
+        "mars",
+        "avr.",
+        "mai",
+        "juin",
+        "juil.",
+        "août",
+        "sept.",
+        "oct.",
+        "nov.",
+        "déc."
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "dimanche",
+        "lundi",
+        "mardi",
+        "mercredi",
+        "jeudi",
+        "vendredi",
+        "samedi"
+      ],
+      "abbreviated": [
+        "dim.",
+        "lun.",
+        "mar.",
+        "mer.",
+        "jeu.",
+        "ven.",
+        "sam."
+      ],
+      "narrow": [
+        "D",
+        "L",
+        "M",
+        "M",
+        "J",
+        "V",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "primaryTimezone": "UTC+03:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###",
+    "postalCodeRegex": "^(\\d{3})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

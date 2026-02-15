@@ -1,0 +1,230 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Anguilla",
+    "officialName": "Anguilla",
+    "nativeName": "Anguilla",
+    "officialNativeName": "Anguilla",
+    "capital": "The Valley",
+    "capitalCoordinates": [
+      18.21704,
+      -63.05783
+    ],
+    "coordinates": [
+      18.25,
+      -63.16666666
+    ],
+    "continent": "Central America",
+    "region": "Caribbean",
+    "subregion": "Caribbean",
+    "population": 13452,
+    "area": 91,
+    "flagEmoji": "🇦🇮",
+    "tld": "ai",
+    "landlocked": false,
+    "borders": [],
+    "languages": [
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": "Anguillian"
+  },
+  "codes": {
+    "iso3166Alpha2": "AI",
+    "iso3166Alpha3": "AIA",
+    "iso3166Numeric": "660",
+    "bcp47": [
+      "en-AI"
+    ],
+    "internetTld": "ai",
+    "ioc": "",
+    "fifa": "AIA",
+    "vehicleCode": "AXA",
+    "fips10": "AV",
+    "unLocode": "AI",
+    "stanag1059": "AIA",
+    "itu": "AIA",
+    "uic": "",
+    "maritime": 301,
+    "mmc": 365
+  },
+  "currency": {
+    "code": "XCD",
+    "numericCode": 951,
+    "name": "East Caribbean Dollar",
+    "nativeName": "Eastern Caribbean dollar",
+    "symbol": "$",
+    "narrowSymbol": "$",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, MMMM d, y",
+      "long": "MMMM d, y",
+      "medium": "MMM d, y",
+      "short": "M/d/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "abbreviated": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "abbreviated": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "primaryTimezone": "UTC-04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+1264",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "",
+    "postalCodeRegex": "",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "left",
+    "weekNumbering": "ISO"
+  }
+}

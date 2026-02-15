@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "gn",
+    "iso639_2": "grn",
+    "iso639_3": "grn",
+    "name": "Guaraní",
+    "nativeName": "Avañe'ẽ",
+    "direction": "ltr",
+    "countries": [
+      "AR",
+      "PY"
+    ]
+  }
+}

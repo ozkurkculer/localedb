@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "lo",
+    "iso639_2": "lao",
+    "iso639_3": "lao",
+    "name": "Lao",
+    "nativeName": "ພາສາລາວ",
+    "direction": "ltr",
+    "countries": [
+      "LA"
+    ]
+  }
+}

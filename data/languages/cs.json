@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "cs",
+    "iso639_2": "ces",
+    "iso639_3": "ces",
+    "name": "Czech",
+    "nativeName": "čeština",
+    "direction": "ltr",
+    "countries": [
+      "CZ"
+    ]
+  }
+}

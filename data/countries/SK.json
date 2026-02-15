@@ -1,0 +1,236 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Slovakia",
+    "officialName": "Slovakia",
+    "nativeName": "Slovensko",
+    "officialNativeName": "",
+    "capital": "Bratislava",
+    "capitalCoordinates": [
+      48.14816,
+      17.10674
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Europe",
+    "region": "Central Europe",
+    "subregion": "Central Europe",
+    "population": 0,
+    "area": 49037,
+    "flagEmoji": "🇸🇰",
+    "tld": "sk",
+    "landlocked": true,
+    "borders": [
+      "AT",
+      "CZ",
+      "HU",
+      "PL",
+      "UA"
+    ],
+    "languages": [
+      {
+        "code": "sk",
+        "iso639_2": "slk",
+        "iso639_3": "slk",
+        "name": "Slovak",
+        "nativeName": "slovenčina",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "SK",
+    "iso3166Alpha3": "SVK",
+    "iso3166Numeric": "703",
+    "bcp47": [
+      "sk-SK"
+    ],
+    "internetTld": "sk",
+    "ioc": "SVK",
+    "fifa": "SVK",
+    "vehicleCode": "SK",
+    "fips10": "LO",
+    "unLocode": "SK",
+    "stanag1059": "SVK",
+    "itu": "SVK",
+    "uic": "56 SK",
+    "maritime": 267,
+    "mmc": 231
+  },
+  "currency": {
+    "code": "EUR",
+    "numericCode": 978,
+    "name": "Euro",
+    "nativeName": "Euro",
+    "symbol": "€",
+    "narrowSymbol": "€",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cent",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "d. M. y",
+      "short": "d. M. y"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss zzzz",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "januára",
+        "februára",
+        "marca",
+        "apríla",
+        "mája",
+        "júna",
+        "júla",
+        "augusta",
+        "septembra",
+        "októbra",
+        "novembra",
+        "decembra"
+      ],
+      "abbreviated": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "máj",
+        "jún",
+        "júl",
+        "aug",
+        "sep",
+        "okt",
+        "nov",
+        "dec"
+      ],
+      "narrow": [
+        "j",
+        "f",
+        "m",
+        "a",
+        "m",
+        "j",
+        "j",
+        "a",
+        "s",
+        "o",
+        "n",
+        "d"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "nedeľa",
+        "pondelok",
+        "utorok",
+        "streda",
+        "štvrtok",
+        "piatok",
+        "sobota"
+      ],
+      "abbreviated": [
+        "ne",
+        "po",
+        "ut",
+        "st",
+        "št",
+        "pi",
+        "so"
+      ],
+      "narrow": [
+        "n",
+        "p",
+        "u",
+        "s",
+        "š",
+        "p",
+        "s"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "primaryTimezone": "UTC+01:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": " ",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###  ##",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

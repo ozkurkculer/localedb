@@ -1,0 +1,14 @@
+{
+  "addressFormat": {
+    "postalCodeFormat": "#####",
+    "postalCodeRegex": "^(\\d{5})$",
+    "administrativeDivisionType": "Il"
+  },
+  "phone": {
+    "callingCode": "+90",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "0212 555 1234",
+    "subscriberNumberLengths": [10]
+  }
+}

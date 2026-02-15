@@ -1,0 +1,21 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "de",
+    "iso639_2": "deu",
+    "iso639_3": "deu",
+    "name": "German",
+    "nativeName": "Deutsch",
+    "direction": "ltr",
+    "countries": [
+      "BE",
+      "DE",
+      "LU",
+      "LI",
+      "AT",
+      "CH",
+      "VA"
+    ]
+  }
+}

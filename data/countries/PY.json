@@ -1,0 +1,244 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Paraguay",
+    "officialName": "Paraguay",
+    "nativeName": "Paraguay",
+    "officialNativeName": "",
+    "capital": "Asunción",
+    "capitalCoordinates": [
+      -25.30066,
+      -57.63591
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "South America",
+    "region": "South America",
+    "subregion": "South America",
+    "population": 0,
+    "area": 406752,
+    "flagEmoji": "🇵🇾",
+    "tld": "py",
+    "landlocked": true,
+    "borders": [
+      "AR",
+      "BO",
+      "BR"
+    ],
+    "languages": [
+      {
+        "code": "es",
+        "iso639_2": "spa",
+        "iso639_3": "spa",
+        "name": "Spanish",
+        "nativeName": "Español",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "gn",
+        "iso639_2": "grn",
+        "iso639_3": "grn",
+        "name": "Guaraní",
+        "nativeName": "Avañe'ẽ",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "PY",
+    "iso3166Alpha3": "PRY",
+    "iso3166Numeric": "600",
+    "bcp47": [
+      "es-PY"
+    ],
+    "internetTld": "py",
+    "ioc": "PAR",
+    "fifa": "PAR",
+    "vehicleCode": "PY",
+    "fips10": "PA",
+    "unLocode": "PY",
+    "stanag1059": "PRY",
+    "itu": "PRG",
+    "uic": "",
+    "maritime": 755,
+    "mmc": 744
+  },
+  "currency": {
+    "code": "PYG",
+    "numericCode": 600,
+    "name": "Guaraní",
+    "nativeName": "Paraguayan guaraní",
+    "symbol": "₲",
+    "narrowSymbol": "₲",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Centimos",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d 'de' MMMM 'de' y",
+      "long": "d 'de' MMMM 'de' y",
+      "medium": "d MMM y",
+      "short": "d/M/yy"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss (zzzz)",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre"
+      ],
+      "abbreviated": [
+        "ene",
+        "feb",
+        "mar",
+        "abr",
+        "may",
+        "jun",
+        "jul",
+        "ago",
+        "sept",
+        "oct",
+        "nov",
+        "dic"
+      ],
+      "narrow": [
+        "E",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "domingo",
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado"
+      ],
+      "abbreviated": [
+        "dom",
+        "lun",
+        "mar",
+        "mié",
+        "jue",
+        "vie",
+        "sáb"
+      ],
+      "narrow": [
+        "D",
+        "L",
+        "M",
+        "X",
+        "J",
+        "V",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "primaryTimezone": "UTC-04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "####",
+    "postalCodeRegex": "^(\\d{4})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

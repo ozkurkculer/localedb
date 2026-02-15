@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "hi",
+    "iso639_2": "hin",
+    "iso639_3": "hin",
+    "name": "Hindi",
+    "nativeName": "हिन्दी",
+    "direction": "ltr",
+    "countries": [
+      "IN"
+    ]
+  }
+}

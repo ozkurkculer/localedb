@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "lu",
+    "iso639_2": "lub",
+    "iso639_3": "lub",
+    "name": "Luba-Katanga",
+    "nativeName": "Tshiluba",
+    "direction": "ltr",
+    "countries": [
+      "CD"
+    ]
+  }
+}

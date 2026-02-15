@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ja",
+    "iso639_2": "jpn",
+    "iso639_3": "jpn",
+    "name": "Japanese",
+    "nativeName": "日本語 (にほんご)",
+    "direction": "ltr",
+    "countries": [
+      "JP"
+    ]
+  }
+}

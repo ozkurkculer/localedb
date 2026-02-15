@@ -1,0 +1,38 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "es",
+    "iso639_2": "spa",
+    "iso639_3": "spa",
+    "name": "Spanish",
+    "nativeName": "Español",
+    "direction": "ltr",
+    "countries": [
+      "GQ",
+      "AR",
+      "BZ",
+      "BO",
+      "CL",
+      "CR",
+      "DO",
+      "EC",
+      "SV",
+      "GU",
+      "GT",
+      "HN",
+      "CO",
+      "CU",
+      "MX",
+      "NI",
+      "PA",
+      "PY",
+      "PE",
+      "PR",
+      "ES",
+      "UY",
+      "EH",
+      "VE"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "dv",
+    "iso639_2": "div",
+    "iso639_3": "div",
+    "name": "Divehi",
+    "nativeName": "ދިވެހި",
+    "direction": "ltr",
+    "countries": [
+      "MV"
+    ]
+  }
+}

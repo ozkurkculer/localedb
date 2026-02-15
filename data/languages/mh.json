@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "mh",
+    "iso639_2": "mah",
+    "iso639_3": "mah",
+    "name": "Marshallese",
+    "nativeName": "Kajin M̧ajeļ",
+    "direction": "ltr",
+    "countries": [
+      "MH"
+    ]
+  }
+}

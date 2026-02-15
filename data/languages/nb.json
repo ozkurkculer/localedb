@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "nb",
+    "iso639_2": "nob",
+    "iso639_3": "nob",
+    "name": "Norwegian Bokmål",
+    "nativeName": "Norsk bokmål",
+    "direction": "ltr",
+    "countries": [
+      "BV",
+      "NO"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "tr",
+    "iso639_2": "tur",
+    "iso639_3": "tur",
+    "name": "Turkish",
+    "nativeName": "Türkçe",
+    "direction": "ltr",
+    "countries": [
+      "TR",
+      "CY"
+    ]
+  }
+}

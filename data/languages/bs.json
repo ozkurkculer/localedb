@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "bs",
+    "iso639_2": "bos",
+    "iso639_3": "bos",
+    "name": "Bosnian",
+    "nativeName": "bosanski jezik",
+    "direction": "ltr",
+    "countries": [
+      "BA",
+      "ME"
+    ]
+  }
+}

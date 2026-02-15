@@ -1,0 +1,234 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Cambodia",
+    "officialName": "Cambodia",
+    "nativeName": "កម្ពុជា",
+    "officialNativeName": "",
+    "capital": "Phnom Penh",
+    "capitalCoordinates": [
+      11.56245,
+      104.91601
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "South-Eastern Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 0,
+    "area": 181035,
+    "flagEmoji": "🇰🇭",
+    "tld": "kh",
+    "landlocked": false,
+    "borders": [
+      "LA",
+      "TH",
+      "VN"
+    ],
+    "languages": [
+      {
+        "code": "km",
+        "iso639_2": "khm",
+        "iso639_3": "khm",
+        "name": "Khmer",
+        "nativeName": "ខ្មែរ",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "KH",
+    "iso3166Alpha3": "KHM",
+    "iso3166Numeric": "116",
+    "bcp47": [
+      "km-KH"
+    ],
+    "internetTld": "kh",
+    "ioc": "CAM",
+    "fifa": "CAM",
+    "vehicleCode": "K",
+    "fips10": "CB",
+    "unLocode": "KH",
+    "stanag1059": "KHM",
+    "itu": "CBG",
+    "uic": "",
+    "maritime": "514, 515",
+    "mmc": 456
+  },
+  "currency": {
+    "code": "KHR",
+    "numericCode": 116,
+    "name": "Cambodian Riel",
+    "nativeName": "Cambodian riel",
+    "symbol": "៛",
+    "narrowSymbol": "៛",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 10,
+    "subunitName": "Karak",
+    "pattern": "#,##0.00¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "d/M/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "មករា",
+        "កុម្ភៈ",
+        "មីនា",
+        "មេសា",
+        "ឧសភា",
+        "មិថុនា",
+        "កក្កដា",
+        "សីហា",
+        "កញ្ញា",
+        "តុលា",
+        "វិច្ឆិកា",
+        "ធ្នូ"
+      ],
+      "abbreviated": [
+        "មករា",
+        "កុម្ភៈ",
+        "មីនា",
+        "មេសា",
+        "ឧសភា",
+        "មិថុនា",
+        "កក្កដា",
+        "សីហា",
+        "កញ្ញា",
+        "តុលា",
+        "វិច្ឆិកា",
+        "ធ្នូ"
+      ],
+      "narrow": [
+        "ម",
+        "ក",
+        "ម",
+        "ម",
+        "ឧ",
+        "ម",
+        "ក",
+        "ស",
+        "ក",
+        "ត",
+        "វ",
+        "ធ"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "អាទិត្យ",
+        "ច័ន្ទ",
+        "អង្គារ",
+        "ពុធ",
+        "ព្រហស្បតិ៍",
+        "សុក្រ",
+        "សៅរ៍"
+      ],
+      "abbreviated": [
+        "អាទិត្យ",
+        "ចន្ទ",
+        "អង្គារ",
+        "ពុធ",
+        "ព្រហ",
+        "សុក្រ",
+        "សៅរ៍"
+      ],
+      "narrow": [
+        "អ",
+        "ច",
+        "អ",
+        "ព",
+        "ព",
+        "ស",
+        "ស"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "primaryTimezone": "UTC+07:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "#####",
+    "postalCodeRegex": "^(\\d{5})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

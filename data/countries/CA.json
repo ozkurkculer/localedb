@@ -1,0 +1,247 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Canada",
+    "officialName": "Canada",
+    "nativeName": "Canada",
+    "officialNativeName": "",
+    "capital": "Ottawa",
+    "capitalCoordinates": [
+      45.41117,
+      -75.69812
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "North America",
+    "region": "North America",
+    "subregion": "North America",
+    "population": 0,
+    "area": 9984670,
+    "flagEmoji": "🇨🇦",
+    "tld": "ca",
+    "landlocked": false,
+    "borders": [
+      "US"
+    ],
+    "languages": [
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      },
+      {
+        "code": "fr",
+        "iso639_2": "fra",
+        "iso639_3": "fra",
+        "name": "French",
+        "nativeName": "français",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "CA",
+    "iso3166Alpha3": "CAN",
+    "iso3166Numeric": "124",
+    "bcp47": [
+      "en-CA"
+    ],
+    "internetTld": "ca",
+    "ioc": "CAN",
+    "fifa": "CAN",
+    "vehicleCode": "CDN",
+    "fips10": "CA",
+    "unLocode": "CA",
+    "stanag1059": "CAN",
+    "itu": "CAN",
+    "uic": "CA",
+    "maritime": 316,
+    "mmc": 302
+  },
+  "currency": {
+    "code": "CAD",
+    "numericCode": 124,
+    "name": "Canadian Dollar",
+    "nativeName": "Canadian dollar",
+    "symbol": "$",
+    "narrowSymbol": "$",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cents",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, MMMM d, y",
+      "long": "MMMM d, y",
+      "medium": "MMM d, y",
+      "short": "M/d/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "abbreviated": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "abbreviated": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:30"
+    ],
+    "primaryTimezone": "UTC-08:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "@#@ #@#",
+    "postalCodeRegex": "^([ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ]) ?(\\d[ABCEGHJKLMNPRSTVWXYZ]\\d)$ ",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

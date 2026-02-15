@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "sl",
+    "iso639_2": "slv",
+    "iso639_3": "slv",
+    "name": "Slovene",
+    "nativeName": "slovenski jezik",
+    "direction": "ltr",
+    "countries": [
+      "SI"
+    ]
+  }
+}

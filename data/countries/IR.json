@@ -1,0 +1,238 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Iran",
+    "officialName": "Iran",
+    "nativeName": "ایران",
+    "officialNativeName": "",
+    "capital": "Tehran",
+    "capitalCoordinates": [
+      35.69439,
+      51.42151
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "subregion": "Southern Asia",
+    "population": 0,
+    "area": 1648195,
+    "flagEmoji": "🇮🇷",
+    "tld": "ir",
+    "landlocked": false,
+    "borders": [
+      "AF",
+      "AM",
+      "AZ",
+      "IQ",
+      "PK",
+      "TR",
+      "TM"
+    ],
+    "languages": [
+      {
+        "code": "fa",
+        "iso639_2": "fas",
+        "iso639_3": "fas",
+        "name": "Persian (Farsi)",
+        "nativeName": "فارسی",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "IR",
+    "iso3166Alpha3": "IRN",
+    "iso3166Numeric": "364",
+    "bcp47": [
+      "fa-IR"
+    ],
+    "internetTld": "ir",
+    "ioc": "IRI",
+    "fifa": "IRN",
+    "vehicleCode": "IR",
+    "fips10": "IR",
+    "unLocode": "IR",
+    "stanag1059": "IRN",
+    "itu": "IRN",
+    "uic": "98 IR",
+    "maritime": 422,
+    "mmc": 432
+  },
+  "currency": {
+    "code": "IRR",
+    "numericCode": 364,
+    "name": "Iranian Rial",
+    "nativeName": "Iranian rial",
+    "symbol": "﷼",
+    "narrowSymbol": "﷼",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Dinars",
+    "pattern": "‎¤ #,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "y/M/d"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss (zzzz)",
+      "long": "H:mm:ss (z)",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "ژانویهٔ",
+        "فوریهٔ",
+        "مارس",
+        "آوریل",
+        "مهٔ",
+        "ژوئن",
+        "ژوئیهٔ",
+        "اوت",
+        "سپتامبر",
+        "اکتبر",
+        "نوامبر",
+        "دسامبر"
+      ],
+      "abbreviated": [
+        "ژانویه",
+        "فوریه",
+        "مارس",
+        "آوریل",
+        "مه",
+        "ژوئن",
+        "ژوئیه",
+        "اوت",
+        "سپتامبر",
+        "اکتبر",
+        "نوامبر",
+        "دسامبر"
+      ],
+      "narrow": [
+        "ژ",
+        "ف",
+        "م",
+        "آ",
+        "م",
+        "ژ",
+        "ژ",
+        "ا",
+        "س",
+        "ا",
+        "ن",
+        "د"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "یکشنبه",
+        "دوشنبه",
+        "سه‌شنبه",
+        "چهارشنبه",
+        "پنجشنبه",
+        "جمعه",
+        "شنبه"
+      ],
+      "abbreviated": [
+        "یکشنبه",
+        "دوشنبه",
+        "سه‌شنبه",
+        "چهارشنبه",
+        "پنجشنبه",
+        "جمعه",
+        "شنبه"
+      ],
+      "narrow": [
+        "ی",
+        "د",
+        "س",
+        "چ",
+        "پ",
+        "ج",
+        "ش"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+03:30"
+    ],
+    "primaryTimezone": "UTC+03:30",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "arabext"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "##########",
+    "postalCodeRegex": "^(\\d{10})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

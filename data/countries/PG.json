@@ -1,0 +1,232 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Papua New Guinea",
+    "officialName": "Papua New Guinea",
+    "nativeName": "Papua New Guinea",
+    "officialNativeName": "",
+    "capital": "Port Moresby",
+    "capitalCoordinates": [
+      -9.44314,
+      147.17972
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "subregion": "Melanesia",
+    "population": 0,
+    "area": 462840,
+    "flagEmoji": "🇵🇬",
+    "tld": "pg",
+    "landlocked": false,
+    "borders": [
+      "ID"
+    ],
+    "languages": [
+      {
+        "code": "en",
+        "iso639_2": "eng",
+        "iso639_3": "eng",
+        "name": "English",
+        "nativeName": "English",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "PG",
+    "iso3166Alpha3": "PNG",
+    "iso3166Numeric": "598",
+    "bcp47": [
+      "en-PG"
+    ],
+    "internetTld": "pg",
+    "ioc": "PNG",
+    "fifa": "PNG",
+    "vehicleCode": "PNG",
+    "fips10": "PP",
+    "unLocode": "PG",
+    "stanag1059": "PNG",
+    "itu": "PNG",
+    "uic": "",
+    "maritime": 553,
+    "mmc": 537
+  },
+  "currency": {
+    "code": "PGK",
+    "numericCode": 598,
+    "name": "Kina",
+    "nativeName": "Papua New Guinean kina",
+    "symbol": "K",
+    "narrowSymbol": "K",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Toea",
+    "pattern": "¤#,##0.00",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, MMMM d, y",
+      "long": "MMMM d, y",
+      "medium": "MMM d, y",
+      "short": "M/d/yy"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "abbreviated": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "abbreviated": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+10:00"
+    ],
+    "primaryTimezone": "UTC+10:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "###",
+    "postalCodeRegex": "^(\\d{3})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

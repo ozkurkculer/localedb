@@ -1,0 +1,233 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
+    "nativeName": "الإمارات العربية المتحدة",
+    "officialNativeName": "",
+    "capital": "Abu Dhabi",
+    "capitalCoordinates": [
+      24.46667,
+      54.36667
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Western Asia",
+    "subregion": "Western Asia",
+    "population": 0,
+    "area": 83600,
+    "flagEmoji": "🇦🇪",
+    "tld": "ae",
+    "landlocked": false,
+    "borders": [
+      "OM",
+      "SA"
+    ],
+    "languages": [
+      {
+        "code": "ar",
+        "iso639_2": "ara",
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "nativeName": "العربية",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "AE",
+    "iso3166Alpha3": "ARE",
+    "iso3166Numeric": "784",
+    "bcp47": [
+      "ar-AE"
+    ],
+    "internetTld": "ae",
+    "ioc": "UAE",
+    "fifa": "UAE",
+    "vehicleCode": "UAE",
+    "fips10": "AE",
+    "unLocode": "AE",
+    "stanag1059": "ARE",
+    "itu": "UAE",
+    "uic": "",
+    "maritime": "470, 471",
+    "mmc": "424, 430, 431"
+  },
+  "currency": {
+    "code": "AED",
+    "numericCode": 784,
+    "name": "Arabic Dirham",
+    "nativeName": "United Arab Emirates dirham",
+    "symbol": "د.إ",
+    "narrowSymbol": "د.إ",
+    "symbolPosition": "before",
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Fils",
+    "pattern": "‏#,##0.00 ¤;‏-#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE، d MMMM y",
+      "long": "d MMMM y",
+      "medium": "dd‏/MM‏/y",
+      "short": "d‏/M‏/y"
+    },
+    "timeFormats": {
+      "full": "h:mm:ss a zzzz",
+      "long": "h:mm:ss a z",
+      "medium": "h:mm:ss a",
+      "short": "h:mm a"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMdd",
+      "short": "yMd"
+    },
+    "timePatterns": {
+      "full": "ahmmsszzzz",
+      "long": "ahmmssz",
+      "medium": "ahmmss",
+      "short": "ahmm"
+    },
+    "monthNames": {
+      "wide": [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "أبريل",
+        "مايو",
+        "يونيو",
+        "يوليو",
+        "أغسطس",
+        "سبتمبر",
+        "أكتوبر",
+        "نوفمبر",
+        "ديسمبر"
+      ],
+      "abbreviated": [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "أبريل",
+        "مايو",
+        "يونيو",
+        "يوليو",
+        "أغسطس",
+        "سبتمبر",
+        "أكتوبر",
+        "نوفمبر",
+        "ديسمبر"
+      ],
+      "narrow": [
+        "ي",
+        "ف",
+        "م",
+        "أ",
+        "و",
+        "ن",
+        "ل",
+        "غ",
+        "س",
+        "ك",
+        "ب",
+        "د"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "الأحد",
+        "الاثنين",
+        "الثلاثاء",
+        "الأربعاء",
+        "الخميس",
+        "الجمعة",
+        "السبت"
+      ],
+      "abbreviated": [
+        "الأحد",
+        "الاثنين",
+        "الثلاثاء",
+        "الأربعاء",
+        "الخميس",
+        "الجمعة",
+        "السبت"
+      ],
+      "narrow": [
+        "ح",
+        "ن",
+        "ث",
+        "ر",
+        "خ",
+        "ج",
+        "س"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "primaryTimezone": "UTC+04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ".",
+    "thousandsSeparator": ",",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "",
+    "postalCodeRegex": "",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

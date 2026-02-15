@@ -1,0 +1,16 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "pa",
+    "iso639_2": "pan",
+    "iso639_3": "pan",
+    "name": "(Eastern) Punjabi",
+    "nativeName": "ਪੰਜਾਬੀ",
+    "direction": "ltr",
+    "countries": [
+      "AW",
+      "CW"
+    ]
+  }
+}

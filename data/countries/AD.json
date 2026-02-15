@@ -1,0 +1,233 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Andorra",
+    "officialName": "Andorra",
+    "nativeName": "Andorra",
+    "officialNativeName": "",
+    "capital": "Andorra la Vella",
+    "capitalCoordinates": [
+      42.50779,
+      1.52109
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "subregion": "Southern Europe",
+    "population": 0,
+    "area": 468,
+    "flagEmoji": "🇦🇩",
+    "tld": "ad",
+    "landlocked": true,
+    "borders": [
+      "FR",
+      "ES"
+    ],
+    "languages": [
+      {
+        "code": "ca",
+        "iso639_2": "cat",
+        "iso639_3": "cat",
+        "name": "Catalan",
+        "nativeName": "català",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "AD",
+    "iso3166Alpha3": "AND",
+    "iso3166Numeric": "20",
+    "bcp47": [
+      "ca-AD"
+    ],
+    "internetTld": "ad",
+    "ioc": "AND",
+    "fifa": "AND",
+    "vehicleCode": "AND",
+    "fips10": "AN",
+    "unLocode": "AD",
+    "stanag1059": "AND",
+    "itu": "AND",
+    "uic": "",
+    "maritime": 202,
+    "mmc": 213
+  },
+  "currency": {
+    "code": "EUR",
+    "numericCode": 978,
+    "name": "Euro",
+    "nativeName": "Euro",
+    "symbol": "€",
+    "narrowSymbol": "€",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Cent",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "EEEE, d MMMM 'del' y",
+      "long": "d MMMM 'del' y",
+      "medium": "d MMM y",
+      "short": "d/M/yy"
+    },
+    "timeFormats": {
+      "full": "H:mm:ss (zzzz)",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMd"
+    },
+    "timePatterns": {
+      "full": "Hmmsszzzz",
+      "long": "Hmmssz",
+      "medium": "Hmmss",
+      "short": "Hmm"
+    },
+    "monthNames": {
+      "wide": [
+        "de gener",
+        "de febrer",
+        "de març",
+        "d’abril",
+        "de maig",
+        "de juny",
+        "de juliol",
+        "d’agost",
+        "de setembre",
+        "d’octubre",
+        "de novembre",
+        "de desembre"
+      ],
+      "abbreviated": [
+        "de gen.",
+        "de febr.",
+        "de març",
+        "d’abr.",
+        "de maig",
+        "de juny",
+        "de jul.",
+        "d’ag.",
+        "de set.",
+        "d’oct.",
+        "de nov.",
+        "de des."
+      ],
+      "narrow": [
+        "GN",
+        "FB",
+        "MÇ",
+        "AB",
+        "MG",
+        "JN",
+        "JL",
+        "AG",
+        "ST",
+        "OC",
+        "NV",
+        "DS"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "diumenge",
+        "dilluns",
+        "dimarts",
+        "dimecres",
+        "dijous",
+        "divendres",
+        "dissabte"
+      ],
+      "abbreviated": [
+        "dg.",
+        "dl.",
+        "dt.",
+        "dc.",
+        "dj.",
+        "dv.",
+        "ds."
+      ],
+      "narrow": [
+        "dg.",
+        "dl.",
+        "dt.",
+        "dc.",
+        "dj.",
+        "dv.",
+        "ds."
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "primaryTimezone": "UTC+01:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "AD###",
+    "postalCodeRegex": "^(?:AD)*(\\d{3})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

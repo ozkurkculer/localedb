@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "fj",
+    "iso639_2": "fij",
+    "iso639_3": "fij",
+    "name": "Fijian",
+    "nativeName": "vosa Vakaviti",
+    "direction": "ltr",
+    "countries": [
+      "FJ"
+    ]
+  }
+}

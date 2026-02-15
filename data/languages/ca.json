@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "ca",
+    "iso639_2": "cat",
+    "iso639_3": "cat",
+    "name": "Catalan",
+    "nativeName": "català",
+    "direction": "ltr",
+    "countries": [
+      "AD"
+    ]
+  }
+}

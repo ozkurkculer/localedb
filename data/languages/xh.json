@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "xh",
+    "iso639_2": "xho",
+    "iso639_3": "xho",
+    "name": "Xhosa",
+    "nativeName": "isiXhosa",
+    "direction": "ltr",
+    "countries": [
+      "ZA"
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": [
+    "SimpleLocalize",
+    "CLDR",
+    "mledoze/countries",
+    "Manual Overrides"
+  ],
+  "basics": {
+    "name": "Azerbaijan",
+    "officialName": "Azerbaijan",
+    "nativeName": "Azərbaycan",
+    "officialNativeName": "",
+    "capital": "Baku",
+    "capitalCoordinates": [
+      40.37767,
+      49.89201
+    ],
+    "coordinates": [
+      0,
+      0
+    ],
+    "continent": "Asia",
+    "region": "Western Asia",
+    "subregion": "Western Asia",
+    "population": 0,
+    "area": 86600,
+    "flagEmoji": "🇦🇿",
+    "tld": "az",
+    "landlocked": true,
+    "borders": [
+      "AM",
+      "GE",
+      "IR",
+      "RU",
+      "TR"
+    ],
+    "languages": [
+      {
+        "code": "az",
+        "iso639_2": "aze",
+        "iso639_3": "aze",
+        "name": "Azerbaijani",
+        "nativeName": "azərbaycan dili",
+        "official": true,
+        "direction": "ltr",
+        "countries": []
+      }
+    ],
+    "demonym": ""
+  },
+  "codes": {
+    "iso3166Alpha2": "AZ",
+    "iso3166Alpha3": "AZE",
+    "iso3166Numeric": "31",
+    "bcp47": [
+      "az-AZ"
+    ],
+    "internetTld": "az",
+    "ioc": "AZE",
+    "fifa": "AZE",
+    "vehicleCode": "AZ",
+    "fips10": "AJ",
+    "unLocode": "AZ",
+    "stanag1059": "AZE",
+    "itu": "AZE",
+    "uic": "57 AZE",
+    "maritime": 423,
+    "mmc": 400
+  },
+  "currency": {
+    "code": "AZN",
+    "numericCode": 944,
+    "name": "Manat",
+    "nativeName": "Azerbaijani manat",
+    "symbol": "₼",
+    "narrowSymbol": "₼",
+    "symbolPosition": "before",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "subunitValue": 100,
+    "subunitName": "Qäpi",
+    "pattern": "#,##0.00 ¤",
+    "example": "",
+    "accountingExample": ""
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "d MMMM y, EEEE",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd.MM.yy"
+    },
+    "timeFormats": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "datePatterns": {
+      "full": "yMMMMEEEEd",
+      "long": "yMMMMd",
+      "medium": "yMMMd",
+      "short": "yyMMdd"
+    },
+    "timePatterns": {
+      "full": "HHmmsszzzz",
+      "long": "HHmmssz",
+      "medium": "HHmmss",
+      "short": "HHmm"
+    },
+    "monthNames": {
+      "wide": [
+        "yanvar",
+        "fevral",
+        "mart",
+        "aprel",
+        "may",
+        "iyun",
+        "iyul",
+        "avqust",
+        "sentyabr",
+        "oktyabr",
+        "noyabr",
+        "dekabr"
+      ],
+      "abbreviated": [
+        "yan",
+        "fev",
+        "mar",
+        "apr",
+        "may",
+        "iyn",
+        "iyl",
+        "avq",
+        "sen",
+        "okt",
+        "noy",
+        "dek"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "dayNames": {
+      "wide": [
+        "bazar",
+        "bazar ertəsi",
+        "çərşənbə axşamı",
+        "çərşənbə",
+        "cümə axşamı",
+        "cümə",
+        "şənbə"
+      ],
+      "abbreviated": [
+        "B.",
+        "B.e.",
+        "Ç.a.",
+        "Ç.",
+        "C.a.",
+        "C.",
+        "Ş."
+      ],
+      "narrow": [
+        "7",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "amPmMarkers": [
+      "AM",
+      "PM"
+    ],
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "primaryTimezone": "UTC+04:00",
+    "utcOffset": "+00:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#,##0.###",
+    "percentExample": "",
+    "example": "",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "",
+    "subscriberNumberLengths": []
+  },
+  "addressFormat": {
+    "format": "%N%n%A%n%Z %C",
+    "lineOrder": [
+      "name",
+      "address",
+      "city"
+    ],
+    "postalCodeFormat": "AZ ####",
+    "postalCodeRegex": "^(?:AZ)*(\\d{4})$",
+    "postalCodeExample": "",
+    "administrativeDivisionName": "Province",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}

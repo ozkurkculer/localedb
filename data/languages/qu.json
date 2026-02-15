@@ -1,0 +1,15 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "data": {
+    "code": "qu",
+    "iso639_2": "que",
+    "iso639_3": "que",
+    "name": "Quechua",
+    "nativeName": "Runa Simi",
+    "direction": "ltr",
+    "countries": [
+      "BO"
+    ]
+  }
+}
