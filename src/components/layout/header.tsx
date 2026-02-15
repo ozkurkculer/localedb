@@ -2,9 +2,12 @@ import Link from "next/link";
 import { Globe } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { mainNav } from "@/config/navigation";
+import { getCountryIndex } from "@/lib/countries";
+import { SearchCommand } from "@/components/search-command";
 import { ThemeToggle } from "./theme-toggle";
 
-export function Header() {
+export async function Header() {
+  const countries = await getCountryIndex();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
@@ -32,13 +35,14 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Right side - Theme toggle & GitHub */}
-        <div className="flex items-center space-x-2">
+        {/* Right side - Search, GitHub & Theme toggle */}
+        <div className="flex flex-1 items-center justify-end space-x-2 sm:flex-initial">
+          <SearchCommand countries={countries} />
           <Link
             href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:block"
+            className="hidden md:block"
           >
             <div className="inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
               GitHub
