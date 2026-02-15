@@ -5,22 +5,26 @@ import { mainNav } from "@/config/navigation";
 import { getCountryIndex } from "@/lib/countries";
 import { SearchCommand } from "@/components/search-command";
 import { ThemeToggle } from "./theme-toggle";
+import { MobileNav } from "./mobile-nav";
 
 export async function Header() {
   const countries = await getCountryIndex();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
+        {/* Mobile Navigation */}
+        <MobileNav />
+
         {/* Logo */}
-        <Link href="/" className="mr-8 flex items-center space-x-2">
+        <Link href="/" className="mr-4 flex items-center space-x-2 md:mr-8">
           <Globe className="h-6 w-6" />
           <span className="hidden font-bold sm:inline-block">
             {siteConfig.name}
           </span>
         </Link>
 
-        {/* Main Navigation */}
-        <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
+        {/* Desktop Navigation */}
+        <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex">
           {mainNav.map((item) => (
             <Link
               key={item.href}

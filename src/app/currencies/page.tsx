@@ -13,8 +13,8 @@ export default async function CurrenciesPage() {
   return (
     <div className="container py-12">
       <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold">Browse Currencies</h1>
-        <p className="text-xl text-muted-foreground">
+        <h1 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">Browse Currencies</h1>
+        <p className="text-base text-muted-foreground sm:text-lg md:text-xl">
           Explore formatting rules and symbols for {currencies.length} currencies
         </p>
       </div>

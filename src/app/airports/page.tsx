@@ -22,8 +22,8 @@ export default async function AirportsPage() {
   return (
     <div className="container py-12">
       <div className="mb-8">
-        <h1 className="mb-2 text-4xl font-bold bg-gradient-to-br from-red-500 to-rose-600 bg-clip-text text-transparent">World Airports</h1>
-        <p className="text-xl text-muted-foreground">
+        <h1 className="mb-2 text-2xl font-bold bg-gradient-to-br from-red-500 to-rose-600 bg-clip-text text-transparent sm:text-3xl md:text-4xl">World Airports</h1>
+        <p className="text-base text-muted-foreground sm:text-lg md:text-xl">
           Comprehensive database of global airports with IATA and ICAO codes.
         </p>
       </div>

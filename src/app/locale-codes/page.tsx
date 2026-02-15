@@ -23,8 +23,8 @@ export default async function LocaleCodesPage() {
   return (
     <div className="container py-12">
       <div className="mb-12">
-        <h1 className="mb-4 text-4xl font-bold">Locale Codes Reference</h1>
-        <p className="text-xl text-muted-foreground">
+        <h1 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">Locale Codes Reference</h1>
+        <p className="text-base text-muted-foreground sm:text-lg md:text-xl">
           BCP-47 locale tags, ISO codes, and currency codes for all {countries.length} countries
         </p>
       </div>
