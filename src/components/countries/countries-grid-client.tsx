@@ -102,13 +102,14 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
       <motion.div
         initial="initial"
         animate="animate"
-        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         {filteredCountries.map((country, index) => (
           <motion.div
             key={country.code}
             variants={fadeInUp}
-            transition={{ duration: 0.3, delay: index * 0.05 }}
+            transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.5) }}
+            className="h-full"
           >
             <CountryCard country={country} />
           </motion.div>
@@ -143,18 +144,32 @@ function CountryCard({ country }: CountryCardProps) {
   return (
     <Link
       href={`/countries/${country.code}`}
-      className="group relative overflow-hidden rounded-lg border border-border/40 bg-card p-6 transition-all hover:border-border hover:shadow-md"
+      className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-border/40 bg-card p-5 transition-all hover:border-border hover:shadow-lg hover:shadow-primary/5"
     >
-      <div className="mb-4 text-5xl">{country.flagEmoji}</div>
-      <h3 className="mb-2 text-xl font-semibold group-hover:text-primary">
+      {/* Flag */}
+      <div className="mb-3 text-4xl">{country.flagEmoji}</div>
+
+      {/* Country Name */}
+      <h3 className="mb-2 line-clamp-1 text-lg font-semibold transition-colors group-hover:text-primary">
         {country.name}
       </h3>
-      <div className="space-y-1 text-sm text-muted-foreground">
-        <p>{country.region}</p>
-        <p className="font-mono">{country.code}</p>
-        <p>
-          {country.currencyCode} · {country.callingCode}
-        </p>
+
+      {/* Meta Info */}
+      <div className="mt-auto space-y-1 text-sm text-muted-foreground">
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center rounded-md bg-muted px-2 py-0.5 text-xs font-medium">
+            {country.continent}
+          </span>
+        </div>
+        <p className="line-clamp-1 text-xs">{country.region}</p>
+        <div className="flex items-center justify-between pt-1">
+          <code className="text-xs font-semibold text-foreground">
+            {country.code}
+          </code>
+          <span className="text-xs">
+            {country.currencyCode} · {country.callingCode}
+          </span>
+        </div>
       </div>
     </Link>
   );
