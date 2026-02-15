@@ -3,9 +3,15 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Search, X } from "lucide-react";
+import { Search, X, ArrowUpDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import type { CountryIndexEntry } from "@/types/country";
 
 interface CountriesGridClientProps {
@@ -17,11 +23,16 @@ const fadeInUp = {
   animate: { opacity: 1, y: 0 },
 };
 
+type SortKey = "name" | "code" | "currency";
+type SortOrder = "asc" | "desc";
+
 export function CountriesGridClient({ countries }: CountriesGridClientProps) {
   const [search, setSearch] = React.useState("");
   const [selectedContinent, setSelectedContinent] = React.useState<
     string | null
   >(null);
+  const [sortKey, setSortKey] = React.useState<SortKey>("name");
+  const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
 
   // Get unique continents
   const continents = React.useMemo(() => {
@@ -29,9 +40,18 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
     return unique.sort();
   }, [countries]);
 
-  // Filter countries
+  const handleSort = (key: SortKey) => {
+    if (sortKey === key) {
+      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    } else {
+      setSortKey(key);
+      setSortOrder("asc");
+    }
+  };
+
+  // Filter and Sort
   const filteredCountries = React.useMemo(() => {
-    return countries.filter((country) => {
+    let result = countries.filter((country) => {
       const matchesSearch =
         search === "" ||
         country.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -44,7 +64,33 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
 
       return matchesSearch && matchesContinent;
     });
-  }, [countries, search, selectedContinent]);
+
+    result.sort((a, b) => {
+      let valA = "";
+      let valB = "";
+
+      switch (sortKey) {
+        case "name":
+          valA = a.name;
+          valB = b.name;
+          break;
+        case "code":
+          valA = a.code;
+          valB = b.code;
+          break;
+        case "currency":
+          valA = a.currencyCode;
+          valB = b.currencyCode;
+          break;
+      }
+
+      return sortOrder === "asc"
+        ? valA.localeCompare(valB)
+        : valB.localeCompare(valA);
+    });
+
+    return result;
+  }, [countries, search, selectedContinent, sortKey, sortOrder]);
 
   return (
     <div className="space-y-8">
@@ -69,27 +115,50 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
           )}
         </div>
 
-        {/* Continent Filter */}
-        <div className="flex flex-wrap gap-2">
-          <Button
-            size="sm"
-            variant={selectedContinent === null ? "default" : "outline"}
-            onClick={() => setSelectedContinent(null)}
-          >
-            All
-          </Button>
-          {continents.map((continent) => (
+        <div className="flex items-center gap-2">
+            {/* Sort Dropdown */}
+            <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="sm" className="gap-2">
+                <ArrowUpDown className="h-4 w-4" />
+                Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+                </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => handleSort("name")}>
+                Name
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleSort("code")}>
+                Country Code
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleSort("currency")}>
+                Currency Code
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Continent Filter */}
+            <div className="flex flex-wrap gap-2">
             <Button
-              key={continent}
-              size="sm"
-              variant={
-                selectedContinent === continent ? "default" : "outline"
-              }
-              onClick={() => setSelectedContinent(continent)}
+                size="sm"
+                variant={selectedContinent === null ? "default" : "outline"}
+                onClick={() => setSelectedContinent(null)}
             >
-              {continent}
+                All
             </Button>
-          ))}
+            {continents.map((continent) => (
+                <Button
+                key={continent}
+                size="sm"
+                variant={
+                    selectedContinent === continent ? "default" : "outline"
+                }
+                onClick={() => setSelectedContinent(continent)}
+                >
+                {continent}
+                </Button>
+            ))}
+            </div>
         </div>
       </div>
 

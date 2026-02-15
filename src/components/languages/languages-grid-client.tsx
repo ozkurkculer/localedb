@@ -3,9 +3,15 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Search, X } from "lucide-react";
+import { Search, X, ArrowUpDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import type { LanguageIndexEntry } from "@/types/language";
 
 interface LanguagesGridClientProps {
@@ -17,12 +23,26 @@ const fadeInUp = {
   animate: { opacity: 1, y: 0 },
 };
 
+type SortKey = "name" | "code" | "native";
+type SortOrder = "asc" | "desc";
+
 export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
   const [search, setSearch] = React.useState("");
+  const [sortKey, setSortKey] = React.useState<SortKey>("name");
+  const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
 
-  // Filter languages
+  const handleSort = (key: SortKey) => {
+    if (sortKey === key) {
+      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    } else {
+      setSortKey(key);
+      setSortOrder("asc");
+    }
+  };
+
+  // Filter and Sort languages
   const filteredLanguages = React.useMemo(() => {
-    return languages.filter((language) => {
+    let result = languages.filter((language) => {
       const matchesSearch =
         search === "" ||
         language.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -31,7 +51,33 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
 
       return matchesSearch;
     });
-  }, [languages, search]);
+
+    result.sort((a, b) => {
+      let valA = "";
+      let valB = "";
+
+      switch (sortKey) {
+        case "name":
+          valA = a.name;
+          valB = b.name;
+          break;
+        case "code":
+          valA = a.code;
+          valB = b.code;
+          break;
+        case "native":
+          valA = a.nativeName;
+          valB = b.nativeName;
+          break;
+      }
+
+      return sortOrder === "asc"
+        ? valA.localeCompare(valB)
+        : valB.localeCompare(valA);
+    });
+
+    return result;
+  }, [languages, search, sortKey, sortOrder]);
 
   return (
     <div className="space-y-8">
@@ -55,6 +101,27 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
             </button>
           )}
         </div>
+
+        {/* Sort Dropdown */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm" className="gap-2">
+              <ArrowUpDown className="h-4 w-4" />
+              Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => handleSort("name")}>
+              Name
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("code")}>
+              Code
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("native")}>
+              Native Name
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
 
       {/* Results Count */}
