@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { getAirportIndex } from "@/lib/airports";
 import { getCountryIndex } from "@/lib/countries";
@@ -27,7 +28,9 @@ export default async function AirportsPage() {
         </p>
       </div>
 
-      <AirportsTableClient airports={airports} countryMap={countryMap} />
+      <Suspense fallback={<div className="text-center py-12">Loading airports...</div>}>
+        <AirportsTableClient airports={airports} countryMap={countryMap} />
+      </Suspense>
     </div>
   );
 }

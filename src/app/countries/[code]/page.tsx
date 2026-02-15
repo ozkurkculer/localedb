@@ -148,10 +148,16 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 ))}
               </div>
               {country.airports.length > 9 && (
-                <div className="text-center">
+                <div className="mt-4 flex flex-col items-center gap-2">
                   <p className="text-sm text-muted-foreground">
                     and {country.airports.length - 9} more airports...
                   </p>
+                  <a 
+                    href={`/airports?search=${encodeURIComponent(country.basics.name)}`}
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 px-4 py-2"
+                  >
+                    Show All Airports
+                  </a>
                 </div>
               )}
             </div>
