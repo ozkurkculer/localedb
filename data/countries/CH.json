@@ -27,7 +27,9 @@
     "population": 0,
     "area": 41284,
     "flagEmoji": "🇨🇭",
-    "tld": "ch",
+    "tld": [
+      "ch"
+    ],
     "landlocked": true,
     "borders": [
       "AT",

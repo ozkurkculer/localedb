@@ -27,7 +27,9 @@
     "population": 0,
     "area": 17098242,
     "flagEmoji": "🇷🇺",
-    "tld": "ru",
+    "tld": [
+      "ru"
+    ],
     "landlocked": false,
     "borders": [
       "AZ",

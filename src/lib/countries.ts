@@ -3,7 +3,7 @@ import path from "path";
 import type { CountryLocaleData, CountryIndexEntry } from "@/types/country";
 
 const DATA_DIR = path.join(process.cwd(), "data", "countries");
-const INDEX_PATH = path.join(process.cwd(), "data", "_index.json");
+const INDEX_PATH = path.join(process.cwd(), "data", "_index_countries.json");
 
 /**
  * Load a single country's full data by alpha-2 code.

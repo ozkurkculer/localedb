@@ -27,7 +27,9 @@
     "population": 0,
     "area": 9984670,
     "flagEmoji": "🇨🇦",
-    "tld": "ca",
+    "tld": [
+      "ca"
+    ],
     "landlocked": false,
     "borders": [
       "US"

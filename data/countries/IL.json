@@ -27,7 +27,9 @@
     "population": 0,
     "area": 20770,
     "flagEmoji": "🇮🇱",
-    "tld": "il",
+    "tld": [
+      "il"
+    ],
     "landlocked": false,
     "borders": [
       "EG",

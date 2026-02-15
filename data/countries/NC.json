@@ -27,7 +27,9 @@
     "population": 0,
     "area": 18575,
     "flagEmoji": "🇳🇨",
-    "tld": "nc",
+    "tld": [
+      "nc"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

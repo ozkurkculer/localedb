@@ -27,7 +27,9 @@
     "population": 0,
     "area": 17818,
     "flagEmoji": "🇰🇼",
-    "tld": "kw",
+    "tld": [
+      "kw"
+    ],
     "landlocked": false,
     "borders": [
       "IQ",

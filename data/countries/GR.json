@@ -27,7 +27,9 @@
     "population": 0,
     "area": 131990,
     "flagEmoji": "🇬🇷",
-    "tld": "gr",
+    "tld": [
+      "gr"
+    ],
     "landlocked": false,
     "borders": [
       "AL",

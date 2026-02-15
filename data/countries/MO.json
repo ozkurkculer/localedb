@@ -27,7 +27,9 @@
     "population": 0,
     "area": 30,
     "flagEmoji": "🇲🇴",
-    "tld": "mo",
+    "tld": [
+      "mo"
+    ],
     "landlocked": false,
     "borders": [
       "CN"

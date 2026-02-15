@@ -27,7 +27,9 @@
     "population": 0,
     "area": 25713,
     "flagEmoji": "🇲🇰",
-    "tld": "mk",
+    "tld": [
+      "mk"
+    ],
     "landlocked": true,
     "borders": [
       "AL",

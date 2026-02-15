@@ -27,7 +27,9 @@
     "population": 0,
     "area": 377930,
     "flagEmoji": "🇯🇵",
-    "tld": "jp",
+    "tld": [
+      "jp"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

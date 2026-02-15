@@ -27,7 +27,9 @@
     "population": 0,
     "area": 9251,
     "flagEmoji": "🇨🇾",
-    "tld": "cy",
+    "tld": [
+      "cy"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

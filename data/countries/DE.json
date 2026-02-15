@@ -27,7 +27,9 @@
     "population": 0,
     "area": 357114,
     "flagEmoji": "🇩🇪",
-    "tld": "de",
+    "tld": [
+      "de"
+    ],
     "landlocked": false,
     "borders": [
       "AT",

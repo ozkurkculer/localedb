@@ -27,7 +27,9 @@
     "population": 0,
     "area": 56594,
     "flagEmoji": "🇭🇷",
-    "tld": "hr",
+    "tld": [
+      "hr"
+    ],
     "landlocked": false,
     "borders": [
       "BA",

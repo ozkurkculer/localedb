@@ -27,7 +27,9 @@
     "population": 0,
     "area": 70273,
     "flagEmoji": "🇮🇪",
-    "tld": "ie",
+    "tld": [
+      "ie"
+    ],
     "landlocked": false,
     "borders": [
       "GB"

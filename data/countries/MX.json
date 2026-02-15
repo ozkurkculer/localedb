@@ -27,7 +27,9 @@
     "population": 0,
     "area": 1964375,
     "flagEmoji": "🇲🇽",
-    "tld": "mx",
+    "tld": [
+      "mx"
+    ],
     "landlocked": false,
     "borders": [
       "BZ",

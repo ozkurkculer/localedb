@@ -27,7 +27,9 @@
     "population": 0,
     "area": 462840,
     "flagEmoji": "🇵🇬",
-    "tld": "pg",
+    "tld": [
+      "pg"
+    ],
     "landlocked": false,
     "borders": [
       "ID"

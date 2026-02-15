@@ -27,7 +27,9 @@
     "population": 0,
     "area": 2381741,
     "flagEmoji": "🇩🇿",
-    "tld": "dz",
+    "tld": [
+      "dz"
+    ],
     "landlocked": false,
     "borders": [
       "TN",

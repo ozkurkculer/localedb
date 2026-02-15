@@ -27,7 +27,9 @@
     "population": 0,
     "area": 181035,
     "flagEmoji": "🇰🇭",
-    "tld": "kh",
+    "tld": [
+      "kh"
+    ],
     "landlocked": false,
     "borders": [
       "LA",

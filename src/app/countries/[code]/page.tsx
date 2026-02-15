@@ -83,6 +83,48 @@ export default async function CountryPage({ params }: CountryPageProps) {
         <InfoCard label="Calling Code" value={country.phone.callingCode} />
       </div>
 
+      {/* Languages & Geography */}
+      <div className="mx-auto mb-8 grid max-w-6xl gap-8 md:grid-cols-2">
+         {/* Languages */}
+         <Section title="Languages">
+            <div className="grid gap-3">
+              {country.basics.languages.map((lang) => (
+                <div key={lang.code} className="flex items-center justify-between rounded-md border border-border/40 bg-background/50 p-3">
+                   <div>
+                      <div className="font-medium">{lang.name}</div>
+                      <div className="text-xs text-muted-foreground">{lang.nativeName}</div>
+                   </div>
+                   <div className="rounded-md bg-muted px-2 py-1 font-mono text-xs">
+                      {lang.code}
+                   </div>
+                </div>
+              ))}
+            </div>
+         </Section>
+
+         {/* Geography */}
+         <Section title="Geography">
+            <div className="grid gap-4 sm:grid-cols-2">
+               <DataItem label="Region" value={country.basics.region} />
+               <DataItem label="Subregion" value={country.basics.subregion} />
+               <DataItem label="Continent" value={country.basics.continent} />
+               <DataItem label="Area" value={`${country.basics.area.toLocaleString()} km²`} />
+               <DataItem label="Landlocked" value={country.basics.landlocked ? "Yes" : "No"} />
+               <DataItem label="TLD" value={country.basics.tld.join(", ")} />
+               {country.basics.borders.length > 0 && (
+                   <div className="col-span-2">
+                      <p className="mb-1 text-sm font-medium text-muted-foreground">Borders</p>
+                      <div className="flex flex-wrap gap-2">
+                        {country.basics.borders.map(border => (
+                           <span key={border} className="rounded-md bg-muted px-2 py-1 text-xs">{border}</span>
+                        ))}
+                      </div>
+                   </div>
+               )}
+            </div>
+         </Section>
+      </div>
+
       {/* Data Sections */}
       <div className="mx-auto max-w-6xl space-y-8">
         {/* Codes */}
@@ -166,6 +208,14 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 value={country.dateTime.primaryTimezone}
               />
               <DataItem label="UTC Offset" value={country.dateTime.utcOffset} />
+              <div className="col-span-2">
+                  <p className="mb-2 text-sm font-medium text-muted-foreground">Timezones</p>
+                  <div className="flex flex-wrap gap-1">
+                      {country.dateTime.timezones.map(tz => (
+                          <span key={tz} className="rounded-md border bg-muted/50 px-2 py-1 text-xs font-mono">{tz}</span>
+                      ))}
+                  </div>
+              </div>
             </div>
           </div>
         </Section>

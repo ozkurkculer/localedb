@@ -27,7 +27,9 @@
     "population": 0,
     "area": 7692024,
     "flagEmoji": "🇦🇺",
-    "tld": "au",
+    "tld": [
+      "au"
+    ],
     "landlocked": false,
     "borders": [],
     "languages": [

@@ -27,7 +27,9 @@
     "population": 0,
     "area": 446550,
     "flagEmoji": "🇲🇦",
-    "tld": "ma",
+    "tld": [
+      "ma"
+    ],
     "landlocked": false,
     "borders": [
       "DZ",

@@ -27,7 +27,9 @@
     "population": 0,
     "area": 390757,
     "flagEmoji": "🇿🇼",
-    "tld": "zw",
+    "tld": [
+      "zw"
+    ],
     "landlocked": true,
     "borders": [
       "BW",

@@ -27,7 +27,9 @@
     "population": 0,
     "area": 34,
     "flagEmoji": "🇸🇽",
-    "tld": "sx",
+    "tld": [
+      "sx"
+    ],
     "landlocked": false,
     "borders": [
       "MF"

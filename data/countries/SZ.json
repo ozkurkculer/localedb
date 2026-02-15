@@ -27,7 +27,9 @@
     "population": 0,
     "area": 17364,
     "flagEmoji": "🇸🇿",
-    "tld": "sz",
+    "tld": [
+      "sz"
+    ],
     "landlocked": true,
     "borders": [
       "MZ",

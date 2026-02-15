@@ -27,7 +27,9 @@
     "population": 0,
     "area": 33846,
     "flagEmoji": "🇲🇩",
-    "tld": "md",
+    "tld": [
+      "md"
+    ],
     "landlocked": true,
     "borders": [
       "RO",

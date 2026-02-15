@@ -27,7 +27,9 @@
     "population": 0,
     "area": 185180,
     "flagEmoji": "🇸🇾",
-    "tld": "sy",
+    "tld": [
+      "sy"
+    ],
     "landlocked": false,
     "borders": [
       "IQ",
