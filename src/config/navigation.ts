@@ -50,7 +50,11 @@ export const mainNav: NavItem[] = [
   },
 ];
 
-export const footerNav = {
+export const footerNav: {
+  resources: NavItem[];
+  community: NavItem[];
+  legal: NavItem[];
+} = {
   resources: [
     {
       title: "Documentation",
@@ -71,16 +75,6 @@ export const footerNav = {
       title: "GitHub",
       href: "https://github.com/ozkurkculer/localedb",
       external: true,
-    },
-    {
-      title: "Twitter",
-      href: "https://twitter.com/localedb",
-      external: true,
-    },
-    {
-      title: "Discord",
-      href: "#",
-      disabled: true,
     },
   ],
   legal: [
