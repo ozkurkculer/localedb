@@ -65,7 +65,7 @@ export function Footer() {
         <div className="mt-12 border-t border-border/40">
           <div className="container flex flex-col items-center justify-between gap-4 pt-8 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              Built with ❤️ by developers, for developers.
+              Built with ❤️ by ozkurkculer, for developers.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               {footerNav.legal.map((item) => (
