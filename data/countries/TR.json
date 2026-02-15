@@ -1,0 +1,130 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-02-15",
+  "sources": ["CLDR 46", "mledoze/countries", "Manual"],
+  "basics": {
+    "name": "Turkey",
+    "officialName": "Republic of Türkiye",
+    "nativeName": "Türkiye",
+    "officialNativeName": "Türkiye Cumhuriyeti",
+    "capital": "Ankara",
+    "capitalCoordinates": [39.9334, 32.8597],
+    "coordinates": [38.9637, 35.2433],
+    "continent": "Asia",
+    "region": "Western Asia",
+    "subregion": "Western Asia",
+    "population": 85279553,
+    "area": 783562,
+    "flagEmoji": "🇹🇷",
+    "tld": ".tr",
+    "landlocked": false,
+    "borders": ["ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR"],
+    "languages": [
+      {
+        "code": "tr",
+        "name": "Turkish",
+        "nativeName": "Türkçe",
+        "official": true
+      }
+    ],
+    "demonym": "Turkish"
+  },
+  "codes": {
+    "iso3166Alpha2": "TR",
+    "iso3166Alpha3": "TUR",
+    "iso3166Numeric": "792",
+    "bcp47": ["tr-TR", "ku-TR", "ar-TR"],
+    "internetTld": ".tr",
+    "ioc": "TUR",
+    "fifa": "TUR"
+  },
+  "currency": {
+    "code": "TRY",
+    "name": "Turkish Lira",
+    "nativeName": "Türk Lirası",
+    "symbol": "₺",
+    "narrowSymbol": "₺",
+    "symbolPosition": "after",
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "decimalDigits": 2,
+    "pattern": "#.##0,00 ¤",
+    "example": "1.250,00 ₺",
+    "accountingExample": "(1.250,00 ₺)"
+  },
+  "dateTime": {
+    "firstDayOfWeek": 1,
+    "clockFormat": "24h",
+    "dateFormats": {
+      "full": "15 Şubat 2026 Pazar",
+      "long": "15 Şubat 2026",
+      "medium": "15 Şub 2026",
+      "short": "15.02.2026"
+    },
+    "timeFormats": {
+      "full": "15:30:00 Türkiye Standart Zamanı",
+      "long": "15:30:00 GMT+3",
+      "medium": "15:30:00",
+      "short": "15:30"
+    },
+    "datePatterns": {
+      "full": "d MMMM y EEEE",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd.MM.y"
+    },
+    "timePatterns": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "monthNames": {
+      "wide": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
+      "abbreviated": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
+      "narrow": ["O", "Ş", "M", "N", "M", "H", "T", "A", "E", "E", "K", "A"]
+    },
+    "dayNames": {
+      "wide": ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"],
+      "abbreviated": ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"],
+      "narrow": ["P", "S", "Ç", "P", "C", "C", "P"]
+    },
+    "amPmMarkers": ["ÖÖ", "ÖS"],
+    "timezones": ["Europe/Istanbul"],
+    "primaryTimezone": "Europe/Istanbul",
+    "utcOffset": "+03:00"
+  },
+  "numberFormat": {
+    "decimalSeparator": ",",
+    "thousandsSeparator": ".",
+    "digitGrouping": "3",
+    "pattern": "#.##0,###",
+    "percentExample": "%25,5",
+    "example": "1.234.567,89",
+    "numberingSystem": "latn"
+  },
+  "phone": {
+    "callingCode": "+90",
+    "trunkPrefix": "0",
+    "internationalPrefix": "00",
+    "exampleFormat": "+90 212 555 1234",
+    "subscriberNumberLengths": [10]
+  },
+  "addressFormat": {
+    "format": "%N%n%O%n%A%n%Z %C/%S",
+    "lineOrder": ["Name", "Organization", "Street Address", "Postal Code + City / Province"],
+    "postalCodeFormat": "NNNNN",
+    "postalCodeRegex": "^\\d{5}$",
+    "postalCodeExample": "34000",
+    "administrativeDivisionName": "İl",
+    "administrativeDivisionType": "Province"
+  },
+  "locale": {
+    "writingDirection": "ltr",
+    "measurementSystem": "metric",
+    "temperatureScale": "celsius",
+    "paperSize": "A4",
+    "drivingSide": "right",
+    "weekNumbering": "ISO"
+  }
+}
