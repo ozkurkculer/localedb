@@ -73,7 +73,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
       {/* Header */}
       <div className="mb-12 text-center">
         <div className="mb-4 text-6xl sm:text-7xl md:text-8xl">{country.basics.flagEmoji}</div>
-        <h1 className="mb-2 text-2xl sm:text-3xl md:text-4xl font-bold bg-gradientw-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent">{country.basics.name}</h1>
+        <h1 className="mb-2 text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent">{country.basics.name}</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
           {country.basics.officialName}
         </p>
