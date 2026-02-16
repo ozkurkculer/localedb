@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { Search, Globe } from "lucide-react";
+import { Search, Globe, Loader2 } from "lucide-react";
 import {
   CommandDialog,
   CommandEmpty,
@@ -13,13 +13,12 @@ import {
 } from "@/components/ui/command";
 import type { CountryIndexEntry } from "@/types/country";
 
-interface SearchCommandProps {
-  countries: CountryIndexEntry[];
-}
-
-export function SearchCommand({ countries }: SearchCommandProps) {
+export function SearchCommand() {
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
+  const [countries, setCountries] = React.useState<CountryIndexEntry[]>([]);
+  const [loading, setLoading] = React.useState(false);
+  const hasFetched = React.useRef(false);
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -32,6 +31,25 @@ export function SearchCommand({ countries }: SearchCommandProps) {
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
   }, []);
+
+  // Fetch countries when dialog opens for the first time
+  React.useEffect(() => {
+    if (open && !hasFetched.current) {
+      setLoading(true);
+      fetch("/api/countries")
+        .then((res) => res.json())
+        .then((data) => {
+          setCountries(data);
+          hasFetched.current = true;
+        })
+        .catch((error) => {
+          console.error("Failed to fetch countries:", error);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    }
+  }, [open]);
 
   const runCommand = React.useCallback((command: () => unknown) => {
     setOpen(false);
@@ -57,29 +75,37 @@ export function SearchCommand({ countries }: SearchCommandProps) {
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Search countries, currencies, codes..." />
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Countries">
-            {countries.map((country) => (
-              <CommandItem
-                key={country.code}
-                value={`${country.name} ${country.code} ${country.currencyCode} ${country.primaryLocale}`}
-                onSelect={() => {
-                  runCommand(() => router.push(`/countries/${country.code}`));
-                }}
-              >
-                <Globe className="mr-2 h-4 w-4" />
-                <span className="mr-2 text-xl">{country.flagEmoji}</span>
-                <div className="flex flex-1 items-center justify-between">
-                  <span>{country.name}</span>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="font-mono">{country.code}</span>
-                    <span>·</span>
-                    <span>{country.currencyCode}</span>
-                  </div>
-                </div>
-              </CommandItem>
-            ))}
-          </CommandGroup>
+          {loading ? (
+            <div className="flex items-center justify-center py-6">
+              <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+            </div>
+          ) : (
+            <>
+              <CommandEmpty>No results found.</CommandEmpty>
+              <CommandGroup heading="Countries">
+                {countries.map((country) => (
+                  <CommandItem
+                    key={country.code}
+                    value={`${country.name} ${country.code} ${country.currencyCode} ${country.primaryLocale}`}
+                    onSelect={() => {
+                      runCommand(() => router.push(`/countries/${country.code}`));
+                    }}
+                  >
+                    <Globe className="mr-2 h-4 w-4" />
+                    <span className="mr-2 text-xl">{country.flagEmoji}</span>
+                    <div className="flex flex-1 items-center justify-between">
+                      <span>{country.name}</span>
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <span className="font-mono">{country.code}</span>
+                        <span>·</span>
+                        <span>{country.currencyCode}</span>
+                      </div>
+                    </div>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </>
+          )}
         </CommandList>
       </CommandDialog>
     </>

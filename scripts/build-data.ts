@@ -583,9 +583,10 @@ async function build() {
 
     // 4. Generate Meta File
     console.log(`📊 Generating metadata...`);
+    const packageJson = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'package.json'), 'utf-8'));
     const meta = {
         buildDate: new Date().toISOString(),
-        version: "0.1.0", // Todo: read from package.json
+        version: packageJson.version,
         stats: {
             countries: countryIndex.length,
             languages: languageIndex.length,
