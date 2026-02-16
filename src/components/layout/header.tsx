@@ -4,14 +4,12 @@ import { Globe } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/config/site";
 import { mainNav } from "@/config/navigation";
-import { getCountryIndex } from "@/lib/countries";
 import { SearchCommand } from "@/components/search-command";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav } from "./mobile-nav";
 import { LocaleSwitcher } from "./locale-switcher";
 
 export async function Header() {
-  const countries = await getCountryIndex();
   const t = await getTranslations();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -45,7 +43,7 @@ export async function Header() {
 
         {/* Right side - Search, GitHub & Theme toggle */}
         <div className="flex flex-1 items-center justify-end space-x-2 sm:flex-initial">
-          <SearchCommand countries={countries} />
+          <SearchCommand />
           <NextLink
             href={siteConfig.links.github}
             target="_blank"

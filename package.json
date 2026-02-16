@@ -10,7 +10,8 @@
         "update:data": "tsx scripts/update-data.ts",
         "full-build": "pnpm update:data && pnpm build:data",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "version": "tsx scripts/generate-changelog.ts"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.15",

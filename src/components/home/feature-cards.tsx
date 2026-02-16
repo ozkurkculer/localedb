@@ -1,9 +1,6 @@
-"use client";
-
 import { Link } from "@/i18n/routing";
 import { Globe2, Code2, Coins, Languages, Plane } from "lucide-react";
-import { motion, useReducedMotion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 interface FeatureCardProps {
   icon?: React.ReactNode;
@@ -12,10 +9,10 @@ interface FeatureCardProps {
   href?: string;
   disabled?: boolean;
   variant?: "default" | "gold" | "green" | "blue" | "red";
-  fadeInUp?: any;
+  animationDelay?: string;
 }
 
-function FeatureCard({ icon, title, description, href, disabled, variant = "default", fadeInUp }: FeatureCardProps) {
+function FeatureCard({ icon, title, description, href, disabled, variant = "default", animationDelay = "" }: FeatureCardProps) {
   const variants = {
     default: {
       icon: "text-primary",
@@ -52,7 +49,7 @@ function FeatureCard({ icon, title, description, href, disabled, variant = "defa
   const styles = variants[variant];
 
   const Content = (
-    <div className={`group relative h-full overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : `hover:border-border hover:shadow-md ${styles.borderHover}`}`}>
+    <div className={`group relative h-full overflow-hidden rounded-lg border border-border/40 bg-background p-6 transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : `hover:border-border hover:shadow-md hover:scale-[1.02] ${styles.borderHover}`}`}>
       {icon && (
         <div className={`mb-4 inline-flex rounded-lg p-3 ${styles.icon} ${styles.iconBg}`}>
           {icon}
@@ -63,56 +60,28 @@ function FeatureCard({ icon, title, description, href, disabled, variant = "defa
     </div>
   );
 
-  const shouldReduceMotion = useReducedMotion();
-
   if (href && !disabled) {
     return (
       <Link href={href}>
-        <motion.div
-          variants={fadeInUp}
-          whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
-          transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
-          className="h-full"
-        >
+        <div className={`h-full ${animationDelay}`}>
           {Content}
-        </motion.div>
+        </div>
       </Link>
     );
   }
 
   return (
-    <motion.div variants={fadeInUp} className="h-full">
+    <div className={`h-full ${animationDelay}`}>
       {Content}
-    </motion.div>
+    </div>
   );
 }
 
-export function FeatureCards() {
-  const shouldReduceMotion = useReducedMotion();
-  const t = useTranslations();
-
-  const fadeInUp = {
-    initial: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: shouldReduceMotion ? 0 : 0.5 },
-  };
-
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: shouldReduceMotion ? 0 : 0.1,
-      },
-    },
-  };
+export async function FeatureCards() {
+  const t = await getTranslations();
 
   return (
-    <motion.section
-      variants={staggerContainer}
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true }}
-      className="mx-auto max-w-5xl pb-24 md:pb-32"
-    >
+    <section className="mx-auto max-w-5xl pb-24 md:pb-32">
       <div className="grid gap-6 sm:grid-cols-2">
         <FeatureCard
           icon={<Globe2 className="h-10 w-10" />}
@@ -120,7 +89,7 @@ export function FeatureCards() {
           description={t("home.features.countries.description")}
           href="/countries"
           variant="blue"
-          fadeInUp={fadeInUp}
+          animationDelay="animate-fade-in-up-delay-4"
         />
         <FeatureCard
           icon={<Languages className="h-10 w-10" />}
@@ -128,7 +97,7 @@ export function FeatureCards() {
           description={t("home.features.languages.description")}
           href="/languages"
           variant="green"
-          fadeInUp={fadeInUp}
+          animationDelay="animate-fade-in-up-delay-5"
         />
         <FeatureCard
           icon={<Coins className="h-10 w-10" />}
@@ -136,7 +105,7 @@ export function FeatureCards() {
           description={t("home.features.currencies.description")}
           href="/currencies"
           variant="gold"
-          fadeInUp={fadeInUp}
+          animationDelay="animate-fade-in-up-delay-6"
         />
         <FeatureCard
            icon={<Plane className="h-10 w-10" />}
@@ -144,7 +113,7 @@ export function FeatureCards() {
           description={t("home.features.airports.description")}
           href="/airports"
           variant="red"
-          fadeInUp={fadeInUp}
+          animationDelay="animate-fade-in-up-delay-7"
         />
         <FeatureCard
            icon={<Code2 className="h-10 w-10" />}
@@ -152,9 +121,9 @@ export function FeatureCards() {
           description={t("home.features.localeCodes.description")}
           href="/locale-codes"
           variant="default"
-          fadeInUp={fadeInUp}
+          animationDelay="animate-fade-in-up-delay-8"
         />
       </div>
-    </motion.section>
+    </section>
   );
 }
