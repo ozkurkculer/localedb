@@ -182,11 +182,7 @@
             },
             "none": "Nenhum país oficial listado."
         },
-        "noData": "Nenhuma moeda encontrada.",
-        "sort": {
-            "name": "Nome",
-            "code": "Código"
-        }
+        "noData": "Nenhuma moeda encontrada."
     },
     "languages": {
         "title": "Idiomas",
@@ -203,11 +199,7 @@
             },
             "none": "Nenhum país oficial listado."
         },
-        "noData": "Nenhum idioma encontrado.",
-        "sort": {
-            "name": "Nome",
-            "code": "Código"
-        }
+        "noData": "Nenhum idioma encontrado."
     },
     "airports": {
         "title": "Aeroportos",
@@ -253,7 +245,11 @@
             "intro": "BCP-47 (Best Current Practice 47) é o padrão para etiquetas de idioma usadas para identificar idiomas, regiões e localidades na internet.",
             "structure": "Uma etiqueta BCP-47 geralmente consiste em: {tag} onde language é um código ISO 639 e REGION é um código ISO 3166-1 alpha-2.",
             "examples": "Exemplos:"
-        }
+        },
+        "search": "Pesquisar por país, código, localidade ou moeda...",
+        "noResults": "Nenhum país encontrado correspondente à sua pesquisa.",
+        "resultsCount": "Mostrando {count} de {total} países",
+        "viewCountry": "Ver detalhes do país"
     },
     "about": {
         "title": "Sobre LocaleDB",
@@ -284,7 +280,11 @@
             },
             "languages": {
                 "title": "Dados de Idiomas",
-                "items": ["Códigos ISO 639-1, 639-2 e 639-3", "Nomes nativos de idiomas", "Países onde são falados"]
+                "items": [
+                    "Códigos ISO 639-1, 639-2 e 639-3",
+                    "Nomes nativos de idiomas",
+                    "Países onde são falados"
+                ]
             },
             "airports": {
                 "title": "Informações de Aeroportos",

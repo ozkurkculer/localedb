@@ -182,11 +182,7 @@
             },
             "none": "Aucun pays officiel répertorié."
         },
-        "noData": "Aucune devise trouvée.",
-        "sort": {
-            "name": "Nom",
-            "code": "Code"
-        }
+        "noData": "Aucune devise trouvée."
     },
     "languages": {
         "title": "Langues",
@@ -203,11 +199,7 @@
             },
             "none": "Aucun pays officiel répertorié."
         },
-        "noData": "Aucune langue trouvée.",
-        "sort": {
-            "name": "Nom",
-            "code": "Code"
-        }
+        "noData": "Aucune langue trouvée."
     },
     "airports": {
         "title": "Aéroports",
@@ -253,7 +245,11 @@
             "intro": "BCP-47 (Best Current Practice 47) est la norme pour les balises de langue utilisées pour identifier les langues, régions et paramètres régionaux sur Internet.",
             "structure": "Une balise BCP-47 se compose généralement de : {tag} où language est un code ISO 639 et REGION est un code ISO 3166-1 alpha-2.",
             "examples": "Exemples :"
-        }
+        },
+        "search": "Rechercher par pays, code, locale ou devise...",
+        "noResults": "Aucun pays correspondant à votre recherche.",
+        "resultsCount": "Affichage de {count} sur {total} pays",
+        "viewCountry": "Voir les détails du pays"
     },
     "about": {
         "title": "À Propos de LocaleDB",
@@ -284,7 +280,11 @@
             },
             "languages": {
                 "title": "Données de Langues",
-                "items": ["Codes ISO 639-1, 639-2 et 639-3", "Noms de langues natifs", "Pays où elles sont parlées"]
+                "items": [
+                    "Codes ISO 639-1, 639-2 et 639-3",
+                    "Noms de langues natifs",
+                    "Pays où elles sont parlées"
+                ]
             },
             "airports": {
                 "title": "Informations sur les Aéroports",
