@@ -245,7 +245,11 @@
             "intro": "BCP-47 (Best Current Practice 47) is the standard for language tags used to identify languages, regions, and locales on the internet.",
             "structure": "A BCP-47 tag typically consists of: {tag} where language is an ISO 639 code and REGION is an ISO 3166-1 alpha-2 code.",
             "examples": "Examples:"
-        }
+        },
+        "search": "Search by country, code, locale, or currency...",
+        "noResults": "No countries found matching your search.",
+        "resultsCount": "Showing {count} of {total} countries",
+        "viewCountry": "View country details"
     },
     "about": {
         "title": "About LocaleDB",

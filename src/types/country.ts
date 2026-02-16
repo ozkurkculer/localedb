@@ -203,18 +203,57 @@ export interface NumberFormatInfo {
 
 // ─── Phone ───────────────────────────────────────────────────────
 
+/** A single phone number formatting rule from libphonenumber */
+export interface PhoneNumberFormat {
+  /** Regex pattern matching the national (significant) number, e.g. "(\\d{3})(\\d{3})(\\d{2})(\\d{2})" */
+  pattern: string;
+  /** Format string using captured groups, e.g. "$1 $2 $3 $4" */
+  format: string;
+  /** Leading digit patterns that select this format */
+  leadingDigits?: string[];
+  /** International format override (if different from national) */
+  intlFormat?: string;
+  /** Rule for prepending national prefix, e.g. "0$1" */
+  nationalPrefixRule?: string;
+}
+
+/** Metadata for a specific phone number type (mobile, fixedLine, etc.) */
+export interface PhoneNumberType {
+  /** National number regex pattern */
+  pattern: string;
+  /** Example national number, e.g. "5012345678" */
+  exampleNumber: string;
+  /** Valid subscriber number lengths */
+  possibleLengths: number[];
+}
+
 export interface PhoneInfo {
-  /** International calling code, e.g. "+90" */
+  /** International calling code with +, e.g. "+90" */
   callingCode: string;
   /** Trunk prefix for domestic calls, e.g. "0" */
   trunkPrefix: string;
   /** International dialing prefix, e.g. "00" */
   internationalPrefix: string;
-  /** Example formatted number, e.g. "+90 212 555 1234" */
+  /** General national number pattern regex */
+  generalPattern: string;
+  /** Available formatting rules (from libphonenumber) */
+  formats: PhoneNumberFormat[];
+  /** Per-type metadata with example numbers and validation */
+  types: {
+    fixedLine?: PhoneNumberType;
+    mobile?: PhoneNumberType;
+    tollFree?: PhoneNumberType;
+    premiumRate?: PhoneNumberType;
+    sharedCost?: PhoneNumberType;
+    voip?: PhoneNumberType;
+    uan?: PhoneNumberType;
+  };
+  /** Example formatted number for display, e.g. "+90 501 234 56 78" */
   exampleFormat: string;
   /** Common phone number lengths (digits after country code) */
   subscriberNumberLengths: number[];
 }
+
 
 // ─── Address Format ──────────────────────────────────────────────
 

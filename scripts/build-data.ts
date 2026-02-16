@@ -2,9 +2,10 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { XMLParser } from 'fast-xml-parser';
 
 // Types
-import { CountryLocaleData, CountryBasics, CodeSystems, DateTimeInfo, NumberFormatInfo, PhoneInfo, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
+import { CountryLocaleData, CountryBasics, CodeSystems, DateTimeInfo, NumberFormatInfo, PhoneInfo, PhoneNumberFormat, PhoneNumberType, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
 import { CurrencyInfo, CurrencyLocaleData, CurrencyIndexEntry } from '../src/types/currency';
 import { Language, LanguageLocaleData, LanguageIndexEntry } from '../src/types/language';
 
@@ -173,6 +174,141 @@ async function loadWorldBankData(): Promise<Map<string, WorldBankData>> {
     return wbDataMap;
 }
 
+// --- Libphonenumber Loader ---
+
+interface PhoneTerritory {
+    countryCode: string;
+    nationalPrefix: string;
+    internationalPrefix: string;
+    generalPattern: string;
+    formats: PhoneNumberFormat[];
+    types: {
+        fixedLine?: PhoneNumberType;
+        mobile?: PhoneNumberType;
+        tollFree?: PhoneNumberType;
+        premiumRate?: PhoneNumberType;
+        sharedCost?: PhoneNumberType;
+        voip?: PhoneNumberType;
+        uan?: PhoneNumberType;
+    };
+}
+
+function parsePossibleLengths(el: any): number[] {
+    if (!el) return [];
+    const nat = el['@_national'] || '';
+    return nat.split(',').map((s: string) => parseInt(s.trim())).filter((n: number) => !isNaN(n));
+}
+
+function parsePhoneType(el: any): PhoneNumberType | undefined {
+    if (!el) return undefined;
+    const pattern = typeof el.nationalNumberPattern === 'string'
+        ? el.nationalNumberPattern.replace(/\s+/g, '') : '';
+    const exampleNumber = el.exampleNumber || '';
+    const possibleLengths = parsePossibleLengths(el.possibleLengths);
+    return { pattern, exampleNumber: String(exampleNumber), possibleLengths };
+}
+
+async function loadLibphonenumber(): Promise<Map<string, PhoneTerritory>> {
+    const xmlPath = path.join(DATA_DIR, 'libphonenumber', 'PhoneNumberMetadata.xml');
+    const map = new Map<string, PhoneTerritory>();
+
+    if (!fs.existsSync(xmlPath)) {
+        console.warn('⚠️  Libphonenumber XML not found, skipping phone metadata');
+        return map;
+    }
+
+    const xmlContent = await fs.promises.readFile(xmlPath, 'utf-8');
+    const parser = new XMLParser({
+        ignoreAttributes: false,
+        attributeNamePrefix: '@_',
+        isArray: (name: string) => ['territory', 'numberFormat', 'leadingDigits', 'intlFormat'].includes(name),
+        trimValues: true,
+    });
+
+    const parsed = parser.parse(xmlContent);
+    const territories = parsed?.phoneNumberMetadata?.territories?.territory || [];
+
+    for (const t of territories) {
+        const id = t['@_id'];
+        if (!id || id === '001') continue; // Skip non-geo entities
+
+        // Parse formats
+        const rawFormats = t.availableFormats?.numberFormat || [];
+        const formats: PhoneNumberFormat[] = rawFormats.map((nf: any) => {
+            const leadingDigits = nf.leadingDigits
+                ? (Array.isArray(nf.leadingDigits) ? nf.leadingDigits : [nf.leadingDigits])
+                    .map((ld: any) => String(ld).replace(/\s+/g, ''))
+                : undefined;
+            const intlFormatRaw = nf.intlFormat;
+            let intlFormat: string | undefined;
+            if (intlFormatRaw) {
+                const intlVal = Array.isArray(intlFormatRaw) ? intlFormatRaw[0] : intlFormatRaw;
+                if (intlVal !== 'NA') intlFormat = String(intlVal);
+            }
+            return {
+                pattern: nf['@_pattern'] || '',
+                format: String(nf.format || ''),
+                leadingDigits,
+                intlFormat,
+                nationalPrefixRule: nf['@_nationalPrefixFormattingRule'] || undefined,
+            };
+        });
+
+        // Parse general pattern
+        const generalPattern = t.generalDesc?.nationalNumberPattern
+            ? String(t.generalDesc.nationalNumberPattern).replace(/\s+/g, '')
+            : '';
+
+        const territory: PhoneTerritory = {
+            countryCode: t['@_countryCode'] || '',
+            nationalPrefix: t['@_nationalPrefix'] || '',
+            internationalPrefix: t['@_internationalPrefix'] || '',
+            generalPattern,
+            formats,
+            types: {
+                fixedLine: parsePhoneType(t.fixedLine),
+                mobile: parsePhoneType(t.mobile),
+                tollFree: parsePhoneType(t.tollFree),
+                premiumRate: parsePhoneType(t.premiumRate),
+                sharedCost: parsePhoneType(t.sharedCost),
+                voip: parsePhoneType(t.voip),
+                uan: parsePhoneType(t.uan),
+            },
+        };
+
+        map.set(id, territory);
+    }
+
+    return map;
+}
+
+// Helper: format a phone example number using the first matching format pattern
+function formatExampleNumber(phoneMeta: PhoneTerritory): string {
+    const example = phoneMeta.types.mobile?.exampleNumber || phoneMeta.types.fixedLine?.exampleNumber || '';
+    if (!example || phoneMeta.formats.length === 0) {
+        return `+${phoneMeta.countryCode} ${example}`;
+    }
+
+    // Try to match a format pattern
+    for (const fmt of phoneMeta.formats) {
+        try {
+            const regex = new RegExp(`^${fmt.pattern}$`);
+            if (regex.test(example)) {
+                // If intlFormat exists, use it generally (it usually doesn't have national prefix)
+                if (fmt.intlFormat && fmt.intlFormat !== 'NA') {
+                    return `+${phoneMeta.countryCode} ` + example.replace(regex, fmt.intlFormat);
+                }
+
+                // Otherwise use the standard format, but DO NOT apply national prefix for international numbers
+                // Libphonenumber strips national prefix for international formatting
+                return `+${phoneMeta.countryCode} ` + example.replace(regex, fmt.format);
+            }
+        } catch { /* regex might be invalid, skip */ }
+    }
+
+    return `+${phoneMeta.countryCode} ${example}`;
+}
+
 // --- Main Build Process ---
 
 async function build() {
@@ -192,6 +328,10 @@ async function build() {
 
     console.log('📦 Loading World Bank (Layer 2)...');
     const wbDataMap = await loadWorldBankData();
+
+    console.log('📞 Loading Libphonenumber (Phone Metadata)...');
+    const phoneMetaMap = await loadLibphonenumber();
+    console.log(`   Loaded phone metadata for ${phoneMetaMap.size} territories`);
 
     // 2. Process Airports (Priority: mwgg > iata)
     console.log(`✈️  Processing airports...`);
@@ -402,6 +542,8 @@ async function build() {
             const wbData = iso3 ? wbDataMap.get(iso3) : undefined;
             const countryAirports = airportsMap.get(isoCode) || [];
 
+            const phoneMeta = phoneMetaMap.get(isoCode);
+
             await processCountry(
                 isoCode,
                 slCountry,
@@ -411,7 +553,8 @@ async function build() {
                 languageUsageMap,
                 currencyUsageMap,
                 currencyInfoMap,
-                countryAirports
+                countryAirports,
+                phoneMeta
             );
         }));
         if (global.gc) global.gc();
@@ -474,7 +617,8 @@ async function processCountry(
     langMap: Record<string, string[]>,
     currencyMap: Record<string, string[]>,
     currencyInfoMap: Record<string, CurrencyInfo>,
-    airports: any[]
+    airports: any[],
+    phoneMeta: PhoneTerritory | undefined
 ) {
     const primaryLang = slData.languages?.[0]?.iso_639_1 || 'en';
     const cldrLocale = `${primaryLang}-${isoCode}`;
@@ -685,13 +829,37 @@ async function processCountry(
             example: new Intl.NumberFormat(cldrLocale).format(1234567.89),
             numberingSystem: numbers?.defaultNumberingSystem || "latn"
         },
-        phone: {
-            callingCode: mledozeData?.idd?.root ? mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "") : "",
-            trunkPrefix: "0",
-            internationalPrefix: "00",
-            exampleFormat: (mledozeData?.idd?.root ? (mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "")) : "") + " 555 123 4567",
-            subscriberNumberLengths: []
-        },
+        phone: (() => {
+            // Priority: libphonenumber > mledoze > SL
+            const callingCode = phoneMeta
+                ? `+${phoneMeta.countryCode}`
+                : (mledozeData?.idd?.root ? mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "") : "");
+            const trunkPrefix = phoneMeta?.nationalPrefix || "0";
+            const internationalPrefix = phoneMeta?.internationalPrefix?.replace(/[^0-9]/g, '') || "00";
+            const generalPattern = phoneMeta?.generalPattern || "";
+            const formats: PhoneNumberFormat[] = phoneMeta?.formats || [];
+            const types = phoneMeta?.types || {};
+
+            // Collect all possible subscriber lengths from types
+            const allLengths = new Set<number>();
+            for (const t of Object.values(types)) {
+                if (t?.possibleLengths) t.possibleLengths.forEach(l => allLengths.add(l));
+            }
+
+            const exampleFormat = phoneMeta ? formatExampleNumber(phoneMeta)
+                : callingCode + " 555 123 4567";
+
+            return {
+                callingCode,
+                trunkPrefix,
+                internationalPrefix,
+                generalPattern,
+                formats,
+                types,
+                exampleFormat,
+                subscriberNumberLengths: Array.from(allLengths).sort((a, b) => a - b),
+            };
+        })(),
         addressFormat: {
             format: "%N%n%A%n%Z %C",
             lineOrder: ["name", "address", "city"],

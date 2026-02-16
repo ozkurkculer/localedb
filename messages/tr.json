@@ -245,7 +245,11 @@
             "intro": "BCP-47 (Best Current Practice 47), internette dilleri, bölgeleri ve yerel ayarları tanımlamak için kullanılan dil etiketleri standardıdır.",
             "structure": "Bir BCP-47 etiketi genellikle şunlardan oluşur: {tag} burada language bir ISO 639 kodu ve REGION bir ISO 3166-1 alpha-2 kodudur.",
             "examples": "Örnekler:"
-        }
+        },
+        "search": "Ülke, kod, yerel ayar veya para birimi ile ara...",
+        "noResults": "Aramanızla eşleşen ülke bulunamadı.",
+        "resultsCount": "{total} ülkeden {count} tanesi gösteriliyor",
+        "viewCountry": "Ülke detaylarını görüntüle"
     },
     "about": {
         "title": "LocaleDB Hakkında",

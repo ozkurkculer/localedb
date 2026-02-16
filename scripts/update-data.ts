@@ -150,6 +150,14 @@ async function updateCLDR() {
     });
 }
 
+async function updateLibphonenumber() {
+    console.log('\n--- Libphonenumber ---');
+    const url = 'https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml';
+    const outputDir = path.join(DATA_DIR, 'libphonenumber');
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    await downloadFile(url, path.join(outputDir, 'PhoneNumberMetadata.xml'));
+}
+
 async function updateICU() {
     console.log('\n--- ICU ---');
     let version = process.env.ICU_VERSION || 'latest';
@@ -171,7 +179,7 @@ async function updateICU() {
 
 async function main() {
     const args = process.argv.slice(2);
-    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu'];
+    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber'];
 
     // Check for helps/list
     if (args.includes('--help') || args.includes('-h')) {
@@ -206,6 +214,7 @@ If no source is specified, ALL sources will be updated.
         if (sourcesToUpdate.includes('worldbank')) await updateWorldBank();
         if (sourcesToUpdate.includes('cldr')) await updateCLDR();
         if (sourcesToUpdate.includes('icu')) await updateICU();
+        if (sourcesToUpdate.includes('libphonenumber')) await updateLibphonenumber();
 
         console.log('\n✨ Selected data sources updated successfully!');
     } catch (error) {
