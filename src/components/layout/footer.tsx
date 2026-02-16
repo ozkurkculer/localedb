@@ -1,8 +1,11 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import NextLink from "next/link";
+import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/config/site";
 import { footerNav } from "@/config/navigation";
 
-export function Footer() {
+export async function Footer() {
+  const t = await getTranslations();
   return (
     <footer className="border-t border-border/40 py-12 md:py-16">
         <div className="grid container grid-cols-2 gap-8 md:grid-cols-4">
@@ -12,13 +15,13 @@ export function Footer() {
               <span className="font-bold">{siteConfig.name}</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              {siteConfig.description}
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Resources */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Resources</h3>
+            <h3 className="mb-4 text-sm font-semibold">{t("footer.sections.resources.title")}</h3>
             <ul className="space-y-3 text-sm">
               {footerNav.resources.map((item) => (
                 <li key={item.href}>
@@ -29,7 +32,7 @@ export function Footer() {
                       ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
                     `}
                   >
-                    {item.title}
+                    {t(item.title as any)}
                   </Link>
                 </li>
               ))}
@@ -38,25 +41,28 @@ export function Footer() {
 
           {/* Community */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Community</h3>
+            <h3 className="mb-4 text-sm font-semibold">{t("footer.sections.community.title")}</h3>
             <ul className="space-y-3 text-sm">
-              {footerNav.community.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`
-                      text-muted-foreground transition-colors hover:text-foreground
-                      ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
-                    `}
-                    {...(item.external && {
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    })}
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+              {footerNav.community.map((item) => {
+                const LinkComponent = item.external ? NextLink : Link;
+                return (
+                  <li key={item.href}>
+                    <LinkComponent
+                      href={item.href}
+                      className={`
+                        text-muted-foreground transition-colors hover:text-foreground
+                        ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
+                      `}
+                      {...(item.external && {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })}
+                    >
+                      {t(item.title as any)}
+                    </LinkComponent>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -68,19 +74,22 @@ export function Footer() {
               Built with ❤️ by ozkurkculer, for developers.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              {footerNav.legal.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="transition-colors hover:text-foreground"
-                  {...(item.external && {
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                  })}
-                >
-                  {item.title}
-                </Link>
-              ))}
+              {footerNav.legal.map((item) => {
+                const LinkComponent = item.external ? NextLink : Link;
+                return (
+                  <LinkComponent
+                    key={item.href}
+                    href={item.href}
+                    className="transition-colors hover:text-foreground"
+                    {...(item.external && {
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })}
+                  >
+                    {t(item.title as any)}
+                  </LinkComponent>
+                );
+              })}
             </div>
           </div>
         </div>

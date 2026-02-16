@@ -2,8 +2,7 @@ import { readFile } from "fs/promises";
 import path from "path";
 import type { Airport } from "@/types/airport";
 
-const DATA_DIR = path.join(process.cwd(), "data");
-const AIRPORTS_INDEX_PATH = path.join(DATA_DIR, "_index_airports.json");
+const AIRPORTS_INDEX_PATH = path.join(process.cwd(), "data", "_index_airports.json");
 
 /**
  * Load the airport index.
@@ -13,8 +12,10 @@ export async function getAirportIndex(): Promise<Airport[]> {
   try {
     const raw = await readFile(AIRPORTS_INDEX_PATH, "utf-8");
     return JSON.parse(raw) as Airport[];
-  } catch (error) {
-    console.error("Failed to load airport index:", error);
+  } catch (error: any) {
+    if (error.code !== 'ENOENT') {
+      console.error("Failed to load airport index:", error);
+    }
     return [];
   }
 }

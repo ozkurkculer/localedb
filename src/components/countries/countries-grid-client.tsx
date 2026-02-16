@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Search, X, ArrowUpDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,6 +28,7 @@ type SortKey = "name" | "code" | "currency";
 type SortOrder = "asc" | "desc";
 
 export function CountriesGridClient({ countries }: CountriesGridClientProps) {
+  const t = useTranslations();
   const [search, setSearch] = React.useState("");
   const [selectedContinent, setSelectedContinent] = React.useState<
     string | null
@@ -85,8 +87,8 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
       }
 
       return sortOrder === "asc"
-        ? valA.localeCompare(valB)
-        : valB.localeCompare(valA);
+        ? valA.localeCompare(valB, 'en')
+        : valB.localeCompare(valA, 'en');
     });
 
     return result;
@@ -100,7 +102,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
         <div className="relative flex-1 sm:max-w-md">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
-            placeholder="Search by name, code, currency..."
+            placeholder={t("countries.search")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 pr-9"
@@ -116,49 +118,49 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
         </div>
 
         <div className="flex items-center flex-col-reverse md:flex-row-reverse gap-4 md:gap-2">
-            {/* Sort Dropdown */}
-            <DropdownMenu>
+          {/* Sort Dropdown */}
+          <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="gap-2">
+              <Button variant="outline" size="sm" className="gap-2">
                 <ArrowUpDown className="h-4 w-4" />
-                Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
-                </Button>
+                {t(`countries.sort.${sortKey}`)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => handleSort("name")}>
-                Name
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleSort("code")}>
-                Country Code
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleSort("currency")}>
-                Currency Code
-                </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleSort("name")}>
+                {t("countries.sort.name")}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleSort("code")}>
+                {t("countries.sort.name")}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleSort("currency")}>
+                {t("currencies.title")}
+              </DropdownMenuItem>
             </DropdownMenuContent>
-            </DropdownMenu>
+          </DropdownMenu>
 
-            {/* Continent Filter */}
-            <div className="flex flex-wrap gap-2">
+          {/* Continent Filter */}
+          <div className="flex flex-wrap gap-2">
             <Button
-                size="sm"
-                variant={selectedContinent === null ? "default" : "outline"}
-                onClick={() => setSelectedContinent(null)}
+              size="sm"
+              variant={selectedContinent === null ? "default" : "outline"}
+              onClick={() => setSelectedContinent(null)}
             >
-                All
+              {t("countries.filters.continent.all")}
             </Button>
             {continents.map((continent) => (
-                <Button
+              <Button
                 key={continent}
                 size="sm"
                 variant={
-                    selectedContinent === continent ? "default" : "outline"
+                  selectedContinent === continent ? "default" : "outline"
                 }
                 onClick={() => setSelectedContinent(continent)}
-                >
+              >
                 {continent}
-                </Button>
+              </Button>
             ))}
-            </div>
+          </div>
         </div>
       </div>
 
@@ -169,15 +171,17 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
 
       {/* Grid */}
       <motion.div
-        initial="initial"
-        animate="animate"
+        layout
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
-        {filteredCountries.map((country, index) => (
+        {filteredCountries.map((country) => (
           <motion.div
             key={country.code}
-            variants={fadeInUp}
-            transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.5) }}
+            layout
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.2 }}
             className="h-full"
           >
             <CountryCard country={country} />
@@ -188,7 +192,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
       {/* Empty State */}
       {filteredCountries.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-muted-foreground">No countries found.</p>
+          <p className="text-muted-foreground">{t("common.notFound")}</p>
           <Button
             variant="link"
             onClick={() => {
@@ -197,7 +201,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
             }}
             className="mt-2"
           >
-            Clear filters
+            {t("common.notFound")}
           </Button>
         </div>
       )}

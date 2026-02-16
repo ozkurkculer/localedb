@@ -1,14 +1,18 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import NextLink from "next/link";
 import { Globe } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/config/site";
 import { mainNav } from "@/config/navigation";
 import { getCountryIndex } from "@/lib/countries";
 import { SearchCommand } from "@/components/search-command";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav } from "./mobile-nav";
+import { LocaleSwitcher } from "./locale-switcher";
 
 export async function Header() {
   const countries = await getCountryIndex();
+  const t = await getTranslations();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
@@ -30,11 +34,11 @@ export async function Header() {
               key={item.href}
               href={item.href}
               className={`
-                transition-colors hover:text-foreground/80
+                text-foreground/80 transition-colors hover:text-foreground
                 ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
               `}
             >
-              {item.title}
+              {t(item.title as any)}
             </Link>
           ))}
         </nav>
@@ -42,16 +46,17 @@ export async function Header() {
         {/* Right side - Search, GitHub & Theme toggle */}
         <div className="flex flex-1 items-center justify-end space-x-2 sm:flex-initial">
           <SearchCommand countries={countries} />
-          <Link
+          <NextLink
             href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block"
           >
-            <div className="inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
-              GitHub
+            <div className="inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
+              {t("footer.sections.resources.github")}
             </div>
-          </Link>
+          </NextLink>
+          <LocaleSwitcher />
           <ThemeToggle />
         </div>
       </div>

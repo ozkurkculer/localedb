@@ -1,0 +1,520 @@
+{
+    "site": {
+        "name": "LocaleDB",
+        "title": "LocaleDB - 包括的なローカリゼーションデータ",
+        "description": "国際的なアプリケーションを構築する開発者向けの、国、通貨、言語、ロケールコードの無料オープンソースデータベース。",
+        "keywords": "ロケールデータ, ローカリゼーション, i18n, 国際化, 国, 通貨, 言語, BCP-47, ISOコード"
+    },
+    "nav": {
+        "countries": "国",
+        "currencies": "通貨",
+        "languages": "言語",
+        "airports": "空港",
+        "localeCodes": "ロケールコード",
+        "about": "について",
+        "contributing": "貢献",
+        "roadmap": "ロードマップ"
+    },
+    "home": {
+        "badge": "オープンソース ローカリゼーションデータ",
+        "title": {
+            "the": "",
+            "localization": "開発者のための",
+            "forDevelopers": "ローカリゼーション百科事典"
+        },
+        "features": {
+            "countries": {
+                "title": "国",
+                "description": "コード、通貨、フォーマットを含む250以上の国のローカリゼーションデータを閲覧できます。"
+            },
+            "languages": {
+                "title": "言語",
+                "description": "ネイティブ名と国を含む、世界の言語の処理済みデータを探索できます。"
+            },
+            "currencies": {
+                "title": "通貨フォーマット",
+                "description": "世界中のすべての通貨の記号の位置、区切り文字、パターン。"
+            },
+            "airports": {
+                "title": "空港",
+                "description": "IATA/ICAOコード、座標、地域を含む9,000以上の空港のデータベース。"
+            },
+            "localeCodes": {
+                "title": "ロケールコード",
+                "description": "ISO 3166、BCP47、RFC4647、およびすべての国際標準のリファレンス。"
+            }
+        },
+        "cta": {
+            "browseCountries": "国を閲覧",
+            "viewOnGitHub": "GitHubで見る"
+        }
+    },
+    "countries": {
+        "title": "国",
+        "subtitle": "{count}か国の包括的なローカリゼーションデータ",
+        "search": "国を検索...",
+        "filters": {
+            "continent": {
+                "all": "すべての大陸",
+                "africa": "アフリカ",
+                "antarctica": "南極大陸",
+                "asia": "アジア",
+                "europe": "ヨーロッパ",
+                "northAmerica": "北アメリカ",
+                "oceania": "オセアニア",
+                "southAmerica": "南アメリカ"
+            }
+        },
+        "sort": {
+            "name": "名前",
+            "code": "コード",
+            "population": "人口",
+            "area": "面積"
+        },
+        "detail": {
+            "capital": "首都",
+            "population": "人口",
+            "currency": {
+                "name": "名前",
+                "nativeName": "ネイティブ名",
+                "code": "コード",
+                "symbol": "記号",
+                "symbolPosition": "記号の位置",
+                "decimalSeparator": "小数点記号",
+                "thousandsSeparator": "桁区切り記号",
+                "decimalDigits": "小数桁数",
+                "example": "例："
+            },
+            "callingCode": "国番号",
+            "sections": {
+                "languages": "言語",
+                "geography": "地理",
+                "airports": "空港",
+                "codes": "国コード",
+                "currencyFormat": "通貨フォーマット",
+                "dateTime": "日付と時刻のフォーマット",
+                "numberFormat": "数値フォーマット",
+                "locale": "ロケール設定",
+                "rawJson": "生JSONデータ"
+            },
+            "geography": {
+                "region": "地域",
+                "subregion": "小地域",
+                "continent": "大陸",
+                "area": "面積",
+                "landlocked": "内陸国",
+                "tld": "トップレベルドメイン",
+                "borders": "国境",
+                "yes": "はい",
+                "no": "いいえ"
+            },
+            "airports": {
+                "count": "空港 ({count})",
+                "more": "その他{count}の空港...",
+                "showAll": "すべての空港を表示",
+                "none": "リストされている空港はありません。"
+            },
+            "codes": {
+                "alpha2": "ISO 3166-1 Alpha-2",
+                "alpha3": "ISO 3166-1 Alpha-3",
+                "numeric": "ISO 3166-1 Numeric",
+                "bcp47": "BCP 47",
+                "ioc": "IOC",
+                "fifa": "FIFA"
+            },
+            "dateTime": {
+                "dateFormats": "日付フォーマット",
+                "timeFormats": "時刻フォーマット",
+                "full": "完全",
+                "long": "長い",
+                "medium": "中程度",
+                "short": "短い",
+                "firstDayOfWeek": "週の最初の日",
+                "clockFormat": "時計フォーマット",
+                "primaryTimezone": "主なタイムゾーン",
+                "utcOffset": "UTCオフセット",
+                "timezones": "タイムゾーン",
+                "monday": "月曜日",
+                "sunday": "日曜日"
+            },
+            "numberFormat": {
+                "decimalSeparator": "小数点記号",
+                "thousandsSeparator": "桁区切り記号",
+                "digitGrouping": "桁のグループ化",
+                "numberingSystem": "数字システム",
+                "example": "例："
+            },
+            "locale": {
+                "writingDirection": "書字方向",
+                "measurementSystem": "測定システム",
+                "temperatureScale": "温度スケール",
+                "paperSize": "用紙サイズ",
+                "drivingSide": "運転側",
+                "weekNumbering": "週の番号付け"
+            }
+        },
+        "noData": "国が見つかりません。"
+    },
+    "currencies": {
+        "title": "通貨",
+        "subtitle": "{count}の世界通貨のフォーマットパターンと記号",
+        "search": "通貨を検索...",
+        "sort": {
+            "name": "名前",
+            "code": "コード"
+        },
+        "detail": {
+            "numeric": "数値：",
+            "sections": {
+                "formattingRules": "フォーマット規則",
+                "usedIn": "使用地域 ({count}か国)",
+                "rawJson": "生JSONデータ"
+            },
+            "formatting": {
+                "decimalSeparator": "小数点記号",
+                "thousandsSeparator": "桁区切り記号",
+                "symbolPosition": "記号の位置",
+                "decimalDigits": "小数桁数",
+                "subunit": "補助単位",
+                "pattern": "パターン",
+                "standardExample": "標準例",
+                "accountingExample": "会計例"
+            },
+            "none": "公式な国はリストされていません。"
+        },
+        "noData": "通貨が見つかりません。",
+        "sort": {
+            "name": "名前",
+            "code": "コード"
+        }
+    },
+    "languages": {
+        "title": "言語",
+        "subtitle": "{count}の世界言語のネイティブ名と使用データ",
+        "search": "言語を検索...",
+        "sort": {
+            "name": "名前",
+            "code": "コード"
+        },
+        "detail": {
+            "sections": {
+                "spokenIn": "話されている地域 ({count}か国)",
+                "rawJson": "生JSONデータ"
+            },
+            "none": "公式な国はリストされていません。"
+        },
+        "noData": "言語が見つかりません。",
+        "sort": {
+            "name": "名前",
+            "code": "コード"
+        }
+    },
+    "airports": {
+        "title": "空港",
+        "subtitle": "IATA/ICAOコード付きの世界中の{count}の空港のデータベース",
+        "search": "名前、都市、IATA、またはICAOコードで検索...",
+        "filters": {
+            "region": {
+                "all": "すべての地域",
+                "africa": "アフリカ",
+                "antarctica": "南極大陸",
+                "asia": "アジア",
+                "europe": "ヨーロッパ",
+                "northAmerica": "北アメリカ",
+                "oceania": "オセアニア",
+                "southAmerica": "南アメリカ"
+            }
+        },
+        "table": {
+            "iata": "IATA",
+            "icao": "ICAO",
+            "name": "空港名",
+            "city": "都市",
+            "country": "国",
+            "region": "地域"
+        }
+    },
+    "localeCodes": {
+        "title": "ロケールコードリファレンス",
+        "subtitle": "すべての{count}か国のBCP-47ロケールタグ、ISOコード、通貨コード",
+        "mobileHint": "💡 左にスワイプして他の列を表示",
+        "table": {
+            "flag": "国旗",
+            "country": "国",
+            "alpha2": "Alpha-2",
+            "bcp47": "BCP-47",
+            "currency": "通貨",
+            "callingCode": "国番号",
+            "region": "地域",
+            "caption": "すべての国のISO 3166-1およびBCP-47ロケールコード"
+        },
+        "about": {
+            "title": "BCP-47について",
+            "intro": "BCP-47（Best Current Practice 47）は、インターネット上で言語、地域、ロケールを識別するために使用される言語タグの標準です。",
+            "structure": "BCP-47タグは通常、次のもので構成されます：{tag}、ここでlanguageはISO 639コードで、REGIONはISO 3166-1 alpha-2コードです。",
+            "examples": "例："
+        }
+    },
+    "about": {
+        "title": "LocaleDBについて",
+        "intro": "LocaleDBは、国際的なアプリケーションを構築する開発者のための包括的なオープンソースのローカリゼーションデータベースです。CLDR、ISO標準、OpenFlightsなどの権威ある情報源からデータを集約および処理しています。",
+        "whatIsIncluded": {
+            "title": "含まれるもの",
+            "countries": {
+                "title": "国データ",
+                "items": [
+                    "ISO 3166-1コード（Alpha-2、Alpha-3、Numeric）",
+                    "BCP-47ロケールタグ",
+                    "通貨フォーマットパターン",
+                    "日付と時刻のフォーマット",
+                    "数値フォーマット規則",
+                    "電話コードとトップレベルドメイン",
+                    "地理情報（地域、大陸、国境）"
+                ]
+            },
+            "currencies": {
+                "title": "通貨フォーマット",
+                "items": ["記号の配置", "小数点と桁区切り記号", "小数桁数", "補助単位情報", "会計フォーマットの例"]
+            },
+            "languages": {
+                "title": "言語データ",
+                "items": ["ISO 639-1、639-2、639-3コード", "ネイティブ言語名", "話されている国"]
+            },
+            "airports": {
+                "title": "空港情報",
+                "items": ["IATAおよびICAOコード", "地理座標", "地域および国データ", "都市およびタイムゾーン情報"]
+            }
+        },
+        "sources": {
+            "title": "データソース",
+            "description": "当社のデータは、信頼できる権威ある情報源から集約されています：",
+            "cldr": "Unicode CLDR（Common Locale Data Repository）",
+            "iso": "ISO標準組織",
+            "openflights": "OpenFlights空港データベース",
+            "restcountries": "REST Countries API",
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "IP2Location Airports",
+                "Google libaddressinput",
+                "Community Contributions"
+            ]
+        },
+        "openSource": {
+            "title": "オープンソース",
+            "description": "LocaleDBは完全に無料でオープンソースです。このデータを制限なくプロジェクトで使用できます。ソースコードとデータは、MITライセンスの下でGitHubで入手できます。"
+        },
+        "hero": {
+            "title": "モダンアプリのためのグローバルデータ",
+            "subtitle": "LocaleDBは、国際的なアプリケーションを構築する開発者のための包括的なオープンソースのローカリゼーションデータベースです。CLDR、ISO標準、OpenFlightsなどの権威ある情報源からデータを集約および処理しています。"
+        },
+        "challenge": {
+            "title": "課題",
+            "items": {
+                "currency": "通貨記号の配置（前？後？）",
+                "date": "日付フォーマットの違い（DD/MM vs MM/DD）",
+                "number": "数値区切り記号（1,250.00 vs 1.250,00）",
+                "address": "住所フォーマットの規則",
+                "timezone": "タイムゾーンとカレンダーシステム",
+                "documentation": "散在したドキュメントと重いライブラリ"
+            }
+        },
+        "solution": {
+            "title": "私たちのソリューション",
+            "comprehensive": {
+                "title": "包括的なデータ",
+                "items": [
+                    "すべての国の構造化JSON",
+                    "すぐに使えるフォーマット規則",
+                    "CLDRベースの正確性",
+                    "グローバル空港データベース（IATA/ICAO）"
+                ]
+            },
+            "developerExp": {
+                "title": "開発者体験",
+                "items": ["高速な静的生成", "サーバー不要", "オープンソース（MITライセンス）", "コミュニティ貢献"]
+            }
+        },
+        "cta": {
+            "title": "オープンソースとコミュニティ主導",
+            "description": "LocaleDBはMITライセンスであり、貢献を歓迎します。タイプミスの修正、欠落している国の追加、UIの改善など、あなたの助けを歓迎します。",
+            "github": "GitHubで見る",
+            "contributing": "貢献ガイド"
+        }
+    },
+    "contributing": {
+        "title": "LocaleDBへの貢献",
+        "intro": "LocaleDBはオープンソースプロジェクトであり、コミュニティからの貢献を歓迎します。バグの報告、機能の提案、コードの提出など、あなたの貢献は、すべての人にとってLocaleDBをより良くするのに役立ちます。",
+        "howToContribute": {
+            "title": "貢献方法",
+            "items": [
+                "GitHubでissueを開いてバグを報告するか、機能を提案する",
+                "プルリクエストを送信してバグを修正するか、機能を実装する",
+                "ドキュメントを改善するか、例を追加する",
+                "不一致を報告してデータの正確性を支援する",
+                "LocaleDBを役立つと思う他の開発者と共有する"
+            ]
+        },
+        "guidelines": {
+            "title": "貢献ガイドライン",
+            "codeQuality": {
+                "title": "コード品質",
+                "description": "既存のコードスタイルとパターンに従ってください。明確なコミットメッセージを書き、新機能のテストを含めてください。"
+            },
+            "dataAccuracy": {
+                "title": "データの正確性",
+                "description": "ロケールデータを更新する際は、権威ある情報源を引用してください。変更がISO標準とCLDRデータに沿っていることを確認してください。"
+            },
+            "documentation": {
+                "title": "ドキュメント",
+                "description": "機能を追加または変更する際は、関連するドキュメントを更新してください。適切な場所に例を含めてください。"
+            },
+            "pullRequests": {
+                "title": "プルリクエスト",
+                "items": [
+                    "PRごとに1つの変更",
+                    "明確で説明的なコミットメッセージ",
+                    "公式ソースへのリンク（CLDR、政府サイト）"
+                ]
+            },
+            "resources": {
+                "title": "リソース",
+                "items": [
+                    "<linkCLDR>CLDRリポジトリ</linkCLDR>",
+                    "<linkMledoze>mledoze/countries</linkMledoze>",
+                    "ISO 3166標準"
+                ]
+            }
+        },
+        "gettingStarted": {
+            "title": "始める",
+            "description": "貢献を開始するには：",
+            "steps": [
+                "GitHubでリポジトリをフォークする",
+                "フォークをローカルにクローンする",
+                "変更用の新しいブランチを作成する",
+                "変更を加えてテストする",
+                "明確な説明付きでプルリクエストを送信する"
+            ]
+        },
+        "contact": {
+            "title": "お問い合わせ",
+            "description": "ご質問がありますか？GitHubでissueを開くか、メンテナーに連絡してください。"
+        },
+        "hero": {
+            "title": "LocaleDBへの貢献",
+            "subtitle": "LocaleDBはオープンソースプロジェクトであり、世界中の開発者からの貢献を歓迎します！"
+        },
+        "cards": {
+            "fixData": {
+                "title": "データを修正",
+                "description": "タイプミスを修正するか、古いロケール情報を更新します。"
+            },
+            "addCountry": {
+                "title": "国を追加",
+                "description": "標準コードを使用して欠落している国を追加します。"
+            },
+            "improveCode": {
+                "title": "コードを改善",
+                "description": "UI、検索、またはビルドスクリプトを強化します。"
+            }
+        },
+        "workflow": {
+            "title": "データ貢献ワークフロー",
+            "step1": {
+                "title": "フォークとセットアップ",
+                "description": "<link>GitHubリポジトリ</link>をフォークし、ローカルマシンにクローンします。"
+            },
+            "step2": {
+                "title": "データオーバーライドを使用",
+                "description": "データを修正するには、<code>/data/countries/</code>内の生成されたファイルを<strong>編集しないでください</strong>。代わりに、<code>/data/overrides/XX.json</code>（XXは国コード）にファイルを作成または編集してください。"
+            },
+            "step3": {
+                "title": "検証と送信",
+                "description": "ビルドスクリプトを実行して、変更が正しくマージされていることを確認します。次に、公式ソースへの参照を含むプルリクエストを送信します。"
+            }
+        },
+        "help": {
+            "title": "ヘルプが必要ですか？",
+            "description": "質問がある、または手順で困っていますか？GitHubでディスカッションを開始してください。",
+            "button": "ディスカッションに参加"
+        }
+    },
+    "footer": {
+        "description": "開発者向けの無料オープンソースローカリゼーションデータ。",
+        "sections": {
+            "resources": {
+                "title": "リソース",
+                "github": "GitHub",
+                "documentation": "ドキュメント",
+                "apiReference": "APIリファレンス"
+            },
+            "data": {
+                "title": "データ",
+                "countries": "国",
+                "currencies": "通貨",
+                "languages": "言語",
+                "airports": "空港"
+            },
+            "community": {
+                "title": "コミュニティ",
+                "contributing": "貢献",
+                "changelog": "変更履歴",
+                "license": "ライセンス"
+            },
+            "legal": {
+                "privacy": "プライバシー",
+                "terms": "利用規約",
+                "license": "ライセンス"
+            }
+        },
+        "copyright": "© {year} LocaleDB。すべての権利予約。"
+    },
+    "common": {
+        "loading": "読み込み中...",
+        "error": "エラーが発生しました",
+        "notFound": "見つかりません",
+        "copy": "コピー",
+        "copied": "コピーしました！",
+        "viewMore": "もっと見る",
+        "showAll": "すべて表示",
+        "theme": "テーマ",
+        "menu": "メニュー"
+    },
+    "roadmap": {
+        "title": "プロジェクトロードマップ",
+        "subtitle": "LocaleDBの開発の歩みと今後の計画。",
+        "status": {
+            "completed": "完了",
+            "inProgress": "進行中",
+            "planned": "計画中"
+        },
+        "items": {
+            "1": {
+                "title": "プロジェクトの開始とデータ入力",
+                "description": "Next.jsプロジェクトの初期設定と、国、通貨、言語のコアデータの入力。",
+                "date": "2026年第1四半期"
+            },
+            "2": {
+                "title": "バグ修正と貢献システム",
+                "description": "初期の問題を解決し、オーバーライドを介したコミュニティ貢献のための堅牢なワークフローを確立。",
+                "date": "2026年第1四半期"
+            },
+            "3": {
+                "title": "データエクスポートインターフェース",
+                "description": "ユーザーが特定の国を選択し、カスタムJSON形式でデータをエクスポートできるユーザーインターフェース。",
+                "date": "2026年第2四半期"
+            },
+            "4": {
+                "title": "npmパッケージとCLIツール",
+                "description": "開発者がロケールデータを直接プロジェクトにダウンロードして統合するための専用npmパッケージとCLIツール。",
+                "date": "2026年第2四半期"
+            },
+            "5": {
+                "title": "パブリックAPIの開始",
+                "description": "ロケールデータを動的に提供するRESTful APIの開発と展開。",
+                "date": "2026年第3四半期"
+            }
+        }
+    }
+}

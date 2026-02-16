@@ -42,7 +42,8 @@ export function SearchCommand({ countries }: SearchCommandProps) {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex h-9 items-center justify-between rounded-md border border-input bg-transparent px-3 text-sm text-muted-foreground shadow-sm hover:bg-accent hover:text-accent-foreground sm:w-64 sm:pr-2"
+        aria-label="Search countries, currencies, and codes"
+        className="inline-flex h-9 items-center justify-between rounded-md border border-input bg-background px-3 text-sm text-muted-foreground shadow-sm hover:bg-accent hover:text-accent-foreground dark:bg-muted/20 dark:border-border sm:w-64 sm:pr-2"
       >
         <span className="inline-flex items-center gap-2">
           <Search className="h-4 w-4" />

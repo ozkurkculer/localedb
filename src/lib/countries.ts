@@ -10,10 +10,15 @@ const INDEX_PATH = path.join(process.cwd(), "data", "_index_countries.json");
  * This is called at build time during SSG.
  * @param code - ISO 3166-1 alpha-2 code (e.g., "TR", "US")
  */
-export async function getCountry(code: string): Promise<CountryLocaleData> {
-  const filePath = path.join(DATA_DIR, `${code.toUpperCase()}.json`);
-  const raw = await readFile(filePath, "utf-8");
-  return JSON.parse(raw) as CountryLocaleData;
+export async function getCountry(code: string): Promise<CountryLocaleData | null> {
+  try {
+    const filePath = path.join(DATA_DIR, `${code.toUpperCase()}.json`);
+    const raw = await readFile(filePath, "utf-8");
+    return JSON.parse(raw) as CountryLocaleData;
+  } catch (error) {
+    console.error(`Failed to load country data for ${code}:`, error);
+    return null;
+  }
 }
 
 /**
@@ -21,10 +26,15 @@ export async function getCountry(code: string): Promise<CountryLocaleData> {
  * Returns an array of ISO 3166-1 alpha-2 codes.
  */
 export async function getAllCountryCodes(): Promise<string[]> {
-  const files = await readdir(DATA_DIR);
-  return files
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(".json", ""));
+  try {
+    const files = await readdir(DATA_DIR);
+    return files
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => f.replace(".json", ""));
+  } catch (error) {
+    console.error("Failed to load country codes:", error);
+    return [];
+  }
 }
 
 /**
@@ -32,8 +42,15 @@ export async function getAllCountryCodes(): Promise<string[]> {
  * Contains minimal data for all countries.
  */
 export async function getCountryIndex(): Promise<CountryIndexEntry[]> {
-  const raw = await readFile(INDEX_PATH, "utf-8");
-  return JSON.parse(raw) as CountryIndexEntry[];
+  try {
+    const raw = await readFile(INDEX_PATH, "utf-8");
+    return JSON.parse(raw) as CountryIndexEntry[];
+  } catch (error: any) {
+    if (error.code !== 'ENOENT') {
+      console.error("Failed to load country index:", error);
+    }
+    return [];
+  }
 }
 
 /**

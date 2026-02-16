@@ -45,4 +45,22 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Data directories (keep gitkeep or similar if needed, but ignore contents)
+data/cldr/*
+!data/cldr/.gitkeep
+data/icu/*
+!data/icu/.gitkeep
+data/simplelocalize/*
+!data/simplelocalize/.gitkeep
+data/worldbankgroup/*.csv
+data/airports.csv
+data/mledoze.json
+data/simplelocalize
+data/worldbankgroup
+data/icu
 data/cldr
+data/mledoze.json
+data/*
+data/countries
+data/currencies
+data/languages

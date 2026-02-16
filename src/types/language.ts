@@ -28,13 +28,13 @@ export interface Language {
  * conforms to this interface.
  */
 export interface LanguageLocaleData {
-   /** Schema version */
-   $schema: string;
-   /** Last updated ISO date */
-   lastUpdated: string;
-   
-   /** Language Metadata */
-   data: Language;
+  /** Schema version */
+  $schema: string;
+  /** Last updated ISO date */
+  lastUpdated: string;
+
+  /** Language Metadata */
+  data: Language;
 }
 
 /**
