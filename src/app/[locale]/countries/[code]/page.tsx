@@ -330,37 +330,105 @@ export default async function CountryPage({ params }: CountryPageProps) {
           icon={<Clock className="h-4 w-4 text-muted-foreground" />}
         >
           <div className="space-y-6">
-            {/* Date Formats */}
+            {/* Date Format Examples */}
             <div>
-              <h4 className="mb-3 text-sm font-semibold">Date Formats</h4>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <DataItem label="Full" value={country.dateTime.dateFormats.full} />
-                <DataItem label="Long" value={country.dateTime.dateFormats.long} />
-                <DataItem
-                  label="Medium"
-                  value={country.dateTime.dateFormats.medium}
-                />
-                <DataItem
-                  label="Short"
-                  value={country.dateTime.dateFormats.short}
-                />
+              <h4 className="mb-3 text-sm font-semibold">Date Format Examples</h4>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Full
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.dateFormats.full}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.datePatterns.full}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Long
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.dateFormats.long}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.datePatterns.long}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Medium
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.dateFormats.medium}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.datePatterns.medium}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Short
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.dateFormats.short}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.datePatterns.short}
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Time Formats */}
+            {/* Time Format Examples */}
             <div>
-              <h4 className="mb-3 text-sm font-semibold">Time Formats</h4>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <DataItem label="Full" value={country.dateTime.timeFormats.full} />
-                <DataItem label="Long" value={country.dateTime.timeFormats.long} />
-                <DataItem
-                  label="Medium"
-                  value={country.dateTime.timeFormats.medium}
-                />
-                <DataItem
-                  label="Short"
-                  value={country.dateTime.timeFormats.short}
-                />
+              <h4 className="mb-3 text-sm font-semibold">Time Format Examples</h4>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Full
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.timeFormats.full}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.timePatterns.full}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Long
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.timeFormats.long}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.timePatterns.long}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Medium
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.timeFormats.medium}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.timePatterns.medium}
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Short
+                  </p>
+                  <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
+                    {country.dateTime.timeFormats.short}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    {country.dateTime.timePatterns.short}
+                  </p>
+                </div>
               </div>
             </div>
 
