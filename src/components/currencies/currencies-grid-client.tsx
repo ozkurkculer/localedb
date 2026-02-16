@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Search, X, ArrowUpDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,6 +28,7 @@ type SortKey = "name" | "code" | "symbol" | "usage";
 type SortOrder = "asc" | "desc";
 
 export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) {
+  const t = useTranslations();
   const [search, setSearch] = React.useState("");
   const [sortKey, setSortKey] = React.useState<SortKey>("name");
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
@@ -54,9 +56,9 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
 
     result.sort((a, b) => {
       if (sortKey === "usage") {
-         return sortOrder === "asc" 
-            ? a.countriesCount - b.countriesCount
-            : b.countriesCount - a.countriesCount;
+        return sortOrder === "asc"
+          ? a.countriesCount - b.countriesCount
+          : b.countriesCount - a.countriesCount;
       }
 
       let valA = "";
@@ -78,8 +80,8 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
       }
 
       return sortOrder === "asc"
-        ? valA.localeCompare(valB)
-        : valB.localeCompare(valA);
+        ? valA.localeCompare(valB, 'en')
+        : valB.localeCompare(valA, 'en');
     });
 
     return result;
@@ -93,7 +95,7 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
         <div className="relative flex-1 sm:max-w-md">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
-            placeholder="Search by name, code, symbol..."
+            placeholder={t("currencies.search")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 pr-9"
@@ -110,26 +112,26 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
 
         {/* Sort Dropdown */}
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="gap-2">
-                <ArrowUpDown className="h-4 w-4" />
-                Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
-                </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => handleSort("name")}>
-                Name
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleSort("code")}>
-                Code
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleSort("symbol")}>
-                Symbol
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleSort("usage")}>
-                Usage Count
-                </DropdownMenuItem>
-            </DropdownMenuContent>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm" className="gap-2">
+              <ArrowUpDown className="h-4 w-4" />
+              Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => handleSort("name")}>
+              Name
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("code")}>
+              Code
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("symbol")}>
+              Symbol
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("usage")}>
+              Usage Count
+            </DropdownMenuItem>
+          </DropdownMenuContent>
         </DropdownMenu>
       </div>
 
@@ -140,15 +142,17 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
 
       {/* Grid */}
       <motion.div
-        initial="initial"
-        animate="animate"
+        layout
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
-        {filteredCurrencies.map((currency, index) => (
+        {filteredCurrencies.map((currency) => (
           <motion.div
             key={currency.code}
-            variants={fadeInUp}
-            transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.5) }}
+            layout
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.2 }}
             className="h-full"
           >
             <CurrencyCard currency={currency} />
@@ -183,19 +187,19 @@ function CurrencyCard({ currency }: CurrencyCardProps) {
       href={`/currencies/${currency.code}`}
       className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-border/40 bg-card p-5 transition-all hover:border-border hover:shadow-lg hover:shadow-primary/5"
     >
-        <div className="mb-4 flex items-center justify-between">
-             <div className="text-2xl font-bold bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent">{currency.symbol}</div>
-             <div className="rounded bg-muted px-2 py-1 font-mono text-xs font-medium">{currency.code}</div>
-        </div>
+      <div className="mb-4 flex items-center justify-between">
+        <div className="text-2xl font-bold bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent">{currency.symbol}</div>
+        <div className="rounded bg-muted px-2 py-1 font-mono text-xs font-medium">{currency.code}</div>
+      </div>
 
       {/* Currency Name */}
       <h3 className="mb-1 text-lg font-semibold transition-colors group-hover:text-primary">
         {currency.name}
       </h3>
-      
+
       {/* Meta Info */}
       <div className="mt-auto pt-4 text-sm text-muted-foreground">
-         Used in <span className="font-medium text-foreground">{currency.countriesCount}</span> countries
+        Used in <span className="font-medium text-foreground">{currency.countriesCount}</span> countries
       </div>
     </Link>
   );

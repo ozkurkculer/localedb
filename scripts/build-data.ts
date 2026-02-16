@@ -1,5 +1,4 @@
 
-// ... (Previous imports remain, ensuring we rely on the same structure)
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -15,57 +14,56 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const OUT_COUNTRIES_DIR = path.join(DATA_DIR, 'countries');
 const OUT_LANGUAGES_DIR = path.join(DATA_DIR, 'languages');
-const OUT_CURRENCIES_DIR = path.join(DATA_DIR, 'currencies'); // [NEW]
+const OUT_CURRENCIES_DIR = path.join(DATA_DIR, 'currencies');
 const OVERRIDES_DIR = path.join(DATA_DIR, 'overrides');
 
 // Ensure output directories exist
 if (!fs.existsSync(OUT_COUNTRIES_DIR)) fs.mkdirSync(OUT_COUNTRIES_DIR, { recursive: true });
 if (!fs.existsSync(OUT_LANGUAGES_DIR)) fs.mkdirSync(OUT_LANGUAGES_DIR, { recursive: true });
-if (!fs.existsSync(OUT_CURRENCIES_DIR)) fs.mkdirSync(OUT_CURRENCIES_DIR, { recursive: true }); // [NEW]
+if (!fs.existsSync(OUT_CURRENCIES_DIR)) fs.mkdirSync(OUT_CURRENCIES_DIR, { recursive: true });
 
 // --- Helper Functions ---
 
 async function readJsonFile(filePath: string): Promise<any> {
-  try {
-    const content = await fs.promises.readFile(filePath, 'utf-8');
-    return JSON.parse(content);
-  } catch (e) {
-    return undefined;
-  }
+    try {
+        const content = await fs.promises.readFile(filePath, 'utf-8');
+        return JSON.parse(content);
+    } catch (e) {
+        return undefined;
+    }
 }
 
 // Helper to safely read CLDR data
 async function readCldrData(cldrPath: string, ...keys: string[]): Promise<any> {
-  const fullPath = path.join(DATA_DIR, 'cldr', cldrPath);
-  try {
-    if (!fs.existsSync(fullPath)) return undefined;
-    const data = await readJsonFile(fullPath);
-    let current = data;
-    for (const key of keys) {
-      if (current === undefined || current === null) return undefined;
-      current = current[key];
+    const fullPath = path.join(DATA_DIR, 'cldr', 'cldr-json', cldrPath);
+    try {
+        if (!fs.existsSync(fullPath)) return undefined;
+        const data = await readJsonFile(fullPath);
+        let current = data;
+        for (const key of keys) {
+            if (current === undefined || current === null) return undefined;
+            current = current[key];
+        }
+        return current;
+    } catch (error) {
+        return undefined;
     }
-    return current;
-  } catch (error) {
-    return undefined;
-  }
 }
 
-// Deep merge helper
 function deepMerge(target: any, source: any) {
-  if (typeof target !== 'object' || target === null) return source;
-  if (typeof source !== 'object' || source === null) return source;
-  
-  for (const key in source) {
-    if (source[key] instanceof Array) {
-        target[key] = source[key];
-    } else if (typeof source[key] === 'object') {
-      target[key] = deepMerge(target[key] || {}, source[key]);
-    } else {
-      target[key] = source[key];
+    if (typeof target !== 'object' || target === null) return source;
+    if (typeof source !== 'object' || source === null) return source;
+
+    for (const key in source) {
+        if (source[key] instanceof Array) {
+            target[key] = source[key];
+        } else if (typeof source[key] === 'object') {
+            target[key] = deepMerge(target[key] || {}, source[key]);
+        } else {
+            target[key] = source[key];
+        }
     }
-  }
-  return target;
+    return target;
 }
 
 function safeFormatCurrency(locale: string, currency: string, value: number, options: Intl.NumberFormatOptions = {}): string {
@@ -77,224 +75,541 @@ function safeFormatCurrency(locale: string, currency: string, value: number, opt
     }
 }
 
+// CSV Parser for World Bank / Airports
+function parseCsvLine(line: string): string[] {
+    const result: string[] = [];
+    let currentChange = '';
+    let insideQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        if (char === '"') {
+            insideQuotes = !insideQuotes;
+        } else if (char === ',' && !insideQuotes) {
+            result.push(currentChange);
+            currentChange = '';
+        } else {
+            currentChange += char;
+        }
+    }
+    result.push(currentChange);
+    return result.map(val => {
+        val = val.trim();
+        if (val.startsWith('"') && val.endsWith('"')) {
+            val = val.slice(1, -1).replace(/""/g, '"');
+        }
+        return val;
+    });
+}
+
+// --- Specific Data Loaders ---
+
+interface WorldBankData {
+    population?: number;
+    region?: string;
+    incomeGroup?: string;
+}
+
+async function loadWorldBankData(): Promise<Map<string, WorldBankData>> {
+    const wbDataMap = new Map<string, WorldBankData>();
+    const wbDir = path.join(DATA_DIR, 'worldbankgroup');
+    if (!fs.existsSync(wbDir)) return wbDataMap;
+
+    const files = await fs.promises.readdir(wbDir);
+    const popFile = files.find(f => f.startsWith('API_SP.POP.TOTL') && f.endsWith('.csv'));
+    const metaFile = files.find(f => f.startsWith('Metadata_Country') && f.endsWith('.csv'));
+
+    if (popFile) {
+        console.log('  Matching World Bank Population:', popFile);
+        const content = await fs.promises.readFile(path.join(wbDir, popFile), 'utf-8');
+        const lines = content.split('\n');
+        // WB CSV usually starts at line 5 (0-indexed 4)
+        if (lines.length > 5) {
+            const header = parseCsvLine(lines[4]);
+            const codeIdx = header.indexOf('Country Code');
+            // Find 2023, 2022, etc.
+            let yearIdx = header.lastIndexOf('2023');
+            if (yearIdx === -1) yearIdx = header.lastIndexOf('2022');
+            if (yearIdx === -1) yearIdx = header.lastIndexOf('2021');
+
+            if (codeIdx !== -1 && yearIdx !== -1) {
+                for (let i = 5; i < lines.length; i++) {
+                    const cols = parseCsvLine(lines[i]);
+                    const code = cols[codeIdx];
+                    const pop = parseInt(cols[yearIdx]);
+                    if (code && !isNaN(pop)) {
+                        if (!wbDataMap.has(code)) wbDataMap.set(code, {});
+                        wbDataMap.get(code)!.population = pop;
+                    }
+                }
+            }
+        }
+    }
+
+    if (metaFile) {
+        console.log('  Matching World Bank Metadata:', metaFile);
+        const content = await fs.promises.readFile(path.join(wbDir, metaFile), 'utf-8');
+        const lines = content.split('\n');
+        if (lines.length > 0) {
+            const header = parseCsvLine(lines[0]);
+            const codeIdx = header.indexOf('Country Code');
+            const regionIdx = header.indexOf('Region');
+            const incomeIdx = header.indexOf('IncomeGroup');
+
+            if (codeIdx !== -1) {
+                for (let i = 1; i < lines.length; i++) {
+                    const cols = parseCsvLine(lines[i]);
+                    const code = cols[codeIdx];
+                    if (code) {
+                        if (!wbDataMap.has(code)) wbDataMap.set(code, {});
+                        const entry = wbDataMap.get(code)!;
+                        if (regionIdx !== -1 && cols[regionIdx]) entry.region = cols[regionIdx];
+                        if (incomeIdx !== -1 && cols[incomeIdx]) entry.incomeGroup = cols[incomeIdx];
+                    }
+                }
+            }
+        }
+    }
+
+    return wbDataMap;
+}
+
 // --- Main Build Process ---
 
 async function build() {
-  console.log('🚀 Starting Data Build Process (Multi-Source)...');
-  const startTime = Date.now();
+    console.log('🚀 Starting Data Build Process (Prioritized)...');
+    const startTime = Date.now();
 
-  // 1. Load Data Sources
-  console.log('📦 Loading SimpleLocalize...');
-  const slCountries = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
-  const slLanguages = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/languages.json')) || [];
+    // 1. Loading Base Data
+    console.log('📦 Loading SimpleLocalize (Base)...');
+    const slCountries = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
+    const slLanguages = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/languages.json')) || [];
 
-  console.log('📦 Loading mledoze/countries...');
-  const mledozeList = await readJsonFile(path.join(DATA_DIR, 'mledoze.json')) || [];
-  // Create quick lookup map for mledoze
-  const mledozeMap = new Map();
-  mledozeList.forEach((c: any) => mledozeMap.set(c.cca2, c));
+    console.log('📦 Loading Mledoze (Layer 1)...');
+    const mledozeList = await readJsonFile(path.join(DATA_DIR, 'mledoze.json')) || [];
+    const mledozeMap = new Map();
+    mledozeList.forEach((c: any) => mledozeMap.set(c.cca2, c));
+    mledozeList.forEach((c: any) => mledozeMap.set(c.cca3, c)); // Support iso3 lookup
 
-      const countryIndex: CountryIndexEntry[] = [];
-    const languageIndex: LanguageIndexEntry[] = [];
-    const currencyIndex: CurrencyIndexEntry[] = []; // [NEW]
-    const languageUsageMap: Record<string, string[]> = {};
-    const currencyUsageMap: Record<string, string[]> = {}; // [NEW]
-    // We need to store full currency info to generate pages later
-    const currencyInfoMap: Record<string, CurrencyInfo> = {}; 
-  
-    // 1.5 Process Airports [NEW] - MUST BE BEFORE COUNTRIES
+    console.log('📦 Loading World Bank (Layer 2)...');
+    const wbDataMap = await loadWorldBankData();
+
+    // 2. Process Airports (Priority: mwgg > iata)
     console.log(`✈️  Processing airports...`);
     const airportsMap = new Map<string, any[]>();
     const airportIndex: any[] = [];
-    
-    try {
-        const response = await fetch('https://raw.githubusercontent.com/ip2location/ip2location-iata-icao/master/iata-icao.csv');
-        const csvText = await response.text();
-        const lines = csvText.split('\n').slice(1); // Skip header
 
+    const airportsJsonPath = path.join(DATA_DIR, 'airports.json');
+    const airportsCsvPath = path.join(DATA_DIR, 'airports.csv');
+
+    // Index CSV airports by ICAO/IATA for merging
+    const csvAirportsByIcao = new Map<string, any>();
+    const csvAirportsByIata = new Map<string, any>();
+
+    // 2a. Load CSV (Secondary Keyed)
+    if (fs.existsSync(airportsCsvPath)) {
+        console.log('  Index Airport CSV (Backup)...');
+        const csvContent = await fs.promises.readFile(airportsCsvPath, 'utf-8');
+        const lines = csvContent.split('\n').slice(1);
         lines.forEach(line => {
             // "country_code","region_name","iata","icao","airport","latitude","longitude"
-            const parts = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-            if (!parts || parts.length < 7) return;
-
-            const clean = (s: string) => s.replace(/^"|"$/g, '').trim();
-            const countryCode = clean(parts[0]);
-            
+            const parts = parseCsvLine(line);
+            if (parts.length < 7) return;
+            const countryCode = parts[0];
             if (!countryCode) return;
 
             const airport = {
-                countryCode: countryCode,
-                region: clean(parts[1]),
-                iata: clean(parts[2]),
-                icao: clean(parts[3]),
-                name: clean(parts[4]),
-                latitude: parseFloat(clean(parts[5])),
-                longitude: parseFloat(clean(parts[6]))
+                countryCode,
+                region: parts[1],
+                iata: parts[2],
+                icao: parts[3],
+                name: parts[4],
+                latitude: parseFloat(parts[5]),
+                longitude: parseFloat(parts[6]),
+                source: 'iata_csv'
             };
 
-            // Basic validation: must have name and at least one code
-            if (airport.name && (airport.iata || airport.icao)) {
-                if (!airportsMap.has(countryCode)) {
-                    airportsMap.set(countryCode, []);
-                }
-                airportsMap.get(countryCode)?.push(airport);
-                
-                // Add to global index if it has IATA (major airports usually do)
-                if (airport.iata) {
-                    airportIndex.push(airport);
-                }
+            if (airport.name) {
+                if (airport.icao) csvAirportsByIcao.set(airport.icao, airport);
+                if (airport.iata) csvAirportsByIata.set(airport.iata, airport);
             }
         });
-        console.log(`✅ Loaded ${airportIndex.length} major airports`);
-    } catch (e) {
-        console.error("Failed to load airports:", e);
     }
-    
-    // Sort airport index by IATA
+
+    // Haversine formula to calculate distance in km
+    function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+        const R = 6371; // Earth radius in km
+        const dLat = (lat2 - lat1) * (Math.PI / 180);
+        const dLon = (lon2 - lon1) * (Math.PI / 180);
+        const a =
+            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+    }
+
+    // 2b. Process JSON (Primary) and Merge
+    if (fs.existsSync(airportsJsonPath)) {
+        console.log('  Merging with Airport JSON (Primary)...');
+        const mwggData = await readJsonFile(airportsJsonPath);
+
+        // Convert map to array for spatial search on unmatched items
+        // This is a bit expensive but necessary for fallback
+        // We track matched CSV IDs to avoid double usage
+        const matchedCsvIds = new Set<string>();
+
+        Object.values(mwggData).forEach((entry: any) => {
+            const jsonAirport = {
+                countryCode: entry.country,
+                region: entry.state || entry.city,
+                iata: entry.iata,
+                icao: entry.icao,
+                name: entry.name,
+                latitude: entry.lat,
+                longitude: entry.lon,
+                timezone: entry.tz,
+                source: 'mwgg_json'
+            };
+
+            let csvAirport = null;
+            let matchType = 'none';
+
+            // 1. Try Key Match (ICAO/IATA)
+            if (jsonAirport.icao && csvAirportsByIcao.has(jsonAirport.icao)) {
+                csvAirport = csvAirportsByIcao.get(jsonAirport.icao);
+                matchType = 'key';
+            } else if (jsonAirport.iata && csvAirportsByIata.has(jsonAirport.iata)) {
+                csvAirport = csvAirportsByIata.get(jsonAirport.iata);
+                matchType = 'key';
+            }
+
+            // 2. Try Spatial Match (Fallback)
+            // If no key match, check unmatched CSV airports in same country within 1km
+            if (!csvAirport) {
+                // Optimization: iterate only relevant subset if we pre-grouped, but here we just iterate
+                // We can optimize by simple range check first
+                for (const candidate of csvAirportsByIcao.values()) {
+                    // Skip if this CSV airport was already matched/used
+                    if (matchedCsvIds.has(candidate.icao || candidate.iata)) continue;
+                    if (candidate.countryCode !== jsonAirport.countryCode) continue;
+
+                    // Fast bounding box check (approx 0.05 deg ~ 5km)
+                    if (Math.abs(candidate.latitude - jsonAirport.latitude) > 0.05) continue;
+                    if (Math.abs(candidate.longitude - jsonAirport.longitude) > 0.05) continue;
+
+                    const dist = calculateDistance(
+                        jsonAirport.latitude, jsonAirport.longitude,
+                        candidate.latitude, candidate.longitude
+                    );
+
+                    if (dist < 1.0) { // 1km threshold
+                        csvAirport = candidate;
+                        matchType = 'spatial';
+                        break;
+                    }
+                }
+                // Try candidates that might only have IATA and thus only in byIata map?
+                // The csvAirportsByIcao and byIata might share references or contain unique sets if one code missing
+                // We need to check unmatched from both maps safely.
+                // Actually the values are objects. We can track visited via Set<Object>
+                if (!csvAirport) {
+                    for (const candidate of csvAirportsByIata.values()) {
+                        if (matchedCsvIds.has(candidate.icao || candidate.iata)) continue;
+                        if (csvAirportsByIcao.has(candidate.icao)) continue; // already checked in loop above if it has ICAO
+
+                        if (candidate.countryCode !== jsonAirport.countryCode) continue;
+                        if (Math.abs(candidate.latitude - jsonAirport.latitude) > 0.05) continue;
+                        if (Math.abs(candidate.longitude - jsonAirport.longitude) > 0.05) continue;
+
+                        const dist = calculateDistance(
+                            jsonAirport.latitude, jsonAirport.longitude,
+                            candidate.latitude, candidate.longitude
+                        );
+                        if (dist < 1.0) {
+                            csvAirport = candidate;
+                            matchType = 'spatial';
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Cleanup Lists based on match
+            if (csvAirport) {
+                const id = csvAirport.icao || csvAirport.iata;
+                matchedCsvIds.add(id);
+                // Also clean maps so we don't add them as "remaining" later
+                if (csvAirport.icao) csvAirportsByIcao.delete(csvAirport.icao);
+                if (csvAirport.iata) csvAirportsByIata.delete(csvAirport.iata);
+            }
+
+            // MERGE
+            const finalAirport = { ...jsonAirport };
+
+            if (csvAirport) {
+                if (!finalAirport.iata && csvAirport.iata) finalAirport.iata = csvAirport.iata;
+                if (!finalAirport.icao && csvAirport.icao) finalAirport.icao = csvAirport.icao;
+                finalAirport.source = 'merged';
+            }
+
+            if (!airportsMap.has(finalAirport.countryCode)) airportsMap.set(finalAirport.countryCode, []);
+            airportsMap.get(finalAirport.countryCode)?.push(finalAirport);
+        });
+    }
+
+    // 2c. Add remaining unique CSV-only airports
+    const remainingAirports = new Set<any>();
+    for (const a of csvAirportsByIcao.values()) remainingAirports.add(a);
+    for (const a of csvAirportsByIata.values()) remainingAirports.add(a);
+
+    console.log(`  Adding ${remainingAirports.size} unique CSV-only airports...`);
+    for (const airport of remainingAirports) {
+        if (!airportsMap.has(airport.countryCode)) airportsMap.set(airport.countryCode, []);
+        airportsMap.get(airport.countryCode)?.push(airport);
+    }
+
+    // Build Index
+    for (const [cc, list] of airportsMap.entries()) {
+        list.forEach(a => {
+            if (a.iata) {
+                // simple dedupe check for index? 
+                // Map constructed per country shouldn't have dupes if logic is sound.
+                airportIndex.push(a);
+            }
+        });
+    }
     airportIndex.sort((a, b) => a.iata.localeCompare(b.iata));
     await fs.promises.writeFile(path.join(DATA_DIR, '_index_airports.json'), JSON.stringify(airportIndex, null, 2));
 
-    // 2. Process Countries
+
+    // 3. Process Countries
+    const countryIndex: CountryIndexEntry[] = [];
+    const languageIndex: LanguageIndexEntry[] = [];
+    const currencyIndex: CurrencyIndexEntry[] = [];
+    const languageUsageMap: Record<string, string[]> = {};
+    const currencyUsageMap: Record<string, string[]> = {};
+    const currencyInfoMap: Record<string, CurrencyInfo> = {};
+
     console.log(`🌍 Processing ${slCountries.length} countries...`);
-    
     const BATCH_SIZE = 10;
     for (let i = 0; i < slCountries.length; i += BATCH_SIZE) {
-      const batch = slCountries.slice(i, i + BATCH_SIZE);
-      
-      await Promise.all(batch.map(async (slCountry: any) => {
-          const isoCode = slCountry.code;
-          const mledozeCountry = mledozeMap.get(isoCode);
-          const overrideData = await readJsonFile(path.join(OVERRIDES_DIR, `${isoCode}.json`));
-          const countryAirports = airportsMap.get(isoCode) || []; // [NEW]
-          
-          await processCountry(
-              isoCode, 
-              slCountry, 
-              mledozeCountry, 
-              overrideData, 
-              countryIndex, 
-              languageUsageMap,
-              currencyUsageMap,
-              currencyInfoMap,
-              countryAirports // [NEW]
+        const batch = slCountries.slice(i, i + BATCH_SIZE);
+        await Promise.all(batch.map(async (slCountry: any) => {
+            const isoCode = slCountry.code;
+            const mledozeCountry = mledozeMap.get(isoCode);
+            // SimpleLocalize usually has iso3, use that for WB lookup
+            const iso3 = slCountry.iso_3166_1_alpha3 || mledozeCountry?.cca3;
+            const wbData = iso3 ? wbDataMap.get(iso3) : undefined;
+            const countryAirports = airportsMap.get(isoCode) || [];
+
+            await processCountry(
+                isoCode,
+                slCountry,
+                mledozeCountry,
+                wbData,
+                countryIndex,
+                languageUsageMap,
+                currencyUsageMap,
+                currencyInfoMap,
+                countryAirports
             );
-      }));
-  
-      if (global.gc) global.gc(); 
-      process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slCountries.length)}/${slCountries.length} countries`);
+        }));
+        if (global.gc) global.gc();
+        process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slCountries.length)}/${slCountries.length} countries`);
     }
     console.log('\n✨ Countries processed.');
-  
-    // 3. Process Languages
+
+    // 4. Languages & Currencies (Same as before)
     console.log(`🗣️ Processing languages...`);
     for (let i = 0; i < slLanguages.length; i += BATCH_SIZE) {
         const batch = slLanguages.slice(i, i + BATCH_SIZE);
         await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap, languageIndex)));
-        process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slLanguages.length)}/${slLanguages.length} languages`);
     }
-    console.log('\n✨ Languages processed.');
 
-    // 4. Process Currencies [NEW]
     console.log(`💰 Processing currencies...`);
     const currencyCodes = Object.keys(currencyInfoMap).sort();
     for (const code of currencyCodes) {
         await processCurrency(code, currencyInfoMap[code], currencyUsageMap, currencyIndex);
     }
-    console.log(`✅ Processed ${currencyCodes.length} currencies`);
-    console.log('\n✨ Currencies processed.');
-  
+
     // 5. Write Indices
     console.log('📝 Writing indices...');
     await fs.promises.writeFile(path.join(DATA_DIR, '_index_countries.json'), JSON.stringify(countryIndex, null, 2));
     await fs.promises.writeFile(path.join(DATA_DIR, '_index_languages.json'), JSON.stringify(languageIndex, null, 2));
-    await fs.promises.writeFile(path.join(DATA_DIR, '_index_currencies.json'), JSON.stringify(currencyIndex, null, 2)); // [NEW]
+    await fs.promises.writeFile(path.join(DATA_DIR, '_index_currencies.json'), JSON.stringify(currencyIndex, null, 2));
 
-  const endTime = Date.now();
-  console.log(`🎉 Build complete in ${((endTime - startTime) / 1000).toFixed(2)}s`);
+    // 4. Generate Meta File
+    console.log(`📊 Generating metadata...`);
+    const meta = {
+        buildDate: new Date().toISOString(),
+        version: "0.1.0", // Todo: read from package.json
+        stats: {
+            countries: countryIndex.length,
+            languages: languageIndex.length,
+            currencies: currencyIndex.length,
+            airports: airportIndex.length
+        },
+        sources: [
+            { name: "CLDR", version: "latest" },
+            { name: "ICU", version: "latest" },
+            { name: "World Bank", year: "2024" },
+            { name: "mledoze", version: "latest" },
+            { name: "SimpleLocalize", version: "latest" },
+            { name: "MWGG Airports", version: "latest" },
+            { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
+        ]
+    };
+    await fs.promises.writeFile(path.join(DATA_DIR, '_meta.json'), JSON.stringify(meta, null, 2));
+
+    console.log(`🎉 Build complete in ${((Date.now() - startTime) / 1000).toFixed(2)}s`);
 }
 
+build().catch(console.error);
 async function processCountry(
-    isoCode: string, 
-    slData: any, 
-    mledozeData: any, 
-    overrideData: any,
-    index: CountryIndexEntry[], 
+    isoCode: string,
+    slData: any,
+    mledozeData: any,
+    wbData: WorldBankData | undefined,
+    index: CountryIndexEntry[],
     langMap: Record<string, string[]>,
-    currencyMap: Record<string, string[]>, // [NEW]
-    currencyInfoMap: Record<string, CurrencyInfo>, // [NEW]
-    airports: any[] // [NEW]
+    currencyMap: Record<string, string[]>,
+    currencyInfoMap: Record<string, CurrencyInfo>,
+    airports: any[]
 ) {
     const primaryLang = slData.languages?.[0]?.iso_639_1 || 'en';
     const cldrLocale = `${primaryLang}-${isoCode}`;
-    let cldrPath = primaryLang; 
+    let cldrPath = primaryLang;
 
-    // ... (Reading CLDR data remains same)
+    // --- CLDR DATA (Highest Priority, with fallback to 'en') ---
+    // Check if the primary CLDR locale directory exists, fall back to 'en'
+    const cldrDatesDir = path.join(DATA_DIR, 'cldr', 'cldr-json', 'cldr-dates-full', 'main', cldrPath);
+    if (!fs.existsSync(cldrDatesDir)) {
+        cldrPath = 'en';
+    }
+
     const territories = await readCldrData(`cldr-localenames-full/main/${cldrPath}/territories.json`, "main", cldrPath, "localeDisplayNames", "territories", isoCode);
     const caGregorian = await readCldrData(`cldr-dates-full/main/${cldrPath}/ca-gregorian.json`, "main", cldrPath, "dates", "calendars", "gregorian");
     const numbers = await readCldrData(`cldr-numbers-full/main/${cldrPath}/numbers.json`, "main", cldrPath, "numbers");
 
-    // Construct Currency Object
-    const currencyObj: CurrencyInfo = {
-        code: slData.currency_code,
-        numericCode: slData.currency_numeric,
-        name: slData.currency,
-        nativeName: slData.currency_local,
-        symbol: slData.currency_symbol,
-        narrowSymbol: slData.currency_symbol,
+    // CLDR supplemental data (weekData for firstDayOfWeek)
+    const weekData = await readCldrData('cldr-core/supplemental/weekData.json', 'supplemental', 'weekData');
+    const dayPeriods = caGregorian?.dayPeriods?.format?.abbreviated;
+
+    // Construct Currency
+    // Priority: SL > Mledoze > Default
+    const slCurrencyCode = slData.currency_code;
+    const mledozeCurrencyCode = mledozeData?.currencies ? Object.keys(mledozeData.currencies)[0] : undefined;
+    const currencyCode = slCurrencyCode || mledozeCurrencyCode;
+
+    let currencyObj: CurrencyInfo = {
+        code: currencyCode || "",
+        numericCode: slData.currency_numeric || "", // Mledoze doesn't have numeric easily accessible in this structure
+        name: slData.currency || mledozeData?.currencies?.[currencyCode]?.name || "",
+        nativeName: slData.currency_local || "",
+        symbol: slData.currency_symbol || mledozeData?.currencies?.[currencyCode]?.symbol || "",
+        narrowSymbol: slData.currency_symbol || mledozeData?.currencies?.[currencyCode]?.symbol || "",
         symbolPosition: "before",
         decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",
         thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
         decimalDigits: 2,
-        subunitValue: slData.currency_subunit_value,
-        subunitName: slData.currency_subunit_name,
+        subunitValue: slData.currency_subunit_value || 100,
+        subunitName: slData.currency_subunit_name || "", // default
         pattern: numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00",
-        example: safeFormatCurrency(cldrLocale, slData.currency_code, 123456.789),
-        accountingExample: safeFormatCurrency(cldrLocale, slData.currency_code, -1234.56, { currencySign: "accounting" })
+        example: safeFormatCurrency(cldrLocale, currencyCode, 123456.789),
+        accountingExample: safeFormatCurrency(cldrLocale, currencyCode, -1234.56, { currencySign: "accounting" })
     };
 
-    // --- BASE DATA (SimpleLocalize) ---
+    // --- PRIORITIZATION LOGIC ---
+
+    // 1. Name: CLDR > ICU (skipped) > WB (rarely useful) > Mledoze > SL
+    let name = slData.name;
+    if (mledozeData?.name?.common) name = mledozeData.name.common;
+    if (territories) name = territories;
+
+    // 2. Population: WB > Mledoze > SL
+    let population = mledozeData?.population || slData.population || 0;
+    if (wbData?.population) population = wbData.population;
+
+    // 3. Region: WB > Mledoze > SL
+    let region = slData.region;
+    if (mledozeData?.region) region = mledozeData.region;
+    if (wbData?.region) region = wbData.region;
+
+    // 4. Income: WB (Exclusive)
+    let incomeGroup = wbData?.incomeGroup || "";
+
+    // 5. Coordinates: Mledoze > SL
+    let coordinates = slData.coordinates || [0, 0];
+    if (mledozeData?.latlng) coordinates = mledozeData.latlng;
+
+    // 6. Capital: Mledoze > SL
+    let capital = slData.capital_name;
+    if (mledozeData?.capital?.length > 0) capital = mledozeData.capital[0];
+
+    // 7. Area: SL (usually reliable) but allow Mledoze fallback
+    let area = slData.area_sq_km;
+    if (!area && mledozeData?.area) area = mledozeData.area;
+
+    // 8. TLD: Mledoze > SL
+    let tld = slData.tld ? [slData.tld] : [];
+    if (mledozeData?.tld?.length > 0) tld = mledozeData.tld;
+
+    // 9. Borders: Mledoze > SL
+    let borders = slData.borders || [];
+    if (mledozeData?.borders) borders = mledozeData.borders;
+
+    // Languages: Merge SL and Mledoze? SL has localized names, Mledoze has codes.
+    // SL structure is flat array of objects. Mledoze has { "tur": "Turkish" } map.
+    // Stick to SL as primary for now because it has localized names, but could augment.
+    const languages = slData.languages.map((l: any) => ({
+        code: l.iso_639_1,
+        iso639_2: l.iso_639_2,
+        iso639_3: l.iso_639_3,
+        name: l.name,
+        nativeName: l.name_local,
+        official: true,
+        direction: "ltr",
+        countries: []
+    }));
+
+    // Assemble Data
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["SimpleLocalize", "CLDR", "mledoze/countries", "Manual Overrides"],
+        sources: ["CLDR", "WorldBank", "mledoze", "SimpleLocalize"],
         basics: {
-            name: slData.name,
-            officialName: mledozeData?.name?.official || slData.name,
+            name: name,
+            officialName: mledozeData?.name?.official || name,
             nativeName: territories || slData.name_local,
             officialNativeName: mledozeData?.name?.native?.[Object.keys(mledozeData?.name?.native || {})[0]]?.official || "",
-            capital: slData.capital_name,
+            capital: capital,
             capitalCoordinates: [slData.capital_latitude, slData.capital_longitude],
-            coordinates: mledozeData?.latlng || [0, 0],
+            coordinates: coordinates,
             continent: slData.continent,
-            region: slData.region,
+            region: region,
             subregion: mledozeData?.subregion || slData.region,
-            population: mledozeData?.population || 0,
-            area: slData.area_sq_km,
-            flagEmoji: slData.flag,
-            tld: mledozeData?.tld || (slData.tld ? [slData.tld] : []),
-            landlocked: slData.is_landlocked,
-            borders: slData.borders || [],
-            languages: slData.languages.map((l: any) => ({
-                code: l.iso_639_1,
-                iso639_2: l.iso_639_2,
-                iso639_3: l.iso_639_3,
-                name: l.name,
-                nativeName: l.name_local,
-                official: true,
-                direction: "ltr",
-                countries: []
-            })),
+            population: population,
+            area: area,
+            flagEmoji: mledozeData?.flag || slData.flag, // Mledoze flag usually good too
+            tld: tld,
+            landlocked: mledozeData?.landlocked ?? slData.is_landlocked,
+            borders: borders,
+            languages: languages,
             demonym: mledozeData?.demonyms?.eng?.m || ""
+        },
+        worldBank: {
+            incomeGroup: incomeGroup,
+            region: wbData?.region || ""
         },
         codes: {
             iso3166Alpha2: slData.iso_3166_1_alpha2,
             iso3166Alpha3: slData.iso_3166_1_alpha3,
             iso3166Numeric: String(slData.iso_3166_1_numeric),
             bcp47: [cldrLocale],
-            internetTld: slData.tld,
-            ioc: slData.ioc,
-            fifa: slData.fifa,
-            vehicleCode: slData.vehicle_code,
+            internetTld: tld[0] || "",
+            ioc: mledozeData?.cioc || slData.ioc,
+            fifa: mledozeData?.fifa || slData.fifa,
+            vehicleCode: mledozeData?.car?.signs?.[0] || slData.vehicle_code,
             fips10: slData.fips10,
             unLocode: slData.un_locode,
             stanag1059: slData.stanag_1059,
@@ -303,33 +618,45 @@ async function processCountry(
             maritime: slData.maritime,
             mmc: slData.mmc
         },
-        currency: currencyObj, // Use constructed object
+        currency: currencyObj,
         dateTime: {
-            firstDayOfWeek: 1,
-            clockFormat: "24h",
+            firstDayOfWeek: (() => {
+                // CLDR supplemental weekData > mledoze > default
+                const cldrFirstDay = weekData?.firstDay?.[isoCode] || weekData?.firstDay?.['001'];
+                if (cldrFirstDay) {
+                    const dayMap: Record<string, number> = { mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6, sun: 7 };
+                    return (dayMap[cldrFirstDay] || 1) as 1 | 2 | 3 | 4 | 5 | 6 | 7;
+                }
+                return (mledozeData?.startOfWeek === "sunday" ? 7 : mledozeData?.startOfWeek === "saturday" ? 6 : 1) as 1 | 2 | 3 | 4 | 5 | 6 | 7;
+            })(),
+            clockFormat: (() => {
+                // Detect from time format pattern
+                const shortTime = caGregorian?.timeFormats?.short || "";
+                return shortTime.includes('h') || shortTime.includes('K') ? '12h' : '24h';
+            })(),
             dateFormats: {
-                 full: caGregorian?.dateFormats?.full || "",
-                 long: caGregorian?.dateFormats?.long || "",
-                 medium: caGregorian?.dateFormats?.medium || "",
-                 short: caGregorian?.dateFormats?.short || ""
+                full: caGregorian?.dateFormats?.full || "",
+                long: caGregorian?.dateFormats?.long || "",
+                medium: caGregorian?.dateFormats?.medium || "",
+                short: caGregorian?.dateFormats?.short || ""
             },
             timeFormats: {
-                 full: caGregorian?.timeFormats?.full || "",
-                 long: caGregorian?.timeFormats?.long || "",
-                 medium: caGregorian?.timeFormats?.medium || "",
-                 short: caGregorian?.timeFormats?.short || ""
+                full: caGregorian?.timeFormats?.full || "",
+                long: caGregorian?.timeFormats?.long || "",
+                medium: caGregorian?.timeFormats?.medium || "",
+                short: caGregorian?.timeFormats?.short || ""
             },
             datePatterns: {
-                 full: caGregorian?.dateSkeletons?.full || "",
-                 long: caGregorian?.dateSkeletons?.long || "",
-                 medium: caGregorian?.dateSkeletons?.medium || "",
-                 short: caGregorian?.dateSkeletons?.short || ""
+                full: caGregorian?.dateSkeletons?.full || "",
+                long: caGregorian?.dateSkeletons?.long || "",
+                medium: caGregorian?.dateSkeletons?.medium || "",
+                short: caGregorian?.dateSkeletons?.short || ""
             },
             timePatterns: {
-                 full: caGregorian?.timeSkeletons?.full || "",
-                 long: caGregorian?.timeSkeletons?.long || "",
-                 medium: caGregorian?.timeSkeletons?.medium || "",
-                 short: caGregorian?.timeSkeletons?.short || ""
+                full: caGregorian?.timeSkeletons?.full || "",
+                long: caGregorian?.timeSkeletons?.long || "",
+                medium: caGregorian?.timeSkeletons?.medium || "",
+                short: caGregorian?.timeSkeletons?.short || ""
             },
             monthNames: {
                 wide: Object.values(caGregorian?.months?.format?.wide || {}),
@@ -341,7 +668,10 @@ async function processCountry(
                 abbreviated: Object.values(caGregorian?.days?.format?.abbreviated || {}),
                 narrow: Object.values(caGregorian?.days?.format?.narrow || {})
             },
-            amPmMarkers: ["AM", "PM"],
+            amPmMarkers: [
+                dayPeriods?.am || "AM",
+                dayPeriods?.pm || "PM"
+            ],
             timezones: mledozeData?.timezones || slData.timezones || [],
             primaryTimezone: slData.timezones?.[0] || "UTC",
             utcOffset: "+00:00"
@@ -359,14 +689,14 @@ async function processCountry(
             callingCode: mledozeData?.idd?.root ? mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "") : "",
             trunkPrefix: "0",
             internationalPrefix: "00",
-            exampleFormat: (mledozeData?.idd?.root ? (mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "")) : "") + " 555 123 4567", // Heuristic example
+            exampleFormat: (mledozeData?.idd?.root ? (mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "")) : "") + " 555 123 4567",
             subscriberNumberLengths: []
         },
         addressFormat: {
             format: "%N%n%A%n%Z %C",
             lineOrder: ["name", "address", "city"],
-            postalCodeFormat: slData.postal_code_format,
-            postalCodeRegex: slData.postal_code_regex,
+            postalCodeFormat: mledozeData?.postalCode?.format || slData.postal_code_format,
+            postalCodeRegex: mledozeData?.postalCode?.regex || slData.postal_code_regex,
             postalCodeExample: "",
             administrativeDivisionName: "Province",
             administrativeDivisionType: "Province"
@@ -379,13 +709,8 @@ async function processCountry(
             drivingSide: mledozeData?.car?.side || "right",
             weekNumbering: "ISO"
         },
-        airports: airports // [NEW]
+        airports: airports
     };
-
-    // --- APPLY OVERRIDES ---
-    if (overrideData) {
-        deepMerge(data, overrideData);
-    }
 
     // Update index (Language)
     slData.languages.forEach((l: any) => {
@@ -393,12 +718,10 @@ async function processCountry(
         langMap[l.iso_639_1].push(isoCode);
     });
 
-    // Update index (Currency) [NEW]
+    // Update index (Currency)
     if (currencyObj.code) {
         if (!currencyMap[currencyObj.code]) currencyMap[currencyObj.code] = [];
         currencyMap[currencyObj.code].push(isoCode);
-        // Store info. If it exists, merging or keeping one is expected.
-        // We'll keep the one that looks "most populated" or just the first one.
         if (!currencyInfoMap[currencyObj.code]) {
             currencyInfoMap[currencyObj.code] = currencyObj;
         }
@@ -406,81 +729,62 @@ async function processCountry(
 
     index.push({
         code: isoCode,
-        name: slData.name,
+        name: data.basics.name, // Use prioritized name
         flagEmoji: slData.flag,
         continent: slData.continent,
-        region: slData.region,
+        region: data.basics.region, // Use prioritized region
         primaryLocale: cldrLocale,
         currencyCode: slData.currency_code,
         callingCode: data.phone.callingCode
     });
 
-    // Write file
     const outFile = path.join(OUT_COUNTRIES_DIR, `${isoCode}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(data, null, 2));
 }
 
-// ... (processLanguage and build invocation remain same)
 async function processLanguage(metadata: any, langMap: Record<string, string[]>, index: any[]) {
     const code = metadata.iso_639_1;
-    if (!code) return; // Skip if no code
-
+    if (!code) return;
     const countries = langMap[code] || [];
-
     const langData: LanguageLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
         data: {
-          code: code,
-          iso639_2: metadata.iso_639_2,
-          iso639_3: metadata.iso_639_3,
-          name: metadata.name,
-          nativeName: metadata.name_local,
-          direction: "ltr", // Default
-          countries: countries
+            code: code,
+            iso639_2: metadata.iso_639_2,
+            iso639_3: metadata.iso_639_3,
+            name: metadata.name,
+            nativeName: metadata.name_local,
+            direction: "ltr",
+            countries: countries
         }
     };
-
     index.push({
         code: code,
         name: metadata.name,
         nativeName: metadata.name_local,
         countriesCount: countries.length
     });
-
     const outFile = path.join(OUT_LANGUAGES_DIR, `${code}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(langData, null, 2));
 }
 
-async function processCurrency(
-    code: string, 
-    info: CurrencyInfo, 
-    currencyMap: Record<string, string[]>, 
-    index: CurrencyIndexEntry[]
-) {
+async function processCurrency(code: string, info: CurrencyInfo, currencyMap: Record<string, string[]>, index: CurrencyIndexEntry[]) {
     if (!code) return;
-
     const countries = currencyMap[code] || [];
-
     const currencyData: CurrencyLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        data: {
-            ...info,
-            countries: countries
-        }
+        data: { ...info, countries: countries }
     };
-
     index.push({
         code: code,
         name: info.name,
         symbol: info.symbol,
         countriesCount: countries.length
     });
-
     const outFile = path.join(OUT_CURRENCIES_DIR, `${code}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(currencyData, null, 2));
 }
 
-// Run
 build().catch(console.error);

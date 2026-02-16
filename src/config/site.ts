@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Open-source reference for global localization standards. Currency formats, date patterns, country codes, and more for every country.",
   url: "https://localedb.org",
-  ogImage: "https://localedb.org/og-image.png",
+  ogImage: "https://localedb.org/og-image",
   links: {
     github: "https://github.com/ozkurkculer/localedb",
     twitter: "https://twitter.com/localedb",

@@ -257,6 +257,15 @@ export interface LocaleMiscInfo {
   weekNumbering: "ISO" | "US";
 }
 
+// ─── World Bank Info ─────────────────────────────────────────────
+
+export interface WorldBankInfo {
+  /** Income group classification, e.g. "Upper middle income" */
+  incomeGroup: string;
+  /** Region classification by World Bank, e.g. "Europe & Central Asia" */
+  region: string;
+}
+
 // ─── Root Interface ──────────────────────────────────────────────
 
 /**
@@ -273,6 +282,7 @@ export interface CountryLocaleData {
   sources: string[];
 
   basics: CountryBasics;
+  worldBank?: WorldBankInfo;
   codes: CodeSystems;
   currency: CurrencyInfo;
   dateTime: DateTimeInfo;

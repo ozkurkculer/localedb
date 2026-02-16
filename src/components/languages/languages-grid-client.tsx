@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Search, X, ArrowUpDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,6 +28,7 @@ type SortKey = "name" | "code" | "native" | "usage";
 type SortOrder = "asc" | "desc";
 
 export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
+  const t = useTranslations();
   const [search, setSearch] = React.useState("");
   const [sortKey, setSortKey] = React.useState<SortKey>("name");
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
@@ -54,9 +56,9 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
 
     result.sort((a, b) => {
       if (sortKey === "usage") {
-         return sortOrder === "asc" 
-            ? a.countriesCount - b.countriesCount
-            : b.countriesCount - a.countriesCount;
+        return sortOrder === "asc"
+          ? a.countriesCount - b.countriesCount
+          : b.countriesCount - a.countriesCount;
       }
 
       let valA = "";
@@ -78,8 +80,8 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
       }
 
       return sortOrder === "asc"
-        ? valA.localeCompare(valB)
-        : valB.localeCompare(valA);
+        ? valA.localeCompare(valB, 'en')
+        : valB.localeCompare(valA, 'en');
     });
 
     return result;
@@ -93,7 +95,7 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
         <div className="relative flex-1 sm:max-w-md">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
-            placeholder="Search by name, code, native name..."
+            placeholder={t("languages.search")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 pr-9"
@@ -140,15 +142,17 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
 
       {/* Grid */}
       <motion.div
-        initial="initial"
-        animate="animate"
+        layout
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         {filteredLanguages.map((language, index) => (
           <motion.div
-            key={language.code}
-            variants={fadeInUp}
-            transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.5) }}
+            key={`${language.code}-${index}`}
+            layout
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.2 }}
             className="h-full"
           >
             <LanguageCard language={language} />
@@ -185,9 +189,9 @@ function LanguageCard({ language }: LanguageCardProps) {
     >
       {/* Language Name */}
       <h3 className="mb-1 text-lg font-bold bg-gradient-to-br from-emerald-400 to-green-600 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-green-500 transition-all">
-        {language.name}
+        {language.nativeName}
       </h3>
-      <p className="mb-4 text-sm text-muted-foreground">{language.nativeName}</p>
+      <p className="mb-4 text-sm text-muted-foreground">{language.name}</p>
 
       {/* Meta Info */}
       <div className="mt-auto space-y-1 text-sm text-muted-foreground">

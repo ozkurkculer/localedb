@@ -17,35 +17,35 @@ export interface SidebarNavItem extends NavItemWithChildren {}
 
 export const mainNav: NavItem[] = [
   {
-    title: "Countries",
+    title: "nav.countries",
     href: "/countries",
   },
   {
-    title: "Languages",
+    title: "nav.languages",
     href: "/languages",
   },
   {
-    title: "Currencies",
+    title: "nav.currencies",
     href: "/currencies",
   },
   {
-    title: "Airports",
+    title: "nav.airports",
     href: "/airports",
   },
   {
-    title: "Locale Codes",
+    title: "nav.localeCodes",
     href: "/locale-codes",
   },
   {
-    title: "About",
+    title: "nav.about",
     href: "/about",
   },
   {
-    title: "Roadmap",
+    title: "nav.roadmap",
     href: "/roadmap",
   },
   {
-    title: "Contributing",
+    title: "nav.contributing",
     href: "/contributing",
   },
 ];
@@ -57,39 +57,39 @@ export const footerNav: {
 } = {
   resources: [
     {
-      title: "Documentation",
+      title: "footer.sections.resources.documentation",
       href: "/docs",
     },
     {
-      title: "API Reference",
+      title: "footer.sections.resources.apiReference",
       href: "/api",
       disabled: true,
     },
     {
-      title: "Contributing",
+      title: "footer.sections.community.contributing",
       href: "/contributing",
     },
   ],
   community: [
     {
-      title: "GitHub",
+      title: "footer.sections.resources.github",
       href: "https://github.com/ozkurkculer/localedb",
       external: true,
     },
   ],
   legal: [
     {
-      title: "Privacy",
+      title: "footer.sections.legal.privacy",
       href: "/privacy",
       disabled: true,
     },
     {
-      title: "Terms",
+      title: "footer.sections.legal.terms",
       href: "/terms",
       disabled: true,
     },
     {
-      title: "License",
+      title: "footer.sections.legal.license",
       href: "https://github.com/ozkurkculer/localedb/blob/main/LICENSE",
       external: true,
     },

@@ -1,8 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -16,6 +17,7 @@ import { ThemeToggle } from "./theme-toggle";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const t = useTranslations();
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -27,7 +29,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[400px]">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
+          <SheetTitle>{t("common.menu")}</SheetTitle>
         </SheetHeader>
         <nav className="ps-5 mt-8 flex flex-col space-y-4">
           {mainNav.map((item) => (
@@ -40,12 +42,12 @@ export function MobileNav() {
                 ${item.disabled ? "cursor-not-allowed opacity-60" : ""}
               `}
             >
-              {item.title}
+              {t(item.title as any)}
             </Link>
           ))}
         </nav>
         <div className="ps-5 mt-8 flex items-center gap-4 border-t pt-4">
-          <span className="text-sm text-muted-foreground">Theme:</span>
+          <span className="text-sm text-muted-foreground">{t("common.theme")}:</span>
           <ThemeToggle />
         </div>
       </SheetContent>
