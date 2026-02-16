@@ -338,7 +338,7 @@ function CountryCard({ country }: CountryCardProps) {
 
                 {/* Country Name - continent-colored gradient */}
                 <h3
-                    className={`relative mb-2 line-clamp-1 text-base font-bold text-white  ${style.nameGradient} bg-clip-text ${style.nameGradientHover} transition-all`}
+                    className={`relative mb-2 line-clamp-1 duration-200 text-base font-bold from-white to-white bg-clip-text text-transparent bg-gradient-to-tr ${style.nameGradientHover} transition-colors`}
                 >
                     {country.name}
                 </h3>
@@ -353,16 +353,16 @@ function CountryCard({ country }: CountryCardProps) {
                 </div>
 
                 {/* Meta row - bottom-anchored */}
-                <div className="relative mt-auto grid grid-cols-2 gap-x-3 gap-y-1.5 border-t border-border/30 pt-3 text-xs text-muted-foreground">
-                    <div className="flex items-center gap-1.5">
+                <div className="relative mt-auto grid grid-cols-3 gap-x-3 gap-y-1.5 border-t border-border/30 pt-3 text-xs text-muted-foreground">
+                    <div className="col-span-1 flex items-center gap-1.5">
                         <MapPin className="h-3 w-3 shrink-0 opacity-50" />
                         <span className="truncate">{country.region}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
+                    <div className="col-span-1 flex items-center gap-1.5">
                         <Banknote className="h-3 w-3 shrink-0 opacity-50" />
                         <span>{country.currencyCode}</span>
                     </div>
-                    <div className="col-span-2 flex items-center gap-1.5">
+                    <div className="col-span-1 flex items-center gap-1.5">
                         <Phone className="h-3 w-3 shrink-0 opacity-50" />
                         <span>{country.callingCode}</span>
                     </div>

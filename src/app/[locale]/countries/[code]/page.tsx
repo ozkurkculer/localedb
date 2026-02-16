@@ -73,6 +73,7 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
 export default async function CountryPage({ params }: CountryPageProps) {
     const { code } = await params;
     const t = await getTranslations('countries.detail');
+    const now = new Date();
 
     let country;
     try {
@@ -117,7 +118,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
             </div>
 
             {/* Quick Info Cards */}
-            <div className="mx-auto mb-12 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mx-auto mb-12 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <InfoCard
                     label="Capital"
                     value={country.basics.capital}
@@ -173,7 +174,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
                     {/* Geography */}
                     <Section
-                        title={t('sections.geography ')}
+                        title={t('sections.geography')}
                         icon={<MapPin className="h-4 w-4 text-muted-foreground" />}
                     >
                         <div className="grid gap-4 sm:grid-cols-2">
@@ -278,10 +279,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Full
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.dateFormats.full}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'full' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.datePatterns.full}
+                                        {country.dateTime.dateFormats.full}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -289,10 +292,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Long
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.dateFormats.long}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'long' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.datePatterns.long}
+                                        {country.dateTime.dateFormats.long}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -300,10 +305,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Medium
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.dateFormats.medium}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            dateStyle: 'medium'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.datePatterns.medium}
+                                        {country.dateTime.dateFormats.medium}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -311,10 +318,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Short
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.dateFormats.short}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'short' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.datePatterns.short}
+                                        {country.dateTime.dateFormats.short}
                                     </p>
                                 </div>
                             </div>
@@ -329,10 +338,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Full
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.timeFormats.full}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'full' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.timePatterns.full}
+                                        {country.dateTime.timeFormats.full}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -340,10 +351,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Long
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.timeFormats.long}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'long' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.timePatterns.long}
+                                        {country.dateTime.timeFormats.long}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -351,10 +364,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Medium
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.timeFormats.medium}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            timeStyle: 'medium'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.timePatterns.medium}
+                                        {country.dateTime.timeFormats.medium}
                                     </p>
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -362,10 +377,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         Short
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {country.dateTime.timeFormats.short}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'short' }).format(
+                                            now
+                                        )}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
-                                        {country.dateTime.timePatterns.short}
+                                        {country.dateTime.timeFormats.short}
                                     </p>
                                 </div>
                             </div>
@@ -549,7 +566,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         <div className="absolute right-2 top-2">
                             <CopyButton value={JSON.stringify(country, null, 2)} label="Country data" />
                         </div>
-                        <pre className="overflow-x-auto rounded-lg bg-muted p-4 text-xs">
+                        <pre className="overflow-x-auto max-h-96 rounded-lg bg-muted p-4 text-xs">
                             <code>{JSON.stringify(country, null, 2)}</code>
                         </pre>
                     </div>
