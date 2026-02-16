@@ -26,7 +26,7 @@ export interface ContinentStyle {
 
 export const continentVariants: Record<string, ContinentStyle> = {
   Africa: {
-    nameGradient: "from-amber-400 to-orange-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-amber-300 group-hover:to-orange-500",
     badgeBg: "bg-amber-500/10",
     badgeText: "text-amber-600 dark:text-amber-400",
@@ -38,7 +38,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-amber-500/10",
   },
   Antarctica: {
-    nameGradient: "from-cyan-300 to-sky-500",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-cyan-200 group-hover:to-sky-400",
     badgeBg: "bg-sky-500/10",
     badgeText: "text-sky-600 dark:text-sky-400",
@@ -50,7 +50,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-sky-500/10",
   },
   Asia: {
-    nameGradient: "from-rose-400 to-red-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-rose-300 group-hover:to-red-500",
     badgeBg: "bg-rose-500/10",
     badgeText: "text-rose-600 dark:text-rose-400",
@@ -62,7 +62,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-rose-500/10",
   },
   Europe: {
-    nameGradient: "from-blue-400 to-indigo-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-blue-300 group-hover:to-indigo-500",
     badgeBg: "bg-blue-500/10",
     badgeText: "text-blue-600 dark:text-blue-400",
@@ -74,7 +74,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-blue-500/10",
   },
   "North America": {
-    nameGradient: "from-emerald-400 to-green-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-emerald-300 group-hover:to-green-500",
     badgeBg: "bg-emerald-500/10",
     badgeText: "text-emerald-600 dark:text-emerald-400",
@@ -86,7 +86,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-emerald-500/10",
   },
   Oceania: {
-    nameGradient: "from-teal-400 to-cyan-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-teal-300 group-hover:to-cyan-500",
     badgeBg: "bg-teal-500/10",
     badgeText: "text-teal-600 dark:text-teal-400",
@@ -98,7 +98,7 @@ export const continentVariants: Record<string, ContinentStyle> = {
     iconBg: "bg-teal-500/10",
   },
   "South America": {
-    nameGradient: "from-violet-400 to-purple-600",
+    nameGradient: "",
     nameGradientHover: "group-hover:from-violet-300 group-hover:to-purple-500",
     badgeBg: "bg-violet-500/10",
     badgeText: "text-violet-600 dark:text-violet-400",
