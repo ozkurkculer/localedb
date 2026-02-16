@@ -6,6 +6,8 @@
         "keywords": "区域数据, 本地化, i18n, 国际化, 国家, 货币, 语言, BCP-47, ISO 代码"
     },
     "nav": {
+        "data": "数据",
+        "project": "项目",
         "countries": "国家",
         "currencies": "货币",
         "languages": "语言",
@@ -532,7 +534,6 @@
                 "date": "2026年第3季度"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",

@@ -6,6 +6,8 @@
         "keywords": "लोकेल डेटा, स्थानीयकरण, i18n, अंतर्राष्ट्रीयकरण, देश, मुद्राएं, भाषाएं, BCP-47, ISO कोड"
     },
     "nav": {
+        "data": "डेटा",
+        "project": "परियोजना",
         "countries": "देश",
         "currencies": "मुद्राएं",
         "languages": "भाषाएं",
@@ -532,7 +534,6 @@
                 "date": "Q3 2026"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",
