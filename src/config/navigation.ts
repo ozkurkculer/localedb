@@ -72,6 +72,10 @@ export const footerNav: {
   ],
   community: [
     {
+      title: "footer.sections.community.changelog",
+      href: "/updates",
+    },
+    {
       title: "footer.sections.resources.github",
       href: "https://github.com/ozkurkculer/localedb",
       external: true,

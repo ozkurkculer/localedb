@@ -442,5 +442,14 @@
         "showAll": "Show All",
         "theme": "Theme",
         "menu": "Menu"
+    },
+    "updates": {
+        "title": "Updates & Changelog",
+        "subtitle": "Track all changes and improvements to LocaleDB",
+        "currentVersion": "Current Version",
+        "releaseDate": "Release Date",
+        "previousVersion": "Previous Version",
+        "totalCommits": "Total Commits",
+        "noUpdates": "No updates available yet."
     }
 }

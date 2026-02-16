@@ -3,9 +3,11 @@ import NextLink from "next/link";
 import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/config/site";
 import { footerNav } from "@/config/navigation";
+import { getAppVersion } from "@/lib/updates";
 
 export async function Footer() {
   const t = await getTranslations();
+  const version = getAppVersion();
   return (
     <footer className="border-t border-border/40 py-12 md:py-16">
         <div className="grid container grid-cols-2 gap-8 md:grid-cols-4">
@@ -70,9 +72,15 @@ export async function Footer() {
         {/* Bottom */}
         <div className="mt-12 border-t border-border/40">
           <div className="container flex flex-col items-center justify-between gap-4 pt-8 md:flex-row">
-            <p className="text-sm text-muted-foreground">
-              Built with ❤️ by ozkurkculer, for developers.
-            </p>
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <Link
+                href="/updates"
+                className="rounded-md bg-muted px-2 py-0.5 font-mono text-xs transition-colors hover:text-foreground"
+              >
+                v{version}
+              </Link>
+              <p>Built with ❤️ by ozkurkculer, for developers.</p>
+            </div>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               {footerNav.legal.map((item) => {
                 const LinkComponent = item.external ? NextLink : Link;

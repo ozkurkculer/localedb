@@ -299,6 +299,126 @@ export default async function CountryPage({ params }: CountryPageProps) {
           </div>
         </Section>
 
+        {/* Phone Formatting */}
+        <Section title="Phone Formatting">
+          {/* Basic Info Grid */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <DataItem label="Calling Code" value={country.phone.callingCode} />
+            <DataItem
+              label="Trunk Prefix"
+              value={country.phone.trunkPrefix || "N/A"}
+            />
+            <DataItem
+              label="International Prefix"
+              value={country.phone.internationalPrefix || "N/A"}
+            />
+            <DataItem
+              label="Subscriber Number Lengths"
+              value={country.phone.subscriberNumberLengths.join(", ")}
+            />
+          </div>
+
+          {/* Example Format */}
+          <div className="mt-4 rounded-lg bg-muted p-4">
+            <p className="text-sm text-muted-foreground">Example Format:</p>
+            <p className="mt-1 font-mono text-2xl font-bold">
+              {country.phone.exampleFormat}
+            </p>
+          </div>
+
+          {/* Format Patterns Table */}
+          {country.phone.formats.length > 0 && (
+            <div className="mt-6">
+              <h4 className="mb-3 font-semibold">Format Patterns</h4>
+              <div className="overflow-x-auto rounded-lg border border-border/40">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b bg-muted/50">
+                      <th className="px-4 py-2 text-left font-medium">Pattern</th>
+                      <th className="px-4 py-2 text-left font-medium">Format</th>
+                      <th className="px-4 py-2 text-left font-medium">
+                        Leading Digits
+                      </th>
+                      <th className="px-4 py-2 text-left font-medium">
+                        National Prefix
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {country.phone.formats.map((fmt, i) => (
+                      <tr key={i} className="border-b border-border/20">
+                        <td className="px-4 py-2 font-mono text-xs">
+                          {fmt.pattern}
+                        </td>
+                        <td className="px-4 py-2 font-mono text-xs">{fmt.format}</td>
+                        <td className="px-4 py-2 font-mono text-xs">
+                          {fmt.leadingDigits?.join(", ") || "—"}
+                        </td>
+                        <td className="px-4 py-2 font-mono text-xs">
+                          {fmt.nationalPrefixRule || "—"}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+
+          {/* Phone Number Types */}
+          {Object.keys(country.phone.types).length > 0 && (
+            <div className="mt-6">
+              <h4 className="mb-3 font-semibold">Phone Number Types</h4>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {Object.entries(country.phone.types).map(([typeName, typeData]) => {
+                  if (!typeData) return null;
+                  const labels: Record<string, string> = {
+                    fixedLine: "Fixed Line",
+                    mobile: "Mobile",
+                    tollFree: "Toll Free",
+                    premiumRate: "Premium Rate",
+                    sharedCost: "Shared Cost",
+                    voip: "VoIP",
+                    uan: "UAN",
+                  };
+                  return (
+                    <div
+                      key={typeName}
+                      className="rounded-lg border border-border/40 bg-background/50 p-3"
+                    >
+                      <div className="mb-2 font-medium">
+                        {labels[typeName] || typeName}
+                      </div>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Example:</span>
+                          <span className="font-mono">
+                            {typeData.exampleNumber}
+                          </span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Lengths:</span>
+                          <span className="font-mono">
+                            {typeData.possibleLengths.join(", ")}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* General Pattern */}
+          <div className="mt-4">
+            <DataItem
+              label="General Pattern"
+              value={country.phone.generalPattern}
+            />
+          </div>
+        </Section>
+
         {/* Locale Info */}
         <Section title="Locale Settings">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

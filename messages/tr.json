@@ -442,5 +442,14 @@
         "showAll": "Tümünü Göster",
         "theme": "Tema",
         "menu": "Menü"
+    },
+    "updates": {
+        "title": "Güncellemeler & Değişiklikler",
+        "subtitle": "LocaleDB'deki tüm değişiklikleri ve iyileştirmeleri takip edin",
+        "currentVersion": "Mevcut Versiyon",
+        "releaseDate": "Yayın Tarihi",
+        "previousVersion": "Önceki Versiyon",
+        "totalCommits": "Toplam Commit",
+        "noUpdates": "Henüz güncelleme bulunmuyor."
     }
 }
