@@ -96,6 +96,7 @@
                 "currencyFormat": "Currency Format",
                 "dateTime": "Date & Time Formats",
                 "numberFormat": "Number Formatting",
+                "phone": "Phone Formatting",
                 "locale": "Locale Settings",
                 "rawJson": "Raw JSON Data"
             },
@@ -163,7 +164,12 @@
         "search": "Search currencies...",
         "sort": {
             "name": "Name",
-            "code": "Code"
+            "code": "Code",
+            "symbol": "Symbol",
+            "usage": "Usage Count"
+        },
+        "card": {
+            "usedIn": "Used in {count} countries"
         },
         "detail": {
             "numeric": "Numeric:",
@@ -192,7 +198,12 @@
         "search": "Search languages...",
         "sort": {
             "name": "Name",
-            "code": "Code"
+            "code": "Code",
+            "native": "Native Name",
+            "usage": "Usage Count"
+        },
+        "card": {
+            "countriesCount": "{count} countries"
         },
         "detail": {
             "sections": {
@@ -226,7 +237,11 @@
             "city": "City",
             "country": "Country",
             "region": "Region"
-        }
+        },
+        "showing": "Showing {shown} of {total} airports",
+        "noResults": "No airports found matching your search.",
+        "copyIata": "Copy IATA",
+        "copyIcao": "Copy ICAO"
     },
     "localeCodes": {
         "title": "Locale Codes Reference",
@@ -443,7 +458,22 @@
         "viewMore": "View More",
         "showAll": "Show All",
         "theme": "Theme",
-        "menu": "Menu"
+        "menu": "Menu",
+        "clearFilters": "Clear filters",
+        "clearSearch": "Clear search",
+        "toggleTheme": "Toggle theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System",
+        "changeLanguage": "Change language",
+        "showing": "Showing {shown} of {total}"
+    },
+    "search": {
+        "placeholder": "Search countries...",
+        "dialogPlaceholder": "Search countries, currencies, codes...",
+        "ariaLabel": "Search countries, currencies, and codes",
+        "noResults": "No results found.",
+        "groupCountries": "Countries"
     },
     "updates": {
         "title": "Updates & Changelog",

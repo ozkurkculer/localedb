@@ -96,6 +96,7 @@
                 "currencyFormat": "Format de Devise",
                 "dateTime": "Formats de Date et Heure",
                 "numberFormat": "Format des Nombres",
+                "phone": "Format de Téléphone",
                 "locale": "Paramètres Régionaux",
                 "rawJson": "Données JSON Brutes"
             },
@@ -163,7 +164,12 @@
         "search": "Rechercher des devises...",
         "sort": {
             "name": "Nom",
-            "code": "Code"
+            "code": "Code",
+            "symbol": "Symbole",
+            "usage": "Nombre d'utilisations"
+        },
+        "card": {
+            "usedIn": "Utilisé dans {count} pays"
         },
         "detail": {
             "numeric": "Numérique :",
@@ -192,7 +198,12 @@
         "search": "Rechercher des langues...",
         "sort": {
             "name": "Nom",
-            "code": "Code"
+            "code": "Code",
+            "native": "Nom natif",
+            "usage": "Nombre d'utilisations"
+        },
+        "card": {
+            "countriesCount": "{count} pays"
         },
         "detail": {
             "sections": {
@@ -226,7 +237,11 @@
             "city": "Ville",
             "country": "Pays",
             "region": "Région"
-        }
+        },
+        "showing": "Affichage de {shown} sur {total} aéroports",
+        "noResults": "Aucun aéroport trouvé correspondant à votre recherche.",
+        "copyIata": "Copier IATA",
+        "copyIcao": "Copier ICAO"
     },
     "localeCodes": {
         "title": "Référence des Codes Régionaux",
@@ -282,11 +297,7 @@
             },
             "languages": {
                 "title": "Données de Langues",
-                "items": [
-                    "Codes ISO 639-1, 639-2 et 639-3",
-                    "Noms de langues natifs",
-                    "Pays où elles sont parlées"
-                ]
+                "items": ["Codes ISO 639-1, 639-2 et 639-3", "Noms de langues natifs", "Pays où elles sont parlées"]
             },
             "airports": {
                 "title": "Informations sur les Aéroports",
@@ -497,7 +508,22 @@
         "viewMore": "Voir Plus",
         "showAll": "Tout Afficher",
         "theme": "Thème",
-        "menu": "Menu"
+        "menu": "Menu",
+        "clearFilters": "Effacer les filtres",
+        "clearSearch": "Effacer la recherche",
+        "toggleTheme": "Changer le thème",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système",
+        "changeLanguage": "Changer de langue",
+        "showing": "Affichage de {shown} sur {total}"
+    },
+    "search": {
+        "placeholder": "Rechercher des pays...",
+        "dialogPlaceholder": "Rechercher des pays, devises, codes...",
+        "ariaLabel": "Rechercher des pays, devises et codes",
+        "noResults": "Aucun résultat trouvé.",
+        "groupCountries": "Pays"
     },
     "roadmap": {
         "title": "Project Roadmap",

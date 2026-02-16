@@ -96,6 +96,7 @@
                 "currencyFormat": "Para Birimi Formatı",
                 "dateTime": "Tarih ve Saat Formatları",
                 "numberFormat": "Sayı Biçimlendirmesi",
+                "phone": "Telefon Biçimlendirmesi",
                 "locale": "Yerel Ayarlar",
                 "rawJson": "Ham JSON Verisi"
             },
@@ -163,7 +164,12 @@
         "search": "Para birimi ara...",
         "sort": {
             "name": "İsim",
-            "code": "Kod"
+            "code": "Kod",
+            "symbol": "Sembol",
+            "usage": "Kullanım Sayısı"
+        },
+        "card": {
+            "usedIn": "{count} ülkede kullanılıyor"
         },
         "detail": {
             "numeric": "Numerik:",
@@ -192,7 +198,12 @@
         "search": "Dil ara...",
         "sort": {
             "name": "İsim",
-            "code": "Kod"
+            "code": "Kod",
+            "native": "Yerel Adı",
+            "usage": "Kullanım Sayısı"
+        },
+        "card": {
+            "countriesCount": "{count} ülke"
         },
         "detail": {
             "sections": {
@@ -226,7 +237,11 @@
             "city": "Şehir",
             "country": "Ülke",
             "region": "Bölge"
-        }
+        },
+        "showing": "{total} havalimanından {shown} tanesi gösteriliyor",
+        "noResults": "Aramanızla eşleşen havalimanı bulunamadı.",
+        "copyIata": "IATA'yı kopyala",
+        "copyIcao": "ICAO'yu kopyala"
     },
     "localeCodes": {
         "title": "Yerel Kodları Referansı",
@@ -443,7 +458,22 @@
         "viewMore": "Daha Fazla Göster",
         "showAll": "Tümünü Göster",
         "theme": "Tema",
-        "menu": "Menü"
+        "menu": "Menü",
+        "clearFilters": "Filtreleri temizle",
+        "clearSearch": "Aramayı temizle",
+        "toggleTheme": "Temayı değiştir",
+        "light": "Açık",
+        "dark": "Koyu",
+        "system": "Sistem",
+        "changeLanguage": "Dili değiştir",
+        "showing": "{total} içinden {shown} gösteriliyor"
+    },
+    "search": {
+        "placeholder": "Ülke ara...",
+        "dialogPlaceholder": "Ülke, para birimi, kod ara...",
+        "ariaLabel": "Ülkeler, para birimleri ve kodları ara",
+        "noResults": "Sonuç bulunamadı.",
+        "groupCountries": "Ülkeler"
     },
     "updates": {
         "title": "Güncellemeler & Değişiklikler",

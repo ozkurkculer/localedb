@@ -93,11 +93,12 @@
                 "geography": "地理",
                 "airports": "空港",
                 "codes": "国コード",
-                "currencyFormat": "通貨フォーマット",
-                "dateTime": "日付と時刻のフォーマット",
-                "numberFormat": "数値フォーマット",
+                "currencyFormat": "通貨形式",
+                "dateTime": "日付と時刻の形式",
+                "numberFormat": "数値の形式",
+                "phone": "電話番号の形式",
                 "locale": "ロケール設定",
-                "rawJson": "生JSONデータ"
+                "rawJson": "生 JSON データ"
             },
             "geography": {
                 "region": "地域",
@@ -163,7 +164,12 @@
         "search": "通貨を検索...",
         "sort": {
             "name": "名前",
-            "code": "コード"
+            "code": "コード",
+            "symbol": "記号",
+            "usage": "使用回数"
+        },
+        "card": {
+            "usedIn": "{count}国で使用"
         },
         "detail": {
             "numeric": "数値：",
@@ -192,7 +198,12 @@
         "search": "言語を検索...",
         "sort": {
             "name": "名前",
-            "code": "コード"
+            "code": "コード",
+            "native": "現地名",
+            "usage": "使用回数"
+        },
+        "card": {
+            "countriesCount": "{count}国"
         },
         "detail": {
             "sections": {
@@ -226,7 +237,11 @@
             "city": "都市",
             "country": "国",
             "region": "地域"
-        }
+        },
+        "showing": "{total}件の空港中{shown}件を表示",
+        "noResults": "検索に一致する空港が見つかりません。",
+        "copyIata": "IATAをコピー",
+        "copyIcao": "ICAOをコピー"
     },
     "localeCodes": {
         "title": "ロケールコードリファレンス",
@@ -272,30 +287,15 @@
             },
             "currencies": {
                 "title": "通貨フォーマット",
-                "items": [
-                    "記号の配置",
-                    "小数点と桁区切り記号",
-                    "小数桁数",
-                    "補助単位情報",
-                    "会計フォーマットの例"
-                ]
+                "items": ["記号の配置", "小数点と桁区切り記号", "小数桁数", "補助単位情報", "会計フォーマットの例"]
             },
             "languages": {
                 "title": "言語データ",
-                "items": [
-                    "ISO 639-1、639-2、639-3コード",
-                    "ネイティブ言語名",
-                    "話されている国"
-                ]
+                "items": ["ISO 639-1、639-2、639-3コード", "ネイティブ言語名", "話されている国"]
             },
             "airports": {
                 "title": "空港情報",
-                "items": [
-                    "IATAおよびICAOコード",
-                    "地理座標",
-                    "地域および国データ",
-                    "都市およびタイムゾーン情報"
-                ]
+                "items": ["IATAおよびICAOコード", "地理座標", "地域および国データ", "都市およびタイムゾーン情報"]
             }
         },
         "sources": {
@@ -345,12 +345,7 @@
             },
             "developerExp": {
                 "title": "開発者体験",
-                "items": [
-                    "高速な静的生成",
-                    "サーバー不要",
-                    "オープンソース（MITライセンス）",
-                    "コミュニティ貢献"
-                ]
+                "items": ["高速な静的生成", "サーバー不要", "オープンソース（MITライセンス）", "コミュニティ貢献"]
             }
         },
         "cta": {
@@ -497,7 +492,22 @@
         "viewMore": "もっと見る",
         "showAll": "すべて表示",
         "theme": "テーマ",
-        "menu": "メニュー"
+        "menu": "メニュー",
+        "clearFilters": "フィルターをクリア",
+        "clearSearch": "検索をクリア",
+        "toggleTheme": "テーマを切り替え",
+        "light": "ライト",
+        "dark": "ダーク",
+        "system": "システム",
+        "changeLanguage": "言語を変更",
+        "showing": "{total}件中{shown}件を表示"
+    },
+    "search": {
+        "placeholder": "国を検索...",
+        "dialogPlaceholder": "国、通貨、コードを検索...",
+        "ariaLabel": "国、通貨、コードを検索",
+        "noResults": "結果が見つかりません。",
+        "groupCountries": "国"
     },
     "roadmap": {
         "title": "プロジェクトロードマップ",
