@@ -96,7 +96,8 @@
                 "currencyFormat": "Formato de Moeda",
                 "dateTime": "Formatos de Data e Hora",
                 "numberFormat": "Formatação de Números",
-                "locale": "Configurações de Localidade",
+                "phone": "Formato de Telefone",
+                "locale": "Configurações Regionais",
                 "rawJson": "Dados JSON Brutos"
             },
             "geography": {
@@ -163,7 +164,12 @@
         "search": "Pesquisar moedas...",
         "sort": {
             "name": "Nome",
-            "code": "Código"
+            "code": "Código",
+            "symbol": "Símbolo",
+            "usage": "Contagem de Uso"
+        },
+        "card": {
+            "usedIn": "Usado em {count} países"
         },
         "detail": {
             "numeric": "Numérico:",
@@ -192,7 +198,12 @@
         "search": "Pesquisar idiomas...",
         "sort": {
             "name": "Nome",
-            "code": "Código"
+            "code": "Código",
+            "native": "Nome Nativo",
+            "usage": "Contagem de Uso"
+        },
+        "card": {
+            "countriesCount": "{count} países"
         },
         "detail": {
             "sections": {
@@ -226,7 +237,11 @@
             "city": "Cidade",
             "country": "País",
             "region": "Região"
-        }
+        },
+        "showing": "Mostrando {shown} de {total} aeroportos",
+        "noResults": "Nenhum aeroporto encontrado correspondente à sua pesquisa.",
+        "copyIata": "Copiar IATA",
+        "copyIcao": "Copiar ICAO"
     },
     "localeCodes": {
         "title": "Referência de Códigos de Localidade",
@@ -282,11 +297,7 @@
             },
             "languages": {
                 "title": "Dados de Idiomas",
-                "items": [
-                    "Códigos ISO 639-1, 639-2 e 639-3",
-                    "Nomes nativos de idiomas",
-                    "Países onde são falados"
-                ]
+                "items": ["Códigos ISO 639-1, 639-2 e 639-3", "Nomes nativos de idiomas", "Países onde são falados"]
             },
             "airports": {
                 "title": "Informações de Aeroportos",
@@ -497,7 +508,22 @@
         "viewMore": "Ver Mais",
         "showAll": "Mostrar Tudo",
         "theme": "Tema",
-        "menu": "Menu"
+        "menu": "Menu",
+        "clearFilters": "Limpar filtros",
+        "clearSearch": "Limpar pesquisa",
+        "toggleTheme": "Alternar tema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "system": "Sistema",
+        "changeLanguage": "Mudar idioma",
+        "showing": "Mostrando {shown} de {total}"
+    },
+    "search": {
+        "placeholder": "Pesquisar países...",
+        "dialogPlaceholder": "Pesquisar países, moedas, códigos...",
+        "ariaLabel": "Pesquisar países, moedas e códigos",
+        "noResults": "Nenhum resultado encontrado.",
+        "groupCountries": "Países"
     },
     "roadmap": {
         "title": "Roteiro do Projeto",
