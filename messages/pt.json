@@ -6,6 +6,8 @@
         "keywords": "dados de localidade, localização, i18n, internacionalização, países, moedas, idiomas, BCP-47, códigos ISO"
     },
     "nav": {
+        "data": "Dados",
+        "project": "Projeto",
         "countries": "Países",
         "currencies": "Moedas",
         "languages": "Idiomas",
@@ -532,7 +534,6 @@
                 "date": "Q3 2026"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",

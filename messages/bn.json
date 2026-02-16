@@ -6,6 +6,8 @@
         "keywords": "স্থানীয় ডেটা, স্থানীয়করণ, i18n, আন্তর্জাতিকীকরণ, দেশ, মুদ্রা, ভাষা, BCP-47, ISO কোড"
     },
     "nav": {
+        "data": "ডেটা",
+        "project": "প্রকল্প",
         "countries": "দেশ",
         "currencies": "মুদ্রা",
         "languages": "ভাষা",
@@ -532,7 +534,6 @@
                 "date": "Q3 2026"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",

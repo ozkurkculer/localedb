@@ -1,9 +1,34 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { getCountry, getAllCountryCodes } from "@/lib/countries";
 import { CopyButton } from "@/components/copy-button";
 import { Button } from "@/components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Globe,
+  MapPin,
+  Languages as LanguagesIcon,
+  Hash,
+  Banknote,
+  Clock,
+  Calculator,
+  Phone as PhoneIcon,
+  Settings,
+  Code2,
+  Plane,
+  Landmark,
+  Users,
+  Ruler,
+} from "lucide-react";
+import { getContinentStyle } from "@/components/countries/continent-variants";
 
 interface CountryPageProps {
   params: Promise<{
@@ -68,134 +93,212 @@ export default async function CountryPage({ params }: CountryPageProps) {
     notFound();
   }
 
+  const style = getContinentStyle(country.basics.continent);
+
   return (
     <div className="container py-12">
-      {/* Header */}
+      {/* Hero */}
       <div className="mb-12 text-center">
-        <div className="mb-4 text-6xl sm:text-7xl md:text-8xl">{country.basics.flagEmoji}</div>
-        <h1 className="mb-2 text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent">{country.basics.name}</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
+        {/* Flag with subtle shadow */}
+        <div className="mb-4 text-6xl drop-shadow-sm sm:text-7xl md:text-8xl">
+          {country.basics.flagEmoji}
+        </div>
+
+        {/* Country Name - continent-colored gradient */}
+        <h1
+          className={`mb-2 text-2xl font-bold sm:text-3xl md:text-4xl bg-gradient-to-br ${style.nameGradient} bg-clip-text text-transparent`}
+        >
+          {country.basics.name}
+        </h1>
+
+        <p className="text-base text-muted-foreground sm:text-lg md:text-xl">
           {country.basics.officialName}
         </p>
-        <p className="mt-2 text-sm sm:text-base md:text-lg text-muted-foreground">
-          {country.basics.nativeName} · {country.basics.continent}
-        </p>
+
+        {/* Continent badge + native name */}
+        <div className="mt-3 flex items-center justify-center gap-3 text-sm text-muted-foreground">
+          <span
+            className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${style.badgeBg} ${style.badgeText}`}
+          >
+            {country.basics.continent}
+          </span>
+          <span className="text-border">|</span>
+          <span>{country.basics.nativeName}</span>
+        </div>
       </div>
 
-      {/* Quick Info */}
+      {/* Quick Info Cards */}
       <div className="mx-auto mb-12 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <InfoCard label="Capital" value={country.basics.capital} />
+        <InfoCard
+          label="Capital"
+          value={country.basics.capital}
+          icon={<Landmark className="h-4 w-4" />}
+          accentClass={style.accentBorder}
+        />
         <InfoCard
           label="Population"
           value={country.basics.population.toLocaleString()}
+          icon={<Users className="h-4 w-4" />}
+          accentClass={style.accentBorder}
         />
         <InfoCard
           label="Currency"
           value={`${country.currency.symbol} ${country.currency.code}`}
+          icon={<Banknote className="h-4 w-4" />}
+          accentClass={style.accentBorder}
         />
-        <InfoCard label="Calling Code" value={country.phone.callingCode} />
+        <InfoCard
+          label="Calling Code"
+          value={country.phone.callingCode}
+          icon={<PhoneIcon className="h-4 w-4" />}
+          accentClass={style.accentBorder}
+        />
       </div>
 
-      {/* Languages & Geography */}
-      <div className="mx-auto mb-8 grid max-w-6xl gap-8 md:grid-cols-2">
-        {/* Languages */}
-        <Section title="Languages">
-          <div className="grid gap-3">
-            {country.basics.languages.map((lang) => (
-              <div key={lang.code} className="flex items-center justify-between rounded-md border border-border/40 bg-background/50 p-3">
-                <div>
-                  <div className="font-medium">{lang.name}</div>
-                  <div className="text-xs text-muted-foreground">{lang.nativeName}</div>
+      {/* Main content sections */}
+      <div className="mx-auto max-w-6xl space-y-8">
+        {/* Languages & Geography */}
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Languages */}
+          <Section
+            title="Languages"
+            icon={<LanguagesIcon className="h-4 w-4 text-muted-foreground" />}
+          >
+            <div className="grid gap-2">
+              {country.basics.languages.map((lang) => (
+                <div
+                  key={lang.code}
+                  className="flex items-center justify-between rounded-md bg-muted/30 px-4 py-3 transition-colors hover:bg-muted/50"
+                >
+                  <div>
+                    <div className="text-sm font-medium">{lang.name}</div>
+                    <div className="text-xs text-muted-foreground">
+                      {lang.nativeName}
+                    </div>
+                  </div>
+                  <code className="rounded-md bg-background px-2 py-1 font-mono text-xs text-muted-foreground">
+                    {lang.code}
+                  </code>
                 </div>
-                <div className="rounded-md bg-muted px-2 py-1 font-mono text-xs">
-                  {lang.code}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
+              ))}
+            </div>
+          </Section>
 
-        {/* Geography */}
-        <Section title="Geography">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <DataItem label="Region" value={country.basics.region} />
-            <DataItem label="Subregion" value={country.basics.subregion} />
-            <DataItem label="Continent" value={country.basics.continent} />
-            <DataItem label="Area" value={`${country.basics.area.toLocaleString()} km²`} />
-            <DataItem label="Landlocked" value={country.basics.landlocked ? "Yes" : "No"} />
-            <DataItem label="TLD" value={country.basics.tld.join(", ")} />
+          {/* Geography */}
+          <Section
+            title="Geography"
+            icon={<MapPin className="h-4 w-4 text-muted-foreground" />}
+          >
+            <div className="grid gap-4 sm:grid-cols-2">
+              <DataItem label="Region" value={country.basics.region} />
+              <DataItem label="Subregion" value={country.basics.subregion} />
+              <DataItem label="Continent" value={country.basics.continent} />
+              <DataItem
+                label="Area"
+                value={`${country.basics.area.toLocaleString()} km²`}
+              />
+              <DataItem
+                label="Landlocked"
+                value={country.basics.landlocked ? "Yes" : "No"}
+              />
+              <DataItem label="TLD" value={country.basics.tld.join(", ")} />
+            </div>
+
             {country.basics.borders.length > 0 && (
-              <div className="col-span-2">
-                <p className="mb-1 text-sm font-medium text-muted-foreground">Borders</p>
-                <div className="flex flex-wrap gap-2">
-                  {country.basics.borders.map(border => (
-                    <span key={border} className="rounded-md bg-muted px-2 py-1 text-xs">{border}</span>
+              <div className="col-span-full mt-4">
+                <p className="mb-1.5 text-xs font-medium text-muted-foreground">
+                  Borders
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {country.basics.borders.map((border) => (
+                    <Link
+                      key={border}
+                      href={`/countries/${border}`}
+                      className="rounded-md bg-muted px-2 py-1 font-mono text-xs transition-colors hover:bg-muted/80 hover:text-foreground"
+                    >
+                      {border}
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
-          </div>
-        </Section>
-      </div>
+          </Section>
+        </div>
 
-      {/* Data Sections */}
-      <div className="mx-auto max-w-6xl space-y-8">
-
-
-        {/* Airports [NEW] */}
-        <Section title={`Airports (${country.airports?.length || 0})`}>
-          {country.airports && country.airports.length > 0 ? (
-            <div className="space-y-4">
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {country.airports.slice(0, 9).map((airport) => (
-                  <div key={airport.iata || airport.icao} className="flex flex-col justify-between rounded-lg border border-border/40 bg-card p-3">
-                    <div>
-                      <div className="mb-1 flex items-center justify-between">
-                        <span className="font-bold">{airport.iata}</span>
-                        {airport.icao && <span className="text-xs text-muted-foreground">{airport.icao}</span>}
-                      </div>
-                      <div className="line-clamp-1 text-sm font-medium" title={airport.name}>{airport.name}</div>
-                      <div className="text-xs text-muted-foreground">{airport.region}</div>
-                    </div>
+        {/* Airports */}
+        {country.airports && country.airports.length > 0 && (
+          <Section
+            title={`Airports (${country.airports.length})`}
+            icon={<Plane className="h-4 w-4 text-muted-foreground" />}
+          >
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {country.airports.slice(0, 9).map((airport, i) => (
+                <div
+                  key={i}
+                  className="rounded-md bg-muted/30 p-3 transition-colors hover:bg-muted/50"
+                >
+                  <div className="mb-1 flex items-center gap-2">
+                    <code className="rounded bg-background px-1.5 py-0.5 font-mono text-xs font-semibold">
+                      {airport.iata || airport.icao}
+                    </code>
                   </div>
-                ))}
-              </div>
-              {country.airports.length > 9 && (
-                <div className="mt-4 flex flex-col items-center gap-2">
-                  <p className="text-sm text-muted-foreground">
-                    and {country.airports.length - 9} more airports...
-                  </p>
-                  <Button variant="secondary" size="default" asChild>
-                    <Link href={`/airports?search=${encodeURIComponent(country.basics.name)}`}>
-                      Show All Airports
-                    </Link>
-                  </Button>
+                  <div className="line-clamp-1 text-sm font-medium">
+                    {airport.name}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    {airport.region}
+                  </div>
                 </div>
-              )}
+              ))}
             </div>
-          ) : (
-            <p className="text-muted-foreground">No airports listed.</p>
-          )}
-        </Section>
 
-        {/* Codes */}
-        <Section title="Country Codes">
+            {country.airports.length > 9 && (
+              <div className="mt-4 text-center">
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="/airports">
+                    View all {country.airports.length} airports
+                  </Link>
+                </Button>
+              </div>
+            )}
+          </Section>
+        )}
+
+        {/* Country Codes */}
+        <Section
+          title="Country Codes"
+          icon={<Hash className="h-4 w-4 text-muted-foreground" />}
+        >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <DataItem label="ISO 3166-1 Alpha-2" value={country.codes.iso3166Alpha2} />
-            <DataItem label="ISO 3166-1 Alpha-3" value={country.codes.iso3166Alpha3} />
-            <DataItem label="ISO 3166-1 Numeric" value={country.codes.iso3166Numeric} />
-            <DataItem label="BCP 47" value={country.codes.bcp47.join(", ")} />
+            <DataItem
+              label="ISO 3166-1 Alpha-2"
+              value={country.codes.iso3166Alpha2}
+            />
+            <DataItem
+              label="ISO 3166-1 Alpha-3"
+              value={country.codes.iso3166Alpha3}
+            />
+            <DataItem
+              label="ISO 3166-1 Numeric"
+              value={country.codes.iso3166Numeric}
+            />
+            <DataItem
+              label="BCP 47"
+              value={country.codes.bcp47.join(", ")}
+            />
             <DataItem label="IOC" value={country.codes.ioc} />
             <DataItem label="FIFA" value={country.codes.fifa} />
           </div>
         </Section>
 
-        {/* Currency */}
-        <Section title="Currency Format">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <DataItem label="Name" value={country.currency.name} />
-            <DataItem label="Native Name" value={country.currency.nativeName} />
+        {/* Currency Format */}
+        <Section
+          title="Currency Format"
+          icon={<Banknote className="h-4 w-4 text-muted-foreground" />}
+        >
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <DataItem label="Code" value={country.currency.code} />
+            <DataItem label="Name" value={country.currency.name} />
             <DataItem label="Symbol" value={country.currency.symbol} />
             <DataItem
               label="Symbol Position"
@@ -209,71 +312,116 @@ export default async function CountryPage({ params }: CountryPageProps) {
               label="Thousands Separator"
               value={country.currency.thousandsSeparator}
             />
-            <DataItem
-              label="Decimal Digits"
-              value={country.currency.decimalDigits.toString()}
-            />
           </div>
-          <div className="mt-4 rounded-lg bg-muted p-4">
-            <p className="text-sm text-muted-foreground">Example:</p>
-            <p className="mt-1 font-mono text-2xl font-bold">
+
+          <div className="mt-4 rounded-lg border border-border/30 bg-muted/40 p-4">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              Example
+            </p>
+            <p className="mt-1.5 font-mono text-xl font-bold text-foreground">
               {country.currency.example}
             </p>
           </div>
         </Section>
 
-        {/* Date & Time */}
-        <Section title="Date & Time Formats">
-          <div className="space-y-4">
+        {/* Date & Time Formats */}
+        <Section
+          title="Date & Time Formats"
+          icon={<Clock className="h-4 w-4 text-muted-foreground" />}
+        >
+          <div className="space-y-6">
+            {/* Date Formats */}
             <div>
-              <h4 className="mb-2 font-semibold">Date Formats</h4>
-              <div className="grid gap-2 sm:grid-cols-2">
+              <h4 className="mb-3 text-sm font-semibold">Date Formats</h4>
+              <div className="grid gap-4 sm:grid-cols-2">
                 <DataItem label="Full" value={country.dateTime.dateFormats.full} />
                 <DataItem label="Long" value={country.dateTime.dateFormats.long} />
-                <DataItem label="Medium" value={country.dateTime.dateFormats.medium} />
-                <DataItem label="Short" value={country.dateTime.dateFormats.short} />
+                <DataItem
+                  label="Medium"
+                  value={country.dateTime.dateFormats.medium}
+                />
+                <DataItem
+                  label="Short"
+                  value={country.dateTime.dateFormats.short}
+                />
               </div>
             </div>
+
+            {/* Time Formats */}
             <div>
-              <h4 className="mb-2 font-semibold">Time Formats</h4>
-              <div className="grid gap-2 sm:grid-cols-2">
+              <h4 className="mb-3 text-sm font-semibold">Time Formats</h4>
+              <div className="grid gap-4 sm:grid-cols-2">
                 <DataItem label="Full" value={country.dateTime.timeFormats.full} />
                 <DataItem label="Long" value={country.dateTime.timeFormats.long} />
-                <DataItem label="Medium" value={country.dateTime.timeFormats.medium} />
-                <DataItem label="Short" value={country.dateTime.timeFormats.short} />
+                <DataItem
+                  label="Medium"
+                  value={country.dateTime.timeFormats.medium}
+                />
+                <DataItem
+                  label="Short"
+                  value={country.dateTime.timeFormats.short}
+                />
               </div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <DataItem
-                label="First Day of Week"
-                value={
-                  country.dateTime.firstDayOfWeek === 1 ? "Monday" : "Sunday"
-                }
-              />
-              <DataItem
-                label="Clock Format"
-                value={country.dateTime.clockFormat}
-              />
-              <DataItem
-                label="Primary Timezone"
-                value={country.dateTime.primaryTimezone}
-              />
-              <DataItem label="UTC Offset" value={country.dateTime.utcOffset} />
-              <div className="col-span-2">
-                <p className="mb-2 text-sm font-medium text-muted-foreground">Timezones</p>
-                <div className="flex flex-wrap gap-1">
-                  {country.dateTime.timezones.map(tz => (
-                    <span key={tz} className="rounded-md border bg-muted/50 px-2 py-1 text-xs font-mono">{tz}</span>
+
+            {/* Additional Info */}
+            <div>
+              <h4 className="mb-3 text-sm font-semibold">Additional Info</h4>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <DataItem
+                  label="First Day of Week"
+                  value={
+                    [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                      "Sunday",
+                    ][country.dateTime.firstDayOfWeek - 1]
+                  }
+                />
+                <DataItem
+                  label="Clock Format"
+                  value={country.dateTime.clockFormat}
+                />
+                <DataItem
+                  label="Primary Timezone"
+                  value={country.dateTime.primaryTimezone}
+                />
+                <DataItem
+                  label="UTC Offset"
+                  value={country.dateTime.utcOffset}
+                />
+              </div>
+            </div>
+
+            {/* Timezones */}
+            {country.dateTime.timezones.length > 0 && (
+              <div>
+                <h4 className="mb-3 text-sm font-semibold">Timezones</h4>
+                <div className="flex flex-wrap gap-2">
+                  {country.dateTime.timezones.map((tz, i) => (
+                    <code
+                      key={i}
+                      className="rounded-md bg-muted px-2 py-1 font-mono text-xs"
+                    >
+                      {tz}
+                    </code>
                   ))}
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </Section>
 
-        {/* Number Format */}
-        <Section title="Number Formatting">
-          <div className="grid gap-4 sm:grid-cols-2">
+        {/* Number Formatting */}
+        <Section
+          title="Number Formatting"
+          icon={<Calculator className="h-4 w-4 text-muted-foreground" />}
+        >
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <DataItem
               label="Decimal Separator"
               value={country.numberFormat.decimalSeparator}
@@ -291,136 +439,167 @@ export default async function CountryPage({ params }: CountryPageProps) {
               value={country.numberFormat.numberingSystem}
             />
           </div>
-          <div className="mt-4 rounded-lg bg-muted p-4">
-            <p className="text-sm text-muted-foreground">Example:</p>
-            <p className="mt-1 font-mono text-2xl font-bold">
+
+          <div className="mt-4 rounded-lg border border-border/30 bg-muted/40 p-4">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              Example
+            </p>
+            <p className="mt-1.5 font-mono text-xl font-bold text-foreground">
               {country.numberFormat.example}
             </p>
           </div>
         </Section>
 
         {/* Phone Formatting */}
-        <Section title="Phone Formatting">
-          {/* Basic Info Grid */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <DataItem label="Calling Code" value={country.phone.callingCode} />
-            <DataItem
-              label="Trunk Prefix"
-              value={country.phone.trunkPrefix || "N/A"}
-            />
-            <DataItem
-              label="International Prefix"
-              value={country.phone.internationalPrefix || "N/A"}
-            />
-            <DataItem
-              label="Subscriber Number Lengths"
-              value={country.phone.subscriberNumberLengths.join(", ")}
-            />
-          </div>
-
-          {/* Example Format */}
-          <div className="mt-4 rounded-lg bg-muted p-4">
-            <p className="text-sm text-muted-foreground">Example Format:</p>
-            <p className="mt-1 font-mono text-2xl font-bold">
-              {country.phone.exampleFormat}
-            </p>
-          </div>
-
-          {/* Format Patterns Table */}
-          {country.phone.formats.length > 0 && (
-            <div className="mt-6">
-              <h4 className="mb-3 font-semibold">Format Patterns</h4>
-              <div className="overflow-x-auto rounded-lg border border-border/40">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b bg-muted/50">
-                      <th className="px-4 py-2 text-left font-medium">Pattern</th>
-                      <th className="px-4 py-2 text-left font-medium">Format</th>
-                      <th className="px-4 py-2 text-left font-medium">
-                        Leading Digits
-                      </th>
-                      <th className="px-4 py-2 text-left font-medium">
-                        National Prefix
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {country.phone.formats.map((fmt, i) => (
-                      <tr key={i} className="border-b border-border/20">
-                        <td className="px-4 py-2 font-mono text-xs">
-                          {fmt.pattern}
-                        </td>
-                        <td className="px-4 py-2 font-mono text-xs">{fmt.format}</td>
-                        <td className="px-4 py-2 font-mono text-xs">
-                          {fmt.leadingDigits?.join(", ") || "—"}
-                        </td>
-                        <td className="px-4 py-2 font-mono text-xs">
-                          {fmt.nationalPrefixRule || "—"}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+        <Section
+          title="Phone Formatting"
+          icon={<PhoneIcon className="h-4 w-4 text-muted-foreground" />}
+        >
+          <div className="space-y-6">
+            {/* Basic Info */}
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <DataItem
+                label="Calling Code"
+                value={country.phone.callingCode}
+              />
+              <DataItem
+                label="Trunk Prefix"
+                value={country.phone.trunkPrefix || "N/A"}
+              />
+              <DataItem
+                label="International Prefix"
+                value={country.phone.internationalPrefix}
+              />
+              <DataItem
+                label="Subscriber Number Lengths"
+                value={country.phone.subscriberNumberLengths.join(", ")}
+              />
             </div>
-          )}
 
-          {/* Phone Number Types */}
-          {Object.keys(country.phone.types).length > 0 && (
-            <div className="mt-6">
-              <h4 className="mb-3 font-semibold">Phone Number Types</h4>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {Object.entries(country.phone.types).map(([typeName, typeData]) => {
-                  if (!typeData) return null;
-                  const labels: Record<string, string> = {
-                    fixedLine: "Fixed Line",
-                    mobile: "Mobile",
-                    tollFree: "Toll Free",
-                    premiumRate: "Premium Rate",
-                    sharedCost: "Shared Cost",
-                    voip: "VoIP",
-                    uan: "UAN",
-                  };
-                  return (
-                    <div
-                      key={typeName}
-                      className="rounded-lg border border-border/40 bg-background/50 p-3"
-                    >
-                      <div className="mb-2 font-medium">
-                        {labels[typeName] || typeName}
-                      </div>
-                      <div className="space-y-1 text-sm">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Example:</span>
-                          <span className="font-mono">
-                            {typeData.exampleNumber}
-                          </span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Lengths:</span>
-                          <span className="font-mono">
-                            {typeData.possibleLengths.join(", ")}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+            {/* Example Format */}
+            <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Example Format
+              </p>
+              <p className="mt-1.5 font-mono text-xl font-bold text-foreground">
+                {country.phone.exampleFormat}
+              </p>
             </div>
-          )}
 
-          {/* General Pattern */}
-          <div className="mt-4">
-            <DataItem
-              label="General Pattern"
-              value={country.phone.generalPattern}
-            />
+            {/* Format Patterns Table */}
+            {country.phone.formats.length > 0 && (
+              <div>
+                <h4 className="mb-3 text-sm font-semibold">Format Patterns</h4>
+                <div className="rounded-lg border border-border/40">
+                  <Table>
+                    <TableHeader>
+                      <TableRow className="bg-muted/30 hover:bg-muted/30">
+                        <TableHead className="text-xs font-semibold">
+                          Pattern
+                        </TableHead>
+                        <TableHead className="text-xs font-semibold">
+                          Format
+                        </TableHead>
+                        <TableHead className="text-xs font-semibold">
+                          Leading Digits
+                        </TableHead>
+                        <TableHead className="text-xs font-semibold">
+                          National Prefix
+                        </TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {country.phone.formats.map((fmt, i) => (
+                        <TableRow
+                          key={i}
+                          className={i % 2 === 1 ? "bg-muted/15" : ""}
+                        >
+                          <TableCell className="font-mono text-xs">
+                            {fmt.pattern}
+                          </TableCell>
+                          <TableCell className="font-mono text-xs">
+                            {fmt.format}
+                          </TableCell>
+                          <TableCell className="font-mono text-xs">
+                            {fmt.leadingDigits?.join(", ") || "—"}
+                          </TableCell>
+                          <TableCell className="font-mono text-xs">
+                            {fmt.nationalPrefixRule || "—"}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+              </div>
+            )}
+
+            {/* Phone Number Types */}
+            {Object.keys(country.phone.types).length > 0 && (
+              <div>
+                <h4 className="mb-3 text-sm font-semibold">Phone Number Types</h4>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {Object.entries(country.phone.types).map(
+                    ([typeName, typeData]) => {
+                      if (!typeData) return null;
+                      const labels: Record<string, string> = {
+                        fixedLine: "Fixed Line",
+                        mobile: "Mobile",
+                        tollFree: "Toll Free",
+                        premiumRate: "Premium Rate",
+                        sharedCost: "Shared Cost",
+                        voip: "VoIP",
+                        uan: "UAN",
+                      };
+                      return (
+                        <div
+                          key={typeName}
+                          className="rounded-lg bg-muted/30 p-4"
+                        >
+                          <div className="mb-2 text-sm font-semibold">
+                            {labels[typeName] || typeName}
+                          </div>
+                          <div className="space-y-2 text-sm">
+                            <div className="flex items-center justify-between">
+                              <span className="text-xs text-muted-foreground">
+                                Example
+                              </span>
+                              <span className="font-mono text-xs">
+                                {typeData.exampleNumber}
+                              </span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <span className="text-xs text-muted-foreground">
+                                Lengths
+                              </span>
+                              <span className="font-mono text-xs">
+                                {typeData.possibleLengths.join(", ")}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    }
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* General Pattern */}
+            <div>
+              <DataItem
+                label="General Pattern"
+                value={country.phone.generalPattern}
+              />
+            </div>
           </div>
         </Section>
 
-        {/* Locale Info */}
-        <Section title="Locale Settings">
+        {/* Locale Settings */}
+        <Section
+          title="Locale Settings"
+          icon={<Settings className="h-4 w-4 text-muted-foreground" />}
+        >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <DataItem
               label="Writing Direction"
@@ -446,21 +625,21 @@ export default async function CountryPage({ params }: CountryPageProps) {
           </div>
         </Section>
 
-        {/* JSON Export */}
-        <Section title="Raw JSON Data">
+        {/* Raw JSON Export */}
+        <Section
+          title="Raw JSON Data"
+          icon={<Code2 className="h-4 w-4 text-muted-foreground" />}
+        >
           <div className="relative">
-            <div className="absolute right-2 top-2 z-10">
+            <div className="absolute right-2 top-2">
               <CopyButton
                 value={JSON.stringify(country, null, 2)}
-                label="JSON data"
-                className="h-8 w-8 bg-background/80 backdrop-blur"
+                label="Country data"
               />
             </div>
-            <div className="rounded-lg bg-muted p-4">
-              <pre className="overflow-x-auto text-sm">
-                <code>{JSON.stringify(country, null, 2)}</code>
-              </pre>
-            </div>
+            <pre className="overflow-x-auto rounded-lg bg-muted p-4 text-xs">
+              <code>{JSON.stringify(country, null, 2)}</code>
+            </pre>
           </div>
         </Section>
       </div>
@@ -468,40 +647,70 @@ export default async function CountryPage({ params }: CountryPageProps) {
   );
 }
 
-function InfoCard({ label, value }: { label: string; value: string }) {
+// Helper Components
+
+function InfoCard({
+  label,
+  value,
+  icon,
+  accentClass,
+}: {
+  label: string;
+  value: string;
+  icon: React.ReactNode;
+  accentClass?: string;
+}) {
   return (
-    <div className="rounded-lg border border-border/40 bg-card p-4 text-center">
-      <p className="text-sm text-muted-foreground">{label}</p>
-      <p className="mt-1 text-lg font-semibold">{value}</p>
+    <div
+      className={`rounded-lg border border-border/40 bg-card p-4 ${accentClass ? `border-t-2 ${accentClass}` : ""}`}
+    >
+      <div className="mb-2 flex items-center gap-2 text-muted-foreground">
+        {icon}
+        <p className="text-sm font-medium">{label}</p>
+      </div>
+      <p className="text-lg font-semibold">{value}</p>
     </div>
   );
 }
 
 function Section({
   title,
+  icon,
   children,
 }: {
   title: string;
+  icon?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-lg border border-border/40 bg-card p-6">
-      <h2 className="mb-6 text-xl sm:text-2xl font-bold">{title}</h2>
-      {children}
+    <div className="rounded-lg border border-border/40 bg-card">
+      {/* Section header with icon */}
+      <div className="flex items-center gap-3 border-b border-border/30 px-6 py-4">
+        {icon && (
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-muted">
+            {icon}
+          </div>
+        )}
+        <h2 className="text-lg font-bold sm:text-xl">{title}</h2>
+      </div>
+      {/* Section body */}
+      <div className="p-6">{children}</div>
     </div>
   );
 }
 
 function DataItem({ label, value }: { label: string; value: string }) {
   return (
-    <div className="group relative">
-      <p className="text-sm font-medium text-muted-foreground">{label}</p>
-      <div className="mt-1 flex items-center justify-between gap-2">
-        <p className="font-mono text-sm">{value}</p>
+    <div className="group relative rounded-md bg-muted/30 px-3 py-2.5">
+      <p className="mb-0.5 text-xs font-medium text-muted-foreground">
+        {label}
+      </p>
+      <div className="flex items-center justify-between gap-2">
+        <p className="font-mono text-sm text-foreground">{value}</p>
         <CopyButton
           value={value}
           label={label}
-          className="h-7 w-7 opacity-0 transition-opacity group-hover:opacity-100"
+          className="h-6 w-6 opacity-0 transition-opacity group-hover:opacity-100"
         />
       </div>
     </div>

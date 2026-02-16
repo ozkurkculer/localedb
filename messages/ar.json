@@ -6,6 +6,8 @@
         "keywords": "بيانات محلية, توطين, i18n, تدويل, دول, عملات, لغات, BCP-47, أكواد ISO"
     },
     "nav": {
+        "data": "البيانات",
+        "project": "المشروع",
         "countries": "الدول",
         "currencies": "العملات",
         "languages": "اللغات",
@@ -532,7 +534,6 @@
                 "date": "Q3 2026"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",

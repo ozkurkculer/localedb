@@ -6,6 +6,8 @@
         "keywords": "ロケールデータ, ローカリゼーション, i18n, 国際化, 国, 通貨, 言語, BCP-47, ISOコード"
     },
     "nav": {
+        "data": "データ",
+        "project": "プロジェクト",
         "countries": "国",
         "currencies": "通貨",
         "languages": "言語",
@@ -532,7 +534,6 @@
                 "date": "2026年第3四半期"
             }
         }
-    }
     },
     "updates": {
         "title": "Updates & Changelog",

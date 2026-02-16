@@ -6,6 +6,8 @@
         "keywords": "locale data, localization, i18n, internationalization, countries, currencies, languages, BCP-47, ISO codes"
     },
     "nav": {
+        "data": "Data",
+        "project": "Project",
         "countries": "Countries",
         "currencies": "Currencies",
         "languages": "Languages",

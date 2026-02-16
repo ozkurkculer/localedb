@@ -6,6 +6,8 @@
         "keywords": "yerel veri, yerelleştirme, i18n, uluslararasılaşma, ülkeler, para birimleri, diller, BCP-47, ISO kodları"
     },
     "nav": {
+        "data": "Veri",
+        "project": "Proje",
         "countries": "Ülkeler",
         "currencies": "Para Birimleri",
         "languages": "Diller",
