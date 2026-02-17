@@ -15,7 +15,8 @@
         "localeCodes": "Locale Codes",
         "about": "About",
         "roadmap": "Roadmap",
-        "contributing": "Contributing"
+        "contributing": "Contributing",
+        "docs": "Documentation"
     },
     "home": {
         "badge": "Open Source Localization Data",
@@ -483,5 +484,225 @@
         "previousVersion": "Previous Version",
         "totalCommits": "Total Commits",
         "noUpdates": "No updates available yet."
+    },
+    "docs": {
+        "title": "Documentation",
+        "subtitle": "Everything you need to know about LocaleDB's data, pipeline, and architecture.",
+        "badge": "Developer Guide",
+        "toc": {
+            "overview": "Overview",
+            "gettingStarted": "Getting Started",
+            "dataPipeline": "Data Pipeline",
+            "dataSchemas": "Data Schemas",
+            "projectStructure": "Project Structure",
+            "scripts": "Scripts Reference",
+            "contributing": "Contributing Data",
+            "i18n": "i18n & Translations"
+        },
+        "overview": {
+            "title": "Overview",
+            "description": "LocaleDB is a comprehensive, open-source localization encyclopedia for developers building international applications.",
+            "stats": {
+                "countries": "250+ Countries",
+                "languages": "114 Languages",
+                "currencies": "161 Currencies",
+                "airports": "9,415 Airports"
+            },
+            "features": {
+                "title": "Key Features",
+                "items": {
+                    "comprehensive": "Comprehensive data from authoritative sources (CLDR, World Bank, mledoze, libphonenumber, OpenFlights)",
+                    "static": "Static generation - no runtime database required",
+                    "openSource": "MIT licensed and community-driven",
+                    "i18n": "11 languages with RTL support for Arabic"
+                }
+            }
+        },
+        "gettingStarted": {
+            "title": "Getting Started",
+            "description": "Clone the repository and start exploring locale data in minutes.",
+            "steps": {
+                "clone": "Clone the repository",
+                "install": "Install dependencies",
+                "updateData": "Download raw data from sources",
+                "buildData": "Process and generate JSON files",
+                "dev": "Start development server"
+            }
+        },
+        "dataPipeline": {
+            "title": "Data Pipeline",
+            "description": "LocaleDB processes data from multiple authoritative sources through a multi-stage pipeline.",
+            "steps": {
+                "sources": {
+                    "title": "External Sources",
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
+                },
+                "update": {
+                    "title": "Download Raw Data",
+                    "description": "pnpm update:data downloads files to data/ subdirectories"
+                },
+                "rawData": {
+                    "title": "Raw Data Files",
+                    "description": "JSON, CSV, and XML files stored in data/"
+                },
+                "build": {
+                    "title": "Process & Merge",
+                    "description": "pnpm build:data merges sources with priority rules"
+                },
+                "generated": {
+                    "title": "Generated JSON",
+                    "description": "Individual country, language, and currency files"
+                },
+                "ssg": {
+                    "title": "Static Site Generation",
+                    "description": "Next.js builds 5,868+ static pages"
+                }
+            },
+            "priority": {
+                "title": "Data Source Priority",
+                "description": "When multiple sources provide the same field, we use a consistent priority system:",
+                "rules": {
+                    "names": "Country names: CLDR > mledoze > SimpleLocalize",
+                    "population": "Population: World Bank > mledoze > SimpleLocalize",
+                    "phone": "Phone data: libphonenumber XML (authoritative)"
+                }
+            }
+        },
+        "dataSchemas": {
+            "title": "Data Schemas",
+            "description": "Detailed structure of country, language, and currency JSON files.",
+            "country": {
+                "title": "Country Schema",
+                "path": "data/countries/{CODE}.json",
+                "fields": {
+                    "basics": "Name, capital, coordinates, continent, population, area, languages, flagEmoji",
+                    "codes": "ISO 3166, BCP-47, FIFA, IOC, FIPS, and other international codes",
+                    "currency": "Code, symbol, position, separators, decimal digits, pattern, example",
+                    "dateTime": "Date/time formats (full, long, medium, short), first day of week, timezones",
+                    "numberFormat": "Decimal/thousands separators, digit grouping, numbering system",
+                    "phone": "Calling code, patterns, format rules, subscriber number lengths",
+                    "addressFormat": "Format template, postal code regex and example",
+                    "locale": "Writing direction, measurement system, temperature scale, paper size, driving side",
+                    "airports": "Array of airports with IATA, ICAO, coordinates, timezone"
+                }
+            },
+            "language": {
+                "title": "Language Schema",
+                "path": "data/languages/{code}.json",
+                "fields": {
+                    "code": "ISO 639-1 code",
+                    "name": "English name",
+                    "nativeName": "Native name",
+                    "direction": "Text direction (ltr or rtl)",
+                    "countries": "Array of country codes where spoken"
+                }
+            },
+            "currency": {
+                "title": "Currency Schema",
+                "path": "data/currencies/{CODE}.json",
+                "fields": {
+                    "code": "ISO 4217 code",
+                    "name": "Currency name",
+                    "symbol": "Currency symbol",
+                    "symbolPosition": "before or after",
+                    "separators": "Decimal and thousands separators",
+                    "decimalDigits": "Standard decimal places",
+                    "pattern": "Formatting pattern",
+                    "example": "Formatted example",
+                    "countries": "Array of country codes using this currency"
+                }
+            }
+        },
+        "projectStructure": {
+            "title": "Project Structure",
+            "description": "Key directories and their purposes.",
+            "tree": {
+                "data": "Generated JSON files and raw source data",
+                "scripts": "Data pipeline scripts (update-data.ts, build-data.ts)",
+                "src": "Next.js application source code",
+                "messages": "Translation files for 11 languages"
+            }
+        },
+        "scripts": {
+            "title": "Scripts Reference",
+            "description": "Available commands for data management and development.",
+            "commands": {
+                "updateData": {
+                    "command": "pnpm update:data",
+                    "description": "Download raw data from all external sources"
+                },
+                "updateDataSpecific": {
+                    "command": "pnpm update:data cldr worldbank",
+                    "description": "Download specific sources only"
+                },
+                "buildData": {
+                    "command": "pnpm build:data",
+                    "description": "Process raw data and generate JSON files"
+                },
+                "dev": {
+                    "command": "pnpm dev",
+                    "description": "Start development server"
+                },
+                "build": {
+                    "command": "pnpm build",
+                    "description": "Production build (Static Site Generation)"
+                },
+                "checkI18n": {
+                    "command": "npx tsx scripts/check-i18n.ts",
+                    "description": "Check and auto-fill missing translation keys"
+                },
+                "version": {
+                    "command": "pnpm version patch",
+                    "description": "Bump version and auto-generate changelog"
+                }
+            }
+        },
+        "contributing": {
+            "title": "Contributing Data",
+            "description": "How to contribute corrections and improvements to LocaleDB.",
+            "workflow": {
+                "title": "Contribution Workflow",
+                "steps": {
+                    "fork": "Fork the GitHub repository and clone to your local machine",
+                    "edit": "Edit source priority in build-data.ts or submit corrections to upstream sources",
+                    "translations": "Add translations by editing messages/{lang}.json and running check-i18n",
+                    "pr": "Submit a Pull Request with one change per PR and links to official sources"
+                }
+            },
+            "guidelines": {
+                "title": "Guidelines",
+                "items": {
+                    "oneChange": "One change per Pull Request",
+                    "sources": "Always link to official sources (CLDR, government sites, ISO standards)",
+                    "test": "Run pnpm build:data to verify your changes merge correctly",
+                    "commits": "Clear, descriptive commit messages"
+                }
+            }
+        },
+        "i18n": {
+            "title": "Internationalization",
+            "description": "LocaleDB supports 11 languages with plans for more.",
+            "languages": {
+                "title": "Supported Languages",
+                "list": "English, Turkish, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Japanese"
+            },
+            "location": {
+                "title": "Translation Files",
+                "description": "All translations are stored in messages/{lang}.json files"
+            },
+            "rtl": {
+                "title": "RTL Support",
+                "description": "Full right-to-left support for Arabic (ar) and other RTL languages"
+            },
+            "addLanguage": {
+                "title": "Adding a New Language",
+                "steps": {
+                    "create": "Create a new messages/{lang}.json file",
+                    "translate": "Translate all keys from messages/en.json",
+                    "routing": "Add the locale code to src/i18n/routing.ts",
+                    "verify": "Run npx tsx scripts/check-i18n.ts to verify completeness"
+                }
+            }
+        }
     }
 }

@@ -15,7 +15,8 @@
         "localeCodes": "Yerel Kodları",
         "about": "Hakkında",
         "roadmap": "Yol Haritası",
-        "contributing": "Katkıda Bulunma"
+        "contributing": "Katkıda Bulunma",
+        "docs": "Dokümantasyon"
     },
     "home": {
         "badge": "Açık Kaynaklı Yerelleştirme Verileri",
@@ -483,5 +484,225 @@
         "previousVersion": "Önceki Versiyon",
         "totalCommits": "Toplam Commit",
         "noUpdates": "Henüz güncelleme bulunmuyor."
+    },
+    "docs": {
+        "title": "Dokümantasyon",
+        "subtitle": "LocaleDB'nin verileri, pipeline'ı ve mimarisi hakkında bilmeniz gereken her şey.",
+        "badge": "Geliştirici Rehberi",
+        "toc": {
+            "overview": "Genel Bakış",
+            "gettingStarted": "Başlarken",
+            "dataPipeline": "Veri Pipeline'ı",
+            "dataSchemas": "Veri Şemaları",
+            "projectStructure": "Proje Yapısı",
+            "scripts": "Script Referansı",
+            "contributing": "Veri Katkısı",
+            "i18n": "i18n & Çeviriler"
+        },
+        "overview": {
+            "title": "Genel Bakış",
+            "description": "LocaleDB, uluslararası uygulamalar geliştiren geliştiriciler için kapsamlı, açık kaynaklı bir yerelleştirme ansiklopedisidir.",
+            "stats": {
+                "countries": "250+ Ülke",
+                "languages": "114 Dil",
+                "currencies": "161 Para Birimi",
+                "airports": "9.415 Havalimanı"
+            },
+            "features": {
+                "title": "Temel Özellikler",
+                "items": {
+                    "comprehensive": "Yetkili kaynaklardan kapsamlı veriler (CLDR, World Bank, mledoze, libphonenumber, OpenFlights)",
+                    "static": "Statik oluşturma - çalışma zamanı veritabanı gerekmez",
+                    "openSource": "MIT lisanslı ve topluluk odaklı",
+                    "i18n": "Arapça için RTL desteği ile 11 dil"
+                }
+            }
+        },
+        "gettingStarted": {
+            "title": "Başlarken",
+            "description": "Repoyu klonlayın ve dakikalar içinde yerel verileri keşfetmeye başlayın.",
+            "steps": {
+                "clone": "Repoyu klonlayın",
+                "install": "Bağımlılıkları yükleyin",
+                "updateData": "Kaynaklardan ham veriyi indirin",
+                "buildData": "İşleyin ve JSON dosyalarını oluşturun",
+                "dev": "Geliştirme sunucusunu başlatın"
+            }
+        },
+        "dataPipeline": {
+            "title": "Veri Pipeline'ı",
+            "description": "LocaleDB, birden fazla yetkili kaynaktan verileri çok aşamalı bir pipeline ile işler.",
+            "steps": {
+                "sources": {
+                    "title": "Harici Kaynaklar",
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
+                },
+                "update": {
+                    "title": "Ham Veriyi İndir",
+                    "description": "pnpm update:data dosyaları data/ alt dizinlerine indirir"
+                },
+                "rawData": {
+                    "title": "Ham Veri Dosyaları",
+                    "description": "data/ içinde saklanan JSON, CSV ve XML dosyaları"
+                },
+                "build": {
+                    "title": "İşle & Birleştir",
+                    "description": "pnpm build:data kaynakları öncelik kurallarıyla birleştirir"
+                },
+                "generated": {
+                    "title": "Oluşturulan JSON",
+                    "description": "Bireysel ülke, dil ve para birimi dosyaları"
+                },
+                "ssg": {
+                    "title": "Statik Site Oluşturma",
+                    "description": "Next.js 5.868+ statik sayfa oluşturur"
+                }
+            },
+            "priority": {
+                "title": "Veri Kaynağı Önceliği",
+                "description": "Birden fazla kaynak aynı alanı sağladığında, tutarlı bir öncelik sistemi kullanırız:",
+                "rules": {
+                    "names": "Ülke adları: CLDR > mledoze > SimpleLocalize",
+                    "population": "Nüfus: World Bank > mledoze > SimpleLocalize",
+                    "phone": "Telefon verileri: libphonenumber XML (yetkili)"
+                }
+            }
+        },
+        "dataSchemas": {
+            "title": "Veri Şemaları",
+            "description": "Ülke, dil ve para birimi JSON dosyalarının detaylı yapısı.",
+            "country": {
+                "title": "Ülke Şeması",
+                "path": "data/countries/{CODE}.json",
+                "fields": {
+                    "basics": "İsim, başkent, koordinatlar, kıta, nüfus, alan, diller, bayrak emojisi",
+                    "codes": "ISO 3166, BCP-47, FIFA, IOC, FIPS ve diğer uluslararası kodlar",
+                    "currency": "Kod, sembol, pozisyon, ayırıcılar, ondalık basamaklar, desen, örnek",
+                    "dateTime": "Tarih/saat formatları (tam, uzun, orta, kısa), haftanın ilk günü, saat dilimleri",
+                    "numberFormat": "Ondalık/binlik ayırıcılar, basamak gruplama, sayı sistemi",
+                    "phone": "Arama kodu, desenler, format kuralları, abone numarası uzunlukları",
+                    "addressFormat": "Format şablonu, posta kodu regex ve örneği",
+                    "locale": "Yazı yönü, ölçüm sistemi, sıcaklık ölçeği, kağıt boyutu, sürüş tarafı",
+                    "airports": "IATA, ICAO, koordinatlar, saat dilimi içeren havalimanları dizisi"
+                }
+            },
+            "language": {
+                "title": "Dil Şeması",
+                "path": "data/languages/{code}.json",
+                "fields": {
+                    "code": "ISO 639-1 kodu",
+                    "name": "İngilizce adı",
+                    "nativeName": "Yerel adı",
+                    "direction": "Metin yönü (ltr veya rtl)",
+                    "countries": "Konuşulduğu ülke kodları dizisi"
+                }
+            },
+            "currency": {
+                "title": "Para Birimi Şeması",
+                "path": "data/currencies/{CODE}.json",
+                "fields": {
+                    "code": "ISO 4217 kodu",
+                    "name": "Para birimi adı",
+                    "symbol": "Para birimi sembolü",
+                    "symbolPosition": "önce veya sonra",
+                    "separators": "Ondalık ve binlik ayırıcılar",
+                    "decimalDigits": "Standart ondalık basamaklar",
+                    "pattern": "Formatlama deseni",
+                    "example": "Formatlanmış örnek",
+                    "countries": "Bu para birimini kullanan ülke kodları dizisi"
+                }
+            }
+        },
+        "projectStructure": {
+            "title": "Proje Yapısı",
+            "description": "Temel dizinler ve amaçları.",
+            "tree": {
+                "data": "Oluşturulan JSON dosyaları ve ham kaynak veriler",
+                "scripts": "Veri pipeline scriptleri (update-data.ts, build-data.ts)",
+                "src": "Next.js uygulama kaynak kodu",
+                "messages": "11 dil için çeviri dosyaları"
+            }
+        },
+        "scripts": {
+            "title": "Script Referansı",
+            "description": "Veri yönetimi ve geliştirme için mevcut komutlar.",
+            "commands": {
+                "updateData": {
+                    "command": "pnpm update:data",
+                    "description": "Tüm harici kaynaklardan ham veriyi indirin"
+                },
+                "updateDataSpecific": {
+                    "command": "pnpm update:data cldr worldbank",
+                    "description": "Sadece belirli kaynakları indirin"
+                },
+                "buildData": {
+                    "command": "pnpm build:data",
+                    "description": "Ham veriyi işleyin ve JSON dosyalarını oluşturun"
+                },
+                "dev": {
+                    "command": "pnpm dev",
+                    "description": "Geliştirme sunucusunu başlatın"
+                },
+                "build": {
+                    "command": "pnpm build",
+                    "description": "Üretim derlemesi (Statik Site Oluşturma)"
+                },
+                "checkI18n": {
+                    "command": "npx tsx scripts/check-i18n.ts",
+                    "description": "Eksik çeviri anahtarlarını kontrol edin ve otomatik doldurun"
+                },
+                "version": {
+                    "command": "pnpm version patch",
+                    "description": "Versiyonu yükseltin ve değişiklik kaydını otomatik oluşturun"
+                }
+            }
+        },
+        "contributing": {
+            "title": "Veri Katkısı",
+            "description": "LocaleDB'ye düzeltmeler ve iyileştirmeler nasıl katkıda bulunulur.",
+            "workflow": {
+                "title": "Katkı İş Akışı",
+                "steps": {
+                    "fork": "GitHub reposunu fork edin ve yerel makinenize klonlayın",
+                    "edit": "build-data.ts'deki kaynak önceliğini düzenleyin veya upstream kaynaklara düzeltmeler gönderin",
+                    "translations": "messages/{lang}.json dosyasını düzenleyerek ve check-i18n çalıştırarak çeviriler ekleyin",
+                    "pr": "Her PR'da bir değişiklik ve resmi kaynaklara bağlantılarla Pull Request gönderin"
+                }
+            },
+            "guidelines": {
+                "title": "Kurallar",
+                "items": {
+                    "oneChange": "Pull Request başına bir değişiklik",
+                    "sources": "Her zaman resmi kaynaklara bağlantı verin (CLDR, resmi siteler, ISO standartları)",
+                    "test": "Değişikliklerinizin doğru birleştiğini doğrulamak için pnpm build:data çalıştırın",
+                    "commits": "Açık, tanımlayıcı commit mesajları"
+                }
+            }
+        },
+        "i18n": {
+            "title": "Uluslararasılaştırma",
+            "description": "LocaleDB daha fazlası için planlarla 11 dili destekler.",
+            "languages": {
+                "title": "Desteklenen Diller",
+                "list": "İngilizce, Türkçe, Çince, Hintçe, İspanyolca, Fransızca, Arapça, Bengalce, Portekizce, Rusça, Japonca"
+            },
+            "location": {
+                "title": "Çeviri Dosyaları",
+                "description": "Tüm çeviriler messages/{lang}.json dosyalarında saklanır"
+            },
+            "rtl": {
+                "title": "RTL Desteği",
+                "description": "Arapça (ar) ve diğer RTL dilleri için tam sağdan sola destek"
+            },
+            "addLanguage": {
+                "title": "Yeni Dil Ekleme",
+                "steps": {
+                    "create": "Yeni bir messages/{lang}.json dosyası oluşturun",
+                    "translate": "messages/en.json'daki tüm anahtarları çevirin",
+                    "routing": "Yerel kodu src/i18n/routing.ts'ye ekleyin",
+                    "verify": "Bütünlüğü doğrulamak için npx tsx scripts/check-i18n.ts çalıştırın"
+                }
+            }
+        }
     }
 }

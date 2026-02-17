@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/docs/
 
 # production
 /build
@@ -66,4 +67,3 @@ data/currencies
 data/languages
 
 data
-docs
