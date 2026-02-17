@@ -20,6 +20,7 @@ import { CopyButton } from "@/components/copy-button";
 interface CountryIndexEntry {
     code: string;
     name: string;
+    nativeName: string;
     flagEmoji: string;
     continent: string;
     region: string;

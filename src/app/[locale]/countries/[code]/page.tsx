@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { getCountry, getAllCountryCodes } from '@/lib/countries';
+import { getCountry, getAllCountryCodes, getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -23,6 +23,7 @@ import {
     Ruler
 } from 'lucide-react';
 import { getContinentStyle } from '@/components/countries/continent-variants';
+import { AirportsDrawer } from '@/components/countries/airports-drawer';
 
 interface CountryPageProps {
     params: Promise<{
@@ -87,6 +88,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
         notFound();
     }
 
+    // Load index for alpha3 -> alpha2 mapping
+    const countryIndex = await getCountryIndex();
+    const alpha3Map = new Map(countryIndex.map((c) => [c.alpha3 || "", c.code]));
+
     const style = getContinentStyle(country.basics.continent);
 
     return (
@@ -94,7 +99,9 @@ export default async function CountryPage({ params }: CountryPageProps) {
             {/* Hero */}
             <div className="mb-12 text-center">
                 {/* Flag with subtle shadow */}
-                <div className="mb-4 text-6xl drop-shadow-sm sm:text-7xl md:text-8xl">{country.basics.flagEmoji}</div>
+                <div className="mb-4">
+                    <span className={`fi fi-${country.codes.iso3166Alpha2.toLowerCase()} text-6xl sm:text-7xl md:text-8xl rounded-lg shadow-sm`} />
+                </div>
 
                 {/* Country Name - continent-colored gradient */}
                 <h1
@@ -190,15 +197,18 @@ export default async function CountryPage({ params }: CountryPageProps) {
                             <div className="col-span-full mt-4">
                                 <p className="mb-1.5 text-xs font-medium text-muted-foreground">Borders</p>
                                 <div className="flex flex-wrap gap-1.5">
-                                    {country.basics.borders.map((border) => (
-                                        <Link
-                                            key={border}
-                                            href={`/countries/${border}`}
-                                            className="rounded-md bg-muted px-2 py-1 font-mono text-xs transition-colors hover:bg-muted/80 hover:text-foreground"
-                                        >
-                                            {border}
-                                        </Link>
-                                    ))}
+                                    {country.basics.borders.map((border) => {
+                                        const targetCode = alpha3Map.get(border) || border;
+                                        return (
+                                            <Link
+                                                key={border}
+                                                href={`/countries/${targetCode}`}
+                                                className="rounded-md bg-muted px-2 py-1 font-mono text-xs transition-colors hover:bg-muted/80 hover:text-foreground"
+                                            >
+                                                {border}
+                                            </Link>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         )}
@@ -227,9 +237,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
                         {country.airports.length > 9 && (
                             <div className="mt-4 text-center">
-                                <Button variant="outline" size="sm" asChild>
-                                    <Link href="/airports">View all {country.airports.length} airports</Link>
-                                </Button>
+                                <AirportsDrawer airports={country.airports} countryName={country.basics.name} />
                             </div>
                         )}
                     </Section>
@@ -396,7 +404,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                     label="First Day of Week"
                                     value={
                                         ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][
-                                            country.dateTime.firstDayOfWeek - 1
+                                        country.dateTime.firstDayOfWeek - 1
                                         ]
                                     }
                                 />
