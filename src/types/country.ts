@@ -341,8 +341,12 @@ export interface CountryLocaleData {
 export interface CountryIndexEntry {
   /** ISO 3166-1 alpha-2 code */
   code: string;
+  /** ISO 3166-1 alpha-3 code (for border lookups) */
+  alpha3: string;
   /** Common English name */
   name: string;
+  /** Native name */
+  nativeName: string;
   /** Flag emoji */
   flagEmoji: string;
   /** Continent */

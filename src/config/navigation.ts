@@ -11,9 +11,9 @@ export interface NavItemWithChildren extends NavItem {
     items: NavItemWithChildren[];
 }
 
-export interface MainNavItem extends NavItem {}
+export interface MainNavItem extends NavItem { }
 
-export interface SidebarNavItem extends NavItemWithChildren {}
+export interface SidebarNavItem extends NavItemWithChildren { }
 
 export const mainNav: NavItem[] = [
     {
@@ -73,6 +73,10 @@ export const navGroups = {
             {
                 title: 'nav.localeCodes',
                 href: '/locale-codes'
+            },
+            {
+                title: 'nav.phoneNumbers',
+                href: '/phone-numbers'
             }
         ]
     },

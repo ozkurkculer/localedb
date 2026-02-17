@@ -69,6 +69,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
             const matchesSearch =
                 search === '' ||
                 country.name.toLowerCase().includes(search.toLowerCase()) ||
+                country.nativeName.toLowerCase().includes(search.toLowerCase()) ||
                 country.code.toLowerCase().includes(search.toLowerCase()) ||
                 country.currencyCode.toLowerCase().includes(search.toLowerCase()) ||
                 country.callingCode.includes(search);
@@ -306,9 +307,9 @@ function CountryCard({ country }: CountryCardProps) {
                     prefersReducedMotion
                         ? undefined
                         : {
-                              y: -4,
-                              boxShadow: style.hoverShadow
-                          }
+                            y: -4,
+                            boxShadow: style.hoverShadow
+                        }
                 }
                 transition={{ type: 'spring' as const, stiffness: 300, damping: 22 }}
             >
@@ -328,43 +329,60 @@ function CountryCard({ country }: CountryCardProps) {
                     }}
                 />
 
-                {/* Top: Flag + Code badge */}
+                {/* Top: Code (Left) + SVG Flag (Right) */}
                 <div className="relative mb-3 flex items-start justify-between">
-                    <span className="text-4xl leading-none">{country.flagEmoji}</span>
-                    <code className="rounded-md bg-muted px-1.5 py-0.5 text-[11px] font-semibold text-muted-foreground">
+                    <span className="text-2xl font-bold tracking-tight text-muted-foreground/40 transition-colors group-hover:text-foreground/80">
                         {country.code}
-                    </code>
+                    </span>
+                    <span
+                        className={`fi fi-${country.code.toLowerCase()} text-2xl drop-shadow-sm rounded-sm`}
+                        aria-label={country.name}
+                    />
                 </div>
 
-                {/* Country Name - continent-colored gradient */}
-                <h3
-                    className={`relative mb-2 line-clamp-1 duration-200 text-base font-bold from-white to-white bg-clip-text text-transparent bg-gradient-to-tr ${style.nameGradientHover} transition-colors`}
-                >
-                    {country.name}
-                </h3>
+                {/* Country Name - Native (Primary) + English (Secondary) */}
+                <div className="relative mb-3">
+                    <h3
+                        className={`mb-0.5 line-clamp-1 text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 ${style.nameGradientHover} transition-all duration-300`}
+                    >
+                        {country.nativeName}
+                    </h3>
+                    <p className="line-clamp-1 text-xs font-medium text-muted-foreground/60">
+                        {country.name}
+                    </p>
+                </div>
 
-                {/* Continent Badge - colored chip */}
+                {/* Continent Badge */}
                 <div className="relative mb-3">
                     <span
-                        className={`inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${style.badgeBg} ${style.badgeText}`}
+                        className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] uppercase font-bold tracking-wide ${style.badgeBg} ${style.badgeText}`}
                     >
                         {country.continent}
                     </span>
                 </div>
 
                 {/* Meta row - bottom-anchored */}
-                <div className="relative mt-auto grid grid-cols-3 gap-x-3 gap-y-1.5 border-t border-border/30 pt-3 text-xs text-muted-foreground">
-                    <div className="col-span-1 flex items-center gap-1.5">
-                        <MapPin className="h-3 w-3 shrink-0 opacity-50" />
-                        <span className="truncate">{country.region}</span>
+                <div className="relative mt-auto grid grid-cols-3 gap-x-2 gap-y-1.5 border-t border-border/30 pt-3 text-[10px] font-medium text-muted-foreground">
+                    <div className="col-span-1 flex flex-col gap-0.5">
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Region</span>
+                        <div className="flex items-center gap-1 truncation">
+                            <MapPin className="h-2.5 w-2.5 shrink-0 opacity-70" />
+                            <span className="truncate">{country.region}</span>
+                        </div>
                     </div>
-                    <div className="col-span-1 flex items-center gap-1.5">
-                        <Banknote className="h-3 w-3 shrink-0 opacity-50" />
-                        <span>{country.currencyCode}</span>
+                    <div className="col-span-1 flex flex-col gap-0.5">
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Currency</span>
+                        <div className="flex items-center gap-1 truncation">
+                            <Banknote className="h-2.5 w-2.5 shrink-0 opacity-70" />
+                            <span className="truncate">{country.currencyCode}</span>
+                        </div>
                     </div>
-                    <div className="col-span-1 flex items-center gap-1.5">
-                        <Phone className="h-3 w-3 shrink-0 opacity-50" />
-                        <span>{country.callingCode}</span>
+                    <div className="col-span-1 flex flex-col gap-0.5">
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Call</span>
+                        <div className="flex items-center gap-1 truncation">
+                            <Phone className="h-2.5 w-2.5 shrink-0 opacity-70" />
+                            <span className="truncate">{country.callingCode}</span>
+                        </div>
                     </div>
                 </div>
             </motion.div>

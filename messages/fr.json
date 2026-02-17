@@ -1,573 +1,800 @@
 {
-    "site": {
-        "name": "LocaleDB",
-        "title": "LocaleDB - Données de Localisation Complètes",
-        "description": "Base de données gratuite et open source de pays, devises, langues et codes régionaux. Parfaite pour les développeurs créant des applications internationales.",
-        "keywords": "données régionales, localisation, i18n, internationalisation, pays, devises, langues, BCP-47, codes ISO"
+  "site": {
+    "name": "LocaleDB",
+    "title": "LocaleDB - Données de Localisation Complètes",
+    "description": "Base de données gratuite et open source de pays, devises, langues et codes régionaux. Parfaite pour les développeurs créant des applications internationales.",
+    "keywords": "données régionales, localisation, i18n, internationalisation, pays, devises, langues, BCP-47, codes ISO"
+  },
+  "nav": {
+    "data": "Données",
+    "project": "Projet",
+    "countries": "Pays",
+    "currencies": "Devises",
+    "languages": "Langues",
+    "airports": "Aéroports",
+    "localeCodes": "Codes Régionaux",
+    "about": "À Propos",
+    "contributing": "Contribuer",
+    "roadmap": "Feuille de route",
+    "phoneNumbers": "Numéros de téléphone",
+    "docs": "Documentation"
+  },
+  "home": {
+    "badge": "Données de Localisation Open Source",
+    "title": {
+      "the": "L'",
+      "localization": "Encyclopédie de Localisation",
+      "forDevelopers": "pour les Développeurs"
     },
-    "nav": {
-        "data": "Données",
-        "project": "Projet",
+    "features": {
+      "countries": {
+        "title": "Pays",
+        "description": "Parcourez les données de localisation pour plus de 250 pays, y compris les codes, devises et formats."
+      },
+      "languages": {
+        "title": "Langues",
+        "description": "Explorez les données traitées pour les langues du monde, y compris les noms natifs et les pays."
+      },
+      "currencies": {
+        "title": "Formats de Devises",
+        "description": "Position des symboles, séparateurs et modèles pour chaque devise du monde."
+      },
+      "airports": {
+        "title": "Aéroports",
+        "description": "Base de données de plus de 9 000 aéroports avec codes IATA/ICAO, coordonnées et régions."
+      },
+      "localeCodes": {
+        "title": "Codes Régionaux",
+        "description": "Référence ISO 3166, BCP47, RFC4647 et toutes les normes internationales."
+      }
+    },
+    "cta": {
+      "browseCountries": "Parcourir les Pays",
+      "viewOnGitHub": "Voir sur GitHub"
+    }
+  },
+  "countries": {
+    "title": "Pays",
+    "subtitle": "Données de localisation complètes pour {count} pays",
+    "search": "Rechercher des pays...",
+    "filters": {
+      "continent": {
+        "all": "Tous les Continents",
+        "africa": "Afrique",
+        "antarctica": "Antarctique",
+        "asia": "Asie",
+        "europe": "Europe",
+        "northAmerica": "Amérique du Nord",
+        "oceania": "Océanie",
+        "southAmerica": "Amérique du Sud"
+      }
+    },
+    "sort": {
+      "name": "Nom",
+      "code": "Code",
+      "population": "Population",
+      "area": "Superficie"
+    },
+    "detail": {
+      "capital": "Capitale",
+      "population": "Population",
+      "currency": {
+        "name": "Nom",
+        "nativeName": "Nom Natif",
+        "code": "Code",
+        "symbol": "Symbole",
+        "symbolPosition": "Position du Symbole",
+        "decimalSeparator": "Séparateur Décimal",
+        "thousandsSeparator": "Séparateur de Milliers",
+        "decimalDigits": "Chiffres Décimaux",
+        "example": "Exemple :"
+      },
+      "callingCode": "Indicatif Téléphonique",
+      "sections": {
+        "languages": "Langues",
+        "geography": "Géographie",
+        "airports": "Aéroports",
+        "codes": "Codes de Pays",
+        "currencyFormat": "Format de Devise",
+        "dateTime": "Formats de Date et Heure",
+        "numberFormat": "Format des Nombres",
+        "phone": "Format de Téléphone",
+        "locale": "Paramètres Régionaux",
+        "rawJson": "Données JSON Brutes"
+      },
+      "geography": {
+        "region": "Région",
+        "subregion": "Sous-région",
+        "continent": "Continent",
+        "area": "Superficie",
+        "landlocked": "Sans Littoral",
+        "tld": "TLD",
+        "borders": "Frontières",
+        "yes": "Oui",
+        "no": "Non"
+      },
+      "airports": {
+        "count": "Aéroports ({count})",
+        "more": "et {count} aéroports de plus...",
+        "showAll": "Afficher Tous les Aéroports",
+        "none": "Aucun aéroport répertorié."
+      },
+      "codes": {
+        "alpha2": "ISO 3166-1 Alpha-2",
+        "alpha3": "ISO 3166-1 Alpha-3",
+        "numeric": "ISO 3166-1 Numeric",
+        "bcp47": "BCP 47",
+        "ioc": "IOC",
+        "fifa": "FIFA"
+      },
+      "dateTime": {
+        "dateFormats": "Formats de Date",
+        "timeFormats": "Formats d'Heure",
+        "full": "Complet",
+        "long": "Long",
+        "medium": "Moyen",
+        "short": "Court",
+        "firstDayOfWeek": "Premier Jour de la Semaine",
+        "clockFormat": "Format d'Horloge",
+        "primaryTimezone": "Fuseau Horaire Principal",
+        "utcOffset": "Décalage UTC",
+        "timezones": "Fuseaux Horaires",
+        "monday": "Lundi",
+        "sunday": "Dimanche"
+      },
+      "numberFormat": {
+        "decimalSeparator": "Séparateur Décimal",
+        "thousandsSeparator": "Séparateur de Milliers",
+        "digitGrouping": "Groupement de Chiffres",
+        "numberingSystem": "Système de Numération",
+        "example": "Exemple :"
+      },
+      "locale": {
+        "writingDirection": "Direction d'Écriture",
+        "measurementSystem": "Système de Mesure",
+        "temperatureScale": "Échelle de Température",
+        "paperSize": "Taille de Papier",
+        "drivingSide": "Côté de Conduite",
+        "weekNumbering": "Numérotation des Semaines"
+      },
+      "phone": "Formatage du téléphone"
+    },
+    "noData": "Aucun pays trouvé."
+  },
+  "currencies": {
+    "title": "Devises",
+    "subtitle": "Modèles de formatage et symboles pour {count} devises mondiales",
+    "search": "Rechercher des devises...",
+    "sort": {
+      "name": "Nom",
+      "code": "Code",
+      "symbol": "Symbole",
+      "usage": "Nombre d'utilisations"
+    },
+    "card": {
+      "usedIn": "Utilisé dans {count} pays"
+    },
+    "detail": {
+      "numeric": "Numérique :",
+      "sections": {
+        "formattingRules": "Règles de Formatage",
+        "usedIn": "Utilisé Dans ({count} Pays)",
+        "rawJson": "Données JSON Brutes"
+      },
+      "formatting": {
+        "decimalSeparator": "Séparateur Décimal",
+        "thousandsSeparator": "Séparateur de Milliers",
+        "symbolPosition": "Position du Symbole",
+        "decimalDigits": "Chiffres Décimaux",
+        "subunit": "Sous-unité",
+        "pattern": "Modèle",
+        "standardExample": "Exemple Standard",
+        "accountingExample": "Exemple Comptable"
+      },
+      "none": "Aucun pays officiel répertorié."
+    },
+    "noData": "Aucune devise trouvée."
+  },
+  "languages": {
+    "title": "Langues",
+    "subtitle": "Noms natifs et données d'utilisation pour {count} langues mondiales",
+    "search": "Rechercher des langues...",
+    "sort": {
+      "name": "Nom",
+      "code": "Code",
+      "native": "Nom natif",
+      "usage": "Nombre d'utilisations"
+    },
+    "card": {
+      "countriesCount": "{count} pays"
+    },
+    "detail": {
+      "sections": {
+        "spokenIn": "Parlé Dans ({count} Pays)",
+        "rawJson": "Données JSON Brutes"
+      },
+      "none": "Aucun pays officiel répertorié."
+    },
+    "noData": "Aucune langue trouvée."
+  },
+  "airports": {
+    "title": "Aéroports",
+    "subtitle": "Base de données de {count} aéroports dans le monde avec codes IATA/ICAO",
+    "search": "Rechercher par nom, ville, code IATA ou ICAO...",
+    "filters": {
+      "region": {
+        "all": "Toutes les Régions",
+        "africa": "Afrique",
+        "antarctica": "Antarctique",
+        "asia": "Asie",
+        "europe": "Europe",
+        "northAmerica": "Amérique du Nord",
+        "oceania": "Océanie",
+        "southAmerica": "Amérique du Sud"
+      }
+    },
+    "table": {
+      "iata": "IATA",
+      "icao": "ICAO",
+      "name": "Nom de l'Aéroport",
+      "city": "Ville",
+      "country": "Pays",
+      "region": "Région"
+    },
+    "showing": "Affichage de {shown} sur {total} aéroports",
+    "noResults": "Aucun aéroport trouvé correspondant à votre recherche.",
+    "copyIata": "Copier IATA",
+    "copyIcao": "Copier ICAO"
+  },
+  "localeCodes": {
+    "title": "Référence des Codes Régionaux",
+    "subtitle": "Balises régionales BCP-47, codes ISO et codes de devises pour tous les {count} pays",
+    "mobileHint": "💡 Faites glisser vers la gauche pour voir plus de colonnes",
+    "table": {
+      "flag": "Drapeau",
+      "country": "Pays",
+      "alpha2": "Alpha-2",
+      "bcp47": "BCP-47",
+      "currency": "Devise",
+      "callingCode": "Indicatif Téléphonique",
+      "region": "Région",
+      "caption": "Codes ISO 3166-1 et BCP-47 régionaux pour tous les pays"
+    },
+    "about": {
+      "title": "À Propos de BCP-47",
+      "intro": "BCP-47 (Best Current Practice 47) est la norme pour les balises de langue utilisées pour identifier les langues, régions et paramètres régionaux sur Internet.",
+      "structure": "Une balise BCP-47 se compose généralement de : {tag} où language est un code ISO 639 et REGION est un code ISO 3166-1 alpha-2.",
+      "examples": "Exemples :"
+    },
+    "search": "Rechercher par pays, code, locale ou devise...",
+    "noResults": "Aucun pays correspondant à votre recherche.",
+    "resultsCount": "Affichage de {count} sur {total} pays",
+    "viewCountry": "Voir les détails du pays"
+  },
+  "about": {
+    "title": "À Propos de LocaleDB",
+    "intro": "LocaleDB est une base de données complète et open source de données de localisation pour les développeurs créant des applications internationales. Nous agrégeons et traitons des données provenant de sources faisant autorité, notamment CLDR, les normes ISO et OpenFlights.",
+    "whatIsIncluded": {
+      "title": "Ce Qui Est Inclus",
+      "countries": {
+        "title": "Données de Pays",
+        "items": [
+          "Codes ISO 3166-1 (Alpha-2, Alpha-3, Numeric)",
+          "Balises régionales BCP-47",
+          "Modèles de formatage de devises",
+          "Formats de date et heure",
+          "Conventions de formatage des nombres",
+          "Codes téléphoniques et TLD",
+          "Informations géographiques (région, continent, frontières)"
+        ]
+      },
+      "currencies": {
+        "title": "Formats de Devises",
+        "items": [
+          "Positionnement des symboles",
+          "Séparateurs décimaux et de milliers",
+          "Nombre de chiffres décimaux",
+          "Informations sur les sous-unités",
+          "Exemples de format comptable"
+        ]
+      },
+      "languages": {
+        "title": "Données de Langues",
+        "items": [
+          "Codes ISO 639-1, 639-2 et 639-3",
+          "Noms de langues natifs",
+          "Pays où elles sont parlées"
+        ]
+      },
+      "airports": {
+        "title": "Informations sur les Aéroports",
+        "items": [
+          "Codes IATA et ICAO",
+          "Coordonnées géographiques",
+          "Données de région et de pays",
+          "Informations sur la ville et le fuseau horaire"
+        ]
+      }
+    },
+    "sources": {
+      "title": "Sources de Données",
+      "description": "Nos données proviennent de sources fiables et faisant autorité :",
+      "cldr": "Unicode CLDR (Common Locale Data Repository)",
+      "iso": "Organisations de normes ISO",
+      "openflights": "Base de données d'aéroports OpenFlights",
+      "restcountries": "REST Countries API",
+      "items": [
+        "CLDR (Common Locale Data Repository)",
+        "mledoze/countries",
+        "IP2Location Airports",
+        "Google libaddressinput",
+        "Community Contributions"
+      ]
+    },
+    "openSource": {
+      "title": "Open Source",
+      "description": "LocaleDB est entièrement gratuit et open source. Vous pouvez utiliser ces données dans vos projets sans restrictions. Le code source et les données sont disponibles sur GitHub sous licence MIT."
+    },
+    "hero": {
+      "title": "Global Data for Modern Apps",
+      "subtitle": "LocaleDB is a comprehensive, open-source database of localization data for developers building international applications. We aggregate and process data from authoritative sources including CLDR, ISO standards, and OpenFlights."
+    },
+    "challenge": {
+      "title": "The Challenge",
+      "items": {
+        "currency": "Currency symbol placement (before or after?)",
+        "date": "Date format differences (DD/MM vs MM/DD)",
+        "number": "Number separators (1,250.00 vs 1.250,00)",
+        "address": "Address formatting conventions",
+        "timezone": "Time zones and calendar systems",
+        "documentation": "Scattered documentation & heavy libraries"
+      }
+    },
+    "solution": {
+      "title": "Our Solution",
+      "comprehensive": {
+        "title": "Comprehensive Data",
+        "items": [
+          "Structured JSON for every country",
+          "Ready-to-use formatting rules",
+          "CLDR-based accuracy",
+          "Global Airport Database (IATA/ICAO)"
+        ]
+      },
+      "developerExp": {
+        "title": "Developer Experience",
+        "items": [
+          "Fast, static generation",
+          "No server required",
+          "Open source (MIT Licensed)",
+          "Community contributions"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Open Source & Community Driven",
+      "description": "LocaleDB is MIT licensed and welcomes contributions. Whether you're fixing a typo, adding a missing country, or improving the UI, we'd love your help.",
+      "github": "View on GitHub",
+      "contributing": "Contributing Guide"
+    }
+  },
+  "contributing": {
+    "title": "Contribuer à LocaleDB",
+    "intro": "LocaleDB est un projet open source et nous accueillons les contributions de la communauté. Que vous signaliez des bugs, suggériez des fonctionnalités ou soumettiez du code, votre contribution aide à améliorer LocaleDB pour tout le monde.",
+    "howToContribute": {
+      "title": "Comment Contribuer",
+      "items": [
+        "Signalez des bugs ou suggérez des fonctionnalités en ouvrant une issue sur GitHub",
+        "Corrigez des bugs ou implémentez des fonctionnalités en soumettant une pull request",
+        "Améliorez la documentation ou ajoutez des exemples",
+        "Aidez à l'exactitude des données en signalant les incohérences",
+        "Partagez LocaleDB avec d'autres développeurs qui pourraient le trouver utile"
+      ]
+    },
+    "guidelines": {
+      "title": "Directives de Contribution",
+      "codeQuality": {
+        "title": "Qualité du Code",
+        "description": "Suivez le style et les modèles de code existants. Rédigez des messages de commit clairs et incluez des tests pour les nouvelles fonctionnalités."
+      },
+      "dataAccuracy": {
+        "title": "Exactitude des Données",
+        "description": "Lors de la mise à jour des données régionales, citez des sources faisant autorité. Assurez-vous que les modifications sont conformes aux normes ISO et aux données CLDR."
+      },
+      "documentation": {
+        "title": "Documentation",
+        "description": "Mettez à jour la documentation pertinente lors de l'ajout ou de la modification de fonctionnalités. Incluez des exemples le cas échéant."
+      },
+      "pullRequests": {
+        "title": "Pull Requests",
+        "items": [
+          "One change per PR",
+          "Clear, descriptive commit messages",
+          "Link to official sources (CLDR, Gov sites)"
+        ]
+      },
+      "resources": {
+        "title": "Resources",
+        "items": [
+          "<linkCLDR>CLDR Repository</linkCLDR>",
+          "<linkMledoze>mledoze/countries</linkMledoze>",
+          "ISO 3166 Standards"
+        ]
+      }
+    },
+    "gettingStarted": {
+      "title": "Commencer",
+      "description": "Pour commencer à contribuer :",
+      "steps": [
+        "Forkez le dépôt sur GitHub",
+        "Clonez votre fork localement",
+        "Créez une nouvelle branche pour vos modifications",
+        "Effectuez vos modifications et testez-les",
+        "Soumettez une pull request avec une description claire"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Vous avez des questions ? Ouvrez une issue sur GitHub ou contactez les mainteneurs."
+    },
+    "hero": {
+      "title": "Contributing to LocaleDB",
+      "subtitle": "LocaleDB is an open-source project and we love contributions from developers worldwide!"
+    },
+    "cards": {
+      "fixData": {
+        "title": "Fix Data",
+        "description": "Correct typos or update outdated locale information."
+      },
+      "addCountry": {
+        "title": "Add Country",
+        "description": "Add missing countries using standard codes."
+      },
+      "improveCode": {
+        "title": "Improve Code",
+        "description": "Enhance the UI, search, or build scripts."
+      }
+    },
+    "workflow": {
+      "title": "Data Contribution Workflow",
+      "step1": {
+        "title": "Fork & Setup",
+        "description": "Fork the <link>GitHub repository</link> and clone it to your local machine."
+      },
+      "step2": {
+        "title": "Use Data Overrides",
+        "description": "To fix data, <strong>do not edit</strong> the generated files in <code>/data/countries/</code>. Instead, create or edit a file in <code>/data/overrides/XX.json</code> (where XX is the country code)."
+      },
+      "step3": {
+        "title": "Verify & Submit",
+        "description": "Run the build script to verify your changes are merged correctly. Then submit a Pull Request with references to official sources."
+      }
+    },
+    "help": {
+      "title": "Need Help?",
+      "description": "Have a question or stuck on a step? Start a discussion on GitHub.",
+      "button": "Join Discussion"
+    }
+  },
+  "footer": {
+    "description": "Données de localisation gratuites et open source pour les développeurs.",
+    "sections": {
+      "resources": {
+        "title": "Ressources",
+        "github": "GitHub",
+        "documentation": "Documentation",
+        "apiReference": "Référence API"
+      },
+      "data": {
+        "title": "Données",
         "countries": "Pays",
         "currencies": "Devises",
         "languages": "Langues",
-        "airports": "Aéroports",
-        "localeCodes": "Codes Régionaux",
-        "about": "À Propos",
+        "airports": "Aéroports"
+      },
+      "community": {
+        "title": "Communauté",
         "contributing": "Contribuer",
-        "roadmap": "Feuille de route"
+        "changelog": "Journal des Modifications",
+        "license": "Licence"
+      },
+      "legal": {
+        "privacy": "Confidentialité",
+        "terms": "Conditions",
+        "license": "Licence"
+      }
     },
-    "home": {
-        "badge": "Données de Localisation Open Source",
-        "title": {
-            "the": "L'",
-            "localization": "Encyclopédie de Localisation",
-            "forDevelopers": "pour les Développeurs"
-        },
-        "features": {
-            "countries": {
-                "title": "Pays",
-                "description": "Parcourez les données de localisation pour plus de 250 pays, y compris les codes, devises et formats."
-            },
-            "languages": {
-                "title": "Langues",
-                "description": "Explorez les données traitées pour les langues du monde, y compris les noms natifs et les pays."
-            },
-            "currencies": {
-                "title": "Formats de Devises",
-                "description": "Position des symboles, séparateurs et modèles pour chaque devise du monde."
-            },
-            "airports": {
-                "title": "Aéroports",
-                "description": "Base de données de plus de 9 000 aéroports avec codes IATA/ICAO, coordonnées et régions."
-            },
-            "localeCodes": {
-                "title": "Codes Régionaux",
-                "description": "Référence ISO 3166, BCP47, RFC4647 et toutes les normes internationales."
-            }
-        },
-        "cta": {
-            "browseCountries": "Parcourir les Pays",
-            "viewOnGitHub": "Voir sur GitHub"
+    "copyright": "© {year} LocaleDB. Tous droits réservés."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "notFound": "Non trouvé",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "viewMore": "Voir Plus",
+    "showAll": "Tout Afficher",
+    "theme": "Thème",
+    "menu": "Menu",
+    "clearFilters": "Effacer les filtres",
+    "clearSearch": "Effacer la recherche",
+    "toggleTheme": "Changer le thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "changeLanguage": "Changer de langue",
+    "showing": "Affichage de {shown} sur {total}"
+  },
+  "search": {
+    "placeholder": "Rechercher des pays...",
+    "dialogPlaceholder": "Rechercher des pays, devises, codes...",
+    "ariaLabel": "Rechercher des pays, devises et codes",
+    "noResults": "Aucun résultat trouvé.",
+    "groupCountries": "Pays"
+  },
+  "roadmap": {
+    "title": "Project Roadmap",
+    "subtitle": "LocaleDB's development journey and future plans.",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "planned": "Planned"
+    },
+    "items": {
+      "1": {
+        "title": "Project Initiation & Data Population",
+        "description": "Initial setup of the Next.js project and population of core data for countries, currencies, and languages.",
+        "date": "Q1 2026"
+      },
+      "2": {
+        "title": "Bug Fixes & Contribution System",
+        "description": "Resolving initial issues and establishing a robust workflow for community contributions via overrides.",
+        "date": "Q1 2026"
+      },
+      "3": {
+        "title": "Data Export Interface",
+        "description": "A user interface allowing users to select specific countries and export their data in custom JSON formats.",
+        "date": "Q2 2026"
+      },
+      "4": {
+        "title": "npm Package & CLI Tool",
+        "description": "A dedicated npm package and CLI tool for developers to download and integrate locale data directly into their projects.",
+        "date": "Q2 2026"
+      },
+      "5": {
+        "title": "Public API Launch",
+        "description": "Development and deployment of a RESTful API to serve locale data dynamically.",
+        "date": "Q3 2026"
+      }
+    }
+  },
+  "updates": {
+    "title": "Updates & Changelog",
+    "subtitle": "Track all changes and improvements to LocaleDB",
+    "currentVersion": "Current Version",
+    "releaseDate": "Release Date",
+    "previousVersion": "Previous Version",
+    "totalCommits": "Total Commits",
+    "noUpdates": "No updates available yet."
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Tout ce que vous devez savoir sur les données, le pipeline et l'architecture de LocaleDB.",
+    "badge": "Guide du Développeur",
+    "toc": {
+      "overview": "Vue d'ensemble",
+      "gettingStarted": "Commencer",
+      "dataPipeline": "Pipeline de Données",
+      "dataSchemas": "Schémas de Données",
+      "projectStructure": "Structure du Projet",
+      "scripts": "Référence des Scripts",
+      "contributing": "Contribuer aux Données",
+      "i18n": "i18n & Traductions"
+    },
+    "overview": {
+      "title": "Vue d'ensemble",
+      "description": "LocaleDB est une encyclopédie de localisation complète et open-source pour les développeurs créant des applications internationales.",
+      "stats": {
+        "countries": "250+ Pays",
+        "languages": "114 Langues",
+        "currencies": "161 Devises",
+        "airports": "9,415 Aéroports"
+      },
+      "features": {
+        "title": "Caractéristiques Clés",
+        "items": {
+          "comprehensive": "Données complètes provenant de sources faisant autorité (CLDR, Banque Mondiale, mledoze, libphonenumber, OpenFlights)",
+          "static": "Génération statique - aucune base de données d'exécution requise",
+          "openSource": "Licence MIT et piloté par la communauté",
+          "i18n": "11 langues avec prise en charge RTL pour l'arabe"
         }
+      }
     },
-    "countries": {
-        "title": "Pays",
-        "subtitle": "Données de localisation complètes pour {count} pays",
-        "search": "Rechercher des pays...",
-        "filters": {
-            "continent": {
-                "all": "Tous les Continents",
-                "africa": "Afrique",
-                "antarctica": "Antarctique",
-                "asia": "Asie",
-                "europe": "Europe",
-                "northAmerica": "Amérique du Nord",
-                "oceania": "Océanie",
-                "southAmerica": "Amérique du Sud"
-            }
-        },
-        "sort": {
-            "name": "Nom",
-            "code": "Code",
-            "population": "Population",
-            "area": "Superficie"
-        },
-        "detail": {
-            "capital": "Capitale",
-            "population": "Population",
-            "currency": {
-                "name": "Nom",
-                "nativeName": "Nom Natif",
-                "code": "Code",
-                "symbol": "Symbole",
-                "symbolPosition": "Position du Symbole",
-                "decimalSeparator": "Séparateur Décimal",
-                "thousandsSeparator": "Séparateur de Milliers",
-                "decimalDigits": "Chiffres Décimaux",
-                "example": "Exemple :"
-            },
-            "callingCode": "Indicatif Téléphonique",
-            "sections": {
-                "languages": "Langues",
-                "geography": "Géographie",
-                "airports": "Aéroports",
-                "codes": "Codes de Pays",
-                "currencyFormat": "Format de Devise",
-                "dateTime": "Formats de Date et Heure",
-                "numberFormat": "Format des Nombres",
-                "phone": "Format de Téléphone",
-                "locale": "Paramètres Régionaux",
-                "rawJson": "Données JSON Brutes"
-            },
-            "geography": {
-                "region": "Région",
-                "subregion": "Sous-région",
-                "continent": "Continent",
-                "area": "Superficie",
-                "landlocked": "Sans Littoral",
-                "tld": "TLD",
-                "borders": "Frontières",
-                "yes": "Oui",
-                "no": "Non"
-            },
-            "airports": {
-                "count": "Aéroports ({count})",
-                "more": "et {count} aéroports de plus...",
-                "showAll": "Afficher Tous les Aéroports",
-                "none": "Aucun aéroport répertorié."
-            },
-            "codes": {
-                "alpha2": "ISO 3166-1 Alpha-2",
-                "alpha3": "ISO 3166-1 Alpha-3",
-                "numeric": "ISO 3166-1 Numeric",
-                "bcp47": "BCP 47",
-                "ioc": "IOC",
-                "fifa": "FIFA"
-            },
-            "dateTime": {
-                "dateFormats": "Formats de Date",
-                "timeFormats": "Formats d'Heure",
-                "full": "Complet",
-                "long": "Long",
-                "medium": "Moyen",
-                "short": "Court",
-                "firstDayOfWeek": "Premier Jour de la Semaine",
-                "clockFormat": "Format d'Horloge",
-                "primaryTimezone": "Fuseau Horaire Principal",
-                "utcOffset": "Décalage UTC",
-                "timezones": "Fuseaux Horaires",
-                "monday": "Lundi",
-                "sunday": "Dimanche"
-            },
-            "numberFormat": {
-                "decimalSeparator": "Séparateur Décimal",
-                "thousandsSeparator": "Séparateur de Milliers",
-                "digitGrouping": "Groupement de Chiffres",
-                "numberingSystem": "Système de Numération",
-                "example": "Exemple :"
-            },
-            "locale": {
-                "writingDirection": "Direction d'Écriture",
-                "measurementSystem": "Système de Mesure",
-                "temperatureScale": "Échelle de Température",
-                "paperSize": "Taille de Papier",
-                "drivingSide": "Côté de Conduite",
-                "weekNumbering": "Numérotation des Semaines"
-            }
-        },
-        "noData": "Aucun pays trouvé."
+    "gettingStarted": {
+      "title": "Getting Started",
+      "description": "Clone the repository and start exploring locale data in minutes.",
+      "steps": {
+        "clone": "Clone the repository",
+        "install": "Install dependencies",
+        "updateData": "Download raw data from sources",
+        "buildData": "Process and generate JSON files",
+        "dev": "Start development server"
+      }
     },
-    "currencies": {
-        "title": "Devises",
-        "subtitle": "Modèles de formatage et symboles pour {count} devises mondiales",
-        "search": "Rechercher des devises...",
-        "sort": {
-            "name": "Nom",
-            "code": "Code",
-            "symbol": "Symbole",
-            "usage": "Nombre d'utilisations"
-        },
-        "card": {
-            "usedIn": "Utilisé dans {count} pays"
-        },
-        "detail": {
-            "numeric": "Numérique :",
-            "sections": {
-                "formattingRules": "Règles de Formatage",
-                "usedIn": "Utilisé Dans ({count} Pays)",
-                "rawJson": "Données JSON Brutes"
-            },
-            "formatting": {
-                "decimalSeparator": "Séparateur Décimal",
-                "thousandsSeparator": "Séparateur de Milliers",
-                "symbolPosition": "Position du Symbole",
-                "decimalDigits": "Chiffres Décimaux",
-                "subunit": "Sous-unité",
-                "pattern": "Modèle",
-                "standardExample": "Exemple Standard",
-                "accountingExample": "Exemple Comptable"
-            },
-            "none": "Aucun pays officiel répertorié."
-        },
-        "noData": "Aucune devise trouvée."
-    },
-    "languages": {
-        "title": "Langues",
-        "subtitle": "Noms natifs et données d'utilisation pour {count} langues mondiales",
-        "search": "Rechercher des langues...",
-        "sort": {
-            "name": "Nom",
-            "code": "Code",
-            "native": "Nom natif",
-            "usage": "Nombre d'utilisations"
-        },
-        "card": {
-            "countriesCount": "{count} pays"
-        },
-        "detail": {
-            "sections": {
-                "spokenIn": "Parlé Dans ({count} Pays)",
-                "rawJson": "Données JSON Brutes"
-            },
-            "none": "Aucun pays officiel répertorié."
-        },
-        "noData": "Aucune langue trouvée."
-    },
-    "airports": {
-        "title": "Aéroports",
-        "subtitle": "Base de données de {count} aéroports dans le monde avec codes IATA/ICAO",
-        "search": "Rechercher par nom, ville, code IATA ou ICAO...",
-        "filters": {
-            "region": {
-                "all": "Toutes les Régions",
-                "africa": "Afrique",
-                "antarctica": "Antarctique",
-                "asia": "Asie",
-                "europe": "Europe",
-                "northAmerica": "Amérique du Nord",
-                "oceania": "Océanie",
-                "southAmerica": "Amérique du Sud"
-            }
-        },
-        "table": {
-            "iata": "IATA",
-            "icao": "ICAO",
-            "name": "Nom de l'Aéroport",
-            "city": "Ville",
-            "country": "Pays",
-            "region": "Région"
-        },
-        "showing": "Affichage de {shown} sur {total} aéroports",
-        "noResults": "Aucun aéroport trouvé correspondant à votre recherche.",
-        "copyIata": "Copier IATA",
-        "copyIcao": "Copier ICAO"
-    },
-    "localeCodes": {
-        "title": "Référence des Codes Régionaux",
-        "subtitle": "Balises régionales BCP-47, codes ISO et codes de devises pour tous les {count} pays",
-        "mobileHint": "💡 Faites glisser vers la gauche pour voir plus de colonnes",
-        "table": {
-            "flag": "Drapeau",
-            "country": "Pays",
-            "alpha2": "Alpha-2",
-            "bcp47": "BCP-47",
-            "currency": "Devise",
-            "callingCode": "Indicatif Téléphonique",
-            "region": "Région",
-            "caption": "Codes ISO 3166-1 et BCP-47 régionaux pour tous les pays"
-        },
-        "about": {
-            "title": "À Propos de BCP-47",
-            "intro": "BCP-47 (Best Current Practice 47) est la norme pour les balises de langue utilisées pour identifier les langues, régions et paramètres régionaux sur Internet.",
-            "structure": "Une balise BCP-47 se compose généralement de : {tag} où language est un code ISO 639 et REGION est un code ISO 3166-1 alpha-2.",
-            "examples": "Exemples :"
-        },
-        "search": "Rechercher par pays, code, locale ou devise...",
-        "noResults": "Aucun pays correspondant à votre recherche.",
-        "resultsCount": "Affichage de {count} sur {total} pays",
-        "viewCountry": "Voir les détails du pays"
-    },
-    "about": {
-        "title": "À Propos de LocaleDB",
-        "intro": "LocaleDB est une base de données complète et open source de données de localisation pour les développeurs créant des applications internationales. Nous agrégeons et traitons des données provenant de sources faisant autorité, notamment CLDR, les normes ISO et OpenFlights.",
-        "whatIsIncluded": {
-            "title": "Ce Qui Est Inclus",
-            "countries": {
-                "title": "Données de Pays",
-                "items": [
-                    "Codes ISO 3166-1 (Alpha-2, Alpha-3, Numeric)",
-                    "Balises régionales BCP-47",
-                    "Modèles de formatage de devises",
-                    "Formats de date et heure",
-                    "Conventions de formatage des nombres",
-                    "Codes téléphoniques et TLD",
-                    "Informations géographiques (région, continent, frontières)"
-                ]
-            },
-            "currencies": {
-                "title": "Formats de Devises",
-                "items": [
-                    "Positionnement des symboles",
-                    "Séparateurs décimaux et de milliers",
-                    "Nombre de chiffres décimaux",
-                    "Informations sur les sous-unités",
-                    "Exemples de format comptable"
-                ]
-            },
-            "languages": {
-                "title": "Données de Langues",
-                "items": ["Codes ISO 639-1, 639-2 et 639-3", "Noms de langues natifs", "Pays où elles sont parlées"]
-            },
-            "airports": {
-                "title": "Informations sur les Aéroports",
-                "items": [
-                    "Codes IATA et ICAO",
-                    "Coordonnées géographiques",
-                    "Données de région et de pays",
-                    "Informations sur la ville et le fuseau horaire"
-                ]
-            }
-        },
+    "dataPipeline": {
+      "title": "Data Pipeline",
+      "description": "LocaleDB processes data from multiple authoritative sources through a multi-stage pipeline.",
+      "steps": {
         "sources": {
-            "title": "Sources de Données",
-            "description": "Nos données proviennent de sources fiables et faisant autorité :",
-            "cldr": "Unicode CLDR (Common Locale Data Repository)",
-            "iso": "Organisations de normes ISO",
-            "openflights": "Base de données d'aéroports OpenFlights",
-            "restcountries": "REST Countries API",
-            "items": [
-                "CLDR (Common Locale Data Repository)",
-                "mledoze/countries",
-                "IP2Location Airports",
-                "Google libaddressinput",
-                "Community Contributions"
-            ]
+          "title": "External Sources",
+          "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
         },
-        "openSource": {
-            "title": "Open Source",
-            "description": "LocaleDB est entièrement gratuit et open source. Vous pouvez utiliser ces données dans vos projets sans restrictions. Le code source et les données sont disponibles sur GitHub sous licence MIT."
+        "update": {
+          "title": "Download Raw Data",
+          "description": "pnpm update:data downloads files to data/ subdirectories"
         },
-        "hero": {
-            "title": "Global Data for Modern Apps",
-            "subtitle": "LocaleDB is a comprehensive, open-source database of localization data for developers building international applications. We aggregate and process data from authoritative sources including CLDR, ISO standards, and OpenFlights."
+        "rawData": {
+          "title": "Raw Data Files",
+          "description": "JSON, CSV, and XML files stored in data/"
         },
-        "challenge": {
-            "title": "The Challenge",
-            "items": {
-                "currency": "Currency symbol placement (before or after?)",
-                "date": "Date format differences (DD/MM vs MM/DD)",
-                "number": "Number separators (1,250.00 vs 1.250,00)",
-                "address": "Address formatting conventions",
-                "timezone": "Time zones and calendar systems",
-                "documentation": "Scattered documentation & heavy libraries"
-            }
+        "build": {
+          "title": "Process & Merge",
+          "description": "pnpm build:data merges sources with priority rules"
         },
-        "solution": {
-            "title": "Our Solution",
-            "comprehensive": {
-                "title": "Comprehensive Data",
-                "items": [
-                    "Structured JSON for every country",
-                    "Ready-to-use formatting rules",
-                    "CLDR-based accuracy",
-                    "Global Airport Database (IATA/ICAO)"
-                ]
-            },
-            "developerExp": {
-                "title": "Developer Experience",
-                "items": [
-                    "Fast, static generation",
-                    "No server required",
-                    "Open source (MIT Licensed)",
-                    "Community contributions"
-                ]
-            }
+        "generated": {
+          "title": "Generated JSON",
+          "description": "Individual country, language, and currency files"
         },
-        "cta": {
-            "title": "Open Source & Community Driven",
-            "description": "LocaleDB is MIT licensed and welcomes contributions. Whether you're fixing a typo, adding a missing country, or improving the UI, we'd love your help.",
-            "github": "View on GitHub",
-            "contributing": "Contributing Guide"
+        "ssg": {
+          "title": "Static Site Generation",
+          "description": "Next.js builds 5,868+ static pages"
         }
+      },
+      "priority": {
+        "title": "Data Source Priority",
+        "description": "When multiple sources provide the same field, we use a consistent priority system:",
+        "rules": {
+          "names": "Country names: CLDR > mledoze > SimpleLocalize",
+          "population": "Population: World Bank > mledoze > SimpleLocalize",
+          "phone": "Phone data: libphonenumber XML (authoritative)"
+        }
+      }
+    },
+    "dataSchemas": {
+      "title": "Data Schemas",
+      "description": "Detailed structure of country, language, and currency JSON files.",
+      "country": {
+        "title": "Country Schema",
+        "path": "data/countries/{CODE}.json",
+        "fields": {
+          "basics": "Name, capital, coordinates, continent, population, area, languages, flagEmoji",
+          "codes": "ISO 3166, BCP-47, FIFA, IOC, FIPS, and other international codes",
+          "currency": "Code, symbol, position, separators, decimal digits, pattern, example",
+          "dateTime": "Date/time formats (full, long, medium, short), first day of week, timezones",
+          "numberFormat": "Decimal/thousands separators, digit grouping, numbering system",
+          "phone": "Calling code, patterns, format rules, subscriber number lengths",
+          "addressFormat": "Format template, postal code regex and example",
+          "locale": "Writing direction, measurement system, temperature scale, paper size, driving side",
+          "airports": "Array of airports with IATA, ICAO, coordinates, timezone"
+        }
+      },
+      "language": {
+        "title": "Language Schema",
+        "path": "data/languages/{code}.json",
+        "fields": {
+          "code": "ISO 639-1 code",
+          "name": "English name",
+          "nativeName": "Native name",
+          "direction": "Text direction (ltr or rtl)",
+          "countries": "Array of country codes where spoken"
+        }
+      },
+      "currency": {
+        "title": "Currency Schema",
+        "path": "data/currencies/{CODE}.json",
+        "fields": {
+          "code": "ISO 4217 code",
+          "name": "Currency name",
+          "symbol": "Currency symbol",
+          "symbolPosition": "before or after",
+          "separators": "Decimal and thousands separators",
+          "decimalDigits": "Standard decimal places",
+          "pattern": "Formatting pattern",
+          "example": "Formatted example",
+          "countries": "Array of country codes using this currency"
+        }
+      }
+    },
+    "projectStructure": {
+      "title": "Project Structure",
+      "description": "Key directories and their purposes.",
+      "tree": {
+        "data": "Generated JSON files and raw source data",
+        "scripts": "Data pipeline scripts (update-data.ts, build-data.ts)",
+        "src": "Next.js application source code",
+        "messages": "Translation files for 11 languages"
+      }
+    },
+    "scripts": {
+      "title": "Scripts Reference",
+      "description": "Available commands for data management and development.",
+      "commands": {
+        "updateData": {
+          "command": "pnpm update:data",
+          "description": "Download raw data from all external sources"
+        },
+        "updateDataSpecific": {
+          "command": "pnpm update:data cldr worldbank",
+          "description": "Download specific sources only"
+        },
+        "buildData": {
+          "command": "pnpm build:data",
+          "description": "Process raw data and generate JSON files"
+        },
+        "dev": {
+          "command": "pnpm dev",
+          "description": "Start development server"
+        },
+        "build": {
+          "command": "pnpm build",
+          "description": "Production build (Static Site Generation)"
+        },
+        "checkI18n": {
+          "command": "npx tsx scripts/check-i18n.ts",
+          "description": "Check and auto-fill missing translation keys"
+        },
+        "version": {
+          "command": "pnpm version patch",
+          "description": "Bump version and auto-generate changelog"
+        }
+      }
     },
     "contributing": {
-        "title": "Contribuer à LocaleDB",
-        "intro": "LocaleDB est un projet open source et nous accueillons les contributions de la communauté. Que vous signaliez des bugs, suggériez des fonctionnalités ou soumettiez du code, votre contribution aide à améliorer LocaleDB pour tout le monde.",
-        "howToContribute": {
-            "title": "Comment Contribuer",
-            "items": [
-                "Signalez des bugs ou suggérez des fonctionnalités en ouvrant une issue sur GitHub",
-                "Corrigez des bugs ou implémentez des fonctionnalités en soumettant une pull request",
-                "Améliorez la documentation ou ajoutez des exemples",
-                "Aidez à l'exactitude des données en signalant les incohérences",
-                "Partagez LocaleDB avec d'autres développeurs qui pourraient le trouver utile"
-            ]
-        },
-        "guidelines": {
-            "title": "Directives de Contribution",
-            "codeQuality": {
-                "title": "Qualité du Code",
-                "description": "Suivez le style et les modèles de code existants. Rédigez des messages de commit clairs et incluez des tests pour les nouvelles fonctionnalités."
-            },
-            "dataAccuracy": {
-                "title": "Exactitude des Données",
-                "description": "Lors de la mise à jour des données régionales, citez des sources faisant autorité. Assurez-vous que les modifications sont conformes aux normes ISO et aux données CLDR."
-            },
-            "documentation": {
-                "title": "Documentation",
-                "description": "Mettez à jour la documentation pertinente lors de l'ajout ou de la modification de fonctionnalités. Incluez des exemples le cas échéant."
-            },
-            "pullRequests": {
-                "title": "Pull Requests",
-                "items": [
-                    "One change per PR",
-                    "Clear, descriptive commit messages",
-                    "Link to official sources (CLDR, Gov sites)"
-                ]
-            },
-            "resources": {
-                "title": "Resources",
-                "items": [
-                    "<linkCLDR>CLDR Repository</linkCLDR>",
-                    "<linkMledoze>mledoze/countries</linkMledoze>",
-                    "ISO 3166 Standards"
-                ]
-            }
-        },
-        "gettingStarted": {
-            "title": "Commencer",
-            "description": "Pour commencer à contribuer :",
-            "steps": [
-                "Forkez le dépôt sur GitHub",
-                "Clonez votre fork localement",
-                "Créez une nouvelle branche pour vos modifications",
-                "Effectuez vos modifications et testez-les",
-                "Soumettez une pull request avec une description claire"
-            ]
-        },
-        "contact": {
-            "title": "Contact",
-            "description": "Vous avez des questions ? Ouvrez une issue sur GitHub ou contactez les mainteneurs."
-        },
-        "hero": {
-            "title": "Contributing to LocaleDB",
-            "subtitle": "LocaleDB is an open-source project and we love contributions from developers worldwide!"
-        },
-        "cards": {
-            "fixData": {
-                "title": "Fix Data",
-                "description": "Correct typos or update outdated locale information."
-            },
-            "addCountry": {
-                "title": "Add Country",
-                "description": "Add missing countries using standard codes."
-            },
-            "improveCode": {
-                "title": "Improve Code",
-                "description": "Enhance the UI, search, or build scripts."
-            }
-        },
-        "workflow": {
-            "title": "Data Contribution Workflow",
-            "step1": {
-                "title": "Fork & Setup",
-                "description": "Fork the <link>GitHub repository</link> and clone it to your local machine."
-            },
-            "step2": {
-                "title": "Use Data Overrides",
-                "description": "To fix data, <strong>do not edit</strong> the generated files in <code>/data/countries/</code>. Instead, create or edit a file in <code>/data/overrides/XX.json</code> (where XX is the country code)."
-            },
-            "step3": {
-                "title": "Verify & Submit",
-                "description": "Run the build script to verify your changes are merged correctly. Then submit a Pull Request with references to official sources."
-            }
-        },
-        "help": {
-            "title": "Need Help?",
-            "description": "Have a question or stuck on a step? Start a discussion on GitHub.",
-            "button": "Join Discussion"
+      "title": "Contributing Data",
+      "description": "How to contribute corrections and improvements to LocaleDB.",
+      "workflow": {
+        "title": "Contribution Workflow",
+        "steps": {
+          "fork": "Fork the GitHub repository and clone to your local machine",
+          "edit": "Edit source priority in build-data.ts or submit corrections to upstream sources",
+          "translations": "Add translations by editing messages/{lang}.json and running check-i18n",
+          "pr": "Submit a Pull Request with one change per PR and links to official sources"
         }
-    },
-    "footer": {
-        "description": "Données de localisation gratuites et open source pour les développeurs.",
-        "sections": {
-            "resources": {
-                "title": "Ressources",
-                "github": "GitHub",
-                "documentation": "Documentation",
-                "apiReference": "Référence API"
-            },
-            "data": {
-                "title": "Données",
-                "countries": "Pays",
-                "currencies": "Devises",
-                "languages": "Langues",
-                "airports": "Aéroports"
-            },
-            "community": {
-                "title": "Communauté",
-                "contributing": "Contribuer",
-                "changelog": "Journal des Modifications",
-                "license": "Licence"
-            },
-            "legal": {
-                "privacy": "Confidentialité",
-                "terms": "Conditions",
-                "license": "Licence"
-            }
-        },
-        "copyright": "© {year} LocaleDB. Tous droits réservés."
-    },
-    "common": {
-        "loading": "Chargement...",
-        "error": "Une erreur s'est produite",
-        "notFound": "Non trouvé",
-        "copy": "Copier",
-        "copied": "Copié !",
-        "viewMore": "Voir Plus",
-        "showAll": "Tout Afficher",
-        "theme": "Thème",
-        "menu": "Menu",
-        "clearFilters": "Effacer les filtres",
-        "clearSearch": "Effacer la recherche",
-        "toggleTheme": "Changer le thème",
-        "light": "Clair",
-        "dark": "Sombre",
-        "system": "Système",
-        "changeLanguage": "Changer de langue",
-        "showing": "Affichage de {shown} sur {total}"
-    },
-    "search": {
-        "placeholder": "Rechercher des pays...",
-        "dialogPlaceholder": "Rechercher des pays, devises, codes...",
-        "ariaLabel": "Rechercher des pays, devises et codes",
-        "noResults": "Aucun résultat trouvé.",
-        "groupCountries": "Pays"
-    },
-    "roadmap": {
-        "title": "Project Roadmap",
-        "subtitle": "LocaleDB's development journey and future plans.",
-        "status": {
-            "completed": "Completed",
-            "inProgress": "In Progress",
-            "planned": "Planned"
-        },
+      },
+      "guidelines": {
+        "title": "Guidelines",
         "items": {
-            "1": {
-                "title": "Project Initiation & Data Population",
-                "description": "Initial setup of the Next.js project and population of core data for countries, currencies, and languages.",
-                "date": "Q1 2026"
-            },
-            "2": {
-                "title": "Bug Fixes & Contribution System",
-                "description": "Resolving initial issues and establishing a robust workflow for community contributions via overrides.",
-                "date": "Q1 2026"
-            },
-            "3": {
-                "title": "Data Export Interface",
-                "description": "A user interface allowing users to select specific countries and export their data in custom JSON formats.",
-                "date": "Q2 2026"
-            },
-            "4": {
-                "title": "npm Package & CLI Tool",
-                "description": "A dedicated npm package and CLI tool for developers to download and integrate locale data directly into their projects.",
-                "date": "Q2 2026"
-            },
-            "5": {
-                "title": "Public API Launch",
-                "description": "Development and deployment of a RESTful API to serve locale data dynamically.",
-                "date": "Q3 2026"
-            }
+          "oneChange": "One change per Pull Request",
+          "sources": "Always link to official sources (CLDR, government sites, ISO standards)",
+          "test": "Run pnpm build:data to verify your changes merge correctly",
+          "commits": "Clear, descriptive commit messages"
         }
+      }
     },
-    "updates": {
-        "title": "Updates & Changelog",
-        "subtitle": "Track all changes and improvements to LocaleDB",
-        "currentVersion": "Current Version",
-        "releaseDate": "Release Date",
-        "previousVersion": "Previous Version",
-        "totalCommits": "Total Commits",
-        "noUpdates": "No updates available yet."
+    "i18n": {
+      "title": "Internationalization",
+      "description": "LocaleDB supports 11 languages with plans for more.",
+      "languages": {
+        "title": "Supported Languages",
+        "list": "English, Turkish, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Japanese"
+      },
+      "location": {
+        "title": "Translation Files",
+        "description": "All translations are stored in messages/{lang}.json files"
+      },
+      "rtl": {
+        "title": "RTL Support",
+        "description": "Full right-to-left support for Arabic (ar) and other RTL languages"
+      },
+      "addLanguage": {
+        "title": "Adding a New Language",
+        "steps": {
+          "create": "Create a new messages/{lang}.json file",
+          "translate": "Translate all keys from messages/en.json",
+          "routing": "Add the locale code to src/i18n/routing.ts",
+          "verify": "Run npx tsx scripts/check-i18n.ts to verify completeness"
+        }
+      }
     }
+  }
 }

@@ -896,9 +896,14 @@ async function processCountry(
         }
     }
 
+    // English common name: mledoze common > SL name (before CLDR override)
+    const englishName = mledozeData?.name?.common || slData.name;
+
     index.push({
         code: isoCode,
-        name: data.basics.name, // Use prioritized name
+        alpha3: slData.iso_3166_1_alpha3 || mledozeData?.cca3 || "",
+        name: englishName,
+        nativeName: data.basics.name, // Native name (from CLDR override)
         flagEmoji: slData.flag,
         continent: slData.continent,
         region: data.basics.region, // Use prioritized region
