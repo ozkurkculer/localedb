@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -122,6 +123,7 @@ export default async function LocaleLayout({
           <Footer />
         </div>
         <Toaster />
+        <SpeedInsights />
       </ThemeProvider>
     </NextIntlClientProvider>
   );
