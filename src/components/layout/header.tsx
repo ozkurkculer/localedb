@@ -2,7 +2,8 @@
 
 import { Link } from '@/i18n/routing';
 import NextLink from 'next/link';
-import { Globe, ChevronDown, Database, Info } from 'lucide-react';
+import { ChevronDown, Database, Info } from 'lucide-react';
+import { Logo } from '@/components/logo';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/config/site';
@@ -32,9 +33,9 @@ export function Header() {
                 <MobileNav />
 
                 {/* Logo */}
+                {/* Logo */}
                 <Link href="/" className="mr-4 flex items-center space-x-2 md:mr-8">
-                    <Globe className="h-6 w-6" />
-                    <span className="hidden font-bold sm:inline-block">{siteConfig.name}</span>
+                    <Logo className="h-8 w-auto" />
                 </Link>
 
                 {/* Desktop Navigation - Dropdowns */}
