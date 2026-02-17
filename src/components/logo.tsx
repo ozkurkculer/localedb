@@ -11,10 +11,12 @@ export const Logo = ({ className, ...props }: ComponentPropsWithoutRef<'svg'>) =
         >
             <g>
                 {/* Icon shape - using muted foreground for secondary color */}
-                <g className="text-muted-foreground fill-current">
+                <g className="text-[#d8d5d6] fill-current">
                     <g>
                         <path d="M81.97,22.75v114.5c0,1.57,1.22,2.82,2.67,2.75c29.5-1.51,53-27.79,53-60s-23.49-58.49-53-60 C83.19,19.93,81.97,21.18,81.97,22.75z" />
                     </g>
+                </g>
+                <g className="text-[#b8b6b8] fill-current">
                     <g>
                         <path d="M75.67,137.25V22.75c0-1.57-1.22-2.82-2.67-2.75c-29.5,1.51-53,27.79-53,60s23.49,58.49,53,60 C74.45,140.07,75.67,138.82,75.67,137.25z" />
                     </g>
