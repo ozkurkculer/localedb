@@ -101,9 +101,35 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
         description: `Currency data for ${currency.data.name} (${currency.data.code})`
     };
 
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://localedb.org'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Currencies',
+                item: 'https://localedb.org/currencies'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: `${currency.data.name} (${currency.data.code})`,
+                item: `https://localedb.org/currencies/${currency.data.code}`
+            }
+        ]
+    };
+
     return (
         <div className="container py-12">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             {/* Header */}
             <div className="mb-12 text-center">
                 <div className="mb-4 text-6xl sm:text-7xl md:text-8xl font-bold bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent">
