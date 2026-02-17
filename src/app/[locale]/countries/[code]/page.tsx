@@ -139,9 +139,35 @@ export default async function CountryPage({ params }: CountryPageProps) {
         telephone: `+${country.phone.callingCode}`
     };
 
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://localedb.org'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Countries',
+                item: 'https://localedb.org/countries'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: country.basics.name,
+                item: `https://localedb.org/countries/${country.codes.iso3166Alpha2}`
+            }
+        ]
+    };
+
     return (
         <div className="container py-12">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             {/* Hero */}
             <div className="mb-12 text-center">
                 {/* Flag with subtle shadow */}
@@ -242,18 +268,27 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         </div>
 
                         {country.basics.borders.length > 0 && (
-                            <div className="col-span-full mt-4">
-                                <p className="mb-1.5 text-xs font-medium text-muted-foreground">Borders</p>
-                                <div className="flex flex-wrap gap-1.5">
+                            <div className="col-span-full mt-6">
+                                <p className="mb-3 text-sm font-medium text-muted-foreground">Neighboring Countries</p>
+                                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                                     {country.basics.borders.map((border) => {
                                         const targetCode = alpha3Map.get(border) || border;
+                                        // Find the country in the index to get the real name
+                                        const neighbor = countryIndex.find((c) => c.code === targetCode);
+                                        const name = neighbor ? neighbor.name : border;
+
                                         return (
                                             <Link
                                                 key={border}
                                                 href={`/countries/${targetCode}`}
-                                                className="rounded-md bg-muted px-2 py-1 font-mono text-xs transition-colors hover:bg-muted/80 hover:text-foreground"
+                                                className="group flex items-center gap-2 rounded-md border border-border/40 bg-background/50 p-2 transition-all hover:border-primary/50 hover:bg-muted/50 hover:shadow-sm"
                                             >
-                                                {border}
+                                                <span
+                                                    className={`fi fi-${targetCode.toLowerCase()} text-xl rounded shadow-sm`}
+                                                />
+                                                <span className="truncate text-xs font-medium group-hover:text-primary">
+                                                    {name}
+                                                </span>
                                             </Link>
                                         );
                                     })}
