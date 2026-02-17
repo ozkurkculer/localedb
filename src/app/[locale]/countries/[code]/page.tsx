@@ -56,13 +56,38 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
             };
         }
 
+        const ogUrl = new URL('https://localedb.org/og-image');
+        ogUrl.searchParams.set('mode', 'country');
+        ogUrl.searchParams.set('title', country.basics.name);
+        ogUrl.searchParams.set('subtitle', `${country.basics.region} • ${country.basics.subregion}`);
+        ogUrl.searchParams.set('icon', country.basics.flagEmoji);
+
         return {
             title: `${country.basics.name} - Locale Data`,
             description: `Localization data for ${country.basics.name}: currency (${country.currency.code}), date formats, number formats, phone codes, and more.`,
             openGraph: {
                 title: `${country.basics.flagEmoji} ${country.basics.name} Locale Data`,
-                description: `Complete localization reference for ${country.basics.name}`
-            }
+                description: `Complete localization reference for ${country.basics.name}. Currency: ${country.currency.code}, Phone: +${country.phone.callingCode}, Timezones: ${country.dateTime.timezones.join(', ')}`,
+                images: [
+                    {
+                        url: ogUrl.toString(),
+                        width: 1200,
+                        height: 630,
+                        alt: `${country.basics.name} Locale Data`
+                    }
+                ]
+            },
+            keywords: [
+                country.basics.name,
+                country.basics.nativeName,
+                'locale data',
+                'currency format',
+                'date format',
+                `ISO ${country.codes.iso3166Alpha2}`,
+                country.currency.code,
+                'localization',
+                'formatting'
+            ]
         };
     } catch {
         return {
@@ -90,17 +115,40 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
     // Load index for alpha3 -> alpha2 mapping
     const countryIndex = await getCountryIndex();
-    const alpha3Map = new Map(countryIndex.map((c) => [c.alpha3 || "", c.code]));
+    const alpha3Map = new Map(countryIndex.map((c) => [c.alpha3 || '', c.code]));
 
     const style = getContinentStyle(country.basics.continent);
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Country',
+        name: country.basics.name,
+        alternateName: country.basics.nativeName,
+        identifier: country.codes.iso3166Alpha2,
+        url: `https://localedb.org/countries/${country.codes.iso3166Alpha2}`,
+        conteninent: {
+            '@type': 'Continent',
+            name: country.basics.continent
+        },
+        currency: {
+            '@type': 'Currency',
+            name: country.currency.name,
+            isoCode: country.currency.code,
+            symbol: country.currency.symbol
+        },
+        telephone: `+${country.phone.callingCode}`
+    };
+
     return (
         <div className="container py-12">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             {/* Hero */}
             <div className="mb-12 text-center">
                 {/* Flag with subtle shadow */}
                 <div className="mb-4">
-                    <span className={`fi fi-${country.codes.iso3166Alpha2.toLowerCase()} text-6xl sm:text-7xl md:text-8xl rounded-lg shadow-sm`} />
+                    <span
+                        className={`fi fi-${country.codes.iso3166Alpha2.toLowerCase()} text-6xl sm:text-7xl md:text-8xl rounded-lg shadow-sm`}
+                    />
                 </div>
 
                 {/* Country Name - continent-colored gradient */}
@@ -404,7 +452,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                     label="First Day of Week"
                                     value={
                                         ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][
-                                        country.dateTime.firstDayOfWeek - 1
+                                            country.dateTime.firstDayOfWeek - 1
                                         ]
                                     }
                                 />
