@@ -15,7 +15,8 @@
         "localeCodes": "区域代码",
         "about": "关于",
         "contributing": "贡献",
-        "roadmap": "路线图"
+        "roadmap": "路线图",
+        "docs": "文档"
     },
     "home": {
         "badge": "开源本地化数据",

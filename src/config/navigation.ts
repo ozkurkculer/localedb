@@ -90,6 +90,10 @@ export const navGroups = {
             {
                 title: 'nav.contributing',
                 href: '/contributing'
+            },
+            {
+                title: 'nav.docs',
+                href: '/docs'
             }
         ]
     }
