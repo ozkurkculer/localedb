@@ -122,13 +122,24 @@ Built with the latest and greatest web technologies for speed and developer expe
    pnpm install
    ```
 
-3. **Run development server:**
+3. **Setup Environment Variables:**
+   ```bash
+   cp .env.example .env
+   ```
+   *(No API keys required for basic functionality, but the file must exist)*
+
+4. **Run clean build to take data:**
+   ```bash
+   pnpm build:clean
+   ```
+
+5. **Run development server:**
    ```bash
    pnpm dev
    ```
 
-4. **Open in browser:**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+6. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) (or whatever port it runs on)
 
 ### Building for Production
 
@@ -139,6 +150,13 @@ pnpm build
 ```
 
 This will run type checks, linting, and generate static pages for all locales.
+
+### 📜 Available Scripts
+
+- **`pnpm build:data`**: Generates all static JSON files in `data/` from sources.
+- **`pnpm update:data`**: Fetches fresh data from external sources (SimpleLocalize, etc.).
+- **`pnpm build:clean`**: Performs a full clean build: updates data -> builds data -> builds Next.js app.
+
 
 
 ## 📂 Project Structure
