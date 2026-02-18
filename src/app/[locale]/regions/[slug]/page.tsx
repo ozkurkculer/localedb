@@ -9,6 +9,7 @@ import { Globe } from 'lucide-react';
 interface RegionPageProps {
     params: Promise<{
         slug: string;
+        locale: string;
     }>;
 }
 
@@ -22,37 +23,51 @@ export async function generateStaticParams() {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: RegionPageProps): Promise<Metadata> {
-    const { slug } = await params;
+    const { slug, locale } = await params;
     // Simple title case for metadata
     const regionName = slug.charAt(0).toUpperCase() + slug.slice(1);
+    const t = await getTranslations({ locale, namespace: 'regions.meta' });
 
-    const ogUrl = new URL('https://localedb.org/og-image');
+    const ogUrl = new URL('https://localedb.org/og_image.png');
     ogUrl.searchParams.set('mode', 'site'); // Using site mode for regions for now, or could add region mode
     ogUrl.searchParams.set('title', `${regionName} Region`);
     ogUrl.searchParams.set('subtitle', `Countries and localization data for ${regionName}`);
     ogUrl.searchParams.set('icon', '🌍');
 
     return {
-        title: `${regionName} Region - LocaleDB`,
-        description: `List of countries in ${regionName} with localization data including currencies, languages, and formatting rules.`,
+        title: t('title', { region: regionName }),
+        description: t('description', { region: regionName }),
+        alternates: {
+            canonical: `/regions/${slug}`,
+        },
         openGraph: {
-            title: `${regionName} Region Data`,
-            description: `Explore localization data for all countries in ${regionName}.`,
+            title: t('ogTitle', { region: regionName }),
+            description: t('ogDescription', { region: regionName }),
+            url: `/regions/${slug}`,
+            siteName: "LocaleDB",
             images: [
                 {
                     url: ogUrl.toString(),
                     width: 1200,
                     height: 630,
-                    alt: `${regionName} Region Data`
+                    alt: t('ogAlt', { region: regionName })
                 }
-            ]
+            ],
+            locale: locale,
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: t('title', { region: regionName }),
+            description: t('description', { region: regionName }),
+            images: [ogUrl.toString()],
         }
     };
 }
 
 export default async function RegionPage({ params }: RegionPageProps) {
-    const { slug } = await params;
-    const regionName = slug.charAt(0).toUpperCase() + slug.slice(1); // Naive capitalization, ideally use the source data casing if possible, but slug is lower
+    const { slug, locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'regions' });
 
     // We need to match the slug back to the actual continent name in DB if it's case sensitive?
     // The helper getCountriesByRegion is case-insensitive, so 'europe' works for 'Europe'.
@@ -65,7 +80,6 @@ export default async function RegionPage({ params }: RegionPageProps) {
     // Get the display name from the first country's continent field to be accurate
     const displayRegionName = countries[0].continent;
     const style = getContinentStyle(displayRegionName);
-    const t = await getTranslations('countries.detail'); // Reuse existing translations if applicable or just hardcode for now
 
     const breadcrumbJsonLd = {
         '@context': 'https://schema.org',
@@ -74,13 +88,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {
                 '@type': 'ListItem',
                 position: 1,
-                name: 'Home',
+                name: t('breadcrumbs.home'),
                 item: 'https://localedb.org'
             },
             {
                 '@type': 'ListItem',
                 position: 2,
-                name: 'Regions',
+                name: t('breadcrumbs.regions'),
                 item: 'https://localedb.org/regions' // We might need a regions index page later
             },
             {
@@ -108,7 +122,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
                 >
                     {displayRegionName}
                 </h1>
-                <p className="text-xl text-muted-foreground">{countries.length} Countries • Localization Data</p>
+                <p className="text-xl text-muted-foreground">{t('hero.subtitle', { count: countries.length })}</p>
             </div>
 
             {/* Countries Grid */}

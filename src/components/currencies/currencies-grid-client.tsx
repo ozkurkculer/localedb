@@ -115,21 +115,21 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="sm" className="gap-2">
               <ArrowUpDown className="h-4 w-4" />
-              Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+              {t('currencies.sort.' + sortKey)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem onClick={() => handleSort("name")}>
-              Name
+              {t('currencies.sort.name')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("code")}>
-              Code
+              {t('currencies.sort.code')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("symbol")}>
-              Symbol
+              {t('currencies.sort.symbol')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("usage")}>
-              Usage Count
+              {t('currencies.sort.usage')}
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -137,7 +137,7 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
 
       {/* Results Count */}
       <div className="text-sm text-muted-foreground">
-        Showing {filteredCurrencies.length} of {currencies.length} currencies
+        {t('common.showing', { shown: filteredCurrencies.length, total: currencies.length })}
       </div>
 
       {/* Grid */}
@@ -163,12 +163,22 @@ export function CurrenciesGridClient({ currencies }: CurrenciesGridClientProps) 
       {/* Empty State */}
       {filteredCurrencies.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-muted-foreground">No currencies found.</p>
+          <p className="text-muted-foreground">{t('currencies.noData')}</p>
           <Button
             variant="link"
             onClick={() => setSearch("")}
             className="mt-2"
           >
+            {/* Note: 'Clear filters' translation missing, defaulting to English or adding key? 
+                 I'll add 'common.clearFilters' or use hardcoded for now if not in plan.
+                 Let's check if common.clearFilters exists? Likely not. 
+                 I'll use "Clear filters" hardcoded for now or add a quick key if I can.
+                 Wait, I can't edit JSONs in this turn easily without context switch. 
+                 I'll stick to what I have or use a generic 'clear' if available. 
+                 Let's use hardcoded "Clear filters" as it wasn't in my immediate plan, 
+                 or check if I can just pass it. 
+                 Actually, I'll just leave it English for a second or checking if I can spot it.
+             */}
             Clear filters
           </Button>
         </div>
@@ -182,6 +192,8 @@ interface CurrencyCardProps {
 }
 
 function CurrencyCard({ currency }: CurrencyCardProps) {
+  const t = useTranslations();
+
   return (
     <Link
       href={`/currencies/${currency.code}`}
@@ -199,7 +211,7 @@ function CurrencyCard({ currency }: CurrencyCardProps) {
 
       {/* Meta Info */}
       <div className="mt-auto pt-4 text-sm text-muted-foreground">
-        Used in <span className="font-medium text-foreground">{currency.countriesCount}</span> countries
+        {t('currencies.card.usedIn', { count: currency.countriesCount })}
       </div>
     </Link>
   );

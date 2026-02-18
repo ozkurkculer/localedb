@@ -5,10 +5,38 @@ import { getAirportIndex } from "@/lib/airports";
 import { getCountryIndex } from "@/lib/countries";
 import { AirportsTableClient } from "@/components/airports/airports-table-client";
 
-export const metadata: Metadata = {
-  title: "World Airports - LocaleDB",
-  description: "Searchable database of global airports with IATA/ICAO codes.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("airports.meta");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: "/airports",
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "/airports",
+      siteName: "LocaleDB",
+      images: [
+        {
+          url: "/og_image.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/og_image.png"],
+    },
+  };
+}
 
 export default async function AirportsPage() {
   const airports = await getAirportIndex();
@@ -18,7 +46,7 @@ export default async function AirportsPage() {
   // Create a map for quick country lookups
   const countryMap: Record<string, { name: string; emoji: string }> = {};
   countries.forEach(c => {
-      countryMap[c.code] = { name: c.name, emoji: c.flagEmoji };
+    countryMap[c.code] = { name: c.name, emoji: c.flagEmoji };
   });
 
   return (

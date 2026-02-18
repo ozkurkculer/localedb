@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { useParams, useRouter } from "next/navigation"
+import { useTranslations } from "next-intl"
 import { Search, ArrowUpDown, Globe, Phone } from "lucide-react"
 import {
     Table,
@@ -39,6 +40,8 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
     const params = useParams()
     const router = useRouter()
     const locale = params.locale as string
+
+    const t = useTranslations();
 
     const filteredData = React.useMemo(() => {
         const q = search.toLowerCase()
@@ -78,15 +81,15 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
         <div className="space-y-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight">Phone Number Formats</h1>
+                    <h1 className="text-3xl font-bold tracking-tight">{t("phoneNumbers.title")}</h1>
                     <p className="text-muted-foreground mt-1">
-                        Browse international dialing codes, regex patterns, and example numbers.
+                        {t("phoneNumbers.subtitle")}
                     </p>
                 </div>
                 <div className="relative w-full md:w-72">
                     <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
                     <Input
-                        placeholder="Search country, code..."
+                        placeholder={t("phoneNumbers.search")}
                         className="pl-9"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
@@ -100,25 +103,25 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                         <TableRow>
                             <TableHead className="w-[200px]">
                                 <Button variant="ghost" onClick={() => handleSort("name")} className="-ml-3 h-8 data-[state=open]:bg-accent">
-                                    Country
+                                    {t("phoneNumbers.table.country")}
                                     <SortIcon field="name" />
                                 </Button>
                             </TableHead>
                             <TableHead className="w-[100px]">
                                 <Button variant="ghost" onClick={() => handleSort("callingCode")} className="-ml-3 h-8">
-                                    Code
+                                    {t("phoneNumbers.table.code")}
                                     <SortIcon field="callingCode" />
                                 </Button>
                             </TableHead>
-                            <TableHead className="hidden md:table-cell">Mobile Pattern (Regex)</TableHead>
-                            <TableHead className="hidden sm:table-cell">Example Number</TableHead>
+                            <TableHead className="hidden md:table-cell">{t("phoneNumbers.table.pattern")}</TableHead>
+                            <TableHead className="hidden sm:table-cell">{t("phoneNumbers.table.example")}</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {filteredData.length === 0 ? (
                             <TableRow>
                                 <TableCell colSpan={4} className="h-24 text-center">
-                                    No results found.
+                                    {t("phoneNumbers.noResults")}
                                 </TableCell>
                             </TableRow>
                         ) : (
@@ -150,7 +153,7 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                                                 />
                                             </div>
                                         ) : (
-                                            <span className="text-muted-foreground italic text-sm">No pattern available</span>
+                                            <span className="text-muted-foreground italic text-sm">{t("phoneNumbers.table.noPattern")}</span>
                                         )}
                                     </TableCell>
                                     <TableCell className="hidden sm:table-cell">
@@ -166,7 +169,7 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                                                 <span className="text-xs text-muted-foreground font-mono">{item.exampleNumber}</span>
                                             </div>
                                         ) : (
-                                            <span className="text-muted-foreground italic text-sm">No example</span>
+                                            <span className="text-muted-foreground italic text-sm">{t("phoneNumbers.table.noExample")}</span>
                                         )}
                                     </TableCell>
                                 </TableRow>
@@ -176,7 +179,7 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                 </Table>
             </div>
             <div className="text-xs text-muted-foreground text-center">
-                Showing {filteredData.length} of {data.length} countries. Click on a row to view full country details.
+                {t("phoneNumbers.resultsCount", { count: filteredData.length, total: data.length })}
             </div>
         </div>
     )

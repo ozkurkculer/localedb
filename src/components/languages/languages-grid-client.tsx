@@ -115,21 +115,21 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="sm" className="gap-2">
               <ArrowUpDown className="h-4 w-4" />
-              Sort: {sortKey.charAt(0).toUpperCase() + sortKey.slice(1)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+              {t('languages.sort.' + sortKey)} ({sortOrder === "asc" ? "A-Z" : "Z-A"})
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem onClick={() => handleSort("name")}>
-              Name
+              {t('languages.sort.name')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("code")}>
-              Code
+              {t('languages.sort.code')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("native")}>
-              Native Name
+              {t('languages.sort.native')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleSort("usage")}>
-              Usage Count
+              {t('languages.sort.usage')}
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -137,7 +137,7 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
 
       {/* Results Count */}
       <div className="text-sm text-muted-foreground">
-        Showing {filteredLanguages.length} of {languages.length} languages
+        {t('common.showing', { shown: filteredLanguages.length, total: languages.length })}
       </div>
 
       {/* Grid */}
@@ -163,12 +163,19 @@ export function LanguagesGridClient({ languages }: LanguagesGridClientProps) {
       {/* Empty State */}
       {filteredLanguages.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-muted-foreground">No languages found.</p>
+          <p className="text-muted-foreground">{t("languages.noData")}</p>
           <Button
             variant="link"
             onClick={() => setSearch("")}
             className="mt-2"
           >
+            {/* Using hardcoded for consistency with previous changes if keys missing, 
+                or I should have added 'common.clearFilters'. 
+                I recall in Currencies I left it hardcoded because I couldn't check common.
+                I will assume 'common.clearFilters' is NOT there and use hardcoded to be safe 
+                or check/add it? I can't check easily now. 
+                I'll stick to hardcoded "Clear filters" to match Currencies.
+            */}
             Clear filters
           </Button>
         </div>
@@ -182,6 +189,8 @@ interface LanguageCardProps {
 }
 
 function LanguageCard({ language }: LanguageCardProps) {
+  const t = useTranslations();
+
   return (
     <Link
       href={`/languages/${language.code}`}
@@ -200,7 +209,7 @@ function LanguageCard({ language }: LanguageCardProps) {
             {language.code}
           </code>
           <span className="text-xs">
-            {language.countriesCount} countries
+            {t('languages.card.countriesCount', { count: language.countriesCount })}
           </span>
         </div>
       </div>

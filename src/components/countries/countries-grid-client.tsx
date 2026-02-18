@@ -155,7 +155,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                                     setSearch('');
                                 }}
                                 className="absolute right-3 top-1/2 -translate-y-1/2 rounded-sm p-0.5 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-                                aria-label="Clear search"
+                                aria-label={t('common.clearSearch')}
                             >
                                 <X className="h-3.5 w-3.5" />
                             </button>
@@ -178,7 +178,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                                 {t('countries.sort.code')}
                             </DropdownMenuItem>
                             <DropdownMenuItem onClick={() => handleSort('currency')}>
-                                {t('currencies.title')}
+                                {t('countries.sort.currency')}
                             </DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
@@ -234,7 +234,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                                 exit="exit"
                                 className="h-full"
                             >
-                                <CountryCard country={country} />
+                                <CountryCard country={country} t={t} />
                             </motion.div>
                         ))}
                     </AnimatePresence>
@@ -256,7 +256,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                             setSelectedContinent(null);
                         }}
                     >
-                        Clear filters
+                        {t('common.clearFilters')}
                     </Button>
                 </motion.div>
             )}
@@ -293,9 +293,10 @@ function ContinentChip({ label, active, continent, onClick }: ContinentChipProps
 
 interface CountryCardProps {
     country: CountryIndexEntry;
+    t: (key: string) => string;
 }
 
-function CountryCard({ country }: CountryCardProps) {
+function CountryCard({ country, t }: CountryCardProps) {
     const style = getContinentStyle(country.continent);
     const prefersReducedMotion = useReducedMotion();
 
@@ -362,23 +363,23 @@ function CountryCard({ country }: CountryCardProps) {
                 </div>
 
                 {/* Meta row - bottom-anchored */}
-                <div className="relative mt-auto grid grid-cols-3 gap-x-2 gap-y-1.5 border-t border-border/30 pt-3 text-[10px] font-medium text-muted-foreground">
-                    <div className="col-span-1 flex flex-col gap-0.5">
-                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Region</span>
+                <div className="relative mt-auto grid grid-cols-4 divide-x divide-border/30 gap-x-2 gap-y-1.5 border-t border-border/30 pt-3 text-[10px] font-medium text-muted-foreground">
+                    <div className="col-span-2 flex flex-col gap-0.5 pr-2">
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider ">{t('countries.grid.region')}</span>
                         <div className="flex items-center gap-1 truncation">
                             <MapPin className="h-2.5 w-2.5 shrink-0 opacity-70" />
                             <span className="truncate">{country.region}</span>
                         </div>
                     </div>
                     <div className="col-span-1 flex flex-col gap-0.5">
-                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Currency</span>
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider">{t('countries.grid.currency')}</span>
                         <div className="flex items-center gap-1 truncation">
                             <Banknote className="h-2.5 w-2.5 shrink-0 opacity-70" />
                             <span className="truncate">{country.currencyCode}</span>
                         </div>
                     </div>
                     <div className="col-span-1 flex flex-col gap-0.5">
-                        <span className="opacity-50 text-[9px] uppercase tracking-wider">Call</span>
+                        <span className="opacity-50 text-[9px] uppercase tracking-wider ">{t('countries.grid.call')}</span>
                         <div className="flex items-center gap-1 truncation">
                             <Phone className="h-2.5 w-2.5 shrink-0 opacity-70" />
                             <span className="truncate">{country.callingCode}</span>

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { getCurrency, getAllCurrencyCodes } from '@/lib/currencies';
 import { getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
@@ -22,6 +23,7 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: CurrencyPageProps): Promise<Metadata> {
     const { code } = await params;
+    const t = await getTranslations('currencies.detail.meta');
 
     try {
         const currency = await getCurrency(code);
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
             };
         }
 
-        const ogUrl = new URL('https://localedb.org/og-image');
+        const ogUrl = new URL('https://localedb.org/og_image.png');
         ogUrl.searchParams.set('mode', 'currency');
         ogUrl.searchParams.set('title', `${currency.data.name} (${currency.data.code})`);
         ogUrl.searchParams.set(
@@ -42,27 +44,35 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
         ogUrl.searchParams.set('icon', currency.data.symbol);
 
         return {
-            title: `${currency.data.name} (${currency.data.code}) - Locale Data`,
-            description: `Localization data for ${currency.data.name}: symbol ${currency.data.symbol}, formatting rules, and usage in ${currency.data.countries.length} countries.`,
+            title: t('title', { name: currency.data.name, code: currency.data.code }),
+            description: t('description', {
+                name: currency.data.name,
+                symbol: currency.data.symbol,
+                count: currency.data.countries.length
+            }),
             openGraph: {
-                title: `${currency.data.symbol} ${currency.data.name} (${currency.data.code})`,
-                description: `Currency formatting and locale data for ${currency.data.name}. Decimals: ${currency.data.decimalDigits}, Separator: ${currency.data.decimalSeparator}`,
+                title: t('ogTitle', { symbol: currency.data.symbol, name: currency.data.name, code: currency.data.code }),
+                description: t('ogDescription', {
+                    name: currency.data.name,
+                    decimals: currency.data.decimalDigits,
+                    separator: currency.data.decimalSeparator
+                }),
                 images: [
                     {
                         url: ogUrl.toString(),
                         width: 1200,
                         height: 630,
-                        alt: `${currency.data.name} Locale Data`
+                        alt: t('ogAlt', { name: currency.data.name })
                     }
                 ]
             },
             keywords: [
                 currency.data.name,
                 currency.data.code,
-                'currency format',
-                'money formatting',
-                'locale data',
-                'internationalization'
+                t('keywords.currencyFormat'),
+                t('keywords.moneyFormatting'),
+                t('keywords.localeData'),
+                t('keywords.internationalization')
             ]
         };
     } catch {
@@ -74,8 +84,9 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
 
 export default async function CurrencyPage({ params }: CurrencyPageProps) {
     const { code } = await params;
+    const t = await getTranslations('currencies.detail');
 
-    let currency;
+    let currency: any;
     try {
         currency = await getCurrency(code);
     } catch {
@@ -140,7 +151,7 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
                 <div className="mt-4 flex justify-center gap-2">
                     <span className="rounded-md bg-muted px-3 py-1 font-mono text-sm">{currency.data.code}</span>
                     <span className="rounded-md bg-muted px-3 py-1 font-mono text-sm">
-                        Numeric: {currency.data.numericCode}
+                        {t('numeric')} {currency.data.numericCode}
                     </span>
                 </div>
             </div>
@@ -148,26 +159,26 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
             <div className="mx-auto max-w-4xl space-y-8">
                 {/* Formatting Rules */}
                 <section className="rounded-lg border border-border/40 bg-card p-6">
-                    <h2 className="mb-6 text-xl sm:text-2xl font-bold">Formatting Rules</h2>
+                    <h2 className="mb-6 text-xl sm:text-2xl font-bold">{t('sections.formattingRules')}</h2>
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <DataItem label="Decimal Separator" value={currency.data.decimalSeparator} />
-                        <DataItem label="Thousands Separator" value={currency.data.thousandsSeparator} />
-                        <DataItem label="Symbol Position" value={currency.data.symbolPosition} />
-                        <DataItem label="Decimal Digits" value={currency.data.decimalDigits.toString()} />
+                        <DataItem label={t('formatting.decimalSeparator')} value={currency.data.decimalSeparator} />
+                        <DataItem label={t('formatting.thousandsSeparator')} value={currency.data.thousandsSeparator} />
+                        <DataItem label={t('formatting.symbolPosition')} value={currency.data.symbolPosition} />
+                        <DataItem label={t('formatting.decimalDigits')} value={currency.data.decimalDigits.toString()} />
                         <DataItem
-                            label="Subunit"
+                            label={t('formatting.subunit')}
                             value={`${currency.data.subunitValue} ${currency.data.subunitName}`}
                         />
-                        <DataItem label="Pattern" value={currency.data.pattern} />
+                        <DataItem label={t('formatting.pattern')} value={currency.data.pattern} />
                     </div>
 
                     <div className="mt-6 grid gap-4 sm:grid-cols-2">
                         <div className="rounded-lg bg-muted p-4">
-                            <p className="text-sm text-muted-foreground">Standard Example</p>
+                            <p className="text-sm text-muted-foreground">{t('formatting.standardExample')}</p>
                             <p className="mt-1 font-mono text-xl font-bold">{currency.data.example}</p>
                         </div>
                         <div className="rounded-lg bg-muted p-4">
-                            <p className="text-sm text-muted-foreground">Accounting Example</p>
+                            <p className="text-sm text-muted-foreground">{t('formatting.accountingExample')}</p>
                             <p className="mt-1 font-mono text-xl font-bold">{currency.data.accountingExample}</p>
                         </div>
                     </div>
@@ -175,7 +186,7 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
 
                 {/* Countries List */}
                 <section className="rounded-lg border border-border/40 bg-card p-6">
-                    <h2 className="mb-6 text-xl sm:text-2xl font-bold">Used In ({usedIn.length} Countries)</h2>
+                    <h2 className="mb-6 text-xl sm:text-2xl font-bold">{t('sections.usedIn', { count: usedIn.length })}</h2>
                     {usedIn.length > 0 ? (
                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                             {usedIn.map((country) => (
@@ -193,14 +204,14 @@ export default async function CurrencyPage({ params }: CurrencyPageProps) {
                             ))}
                         </div>
                     ) : (
-                        <p className="text-muted-foreground">No official countries listed.</p>
+                        <p className="text-muted-foreground">{t('empty')}</p>
                     )}
                 </section>
 
                 {/* Raw JSON */}
                 <section className="rounded-lg border border-border/40 bg-card p-6">
                     <div className="mb-6 flex items-center justify-between">
-                        <h2 className="text-xl sm:text-2xl font-bold">Raw JSON Data</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold">{t('sections.rawJson')}</h2>
                         <CopyButton value={JSON.stringify(currency, null, 2)} label="JSON" />
                     </div>
                     <div className="rounded-lg bg-muted p-4">

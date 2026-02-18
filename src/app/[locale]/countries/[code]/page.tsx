@@ -5,14 +5,18 @@ import { getTranslations } from 'next-intl/server';
 import { getCountry, getAllCountryCodes, getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
 import { Button } from '@/components/ui/button';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import {
-    Globe,
+    ArrowLeft,
     MapPin,
+    Globe,
+    Clock,
+    Phone,
+    CreditCard,
+    Languages,
+    Calendar,
     Languages as LanguagesIcon,
     Hash,
     Banknote,
-    Clock,
     Calculator,
     Phone as PhoneIcon,
     Settings,
@@ -22,6 +26,7 @@ import {
     Users,
     Ruler
 } from 'lucide-react';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { getContinentStyle } from '@/components/countries/continent-variants';
 import { AirportsDrawer } from '@/components/countries/airports-drawer';
 
@@ -46,6 +51,7 @@ export const dynamicParams = false;
 // Generate metadata for each country page
 export async function generateMetadata({ params }: CountryPageProps): Promise<Metadata> {
     const { code } = await params;
+    const t = await getTranslations('countries.detail');
 
     try {
         const country = await getCountry(code);
@@ -56,37 +62,43 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
             };
         }
 
-        const ogUrl = new URL('https://localedb.org/og-image');
+        const ogUrl = new URL('https://localedb.org/og_image.png');
         ogUrl.searchParams.set('mode', 'country');
         ogUrl.searchParams.set('title', country.basics.name);
         ogUrl.searchParams.set('subtitle', `${country.basics.region} • ${country.basics.subregion}`);
         ogUrl.searchParams.set('icon', country.basics.flagEmoji);
 
         return {
-            title: `${country.basics.name} - Locale Data`,
-            description: `Localization data for ${country.basics.name}: currency (${country.currency.code}), date formats, number formats, phone codes, and more.`,
+            title: t('meta.title', { name: country.basics.name }),
+            description: t('meta.description', {
+                name: country.basics.name,
+                currency: country.currency.code,
+                phone: country.phone.callingCode,
+                capital: country.basics.capital,
+                region: country.basics.region
+            }),
             openGraph: {
-                title: `${country.basics.flagEmoji} ${country.basics.name} Locale Data`,
-                description: `Complete localization reference for ${country.basics.name}. Currency: ${country.currency.code}, Phone: +${country.phone.callingCode}, Timezones: ${country.dateTime.timezones.join(', ')}`,
+                title: t('meta.ogTitle', { flag: country.basics.flagEmoji, name: country.basics.name }),
+                description: t('meta.ogDescription', { name: country.basics.name, currency: country.currency.code, phone: country.phone.callingCode, timezones: country.dateTime.timezones.join(', ') }),
                 images: [
                     {
                         url: ogUrl.toString(),
                         width: 1200,
                         height: 630,
-                        alt: `${country.basics.name} Locale Data`
+                        alt: t('meta.ogAlt', { name: country.basics.name })
                     }
                 ]
             },
             keywords: [
                 country.basics.name,
                 country.basics.nativeName,
-                'locale data',
-                'currency format',
-                'date format',
+                t('meta.keywords.localeData'),
+                t('meta.keywords.currencyFormat'),
+                t('meta.keywords.dateFormat'),
                 `ISO ${country.codes.iso3166Alpha2}`,
                 country.currency.code,
-                'localization',
-                'formatting'
+                t('meta.keywords.localization'),
+                t('meta.keywords.formatting')
             ]
         };
     } catch {
@@ -201,25 +213,25 @@ export default async function CountryPage({ params }: CountryPageProps) {
             {/* Quick Info Cards */}
             <div className="mx-auto mb-12 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <InfoCard
-                    label="Capital"
+                    label={t('capital')}
                     value={country.basics.capital}
                     icon={<Landmark className="h-4 w-4" />}
                     accentClass={style.accentBorder}
                 />
                 <InfoCard
-                    label="Population"
+                    label={t('population')}
                     value={country.basics.population.toLocaleString()}
                     icon={<Users className="h-4 w-4" />}
                     accentClass={style.accentBorder}
                 />
                 <InfoCard
-                    label="Currency"
+                    label={t('currency.name')}
                     value={`${country.currency.symbol} ${country.currency.code}`}
                     icon={<Banknote className="h-4 w-4" />}
                     accentClass={style.accentBorder}
                 />
                 <InfoCard
-                    label="Calling Code"
+                    label={t('callingCode')}
                     value={country.phone.callingCode}
                     icon={<PhoneIcon className="h-4 w-4" />}
                     accentClass={style.accentBorder}
@@ -259,17 +271,26 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         icon={<MapPin className="h-4 w-4 text-muted-foreground" />}
                     >
                         <div className="grid gap-4 sm:grid-cols-2">
-                            <DataItem label="Region" value={country.basics.region} />
-                            <DataItem label="Subregion" value={country.basics.subregion} />
-                            <DataItem label="Continent" value={country.basics.continent} />
-                            <DataItem label="Area" value={`${country.basics.area.toLocaleString()} km²`} />
-                            <DataItem label="Landlocked" value={country.basics.landlocked ? 'Yes' : 'No'} />
-                            <DataItem label="TLD" value={country.basics.tld.join(', ')} />
+                            <DataItem label={t('geography.region')} value={country.basics.region} />
+                            <DataItem label={t('geography.subregion')} value={country.basics.subregion} />
+                            <DataItem
+                                label={t('geography.continent')}
+                                value={
+                                    // Try to translate continent if key exists, otherwise fallback to original
+                                    // Assuming continent names map to keys like 'europe', 'asia', etc.
+                                    ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'Oceania', 'South America'].includes(country.basics.continent)
+                                        ? (await getTranslations('countries.filters.continent'))(country.basics.continent.toLowerCase().replace(' ', ''))
+                                        : country.basics.continent
+                                }
+                            />
+                            <DataItem label={t('geography.area')} value={`${country.basics.area.toLocaleString()} km²`} />
+                            <DataItem label={t('geography.landlocked')} value={country.basics.landlocked ? t('geography.yes') : t('geography.no')} />
+                            <DataItem label={t('geography.tld')} value={country.basics.tld.join(', ')} />
                         </div>
 
                         {country.basics.borders.length > 0 && (
                             <div className="col-span-full mt-6">
-                                <p className="mb-3 text-sm font-medium text-muted-foreground">Neighboring Countries</p>
+                                <p className="mb-3 text-sm font-medium text-muted-foreground">{t('geography.neighbors')}</p>
                                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                                     {country.basics.borders.map((border) => {
                                         const targetCode = alpha3Map.get(border) || border;
@@ -301,7 +322,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 {/* Airports */}
                 {country.airports && country.airports.length > 0 && (
                     <Section
-                        title={`Airports (${country.airports.length})`}
+                        title={t('airports.count', { count: country.airports.length })}
                         icon={<Plane className="h-4 w-4 text-muted-foreground" />}
                     >
                         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -344,12 +365,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                     icon={<Banknote className="h-4 w-4 text-muted-foreground" />}
                 >
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <DataItem label="Code" value={country.currency.code} />
-                        <DataItem label="Name" value={country.currency.name} />
-                        <DataItem label="Symbol" value={country.currency.symbol} />
-                        <DataItem label="Symbol Position" value={country.currency.symbolPosition} />
-                        <DataItem label="Decimal Separator" value={country.currency.decimalSeparator} />
-                        <DataItem label="Thousands Separator" value={country.currency.thousandsSeparator} />
+                        <DataItem label={t('currency.code')} value={country.currency.code} />
+                        <DataItem label={t('currency.name')} value={country.currency.name} />
+                        <DataItem label={t('currency.symbol')} value={country.currency.symbol} />
+                        <DataItem label={t('currency.symbolPosition')} value={country.currency.symbolPosition} />
+                        <DataItem label={t('currency.decimalSeparator')} value={country.currency.decimalSeparator} />
+                        <DataItem label={t('currency.thousandsSeparator')} value={country.currency.thousandsSeparator} />
                     </div>
 
                     <div className="mt-4 rounded-lg border border-border/30 bg-muted/40 p-4">
@@ -363,11 +384,11 @@ export default async function CountryPage({ params }: CountryPageProps) {
                     <div className="space-y-6">
                         {/* Date Format Examples */}
                         <div>
-                            <h4 className="mb-3 text-sm font-semibold">Date Format Examples</h4>
+                            <h4 className="mb-3 text-sm font-semibold">{t('dateTime.dateFormats')}</h4>
                             <div className="grid gap-3 sm:grid-cols-2">
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Full
+                                        {t('dateTime.full')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'full' }).format(
@@ -380,7 +401,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Long
+                                        {t('dateTime.long')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'long' }).format(
@@ -393,7 +414,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Medium
+                                        {t('dateTime.medium')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], {
@@ -406,7 +427,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Short
+                                        {t('dateTime.short')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'short' }).format(
@@ -422,11 +443,11 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
                         {/* Time Format Examples */}
                         <div>
-                            <h4 className="mb-3 text-sm font-semibold">Time Format Examples</h4>
+                            <h4 className="mb-3 text-sm font-semibold">{t('dateTime.timeFormats')}</h4>
                             <div className="grid gap-3 sm:grid-cols-2">
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Full
+                                        {t('dateTime.full')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'full' }).format(
@@ -439,7 +460,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Long
+                                        {t('dateTime.long')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'long' }).format(
@@ -452,7 +473,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Medium
+                                        {t('dateTime.medium')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], {
@@ -465,7 +486,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                 </div>
                                 <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                                     <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                        Short
+                                        {t('dateTime.short')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'short' }).format(
@@ -481,26 +502,26 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
                         {/* Additional Info */}
                         <div>
-                            <h4 className="mb-3 text-sm font-semibold">Additional Info</h4>
+                            <h4 className="mb-3 text-sm font-semibold">{t('dateTime.additionalInfo')}</h4>
                             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                                 <DataItem
-                                    label="First Day of Week"
+                                    label={t('dateTime.firstDayOfWeek')}
                                     value={
-                                        ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][
-                                            country.dateTime.firstDayOfWeek - 1
+                                        [t('dateTime.monday'), t('dateTime.tuesday'), t('dateTime.wednesday'), t('dateTime.thursday'), t('dateTime.friday'), t('dateTime.saturday'), t('dateTime.sunday')][
+                                        country.dateTime.firstDayOfWeek - 1
                                         ]
                                     }
                                 />
-                                <DataItem label="Clock Format" value={country.dateTime.clockFormat} />
-                                <DataItem label="Primary Timezone" value={country.dateTime.primaryTimezone} />
-                                <DataItem label="UTC Offset" value={country.dateTime.utcOffset} />
+                                <DataItem label={t('dateTime.clockFormat')} value={country.dateTime.clockFormat} />
+                                <DataItem label={t('dateTime.primaryTimezone')} value={country.dateTime.primaryTimezone} />
+                                <DataItem label={t('dateTime.utcOffset')} value={country.dateTime.utcOffset} />
                             </div>
                         </div>
 
                         {/* Timezones */}
                         {country.dateTime.timezones.length > 0 && (
                             <div>
-                                <h4 className="mb-3 text-sm font-semibold">Timezones</h4>
+                                <h4 className="mb-3 text-sm font-semibold">{t('dateTime.timezones')}</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {country.dateTime.timezones.map((tz, i) => (
                                         <code key={i} className="rounded-md bg-muted px-2 py-1 font-mono text-xs">
@@ -519,14 +540,14 @@ export default async function CountryPage({ params }: CountryPageProps) {
                     icon={<Calculator className="h-4 w-4 text-muted-foreground" />}
                 >
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <DataItem label="Decimal Separator" value={country.numberFormat.decimalSeparator} />
-                        <DataItem label="Thousands Separator" value={country.numberFormat.thousandsSeparator} />
-                        <DataItem label="Digit Grouping" value={country.numberFormat.digitGrouping} />
-                        <DataItem label="Numbering System" value={country.numberFormat.numberingSystem} />
+                        <DataItem label={t('numberFormat.decimalSeparator')} value={country.numberFormat.decimalSeparator} />
+                        <DataItem label={t('numberFormat.thousandsSeparator')} value={country.numberFormat.thousandsSeparator} />
+                        <DataItem label={t('numberFormat.digitGrouping')} value={country.numberFormat.digitGrouping} />
+                        <DataItem label={t('numberFormat.numberingSystem')} value={country.numberFormat.numberingSystem} />
                     </div>
 
                     <div className="mt-4 rounded-lg border border-border/30 bg-muted/40 p-4">
-                        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Example</p>
+                        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{t('numberFormat.example')}</p>
                         <p className="mt-1.5 font-mono text-xl font-bold text-foreground">
                             {country.numberFormat.example}
                         </p>
@@ -538,11 +559,11 @@ export default async function CountryPage({ params }: CountryPageProps) {
                     <div className="space-y-6">
                         {/* Basic Info */}
                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                            <DataItem label="Calling Code" value={country.phone.callingCode} />
-                            <DataItem label="Trunk Prefix" value={country.phone.trunkPrefix || 'N/A'} />
-                            <DataItem label="International Prefix" value={country.phone.internationalPrefix} />
+                            <DataItem label={t('phone.callingCode')} value={country.phone.callingCode} />
+                            <DataItem label={t('phone.trunkPrefix')} value={country.phone.trunkPrefix || t('common.na')} />
+                            <DataItem label={t('phone.internationalPrefix')} value={country.phone.internationalPrefix} />
                             <DataItem
-                                label="Subscriber Number Lengths"
+                                label={t('phone.subscriberNumberLengths')}
                                 value={country.phone.subscriberNumberLengths.join(', ')}
                             />
                         </div>
@@ -550,7 +571,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         {/* Example Format */}
                         <div className="rounded-lg border border-border/30 bg-muted/40 p-4">
                             <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                Example Format
+                                {t('phone.exampleFormat')}
                             </p>
                             <p className="mt-1.5 font-mono text-xl font-bold text-foreground">
                                 {country.phone.exampleFormat}
@@ -560,15 +581,15 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         {/* Format Patterns Table */}
                         {country.phone.formats.length > 0 && (
                             <div>
-                                <h4 className="mb-3 text-sm font-semibold">Format Patterns</h4>
+                                <h4 className="mb-3 text-sm font-semibold">{t('phone.patterns')}</h4>
                                 <div className="rounded-lg border border-border/40">
                                     <Table>
                                         <TableHeader>
                                             <TableRow className="bg-muted/30 hover:bg-muted/30">
-                                                <TableHead className="text-xs font-semibold">Pattern</TableHead>
-                                                <TableHead className="text-xs font-semibold">Format</TableHead>
-                                                <TableHead className="text-xs font-semibold">Leading Digits</TableHead>
-                                                <TableHead className="text-xs font-semibold">National Prefix</TableHead>
+                                                <TableHead className="text-xs font-semibold">{t('phone.table.pattern')}</TableHead>
+                                                <TableHead className="text-xs font-semibold">{t('phone.table.format')}</TableHead>
+                                                <TableHead className="text-xs font-semibold">{t('phone.table.leadingDigits')}</TableHead>
+                                                <TableHead className="text-xs font-semibold">{t('phone.table.nationalPrefix')}</TableHead>
                                             </TableRow>
                                         </TableHeader>
                                         <TableBody>
@@ -593,18 +614,18 @@ export default async function CountryPage({ params }: CountryPageProps) {
                         {/* Phone Number Types */}
                         {Object.keys(country.phone.types).length > 0 && (
                             <div>
-                                <h4 className="mb-3 text-sm font-semibold">Phone Number Types</h4>
+                                <h4 className="mb-3 text-sm font-semibold">{t('phone.types')}</h4>
                                 <div className="grid gap-3 sm:grid-cols-2">
                                     {Object.entries(country.phone.types).map(([typeName, typeData]) => {
                                         if (!typeData) return null;
                                         const labels: Record<string, string> = {
-                                            fixedLine: 'Fixed Line',
-                                            mobile: 'Mobile',
-                                            tollFree: 'Toll Free',
-                                            premiumRate: 'Premium Rate',
-                                            sharedCost: 'Shared Cost',
-                                            voip: 'VoIP',
-                                            uan: 'UAN'
+                                            fixedLine: t('phone.typeLabels.fixedLine'),
+                                            mobile: t('phone.typeLabels.mobile'),
+                                            tollFree: t('phone.typeLabels.tollFree'),
+                                            premiumRate: t('phone.typeLabels.premiumRate'),
+                                            sharedCost: t('phone.typeLabels.sharedCost'),
+                                            voip: t('phone.typeLabels.voip'),
+                                            uan: t('phone.typeLabels.uan')
                                         };
                                         return (
                                             <div key={typeName} className="rounded-lg bg-muted/30 p-4">
@@ -613,13 +634,13 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                                 </div>
                                                 <div className="space-y-2 text-sm">
                                                     <div className="flex items-center justify-between">
-                                                        <span className="text-xs text-muted-foreground">Example</span>
+                                                        <span className="text-xs text-muted-foreground">{t('phone.example')}</span>
                                                         <span className="font-mono text-xs">
                                                             {typeData.exampleNumber}
                                                         </span>
                                                     </div>
                                                     <div className="flex items-center justify-between">
-                                                        <span className="text-xs text-muted-foreground">Lengths</span>
+                                                        <span className="text-xs text-muted-foreground">{t('phone.lengths')}</span>
                                                         <span className="font-mono text-xs">
                                                             {typeData.possibleLengths.join(', ')}
                                                         </span>
@@ -634,7 +655,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
                         {/* General Pattern */}
                         <div>
-                            <DataItem label="General Pattern" value={country.phone.generalPattern} />
+                            <DataItem label={t('phone.patterns')} value={country.phone.generalPattern} />
                         </div>
                     </div>
                 </Section>
@@ -642,12 +663,12 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 {/* Locale Settings */}
                 <Section title={t('sections.locale')} icon={<Settings className="h-4 w-4 text-muted-foreground" />}>
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <DataItem label="Writing Direction" value={country.locale.writingDirection.toUpperCase()} />
-                        <DataItem label="Measurement System" value={country.locale.measurementSystem} />
-                        <DataItem label="Temperature Scale" value={country.locale.temperatureScale} />
-                        <DataItem label="Paper Size" value={country.locale.paperSize} />
-                        <DataItem label="Driving Side" value={country.locale.drivingSide} />
-                        <DataItem label="Week Numbering" value={country.locale.weekNumbering} />
+                        <DataItem label={t('locale.writingDirection')} value={country.locale.writingDirection.toUpperCase()} />
+                        <DataItem label={t('locale.measurementSystem')} value={country.locale.measurementSystem} />
+                        <DataItem label={t('locale.temperatureScale')} value={country.locale.temperatureScale} />
+                        <DataItem label={t('locale.paperSize')} value={country.locale.paperSize} />
+                        <DataItem label={t('locale.drivingSide')} value={country.locale.drivingSide} />
+                        <DataItem label={t('locale.weekNumbering')} value={country.locale.weekNumbering} />
                     </div>
                 </Section>
 
