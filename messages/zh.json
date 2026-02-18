@@ -1,800 +1,955 @@
 {
-  "site": {
-    "name": "LocaleDB",
-    "title": "LocaleDB - 全面的本地化数据",
-    "description": "面向开发国际化应用程序的开发人员的免费开源国家、货币、语言和区域代码数据库。",
-    "keywords": "区域数据, 本地化, i18n, 国际化, 国家, 货币, 语言, BCP-47, ISO 代码"
-  },
-  "nav": {
-    "data": "数据",
-    "project": "项目",
-    "countries": "国家",
-    "currencies": "货币",
-    "languages": "语言",
-    "airports": "机场",
-    "localeCodes": "区域代码",
-    "about": "关于",
-    "contributing": "贡献",
-    "roadmap": "路线图",
-    "docs": "文档",
-    "phoneNumbers": "电话号码"
-  },
-  "home": {
-    "badge": "开源本地化数据",
-    "title": {
-      "the": "",
-      "localization": "开发人员的",
-      "forDevelopers": "本地化百科全书"
+    "site": {
+        "name": "LocaleDB",
+        "title": "LocaleDB - 全面的本地化数据",
+        "description": "面向开发国际化应用程序的开发人员的免费开源国家、货币、语言和区域代码数据库。",
+        "keywords": "区域数据, 本地化, i18n, 国际化, 国家, 货币, 语言, BCP-47, ISO 代码"
     },
-    "features": {
-      "countries": {
-        "title": "国家",
-        "description": "浏览 250 多个国家的本地化数据，包括代码、货币和格式。"
-      },
-      "languages": {
-        "title": "语言",
-        "description": "探索世界语言的处理数据，包括本地名称和国家。"
-      },
-      "currencies": {
-        "title": "货币格式",
-        "description": "世界上每种货币的符号位置、分隔符和模式。"
-      },
-      "airports": {
-        "title": "机场",
-        "description": "包含 IATA/ICAO 代码、坐标和地区的 9,000 多个机场的数据库。"
-      },
-      "localeCodes": {
-        "title": "区域代码",
-        "description": "ISO 3166、BCP47、RFC4647 和所有国际标准参考。"
-      }
-    },
-    "cta": {
-      "browseCountries": "浏览国家",
-      "viewOnGitHub": "在 GitHub 上查看"
-    }
-  },
-  "countries": {
-    "title": "国家",
-    "subtitle": "{count} 个国家的全面本地化数据",
-    "search": "搜索国家...",
-    "filters": {
-      "continent": {
-        "all": "所有大洲",
-        "africa": "非洲",
-        "antarctica": "南极洲",
-        "asia": "亚洲",
-        "europe": "欧洲",
-        "northAmerica": "北美洲",
-        "oceania": "大洋洲",
-        "southAmerica": "南美洲"
-      }
-    },
-    "sort": {
-      "name": "名称",
-      "code": "代码",
-      "population": "人口",
-      "area": "面积"
-    },
-    "detail": {
-      "capital": "首都",
-      "population": "人口",
-      "currency": {
-        "name": "名称",
-        "nativeName": "本地名称",
-        "code": "代码",
-        "symbol": "符号",
-        "symbolPosition": "符号位置",
-        "decimalSeparator": "小数分隔符",
-        "thousandsSeparator": "千位分隔符",
-        "decimalDigits": "小数位数",
-        "example": "例如："
-      },
-      "callingCode": "电话区号",
-      "sections": {
-        "languages": "语言",
-        "geography": "地理",
-        "airports": "机场",
-        "codes": "国家代码",
-        "currencyFormat": "货币格式",
-        "dateTime": "日期和时间格式",
-        "numberFormat": "数字格式",
-        "phone": "电话格式",
-        "locale": "区域设置",
-        "rawJson": "原始 JSON 数据"
-      },
-      "geography": {
-        "region": "地区",
-        "subregion": "子地区",
-        "continent": "大洲",
-        "area": "面积",
-        "landlocked": "内陆",
-        "tld": "顶级域名",
-        "borders": "边界",
-        "yes": "是",
-        "no": "否"
-      },
-      "airports": {
-        "count": "机场 ({count})",
-        "more": "以及 {count} 个更多机场...",
-        "showAll": "显示所有机场",
-        "none": "没有列出的机场。"
-      },
-      "codes": {
-        "alpha2": "ISO 3166-1 Alpha-2",
-        "alpha3": "ISO 3166-1 Alpha-3",
-        "numeric": "ISO 3166-1 Numeric",
-        "bcp47": "BCP 47",
-        "ioc": "IOC",
-        "fifa": "FIFA"
-      },
-      "dateTime": {
-        "dateFormats": "日期格式",
-        "timeFormats": "时间格式",
-        "full": "完整",
-        "long": "长",
-        "medium": "中等",
-        "short": "短",
-        "firstDayOfWeek": "一周的第一天",
-        "clockFormat": "时钟格式",
-        "primaryTimezone": "主要时区",
-        "utcOffset": "UTC 偏移",
-        "timezones": "时区",
-        "monday": "星期一",
-        "sunday": "星期日"
-      },
-      "numberFormat": {
-        "decimalSeparator": "小数分隔符",
-        "thousandsSeparator": "千位分隔符",
-        "digitGrouping": "数字分组",
-        "numberingSystem": "数字系统",
-        "example": "例如："
-      },
-      "locale": {
-        "writingDirection": "书写方向",
-        "measurementSystem": "度量系统",
-        "temperatureScale": "温度标度",
-        "paperSize": "纸张尺寸",
-        "drivingSide": "驾驶侧",
-        "weekNumbering": "周编号"
-      },
-      "phone": "电话格式"
-    },
-    "noData": "未找到国家。"
-  },
-  "currencies": {
-    "title": "货币",
-    "subtitle": "{count} 种世界货币的格式模式和符号",
-    "search": "搜索货币...",
-    "sort": {
-      "name": "名称",
-      "code": "代码",
-      "symbol": "符号",
-      "usage": "使用次数"
-    },
-    "card": {
-      "usedIn": "在 {count} 个国家使用"
-    },
-    "detail": {
-      "numeric": "数字代码：",
-      "sections": {
-        "formattingRules": "格式化规则",
-        "usedIn": "使用地区（{count} 个国家）",
-        "rawJson": "原始 JSON 数据"
-      },
-      "formatting": {
-        "decimalSeparator": "小数分隔符",
-        "thousandsSeparator": "千位分隔符",
-        "symbolPosition": "符号位置",
-        "decimalDigits": "小数位数",
-        "subunit": "子单位",
-        "pattern": "模式",
-        "standardExample": "标准示例",
-        "accountingExample": "会计示例"
-      },
-      "none": "没有列出官方国家。"
-    },
-    "noData": "未找到货币。"
-  },
-  "languages": {
-    "title": "语言",
-    "subtitle": "{count} 种世界语言的本地名称和使用数据",
-    "search": "搜索语言...",
-    "sort": {
-      "name": "名称",
-      "code": "代码",
-      "native": "本地名称",
-      "usage": "使用次数"
-    },
-    "card": {
-      "countriesCount": "{count} 个国家"
-    },
-    "detail": {
-      "sections": {
-        "spokenIn": "使用地区（{count} 个国家）",
-        "rawJson": "原始 JSON 数据"
-      },
-      "none": "没有列出官方国家。"
-    },
-    "noData": "未找到语言。"
-  },
-  "airports": {
-    "title": "机场",
-    "subtitle": "全球 {count} 个机场的 IATA/ICAO 代码数据库",
-    "search": "按名称、城市、IATA 或 ICAO 代码搜索...",
-    "filters": {
-      "region": {
-        "all": "所有地区",
-        "africa": "非洲",
-        "antarctica": "南极洲",
-        "asia": "亚洲",
-        "europe": "欧洲",
-        "northAmerica": "北美洲",
-        "oceania": "大洋洲",
-        "southAmerica": "南美洲"
-      }
-    },
-    "table": {
-      "iata": "IATA",
-      "icao": "ICAO",
-      "name": "机场名称",
-      "city": "城市",
-      "country": "国家",
-      "region": "地区"
-    },
-    "showing": "显示 {total} 个机场中的 {shown} 个",
-    "noResults": "未找到与您的搜索匹配的机场。",
-    "copyIata": "复制 IATA",
-    "copyIcao": "复制 ICAO"
-  },
-  "localeCodes": {
-    "title": "区域代码参考",
-    "subtitle": "所有 {count} 个国家的 BCP-47 区域标记、ISO 代码和货币代码",
-    "mobileHint": "💡 向左滑动查看更多列",
-    "table": {
-      "flag": "旗帜",
-      "country": "国家",
-      "alpha2": "Alpha-2",
-      "bcp47": "BCP-47",
-      "currency": "货币",
-      "callingCode": "电话区号",
-      "region": "地区",
-      "caption": "所有国家的 ISO 3166-1 和 BCP-47 区域代码"
-    },
-    "about": {
-      "title": "关于 BCP-47",
-      "intro": "BCP-47（Best Current Practice 47）是用于标识互联网上语言、地区和区域设置的语言标记标准。",
-      "structure": "BCP-47 标记通常包含：{tag}，其中 language 是 ISO 639 代码，REGION 是 ISO 3166-1 alpha-2 代码。",
-      "examples": "示例："
-    },
-    "search": "按国家、代码、语言环境或货币搜索...",
-    "noResults": "未找到与您的搜索匹配的国家。",
-    "resultsCount": "显示 {total} 个国家中的 {count} 个",
-    "viewCountry": "查看国家详情"
-  },
-  "about": {
-    "title": "关于 LocaleDB",
-    "intro": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。",
-    "whatIsIncluded": {
-      "title": "包含内容",
-      "countries": {
-        "title": "国家数据",
-        "items": [
-          "ISO 3166-1 代码（Alpha-2、Alpha-3、Numeric）",
-          "BCP-47 区域标记",
-          "货币格式模式",
-          "日期和时间格式",
-          "数字格式约定",
-          "电话代码和顶级域名",
-          "地理信息（地区、大洲、边界）"
-        ]
-      },
-      "currencies": {
-        "title": "货币格式",
-        "items": [
-          "符号定位",
-          "小数和千位分隔符",
-          "小数位数",
-          "子单位信息",
-          "会计格式示例"
-        ]
-      },
-      "languages": {
-        "title": "语言数据",
-        "items": [
-          "ISO 639-1、639-2 和 639-3 代码",
-          "本地语言名称",
-          "使用国家"
-        ]
-      },
-      "airports": {
-        "title": "机场信息",
-        "items": [
-          "IATA 和 ICAO 代码",
-          "地理坐标",
-          "地区和国家数据",
-          "城市和时区信息"
-        ]
-      }
-    },
-    "sources": {
-      "title": "数据来源",
-      "description": "我们的数据来自可信的权威来源：",
-      "cldr": "Unicode CLDR（Common Locale Data Repository）",
-      "iso": "ISO 标准组织",
-      "openflights": "OpenFlights 机场数据库",
-      "restcountries": "REST Countries API",
-      "items": [
-        "CLDR (Common Locale Data Repository)",
-        "mledoze/countries",
-        "IP2Location Airports",
-        "Google libaddressinput",
-        "Community Contributions"
-      ]
-    },
-    "openSource": {
-      "title": "开源",
-      "description": "LocaleDB 完全免费且开源。您可以无限制地在项目中使用这些数据。源代码和数据在 GitHub 上以 MIT 许可证提供。"
-    },
-    "hero": {
-      "title": "现代应用的全球数据",
-      "subtitle": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。"
-    },
-    "challenge": {
-      "title": "挑战",
-      "items": {
-        "currency": "货币符号位置（之前还是之后？）",
-        "date": "日期格式差异（DD/MM 与 MM/DD）",
-        "number": "数字分隔符（1,250.00 与 1.250,00）",
-        "address": "地址格式约定",
-        "timezone": "时区和日历系统",
-        "documentation": "分散的文档和沉重的库"
-      }
-    },
-    "solution": {
-      "title": "我们的解决方案",
-      "comprehensive": {
-        "title": "全面的数据",
-        "items": [
-          "每个国家的结构化 JSON",
-          "即用型格式化规则",
-          "基于 CLDR 的准确性",
-          "全球机场数据库（IATA/ICAO）"
-        ]
-      },
-      "developerExp": {
-        "title": "开发人员体验",
-        "items": [
-          "快速静态生成",
-          "无需服务器",
-          "开源（MIT 许可）",
-          "社区贡献"
-        ]
-      }
-    },
-    "cta": {
-      "title": "开源和社区驱动",
-      "description": "LocaleDB 采用 MIT 许可并欢迎贡献。无论您是修复拼写错误、添加缺失的国家还是改进 UI，我们都欢迎您的帮助。",
-      "github": "在 GitHub 上查看",
-      "contributing": "贡献指南"
-    }
-  },
-  "contributing": {
-    "title": "为 LocaleDB 做贡献",
-    "intro": "LocaleDB 是一个开源项目，我们欢迎社区的贡献。无论您是报告错误、建议功能还是提交代码，您的意见都有助于让 LocaleDB 对每个人都更好。",
-    "howToContribute": {
-      "title": "如何贡献",
-      "items": [
-        "通过在 GitHub 上提交 issue 来报告错误或建议功能",
-        "通过提交 pull request 来修复错误或实现功能",
-        "改进文档或添加示例",
-        "通过报告不一致来帮助数据准确性",
-        "与可能觉得有用的其他开发人员分享 LocaleDB"
-      ]
-    },
-    "guidelines": {
-      "title": "贡献指南",
-      "codeQuality": {
-        "title": "代码质量",
-        "description": "遵循现有的代码风格和模式。编写清晰的提交消息并为新功能添加测试。"
-      },
-      "dataAccuracy": {
-        "title": "数据准确性",
-        "description": "更新区域数据时，请引用权威来源。确保更改与 ISO 标准和 CLDR 数据保持一致。"
-      },
-      "documentation": {
-        "title": "文档",
-        "description": "在添加或更改功能时更新相关文档。在适当的地方包含示例。"
-      },
-      "pullRequests": {
-        "title": "拉取请求",
-        "items": [
-          "每个 PR 一个更改",
-          "清晰、描述性的提交消息",
-          "链接到官方来源（CLDR、政府网站）"
-        ]
-      },
-      "resources": {
-        "title": "资源",
-        "items": [
-          "<linkCLDR>CLDR 仓库</linkCLDR>",
-          "<linkMledoze>mledoze/countries</linkMledoze>",
-          "ISO 3166 标准"
-        ]
-      }
-    },
-    "gettingStarted": {
-      "title": "开始",
-      "description": "要开始贡献：",
-      "steps": [
-        "在 GitHub 上 fork 仓库",
-        "在本地克隆您的 fork",
-        "为您的更改创建一个新分支",
-        "进行更改并测试它们",
-        "提交带有清晰描述的 pull request"
-      ]
-    },
-    "contact": {
-      "title": "联系",
-      "description": "有问题吗？在 GitHub 上提交 issue 或联系维护者。"
-    },
-    "hero": {
-      "title": "为 LocaleDB 做贡献",
-      "subtitle": "LocaleDB 是一个开源项目，我们很高兴收到来自全球开发人员的贡献！"
-    },
-    "cards": {
-      "fixData": {
-        "title": "修复数据",
-        "description": "更正拼写错误或更新过时的区域信息。"
-      },
-      "addCountry": {
-        "title": "添加国家",
-        "description": "使用标准代码添加缺失的国家。"
-      },
-      "improveCode": {
-        "title": "改进代码",
-        "description": "增强 UI、搜索或构建脚本。"
-      }
-    },
-    "workflow": {
-      "title": "数据贡献工作流程",
-      "step1": {
-        "title": "Fork 和设置",
-        "description": "Fork <link>GitHub 仓库</link>并将其克隆到本地计算机。"
-      },
-      "step2": {
-        "title": "使用数据覆盖",
-        "description": "要修复数据，<strong>请勿编辑</strong> <code>/data/countries/</code> 中生成的文件。而是在 <code>/data/overrides/XX.json</code> 中创建或编辑文件（其中 XX 是国家代码）。"
-      },
-      "step3": {
-        "title": "验证并提交",
-        "description": "运行构建脚本以验证您的更改已正确合并。然后提交带有官方来源参考的拉取请求。"
-      }
-    },
-    "help": {
-      "title": "需要帮助？",
-      "description": "有问题或卡在某个步骤上？在 GitHub 上开始讨论。",
-      "button": "加入讨论"
-    }
-  },
-  "footer": {
-    "description": "面向开发人员的免费开源本地化数据。",
-    "sections": {
-      "resources": {
-        "title": "资源",
-        "github": "GitHub",
-        "documentation": "文档",
-        "apiReference": "API 参考"
-      },
-      "data": {
-        "title": "数据",
+    "nav": {
+        "data": "数据",
+        "project": "项目",
         "countries": "国家",
         "currencies": "货币",
         "languages": "语言",
-        "airports": "机场"
-      },
-      "community": {
-        "title": "社区",
+        "airports": "机场",
+        "phoneNumbers": "电话号码",
+        "localeCodes": "区域代码",
+        "about": "关于",
+        "roadmap": "路线图",
         "contributing": "贡献",
-        "changelog": "更新日志",
-        "license": "许可证"
-      },
-      "legal": {
-        "privacy": "隐私",
-        "terms": "条款",
-        "license": "许可证"
-      }
+        "docs": "文档"
     },
-    "copyright": "© {year} LocaleDB。保留所有权利。"
-  },
-  "common": {
-    "loading": "加载中...",
-    "error": "发生错误",
-    "notFound": "未找到",
-    "copy": "复制",
-    "copied": "已复制！",
-    "viewMore": "查看更多",
-    "showAll": "显示全部",
-    "theme": "主题",
-    "menu": "菜单",
-    "clearFilters": "清除筛选",
-    "clearSearch": "清除搜索",
-    "toggleTheme": "切换主题",
-    "light": "浅色",
-    "dark": "深色",
-    "system": "系统",
-    "changeLanguage": "更改语言",
-    "showing": "显示 {total} 中的 {shown}"
-  },
-  "search": {
-    "placeholder": "搜索国家...",
-    "dialogPlaceholder": "搜索国家、货币、代码...",
-    "ariaLabel": "搜索国家、货币和代码",
-    "noResults": "未找到结果。",
-    "groupCountries": "国家"
-  },
-  "roadmap": {
-    "title": "项目路线图",
-    "subtitle": "LocaleDB 的开发历程和未来计划。",
-    "status": {
-      "completed": "已完成",
-      "inProgress": "进行中",
-      "planned": "已计划"
-    },
-    "items": {
-      "1": {
-        "title": "项目启动和数据填充",
-        "description": "Next.js 项目的初始设置以及国家、货币和语言核心数据的填充。",
-        "date": "2026年第1季度"
-      },
-      "2": {
-        "title": "错误修复和贡献系统",
-        "description": "解决初始问题并通过覆盖为社区贡献建立稳健的工作流程。",
-        "date": "2026年第1季度"
-      },
-      "3": {
-        "title": "数据导出界面",
-        "description": "允许用户选择特定国家并以自定义 JSON 格式导出其数据的用户界面。",
-        "date": "2026年第2季度"
-      },
-      "4": {
-        "title": "npm 包和 CLI 工具",
-        "description": "专用的 npm 包和 CLI 工具，供开发人员直接下载并将区域数据集成到他们的项目中。",
-        "date": "2026年第2季度"
-      },
-      "5": {
-        "title": "公共 API 启动",
-        "description": "开发和部署 RESTful API 以动态提供区域数据。",
-        "date": "2026年第3季度"
-      }
-    }
-  },
-  "updates": {
-    "title": "Updates & Changelog",
-    "subtitle": "Track all changes and improvements to LocaleDB",
-    "currentVersion": "Current Version",
-    "releaseDate": "Release Date",
-    "previousVersion": "Previous Version",
-    "totalCommits": "Total Commits",
-    "noUpdates": "No updates available yet."
-  },
-  "docs": {
-    "title": "文档",
-    "subtitle": "关于 LocaleDB 数据、管道和架构所需了解的一切。",
-    "badge": "开发者指南",
-    "toc": {
-      "overview": "概览",
-      "gettingStarted": "入门",
-      "dataPipeline": "数据管道",
-      "dataSchemas": "数据模式",
-      "projectStructure": "项目结构",
-      "scripts": "脚本参考",
-      "contributing": "贡献数据",
-      "i18n": "i18n 和翻译"
-    },
-    "overview": {
-      "title": "概览",
-      "description": "LocaleDB 是一个全面的开源本地化百科全书，专为构建国际应用程序的开发人员设计。",
-      "stats": {
-        "countries": "250+ 国家",
-        "languages": "114 种语言",
-        "currencies": "161 种货币",
-        "airports": "9,415 个机场"
-      },
-      "features": {
-        "title": "核心功能",
-        "items": {
-          "comprehensive": "来自权威来源的全面数据 (CLDR, World Bank, mledoze, libphonenumber, OpenFlights)",
-          "static": "静态生成 - 无需运行时数据库",
-          "openSource": "MIT 许可且由社区驱动",
-          "i18n": "支持 11 种语言，包括阿拉伯语的 RTL 支持"
+    "home": {
+        "badge": "开源本地化数据",
+        "title": {
+            "the": "",
+            "localization": "开发人员的",
+            "forDevelopers": "本地化百科全书"
+        },
+        "features": {
+            "countries": {
+                "title": "国家",
+                "description": "浏览 250 多个国家的本地化数据，包括代码、货币和格式。"
+            },
+            "languages": {
+                "title": "语言",
+                "description": "探索世界语言的处理数据，包括本地名称和国家。"
+            },
+            "currencies": {
+                "title": "货币格式",
+                "description": "世界上每种货币的符号位置、分隔符和模式。"
+            },
+            "airports": {
+                "title": "机场",
+                "description": "包含 IATA/ICAO 代码、坐标和地区的 9,000 多个机场的数据库。"
+            },
+            "localeCodes": {
+                "title": "区域代码",
+                "description": "ISO 3166、BCP47、RFC4647 和所有国际标准参考。"
+            }
+        },
+        "cta": {
+            "browseCountries": "浏览国家",
+            "viewOnGitHub": "在 GitHub 上查看"
         }
-      }
     },
-    "gettingStarted": {
-      "title": "Getting Started",
-      "description": "Clone the repository and start exploring locale data in minutes.",
-      "steps": {
-        "clone": "Clone the repository",
-        "install": "Install dependencies",
-        "updateData": "Download raw data from sources",
-        "buildData": "Process and generate JSON files",
-        "dev": "Start development server"
-      }
+    "countries": {
+        "title": "国家",
+        "subtitle": "{count} 个国家的全面本地化数据",
+        "search": "搜索国家...",
+        "filters": {
+            "continent": {
+                "all": "所有大洲",
+                "africa": "非洲",
+                "antarctica": "南极洲",
+                "asia": "亚洲",
+                "europe": "欧洲",
+                "northAmerica": "北美洲",
+                "oceania": "大洋洲",
+                "southAmerica": "南美洲"
+            }
+        },
+        "sort": {
+            "name": "名称",
+            "code": "代码",
+            "population": "人口",
+            "area": "面积",
+            "currency": "Currency"
+        },
+        "grid": {
+            "region": "Region",
+            "currency": "Currency",
+            "call": "Call"
+        },
+        "meta": {
+            "title": "Countries - LocaleDB",
+            "description": "Browse localization data for all countries in the world."
+        },
+        "detail": {
+            "capital": "首都",
+            "population": "人口",
+            "currency": {
+                "name": "名称",
+                "nativeName": "本地名称",
+                "code": "代码",
+                "symbol": "符号",
+                "symbolPosition": "符号位置",
+                "decimalSeparator": "小数分隔符",
+                "thousandsSeparator": "千位分隔符",
+                "decimalDigits": "小数位数",
+                "example": "例如："
+            },
+            "callingCode": "电话区号",
+            "sections": {
+                "languages": "语言",
+                "geography": "地理",
+                "airports": "机场",
+                "codes": "国家代码",
+                "currencyFormat": "货币格式",
+                "dateTime": "日期和时间格式",
+                "numberFormat": "数字格式",
+                "phone": "电话格式",
+                "locale": "区域设置",
+                "rawJson": "原始 JSON 数据"
+            },
+            "meta": {
+                "title": "{name} Locale Codes and Formats - LocaleDB",
+                "description": "Comprehensive localization data for {name}. Currency: {currency}, Phone: {phone}, Capital: {capital}, Region: {region}.",
+                "ogTitle": "{flag} {name} Locale Formats and Codes",
+                "ogDescription": "Explore locale data for {name}. Currency ({currency}), phone codes ({phone}), and timezones ({timezones}).",
+                "ogAlt": "{name} flag and localization details",
+                "keywords": {
+                    "localeData": "locale data",
+                    "currencyFormat": "currency format",
+                    "dateFormat": "date format",
+                    "localization": "localization",
+                    "formatting": "formatting"
+                }
+            },
+            "geography": {
+                "region": "地区",
+                "subregion": "子地区",
+                "continent": "大洲",
+                "area": "面积",
+                "landlocked": "内陆",
+                "tld": "顶级域名",
+                "borders": "边界",
+                "neighbors": "Neighboring Countries",
+                "yes": "是",
+                "no": "否"
+            },
+            "airports": {
+                "count": "机场 ({count})",
+                "more": "以及 {count} 个更多机场...",
+                "showAll": "显示所有机场",
+                "none": "没有列出的机场。"
+            },
+            "codes": {
+                "alpha2": "ISO 3166-1 Alpha-2",
+                "alpha3": "ISO 3166-1 Alpha-3",
+                "numeric": "ISO 3166-1 Numeric",
+                "bcp47": "BCP 47",
+                "ioc": "IOC",
+                "fifa": "FIFA"
+            },
+            "dateTime": {
+                "dateFormats": "日期格式",
+                "timeFormats": "时间格式",
+                "full": "完整",
+                "long": "长",
+                "medium": "中等",
+                "short": "短",
+                "firstDayOfWeek": "一周的第一天",
+                "clockFormat": "时钟格式",
+                "primaryTimezone": "主要时区",
+                "utcOffset": "UTC 偏移",
+                "timezones": "时区",
+                "additionalInfo": "Additional Info",
+                "monday": "星期一",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "saturday": "Saturday",
+                "sunday": "星期日"
+            },
+            "numberFormat": {
+                "decimalSeparator": "小数分隔符",
+                "thousandsSeparator": "千位分隔符",
+                "digitGrouping": "数字分组",
+                "numberingSystem": "数字系统",
+                "example": "例如："
+            },
+            "phone": {
+                "callingCode": "Calling Code",
+                "trunkPrefix": "Trunk Prefix",
+                "internationalPrefix": "International Prefix",
+                "subscriberNumberLengths": "Subscriber Number Lengths",
+                "exampleFormat": "Example Format",
+                "patterns": "Format Patterns",
+                "types": "Phone Number Types",
+                "typeLabels": {
+                    "fixedLine": "Fixed Line",
+                    "mobile": "Mobile",
+                    "tollFree": "Toll Free",
+                    "premiumRate": "Premium Rate",
+                    "sharedCost": "Shared Cost",
+                    "voip": "VoIP",
+                    "uan": "UAN"
+                },
+                "table": {
+                    "pattern": "Pattern",
+                    "format": "Format",
+                    "leadingDigits": "Leading Digits",
+                    "nationalPrefix": "National Prefix"
+                },
+                "example": "Example",
+                "lengths": "Lengths"
+            },
+            "locale": {
+                "writingDirection": "书写方向",
+                "measurementSystem": "度量系统",
+                "temperatureScale": "温度标度",
+                "paperSize": "纸张尺寸",
+                "drivingSide": "驾驶侧",
+                "weekNumbering": "周编号"
+            }
+        },
+        "noData": "未找到国家。"
     },
-    "dataPipeline": {
-      "title": "Data Pipeline",
-      "description": "LocaleDB processes data from multiple authoritative sources through a multi-stage pipeline.",
-      "steps": {
+    "currencies": {
+        "title": "货币",
+        "subtitle": "{count} 种世界货币的格式模式和符号",
+        "search": "搜索货币...",
+        "sort": {
+            "name": "名称",
+            "code": "代码",
+            "symbol": "符号",
+            "usage": "使用次数"
+        },
+        "card": {
+            "usedIn": "在 {count} 个国家使用"
+        },
+        "meta": {
+            "title": "World Currencies - LocaleDB",
+            "description": "Browse localization data for world currencies. Formatting patterns, symbols, and usage by country.",
+            "ogTitle": "World Currencies - LocaleDB",
+            "ogDescription": "Browse localization data for world currencies. Formatting patterns, symbols, and usage by country.",
+            "ogAlt": "World currencies grid"
+        },
+        "detail": {
+            "numeric": "数字代码：",
+            "sections": {
+                "formattingRules": "格式化规则",
+                "usedIn": "使用地区（{count} 个国家）",
+                "rawJson": "原始 JSON 数据"
+            },
+            "formatting": {
+                "decimalSeparator": "小数分隔符",
+                "thousandsSeparator": "千位分隔符",
+                "symbolPosition": "符号位置",
+                "decimalDigits": "小数位数",
+                "subunit": "子单位",
+                "pattern": "模式",
+                "standardExample": "标准示例",
+                "accountingExample": "会计示例"
+            },
+            "meta": {
+                "title": "{name} ({code}) - Locale Data",
+                "description": "Localization data for {name}: symbol {symbol}, formatting rules, and usage in {count} countries.",
+                "ogTitle": "{symbol} {name} ({code})",
+                "ogDescription": "Currency formatting and locale data for {name}. Decimals: {decimals}, Separator: {separator}",
+                "ogAlt": "{name} Locale Data",
+                "keywords": {
+                    "currencyFormat": "currency format",
+                    "moneyFormatting": "money formatting",
+                    "localeData": "locale data",
+                    "internationalization": "internationalization"
+                }
+            },
+            "empty": "No official countries listed.",
+            "none": "没有列出官方国家。"
+        },
+        "noData": "未找到货币。"
+    },
+    "languages": {
+        "title": "语言",
+        "subtitle": "{count} 种世界语言的本地名称和使用数据",
+        "meta": {
+            "title": "Languages - LocaleDB",
+            "description": "Browse localization data for world languages.",
+            "ogTitle": "Languages - LocaleDB",
+            "ogDescription": "Browse localization data for world languages.",
+            "ogAlt": "Languages - LocaleDB"
+        },
+        "search": "搜索语言...",
+        "sort": {
+            "name": "名称",
+            "code": "代码",
+            "native": "本地名称",
+            "usage": "使用次数"
+        },
+        "card": {
+            "countriesCount": "{count} 个国家"
+        },
+        "detail": {
+            "meta": {
+                "title": "{name} - Locale Data",
+                "description": "Localization data for {name} language. Spoken in {count} countries.",
+                "ogTitle": "{name} - Locale Data",
+                "ogDescription": "Localization data for {name} language. Spoken in {count} countries.",
+                "ogAlt": "{name} - Locale Data"
+            },
+            "sections": {
+                "spokenIn": "使用地区（{count} 个国家）",
+                "rawJson": "原始 JSON 数据"
+            },
+            "none": "没有列出官方国家。"
+        },
+        "noData": "未找到语言。"
+    },
+    "airports": {
+        "title": "机场",
+        "subtitle": "全球 {count} 个机场的 IATA/ICAO 代码数据库",
+        "search": "按名称、城市、IATA 或 ICAO 代码搜索...",
+        "filters": {
+            "region": {
+                "all": "所有地区",
+                "africa": "非洲",
+                "antarctica": "南极洲",
+                "asia": "亚洲",
+                "europe": "欧洲",
+                "northAmerica": "北美洲",
+                "oceania": "大洋洲",
+                "southAmerica": "南美洲"
+            }
+        },
+        "table": {
+            "iata": "IATA",
+            "icao": "ICAO",
+            "name": "机场名称",
+            "city": "城市",
+            "country": "国家",
+            "region": "地区"
+        },
+        "showing": "显示 {total} 个机场中的 {shown} 个",
+        "noResults": "未找到与您的搜索匹配的机场。",
+        "copyIata": "复制 IATA",
+        "copyIcao": "复制 ICAO",
+        "loadMore": "Load More Results",
+        "copied": "{label} copied to clipboard",
+        "meta": {
+            "title": "World Airports - LocaleDB",
+            "description": "Searchable database of global airports with IATA/ICAO codes."
+        }
+    },
+    "localeCodes": {
+        "title": "区域代码参考",
+        "subtitle": "所有 {count} 个国家的 BCP-47 区域标记、ISO 代码和货币代码",
+        "meta": {
+            "title": "Locale Codes (BCP-47) - LocaleDB",
+            "description": "Complete reference table of BCP-47 locale codes for all countries.",
+            "ogTitle": "Locale Codes (BCP-47) - LocaleDB",
+            "ogDescription": "Complete reference table of BCP-47 locale codes for all countries.",
+            "ogAlt": "Locale Codes (BCP-47) - LocaleDB"
+        },
+        "copy": {
+            "code": "{name} code",
+            "locale": "{name} locale",
+            "currency": "{code} currency"
+        },
+        "mobileHint": "💡 向左滑动查看更多列",
+        "table": {
+            "flag": "旗帜",
+            "country": "国家",
+            "alpha2": "Alpha-2",
+            "bcp47": "BCP-47",
+            "currency": "货币",
+            "callingCode": "电话区号",
+            "region": "地区",
+            "caption": "所有国家的 ISO 3166-1 和 BCP-47 区域代码"
+        },
+        "about": {
+            "title": "关于 BCP-47",
+            "intro": "BCP-47（Best Current Practice 47）是用于标识互联网上语言、地区和区域设置的语言标记标准。",
+            "structure": "BCP-47 标记通常包含：{tag}，其中 language 是 ISO 639 代码，REGION 是 ISO 3166-1 alpha-2 代码。",
+            "examples": "示例："
+        },
+        "search": "按国家、代码、语言环境或货币搜索...",
+        "noResults": "未找到与您的搜索匹配的国家。",
+        "resultsCount": "显示 {total} 个国家中的 {count} 个",
+        "viewCountry": "查看国家详情"
+    },
+    "about": {
+        "title": "关于 LocaleDB",
+        "meta": {
+            "title": "About - LocaleDB",
+            "description": "Learn about LocaleDB, a comprehensive database of localization data."
+        },
+        "hero": {
+            "title": "现代应用的全球数据",
+            "subtitle": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。"
+        },
+        "challenge": {
+            "title": "挑战",
+            "items": {
+                "currency": "货币符号位置（之前还是之后？）",
+                "date": "日期格式差异（DD/MM 与 MM/DD）",
+                "number": "数字分隔符（1,250.00 与 1.250,00）",
+                "address": "地址格式约定",
+                "timezone": "时区和日历系统",
+                "documentation": "分散的文档和沉重的库"
+            }
+        },
+        "solution": {
+            "title": "我们的解决方案",
+            "comprehensive": {
+                "title": "全面的数据",
+                "items": {
+                    "0": "每个国家的结构化 JSON",
+                    "1": "即用型格式化规则",
+                    "2": "基于 CLDR 的准确性",
+                    "3": "全球机场数据库（IATA/ICAO）"
+                }
+            },
+            "developerExp": {
+                "title": "开发人员体验",
+                "items": {
+                    "0": "快速静态生成",
+                    "1": "无需服务器",
+                    "2": "开源（MIT 许可）",
+                    "3": "社区贡献"
+                }
+            }
+        },
         "sources": {
-          "title": "External Sources",
-          "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
+            "title": "数据来源",
+            "items": {
+                "0": "CLDR (Common Locale Data Repository)",
+                "1": "mledoze/countries",
+                "2": "IP2Location Airports",
+                "3": "Google libaddressinput",
+                "4": "Community Contributions"
+            },
+            "description": "我们的数据来自可信的权威来源：",
+            "cldr": "Unicode CLDR（Common Locale Data Repository）",
+            "iso": "ISO 标准组织",
+            "openflights": "OpenFlights 机场数据库",
+            "restcountries": "REST Countries API"
         },
-        "update": {
-          "title": "Download Raw Data",
-          "description": "pnpm update:data downloads files to data/ subdirectories"
+        "cta": {
+            "title": "开源和社区驱动",
+            "description": "LocaleDB 采用 MIT 许可并欢迎贡献。无论您是修复拼写错误、添加缺失的国家还是改进 UI，我们都欢迎您的帮助。",
+            "github": "在 GitHub 上查看",
+            "contributing": "贡献指南"
         },
-        "rawData": {
-          "title": "Raw Data Files",
-          "description": "JSON, CSV, and XML files stored in data/"
+        "intro": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。",
+        "whatIsIncluded": {
+            "title": "包含内容",
+            "countries": {
+                "title": "国家数据",
+                "items": [
+                    "ISO 3166-1 代码（Alpha-2、Alpha-3、Numeric）",
+                    "BCP-47 区域标记",
+                    "货币格式模式",
+                    "日期和时间格式",
+                    "数字格式约定",
+                    "电话代码和顶级域名",
+                    "地理信息（地区、大洲、边界）"
+                ]
+            },
+            "currencies": {
+                "title": "货币格式",
+                "items": ["符号定位", "小数和千位分隔符", "小数位数", "子单位信息", "会计格式示例"]
+            },
+            "languages": {
+                "title": "语言数据",
+                "items": ["ISO 639-1、639-2 和 639-3 代码", "本地语言名称", "使用国家"]
+            },
+            "airports": {
+                "title": "机场信息",
+                "items": ["IATA 和 ICAO 代码", "地理坐标", "地区和国家数据", "城市和时区信息"]
+            }
         },
-        "build": {
-          "title": "Process & Merge",
-          "description": "pnpm build:data merges sources with priority rules"
-        },
-        "generated": {
-          "title": "Generated JSON",
-          "description": "Individual country, language, and currency files"
-        },
-        "ssg": {
-          "title": "Static Site Generation",
-          "description": "Next.js builds 5,868+ static pages"
+        "openSource": {
+            "title": "开源",
+            "description": "LocaleDB 完全免费且开源。您可以无限制地在项目中使用这些数据。源代码和数据在 GitHub 上以 MIT 许可证提供。"
         }
-      },
-      "priority": {
-        "title": "Data Source Priority",
-        "description": "When multiple sources provide the same field, we use a consistent priority system:",
-        "rules": {
-          "names": "Country names: CLDR > mledoze > SimpleLocalize",
-          "population": "Population: World Bank > mledoze > SimpleLocalize",
-          "phone": "Phone data: libphonenumber XML (authoritative)"
-        }
-      }
     },
-    "dataSchemas": {
-      "title": "Data Schemas",
-      "description": "Detailed structure of country, language, and currency JSON files.",
-      "country": {
-        "title": "Country Schema",
-        "path": "data/countries/{CODE}.json",
-        "fields": {
-          "basics": "Name, capital, coordinates, continent, population, area, languages, flagEmoji",
-          "codes": "ISO 3166, BCP-47, FIFA, IOC, FIPS, and other international codes",
-          "currency": "Code, symbol, position, separators, decimal digits, pattern, example",
-          "dateTime": "Date/time formats (full, long, medium, short), first day of week, timezones",
-          "numberFormat": "Decimal/thousands separators, digit grouping, numbering system",
-          "phone": "Calling code, patterns, format rules, subscriber number lengths",
-          "addressFormat": "Format template, postal code regex and example",
-          "locale": "Writing direction, measurement system, temperature scale, paper size, driving side",
-          "airports": "Array of airports with IATA, ICAO, coordinates, timezone"
-        }
-      },
-      "language": {
-        "title": "Language Schema",
-        "path": "data/languages/{code}.json",
-        "fields": {
-          "code": "ISO 639-1 code",
-          "name": "English name",
-          "nativeName": "Native name",
-          "direction": "Text direction (ltr or rtl)",
-          "countries": "Array of country codes where spoken"
-        }
-      },
-      "currency": {
-        "title": "Currency Schema",
-        "path": "data/currencies/{CODE}.json",
-        "fields": {
-          "code": "ISO 4217 code",
-          "name": "Currency name",
-          "symbol": "Currency symbol",
-          "symbolPosition": "before or after",
-          "separators": "Decimal and thousands separators",
-          "decimalDigits": "Standard decimal places",
-          "pattern": "Formatting pattern",
-          "example": "Formatted example",
-          "countries": "Array of country codes using this currency"
-        }
-      }
+    "phoneNumbers": {
+        "title": "Phone Number Formats",
+        "subtitle": "Browse international dialing codes, regex patterns, and example numbers.",
+        "meta": {
+            "title": "Phone Numbers - LocaleDB",
+            "description": "Complete reference table of phone numbers for all countries.",
+            "ogTitle": "Phone Numbers - LocaleDB",
+            "ogDescription": "Complete reference table of phone numbers for all countries.",
+            "ogAlt": "Phone Numbers - LocaleDB"
+        },
+        "search": "Search country, code...",
+        "table": {
+            "country": "Country",
+            "code": "Code",
+            "pattern": "Mobile Pattern (Regex)",
+            "example": "Example Number",
+            "noPattern": "No pattern available",
+            "noExample": "No example"
+        },
+        "noResults": "No results found.",
+        "resultsCount": "Showing {count} of {total} countries. Click on a row to view full country details."
     },
-    "projectStructure": {
-      "title": "Project Structure",
-      "description": "Key directories and their purposes.",
-      "tree": {
-        "data": "Generated JSON files and raw source data",
-        "scripts": "Data pipeline scripts (update-data.ts, build-data.ts)",
-        "src": "Next.js application source code",
-        "messages": "Translation files for 11 languages"
-      }
-    },
-    "scripts": {
-      "title": "Scripts Reference",
-      "description": "Available commands for data management and development.",
-      "commands": {
-        "updateData": {
-          "command": "pnpm update:data",
-          "description": "Download raw data from all external sources"
+    "regions": {
+        "meta": {
+            "title": "{region} Region - LocaleDB",
+            "description": "List of countries in {region} with localization data including currencies, languages, and formatting rules.",
+            "ogTitle": "{region} Region Data",
+            "ogDescription": "Explore localization data for all countries in {region}.",
+            "ogAlt": "{region} Region Data"
         },
-        "updateDataSpecific": {
-          "command": "pnpm update:data cldr worldbank",
-          "description": "Download specific sources only"
+        "hero": {
+            "subtitle": "{count} Countries • Localization Data"
         },
-        "buildData": {
-          "command": "pnpm build:data",
-          "description": "Process raw data and generate JSON files"
-        },
-        "dev": {
-          "command": "pnpm dev",
-          "description": "Start development server"
-        },
-        "build": {
-          "command": "pnpm build",
-          "description": "Production build (Static Site Generation)"
-        },
-        "checkI18n": {
-          "command": "npx tsx scripts/check-i18n.ts",
-          "description": "Check and auto-fill missing translation keys"
-        },
-        "version": {
-          "command": "pnpm version patch",
-          "description": "Bump version and auto-generate changelog"
+        "breadcrumbs": {
+            "home": "Home",
+            "regions": "Regions"
         }
-      }
+    },
+    "roadmap": {
+        "title": "项目路线图",
+        "subtitle": "LocaleDB 的开发历程和未来计划。",
+        "meta": {
+            "title": "Roadmap - LocaleDB",
+            "description": "LocaleDB's development journey and future plans.",
+            "ogTitle": "LocaleDB Roadmap",
+            "ogDescription": "LocaleDB's development journey and future plans.",
+            "ogAlt": "LocaleDB Roadmap"
+        },
+        "status": {
+            "completed": "已完成",
+            "inProgress": "进行中",
+            "planned": "已计划"
+        },
+        "items": {
+            "1": {
+                "title": "项目启动和数据填充",
+                "description": "Next.js 项目的初始设置以及国家、货币和语言核心数据的填充。",
+                "date": "2026年第1季度"
+            },
+            "2": {
+                "title": "错误修复和贡献系统",
+                "description": "解决初始问题并通过覆盖为社区贡献建立稳健的工作流程。",
+                "date": "2026年第1季度"
+            },
+            "3": {
+                "title": "数据导出界面",
+                "description": "允许用户选择特定国家并以自定义 JSON 格式导出其数据的用户界面。",
+                "date": "2026年第2季度"
+            },
+            "4": {
+                "title": "npm 包和 CLI 工具",
+                "description": "专用的 npm 包和 CLI 工具，供开发人员直接下载并将区域数据集成到他们的项目中。",
+                "date": "2026年第2季度"
+            },
+            "5": {
+                "title": "公共 API 启动",
+                "description": "开发和部署 RESTful API 以动态提供区域数据。",
+                "date": "2026年第3季度"
+            }
+        }
     },
     "contributing": {
-      "title": "Contributing Data",
-      "description": "How to contribute corrections and improvements to LocaleDB.",
-      "workflow": {
-        "title": "Contribution Workflow",
-        "steps": {
-          "fork": "Fork the GitHub repository and clone to your local machine",
-          "edit": "Edit source priority in build-data.ts or submit corrections to upstream sources",
-          "translations": "Add translations by editing messages/{lang}.json and running check-i18n",
-          "pr": "Submit a Pull Request with one change per PR and links to official sources"
+        "title": "为 LocaleDB 做贡献",
+        "hero": {
+            "title": "为 LocaleDB 做贡献",
+            "subtitle": "LocaleDB 是一个开源项目，我们很高兴收到来自全球开发人员的贡献！"
+        },
+        "cards": {
+            "fixData": {
+                "title": "修复数据",
+                "description": "更正拼写错误或更新过时的区域信息。"
+            },
+            "addCountry": {
+                "title": "添加国家",
+                "description": "使用标准代码添加缺失的国家。"
+            },
+            "improveCode": {
+                "title": "改进代码",
+                "description": "增强 UI、搜索或构建脚本。"
+            }
+        },
+        "workflow": {
+            "title": "数据贡献工作流程",
+            "step1": {
+                "title": "Fork 和设置",
+                "description": "Fork <link>GitHub 仓库</link>并将其克隆到本地计算机。"
+            },
+            "step2": {
+                "title": "使用数据覆盖",
+                "description": "要修复数据，<strong>请勿编辑</strong> <code>/data/countries/</code> 中生成的文件。而是在 <code>/data/overrides/XX.json</code> 中创建或编辑文件（其中 XX 是国家代码）。"
+            },
+            "step3": {
+                "title": "验证并提交",
+                "description": "运行构建脚本以验证您的更改已正确合并。然后提交带有官方来源参考的拉取请求。"
+            }
+        },
+        "guidelines": {
+            "title": "贡献指南",
+            "pullRequests": {
+                "title": "拉取请求",
+                "items": {
+                    "0": "每个 PR 一个更改",
+                    "1": "清晰、描述性的提交消息",
+                    "2": "链接到官方来源（CLDR、政府网站）"
+                }
+            },
+            "resources": {
+                "title": "资源",
+                "items": {
+                    "0": "<linkCLDR>CLDR 仓库</linkCLDR>",
+                    "1": "<linkMledoze>mledoze/countries</linkMledoze>",
+                    "2": "ISO 3166 标准"
+                }
+            },
+            "codeQuality": {
+                "title": "代码质量",
+                "description": "遵循现有的代码风格和模式。编写清晰的提交消息并为新功能添加测试。"
+            },
+            "dataAccuracy": {
+                "title": "数据准确性",
+                "description": "更新区域数据时，请引用权威来源。确保更改与 ISO 标准和 CLDR 数据保持一致。"
+            },
+            "documentation": {
+                "title": "文档",
+                "description": "在添加或更改功能时更新相关文档。在适当的地方包含示例。"
+            }
+        },
+        "help": {
+            "title": "需要帮助？",
+            "description": "有问题或卡在某个步骤上？在 GitHub 上开始讨论。",
+            "button": "加入讨论"
+        },
+        "meta": {
+            "title": "Contributing - LocaleDB",
+            "description": "Learn how to contribute to LocaleDB, a comprehensive database of localization data."
+        },
+        "intro": "LocaleDB 是一个开源项目，我们欢迎社区的贡献。无论您是报告错误、建议功能还是提交代码，您的意见都有助于让 LocaleDB 对每个人都更好。",
+        "howToContribute": {
+            "title": "如何贡献",
+            "items": [
+                "通过在 GitHub 上提交 issue 来报告错误或建议功能",
+                "通过提交 pull request 来修复错误或实现功能",
+                "改进文档或添加示例",
+                "通过报告不一致来帮助数据准确性",
+                "与可能觉得有用的其他开发人员分享 LocaleDB"
+            ]
+        },
+        "gettingStarted": {
+            "title": "开始",
+            "description": "要开始贡献：",
+            "steps": [
+                "在 GitHub 上 fork 仓库",
+                "在本地克隆您的 fork",
+                "为您的更改创建一个新分支",
+                "进行更改并测试它们",
+                "提交带有清晰描述的 pull request"
+            ]
+        },
+        "contact": {
+            "title": "联系",
+            "description": "有问题吗？在 GitHub 上提交 issue 或联系维护者。"
         }
-      },
-      "guidelines": {
-        "title": "Guidelines",
-        "items": {
-          "oneChange": "One change per Pull Request",
-          "sources": "Always link to official sources (CLDR, government sites, ISO standards)",
-          "test": "Run pnpm build:data to verify your changes merge correctly",
-          "commits": "Clear, descriptive commit messages"
-        }
-      }
     },
-    "i18n": {
-      "title": "Internationalization",
-      "description": "LocaleDB supports 11 languages with plans for more.",
-      "languages": {
-        "title": "Supported Languages",
-        "list": "English, Turkish, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Japanese"
-      },
-      "location": {
-        "title": "Translation Files",
-        "description": "All translations are stored in messages/{lang}.json files"
-      },
-      "rtl": {
-        "title": "RTL Support",
-        "description": "Full right-to-left support for Arabic (ar) and other RTL languages"
-      },
-      "addLanguage": {
-        "title": "Adding a New Language",
-        "steps": {
-          "create": "Create a new messages/{lang}.json file",
-          "translate": "Translate all keys from messages/en.json",
-          "routing": "Add the locale code to src/i18n/routing.ts",
-          "verify": "Run npx tsx scripts/check-i18n.ts to verify completeness"
+    "footer": {
+        "description": "面向开发人员的免费开源本地化数据。",
+        "sections": {
+            "resources": {
+                "title": "资源",
+                "github": "GitHub",
+                "documentation": "文档",
+                "apiReference": "API 参考"
+            },
+            "data": {
+                "title": "数据",
+                "countries": "国家",
+                "currencies": "货币",
+                "languages": "语言",
+                "airports": "机场"
+            },
+            "community": {
+                "title": "社区",
+                "contributing": "贡献",
+                "changelog": "更新日志",
+                "license": "许可证"
+            },
+            "legal": {
+                "privacy": "隐私",
+                "terms": "条款",
+                "license": "许可证"
+            }
+        },
+        "copyright": "© {year} LocaleDB。保留所有权利。"
+    },
+    "common": {
+        "loading": "加载中...",
+        "error": "发生错误",
+        "notFound": "未找到",
+        "copy": "复制",
+        "copied": "已复制！",
+        "viewMore": "查看更多",
+        "showAll": "显示全部",
+        "theme": "主题",
+        "menu": "菜单",
+        "clearFilters": "清除筛选",
+        "clearSearch": "清除搜索",
+        "toggleTheme": "切换主题",
+        "light": "浅色",
+        "dark": "深色",
+        "system": "系统",
+        "changeLanguage": "更改语言",
+        "showing": "显示 {total} 中的 {shown}",
+        "na": "N/A"
+    },
+    "search": {
+        "placeholder": "搜索国家...",
+        "dialogPlaceholder": "搜索国家、货币、代码...",
+        "ariaLabel": "搜索国家、货币和代码",
+        "noResults": "未找到结果。",
+        "groupCountries": "国家"
+    },
+    "updates": {
+        "title": "更新与更新日志",
+        "subtitle": "跟踪 LocaleDB 的所有更改和改进",
+        "currentVersion": "当前版本",
+        "releaseDate": "发布日期",
+        "previousVersion": "以前版本",
+        "totalCommits": "总提交数",
+        "noUpdates": "暂无更新。"
+    },
+    "docs": {
+        "title": "文档",
+        "subtitle": "关于 LocaleDB 数据、管道和架构所需了解的一切。",
+        "badge": "开发者指南",
+        "meta": {
+            "title": "文档 - LocaleDB",
+            "description": "了解如何使用 LocaleDB，一个全面的本地化数据库。",
+            "ogTitle": "文档 - LocaleDB",
+            "ogDescription": "了解如何使用 LocaleDB，一个全面的本地化数据库。",
+            "ogAlt": "文档 - LocaleDB"
+        },
+        "toc": {
+            "overview": "概览",
+            "gettingStarted": "入门",
+            "dataPipeline": "数据管道",
+            "dataSchemas": "数据模式",
+            "projectStructure": "项目结构",
+            "scripts": "脚本参考",
+            "contributing": "贡献数据",
+            "i18n": "i18n 和翻译"
+        },
+        "overview": {
+            "title": "概览",
+            "description": "LocaleDB 是一个全面的开源本地化百科全书，专为构建国际应用程序的开发人员设计。",
+            "stats": {
+                "countries": "250+ 国家",
+                "languages": "114 种语言",
+                "currencies": "161 种货币",
+                "airports": "9,415 个机场"
+            },
+            "features": {
+                "title": "核心功能",
+                "items": {
+                    "comprehensive": "来自权威来源的全面数据 (CLDR, World Bank, mledoze, libphonenumber, OpenFlights)",
+                    "static": "静态生成 - 无需运行时数据库",
+                    "openSource": "MIT 许可且由社区驱动",
+                    "i18n": "支持 11 种语言，包括阿拉伯语的 RTL 支持"
+                }
+            }
+        },
+        "gettingStarted": {
+            "title": "入门",
+            "description": "克隆代码库并在几分钟内开始探索区域数据。",
+            "steps": {
+                "clone": "克隆代码库",
+                "install": "安装依赖项",
+                "updateData": "从源下载原始数据",
+                "buildData": "处理并生成 JSON 文件",
+                "dev": "启动开发服务器"
+            }
+        },
+        "dataPipeline": {
+            "title": "数据管道",
+            "description": "LocaleDB 通过多阶段管道处理来自多个权威来源的数据。",
+            "steps": {
+                "sources": {
+                    "title": "外部来源",
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
+                },
+                "update": {
+                    "title": "下载原始数据",
+                    "description": "pnpm update:data 将文件下载到 data/ 子目录"
+                },
+                "rawData": {
+                    "title": "原始数据文件",
+                    "description": "存储在 data/ 中的 JSON, CSV 和 XML 文件"
+                },
+                "build": {
+                    "title": "处理与合并",
+                    "description": "pnpm build:data 根据优先级规则合并源"
+                },
+                "generated": {
+                    "title": "生成的 JSON",
+                    "description": "单独的国家、语言和货币文件"
+                },
+                "ssg": {
+                    "title": "静态站点生成",
+                    "description": "Next.js 构建 5,868+ 个静态页面"
+                }
+            },
+            "priority": {
+                "title": "数据源优先级",
+                "description": "当多个来源提供相同的字段时，我们使用一致的优先级系统：",
+                "rules": {
+                    "names": "国家名称：CLDR > mledoze > SimpleLocalize",
+                    "population": "人口：World Bank > mledoze > SimpleLocalize",
+                    "phone": "电话数据：libphonenumber XML (权威)"
+                }
+            }
+        },
+        "dataSchemas": {
+            "title": "数据模式",
+            "description": "国家、语言和货币 JSON 文件的详细结构。",
+            "country": {
+                "title": "国家模式",
+                "path": "data/countries/{CODE}.json",
+                "fields": {
+                    "basics": "名称、首都、坐标、大洲、人口、面积、语言、国旗表情",
+                    "codes": "ISO 3166, BCP-47, FIFA, IOC, FIPS 以及其他国际代码",
+                    "currency": "代码、符号、位置、分隔符、小数位数、模式、示例",
+                    "dateTime": "日期/时间格式（完整、长、中、短）、一周的第一天、时区",
+                    "numberFormat": "小数/千位分隔符、数字分组、数字系统",
+                    "phone": "呼叫代码、模式、格式规则、用户号码长度",
+                    "addressFormat": "格式模板、邮政编码正则表达式及示例",
+                    "locale": "书写方向、度量系统、温度标度、纸张尺寸、驾驶侧",
+                    "airports": "包含 IATA, ICAO, 坐标, 时区的机场数组"
+                }
+            },
+            "language": {
+                "title": "语言模式",
+                "path": "data/languages/{code}.json",
+                "fields": {
+                    "code": "ISO 639-1 代码",
+                    "name": "英文名称",
+                    "nativeName": "本地名称",
+                    "direction": "文本方向 (ltr 或 rtl)",
+                    "countries": "使用该语言的国家代码数组"
+                }
+            },
+            "currency": {
+                "title": "货币模式",
+                "path": "data/currencies/{CODE}.json",
+                "fields": {
+                    "code": "ISO 4217 代码",
+                    "name": "货币名称",
+                    "symbol": "货币符号",
+                    "symbolPosition": "before 或 after",
+                    "separators": "小数和千位分隔符",
+                    "decimalDigits": "标准小数位数",
+                    "pattern": "格式化模式",
+                    "example": "格式化示例",
+                    "countries": "使用此货币的国家代码数组"
+                }
+            }
+        },
+        "projectStructure": {
+            "title": "项目结构",
+            "description": "关键目录及其用途。",
+            "tree": {
+                "data": "生成的 JSON 文件和原始源数据",
+                "scripts": "数据管道脚本 (update-data.ts, build-data.ts)",
+                "src": "Next.js 应用程序源代码",
+                "messages": "11 种语言的翻译文件"
+            }
+        },
+        "scripts": {
+            "title": "脚本参考",
+            "description": "用于数据管理和开发的可用命令。",
+            "commands": {
+                "updateData": {
+                    "command": "pnpm update:data",
+                    "description": "从所有外部来源下载原始数据"
+                },
+                "updateDataSpecific": {
+                    "command": "pnpm update:data cldr worldbank",
+                    "description": "仅下载特定来源"
+                },
+                "buildData": {
+                    "command": "pnpm build:data",
+                    "description": "处理原始数据并生成 JSON 文件"
+                },
+                "dev": {
+                    "command": "pnpm dev",
+                    "description": "启动开发服务器"
+                },
+                "build": {
+                    "command": "pnpm build",
+                    "description": "生产构建（静态站点生成）"
+                },
+                "checkI18n": {
+                    "command": "npx tsx scripts/check-i18n.ts",
+                    "description": "检查并自动填充缺失的翻译键"
+                },
+                "version": {
+                    "command": "pnpm version patch",
+                    "description": "提升版本并自动生成更新日志"
+                }
+            }
+        },
+        "contributing": {
+            "title": "贡献数据",
+            "description": "如何为 LocaleDB 贡献更正和改进。",
+            "workflow": {
+                "title": "贡献工作流程",
+                "steps": {
+                    "fork": "Fork GitHub 代码库并克隆到本地机器",
+                    "edit": "在 build-data.ts 中编辑源优先级或向在上游源提交更正",
+                    "translations": "通过编辑 messages/{lang}.json 并运行 check-i18n 添加翻译",
+                    "pr": "提交 Pull Request，每个 PR 一个更改，并附上官方来源链接"
+                }
+            },
+            "guidelines": {
+                "title": "指南",
+                "items": {
+                    "oneChange": "每个 Pull Request 一个更改",
+                    "sources": "始终链接到官方来源 (CLDR, 政府网站, ISO 标准)",
+                    "test": "运行 pnpm build:data 以验证您的更改是否正确合并",
+                    "commits": "清晰、描述性的提交信息"
+                }
+            }
+        },
+        "i18n": {
+            "title": "国际化",
+            "description": "LocaleDB 支持 11 种语言，并计划支持更多。",
+            "languages": {
+                "title": "支持的语言",
+                "list": "英语、土耳其语、中文、印地语、西班牙语、法语、阿拉伯语、孟加拉语、葡萄牙语、俄语、日语"
+            },
+            "location": {
+                "title": "翻译文件",
+                "description": "所有翻译都存储在 messages/{lang}.json 文件中"
+            },
+            "rtl": {
+                "title": "RTL 支持",
+                "description": "对阿拉伯语 (ar) 和其他 RTL 语言的完全从右到左支持"
+            },
+            "addLanguage": {
+                "title": "添加新语言",
+                "steps": {
+                    "create": "创建一个新 messages/{lang}.json 文件",
+                    "translate": "翻译 messages/en.json 中的所有键",
+                    "routing": "将区域代码添加到 src/i18n/routing.ts",
+                    "verify": "运行 npx tsx scripts/check-i18n.ts 以验证完整性"
+                }
+            }
         }
-      }
     }
-  }
 }

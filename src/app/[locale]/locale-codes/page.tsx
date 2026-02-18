@@ -3,11 +3,40 @@ import { getTranslations } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { LocaleCodesTableClient } from "@/components/locale-codes/locale-codes-table-client";
 
-export const metadata: Metadata = {
-  title: "Locale Codes (BCP-47)",
-  description:
-    "Complete reference table of BCP-47 locale codes for all countries.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'localeCodes.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: "/locale-codes",
+    },
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: "/locale-codes",
+      siteName: "LocaleDB",
+      images: [
+        {
+          url: "/og_image.png",
+          width: 1200,
+          height: 630,
+          alt: t('ogAlt'),
+        },
+      ],
+      locale: locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('title'),
+      description: t('description'),
+      images: ["/og_image.png"],
+    },
+  };
+}
 
 export default async function LocaleCodesPage() {
   const countries = await getCountryIndex();

@@ -3,10 +3,38 @@ import { getTranslations } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { CountriesGridClient } from "@/components/countries/countries-grid-client";
 
-export const metadata: Metadata = {
-  title: "Countries",
-  description: "Browse localization data for all countries in the world.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("countries.meta");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: "/countries",
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "/countries",
+      siteName: "LocaleDB",
+      images: [
+        {
+          url: "/og_image.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/og_image.png"],
+    },
+  };
+}
 
 export default async function CountriesPage() {
   const countries = await getCountryIndex();

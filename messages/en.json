@@ -73,7 +73,17 @@
             "name": "Name",
             "code": "Code",
             "population": "Population",
-            "area": "Area"
+            "area": "Area",
+            "currency": "Currency"
+        },
+        "grid": {
+            "region": "Region",
+            "currency": "Currency",
+            "call": "Call"
+        },
+        "meta": {
+            "title": "Countries - LocaleDB",
+            "description": "Browse localization data for all countries in the world."
         },
         "detail": {
             "capital": "Capital",
@@ -102,6 +112,20 @@
                 "locale": "Locale Settings",
                 "rawJson": "Raw JSON Data"
             },
+            "meta": {
+                "title": "{name} Locale Codes and Formats - LocaleDB",
+                "description": "Comprehensive localization data for {name}. Currency: {currency}, Phone: {phone}, Capital: {capital}, Region: {region}.",
+                "ogTitle": "{flag} {name} Locale Formats and Codes",
+                "ogDescription": "Explore locale data for {name}. Currency ({currency}), phone codes ({phone}), and timezones ({timezones}).",
+                "ogAlt": "{name} flag and localization details",
+                "keywords": {
+                    "localeData": "locale data",
+                    "currencyFormat": "currency format",
+                    "dateFormat": "date format",
+                    "localization": "localization",
+                    "formatting": "formatting"
+                }
+            },
             "geography": {
                 "region": "Region",
                 "subregion": "Subregion",
@@ -110,6 +134,7 @@
                 "landlocked": "Landlocked",
                 "tld": "TLD",
                 "borders": "Borders",
+                "neighbors": "Neighboring Countries",
                 "yes": "Yes",
                 "no": "No"
             },
@@ -139,7 +164,13 @@
                 "primaryTimezone": "Primary Timezone",
                 "utcOffset": "UTC Offset",
                 "timezones": "Timezones",
+                "additionalInfo": "Additional Info",
                 "monday": "Monday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "saturday": "Saturday",
                 "sunday": "Sunday"
             },
             "numberFormat": {
@@ -147,7 +178,33 @@
                 "thousandsSeparator": "Thousands Separator",
                 "digitGrouping": "Digit Grouping",
                 "numberingSystem": "Numbering System",
-                "example": "Example:"
+                "example": "Example"
+            },
+            "phone": {
+                "callingCode": "Calling Code",
+                "trunkPrefix": "Trunk Prefix",
+                "internationalPrefix": "International Prefix",
+                "subscriberNumberLengths": "Subscriber Number Lengths",
+                "exampleFormat": "Example Format",
+                "patterns": "Format Patterns",
+                "types": "Phone Number Types",
+                "typeLabels": {
+                    "fixedLine": "Fixed Line",
+                    "mobile": "Mobile",
+                    "tollFree": "Toll Free",
+                    "premiumRate": "Premium Rate",
+                    "sharedCost": "Shared Cost",
+                    "voip": "VoIP",
+                    "uan": "UAN"
+                },
+                "table": {
+                    "pattern": "Pattern",
+                    "format": "Format",
+                    "leadingDigits": "Leading Digits",
+                    "nationalPrefix": "National Prefix"
+                },
+                "example": "Example",
+                "lengths": "Lengths"
             },
             "locale": {
                 "writingDirection": "Writing Direction",
@@ -173,6 +230,13 @@
         "card": {
             "usedIn": "Used in {count} countries"
         },
+        "meta": {
+            "title": "World Currencies - LocaleDB",
+            "description": "Browse localization data for world currencies. Formatting patterns, symbols, and usage by country.",
+            "ogTitle": "World Currencies - LocaleDB",
+            "ogDescription": "Browse localization data for world currencies. Formatting patterns, symbols, and usage by country.",
+            "ogAlt": "World currencies grid"
+        },
         "detail": {
             "numeric": "Numeric:",
             "sections": {
@@ -190,13 +254,33 @@
                 "standardExample": "Standard Example",
                 "accountingExample": "Accounting Example"
             },
-            "none": "No official countries listed."
+            "meta": {
+                "title": "{name} ({code}) - Locale Data",
+                "description": "Localization data for {name}: symbol {symbol}, formatting rules, and usage in {count} countries.",
+                "ogTitle": "{symbol} {name} ({code})",
+                "ogDescription": "Currency formatting and locale data for {name}. Decimals: {decimals}, Separator: {separator}",
+                "ogAlt": "{name} Locale Data",
+                "keywords": {
+                    "currencyFormat": "currency format",
+                    "moneyFormatting": "money formatting",
+                    "localeData": "locale data",
+                    "internationalization": "internationalization"
+                }
+            },
+            "empty": "No official countries listed."
         },
         "noData": "No currencies found."
     },
     "languages": {
         "title": "Languages",
         "subtitle": "Native names and usage data for {count} world languages",
+        "meta": {
+            "title": "Languages - LocaleDB",
+            "description": "Browse localization data for world languages.",
+            "ogTitle": "Languages - LocaleDB",
+            "ogDescription": "Browse localization data for world languages.",
+            "ogAlt": "Languages - LocaleDB"
+        },
         "search": "Search languages...",
         "sort": {
             "name": "Name",
@@ -208,6 +292,13 @@
             "countriesCount": "{count} countries"
         },
         "detail": {
+            "meta": {
+                "title": "{name} - Locale Data",
+                "description": "Localization data for {name} language. Spoken in {count} countries.",
+                "ogTitle": "{name} - Locale Data",
+                "ogDescription": "Localization data for {name} language. Spoken in {count} countries.",
+                "ogAlt": "{name} - Locale Data"
+            },
             "sections": {
                 "spokenIn": "Spoken In ({count} Countries)",
                 "rawJson": "Raw JSON Data"
@@ -243,11 +334,29 @@
         "showing": "Showing {shown} of {total} airports",
         "noResults": "No airports found matching your search.",
         "copyIata": "Copy IATA",
-        "copyIcao": "Copy ICAO"
+        "copyIcao": "Copy ICAO",
+        "loadMore": "Load More Results",
+        "copied": "{label} copied to clipboard",
+        "meta": {
+            "title": "World Airports - LocaleDB",
+            "description": "Searchable database of global airports with IATA/ICAO codes."
+        }
     },
     "localeCodes": {
         "title": "Locale Codes Reference",
         "subtitle": "BCP-47 locale tags, ISO codes, and currency codes for all {count} countries",
+        "meta": {
+            "title": "Locale Codes (BCP-47) - LocaleDB",
+            "description": "Complete reference table of BCP-47 locale codes for all countries.",
+            "ogTitle": "Locale Codes (BCP-47) - LocaleDB",
+            "ogDescription": "Complete reference table of BCP-47 locale codes for all countries.",
+            "ogAlt": "Locale Codes (BCP-47) - LocaleDB"
+        },
+        "copy": {
+            "code": "{name} code",
+            "locale": "{name} locale",
+            "currency": "{code} currency"
+        },
         "mobileHint": "💡 Swipe left to see more columns",
         "table": {
             "flag": "Flag",
@@ -272,6 +381,10 @@
     },
     "about": {
         "title": "About LocaleDB",
+        "meta": {
+            "title": "About - LocaleDB",
+            "description": "Learn about LocaleDB, a comprehensive database of localization data."
+        },
         "hero": {
             "title": "Global Data for Modern Apps",
             "subtitle": "LocaleDB is a comprehensive, open-source database of localization data for developers building international applications. We aggregate and process data from authoritative sources including CLDR, ISO standards, and OpenFlights."
@@ -325,9 +438,54 @@
             "contributing": "Contributing Guide"
         }
     },
+    "phoneNumbers": {
+        "title": "Phone Number Formats",
+        "subtitle": "Browse international dialing codes, regex patterns, and example numbers.",
+        "meta": {
+            "title": "Phone Numbers - LocaleDB",
+            "description": "Complete reference table of phone numbers for all countries.",
+            "ogTitle": "Phone Numbers - LocaleDB",
+            "ogDescription": "Complete reference table of phone numbers for all countries.",
+            "ogAlt": "Phone Numbers - LocaleDB"
+        },
+        "search": "Search country, code...",
+        "table": {
+            "country": "Country",
+            "code": "Code",
+            "pattern": "Mobile Pattern (Regex)",
+            "example": "Example Number",
+            "noPattern": "No pattern available",
+            "noExample": "No example"
+        },
+        "noResults": "No results found.",
+        "resultsCount": "Showing {count} of {total} countries. Click on a row to view full country details."
+    },
+    "regions": {
+        "meta": {
+            "title": "{region} Region - LocaleDB",
+            "description": "List of countries in {region} with localization data including currencies, languages, and formatting rules.",
+            "ogTitle": "{region} Region Data",
+            "ogDescription": "Explore localization data for all countries in {region}.",
+            "ogAlt": "{region} Region Data"
+        },
+        "hero": {
+            "subtitle": "{count} Countries • Localization Data"
+        },
+        "breadcrumbs": {
+            "home": "Home",
+            "regions": "Regions"
+        }
+    },
     "roadmap": {
         "title": "Project Roadmap",
         "subtitle": "LocaleDB's development journey and future plans.",
+        "meta": {
+            "title": "Roadmap - LocaleDB",
+            "description": "LocaleDB's development journey and future plans.",
+            "ogTitle": "LocaleDB Roadmap",
+            "ogDescription": "LocaleDB's development journey and future plans.",
+            "ogAlt": "LocaleDB Roadmap"
+        },
         "status": {
             "completed": "Completed",
             "inProgress": "In Progress",
@@ -419,6 +577,10 @@
             "title": "Need Help?",
             "description": "Have a question or stuck on a step? Start a discussion on GitHub.",
             "button": "Join Discussion"
+        },
+        "meta": {
+            "title": "Contributing - LocaleDB",
+            "description": "Learn how to contribute to LocaleDB, a comprehensive database of localization data."
         }
     },
     "footer": {
@@ -468,7 +630,8 @@
         "dark": "Dark",
         "system": "System",
         "changeLanguage": "Change language",
-        "showing": "Showing {shown} of {total}"
+        "showing": "Showing {shown} of {total}",
+        "na": "N/A"
     },
     "search": {
         "placeholder": "Search countries...",
@@ -488,8 +651,15 @@
     },
     "docs": {
         "title": "Documentation",
-        "subtitle": "Everything you need to know about LocaleDB's data, pipeline, and architecture.",
+        "subtitle": "Everything you need to integrate LocaleDB into your applications.",
         "badge": "Developer Guide",
+        "meta": {
+            "title": "Docs - LocaleDB",
+            "description": "Learn how to use LocaleDB, a comprehensive database of localization data.",
+            "ogTitle": "Docs - LocaleDB",
+            "ogDescription": "Learn how to use LocaleDB, a comprehensive database of localization data.",
+            "ogAlt": "Docs - LocaleDB"
+        },
         "toc": {
             "overview": "Overview",
             "gettingStarted": "Getting Started",
@@ -666,7 +836,7 @@
                 "steps": {
                     "fork": "Fork the GitHub repository and clone to your local machine",
                     "edit": "Edit source priority in build-data.ts or submit corrections to upstream sources",
-                    "translations": "Add translations by editing messages/{lang}.json and running check-i18n",
+                    "translations": "Add translations by editing messages/'{lang}'.json and running check-i18n",
                     "pr": "Submit a Pull Request with one change per PR and links to official sources"
                 }
             },
@@ -689,7 +859,7 @@
             },
             "location": {
                 "title": "Translation Files",
-                "description": "All translations are stored in messages/{lang}.json files"
+                "description": "All translations are stored in messages/'{lang}'.json files"
             },
             "rtl": {
                 "title": "RTL Support",
@@ -698,7 +868,7 @@
             "addLanguage": {
                 "title": "Adding a New Language",
                 "steps": {
-                    "create": "Create a new messages/{lang}.json file",
+                    "create": "Create a new messages/'{lang}'.json file",
                     "translate": "Translate all keys from messages/en.json",
                     "routing": "Add the locale code to src/i18n/routing.ts",
                     "verify": "Run npx tsx scripts/check-i18n.ts to verify completeness"

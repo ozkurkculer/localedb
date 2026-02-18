@@ -194,7 +194,7 @@ export function LocaleCodesTableClient({
                                             </code>
                                             <CopyButton
                                                 value={country.code}
-                                                label={`${country.name} code`}
+                                                label={t("localeCodes.copy.code", { name: country.name })}
                                                 className="h-7 w-7 opacity-0 transition-opacity group-hover:opacity-100"
                                             />
                                         </div>
@@ -206,7 +206,7 @@ export function LocaleCodesTableClient({
                                             </code>
                                             <CopyButton
                                                 value={country.primaryLocale}
-                                                label={`${country.name} locale`}
+                                                label={t("localeCodes.copy.locale", { name: country.name })}
                                                 className="h-7 w-7 opacity-0 transition-opacity group-hover:opacity-100"
                                             />
                                         </div>
@@ -218,7 +218,7 @@ export function LocaleCodesTableClient({
                                             </code>
                                             <CopyButton
                                                 value={country.currencyCode}
-                                                label={`${country.currencyCode} currency`}
+                                                label={t("localeCodes.copy.currency", { code: country.currencyCode })}
                                                 className="h-7 w-7 opacity-0 transition-opacity group-hover:opacity-100"
                                             />
                                         </div>
