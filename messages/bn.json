@@ -14,6 +14,7 @@
         "airports": "বিমানবন্দর",
         "phoneNumbers": "ফোন নম্বর",
         "localeCodes": "স্থানীয় কোড",
+        "export": "Export",
         "about": "সম্পর্কে",
         "roadmap": "রোডম্যাপ",
         "contributing": "অবদান",
@@ -470,11 +471,20 @@
             },
             "languages": {
                 "title": "ভাষা ডেটা",
-                "items": ["ISO 639-1, 639-2, এবং 639-3 কোড", "স্থানীয় ভাষার নাম", "কথিত দেশগুলি"]
+                "items": [
+                    "ISO 639-1, 639-2, এবং 639-3 কোড",
+                    "স্থানীয় ভাষার নাম",
+                    "কথিত দেশগুলি"
+                ]
             },
             "airports": {
                 "title": "বিমানবন্দর তথ্য",
-                "items": ["IATA এবং ICAO কোড", "ভৌগোলিক স্থানাঙ্ক", "অঞ্চল এবং দেশ ডেটা", "শহর এবং সময় অঞ্চল তথ্য"]
+                "items": [
+                    "IATA এবং ICAO কোড",
+                    "ভৌগোলিক স্থানাঙ্ক",
+                    "অঞ্চল এবং দেশ ডেটা",
+                    "শহর এবং সময় অঞ্চল তথ্য"
+                ]
             }
         },
         "openSource": {
@@ -518,6 +528,98 @@
         "breadcrumbs": {
             "home": "Home",
             "regions": "Regions"
+        }
+    },
+    "export": {
+        "title": "Data Export Builder",
+        "subtitle": "Pick a dataset, choose entities and fields, then download as JSON, CSV, or ZIP.",
+        "meta": {
+            "title": "Export - LocaleDB",
+            "description": "Build custom JSON, CSV, or ZIP exports of LocaleDB country, currency, language, and airport data.",
+            "ogTitle": "LocaleDB Data Export",
+            "ogDescription": "Build custom JSON, CSV, or ZIP exports of LocaleDB locale data.",
+            "ogAlt": "LocaleDB Data Export Builder"
+        },
+        "progress": {
+            "label": "Setup progress"
+        },
+        "steps": {
+            "dataset": "Pick a dataset",
+            "entities": "Select entities",
+            "fields": "Choose fields",
+            "format": "Pick a format and download"
+        },
+        "datasets": {
+            "ariaLabel": "Dataset",
+            "countries": {
+                "title": "Countries",
+                "description": "250+ countries with full locale data"
+            },
+            "currencies": {
+                "title": "Currencies",
+                "description": "150+ currencies with format rules"
+            },
+            "languages": {
+                "title": "Languages",
+                "description": "100+ languages with ISO codes"
+            },
+            "airports": {
+                "title": "Airports",
+                "description": "Top airports by IATA/ICAO code"
+            }
+        },
+        "entities": {
+            "searchPlaceholder": "Search...",
+            "selectAllFiltered": "Select all ({count})",
+            "clear": "Clear",
+            "selectedCount": "{selected} of {total} selected",
+            "noResults": "No matching entries.",
+            "listLabel": "Entities",
+            "loadMore": "Load more ({remaining})"
+        },
+        "fields": {
+            "selectedCount": "{selected} of {total} fields selected",
+            "selectAll": "Select all",
+            "clear": "Clear"
+        },
+        "formats": {
+            "ariaLabel": "Output format",
+            "json": {
+                "title": "JSON",
+                "description": "Pretty-printed array"
+            },
+            "json-min": {
+                "title": "JSON (min)",
+                "description": "Minified single line"
+            },
+            "csv": {
+                "title": "CSV",
+                "description": "Flattened, RFC 4180"
+            },
+            "zip": {
+                "title": "ZIP",
+                "description": "One JSON file per entity"
+            }
+        },
+        "preview": {
+            "label": "Preview",
+            "firstRecordOnly": "First record only",
+            "empty": "Click Preview to see the first record.",
+            "zipNote": "ZIP contains one JSON file per entity. Use Download to inspect."
+        },
+        "actions": {
+            "preview": "Preview",
+            "download": "Download",
+            "downloading": "Preparing...",
+            "downloaded": "Downloaded"
+        },
+        "summary": "{entities} entities × {fields} fields",
+        "toasts": {
+            "downloaded": "Downloaded {filename}"
+        },
+        "errors": {
+            "previewFailed": "Preview failed. Try again.",
+            "downloadFailed": "Download failed. Try again."
         }
     },
     "roadmap": {
