@@ -276,11 +276,21 @@ export default async function CountryPage({ params }: CountryPageProps) {
                             <DataItem
                                 label={t('geography.continent')}
                                 value={
-                                    // Try to translate continent if key exists, otherwise fallback to original
-                                    // Assuming continent names map to keys like 'europe', 'asia', etc.
-                                    ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'Oceania', 'South America'].includes(country.basics.continent)
-                                        ? (await getTranslations('countries.filters.continent'))(country.basics.continent.toLowerCase().replace(' ', ''))
-                                        : country.basics.continent
+                                    await (async () => {
+                                        const map: Record<string, string> = {
+                                            'Africa': 'africa',
+                                            'Antarctica': 'antarctica',
+                                            'Asia': 'asia',
+                                            'Europe': 'europe',
+                                            'North America': 'northAmerica',
+                                            'Oceania': 'oceania',
+                                            'South America': 'southAmerica',
+                                        };
+                                        const key = map[country.basics.continent];
+                                        if (!key) return country.basics.continent;
+                                        const tc = await getTranslations('countries.filters.continent');
+                                        return tc(key);
+                                    })()
                                 }
                             />
                             <DataItem label={t('geography.area')} value={`${country.basics.area.toLocaleString()} km²`} />
