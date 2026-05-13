@@ -13,15 +13,19 @@ const sections: TOCSection[] = [
     { id: 'getting-started', labelKey: 'docs.toc.gettingStarted' },
     { id: 'data-pipeline', labelKey: 'docs.toc.dataPipeline' },
     { id: 'data-schemas', labelKey: 'docs.toc.dataSchemas' },
+    { id: 'data-export', labelKey: 'docs.toc.dataExport' },
     { id: 'project-structure', labelKey: 'docs.toc.projectStructure' },
     { id: 'scripts', labelKey: 'docs.toc.scripts' },
     { id: 'contributing', labelKey: 'docs.toc.contributing' },
     { id: 'i18n', labelKey: 'docs.toc.i18n' }
 ];
 
+const APPEAR_AFTER = 300;
+
 export function TableOfContents() {
     const t = useTranslations();
     const [activeId, setActiveId] = useState('overview');
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -54,6 +58,15 @@ export function TableOfContents() {
         };
     }, []);
 
+    useEffect(() => {
+        const onScroll = () => {
+            setVisible(window.scrollY > APPEAR_AFTER);
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
@@ -63,17 +76,24 @@ export function TableOfContents() {
     };
 
     return (
-        <nav className="sticky top-20 hidden w-56 shrink-0 lg:block">
+        <nav
+            className={`sticky top-20 hidden h-fit w-56 shrink-0 lg:block transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+                visible
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 -translate-y-2 pointer-events-none'
+            }`}
+            aria-hidden={!visible}
+        >
             <div className="space-y-1">
-                <p className="mb-4 font-semibold">On this page</p>
+                <p className="mb-4 font-semibold text-zinc-900 dark:text-zinc-100">On this page</p>
                 {sections.map(({ id, labelKey }) => (
                     <button
                         key={id}
                         onClick={() => scrollToSection(id)}
-                        className={`block w-full text-left text-sm transition-colors hover:text-foreground ${
+                        className={`block w-full rounded-md px-3 py-1.5 text-left text-sm !bg-transparent !border-transparent transition-colors hover:!bg-zinc-100 dark:hover:!bg-zinc-800 hover:!text-zinc-900 dark:hover:!text-zinc-100 ${
                             activeId === id
-                                ? 'font-medium text-primary'
-                                : 'text-muted-foreground'
+                                ? 'font-medium !text-primary'
+                                : '!text-zinc-600 dark:!text-zinc-400'
                         }`}
                     >
                         {t(labelKey as any)}
