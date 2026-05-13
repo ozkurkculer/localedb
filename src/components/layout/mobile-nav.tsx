@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { Link } from '@/i18n/routing';
-import { Menu, Database, Info } from 'lucide-react';
+import { Menu, Database, Download, Info } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
@@ -63,6 +63,20 @@ export function MobileNav() {
                                 {t(item.title as any)}
                             </Link>
                         ))}
+                    </nav>
+                </div>
+
+                {/* Export Section (trailing) */}
+                <div className="mt-6">
+                    <nav className="flex flex-col space-y-3 px-5">
+                        <Link
+                            href="/export"
+                            onClick={() => setOpen(false)}
+                            className="inline-flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary"
+                        >
+                            <Download className="h-4 w-4" />
+                            <span>{t('nav.export')}</span>
+                        </Link>
                     </nav>
                 </div>
 

@@ -2,7 +2,7 @@
 
 import { Link } from '@/i18n/routing';
 import NextLink from 'next/link';
-import { ChevronDown, Database, Info } from 'lucide-react';
+import { ChevronDown, Database, Download, Info } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
@@ -42,7 +42,7 @@ export function Header() {
                 <nav className="hidden flex-1 items-center space-x-1 text-sm font-medium md:flex">
                     {/* Data Dropdown */}
                     <DropdownMenu open={dataOpen} onOpenChange={setDataOpen}>
-                        <DropdownMenuTrigger className="group inline-flex h-9 items-center gap-1 rounded-md px-3 text-foreground/80 transition-colors hover:bg-accent hover:text-foreground data-[state=open]:bg-accent data-[state=open]:text-foreground">
+                        <DropdownMenuTrigger className="group inline-flex h-9 items-center gap-1 rounded-md border-0 bg-transparent px-3 text-foreground/80 transition-colors hover:bg-accent hover:text-foreground data-[state=open]:bg-accent data-[state=open]:text-foreground">
                             <Database className="h-4 w-4" />
                             <span>{t(navGroups.data.label)}</span>
                             <ChevronDown className="h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -65,7 +65,7 @@ export function Header() {
 
                     {/* Project Dropdown */}
                     <DropdownMenu open={projectOpen} onOpenChange={setProjectOpen}>
-                        <DropdownMenuTrigger className="group inline-flex h-9 items-center gap-1 rounded-md px-3 text-foreground/80 transition-colors hover:bg-accent hover:text-foreground data-[state=open]:bg-accent data-[state=open]:text-foreground">
+                        <DropdownMenuTrigger className="group inline-flex h-9 items-center gap-1 rounded-md border-0 bg-transparent px-3 text-foreground/80 transition-colors hover:bg-accent hover:text-foreground data-[state=open]:bg-accent data-[state=open]:text-foreground">
                             <Info className="h-4 w-4" />
                             <span>{t(navGroups.project.label)}</span>
                             <ChevronDown className="h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -85,6 +85,19 @@ export function Header() {
                             ))}
                         </DropdownMenuContent>
                     </DropdownMenu>
+
+                    {/* Export (standalone, trailing) */}
+                    <Link
+                        href="/export"
+                        className={`inline-flex h-9 items-center gap-1 rounded-md border-0 px-3 transition-colors ${
+                            pathname === '/export'
+                                ? 'bg-accent text-foreground'
+                                : 'text-foreground/80 hover:bg-accent hover:text-foreground'
+                        }`}
+                    >
+                        <Download className="h-4 w-4" />
+                        <span>{t('nav.export')}</span>
+                    </Link>
                 </nav>
 
                 {/* Right side - Search, GitHub & Theme toggle */}
