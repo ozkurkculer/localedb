@@ -2,7 +2,7 @@
 
 @import 'shadcn/tailwind.css';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
     --color-background: var(--background);
@@ -226,6 +226,24 @@
     [dir='rtl'] header nav {
         flex-direction: row-reverse;
     }
+}
+
+/* Changelog accordion trigger — theme-aware via explicit .dark parent (bypass Tailwind dark variant) */
+.changelog-trigger {
+    background-color: oklch(0.985 0 0);
+    border-color: oklch(0.95 0 0);
+    color: oklch(0.141 0.005 285.823);
+}
+.changelog-trigger:hover {
+    background-color: oklch(0.96 0 0);
+}
+.dark .changelog-trigger {
+    background-color: oklch(0.21 0.006 285.885 / 0.6);
+    border-color: oklch(0.32 0.006 286 / 0.8);
+    color: oklch(0.985 0 0);
+}
+.dark .changelog-trigger:hover {
+    background-color: oklch(0.32 0.006 286 / 0.7);
 }
 
 /* Hide scrollbar on continent chip row */
