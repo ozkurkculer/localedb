@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Languages as LanguagesIcon, CheckCircle2, ArrowDown } from 'lucide-react';
+import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Languages as LanguagesIcon, CheckCircle2, ArrowDown, Download, FileJson, FileSpreadsheet, FileArchive } from 'lucide-react';
 import { TableOfContents } from '@/components/docs/table-of-contents';
 import { CodeBlock } from '@/components/docs/code-block';
 import { Metadata } from 'next';
@@ -214,6 +214,77 @@ pnpm dev`}
                                         </div>
                                     );
                                 })}
+                            </div>
+                        </section>
+
+                        {/* Data Export */}
+                        <section id="data-export" className="mb-24 scroll-mt-24 border-t pt-16">
+                            <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                                <div className="rounded-lg bg-sky-500/10 p-2">
+                                    <Download className="h-6 w-6 text-sky-500" />
+                                </div>
+                                {t('dataExport.title')}
+                            </h2>
+                            <p className="text-lg text-muted-foreground mb-8">
+                                {t('dataExport.description')}
+                            </p>
+
+                            {/* Wizard Steps */}
+                            <div className="rounded-xl border border-border bg-card p-6 mb-6">
+                                <h3 className="text-xl font-bold mb-4">{t('dataExport.wizard.title')}</h3>
+                                <div className="grid gap-3 sm:grid-cols-2">
+                                    {Object.entries(t.raw('dataExport.wizard.steps')).map(([key, step]: [string, any]) => (
+                                        <div key={key} className="rounded-lg border border-border/60 bg-muted/30 p-4">
+                                            <h4 className="font-semibold mb-1">{step.title}</h4>
+                                            <p className="text-sm text-muted-foreground">{step.description}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Formats */}
+                            <div className="rounded-xl border border-border bg-card p-6 mb-6">
+                                <h3 className="text-xl font-bold mb-4">{t('dataExport.formats.title')}</h3>
+                                <ul className="space-y-3">
+                                    {(() => {
+                                        const items = t.raw('dataExport.formats.items') as Record<string, string>;
+                                        const icons: Record<string, typeof FileJson> = {
+                                            jsonPretty: FileJson,
+                                            jsonMin: FileJson,
+                                            csv: FileSpreadsheet,
+                                            zip: FileArchive,
+                                        };
+                                        return Object.entries(items).map(([key, value]) => {
+                                            const Icon = icons[key] ?? FileJson;
+                                            return (
+                                                <li key={key} className="flex items-start gap-3">
+                                                    <Icon className="h-5 w-5 text-sky-500 shrink-0 mt-0.5" />
+                                                    <span className="text-muted-foreground">{value}</span>
+                                                </li>
+                                            );
+                                        });
+                                    })()}
+                                </ul>
+                            </div>
+
+                            {/* API */}
+                            <div className="rounded-xl border border-border bg-card p-6">
+                                <h3 className="text-xl font-bold mb-2">{t('dataExport.api.title')}</h3>
+                                <p className="text-muted-foreground mb-4">{t('dataExport.api.description')}</p>
+                                <CodeBlock
+                                    code={`POST /api/export
+Content-Type: application/json
+
+{
+  "dataset": "countries",
+  "entities": ["TR", "US", "DE"],
+  "fields": ["basics.name", "currency.code", "phone.callingCode"],
+  "format": "json",
+  "preview": false
+}`}
+                                    language="bash"
+                                />
+                                <p className="mt-4 text-sm text-muted-foreground">{t('dataExport.api.limits')}</p>
                             </div>
                         </section>
 

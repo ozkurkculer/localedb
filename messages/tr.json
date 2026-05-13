@@ -759,6 +759,7 @@
             "gettingStarted": "Başlarken",
             "dataPipeline": "Veri Hattı",
             "dataSchemas": "Veri Şemaları",
+            "dataExport": "Data Export",
             "projectStructure": "Proje Yapısı",
             "scripts": "Komut Dosyası Referansı",
             "contributing": "Veri Katkısı",
@@ -876,6 +877,45 @@
                     "example": "Biçimlendirilmiş örnek",
                     "countries": "Bu para birimini kullanan ülke kodları dizisi"
                 }
+            }
+        },
+        "dataExport": {
+            "title": "Data Export",
+            "description": "Build custom locale-data exports with the /export wizard. No scrapers, no scripts, no signups.",
+            "wizard": {
+                "title": "4-Step Wizard",
+                "steps": {
+                    "dataset": {
+                        "title": "1. Pick a dataset",
+                        "description": "Choose Countries, Currencies, Languages, or Airports."
+                    },
+                    "entities": {
+                        "title": "2. Select entities",
+                        "description": "Searchable, paginated checkbox grid (60 per page) with select-all-filtered helpers. Up to 500 entities per request."
+                    },
+                    "fields": {
+                        "title": "3. Choose fields",
+                        "description": "Collapsible field tree generated from the dataset schema. Per-group indeterminate state, sensible defaults."
+                    },
+                    "format": {
+                        "title": "4. Format & download",
+                        "description": "Pick JSON (pretty), JSON (minified), CSV (RFC 4180, flattened), or ZIP (one JSON file per entity)."
+                    }
+                }
+            },
+            "formats": {
+                "title": "Supported Formats",
+                "items": {
+                    "jsonPretty": "JSON (pretty) — indented, human-readable",
+                    "jsonMin": "JSON (minified) — compact, single-line",
+                    "csv": "CSV — RFC 4180, dot-notation keys for nested fields",
+                    "zip": "ZIP — one JSON file per entity, ideal for batch processing"
+                }
+            },
+            "api": {
+                "title": "API Endpoint",
+                "description": "Server-side serialization happens at POST /api/export (Node runtime, maxDuration: 30). Pass dataset, entities, fields, and format in the JSON body. Set preview: true for an inline first-record JSON response without Content-Disposition.",
+                "limits": "Limits: max 500 entities per request, dataset must be one of countries / currencies / languages / airports."
             }
         },
         "projectStructure": {

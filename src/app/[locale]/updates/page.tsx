@@ -1,7 +1,7 @@
 import { getAllUpdates, getAppVersion } from "@/lib/updates";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { UpdatesList } from "@/components/updates/updates-list";
+import { ChangelogAccordion } from "@/components/updates/changelog-accordion";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("updates");
@@ -58,7 +58,7 @@ export default async function UpdatesPage() {
       </div>
 
       {/* Updates List */}
-      <UpdatesList updates={updates} />
+      <ChangelogAccordion updates={updates} />
     </div>
   );
 }
