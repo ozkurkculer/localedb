@@ -181,6 +181,32 @@
     animation: fadeInUp 0.5s ease-out 0.8s both;
 }
 
+/* Hero locale data boxes: stepped wipe in/out to match the dither pixel grid */
+@keyframes dither-box-in {
+    from {
+        clip-path: inset(0 100% 100% 0);
+    }
+    to {
+        clip-path: inset(0 -8px -8px 0);
+    }
+}
+
+@keyframes dither-box-out {
+    from {
+        clip-path: inset(0 -8px -8px 0);
+    }
+    to {
+        clip-path: inset(100% 0 0 100%);
+    }
+}
+
+/* 50% checkerboard on 3px cells, the same cell size as the dither background */
+.dither-shadow {
+    background-image: repeating-conic-gradient(var(--foreground) 0 25%, transparent 0 50%);
+    background-size: 6px 6px;
+    opacity: 0.45;
+}
+
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
     *,
