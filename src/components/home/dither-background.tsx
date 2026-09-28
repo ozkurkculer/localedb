@@ -202,6 +202,10 @@ export function DitherBackground({ className }: { className?: string }) {
 
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
         const mouse = { x: 0, y: 0, target: 0, strength: 0 };
+        // Size last pushed to this effect's program. Tracked here rather than read from
+        // the canvas: when the effect re-runs on the same element (locale change, Strict
+        // Mode) the canvas already has the right size but the new program has no uniform.
+        const size = { width: 0, height: 0 };
         let frame = 0;
         let visible = true;
         const start = performance.now();
@@ -237,7 +241,9 @@ export function DitherBackground({ className }: { className?: string }) {
         const resize = () => {
             const width = Math.max(1, Math.ceil(canvas.clientWidth / PIXEL_SIZE));
             const height = Math.max(1, Math.ceil(canvas.clientHeight / PIXEL_SIZE));
-            if (canvas.width === width && canvas.height === height) return;
+            if (size.width === width && size.height === height) return;
+            size.width = width;
+            size.height = height;
             canvas.width = width;
             canvas.height = height;
             gl.viewport(0, 0, width, height);
