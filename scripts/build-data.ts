@@ -13,6 +13,7 @@ import type {
 import { Cldr } from './sources/cldr';
 import { TimeZones, standardOffset } from './sources/tz';
 import { AddressFormats } from './sources/address';
+import { Wikidata } from './sources/wikidata';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -336,6 +337,10 @@ async function build() {
     const addressFormats = new AddressFormats(path.join(DATA_DIR, 'libaddressinput', 'countryinfo.txt'));
     if (!addressFormats.size) console.warn('⚠️  libaddressinput data not found, address formats use defaults. Run `pnpm update:data address`.');
 
+    console.log('🔗 Loading Wikidata...');
+    const wikidata = new Wikidata(path.join(DATA_DIR, 'wikidata', 'countries.json'));
+    if (!wikidata.size) console.warn('⚠️  Wikidata data not found; FIFA, vehicle, ITU, UIC, MID, MCC codes, capital coordinates and driving side stay empty. Run `pnpm update:data wikidata`.');
+
     // Legacy: SimpleLocalize is being phased out. When its files are present they
     // only fill fields no other source provides yet (see LEGACY_SL_FIELDS).
     const slCountries: any[] = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
@@ -562,6 +567,7 @@ async function build() {
                 cldr,
                 timeZones,
                 addressFormats,
+                wikidata,
                 wbData: wbDataMap.get(mledozeCountry.cca3),
                 index: countryIndex,
                 langMap: languageUsageMap,
@@ -614,6 +620,7 @@ async function build() {
             { name: "libphonenumber", version: "latest" },
             { name: "IANA tz", version: "latest" },
             { name: "libaddressinput", version: "latest" },
+            { name: "Wikidata", version: "latest" },
             ...(slMap.size ? [{ name: "SimpleLocalize (legacy fallback)", version: "latest" }] : []),
             { name: "MWGG Airports", version: "latest" },
             { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
@@ -630,7 +637,7 @@ build().catch(console.error);
  * SimpleLocalize files are present and will move to IANA tz, libaddressinput
  * and Wikidata step by step.
  */
-const LEGACY_SL_FIELDS = 'capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
+const LEGACY_SL_FIELDS = 'STANAG 1059 codes, currency subunit names';
 
 interface ProcessCountryInput {
     isoCode: string;
@@ -639,6 +646,7 @@ interface ProcessCountryInput {
     cldr: Cldr;
     timeZones: TimeZones;
     addressFormats: AddressFormats;
+    wikidata: Wikidata;
     wbData?: WorldBankData;
     index: CountryIndexEntry[];
     langMap: Record<string, string[]>;
@@ -650,7 +658,7 @@ interface ProcessCountryInput {
 }
 
 async function processCountry({
-    isoCode, mledozeData, slData, cldr, timeZones, addressFormats, wbData, index, langMap, languageInfoMap,
+    isoCode, mledozeData, slData, cldr, timeZones, addressFormats, wikidata, wbData, index, langMap, languageInfoMap,
     currencyMap, currencyInfoMap, airports, phoneMeta,
 }: ProcessCountryInput) {
     // --- Locale: CLDR likely language, most specific CLDR locale available (e.g. de-CH, zh-Hant-TW)
@@ -728,20 +736,23 @@ async function processCountry({
     const primaryTimezone = timeZones.primary(isoCode, mledozeData.capital?.[0] || '', cldr.representativeZones(isoCode));
 
     const codes = cldr.territoryCode(isoCode);
+    const wiki = wikidata.get(isoCode);
+    const capital: string = mledozeData.capital?.[0] || "";
     const tld: string[] = mledozeData.tld || [];
 
     // Assemble Data
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(addressFormats.has(isoCode) ? ["libaddressinput"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
+        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(addressFormats.has(isoCode) ? ["libaddressinput"] : []), ...(wiki ? ["Wikidata"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
         basics: {
             name: name,
             officialName: mledozeData.name.official || name,
             nativeName: territories || mledozeData.name.common,
             officialNativeName: mledozeData.name.native?.[Object.keys(mledozeData.name.native || {})[0]]?.official || "",
-            capital: mledozeData.capital?.[0] || "",
-            capitalCoordinates: slData ? [slData.capital_latitude, slData.capital_longitude] : [0, 0],
+            capital,
+            capitalCoordinates: wikidata.capitalCoordinates(isoCode, capital)
+                ?? (slData ? [slData.capital_latitude, slData.capital_longitude] : [0, 0]),
             coordinates: mledozeData.latlng || [0, 0],
             continent: cldr.continent(isoCode),
             region: region,
@@ -766,15 +777,15 @@ async function processCountry({
             bcp47: [cldrLocale],
             internetTld: tld[0] || "",
             ioc: mledozeData.cioc || "",
-            fifa: slData?.fifa || "",
-            vehicleCode: slData?.vehicle_code || "",
-            fips10: codes.fips10,
+            fifa: wiki?.fifa || slData?.fifa || "",
+            vehicleCode: wiki?.vehicleCode || slData?.vehicle_code || "",
+            fips10: codes.fips10 || wiki?.fips10 || "",
             unLocode: isoCode,
             stanag1059: slData?.stanag_1059 || "",
-            itu: slData?.itu || "",
-            uic: slData?.uic || "",
-            maritime: slData?.maritime || 0,
-            mmc: slData?.mmc || 0
+            itu: wiki?.itu || slData?.itu || "",
+            uic: wiki?.uic || slData?.uic || "",
+            maritime: wiki?.maritime || slData?.maritime || 0,
+            mmc: wiki?.mcc || slData?.mmc || 0
         },
         currency: currencyObj,
         dateTime: {
@@ -880,7 +891,7 @@ async function processCountry({
             measurementSystem: "metric",
             temperatureScale: "celsius",
             paperSize: "A4",
-            drivingSide: mledozeData?.car?.side || "right",
+            drivingSide: wiki?.drivingSide || "right",
             weekNumbering: "ISO"
         },
         airports: airports

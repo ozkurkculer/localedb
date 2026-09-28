@@ -6,6 +6,7 @@ import AdmZip from 'adm-zip';
 import dotenv from 'dotenv';
 import { Readable } from 'stream';
 import { finished } from 'stream/promises';
+import { WIKIDATA_COUNTRY_QUERY } from './sources/wikidata';
 
 // Load .env
 dotenv.config();
@@ -175,6 +176,26 @@ async function updateAddressFormats() {
     );
 }
 
+async function updateWikidata() {
+    console.log('\n--- Wikidata ---');
+    const outputDir = path.join(DATA_DIR, 'wikidata');
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    const res = await fetch(process.env.WIKIDATA_SPARQL_URL || 'https://query.wikidata.org/sparql', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            Accept: 'application/sparql-results+json',
+            // Required by the Wikimedia User-Agent policy.
+            'User-Agent': 'LocaleDB data build (https://localedb.org; https://github.com/ozkurkculer/localedb)',
+        },
+        body: new URLSearchParams({ query: WIKIDATA_COUNTRY_QUERY }),
+    });
+    if (!res.ok) throw new Error(`Wikidata query failed: ${res.status} ${res.statusText}`);
+    const json = await res.json() as { results?: { bindings?: unknown[] } };
+    fs.writeFileSync(path.join(outputDir, 'countries.json'), JSON.stringify(json));
+    console.log(`✅ Saved ${json.results?.bindings?.length ?? 0} Wikidata rows`);
+}
+
 async function updateICU() {
     console.log('\n--- ICU ---');
     let version = process.env.ICU_VERSION || 'latest';
@@ -196,7 +217,7 @@ async function updateICU() {
 
 async function main() {
     const args = process.argv.slice(2);
-    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber', 'tz', 'address'];
+    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber', 'tz', 'address', 'wikidata'];
 
     // Check for helps/list
     if (args.includes('--help') || args.includes('-h')) {
@@ -234,6 +255,7 @@ If no source is specified, ALL sources will be updated.
         if (sourcesToUpdate.includes('libphonenumber')) await updateLibphonenumber();
         if (sourcesToUpdate.includes('tz')) await updateTimeZones();
         if (sourcesToUpdate.includes('address')) await updateAddressFormats();
+        if (sourcesToUpdate.includes('wikidata')) await updateWikidata();
 
         console.log('\n✨ Selected data sources updated successfully!');
     } catch (error) {

@@ -19,6 +19,9 @@ We merge data from multiple sources to create the most accurate and rich dataset
 ### Addresses
 **Google libaddressinput** (`countryinfo.txt`, Apache 2.0): address format per country, postal code regex and examples, and the name of the first-level division (state, province, prefecture…).
 
+### Country Identifiers
+**Wikidata** (SPARQL, CC0): FIFA (P3441), vehicle registration (P395), ITU letter (P3024), UIC (P2982), maritime identification digits (P2979) and mobile country (P2258) codes, FIPS 10-4 fallback (P901), capital coordinates (P36 → P625) and driving side (P1622). Fetched with `pnpm update:data wikidata`.
+
 ### Phone Data
 **Google libphonenumber** (`PhoneNumberMetadata.xml`): calling codes, number patterns, formats and example numbers.
 
@@ -29,7 +32,7 @@ Merged from two sources:
 
 ## Licenses
 
-Each source keeps its own license (Unicode License v3, ODbL 1.0, CC BY 4.0, public domain, Apache 2.0, MIT, CC BY-SA 4.0). The full list, with share-alike and attribution requirements, is in [`packages/core/NOTICE`](packages/core/NOTICE).
+Each source keeps its own license (Unicode License v3, ODbL 1.0, CC BY 4.0, public domain, CC0, Apache 2.0, MIT, CC BY-SA 4.0). The full list, with share-alike and attribution requirements, is in [`packages/core/NOTICE`](packages/core/NOTICE).
 
 ## Automation Commands
 
