@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "モダンアプリのためのグローバルデータ",
-            "subtitle": "LocaleDBは、国際的なアプリケーションを構築する開発者のための包括的なオープンソースのローカリゼーションデータベースです。CLDR、ISO標準、OpenFlightsなどの権威ある情報源からデータを集約および処理しています。"
+            "subtitle": "LocaleDB は、国際的なアプリケーションを作る開発者と、世界が日付・数値・通貨をどう表記するかに興味を持つすべての人のための、包括的なオープンソースのローカリゼーションデータベースです。Unicode CLDR、IANA タイムゾーンデータベース、Wikidata、libphonenumber などのオープンデータを集約しています。"
         },
         "challenge": {
             "title": "課題",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "データソース",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "当社のデータは、信頼できる権威ある情報源から集約されています：",
-            "cldr": "Unicode CLDR（Common Locale Data Repository）",
-            "iso": "ISO標準組織",
-            "openflights": "OpenFlights空港データベース",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "世界銀行",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "コミュニティの貢献"
+            ]
         },
         "cta": {
             "title": "オープンソースとコミュニティ主導",
             "description": "LocaleDBはMITライセンスであり、貢献を歓迎します。タイプミスの修正、欠落している国の追加、UIの改善など、あなたの助けを歓迎します。",
             "github": "GitHubで見る",
             "contributing": "貢献ガイド"
-        },
-        "intro": "LocaleDBは、国際的なアプリケーションを構築する開発者のための包括的なオープンソースのローカリゼーションデータベースです。CLDR、ISO標準、OpenFlightsなどの権威ある情報源からデータを集約および処理しています。",
-        "whatIsIncluded": {
-            "title": "含まれるもの",
-            "countries": {
-                "title": "国データ",
-                "items": [
-                    "ISO 3166-1コード（Alpha-2、Alpha-3、Numeric）",
-                    "BCP-47ロケールタグ",
-                    "通貨フォーマットパターン",
-                    "日付と時刻のフォーマット",
-                    "数値フォーマット規則",
-                    "電話コードとトップレベルドメイン",
-                    "地理情報（地域、大陸、国境）"
-                ]
-            },
-            "currencies": {
-                "title": "通貨フォーマット",
-                "items": [
-                    "記号の配置",
-                    "小数点と桁区切り記号",
-                    "小数桁数",
-                    "補助単位情報",
-                    "会計フォーマットの例"
-                ]
-            },
-            "languages": {
-                "title": "言語データ",
-                "items": [
-                    "ISO 639-1、639-2、639-3コード",
-                    "ネイティブ言語名",
-                    "話されている国"
-                ]
-            },
-            "airports": {
-                "title": "空港情報",
-                "items": [
-                    "IATAおよびICAOコード",
-                    "地理座標",
-                    "地域および国データ",
-                    "都市およびタイムゾーン情報"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "オープンソース",
-            "description": "LocaleDBは完全に無料でオープンソースです。このデータを制限なくプロジェクトで使用できます。ソースコードとデータは、MITライセンスの下でGitHubで入手できます。"
         }
     },
     "phoneNumbers": {
@@ -855,8 +809,8 @@
             "description": "LocaleDBは、国際的なアプリケーションを構築する開発者向けの包括的なオープンソースのローカリゼーション百科事典です。",
             "stats": {
                 "countries": "250カ国以上",
-                "languages": "114言語",
-                "currencies": "161通貨",
+                "languages": "100+言語",
+                "currencies": "150+通貨",
                 "airports": "9,415空港"
             },
             "features": {
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "外部ソース",
-                    "description": "CLDR、mledoze、世界銀行、libphonenumber、IANA tz、libaddressinput、Wikidata、OpenFlights (MWGG)"
+                    "description": "CLDR、mledoze、世界銀行、libphonenumber、IANA tz、libaddressinput、Wikidata、mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "生データをダウンロード",

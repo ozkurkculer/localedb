@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "आधुनिक ऐप्स के लिए वैश्विक डेटा",
-            "subtitle": "LocaleDB अंतर्राष्ट्रीय अनुप्रयोग बनाने वाले डेवलपर्स के लिए स्थानीयकरण डेटा का एक व्यापक, ओपन-सोर्स डेटाबेस है। हम CLDR, ISO मानकों और OpenFlights सहित आधिकारिक स्रोतों से डेटा एकत्र और संसाधित करते हैं।"
+            "subtitle": "LocaleDB स्थानीयकरण डेटा का एक व्यापक, ओपन-सोर्स डेटाबेस है, जो अंतरराष्ट्रीय ऐप्लिकेशन बनाने वाले डेवलपर्स और यह जानने को उत्सुक हर किसी के लिए है कि दुनिया तारीखें, संख्याएँ और मुद्रा कैसे लिखती है। हम Unicode CLDR, IANA टाइम ज़ोन डेटाबेस, Wikidata और libphonenumber जैसे खुले स्रोतों से डेटा एकत्र करते हैं।"
         },
         "challenge": {
             "title": "चुनौती",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "डेटा स्रोत",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "हमारा डेटा विश्वसनीय, आधिकारिक स्रोतों से एकत्र किया गया है:",
-            "cldr": "Unicode CLDR (Common Locale Data Repository)",
-            "iso": "ISO मानक संगठन",
-            "openflights": "OpenFlights हवाई अड्डा डेटाबेस",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "विश्व बैंक",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "समुदाय का योगदान"
+            ]
         },
         "cta": {
             "title": "ओपन सोर्स और समुदाय संचालित",
             "description": "LocaleDB MIT लाइसेंस प्राप्त है और योगदान का स्वागत करता है। चाहे आप कोई टाइपो ठीक कर रहे हों, कोई गायब देश जोड़ रहे हों, या UI में सुधार कर रहे हों, हमें आपकी मदद बहुत पसंद आएगी।",
             "github": "GitHub पर देखें",
             "contributing": "योगदान गाइड"
-        },
-        "intro": "LocaleDB अंतर्राष्ट्रीय एप्लिकेशन बनाने वाले डेवलपर्स के लिए स्थानीयकरण डेटा का एक व्यापक, ओपन-सोर्स डेटाबेस है। हम CLDR, ISO मानकों और OpenFlights सहित आधिकारिक स्रोतों से डेटा एकत्र और प्रोसेस करते हैं।",
-        "whatIsIncluded": {
-            "title": "क्या शामिल है",
-            "countries": {
-                "title": "देश डेटा",
-                "items": [
-                    "ISO 3166-1 कोड (Alpha-2, Alpha-3, Numeric)",
-                    "BCP-47 लोकेल टैग",
-                    "मुद्रा फॉर्मेटिंग पैटर्न",
-                    "दिनांक और समय प्रारूप",
-                    "संख्या फॉर्मेटिंग परंपराएं",
-                    "फोन कोड और TLD",
-                    "भौगोलिक जानकारी (क्षेत्र, महाद्वीप, सीमाएं)"
-                ]
-            },
-            "currencies": {
-                "title": "मुद्रा प्रारूप",
-                "items": [
-                    "प्रतीक स्थिति",
-                    "दशमलव और हजार विभाजक",
-                    "दशमलव अंकों की संख्या",
-                    "उपइकाई जानकारी",
-                    "लेखा प्रारूप उदाहरण"
-                ]
-            },
-            "languages": {
-                "title": "भाषा डेटा",
-                "items": [
-                    "ISO 639-1, 639-2, और 639-3 कोड",
-                    "मूल भाषा नाम",
-                    "बोली जाने वाले देश"
-                ]
-            },
-            "airports": {
-                "title": "हवाई अड्डा जानकारी",
-                "items": [
-                    "IATA और ICAO कोड",
-                    "भौगोलिक निर्देशांक",
-                    "क्षेत्र और देश डेटा",
-                    "शहर और समय क्षेत्र जानकारी"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "ओपन सोर्स",
-            "description": "LocaleDB पूरी तरह से निःशुल्क और ओपन सोर्स है। आप इस डेटा को बिना किसी प्रतिबंध के अपनी परियोजनाओं में उपयोग कर सकते हैं। स्रोत कोड और डेटा MIT लाइसेंस के तहत GitHub पर उपलब्ध हैं।"
         }
     },
     "phoneNumbers": {
@@ -855,8 +809,8 @@
             "description": "LocaleDB अंतरराष्ट्रीय एप्लिकेशन बनाने वाले डेवलपर्स के लिए एक व्यापक, ओपन-सोर्स स्थानीयकरण विश्वकोश है।",
             "stats": {
                 "countries": "250+ देश",
-                "languages": "114 भाषाएँ",
-                "currencies": "161 मुद्राएँ",
+                "languages": "100+ भाषाएँ",
+                "currencies": "150+ मुद्राएँ",
                 "airports": "9,415 हवाई अड्डे"
             },
             "features": {
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "बाहरी स्रोत",
-                    "description": "CLDR, mledoze, विश्व बैंक, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, विश्व बैंक, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "कच्चा डेटा डाउनलोड करें",

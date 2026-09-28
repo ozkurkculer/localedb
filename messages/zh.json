@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "现代应用的全球数据",
-            "subtitle": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。"
+            "subtitle": "LocaleDB 是一个全面的开源本地化数据库，面向构建国际化应用的开发者，也面向所有好奇世界如何书写日期、数字和货币的人。我们汇集了来自 Unicode CLDR、IANA 时区数据库、Wikidata 和 libphonenumber 等来源的开放数据。"
         },
         "challenge": {
             "title": "挑战",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "数据来源",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "我们的数据来自可信的权威来源：",
-            "cldr": "Unicode CLDR（Common Locale Data Repository）",
-            "iso": "ISO 标准组织",
-            "openflights": "OpenFlights 机场数据库",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "World Bank",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "社区贡献"
+            ]
         },
         "cta": {
             "title": "开源和社区驱动",
             "description": "LocaleDB 采用 MIT 许可并欢迎贡献。无论您是修复拼写错误、添加缺失的国家还是改进 UI，我们都欢迎您的帮助。",
             "github": "在 GitHub 上查看",
             "contributing": "贡献指南"
-        },
-        "intro": "LocaleDB 是为构建国际化应用程序的开发人员提供的全面的开源本地化数据库。我们从 CLDR、ISO 标准和 OpenFlights 等权威来源汇总和处理数据。",
-        "whatIsIncluded": {
-            "title": "包含内容",
-            "countries": {
-                "title": "国家数据",
-                "items": [
-                    "ISO 3166-1 代码（Alpha-2、Alpha-3、Numeric）",
-                    "BCP-47 区域标记",
-                    "货币格式模式",
-                    "日期和时间格式",
-                    "数字格式约定",
-                    "电话代码和顶级域名",
-                    "地理信息（地区、大洲、边界）"
-                ]
-            },
-            "currencies": {
-                "title": "货币格式",
-                "items": [
-                    "符号定位",
-                    "小数和千位分隔符",
-                    "小数位数",
-                    "子单位信息",
-                    "会计格式示例"
-                ]
-            },
-            "languages": {
-                "title": "语言数据",
-                "items": [
-                    "ISO 639-1、639-2 和 639-3 代码",
-                    "本地语言名称",
-                    "使用国家"
-                ]
-            },
-            "airports": {
-                "title": "机场信息",
-                "items": [
-                    "IATA 和 ICAO 代码",
-                    "地理坐标",
-                    "地区和国家数据",
-                    "城市和时区信息"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "开源",
-            "description": "LocaleDB 完全免费且开源。您可以无限制地在项目中使用这些数据。源代码和数据在 GitHub 上以 MIT 许可证提供。"
         }
     },
     "phoneNumbers": {
@@ -855,14 +809,14 @@
             "description": "LocaleDB 是一个全面的开源本地化百科全书，专为构建国际应用程序的开发人员设计。",
             "stats": {
                 "countries": "250+ 国家",
-                "languages": "114 种语言",
-                "currencies": "161 种货币",
+                "languages": "100+ 种语言",
+                "currencies": "150+ 种货币",
                 "airports": "9,415 个机场"
             },
             "features": {
                 "title": "核心功能",
                 "items": {
-                    "comprehensive": "来自权威来源的全面数据 (CLDR, World Bank, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights)",
+                    "comprehensive": "来自权威来源的全面数据 (CLDR, World Bank, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports)",
                     "static": "静态生成 - 无需运行时数据库",
                     "openSource": "MIT 许可且由社区驱动",
                     "i18n": "支持 11 种语言，包括阿拉伯语的 RTL 支持"
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "外部来源",
-                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "下载原始数据",

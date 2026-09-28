@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "Modern Uygulamalar için Küresel Veri",
-            "subtitle": "LocaleDB, uluslararası uygulamalar geliştiren geliştiriciler için kapsamlı, açık kaynaklı bir yerelleştirme veri tabanıdır. CLDR, ISO standartları ve OpenFlights dahil yetkili kaynaklardan veri topluyor ve işliyoruz."
+            "subtitle": "LocaleDB, uluslararası uygulamalar geliştirenler ve dünyanın tarihleri, sayıları ve parayı nasıl yazdığını merak eden herkes için kapsamlı, açık kaynaklı bir yerelleştirme veritabanıdır. Unicode CLDR, IANA saat dilimi veritabanı, Wikidata ve libphonenumber gibi açık kaynaklardan veri derliyoruz."
         },
         "challenge": {
             "title": "Zorluk",
@@ -420,13 +420,19 @@
         },
         "sources": {
             "title": "Güvenilir Veri Kaynakları",
-            "items": {
-                "0": "CLDR (Ortak Yerel Veri Deposu)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Havalimanları",
-                "3": "Google libaddressinput",
-                "4": "Topluluk Katkıları"
-            }
+            "items": [
+                "CLDR (Ortak Yerel Veri Deposu)",
+                "mledoze/countries",
+                "Dünya Bankası",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "Topluluk Katkıları"
+            ]
         },
         "cta": {
             "title": "Açık Kaynak ve Topluluk Odaklı",
@@ -765,14 +771,14 @@
             "description": "LocaleDB, uluslararası uygulamalar geliştiren yazılımcılar için kapsamlı, açık kaynaklı bir yerelleştirme ansiklopedisidir.",
             "stats": {
                 "countries": "250+ Ülke",
-                "languages": "114 Dil",
-                "currencies": "161 Para Birimi",
+                "languages": "100+ Dil",
+                "currencies": "150+ Para Birimi",
                 "airports": "9,415 Havalimanı"
             },
             "features": {
                 "title": "Temel Özellikler",
                 "items": {
-                    "comprehensive": "Yetkili kaynaklardan kapsamlı veriler (CLDR, Dünya Bankası, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights)",
+                    "comprehensive": "Yetkili kaynaklardan kapsamlı veriler (CLDR, Dünya Bankası, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports)",
                     "static": "Statik oluşturma - çalışma zamanı veritabanı gerekmez",
                     "openSource": "MIT lisanslı ve topluluk odaklı",
                     "i18n": "Arapça için RTL desteği ile 11 dil"
@@ -796,7 +802,7 @@
             "steps": {
                 "sources": {
                     "title": "Harici Kaynaklar",
-                    "description": "CLDR, mledoze, Dünya Bankası, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, Dünya Bankası, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "Ham Veriyi İndir",

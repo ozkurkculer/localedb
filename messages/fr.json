@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "Global Data for Modern Apps",
-            "subtitle": "LocaleDB is a comprehensive, open-source database of localization data for developers building international applications. We aggregate and process data from authoritative sources including CLDR, ISO standards, and OpenFlights."
+            "subtitle": "LocaleDB est une base de données complète et open source de données de localisation, pour les développeurs d'applications internationales et pour toute personne curieuse de la façon dont le monde écrit ses dates, ses nombres et sa monnaie. Nous rassemblons des données ouvertes issues de sources comme Unicode CLDR, la base de fuseaux horaires de l'IANA, Wikidata et libphonenumber."
         },
         "challenge": {
             "title": "The Challenge",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "Sources de Données",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "Nos données proviennent de sources fiables et faisant autorité :",
-            "cldr": "Unicode CLDR (Common Locale Data Repository)",
-            "iso": "Organisations de normes ISO",
-            "openflights": "Base de données d'aéroports OpenFlights",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "Banque Mondiale",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "Contributions de la communauté"
+            ]
         },
         "cta": {
             "title": "Open Source & Community Driven",
             "description": "LocaleDB is MIT licensed and welcomes contributions. Whether you're fixing a typo, adding a missing country, or improving the UI, we'd love your help.",
             "github": "View on GitHub",
             "contributing": "Contributing Guide"
-        },
-        "intro": "LocaleDB est une base de données complète et open source de données de localisation pour les développeurs créant des applications internationales. Nous agrégeons et traitons des données provenant de sources faisant autorité, notamment CLDR, les normes ISO et OpenFlights.",
-        "whatIsIncluded": {
-            "title": "Ce Qui Est Inclus",
-            "countries": {
-                "title": "Données de Pays",
-                "items": [
-                    "Codes ISO 3166-1 (Alpha-2, Alpha-3, Numeric)",
-                    "Balises régionales BCP-47",
-                    "Modèles de formatage de devises",
-                    "Formats de date et heure",
-                    "Conventions de formatage des nombres",
-                    "Codes téléphoniques et TLD",
-                    "Informations géographiques (région, continent, frontières)"
-                ]
-            },
-            "currencies": {
-                "title": "Formats de Devises",
-                "items": [
-                    "Positionnement des symboles",
-                    "Séparateurs décimaux et de milliers",
-                    "Nombre de chiffres décimaux",
-                    "Informations sur les sous-unités",
-                    "Exemples de format comptable"
-                ]
-            },
-            "languages": {
-                "title": "Données de Langues",
-                "items": [
-                    "Codes ISO 639-1, 639-2 et 639-3",
-                    "Noms de langues natifs",
-                    "Pays où elles sont parlées"
-                ]
-            },
-            "airports": {
-                "title": "Informations sur les Aéroports",
-                "items": [
-                    "Codes IATA et ICAO",
-                    "Coordonnées géographiques",
-                    "Données de région et de pays",
-                    "Informations sur la ville et le fuseau horaire"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "Open Source",
-            "description": "LocaleDB est entièrement gratuit et open source. Vous pouvez utiliser ces données dans vos projets sans restrictions. Le code source et les données sont disponibles sur GitHub sous licence MIT."
         }
     },
     "phoneNumbers": {
@@ -855,14 +809,14 @@
             "description": "LocaleDB est une encyclopédie de localisation complète et open-source pour les développeurs créant des applications internationales.",
             "stats": {
                 "countries": "250+ Pays",
-                "languages": "114 Langues",
-                "currencies": "161 Devises",
+                "languages": "100+ Langues",
+                "currencies": "150+ Devises",
                 "airports": "9,415 Aéroports"
             },
             "features": {
                 "title": "Caractéristiques Clés",
                 "items": {
-                    "comprehensive": "Données complètes provenant de sources faisant autorité (CLDR, Banque Mondiale, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights)",
+                    "comprehensive": "Données complètes provenant de sources faisant autorité (CLDR, Banque Mondiale, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports)",
                     "static": "Génération statique - aucune base de données d'exécution requise",
                     "openSource": "Licencia MIT et piloté par la communauté",
                     "i18n": "11 langues avec prise en charge RTL pour l'arabe"
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "Sources Externes",
-                    "description": "CLDR, mledoze, Banque Mondiale, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, Banque Mondiale, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "Télécharger les Données Brutes",

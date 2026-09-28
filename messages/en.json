@@ -383,7 +383,7 @@
         },
         "hero": {
             "title": "Global Data for Modern Apps",
-            "subtitle": "LocaleDB is a comprehensive, open-source database of localization data for developers building international applications. We aggregate and process data from authoritative sources including CLDR, ISO standards, and OpenFlights."
+            "subtitle": "LocaleDB is a comprehensive, open-source database of localization data, for developers building international applications and for anyone curious about how the world writes its dates, numbers and money. We aggregate open data from sources including Unicode CLDR, the IANA time zone database, Wikidata and libphonenumber."
         },
         "challenge": {
             "title": "The Challenge",
@@ -422,8 +422,14 @@
             "items": [
                 "CLDR (Common Locale Data Repository)",
                 "mledoze/countries",
-                "IP2Location Airports",
+                "World Bank",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
                 "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
                 "Community Contributions"
             ]
         },
@@ -764,14 +770,14 @@
             "description": "LocaleDB is a comprehensive, open-source localization encyclopedia for developers building international applications.",
             "stats": {
                 "countries": "250+ Countries",
-                "languages": "114 Languages",
-                "currencies": "161 Currencies",
+                "languages": "100+ Languages",
+                "currencies": "150+ Currencies",
                 "airports": "9,415 Airports"
             },
             "features": {
                 "title": "Key Features",
                 "items": {
-                    "comprehensive": "Comprehensive data from authoritative sources (CLDR, World Bank, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights)",
+                    "comprehensive": "Comprehensive data from authoritative sources (CLDR, World Bank, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports)",
                     "static": "Static generation - no runtime database required",
                     "openSource": "MIT licensed and community-driven",
                     "i18n": "11 languages with RTL support for Arabic"
@@ -795,7 +801,7 @@
             "steps": {
                 "sources": {
                     "title": "External Sources",
-                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "Download Raw Data",

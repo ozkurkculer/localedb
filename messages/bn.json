@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "আধুনিক অ্যাপ্লিকেশনের জন্য বৈশ্বিক ডেটা",
-            "subtitle": "LocaleDB হল আন্তর্জাতিক অ্যাপ্লিকেশন তৈরি করা ডেভেলপারদের জন্য স্থানীয়করণ ডেটার একটি সম্পূর্ণ, ওপেন-সোর্স ডাটাবেস। আমরা CLDR, ISO মান এবং OpenFlights সহ কর্তৃত্বপূর্ণ উৎস থেকে ডেটা সংগ্রহ এবং প্রক্রিয়া করি।"
+            "subtitle": "LocaleDB হলো স্থানীয়করণ ডেটার একটি পূর্ণাঙ্গ, ওপেন-সোর্স ডাটাবেস, আন্তর্জাতিক অ্যাপ্লিকেশন তৈরি করা ডেভেলপার এবং পৃথিবী কীভাবে তারিখ, সংখ্যা ও মুদ্রা লেখে তা জানতে আগ্রহী সবার জন্য। আমরা Unicode CLDR, IANA টাইম জোন ডাটাবেস, Wikidata এবং libphonenumber-এর মতো উন্মুক্ত উৎস থেকে ডেটা সংগ্রহ করি।"
         },
         "challenge": {
             "title": "চ্যালেঞ্জ",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "ডেটা উৎস",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "আমাদের ডেটা বিশ্বস্ত, কর্তৃত্বপূর্ণ উৎস থেকে সংগৃহীত:",
-            "cldr": "Unicode CLDR (Common Locale Data Repository)",
-            "iso": "ISO মান সংস্থা",
-            "openflights": "OpenFlights বিমানবন্দর ডাটাবেস",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "World Bank",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "কমিউনিটির অবদান"
+            ]
         },
         "cta": {
             "title": "ওপেন সোর্স এবং সম্প্রদায় চালিত",
             "description": "LocaleDB MIT লাইসেন্সপ্রাপ্ত এবং অবদানকে স্বাগত জানায়। আপনি একটি টাইপো ঠিক করছেন, একটি অনুপস্থিত দেশ যোগ করছেন, বা UI উন্নত করছেন, আমরা আপনার সাহায্য পছন্দ করব।",
             "github": "GitHub-এ দেখুন",
             "contributing": "অবদান গাইড"
-        },
-        "intro": "LocaleDB হল আন্তর্জাতিক অ্যাপ্লিকেশন তৈরি করা ডেভেলপারদের জন্য স্থানীয়করণ ডেটার একটি সম্পূর্ণ, ওপেন-সোর্স ডাটাবেস। আমরা CLDR, ISO মান এবং OpenFlights সহ কর্তৃত্বপূর্ণ উৎস থেকে ডেটা সংগ্রহ এবং প্রক্রিয়া করি।",
-        "whatIsIncluded": {
-            "title": "কী অন্তর্ভুক্ত",
-            "countries": {
-                "title": "দেশ ডেটা",
-                "items": [
-                    "ISO 3166-1 কোড (Alpha-2, Alpha-3, Numeric)",
-                    "BCP-47 স্থানীয় ট্যাগ",
-                    "মুদ্রা ফরম্যাটিং প্যাটার্ন",
-                    "তারিখ এবং সময় ফরম্যাট",
-                    "সংখ্যা ফরম্যাটিং কনভেনশন",
-                    "ফোন কোড এবং TLD",
-                    "ভৌগোলিক তথ্য (অঞ্চল, মহাদেশ, সীমান্ত)"
-                ]
-            },
-            "currencies": {
-                "title": "মুদ্রা ফরম্যাট",
-                "items": [
-                    "চিহ্ন অবস্থান",
-                    "দশমিক এবং হাজার বিভাজক",
-                    "দশমিক অঙ্কের সংখ্যা",
-                    "উপ-একক তথ্য",
-                    "হিসাবরক্ষণ ফরম্যাট উদাহরণ"
-                ]
-            },
-            "languages": {
-                "title": "ভাষা ডেটা",
-                "items": [
-                    "ISO 639-1, 639-2, এবং 639-3 কোড",
-                    "স্থানীয় ভাষার নাম",
-                    "কথিত দেশগুলি"
-                ]
-            },
-            "airports": {
-                "title": "বিমানবন্দর তথ্য",
-                "items": [
-                    "IATA এবং ICAO কোড",
-                    "ভৌগোলিক স্থানাঙ্ক",
-                    "অঞ্চল এবং দেশ ডেটা",
-                    "শহর এবং সময় অঞ্চল তথ্য"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "ওপেন সোর্স",
-            "description": "LocaleDB সম্পূর্ণ বিনামূল্যে এবং ওপেন সোর্স। আপনি কোনো সীমাবদ্ধতা ছাড়াই আপনার প্রকল্পে এই ডেটা ব্যবহার করতে পারেন। সোর্স কোড এবং ডেটা MIT লাইসেন্সের অধীনে GitHub এ উপলব্ধ।"
         }
     },
     "phoneNumbers": {
@@ -855,8 +809,8 @@
             "description": "LocaleDB হল ডেভেলপারদের জন্য একটি ব্যাপক, ওপেন-সোর্স লোকালাইজেশন এনসাইক্লোপিডিয়া যারা আন্তর্জাতিক অ্যাপ্লিকেশন তৈরি করছে।",
             "stats": {
                 "countries": "২৫০+ দেশ",
-                "languages": "১১৪ ভাষা",
-                "currencies": "১৬১ মুদ্রা",
+                "languages": "১০০+ ভাষা",
+                "currencies": "১৫০+ মুদ্রা",
                 "airports": "৯,৪১৫ বিমানবন্দর"
             },
             "features": {
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "বহিরাগত উৎস",
-                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "কাঁচা ডেটা ডাউনলোড করুন",

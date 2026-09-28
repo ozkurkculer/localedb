@@ -135,14 +135,8 @@ export default function AboutContent() {
                 <motion.section variants={item} className="mb-24 text-center">
                     <h2 className="text-2xl font-bold mb-8">{t("sources.title")}</h2>
                     <div className="flex flex-wrap justify-center gap-4">
-                        {[
-                            t("sources.items.0"),
-                            t("sources.items.1"),
-                            t("sources.items.2"),
-                            t("sources.items.3"),
-                            t("sources.items.4")
-                        ].map((source, i) => (
-                            <span key={i} className="px-4 py-2 rounded-full bg-muted text-sm font-medium">
+                        {(t.raw("sources.items") as string[]).map((source) => (
+                            <span key={source} className="px-4 py-2 rounded-full bg-muted text-sm font-medium">
                                 {source}
                             </span>
                         ))}

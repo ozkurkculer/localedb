@@ -384,7 +384,7 @@
         },
         "hero": {
             "title": "بيانات عالمية للتطبيقات الحديثة",
-            "subtitle": "LocaleDB هي قاعدة بيانات شاملة ومفتوحة المصدر لبيانات التوطين للمطورين الذين يبنون تطبيقات دولية. نقوم بجمع ومعالجة البيانات من مصادر موثوقة بما في ذلك CLDR ومعايير ISO و OpenFlights."
+            "subtitle": "LocaleDB قاعدة بيانات شاملة ومفتوحة المصدر لبيانات التوطين، للمطورين الذين يبنون تطبيقات دولية ولكل من يهتم بكيفية كتابة العالم للتواريخ والأرقام والعملات. نجمع البيانات المفتوحة من مصادر مثل Unicode CLDR وقاعدة بيانات المناطق الزمنية IANA وWikidata وlibphonenumber."
         },
         "challenge": {
             "title": "التحدي",
@@ -420,71 +420,25 @@
         },
         "sources": {
             "title": "مصادر البيانات",
-            "items": {
-                "0": "CLDR (Common Locale Data Repository)",
-                "1": "mledoze/countries",
-                "2": "IP2Location Airports",
-                "3": "Google libaddressinput",
-                "4": "Community Contributions"
-            },
-            "description": "يتم جمع بياناتنا من مصادر موثوقة وموثوقة:",
-            "cldr": "Unicode CLDR (مستودع بيانات اللغة المشتركة)",
-            "iso": "منظمات معايير ISO",
-            "openflights": "قاعدة بيانات مطارات OpenFlights",
-            "restcountries": "REST Countries API"
+            "items": [
+                "CLDR (Common Locale Data Repository)",
+                "mledoze/countries",
+                "البنك الدولي",
+                "IANA tz",
+                "Wikidata",
+                "Google libphonenumber",
+                "Google libaddressinput",
+                "mwgg/Airports",
+                "IP2Location",
+                "ourworldincode/currency",
+                "مساهمات المجتمع"
+            ]
         },
         "cta": {
             "title": "مفتوح المصدر ومدفوع بالمجتمع",
             "description": "LocaleDB مرخص بـ MIT ويرحب بالمساهمات. سواء كنت تصلح خطأ إملائياً أو تضيف دولة مفقودة أو تحسن واجهة المستخدم، نحن نحب مساعدتك.",
             "github": "عرض على GitHub",
             "contributing": "دليل المساهمة"
-        },
-        "intro": "LocaleDB هي قاعدة بيانات شاملة ومفتوحة المصدر لبيانات التوطين للمطورين الذين يبنون تطبيقات دولية. نقوم بجمع ومعالجة البيانات من مصادر موثوقة بما في ذلك CLDR ومعايير ISO و OpenFlights.",
-        "whatIsIncluded": {
-            "title": "ما هو مشمول",
-            "countries": {
-                "title": "بيانات الدول",
-                "items": [
-                    "رموز ISO 3166-1 (Alpha-2, Alpha-3, Numeric)",
-                    "علامات BCP-47 المحلية",
-                    "أنماط تنسيق العملات",
-                    "تنسيقات التاريخ والوقت",
-                    "اتفاقيات تنسيق الأرقام",
-                    "رموز الهاتف والنطاقات العليا",
-                    "المعلومات الجغرافية (المنطقة، القارة، الحدود)"
-                ]
-            },
-            "currencies": {
-                "title": "تنسيقات العملات",
-                "items": [
-                    "موضع الرمز",
-                    "الفواصل العشرية وفواصل الآلاف",
-                    "عدد الأرقام العشرية",
-                    "معلومات الوحدة الفرعية",
-                    "أمثلة التنسيق المحاسبي"
-                ]
-            },
-            "languages": {
-                "title": "بيانات اللغات",
-                "items": [
-                    "رموز ISO 639-1 و 639-2 و 639-3",
-                    "أسماء اللغات الأصلية",
-                    "الدول التي يتم التحدث بها"
-                ]
-            },
-            "airports": {
-                "title": "معلومات المطارات",
-                "items": [
-                    "رموز IATA و ICAO",
-                    "الإحداثيات الجغرافية",
-                    "بيانات المنطقة والدولة",
-                    "معلومات المدينة والمنطقة الزمنية"
-                ]
-            }
-        },
-        "openSource": {
-            "title": "مفتوح المصدر",
-            "description": "LocaleDB مجاني تماماً ومفتوح المصدر. يمكنك استخدام هذه البيانات في مشاريعك دون قيود. الكود المصدري والبيانات متاحة على GitHub بموجب ترخيص MIT."
         }
     },
     "phoneNumbers": {
@@ -855,14 +809,14 @@
             "description": "LocaleDB عبارة عن موسوعة توطين شاملة ومفتوحة المصدر للمطورين الذين يبنون تطبيقات دولية.",
             "stats": {
                 "countries": "250+ دولة",
-                "languages": "114 لغة",
-                "currencies": "161 عملة",
+                "languages": "100+ لغة",
+                "currencies": "150+ عملة",
                 "airports": "9,415 مطار"
             },
             "features": {
                 "title": "الميزات الرئيسية",
                 "items": {
-                    "comprehensive": "بيانات شاملة من مصادر موثوقة (CLDR، البنك الدولي، mledoze، libphonenumber، IANA tz، libaddressinput، Wikidata، OpenFlights)",
+                    "comprehensive": "بيانات شاملة من مصادر موثوقة (CLDR، البنك الدولي، mledoze، libphonenumber، IANA tz، libaddressinput، Wikidata، mwgg/Airports)",
                     "static": "توليد ثابت - لا توجد قاعدة بيانات وقت التشغيل مطلوبة",
                     "openSource": "مرخصة بموجب MIT ومدفوعة بالمجتمع",
                     "i18n": "11 لغة مع دعم من اليمين إلى اليسار للغة العربية"
@@ -886,7 +840,7 @@
             "steps": {
                 "sources": {
                     "title": "المصادر الخارجية",
-                    "description": "CLDR، mledoze، البنك الدولي، libphonenumber، IANA tz، libaddressinput، Wikidata، OpenFlights (MWGG)"
+                    "description": "CLDR، mledoze، البنك الدولي، libphonenumber، IANA tz، libaddressinput، Wikidata، mwgg/Airports, IP2Location"
                 },
                 "update": {
                     "title": "تنزيل البيانات الخام",

@@ -65,7 +65,7 @@ Key linguistic data:
 - **Script:** Writing direction (LTR/RTL).
 
 ### 🛫 Airports (9,000+)
-Global airport database sourced from IP2Location:
+Global airport database sourced from mwgg/Airports and IP2Location:
 - **Identification:** IATA & ICAO codes.
 - **Location:** Latitude, Longitude, Region, Country.
 - **Details:** Full airport names.
@@ -184,7 +184,7 @@ This will run type checks, linting, and generate static pages for all locales.
 
 ## 📂 Project Structure
 
-A quick overview of the codebase (see `docs/CODEBASE_MAP.md` for full details):
+A quick overview of the codebase:
 
 ```
 LocaleDB/

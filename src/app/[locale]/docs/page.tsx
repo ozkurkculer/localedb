@@ -353,8 +353,8 @@ localedb sync --check`}
                                 code={`localedb/
 ├── data/                    # ${t('projectStructure.tree.data')}
 │   ├── countries/           # 250 country JSON files
-│   ├── languages/           # 114 language JSON files
-│   ├── currencies/          # 161 currency JSON files
+│   ├── languages/           # 100+ language JSON files
+│   ├── currencies/          # 150+ currency JSON files
 │   ├── _index_*.json        # Lightweight indices
 │   └── _meta.json           # Build metadata
 ├── packages/
