@@ -1,0 +1,52 @@
+{
+  "name": "@localedb/cli",
+  "version": "0.1.0-beta.0",
+  "description": "Pull localization data for any country into your project: currencies, languages, date and number formats, phone numbers and more.",
+  "license": "MIT",
+  "author": "Mehmet Emin Özkürkçüler (https://github.com/ozkurkculer)",
+  "homepage": "https://localedb.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozkurkculer/localedb.git",
+    "directory": "packages/cli"
+  },
+  "bugs": "https://github.com/ozkurkculer/localedb/issues",
+  "keywords": [
+    "localization",
+    "l10n",
+    "i18n",
+    "cldr",
+    "cli",
+    "locale",
+    "country",
+    "currency"
+  ],
+  "type": "module",
+  "bin": {
+    "localedb": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "@localedb/core": "workspace:^",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.33",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

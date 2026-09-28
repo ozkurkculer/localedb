@@ -11,7 +11,10 @@
         "full-build": "pnpm update:data && pnpm build:data",
         "start": "next start",
         "lint": "eslint",
-        "version": "tsx scripts/generate-changelog.ts"
+        "version": "tsx scripts/generate-changelog.ts",
+        "packages:build": "pnpm --filter \"./packages/*\" build",
+        "packages:test": "pnpm --filter \"./packages/*\" test",
+        "packages:typecheck": "pnpm --filter \"./packages/*\" typecheck"
     },
     "dependencies": {
         "@localedb/core": "workspace:*",
