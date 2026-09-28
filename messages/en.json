@@ -2,7 +2,7 @@
     "site": {
         "name": "LocaleDB",
         "title": "LocaleDB - Comprehensive Localization Data",
-        "description": "Free, open-source database of countries, currencies, languages, and locale codes. Perfect for developers building international applications.",
+        "description": "Free, open-source reference for every country's currencies, languages, and date and number formats. Explore it visually or pull it straight into your code.",
         "keywords": "locale data, localization, i18n, internationalization, countries, currencies, languages, BCP-47, ISO codes"
     },
     "nav": {
@@ -21,11 +21,7 @@
         "docs": "Documentation"
     },
     "home": {
-        "title": {
-            "the": "The",
-            "localization": "Localization Encyclopedia",
-            "forDevelopers": "for Developers"
-        },
+        "title": "The World's <highlight>Localization Encyclopedia</highlight>",
         "features": {
             "countries": {
                 "title": "Countries",

@@ -2,7 +2,7 @@
     "site": {
         "name": "LocaleDB",
         "title": "LocaleDB - Datos de Localización Completos",
-        "description": "Base de datos gratuita y de código abierto de países, monedas, idiomas y códigos de configuración regional. Perfecta para desarrolladores que crean aplicaciones internacionales.",
+        "description": "Referencia gratuita y de código abierto sobre las monedas, idiomas y formatos de fecha y número de cada país. Explórala visualmente o intégrala directamente en tu código.",
         "keywords": "datos de configuración regional, localización, i18n, internacionalización, países, monedas, idiomas, BCP-47, códigos ISO"
     },
     "nav": {
@@ -21,11 +21,7 @@
         "docs": "Documentation"
     },
     "home": {
-        "title": {
-            "the": "La",
-            "localization": "Enciclopedia de Localización",
-            "forDevelopers": "para Desarrolladores"
-        },
+        "title": "La <highlight>Enciclopedia de Localización</highlight> del Mundo",
         "features": {
             "countries": {
                 "title": "Países",

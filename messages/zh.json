@@ -2,7 +2,7 @@
     "site": {
         "name": "LocaleDB",
         "title": "LocaleDB - 全面的本地化数据",
-        "description": "面向开发国际化应用程序的开发人员的免费开源国家、货币、语言和区域代码数据库。",
+        "description": "免费开源的参考资料，涵盖每个国家的货币、语言以及日期和数字格式。可视化浏览，或直接集成到你的代码中。",
         "keywords": "区域数据, 本地化, i18n, 国际化, 国家, 货币, 语言, BCP-47, ISO 代码"
     },
     "nav": {
@@ -21,11 +21,7 @@
         "docs": "文档"
     },
     "home": {
-        "title": {
-            "the": "",
-            "localization": "开发人员的",
-            "forDevelopers": "本地化百科全书"
-        },
+        "title": "全球<highlight>本地化百科全书</highlight>",
         "features": {
             "countries": {
                 "title": "国家",

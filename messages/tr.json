@@ -2,7 +2,7 @@
     "site": {
         "name": "LocaleDB",
         "title": "LocaleDB - Kapsamlı Yerelleştirme Verileri",
-        "description": "Uluslararası uygulamalar geliştiren geliştiriciler için ücretsiz, açık kaynaklı ülkeler, para birimleri, diller ve yerel kodları veritabanı.",
+        "description": "Her ülkenin para birimleri, dilleri, tarih ve sayı formatları için ücretsiz, açık kaynak başvuru kaynağı. Görsel olarak keşfet ya da doğrudan kodunda kullan.",
         "keywords": "yerel veri, yerelleştirme, i18n, uluslararasılaşma, ülkeler, para birimleri, diller, BCP-47, ISO kodları"
     },
     "nav": {
@@ -21,11 +21,7 @@
         "docs": "Dokümantasyon"
     },
     "home": {
-        "title": {
-            "the": "",
-            "localization": "Geliştiriciler için",
-            "forDevelopers": "Yerelleştirme Ansiklopedisi"
-        },
+        "title": "Dünyanın <highlight>Yerelleştirme Ansiklopedisi</highlight>",
         "features": {
             "countries": {
                 "title": "Ülkeler",

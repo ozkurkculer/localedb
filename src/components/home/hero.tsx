@@ -58,11 +58,13 @@ export async function Hero() {
             <div className="container">
                 <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 py-24 text-center md:py-32 lg:py-40">
                     <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in-up-lcp">
-                        {t('home.title.the')}{' '}
-                        <span className="bg-gradient-to-br from-primary to-primary/50 bg-clip-text text-transparent">
-                            {t('home.title.localization')}
-                        </span>{' '}
-                        {t('home.title.forDevelopers')}
+                        {t.rich('home.title', {
+                            highlight: (chunks) => (
+                                <span className="bg-gradient-to-br from-primary to-primary/50 bg-clip-text text-transparent">
+                                    {chunks}
+                                </span>
+                            ),
+                        })}
                     </h1>
 
                     <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up-delay-2">
