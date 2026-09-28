@@ -5,7 +5,6 @@ import { siteConfig } from '@/config/site';
 import { footerNav } from '@/config/navigation';
 import { getAppVersion } from '@/lib/updates';
 import { Logo } from '@/components/logo';
-import { Github, Package } from 'lucide-react';
 
 export async function Footer() {
     const t = await getTranslations();
@@ -18,41 +17,7 @@ export async function Footer() {
                     <Link href="/" className="flex items-center space-x-2">
                         <Logo className="h-8 w-auto" />
                     </Link>
-                    <p className="mt-4 max-w-xs text-sm text-muted-foreground">{t('footer.description')}</p>
-
-                    {/* Dataset at a glance */}
-                    <ul className="mt-6 flex max-w-sm flex-wrap gap-2 text-xs text-muted-foreground">
-                        {(['countries', 'currencies', 'languages', 'airports'] as const).map((key) => (
-                            <li key={key} className="rounded-md border border-border/60 px-2 py-1">
-                                {t(`docs.overview.stats.${key}`)}
-                            </li>
-                        ))}
-                    </ul>
-
-                    {/* Install + links */}
-                    <div className="mt-6 flex flex-wrap items-center gap-3">
-                        <code className="rounded-md border border-border/60 bg-muted/50 px-3 py-1.5 font-mono text-xs text-foreground">
-                            npm i @localedb/core
-                        </code>
-                        <a
-                            href={siteConfig.links.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub"
-                            className="text-muted-foreground transition-colors hover:text-foreground"
-                        >
-                            <Github className="h-4 w-4" />
-                        </a>
-                        <a
-                            href={siteConfig.links.npm}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="npm"
-                            className="text-muted-foreground transition-colors hover:text-foreground"
-                        >
-                            <Package className="h-4 w-4" />
-                        </a>
-                    </div>
+                    <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">{t('footer.description')}</p>
                 </div>
 
                 {/* Resources */}

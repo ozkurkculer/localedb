@@ -717,7 +717,7 @@
         }
     },
     "footer": {
-        "description": "面向开发人员的免费开源本地化数据。",
+        "description": "LocaleDB 是一部免费的开源百科，介绍每个国家如何书写日期、数字、货币、电话号码和地址。它汇集自 Unicode CLDR、Wikidata 等开放来源，你可以在这里浏览，也可以在自己的代码中使用。",
         "sections": {
             "resources": {
                 "title": "资源",

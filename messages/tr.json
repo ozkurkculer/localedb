@@ -679,7 +679,7 @@
         }
     },
     "footer": {
-        "description": "Geliştiriciler için ücretsiz, açık kaynaklı yerelleştirme verileri.",
+        "description": "LocaleDB, her ülkenin tarihleri, sayıları, para birimlerini, telefon numaralarını ve adresleri nasıl yazdığını anlatan ücretsiz ve açık kaynaklı bir ansiklopedidir. Unicode CLDR ve Wikidata gibi açık kaynaklardan derlenir; burada göz atabilir ya da kendi kodunda kullanabilirsin.",
         "sections": {
             "resources": {
                 "title": "Kaynaklar",

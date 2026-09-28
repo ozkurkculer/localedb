@@ -678,7 +678,7 @@
         }
     },
     "footer": {
-        "description": "Free, open-source localization data for developers.",
+        "description": "LocaleDB is a free, open-source encyclopedia of how every country writes its dates, numbers, currencies, phone numbers and addresses. It is compiled from open sources such as Unicode CLDR and Wikidata, and you can browse it here or use it in your own code.",
         "sections": {
             "resources": {
                 "title": "Resources",

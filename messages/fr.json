@@ -717,7 +717,7 @@
         }
     },
     "footer": {
-        "description": "Données de localisation gratuites et open source pour les développeurs.",
+        "description": "LocaleDB est une encyclopédie gratuite et open source sur la façon dont chaque pays écrit ses dates, ses nombres, ses devises, ses numéros de téléphone et ses adresses. Elle est compilée à partir de sources ouvertes comme Unicode CLDR et Wikidata : consultez-la ici ou utilisez-la dans votre propre code.",
         "sections": {
             "resources": {
                 "title": "Ressources",
