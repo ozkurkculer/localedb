@@ -21,7 +21,7 @@
         "docs": "Documentation"
     },
     "home": {
-        "title": "Мировая <highlight>Энциклопедия Локализации</highlight>",
+        "title": "Мировая<br></br><highlight>Энциклопедия Локализации</highlight>",
         "features": {
             "countries": {
                 "title": "Страны",

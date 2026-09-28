@@ -21,7 +21,7 @@
         "docs": "Documentation"
     },
     "home": {
-        "title": "The World's <highlight>Localization Encyclopedia</highlight>",
+        "title": "The World's<br></br><highlight>Localization Encyclopedia</highlight>",
         "features": {
             "countries": {
                 "title": "Countries",

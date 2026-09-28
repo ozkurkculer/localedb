@@ -21,7 +21,7 @@
         "docs": "文档"
     },
     "home": {
-        "title": "全球<highlight>本地化百科全书</highlight>",
+        "title": "全球<br></br><highlight>本地化百科全书</highlight>",
         "features": {
             "countries": {
                 "title": "国家",
