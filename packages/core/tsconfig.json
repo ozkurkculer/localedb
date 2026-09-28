@@ -11,5 +11,5 @@
     "resolveJsonModule": true,
     "noEmit": true
   },
-  "include": ["src", "tsup.config.ts"]
+  "include": ["src", "scripts", "test", "tsup.config.ts"]
 }

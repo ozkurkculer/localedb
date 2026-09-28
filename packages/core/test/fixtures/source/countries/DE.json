@@ -1,0 +1,47 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-09-28",
+  "sources": [
+    "fixture"
+  ],
+  "basics": {
+    "name": "Germany",
+    "nativeName": "Deutschland",
+    "capital": "x",
+    "population": 1
+  },
+  "codes": {
+    "iso3166Alpha2": "DE",
+    "iso3166Alpha3": "DEU",
+    "bcp47": [
+      "de-DE"
+    ]
+  },
+  "currency": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "numberFormat": {
+    "example": "1.234.567,89",
+    "decimalSeparator": ","
+  },
+  "dateTime": {
+    "datePatterns": {
+      "short": "dd.MM.yy"
+    }
+  },
+  "phone": {
+    "callingCode": "+49"
+  },
+  "airports": [
+    {
+      "iata": "FRA",
+      "icao": "EDDF",
+      "name": "Frankfurt am Main Airport",
+      "latitude": 50.03,
+      "longitude": 8.56,
+      "region": "Hesse",
+      "countryCode": "DE"
+    }
+  ]
+}

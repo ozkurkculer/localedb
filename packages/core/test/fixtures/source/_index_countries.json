@@ -1,0 +1,26 @@
+[
+  {
+    "code": "DE",
+    "alpha3": "DEU",
+    "name": "Germany",
+    "nativeName": "Deutschland",
+    "flagEmoji": "🇩🇪",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "primaryLocale": "de-DE",
+    "currencyCode": "EUR",
+    "callingCode": "+49"
+  },
+  {
+    "code": "TR",
+    "alpha3": "TUR",
+    "name": "Turkey",
+    "nativeName": "Türkiye",
+    "flagEmoji": "🇹🇷",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "primaryLocale": "tr-TR",
+    "currencyCode": "TRY",
+    "callingCode": "+90"
+  }
+]

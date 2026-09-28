@@ -1,0 +1,14 @@
+[
+  {
+    "code": "EUR",
+    "name": "Euro",
+    "symbol": "€",
+    "countriesCount": 1
+  },
+  {
+    "code": "TRY",
+    "name": "Turkish Lira",
+    "symbol": "₺",
+    "countriesCount": 1
+  }
+]

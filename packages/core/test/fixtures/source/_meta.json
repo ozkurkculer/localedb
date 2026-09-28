@@ -1,0 +1,15 @@
+{
+  "buildDate": "2026-09-28T00:00:00.000Z",
+  "version": "0.6.1",
+  "stats": {
+    "countries": 2,
+    "languages": 2,
+    "currencies": 2,
+    "airports": 2
+  },
+  "sources": [
+    {
+      "name": "fixture"
+    }
+  ]
+}

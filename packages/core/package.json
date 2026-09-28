@@ -36,24 +36,32 @@
       "import": "./dist/browser.js",
       "require": "./dist/browser.cjs"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./data/*": "./data/*"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "data",
+    "NOTICE"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
     "build": "tsup",
-    "typecheck": "tsc --noEmit"
+    "pack-data": "tsx scripts/pack-data.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "node -e \"require('node:fs').statSync('data/meta.json')\" && pnpm build"
   },
   "devDependencies": {
     "@types/node": "^20.19.33",
     "tsup": "^8.5.0",
-    "typescript": "^5"
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
   }
 }

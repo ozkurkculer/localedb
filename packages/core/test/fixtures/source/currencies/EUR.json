@@ -1,0 +1,13 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-09-28",
+  "data": {
+    "code": "EUR",
+    "name": "Euro",
+    "symbol": "€",
+    "decimalDigits": 2,
+    "countries": [
+      "DE"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+@localedb/core
+Copyright (c) Mehmet Emin Özkürkçüler and LocaleDB contributors
+
+The source code of this package (the `dist/` directory) is licensed under the
+MIT License, see https://github.com/ozkurkculer/localedb/blob/main/LICENSE.
+
+The dataset in the `data/` directory is compiled from the third-party sources
+below. Each source keeps its own license, and those licenses (not the MIT
+License) govern your use of the data. If you redistribute the data, you must
+follow their terms, including attribution and, where noted, share-alike.
+
+--------------------------------------------------------------------------------
+Unicode CLDR (cldr-json)                         https://github.com/unicode-org/cldr-json
+License: Unicode License v3                      https://www.unicode.org/license.txt
+Used for: localized names, number, currency and date/time formats.
+
+ICU (International Components for Unicode)       https://github.com/unicode-org/icu
+License: Unicode License v3                      https://www.unicode.org/license.txt
+Used for: fallback region, language, currency and time zone names.
+
+mledoze/countries                                https://github.com/mledoze/countries
+License: Open Database License (ODbL) v1.0       https://opendatacommons.org/licenses/odbl/1-0/
+Used for: country codes, geography, borders, calling codes, currencies, languages.
+Note: ODbL is a share-alike license. A public database derived from this data
+must also be offered under the ODbL.
+
+World Bank Open Data (World Development Indicators)  https://data.worldbank.org
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+Used for: population, World Bank region and income group.
+
+Google libphonenumber                            https://github.com/google/libphonenumber
+License: Apache License 2.0                      https://www.apache.org/licenses/LICENSE-2.0
+Used for: phone number patterns, formats and example numbers.
+
+mwgg/Airports                                    https://github.com/mwgg/Airports
+License: MIT
+Used for: airport names, codes, locations and time zones.
+
+IP2Location IATA/ICAO List                       https://github.com/ip2location/ip2location-iata-icao
+License: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+Used for: additional airport IATA/ICAO codes.
+Required attribution: "This site or product includes IATA/ICAO List data
+available from https://github.com/ip2location/ip2location-iata-icao."
+
+SimpleLocalize                                   https://simplelocalize.io/data/
+Public country, language and locale lists from cdn.simplelocalize.io.
+Used for: the base list of countries, languages and ISO codes.
+--------------------------------------------------------------------------------
+
+Flag emoji are Unicode characters and are not covered by the ODbL.

@@ -1,0 +1,47 @@
+{
+  "$schema": "1.0.0",
+  "lastUpdated": "2026-09-28",
+  "sources": [
+    "fixture"
+  ],
+  "basics": {
+    "name": "Turkey",
+    "nativeName": "Türkiye",
+    "capital": "x",
+    "population": 1
+  },
+  "codes": {
+    "iso3166Alpha2": "TR",
+    "iso3166Alpha3": "TUR",
+    "bcp47": [
+      "tr-TR"
+    ]
+  },
+  "currency": {
+    "code": "TRY",
+    "symbol": "₺"
+  },
+  "numberFormat": {
+    "example": "1.234.567,89",
+    "decimalSeparator": ","
+  },
+  "dateTime": {
+    "datePatterns": {
+      "short": "dd.MM.yyyy"
+    }
+  },
+  "phone": {
+    "callingCode": "+90"
+  },
+  "airports": [
+    {
+      "iata": "IST",
+      "icao": "LTFM",
+      "name": "Istanbul Airport",
+      "latitude": 41.26,
+      "longitude": 28.74,
+      "region": "Istanbul",
+      "countryCode": "TR"
+    }
+  ]
+}

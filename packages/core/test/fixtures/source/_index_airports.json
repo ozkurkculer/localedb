@@ -1,0 +1,20 @@
+[
+  {
+    "iata": "FRA",
+    "icao": "EDDF",
+    "name": "Frankfurt am Main Airport",
+    "latitude": 50.03,
+    "longitude": 8.56,
+    "region": "Hesse",
+    "countryCode": "DE"
+  },
+  {
+    "iata": "IST",
+    "icao": "LTFM",
+    "name": "Istanbul Airport",
+    "latitude": 41.26,
+    "longitude": 28.74,
+    "region": "Istanbul",
+    "countryCode": "TR"
+  }
+]
