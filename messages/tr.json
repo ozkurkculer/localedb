@@ -757,7 +757,8 @@
             "projectStructure": "Proje Yapısı",
             "scripts": "Komut Dosyası Referansı",
             "contributing": "Veri Katkısı",
-            "i18n": "i18n & Çeviriler"
+            "i18n": "i18n & Çeviriler",
+            "packages": "npm ve CLI"
         },
         "overview": {
             "title": "Genel Bakış",
@@ -1002,6 +1003,28 @@
                     "verify": "Tamamlandığını doğrulamak için npx tsx scripts/check-i18n.ts çalıştırın"
                 }
             }
+        },
+        "packages": {
+            "title": "npm Paketleri ve CLI",
+            "description": "LocaleDB'yi kendi kodunda kullan: tipli, internet gerektirmeyen bir kütüphane ve seçtiğin veriyi projene yazan bir komut satırı aracı.",
+            "beta": "Beta: API'ler 1.0'dan önce değişebilir.",
+            "library": {
+                "title": "@localedb/core",
+                "description": "Tüm veri setleri Node.js için tipli ve senkron fonksiyonlar olarak. Tarayıcıda tek tek kayıtları @localedb/core/data/* yolundan JSON olarak içe aktarabilirsin."
+            },
+            "cli": {
+                "title": "@localedb/cli",
+                "description": "localedb komutu. init neye ihtiyacın olduğunu sorar ve JSON, CSV ya da tipli TypeScript dosyaları üretir; sync bunları güncel tutar.",
+                "commands": {
+                    "get": "Tek bir kaydı JSON olarak yazdırır",
+                    "export": "Kayıtları JSON, CSV veya TypeScript olarak terminale, bir dosyaya ya da kayıt başına ayrı dosyalara aktarır",
+                    "list": "Bir veri setini tablo ya da JSON olarak listeler",
+                    "search": "Ülkeleri koda veya isme göre bulur",
+                    "init": "localedb.config.json dosyasını adım adım oluşturur ve dosyaları üretir",
+                    "sync": "Config'teki dosyaları yeniden üretir; --check güncel olmayan dosyalarda CI'ı durdurur"
+                }
+            },
+            "license": "Kod MIT lisanslıdır. Paketle gelen veri kaynaklarının lisanslarını korur, bazıları benzer şekilde paylaşım şartlıdır; ayrıntılar paketteki NOTICE dosyasında."
         }
     },
     "legal": {
@@ -1059,7 +1082,7 @@
                 },
                 "data": {
                     "title": "Veriler",
-                    "body": "Yerelleştirme verileri Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, Dünya Bankası, mwgg/Airports ve IP2Location gibi üçüncü taraf kaynaklardan derlenir. Her kaynağın kendi lisansı ve atıf koşulları geçerlidir; veriyi yeniden dağıtıyorsan bunları kontrol edip uygula. Kaynakların tam listesi <docs>dokümantasyonda</docs> yer alır."
+                    "body": "Yerelleştirme verileri Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, Dünya Bankası, Google libphonenumber, mwgg/Airports ve IP2Location gibi üçüncü taraf kaynaklardan derlenir. Her kaynağın kendi lisansı ve atıf koşulları geçerlidir; veriyi yeniden dağıtıyorsan bunları kontrol edip uygula. Kaynakların tam listesi <docs>dokümantasyonda</docs> yer alır."
                 },
                 "warranty": {
                     "title": "Garanti yoktur",

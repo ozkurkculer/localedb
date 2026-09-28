@@ -14,6 +14,7 @@ const sections: TOCSection[] = [
     { id: 'data-pipeline', labelKey: 'docs.toc.dataPipeline' },
     { id: 'data-schemas', labelKey: 'docs.toc.dataSchemas' },
     { id: 'data-export', labelKey: 'docs.toc.dataExport' },
+    { id: 'packages', labelKey: 'docs.toc.packages' },
     { id: 'project-structure', labelKey: 'docs.toc.projectStructure' },
     { id: 'scripts', labelKey: 'docs.toc.scripts' },
     { id: 'contributing', labelKey: 'docs.toc.contributing' },

@@ -847,7 +847,8 @@
             "projectStructure": "プロジェクト構造",
             "scripts": "スクリプトリファレンス",
             "contributing": "データの貢献",
-            "i18n": "i18nと翻訳"
+            "i18n": "i18nと翻訳",
+            "packages": "npm & CLI"
         },
         "overview": {
             "title": "概要",
@@ -1092,6 +1093,28 @@
                     "verify": "npx tsx scripts/check-i18n.tsを実行して完全性を確認する"
                 }
             }
+        },
+        "packages": {
+            "title": "npm Packages & CLI",
+            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
+            "beta": "Beta: APIs may still change before 1.0.",
+            "library": {
+                "title": "@localedb/core",
+                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+            },
+            "cli": {
+                "title": "@localedb/cli",
+                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "commands": {
+                    "get": "Print one record as JSON",
+                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
+                    "list": "List a dataset as a table or JSON",
+                    "search": "Find countries by code or name",
+                    "init": "Create localedb.config.json step by step and generate the files",
+                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                }
+            },
+            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
         }
     },
     "legal": {
@@ -1149,7 +1172,7 @@
                 },
                 "data": {
                     "title": "The data",
-                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, the World Bank, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
+                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, the World Bank, Google libphonenumber, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
                 },
                 "warranty": {
                     "title": "No warranty",

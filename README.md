@@ -77,6 +77,23 @@ Regional formatting patterns:
 - **Preferences:** First day of the week, 12h/24h clock preference.
 
 
+## 📦 npm Packages & CLI (beta)
+
+Use the same data in your own code:
+
+```bash
+npm install @localedb/core        # typed, offline data API
+npx @localedb/cli init            # generate JSON, CSV or TypeScript files in your project
+```
+
+```ts
+import { getCountry } from "@localedb/core";
+getCountry("TR")?.currency.symbol; // "₺"
+```
+
+See [`packages/core`](packages/core) and [`packages/cli`](packages/cli) for the full API and commands.
+
+
 ## 📚 Data Sources
 
 LocaleDB aggregates and normalizes data from the most reliable open-source projects:
@@ -85,6 +102,9 @@ LocaleDB aggregates and normalizes data from the most reliable open-source proje
 - **[mledoze/countries](https://github.com/mledoze/countries)**: Comprehensive country data (ISO codes, geography, demographics).
 - **[SimpleLocalize/countries-and-languages](https://github.com/simplelocalize/countries-and-languages)**: Normalized lists of countries and languages.
 - **[IP2Location](https://github.com/ip2location/ip2location-iata-icao)**: Global airport database with IATA/ICAO codes.
+- **[mwgg/Airports](https://github.com/mwgg/Airports)**: Airport names, locations and time zones.
+- **[World Bank Open Data](https://data.worldbank.org)**: Population, region and income group.
+- **[libphonenumber](https://github.com/google/libphonenumber)**: Phone number patterns and formats.
 - **[ICU](https://github.com/unicode-org/icu)**: International Components for Unicode.
 
 
@@ -156,6 +176,7 @@ This will run type checks, linting, and generate static pages for all locales.
 - **`pnpm build:data`**: Generates all static JSON files in `data/` from sources.
 - **`pnpm update:data`**: Fetches fresh data from external sources (SimpleLocalize, etc.).
 - **`pnpm build:clean`**: Performs a full clean build: updates data -> builds data -> builds Next.js app.
+- **`pnpm packages:typecheck` / `packages:test` / `packages:build`**: Checks, tests and builds the npm packages in `packages/`.
 
 
 
@@ -173,8 +194,10 @@ LocaleDB/
 │   ├── app/               # Next.js App Router pages
 │   ├── components/        # React components (shadcn/ui, layout)
 │   ├── lib/               # Data loaders (server-side)
-│   ├── types/             # TypeScript definitions
 │   └── ...
+├── packages/
+│   ├── core/              # @localedb/core: types + data API (npm)
+│   └── cli/               # @localedb/cli: the localedb command (npm)
 ├── scripts/               # Build & Data generation scripts
 │   └── build-data.ts      # The heart of our data pipeline
 └── public/                # Static assets (logos, images)

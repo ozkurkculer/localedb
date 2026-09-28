@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Languages as LanguagesIcon, CheckCircle2, ArrowDown, Download, FileJson, FileSpreadsheet, FileArchive } from 'lucide-react';
+import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Languages as LanguagesIcon, CheckCircle2, ArrowDown, Download, FileJson, FileSpreadsheet, FileArchive, Package } from 'lucide-react';
 import { TableOfContents } from '@/components/docs/table-of-contents';
 import { CodeBlock } from '@/components/docs/code-block';
 import { Metadata } from 'next';
@@ -284,6 +284,59 @@ Content-Type: application/json
                             </div>
                         </section>
 
+                        {/* npm Packages & CLI */}
+                        <section id="packages" className="mb-24 scroll-mt-24 border-t pt-16">
+                            <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                                <div className="rounded-lg bg-violet-500/10 p-2">
+                                    <Package className="h-6 w-6 text-violet-500" />
+                                </div>
+                                {t('packages.title')}
+                            </h2>
+                            <p className="text-lg text-muted-foreground mb-4">
+                                {t('packages.description')}
+                            </p>
+                            <p className="mb-8 inline-flex rounded-md border border-violet-500/30 bg-violet-500/10 px-3 py-1 text-sm text-violet-600 dark:text-violet-400">
+                                {t('packages.beta')}
+                            </p>
+
+                            <div className="rounded-xl border border-border bg-card p-6 mb-6">
+                                <h3 className="text-xl font-bold mb-2">{t('packages.library.title')}</h3>
+                                <p className="text-muted-foreground mb-4">{t('packages.library.description')}</p>
+                                <CodeBlock
+                                    code={`npm install @localedb/core
+
+import { getCountry, getCurrency } from "@localedb/core";
+
+getCountry("TR")?.currency.symbol;          // "₺"
+getCountry("DEU")?.dateTime.datePatterns;   // alpha-2 or alpha-3
+getCurrency("EUR")?.countries;              // ["AT", "BE", "DE", ...]`}
+                                    language="typescript"
+                                />
+                            </div>
+
+                            <div className="rounded-xl border border-border bg-card p-6">
+                                <h3 className="text-xl font-bold mb-2">{t('packages.cli.title')}</h3>
+                                <p className="text-muted-foreground mb-4">{t('packages.cli.description')}</p>
+                                <CodeBlock
+                                    code={`npx @localedb/cli init
+
+localedb get country TR --fields currency,dateTime.datePatterns
+localedb export countries TR DE FR --format ts --out src/locales/countries.ts
+localedb sync --check`}
+                                    language="bash"
+                                />
+                                <ul className="mt-6 space-y-2">
+                                    {Object.entries(t.raw('packages.cli.commands') as Record<string, string>).map(([command, description]) => (
+                                        <li key={command} className="flex gap-3 text-sm">
+                                            <code className="shrink-0 rounded bg-muted px-1.5 py-0.5 font-mono">{command}</code>
+                                            <span className="text-muted-foreground">{description}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <p className="mt-6 text-sm text-muted-foreground">{t('packages.license')}</p>
+                            </div>
+                        </section>
+
                         {/* Project Structure */}
                         <section id="project-structure" className="mb-24 scroll-mt-24 border-t pt-16">
                             <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
@@ -304,6 +357,9 @@ Content-Type: application/json
 │   ├── currencies/          # 161 currency JSON files
 │   ├── _index_*.json        # Lightweight indices
 │   └── _meta.json           # Build metadata
+├── packages/
+│   ├── core/                # @localedb/core: types + data API
+│   └── cli/                 # @localedb/cli: the localedb command
 ├── scripts/                 # ${t('projectStructure.tree.scripts')}
 │   ├── update-data.ts       # Download raw data
 │   ├── build-data.ts        # Process & generate JSON

@@ -13,10 +13,17 @@ We merge data from multiple sources to create the most accurate and rich dataset
 4.  **Mledoze**: Coordinates, Calling Codes, Currencies, Languages, Geo-data.
 5.  **SimpleLocalize** (Base): Basic country list and ISO codes.
 
+### Phone Data
+**Google libphonenumber** (`PhoneNumberMetadata.xml`): calling codes, number patterns, formats and example numbers.
+
 ### Airport Data
 Merged from two sources:
 1.  **mwgg/Airports (JSON)** (Primary): Global coverage with Timezones.
 2.  **ip2location (CSV)** (Secondary): Fallback for smaller airports.
+
+## Licenses
+
+Each source keeps its own license (Unicode License v3, ODbL 1.0, CC BY 4.0, Apache 2.0, MIT, CC BY-SA 4.0). The full list, with share-alike and attribution requirements, is in [`packages/core/NOTICE`](packages/core/NOTICE).
 
 ## Automation Commands
 

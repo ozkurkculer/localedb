@@ -1,0 +1,51 @@
+name: Publish packages
+
+# Manually triggered: builds the dataset from upstream sources, bundles it into
+# @localedb/core and publishes @localedb/core and @localedb/cli to npm.
+# Bump the version in both packages/*/package.json before running.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: npm dist-tag
+        type: choice
+        options: [beta, latest]
+        default: beta
+      dry-run:
+        description: Build and pack without publishing
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  id-token: write # npm provenance
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build dataset
+        run: |
+          cp .env.example .env
+          pnpm update:data
+          pnpm build:data
+      - run: pnpm --filter @localedb/core pack-data
+
+      - run: pnpm packages:typecheck
+      - run: pnpm packages:test
+      - run: pnpm packages:build
+
+      - name: Publish
+        run: pnpm --filter "./packages/*" publish --access public --tag ${{ inputs.tag }} --no-git-checks ${{ inputs.dry-run && '--dry-run' || '' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: "true"
