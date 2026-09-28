@@ -30,7 +30,8 @@ async function getHeroSamples(): Promise<HeroCountrySample[]> {
                 value: currency?.code && [currency.code, currency.symbol].filter((part, i) => i === 0 || part !== currency.code).join(' '),
             },
             { label: 'number', value: numberFormat?.example },
-            { label: 'date', value: dateTime?.datePatterns?.short },
+            // dateFormats holds the CLDR pattern ("d.MM.y"); datePatterns holds skeletons ("yMMd").
+            { label: 'date', value: dateTime?.dateFormats?.short },
             { label: 'phone', value: phone?.callingCode },
         ];
         if (rows.some((row) => !row.value)) return [];

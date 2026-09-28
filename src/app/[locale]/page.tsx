@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/hero";
 import { FeatureCards } from "@/components/home/feature-cards";
+import { PackagesSection } from "@/components/home/packages-section";
 import { localeAlternates } from "@/lib/seo";
 
 // Each page sets its own canonical; the layout sets none, so no page inherits the home page's.
@@ -13,6 +14,7 @@ export default async function Home() {
       <Hero />
       <div className="container relative">
         <FeatureCards />
+        <PackagesSection />
       </div>
     </>
   );

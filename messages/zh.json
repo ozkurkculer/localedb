@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "npm 包与 CLI",
+            "description": "在你自己的代码中使用 LocaleDB：一个可离线使用的类型化库，以及一个把你选择的数据写入项目的命令行工具。",
+            "beta": "测试版：1.0 之前 API 仍可能变化。",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "所有数据集都以 Node.js 的类型化同步函数提供。在浏览器中，可从 @localedb/core/data/* 以 JSON 形式导入单条记录。"
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "localedb 命令。init 会询问你的需求并生成 JSON、CSV 或类型化的 TypeScript 文件；sync 让它们保持最新。",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "以 JSON 格式输出一条记录",
+                    "export": "将记录导出为 JSON、CSV 或 TypeScript，输出到标准输出、单个文件或每条记录一个文件",
+                    "list": "以表格或 JSON 列出一个数据集",
+                    "search": "按代码或名称查找国家",
+                    "init": "逐步创建 localedb.config.json 并生成文件",
+                    "sync": "重新生成已配置的文件；文件过期时 --check 会让 CI 失败"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "代码采用 MIT 许可证。随附数据保留其来源的许可证，其中部分为相同方式共享（share-alike）；详见包中的 NOTICE。"
         }
     },
     "legal": {

@@ -98,6 +98,11 @@ export const navGroups = {
             {
                 title: 'nav.docs',
                 href: '/docs'
+            },
+            {
+                // Label shared with the docs table of contents ("npm & CLI").
+                title: 'docs.toc.packages',
+                href: '/docs#packages'
             }
         ]
     }

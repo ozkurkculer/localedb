@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "npm パッケージと CLI",
+            "description": "LocaleDB を自分のコードで使えます。オフラインで動く型付きライブラリと、選んだデータをプロジェクトに書き出すコマンドラインツールです。",
+            "beta": "ベータ版：1.0 までに API が変更される可能性があります。",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "すべてのデータセットを Node.js 向けの型付き同期関数として提供します。ブラウザでは @localedb/core/data/* から個々のレコードを JSON としてインポートできます。"
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "localedb コマンド。init が必要なものを尋ね、JSON、CSV、型付き TypeScript ファイルを生成します。sync はそれらを最新の状態に保ちます。",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "1 件のレコードを JSON で表示",
+                    "export": "レコードを JSON、CSV、TypeScript として標準出力、1 つのファイル、またはレコードごとのファイルに書き出す",
+                    "list": "データセットを表または JSON で一覧表示",
+                    "search": "コードまたは名前で国を検索",
+                    "init": "localedb.config.json を対話形式で作成し、ファイルを生成",
+                    "sync": "設定したファイルを再生成。--check は古くなっている場合に CI を失敗させる"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "コードは MIT ライセンスです。同梱データは各ソースのライセンスに従い、一部は継承（share-alike）条件付きです。詳しくはパッケージ内の NOTICE を参照してください。"
         }
     },
     "legal": {

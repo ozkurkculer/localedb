@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "npm पैकेज और CLI",
+            "description": "LocaleDB को अपने कोड में इस्तेमाल करें: एक टाइप की गई लाइब्रेरी जो ऑफ़लाइन काम करती है, और एक कमांड लाइन टूल जो आपका चुना हुआ डेटा आपके प्रोजेक्ट में लिखता है।",
+            "beta": "बीटा: 1.0 से पहले API बदल सकते हैं।",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "हर डेटासेट Node.js के लिए टाइप किए गए, सिंक्रोनस फ़ंक्शन के रूप में। ब्राउज़र में, @localedb/core/data/* से अलग-अलग रिकॉर्ड JSON के रूप में इम्पोर्ट करें।"
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "localedb कमांड। init पूछता है कि आपको क्या चाहिए और JSON, CSV या टाइप की गई TypeScript फ़ाइलें बनाता है; sync उन्हें अप-टू-डेट रखता है।",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "एक रिकॉर्ड को JSON के रूप में दिखाता है",
+                    "export": "रिकॉर्ड को JSON, CSV या TypeScript के रूप में stdout, एक फ़ाइल या हर रिकॉर्ड के लिए अलग फ़ाइल में एक्सपोर्ट करता है",
+                    "list": "किसी डेटासेट को टेबल या JSON के रूप में दिखाता है",
+                    "search": "देशों को कोड या नाम से खोजता है",
+                    "init": "localedb.config.json को चरण-दर-चरण बनाता है और फ़ाइलें तैयार करता है",
+                    "sync": "कॉन्फ़िगर की गई फ़ाइलें फिर से बनाता है; पुरानी होने पर --check CI को फ़ेल कर देता है"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "कोड MIT लाइसेंस के तहत है। पैकेज में शामिल डेटा अपने स्रोतों के लाइसेंस बनाए रखता है, जिनमें से कुछ share-alike हैं; पैकेज में NOTICE देखें।"
         }
     },
     "legal": {

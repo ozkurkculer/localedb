@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "حزم npm وأداة سطر الأوامر",
+            "description": "استخدم LocaleDB في شيفرتك الخاصة: مكتبة مُنمَّطة تعمل دون اتصال بالإنترنت، وأداة سطر أوامر تكتب البيانات التي تختارها في مشروعك.",
+            "beta": "نسخة تجريبية: قد تتغير واجهات البرمجة قبل الإصدار 1.0.",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "جميع مجموعات البيانات كدوال مُنمَّطة ومتزامنة لـ Node.js. في المتصفح، استورد السجلات الفردية بصيغة JSON من ‎@localedb/core/data/*‎."
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "الأمر localedb. يسألك init عمّا تحتاجه وينشئ ملفات JSON أو CSV أو TypeScript مُنمَّطة، ويحافظ sync على تحديثها.",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "يطبع سجلًا واحدًا بصيغة JSON",
+                    "export": "يصدّر السجلات بصيغة JSON أو CSV أو TypeScript إلى المخرجات القياسية أو إلى ملف أو إلى ملف لكل سجل",
+                    "list": "يعرض مجموعة بيانات كجدول أو بصيغة JSON",
+                    "search": "يبحث عن الدول بالرمز أو الاسم",
+                    "init": "ينشئ localedb.config.json خطوة بخطوة ويولّد الملفات",
+                    "sync": "يعيد توليد الملفات المُعدّة؛ ويُفشل ‎--check‎ التكامل المستمر عندما تكون قديمة"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "الشيفرة مرخّصة بموجب MIT. تحتفظ البيانات المضمّنة بتراخيص مصادرها، وبعضها بشرط المشاركة بالمثل؛ راجع ملف NOTICE في الحزمة."
         }
     },
     "legal": {

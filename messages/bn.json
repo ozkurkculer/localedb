@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "npm প্যাকেজ ও CLI",
+            "description": "নিজের কোডে LocaleDB ব্যবহার করুন: অফলাইনে কাজ করা একটি টাইপড লাইব্রেরি, আর একটি কমান্ড লাইন টুল যা আপনার বেছে নেওয়া ডেটা আপনার প্রজেক্টে লিখে দেয়।",
+            "beta": "বিটা: ১.০-এর আগে API বদলাতে পারে।",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "প্রতিটি ডেটাসেট Node.js-এর জন্য টাইপড, সিঙ্ক্রোনাস ফাংশন হিসেবে। ব্রাউজারে @localedb/core/data/* থেকে আলাদা রেকর্ড JSON হিসেবে ইমপোর্ট করুন।"
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "localedb কমান্ড। init জিজ্ঞেস করে আপনার কী দরকার এবং JSON, CSV বা টাইপড TypeScript ফাইল তৈরি করে; sync সেগুলো হালনাগাদ রাখে।",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "একটি রেকর্ড JSON হিসেবে দেখায়",
+                    "export": "রেকর্ডগুলো JSON, CSV বা TypeScript হিসেবে stdout-এ, একটি ফাইলে বা প্রতি রেকর্ডে আলাদা ফাইলে এক্সপোর্ট করে",
+                    "list": "একটি ডেটাসেট টেবিল বা JSON হিসেবে দেখায়",
+                    "search": "কোড বা নাম দিয়ে দেশ খোঁজে",
+                    "init": "ধাপে ধাপে localedb.config.json তৈরি করে ফাইলগুলো বানায়",
+                    "sync": "কনফিগার করা ফাইলগুলো আবার তৈরি করে; পুরোনো হলে --check CI ব্যর্থ করে"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "কোডটি MIT লাইসেন্সের অধীনে। প্যাকেজে থাকা ডেটা তার উৎসগুলোর লাইসেন্স বজায় রাখে, যার কয়েকটি share-alike; প্যাকেজের NOTICE দেখুন।"
         }
     },
     "legal": {

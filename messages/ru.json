@@ -1049,26 +1049,26 @@
             }
         },
         "packages": {
-            "title": "npm Packages & CLI",
-            "description": "Use LocaleDB in your own code: a typed, offline library and a command line tool that writes the data you pick into your project.",
-            "beta": "Beta: APIs may still change before 1.0.",
+            "title": "npm-пакеты и CLI",
+            "description": "Используйте LocaleDB в своём коде: типизированная библиотека, работающая офлайн, и инструмент командной строки, который записывает выбранные данные в ваш проект.",
+            "beta": "Бета: API может измениться до версии 1.0.",
             "library": {
                 "title": "@localedb/core",
-                "description": "Every dataset as typed, synchronous functions for Node.js. In the browser, import single records as JSON from @localedb/core/data/*."
+                "description": "Все наборы данных в виде типизированных синхронных функций для Node.js. В браузере импортируйте отдельные записи в формате JSON из @localedb/core/data/*."
             },
             "cli": {
                 "title": "@localedb/cli",
-                "description": "The localedb command. init asks what you need and generates JSON, CSV or typed TypeScript files; sync keeps them up to date.",
+                "description": "Команда localedb. init спрашивает, что вам нужно, и создаёт файлы JSON, CSV или типизированного TypeScript; sync поддерживает их в актуальном состоянии.",
                 "commands": {
-                    "get": "Print one record as JSON",
-                    "export": "Export records as JSON, CSV or TypeScript, to stdout, a file or one file per record",
-                    "list": "List a dataset as a table or JSON",
-                    "search": "Find countries by code or name",
-                    "init": "Create localedb.config.json step by step and generate the files",
-                    "sync": "Regenerate configured files; --check fails CI when they are out of date"
+                    "get": "Выводит одну запись в формате JSON",
+                    "export": "Экспортирует записи в JSON, CSV или TypeScript: в стандартный вывод, в файл или по файлу на запись",
+                    "list": "Выводит набор данных таблицей или в JSON",
+                    "search": "Ищет страны по коду или названию",
+                    "init": "Пошагово создаёт localedb.config.json и генерирует файлы",
+                    "sync": "Заново создаёт настроенные файлы; --check останавливает CI, если они устарели"
                 }
             },
-            "license": "The code is MIT licensed. The bundled data keeps the licenses of its sources, some of them share-alike; see NOTICE in the package."
+            "license": "Код распространяется по лицензии MIT. Входящие в пакет данные сохраняют лицензии своих источников, некоторые из них с условием share-alike; подробности в файле NOTICE пакета."
         }
     },
     "legal": {
