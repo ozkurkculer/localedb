@@ -2,15 +2,14 @@ import { getAllUpdates, getAppVersion } from "@/lib/updates";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { ChangelogAccordion } from "@/components/updates/changelog-accordion";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("updates");
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: {
-      canonical: "/updates",
-    },
+    alternates: await localeAlternates("/updates"),
     openGraph: {
       title: t("title"),
       description: t("subtitle"),

@@ -29,6 +29,7 @@ import {
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { getContinentStyle } from '@/components/countries/continent-variants';
 import { AirportsDrawer } from '@/components/countries/airports-drawer';
+import { localeAlternates } from "@/lib/seo";
 
 interface CountryPageProps {
     params: Promise<{
@@ -77,6 +78,7 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
                 capital: country.basics.capital,
                 region: country.basics.region
             }),
+            alternates: await localeAlternates(`/countries/${code}`),
             openGraph: {
                 title: t('meta.ogTitle', { flag: country.basics.flagEmoji, name: country.basics.name }),
                 description: t('meta.ogDescription', { name: country.basics.name, currency: country.currency.code, phone: country.phone.callingCode, timezones: country.dateTime.timezones.join(', ') }),

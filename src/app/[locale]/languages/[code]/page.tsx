@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { getLanguage, getAllLanguageCodes } from "@/lib/languages";
 import { getCountryIndex } from "@/lib/countries";
 import { CopyButton } from "@/components/copy-button";
+import { localeAlternates } from "@/lib/seo";
 
 interface LanguagePageProps {
   params: Promise<{
@@ -48,9 +49,7 @@ export async function generateMetadata({
     return {
       title: t('title', { name: language.data.name }),
       description: t('description', { name: language.data.name, count: language.data.countries.length }),
-      alternates: {
-        canonical: `/languages/${code}`,
-      },
+      alternates: await localeAlternates(`/languages/${code}`),
       openGraph: {
         title: t('ogTitle', { name: language.data.name }),
         description: t('ogDescription', { name: language.data.name, count: language.data.countries.length }),

@@ -3,6 +3,7 @@ import fs from 'fs';
 import { PhoneNumbersClient, PhoneNumberEntry } from '@/components/phone/phone-numbers-client';
 import type { CountryLocaleData } from '@localedb/core/browser';
 import { getTranslations } from 'next-intl/server';
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -11,9 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
         title: t('title'),
         description: t('description'),
-        alternates: {
-            canonical: "/phone-numbers",
-        },
+        alternates: await localeAlternates("/phone-numbers"),
         openGraph: {
             title: t('ogTitle'),
             description: t('ogDescription'),

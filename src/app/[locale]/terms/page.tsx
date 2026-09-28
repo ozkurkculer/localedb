@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { LegalDocument } from '@/components/legal/legal-document';
+import { localeAlternates } from "@/lib/seo";
 
 const SECTIONS = ['license', 'data', 'warranty', 'fairUse', 'contributions', 'changes', 'contact'];
 
@@ -11,9 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
         title: t('title'),
         description: t('description'),
-        alternates: {
-            canonical: '/terms',
-        },
+        alternates: await localeAlternates('/terms'),
     };
 }
 

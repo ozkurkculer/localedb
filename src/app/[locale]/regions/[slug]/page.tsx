@@ -5,6 +5,7 @@ import { getAllRegions, getCountriesByRegion } from '@/lib/countries';
 import { getContinentStyle } from '@/components/countries/continent-variants';
 import { getTranslations } from 'next-intl/server';
 import { Globe } from 'lucide-react';
+import { localeAlternates } from "@/lib/seo";
 
 interface RegionPageProps {
     params: Promise<{
@@ -37,9 +38,7 @@ export async function generateMetadata({ params }: RegionPageProps): Promise<Met
     return {
         title: t('title', { region: regionName }),
         description: t('description', { region: regionName }),
-        alternates: {
-            canonical: `/regions/${slug}`,
-        },
+        alternates: await localeAlternates(`/regions/${slug}`),
         openGraph: {
             title: t('ogTitle', { region: regionName }),
             description: t('ogDescription', { region: regionName }),

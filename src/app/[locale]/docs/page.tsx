@@ -3,6 +3,7 @@ import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Lang
 import { TableOfContents } from '@/components/docs/table-of-contents';
 import { CodeBlock } from '@/components/docs/code-block';
 import { Metadata } from 'next';
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -11,9 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
         title: t('title'),
         description: t('description'),
-        alternates: {
-            canonical: "/docs",
-        },
+        alternates: await localeAlternates("/docs"),
         openGraph: {
             title: t('ogTitle'),
             description: t('ogDescription'),

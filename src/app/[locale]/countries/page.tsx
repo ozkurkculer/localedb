@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { CountriesGridClient } from "@/components/countries/countries-grid-client";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata() {
   const t = await getTranslations("countries.meta");
@@ -9,9 +10,7 @@ export async function generateMetadata() {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: "/countries",
-    },
+    alternates: await localeAlternates("/countries"),
     openGraph: {
       title: t("title"),
       description: t("description"),

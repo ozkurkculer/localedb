@@ -37,13 +37,6 @@ export async function generateMetadata({
     ja: "ja_JP",
   };
 
-  // Generate alternate language links
-  const languages: Record<string, string> = {};
-  routing.locales.forEach((loc) => {
-    const path = loc === routing.defaultLocale ? "/" : `/${loc}`;
-    languages[loc] = path;
-  });
-
   return {
     title: {
       default: siteConfig.title,
@@ -59,10 +52,6 @@ export async function generateMetadata({
     ],
     creator: siteConfig.creator.name,
     metadataBase: new URL(siteConfig.url),
-    alternates: {
-      canonical: locale === routing.defaultLocale ? "/" : `/${locale}`,
-      languages,
-    },
     openGraph: {
       type: "website",
       locale: ogLocaleMap[locale] || "en_US",

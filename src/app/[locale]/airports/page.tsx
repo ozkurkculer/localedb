@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { getAirportIndex } from "@/lib/airports";
 import { getCountryIndex } from "@/lib/countries";
 import { AirportsTableClient } from "@/components/airports/airports-table-client";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata() {
   const t = await getTranslations("airports.meta");
@@ -11,9 +12,7 @@ export async function generateMetadata() {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: "/airports",
-    },
+    alternates: await localeAlternates("/airports"),
     openGraph: {
       title: t("title"),
       description: t("description"),

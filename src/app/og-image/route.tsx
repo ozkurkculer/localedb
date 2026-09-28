@@ -13,15 +13,9 @@ export async function GET(request: NextRequest) {
     // const mode = searchParams.get('mode') || 'site'; // site, country, currency
     // const icon = searchParams.get('icon') || '🌐';
 
-    // Load the image from the public folder
-    // Note: In Edge runtime, we use fetch with a URL relative to import.meta.url or an absolute URL
-    // Since public files are static, we need to correct the path.
-    // For local dev/build, the safest way often involves constructing the URL.
-
-    // Attempting to resolve the image relative to this file
-    // src/app/og-image/route.tsx -> ../../../public/og_image.png
-    const imagePath = new URL('../../../public/og_image.png', import.meta.url);
-    const imageData = await fetch(imagePath).then((res) => res.arrayBuffer());
+    // Background image, fetched from the site's own static files. Node's fetch
+    // cannot read file:// URLs, so resolving it next to this file failed with a 500.
+    const imageData = await fetch(new URL('/og_image.png', request.url)).then((res) => res.arrayBuffer());
 
     return new ImageResponse(
         <div

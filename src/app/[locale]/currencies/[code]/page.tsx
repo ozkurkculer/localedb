@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { getCurrency, getAllCurrencyCodes } from '@/lib/currencies';
 import { getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
+import { localeAlternates } from "@/lib/seo";
 
 interface CurrencyPageProps {
     params: Promise<{
@@ -50,6 +51,7 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
                 symbol: currency.data.symbol,
                 count: currency.data.countries.length
             }),
+            alternates: await localeAlternates(`/currencies/${code}`),
             openGraph: {
                 title: t('ogTitle', { symbol: currency.data.symbol, name: currency.data.name, code: currency.data.code }),
                 description: t('ogDescription', {

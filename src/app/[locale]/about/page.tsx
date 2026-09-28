@@ -1,15 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import AboutContent from "./about-content";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("about");
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: {
-      canonical: "/about",
-    },
+    alternates: await localeAlternates("/about"),
     openGraph: {
       title: t("meta.title"),
       description: t("meta.description"),

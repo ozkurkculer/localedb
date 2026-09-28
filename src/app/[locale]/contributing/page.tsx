@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ContributingClient } from "@/components/contributing/contributing-client";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata() {
   const t = await getTranslations("contributing.meta");
@@ -8,9 +9,7 @@ export async function generateMetadata() {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: "/contributing",
-    },
+    alternates: await localeAlternates("/contributing"),
     openGraph: {
       title: t("title"),
       description: t("description"),

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getCurrencyIndex } from "@/lib/currencies";
 import { CurrenciesGridClient } from "@/components/currencies/currencies-grid-client";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -10,9 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: "/currencies",
-    },
+    alternates: await localeAlternates("/currencies"),
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),

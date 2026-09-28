@@ -6,6 +6,7 @@ import { getLanguageIndex } from "@/lib/languages";
 import { getAirportIndex } from "@/lib/airports";
 import { ExportBuilderClient } from "@/components/export/export-builder-client";
 import type { EntityOption } from "@/components/export/entity-grid";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -17,7 +18,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: "/export" },
+    alternates: await localeAlternates("/export"),
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
