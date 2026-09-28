@@ -104,33 +104,29 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
         return result;
     }, [countries, search, selectedContinent, sortKey, sortOrder]);
 
-    // Staggered entry animation
-    const containerVariants = {
+    // Re-render the grid as a whole when the result set changes: cards fade out
+    // together, then fade in with a short stagger. Animating each card's layout
+    // instead made cards fly in from their old grid positions.
+    const gridKey = `${selectedContinent ?? 'all'}|${sortKey}|${sortOrder}|${search}`;
+
+    const gridVariants = {
         hidden: {},
-        show: {
-            transition: {
-                staggerChildren: prefersReducedMotion ? 0 : 0.03
-            }
-        }
+        show: {},
+        exit: { opacity: 0, transition: { duration: 0.12, ease: 'easeIn' as const } }
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 12, scale: 0.97 },
-        show: {
+        hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 8 },
+        // Only the first rows are staggered, so long lists don't trail in.
+        show: (index: number) => ({
             opacity: 1,
             y: 0,
-            scale: 1,
             transition: {
-                type: 'spring' as const,
-                stiffness: 400,
-                damping: 28
+                duration: 0.25,
+                ease: 'easeOut' as const,
+                delay: prefersReducedMotion ? 0 : Math.min(index, 16) * 0.025
             }
-        },
-        exit: {
-            opacity: 0,
-            scale: 0.95,
-            transition: { duration: 0.15, ease: 'easeIn' as const }
-        }
+        })
     };
 
     return (
@@ -217,49 +213,51 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
             </p>
 
             {/* Grid */}
-            {filteredCountries.length > 0 ? (
-                <motion.div
-                    layout
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="show"
-                    className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-                >
-                    <AnimatePresence mode="popLayout">
-                        {filteredCountries.map((country) => (
+            <AnimatePresence mode="wait">
+                {filteredCountries.length > 0 ? (
+                    <motion.div
+                        key={gridKey}
+                        variants={gridVariants}
+                        initial="hidden"
+                        animate="show"
+                        exit="exit"
+                        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    >
+                        {filteredCountries.map((country, index) => (
                             <motion.div
                                 key={country.code}
-                                layout
+                                custom={index}
                                 variants={itemVariants}
-                                exit="exit"
                                 className="h-full"
                             >
                                 <CountryCard country={country} t={t} />
                             </motion.div>
                         ))}
-                    </AnimatePresence>
-                </motion.div>
-            ) : (
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="flex flex-col items-center gap-3 py-16 text-center"
-                >
-                    <Globe className="h-12 w-12 text-muted-foreground/30" />
-                    <p className="text-muted-foreground">{t('common.notFound')}</p>
-                    <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => {
-                            setSearchInput('');
-                            setSearch('');
-                            setSelectedContinent(null);
-                        }}
+                    </motion.div>
+                ) : (
+                    <motion.div
+                        key="empty"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        className="flex flex-col items-center gap-3 py-16 text-center"
                     >
-                        {t('common.clearFilters')}
-                    </Button>
-                </motion.div>
-            )}
+                        <Globe className="h-12 w-12 text-muted-foreground/30" />
+                        <p className="text-muted-foreground">{t('common.notFound')}</p>
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => {
+                                setSearchInput('');
+                                setSearch('');
+                                setSelectedContinent(null);
+                            }}
+                        >
+                            {t('common.clearFilters')}
+                        </Button>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
