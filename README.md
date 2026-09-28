@@ -1,9 +1,12 @@
-# 🌍 LocaleDB.org
+# LocaleDB.org
 
 **The Ultimate Open-Source Localization Encyclopedia.**
 
 <p align="center">
-  <img src="public/LocaleDB_logo_white.svg" alt="LocaleDB Logo" width="600" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/LocaleDB_logo_white.svg" />
+    <img src="public/LocaleDB_logo.svg" alt="LocaleDB Logo" width="600" />
+  </picture>
 </p>
 
 <p align="center">
