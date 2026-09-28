@@ -32,6 +32,10 @@ IANA Time Zone Database (tz)                     https://www.iana.org/time-zones
 License: Public domain
 Used for: time zones per country and UTC offsets.
 
+Google libaddressinput                           https://github.com/google/libaddressinput
+License: Apache License 2.0                      https://www.apache.org/licenses/LICENSE-2.0
+Used for: address formats, postal code patterns and examples.
+
 Google libphonenumber                            https://github.com/google/libphonenumber
 License: Apache License 2.0                      https://www.apache.org/licenses/LICENSE-2.0
 Used for: phone number patterns, formats and example numbers.

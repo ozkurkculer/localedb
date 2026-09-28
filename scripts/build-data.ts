@@ -12,6 +12,7 @@ import type {
 } from '@localedb/core/browser';
 import { Cldr } from './sources/cldr';
 import { TimeZones, standardOffset } from './sources/tz';
+import { AddressFormats } from './sources/address';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -331,6 +332,10 @@ async function build() {
     const timeZones = new TimeZones(path.join(DATA_DIR, 'tz', 'zone.tab'));
     if (!timeZones.size) console.warn('⚠️  data/tz/zone.tab not found, time zones stay empty. Run `pnpm update:data tz`.');
 
+    console.log('📮 Loading libaddressinput...');
+    const addressFormats = new AddressFormats(path.join(DATA_DIR, 'libaddressinput', 'countryinfo.txt'));
+    if (!addressFormats.size) console.warn('⚠️  libaddressinput data not found, address formats use defaults. Run `pnpm update:data address`.');
+
     // Legacy: SimpleLocalize is being phased out. When its files are present they
     // only fill fields no other source provides yet (see LEGACY_SL_FIELDS).
     const slCountries: any[] = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
@@ -556,6 +561,7 @@ async function build() {
                 slData: slMap.get(isoCode),
                 cldr,
                 timeZones,
+                addressFormats,
                 wbData: wbDataMap.get(mledozeCountry.cca3),
                 index: countryIndex,
                 langMap: languageUsageMap,
@@ -607,6 +613,7 @@ async function build() {
             { name: "mledoze", version: "latest" },
             { name: "libphonenumber", version: "latest" },
             { name: "IANA tz", version: "latest" },
+            { name: "libaddressinput", version: "latest" },
             ...(slMap.size ? [{ name: "SimpleLocalize (legacy fallback)", version: "latest" }] : []),
             { name: "MWGG Airports", version: "latest" },
             { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
@@ -623,7 +630,7 @@ build().catch(console.error);
  * SimpleLocalize files are present and will move to IANA tz, libaddressinput
  * and Wikidata step by step.
  */
-const LEGACY_SL_FIELDS = 'postal codes, capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
+const LEGACY_SL_FIELDS = 'capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
 
 interface ProcessCountryInput {
     isoCode: string;
@@ -631,6 +638,7 @@ interface ProcessCountryInput {
     slData?: any;
     cldr: Cldr;
     timeZones: TimeZones;
+    addressFormats: AddressFormats;
     wbData?: WorldBankData;
     index: CountryIndexEntry[];
     langMap: Record<string, string[]>;
@@ -642,7 +650,7 @@ interface ProcessCountryInput {
 }
 
 async function processCountry({
-    isoCode, mledozeData, slData, cldr, timeZones, wbData, index, langMap, languageInfoMap,
+    isoCode, mledozeData, slData, cldr, timeZones, addressFormats, wbData, index, langMap, languageInfoMap,
     currencyMap, currencyInfoMap, airports, phoneMeta,
 }: ProcessCountryInput) {
     // --- Locale: CLDR likely language, most specific CLDR locale available (e.g. de-CH, zh-Hant-TW)
@@ -726,7 +734,7 @@ async function processCountry({
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
+        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(addressFormats.has(isoCode) ? ["libaddressinput"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
         basics: {
             name: name,
             officialName: mledozeData.name.official || name,
@@ -866,15 +874,7 @@ async function processCountry({
                 subscriberNumberLengths: Array.from(allLengths).sort((a, b) => a - b),
             };
         })(),
-        addressFormat: {
-            format: "%N%n%A%n%Z %C",
-            lineOrder: ["name", "address", "city"],
-            postalCodeFormat: slData?.postal_code_format || "",
-            postalCodeRegex: slData?.postal_code_regex || "",
-            postalCodeExample: "",
-            administrativeDivisionName: "Province",
-            administrativeDivisionType: "Province"
-        },
+        addressFormat: addressFormats.get(isoCode),
         locale: {
             writingDirection: cldr.direction(cldrPath),
             measurementSystem: "metric",

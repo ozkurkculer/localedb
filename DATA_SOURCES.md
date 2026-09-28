@@ -16,6 +16,9 @@ We merge data from multiple sources to create the most accurate and rich dataset
 ### Time Zones
 **IANA tz database** (`zone.tab`, public domain): time zones per country. The primary zone is the capital's; the UTC offset is its standard-time offset.
 
+### Addresses
+**Google libaddressinput** (`countryinfo.txt`, Apache 2.0): address format per country, postal code regex and examples, and the name of the first-level division (state, province, prefecture…).
+
 ### Phone Data
 **Google libphonenumber** (`PhoneNumberMetadata.xml`): calling codes, number patterns, formats and example numbers.
 
