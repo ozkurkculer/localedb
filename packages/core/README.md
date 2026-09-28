@@ -52,4 +52,4 @@ All record types are exported: `CountryLocaleData`, `Currency`, `Language`, `Air
 
 ## License
 
-The code is MIT licensed. The bundled data comes from third-party sources (Unicode CLDR, ICU, mledoze/countries, the World Bank, libphonenumber, mwgg/Airports, IP2Location, SimpleLocalize), each under its own license, some of them share-alike. See [NOTICE](./NOTICE) before redistributing the data.
+The code is MIT licensed. The bundled data comes from third-party sources (Unicode CLDR, mledoze/countries, the World Bank, the IANA tz database, libphonenumber, libaddressinput, Wikidata, ourworldincode/currency, mwgg/Airports, IP2Location), each under its own license, some of them share-alike. See [NOTICE](./NOTICE) before redistributing the data.

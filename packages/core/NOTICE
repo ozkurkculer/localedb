@@ -14,10 +14,6 @@ Unicode CLDR (cldr-json)                         https://github.com/unicode-org/
 License: Unicode License v3                      https://www.unicode.org/license.txt
 Used for: localized names, number, currency and date/time formats.
 
-ICU (International Components for Unicode)       https://github.com/unicode-org/icu
-License: Unicode License v3                      https://www.unicode.org/license.txt
-Used for: fallback region, language, currency and time zone names.
-
 mledoze/countries                                https://github.com/mledoze/countries
 License: Open Database License (ODbL) v1.0       https://opendatacommons.org/licenses/odbl/1-0/
 Used for: country codes, geography, borders, calling codes, currencies, languages.
@@ -45,6 +41,10 @@ Google libphonenumber                            https://github.com/google/libph
 License: Apache License 2.0                      https://www.apache.org/licenses/LICENSE-2.0
 Used for: phone number patterns, formats and example numbers.
 
+ourworldincode/currency                          https://github.com/ourworldincode/currency
+License: MIT
+Used for: currency subunit names and subunits per unit.
+
 mwgg/Airports                                    https://github.com/mwgg/Airports
 License: MIT
 Used for: airport names, codes, locations and time zones.
@@ -55,9 +55,6 @@ Used for: additional airport IATA/ICAO codes.
 Required attribution: "This site or product includes IATA/ICAO List data
 available from https://github.com/ip2location/ip2location-iata-icao."
 
-SimpleLocalize                                   https://simplelocalize.io/data/
-Public country, language and locale lists from cdn.simplelocalize.io.
-Used for: the base list of countries, languages and ISO codes.
 --------------------------------------------------------------------------------
 
 Flag emoji are Unicode characters and are not covered by the ODbL.

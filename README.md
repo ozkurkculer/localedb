@@ -100,12 +100,14 @@ LocaleDB aggregates and normalizes data from the most reliable open-source proje
 
 - **[CLDR](https://cldr.unicode.org/)** (Common Locale Data Repository): The gold standard for formatting patterns (dates, numbers, currencies).
 - **[mledoze/countries](https://github.com/mledoze/countries)**: Comprehensive country data (ISO codes, geography, demographics).
-- **[SimpleLocalize/countries-and-languages](https://github.com/simplelocalize/countries-and-languages)**: Normalized lists of countries and languages.
 - **[IP2Location](https://github.com/ip2location/ip2location-iata-icao)**: Global airport database with IATA/ICAO codes.
 - **[mwgg/Airports](https://github.com/mwgg/Airports)**: Airport names, locations and time zones.
 - **[World Bank Open Data](https://data.worldbank.org)**: Population, region and income group.
 - **[libphonenumber](https://github.com/google/libphonenumber)**: Phone number patterns and formats.
-- **[ICU](https://github.com/unicode-org/icu)**: International Components for Unicode.
+- **[IANA tz database](https://www.iana.org/time-zones)**: Time zones per country.
+- **[libaddressinput](https://github.com/google/libaddressinput)**: Address formats and postal codes.
+- **[Wikidata](https://www.wikidata.org)**: FIFA, vehicle, ITU, UIC, maritime and mobile country codes, capital coordinates, driving side and currency subunits.
+- **[ourworldincode/currency](https://github.com/ourworldincode/currency)**: Currency subunit names and ratios.
 
 
 
@@ -174,7 +176,7 @@ This will run type checks, linting, and generate static pages for all locales.
 ### 📜 Available Scripts
 
 - **`pnpm build:data`**: Generates all static JSON files in `data/` from sources.
-- **`pnpm update:data`**: Fetches fresh data from external sources (SimpleLocalize, etc.).
+- **`pnpm update:data`**: Fetches fresh data from external sources (CLDR, mledoze, IANA tz, Wikidata, etc.).
 - **`pnpm build:clean`**: Performs a full clean build: updates data -> builds data -> builds Next.js app.
 - **`pnpm packages:typecheck` / `packages:test` / `packages:build`**: Checks, tests and builds the npm packages in `packages/`.
 

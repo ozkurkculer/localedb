@@ -7,17 +7,18 @@ This project automatically aggregates data from multiple upstream sources.
 We merge data from multiple sources to create the most accurate and rich dataset. The build script (`scripts/build-data.ts`) applies the following strict priority (highest to lowest):
 
 ### Country Data
-1.  **CLDR** (Highest): Localized Names, Number Formats, Date/Time Patterns.
-2.  **ICU**: Fallback for localized names and regions.
-3.  **World Bank**: Population, Region, Income Group.
-4.  **Mledoze**: Coordinates, Calling Codes, Currencies, Languages, Geo-data.
-5.  **SimpleLocalize** (Base): Basic country list and ISO codes.
+1.  **CLDR** (Highest): Localized names, primary language and locale, number, currency and date/time formats, continent (UN M49), official languages, ISO/FIPS codes, currency codes and digits.
+2.  **World Bank**: Population, region, income group (CLDR population as fallback).
+3.  **mledoze**: Country list, capital, coordinates, area, borders, TLD, IOC code, demonym.
 
 ### Time Zones
 **IANA tz database** (`zone.tab`, public domain): time zones per country. The primary zone is the capital's; the UTC offset is its standard-time offset.
 
 ### Addresses
 **Google libaddressinput** (`countryinfo.txt`, Apache 2.0): address format per country, postal code regex and examples, and the name of the first-level division (state, province, prefecture…).
+
+### Currency Subunits
+**ourworldincode/currency** (MIT): subunit names and subunits per unit (e.g. 100 kuruş, 5 khoums); **Wikidata** (P9059) as fallback.
 
 ### Country Identifiers
 **Wikidata** (SPARQL, CC0): FIFA (P3441), vehicle registration (P395), ITU letter (P3024), UIC (P2982), maritime identification digits (P2979) and mobile country (P2258) codes, FIPS 10-4 fallback (P901), capital coordinates (P36 → P625) and driving side (P1622). Fetched with `pnpm update:data wikidata`.

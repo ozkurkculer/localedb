@@ -53,7 +53,6 @@ const COUNTRY_FIELDS: FieldNode[] = [
       { key: "vehicleCode", path: "codes.vehicleCode", defaultSelected: false },
       { key: "fips10", path: "codes.fips10", defaultSelected: false },
       { key: "unLocode", path: "codes.unLocode", defaultSelected: false },
-      { key: "stanag1059", path: "codes.stanag1059", defaultSelected: false },
       { key: "itu", path: "codes.itu", defaultSelected: false },
       { key: "uic", path: "codes.uic", defaultSelected: false },
       { key: "maritime", path: "codes.maritime", defaultSelected: false },

@@ -14,6 +14,7 @@ import { Cldr } from './sources/cldr';
 import { TimeZones, standardOffset } from './sources/tz';
 import { AddressFormats } from './sources/address';
 import { Wikidata } from './sources/wikidata';
+import { CurrencyUnits } from './sources/currency-units';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -337,16 +338,13 @@ async function build() {
     const addressFormats = new AddressFormats(path.join(DATA_DIR, 'libaddressinput', 'countryinfo.txt'));
     if (!addressFormats.size) console.warn('⚠️  libaddressinput data not found, address formats use defaults. Run `pnpm update:data address`.');
 
-    console.log('🔗 Loading Wikidata...');
-    const wikidata = new Wikidata(path.join(DATA_DIR, 'wikidata', 'countries.json'));
-    if (!wikidata.size) console.warn('⚠️  Wikidata data not found; FIFA, vehicle, ITU, UIC, MID, MCC codes, capital coordinates and driving side stay empty. Run `pnpm update:data wikidata`.');
+    console.log('🪙 Loading currency units...');
+    const currencyUnits = new CurrencyUnits(path.join(DATA_DIR, 'ourworldincode', 'currencies.json'));
+    if (!currencyUnits.size) console.warn('⚠️  ourworldincode currency data not found; subunit names come only from Wikidata. Run `pnpm update:data currency-units`.');
 
-    // Legacy: SimpleLocalize is being phased out. When its files are present they
-    // only fill fields no other source provides yet (see LEGACY_SL_FIELDS).
-    const slCountries: any[] = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
-    const slMap = new Map<string, any>(slCountries.map((c: any) => [c.code, c]));
-    if (slMap.size) console.log(`   SimpleLocalize fallback available for ${slMap.size} countries`);
-    else console.warn(`⚠️  No SimpleLocalize fallback; these fields stay empty: ${LEGACY_SL_FIELDS}`);
+    console.log('🔗 Loading Wikidata...');
+    const wikidata = new Wikidata(path.join(DATA_DIR, 'wikidata'));
+    if (!wikidata.size) console.warn('⚠️  Wikidata data not found; FIFA, vehicle, ITU, UIC, MID, MCC codes, capital coordinates and driving side stay empty. Run `pnpm update:data wikidata`.');
 
     console.log('📦 Loading World Bank (Layer 2)...');
     const wbDataMap = await loadWorldBankData();
@@ -554,6 +552,11 @@ async function build() {
 
     const languageInfoMap = new Map<string, Language>();
 
+    // IOC and ISO alpha-3 codes per country, to keep FIFA codes from being mis-attributed
+    const countryCodes = new Map<string, string[]>(
+        mledozeList.map((c: any) => [c.cca2, [c.cioc, c.cca3].filter(Boolean)])
+    );
+
     console.log(`🌍 Processing ${mledozeList.length} countries...`);
     const BATCH_SIZE = 10;
     for (let i = 0; i < mledozeList.length; i += BATCH_SIZE) {
@@ -563,11 +566,12 @@ async function build() {
             await processCountry({
                 isoCode,
                 mledozeData: mledozeCountry,
-                slData: slMap.get(isoCode),
                 cldr,
                 timeZones,
                 addressFormats,
                 wikidata,
+                currencyUnits,
+                countryCodes,
                 wbData: wbDataMap.get(mledozeCountry.cca3),
                 index: countryIndex,
                 langMap: languageUsageMap,
@@ -621,7 +625,7 @@ async function build() {
             { name: "IANA tz", version: "latest" },
             { name: "libaddressinput", version: "latest" },
             { name: "Wikidata", version: "latest" },
-            ...(slMap.size ? [{ name: "SimpleLocalize (legacy fallback)", version: "latest" }] : []),
+            { name: "ourworldincode/currency", version: "latest" },
             { name: "MWGG Airports", version: "latest" },
             { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
         ]
@@ -632,21 +636,16 @@ async function build() {
 }
 
 build().catch(console.error);
-/**
- * Fields no open source provides yet. They are only filled when the legacy
- * SimpleLocalize files are present and will move to IANA tz, libaddressinput
- * and Wikidata step by step.
- */
-const LEGACY_SL_FIELDS = 'STANAG 1059 codes, currency subunit names';
 
 interface ProcessCountryInput {
     isoCode: string;
     mledozeData: any;
-    slData?: any;
     cldr: Cldr;
     timeZones: TimeZones;
     addressFormats: AddressFormats;
     wikidata: Wikidata;
+    currencyUnits: CurrencyUnits;
+    countryCodes: Map<string, string[]>;
     wbData?: WorldBankData;
     index: CountryIndexEntry[];
     langMap: Record<string, string[]>;
@@ -658,7 +657,7 @@ interface ProcessCountryInput {
 }
 
 async function processCountry({
-    isoCode, mledozeData, slData, cldr, timeZones, addressFormats, wikidata, wbData, index, langMap, languageInfoMap,
+    isoCode, mledozeData, cldr, timeZones, addressFormats, wikidata, currencyUnits, countryCodes, wbData, index, langMap, languageInfoMap,
     currencyMap, currencyInfoMap, airports, phoneMeta,
 }: ProcessCountryInput) {
     // --- Locale: CLDR likely language, most specific CLDR locale available (e.g. de-CH, zh-Hant-TW)
@@ -695,8 +694,9 @@ async function processCountry({
         decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",
         thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
         decimalDigits,
-        subunitValue: 10 ** decimalDigits,
-        subunitName: slData?.currency_subunit_name || "",
+        // Subunit: ourworldincode > Wikidata; ratio defaults to the minor-unit digits
+        subunitValue: currencyUnits.subunitsPerUnit(currencyCode) ?? 10 ** decimalDigits,
+        subunitName: currencyUnits.subunitName(currencyCode) || wikidata.currencySubunits(currencyCode)[0] || "",
         pattern: currencyPattern,
         example: safeFormatCurrency(cldrLocale, currencyCode, 123456.789),
         accountingExample: safeFormatCurrency(cldrLocale, currencyCode, -1234.56, { currencySign: "accounting" })
@@ -744,15 +744,14 @@ async function processCountry({
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(addressFormats.has(isoCode) ? ["libaddressinput"] : []), ...(wiki ? ["Wikidata"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
+        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(addressFormats.has(isoCode) ? ["libaddressinput"] : []), ...(wiki ? ["Wikidata"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : [])],
         basics: {
             name: name,
             officialName: mledozeData.name.official || name,
             nativeName: territories || mledozeData.name.common,
             officialNativeName: mledozeData.name.native?.[Object.keys(mledozeData.name.native || {})[0]]?.official || "",
             capital,
-            capitalCoordinates: wikidata.capitalCoordinates(isoCode, capital)
-                ?? (slData ? [slData.capital_latitude, slData.capital_longitude] : [0, 0]),
+            capitalCoordinates: wikidata.capitalCoordinates(isoCode, capital) ?? [0, 0],
             coordinates: mledozeData.latlng || [0, 0],
             continent: cldr.continent(isoCode),
             region: region,
@@ -777,15 +776,18 @@ async function processCountry({
             bcp47: [cldrLocale],
             internetTld: tld[0] || "",
             ioc: mledozeData.cioc || "",
-            fifa: wiki?.fifa || slData?.fifa || "",
-            vehicleCode: wiki?.vehicleCode || slData?.vehicle_code || "",
+            fifa: wikidata.fifaCode(
+                isoCode,
+                countryCodes.get(isoCode) ?? [],
+                new Set([...countryCodes].filter(([code]) => code !== isoCode).flatMap(([, codes]) => codes))
+            ) || "",
+            vehicleCode: wiki?.vehicleCode || "",
             fips10: codes.fips10 || wiki?.fips10 || "",
             unLocode: isoCode,
-            stanag1059: slData?.stanag_1059 || "",
-            itu: wiki?.itu || slData?.itu || "",
-            uic: wiki?.uic || slData?.uic || "",
-            maritime: wiki?.maritime || slData?.maritime || 0,
-            mmc: wiki?.mcc || slData?.mmc || 0
+            itu: wiki?.itu || "",
+            uic: wiki?.uic || "",
+            maritime: wiki?.maritime || 0,
+            mmc: wiki?.mcc || 0
         },
         currency: currencyObj,
         dateTime: {

@@ -862,7 +862,7 @@
             "features": {
                 "title": "主な機能",
                 "items": {
-                    "comprehensive": "信頼できる情報源からの包括的なデータ（CLDR、世界銀行、mledoze、libphonenumber）",
+                    "comprehensive": "信頼できる情報源からの包括的なデータ（CLDR、世界銀行、mledoze、libphonenumber、IANA tz、libaddressinput、Wikidata）",
                     "static": "静的生成 - ランタイムデータベースは不要",
                     "openSource": "MITライセンスおよびコミュニティ主導",
                     "i18n": "アラビア語のRTLサポートを含む11言語"
@@ -886,7 +886,7 @@
             "steps": {
                 "sources": {
                     "title": "外部ソース",
-                    "description": "CLDR、mledoze、世界銀行、libphonenumber、OpenFlights (MWGG)"
+                    "description": "CLDR、mledoze、世界銀行、libphonenumber、IANA tz、libaddressinput、Wikidata、OpenFlights (MWGG)"
                 },
                 "update": {
                     "title": "生データをダウンロード",
@@ -913,8 +913,8 @@
                 "title": "データソースの優先順位",
                 "description": "複数のソースが同じフィールドを提供する場合、一貫した優先システムを使用します：",
                 "rules": {
-                    "names": "国名：CLDR > mledoze > SimpleLocalize",
-                    "population": "人口：世界銀行 > mledoze > SimpleLocalize",
+                    "names": "国名：CLDR > mledoze",
+                    "population": "人口：世界銀行 > CLDR",
                     "phone": "電話データ：libphonenumber XML（公式）"
                 }
             }
@@ -1172,7 +1172,7 @@
                 },
                 "data": {
                     "title": "The data",
-                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, the World Bank, Google libphonenumber, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
+                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, mledoze/countries, the World Bank, the IANA tz database, Google libphonenumber, Google libaddressinput, Wikidata, ourworldincode/currency, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
                 },
                 "warranty": {
                     "title": "No warranty",

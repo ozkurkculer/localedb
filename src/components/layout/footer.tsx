@@ -81,7 +81,7 @@ export async function Footer() {
                         >
                             v{version}
                         </Link>
-                        <p>Built with ❤️ by ozkurkculer, for developers.</p>
+                        <p>Built with ❤️ by ozkurkculer, for curious minds.</p>
                     </div>
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         {footerNav.legal.map((item) => {

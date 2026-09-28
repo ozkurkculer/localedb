@@ -6,7 +6,7 @@ import AdmZip from 'adm-zip';
 import dotenv from 'dotenv';
 import { Readable } from 'stream';
 import { finished } from 'stream/promises';
-import { WIKIDATA_COUNTRY_QUERY } from './sources/wikidata';
+import { WIKIDATA_COUNTRY_QUERY, WIKIDATA_CURRENCY_QUERY, WIKIDATA_FIFA_FEDERATION_QUERY, WIKIDATA_FIFA_QUERY } from './sources/wikidata';
 
 // Load .env
 dotenv.config();
@@ -47,7 +47,7 @@ async function downloadZipAndExtract(url: string, outputDir: string, filter?: (f
 
         if (filter && !filter(entry.entryName)) return;
 
-        // Flatten logic for CLDR/ICU if needed, or preserve structure?
+        // Flatten logic for CLDR if needed, or preserve structure?
         // For CLDR, the zip is like `cldr-json-44.0.0/cldr-json/cldr-core/...`
         // We probably want to strip the top-level folder.
 
@@ -80,16 +80,6 @@ async function getLatestGitHubTag(repo: string): Promise<string> {
 }
 
 // --- Main Tasks ---
-
-async function updateSimpleLocalize() {
-    console.log('\n--- SimpleLocalize ---');
-    const dir = path.join(DATA_DIR, 'simplelocalize');
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-
-    await downloadFile(process.env.SL_COUNTRIES_URL!, path.join(dir, 'countries.json'));
-    await downloadFile(process.env.SL_LANGUAGES_URL!, path.join(dir, 'languages.json'));
-    await downloadFile(process.env.SL_LOCALES_URL!, path.join(dir, 'locales.json'));
-}
 
 async function updateWorldBank() {
     console.log('\n--- World Bank ---');
@@ -176,10 +166,17 @@ async function updateAddressFormats() {
     );
 }
 
-async function updateWikidata() {
-    console.log('\n--- Wikidata ---');
-    const outputDir = path.join(DATA_DIR, 'wikidata');
+async function updateCurrencyUnits() {
+    console.log('\n--- ourworldincode/currency ---');
+    const outputDir = path.join(DATA_DIR, 'ourworldincode');
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    await downloadFile(
+        process.env.CURRENCY_UNITS_URL || 'https://raw.githubusercontent.com/ourworldincode/currency/main/currencies.json',
+        path.join(outputDir, 'currencies.json')
+    );
+}
+
+async function queryWikidata(query: string, attempt = 1): Promise<{ results?: { bindings?: unknown[] } }> {
     const res = await fetch(process.env.WIKIDATA_SPARQL_URL || 'https://query.wikidata.org/sparql', {
         method: 'POST',
         headers: {
@@ -188,36 +185,40 @@ async function updateWikidata() {
             // Required by the Wikimedia User-Agent policy.
             'User-Agent': 'LocaleDB data build (https://localedb.org; https://github.com/ozkurkculer/localedb)',
         },
-        body: new URLSearchParams({ query: WIKIDATA_COUNTRY_QUERY }),
+        body: new URLSearchParams({ query }),
     });
+    // Wikidata rate-limits (429) and times out (5xx) under load; wait as asked and retry.
+    if ((res.status === 429 || res.status >= 500) && attempt < 5) {
+        const wait = Math.min(Number(res.headers.get('retry-after')) || 15 * attempt, 120);
+        console.log(`⏳ Wikidata answered ${res.status}, retrying in ${wait}s...`);
+        await new Promise((resolve) => setTimeout(resolve, wait * 1000));
+        return queryWikidata(query, attempt + 1);
+    }
     if (!res.ok) throw new Error(`Wikidata query failed: ${res.status} ${res.statusText}`);
-    const json = await res.json() as { results?: { bindings?: unknown[] } };
-    fs.writeFileSync(path.join(outputDir, 'countries.json'), JSON.stringify(json));
-    console.log(`✅ Saved ${json.results?.bindings?.length ?? 0} Wikidata rows`);
+    return res.json() as Promise<{ results?: { bindings?: unknown[] } }>;
 }
 
-async function updateICU() {
-    console.log('\n--- ICU ---');
-    let version = process.env.ICU_VERSION || 'latest';
-    if (version === 'latest') {
-        version = await getLatestGitHubTag(process.env.ICU_REPO!);
+async function updateWikidata() {
+    console.log('\n--- Wikidata ---');
+    const outputDir = path.join(DATA_DIR, 'wikidata');
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    const queries = [
+        ['countries', WIKIDATA_COUNTRY_QUERY],
+        ['fifa-federations', WIKIDATA_FIFA_FEDERATION_QUERY],
+        ['fifa', WIKIDATA_FIFA_QUERY],
+        ['currencies', WIKIDATA_CURRENCY_QUERY],
+    ] as const;
+    for (const [name, query] of queries) {
+        const json = await queryWikidata(query);
+        fs.writeFileSync(path.join(outputDir, `${name}.json`), JSON.stringify(json));
+        console.log(`✅ Saved ${json.results?.bindings?.length ?? 0} Wikidata ${name}`);
     }
-
-    const url = `https://github.com/${process.env.ICU_REPO}/archive/refs/tags/${version}.zip`;
-    const paths = (process.env.ICU_PATHS || '').split(',');
-    const outputDir = path.join(DATA_DIR, 'icu'); // This might need refinement depending on structure
-
-    await downloadZipAndExtract(url, outputDir, (filename) => {
-        // Filename example: icu-release-74-2/icu4c/source/data/region/en.txt
-        // Filter by paths in icu4c/source/data/
-        return paths.some(p => filename.includes(`/icu4c/source/data/${p}/`));
-    });
 }
 
 
 async function main() {
     const args = process.argv.slice(2);
-    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber', 'tz', 'address', 'wikidata'];
+    const availableSources = ['mledoze', 'airports', 'worldbank', 'cldr', 'libphonenumber', 'tz', 'address', 'wikidata', 'currency-units'];
 
     // Check for helps/list
     if (args.includes('--help') || args.includes('-h')) {
@@ -246,16 +247,15 @@ If no source is specified, ALL sources will be updated.
     console.log(`🚀 Updating sources: ${sourcesToUpdate.join(', ')}`);
 
     try {
-        if (sourcesToUpdate.includes('simplelocalize')) await updateSimpleLocalize();
         if (sourcesToUpdate.includes('mledoze')) await updateMledoze();
         if (sourcesToUpdate.includes('airports')) await updateAirports();
         if (sourcesToUpdate.includes('worldbank')) await updateWorldBank();
         if (sourcesToUpdate.includes('cldr')) await updateCLDR();
-        if (sourcesToUpdate.includes('icu')) await updateICU();
         if (sourcesToUpdate.includes('libphonenumber')) await updateLibphonenumber();
         if (sourcesToUpdate.includes('tz')) await updateTimeZones();
         if (sourcesToUpdate.includes('address')) await updateAddressFormats();
         if (sourcesToUpdate.includes('wikidata')) await updateWikidata();
+        if (sourcesToUpdate.includes('currency-units')) await updateCurrencyUnits();
 
         console.log('\n✨ Selected data sources updated successfully!');
     } catch (error) {

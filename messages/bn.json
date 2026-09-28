@@ -862,7 +862,7 @@
             "features": {
                 "title": "মূল বৈশিষ্ট্য",
                 "items": {
-                    "comprehensive": "নির্ভরযোগ্য উৎস থেকে ব্যাপক ডেটা (CLDR, World Bank, mledoze, libphonenumber)",
+                    "comprehensive": "নির্ভরযোগ্য উৎস থেকে ব্যাপক ডেটা (CLDR, World Bank, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata)",
                     "static": "স্ট্যাটিক জেনারেশন - রানটাইম ডাটাবেসের প্রয়োজন নেই",
                     "openSource": "MIT লাইসেন্সপ্রাপ্ত এবং কমিউনিটি দ্বারা চালিত",
                     "i18n": "আরবি ভাষার জন্য RTL সমর্থন সহ ১১টি ভাষা"
@@ -886,7 +886,7 @@
             "steps": {
                 "sources": {
                     "title": "বহিরাগত উৎস",
-                    "description": "CLDR, mledoze, World Bank, libphonenumber, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, World Bank, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
                 },
                 "update": {
                     "title": "কাঁচা ডেটা ডাউনলোড করুন",
@@ -913,8 +913,8 @@
                 "title": "ডেটা সোর্স অগ্রাধিকার",
                 "description": "যখন একাধিক উৎস একই ক্ষেত্র প্রদান করে, আমরা একটি ধারাবাহিক অগ্রাধিকার সিস্টেম ব্যবহার করি:",
                 "rules": {
-                    "names": "দেশের নাম: CLDR > mledoze > SimpleLocalize",
-                    "population": "জনসংখ্যা: World Bank > mledoze > SimpleLocalize",
+                    "names": "দেশের নাম: CLDR > mledoze",
+                    "population": "জনসংখ্যা: World Bank > CLDR",
                     "phone": "ফোন ডেটা: libphonenumber XML (কর্তৃত্বপূর্ণ)"
                 }
             }
@@ -1172,7 +1172,7 @@
                 },
                 "data": {
                     "title": "The data",
-                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, the World Bank, Google libphonenumber, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
+                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, mledoze/countries, the World Bank, the IANA tz database, Google libphonenumber, Google libaddressinput, Wikidata, ourworldincode/currency, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
                 },
                 "warranty": {
                     "title": "No warranty",

@@ -11,7 +11,6 @@ import fs from 'fs';
  */
 export const WIKIDATA_COUNTRY_QUERY = `
 SELECT ?iso
-  (GROUP_CONCAT(DISTINCT ?fifa; separator="|") AS ?fifas)
   (GROUP_CONCAT(DISTINCT ?vehicle; separator="|") AS ?vehicles)
   (GROUP_CONCAT(DISTINCT ?itu; separator="|") AS ?itus)
   (GROUP_CONCAT(DISTINCT ?uic; separator="|") AS ?uics)
@@ -23,7 +22,6 @@ SELECT ?iso
 WHERE {
   ?country wdt:P297 ?iso .
   FILTER NOT EXISTS { ?country wdt:P576 ?dissolved }
-  OPTIONAL { ?country wdt:P3441 ?fifa }
   OPTIONAL { ?country wdt:P395 ?vehicle }
   OPTIONAL { ?country wdt:P3024 ?itu }
   OPTIONAL { ?country wdt:P2982 ?uic }
@@ -36,8 +34,53 @@ WHERE {
 GROUP BY ?iso
 `;
 
+/**
+ * FIFA codes live on national football federations and teams, not on the
+ * country. Federations (Q1478443) are the authoritative holders; team items fill
+ * in where a federation lacks the code (Germany) and cover territories filed
+ * under their sovereign state (Hong Kong -> China). See `fifaCode()`.
+ */
+export const WIKIDATA_FIFA_FEDERATION_QUERY = `
+SELECT ?iso (GROUP_CONCAT(DISTINCT ?fifa; separator="|") AS ?fifas)
+WHERE {
+  hint:Query hint:optimizer "None" .
+  ?federation wdt:P3441 ?fifa .
+  ?federation wdt:P31 wd:Q1478443 .
+  ?federation wdt:P17 ?country .
+  ?country wdt:P297 ?iso .
+}
+GROUP BY ?iso
+`;
+
+/** All items with a FIFA code (~1,800), in that order for the query planner. */
+export const WIKIDATA_FIFA_QUERY = `
+SELECT ?iso (GROUP_CONCAT(DISTINCT ?fifa; separator="|") AS ?fifas)
+WHERE {
+  hint:Query hint:optimizer "None" .
+  ?item wdt:P3441 ?fifa .
+  ?item wdt:P17 ?country .
+  ?country wdt:P297 ?iso .
+}
+GROUP BY ?iso
+`;
+
+/** English names of currency subdivisions, by ISO 4217 code (P498 -> P9059). */
+export const WIKIDATA_CURRENCY_QUERY = `
+SELECT ?code (GROUP_CONCAT(DISTINCT ?subunitLabel; separator="|") AS ?subunits)
+WHERE {
+  ?currency wdt:P498 ?code ; wdt:P9059 ?subunit .
+  ?subunit rdfs:label ?subunitLabel . FILTER(LANG(?subunitLabel) = "en")
+}
+GROUP BY ?code
+`;
+
+type WikidataJson = { results?: { bindings?: Record<string, { value: string }>[] } };
+
 export interface WikidataCountry {
-    fifa?: string;
+    /** FIFA codes of the country's football federations (authoritative); see `fifaCode()`. */
+    fifaFederationCodes: string[];
+    /** FIFA codes of any federation or team attached to the country. */
+    fifaCodes: string[];
     vehicleCode?: string;
     itu?: string;
     uic?: string;
@@ -76,7 +119,8 @@ export function parseWikidataCountries(json: { results?: { bindings?: Record<str
         });
 
         byCode.set(iso, {
-            fifa: values(binding, 'fifas')[0],
+            fifaFederationCodes: [],
+            fifaCodes: [],
             vehicleCode: values(binding, 'vehicles').sort((a, b) => a.length - b.length)[0],
             itu: values(binding, 'itus')[0],
             uic: values(binding, 'uics')[0],
@@ -94,11 +138,40 @@ export function parseWikidataCountries(json: { results?: { bindings?: Record<str
     return byCode;
 }
 
+/** Adds FIFA codes (federations and all items) to the parsed countries. */
+export function mergeFifaCodes(countries: Map<string, WikidataCountry>, federations: WikidataJson, items: WikidataJson): void {
+    for (const [json, key] of [[federations, 'fifaFederationCodes'], [items, 'fifaCodes']] as const) {
+        for (const binding of json.results?.bindings ?? []) {
+            const country = countries.get(binding.iso?.value?.toUpperCase() ?? '');
+            if (country) country[key] = values(binding, 'fifas');
+        }
+    }
+}
+
+export function parseWikidataCurrencies(json: { results?: { bindings?: Record<string, { value: string }>[] } }): Map<string, string[]> {
+    const byCode = new Map<string, string[]>();
+    for (const binding of json.results?.bindings ?? []) {
+        const code = binding.code?.value?.toUpperCase();
+        if (code && /^[A-Z]{3}$/.test(code)) byCode.set(code, values(binding, 'subunits'));
+    }
+    return byCode;
+}
+
+const readJson = (path: string) => (fs.existsSync(path) ? JSON.parse(fs.readFileSync(path, 'utf-8')) : {});
+
 export class Wikidata {
     private readonly countries: Map<string, WikidataCountry>;
+    private readonly currencies: Map<string, string[]>;
 
-    constructor(path: string) {
-        this.countries = fs.existsSync(path) ? parseWikidataCountries(JSON.parse(fs.readFileSync(path, 'utf-8'))) : new Map();
+    constructor(dir: string) {
+        this.countries = parseWikidataCountries(readJson(`${dir}/countries.json`));
+        mergeFifaCodes(this.countries, readJson(`${dir}/fifa-federations.json`), readJson(`${dir}/fifa.json`));
+        this.currencies = parseWikidataCurrencies(readJson(`${dir}/currencies.json`));
+    }
+
+    /** Subunit names of a currency; several when Wikidata lists more than one. */
+    currencySubunits(code: string): string[] {
+        return this.currencies.get(code) ?? [];
     }
 
     get size(): number {
@@ -107,6 +180,33 @@ export class Wikidata {
 
     get(region: string): WikidataCountry | undefined {
         return this.countries.get(region);
+    }
+
+    /**
+     * The country's FIFA code. Federations are authoritative: one federation
+     * code wins; several (the UK has four) resolve only through the IOC or ISO
+     * alpha-3 code, else none. Without a federation, fall back to team items,
+     * which also covers territories filed under their sovereign state (Hong
+     * Kong's HKG sits under China).
+     *
+     * `ownCodes` are this country's IOC/alpha-3 codes; `otherCodes` those of all
+     * other countries. A code belonging to another country is never taken, which
+     * guards against mis-attributed items (a federation filed under the wrong
+     * country).
+     */
+    fifaCode(region: string, ownCodes: string[], otherCodes: Set<string>): string | undefined {
+        const country = this.countries.get(region);
+        const valid = (codes: string[] = []) => codes.filter((code) => ownCodes.includes(code) || !otherCodes.has(code));
+        const preferred = (codes: string[]) => codes.find((code) => ownCodes.includes(code));
+
+        const federations = valid(country?.fifaFederationCodes);
+        if (federations.length === 1) return federations[0];
+        if (federations.length > 1) return preferred(federations);
+
+        const own = valid(country?.fifaCodes);
+        if (preferred(own)) return preferred(own);
+        if (own.length === 1) return own[0];
+        return preferred([...this.countries.values()].flatMap((c) => c.fifaCodes));
     }
 
     /** Coordinates of the capital named `capital`, or of the only capital listed. */

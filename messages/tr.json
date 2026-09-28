@@ -772,7 +772,7 @@
             "features": {
                 "title": "Temel Özellikler",
                 "items": {
-                    "comprehensive": "Yetkili kaynaklardan kapsamlı veriler (CLDR, Dünya Bankası, mledoze, libphonenumber, OpenFlights)",
+                    "comprehensive": "Yetkili kaynaklardan kapsamlı veriler (CLDR, Dünya Bankası, mledoze, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights)",
                     "static": "Statik oluşturma - çalışma zamanı veritabanı gerekmez",
                     "openSource": "MIT lisanslı ve topluluk odaklı",
                     "i18n": "Arapça için RTL desteği ile 11 dil"
@@ -796,7 +796,7 @@
             "steps": {
                 "sources": {
                     "title": "Harici Kaynaklar",
-                    "description": "CLDR, mledoze, Dünya Bankası, libphonenumber, OpenFlights (MWGG)"
+                    "description": "CLDR, mledoze, Dünya Bankası, libphonenumber, IANA tz, libaddressinput, Wikidata, OpenFlights (MWGG)"
                 },
                 "update": {
                     "title": "Ham Veriyi İndir",
@@ -823,8 +823,8 @@
                 "title": "Veri Kaynağı Önceliği",
                 "description": "Birden fazla kaynak aynı alanı sağladığında, tutarlı bir öncelik sistemi kullanırız:",
                 "rules": {
-                    "names": "Ülke adları: CLDR > mledoze > SimpleLocalize",
-                    "population": "Nüfus: Dünya Bankası > mledoze > SimpleLocalize",
+                    "names": "Ülke adları: CLDR > mledoze",
+                    "population": "Nüfus: Dünya Bankası > CLDR",
                     "phone": "Telefon verileri: libphonenumber XML (yetkili)"
                 }
             }
@@ -1082,7 +1082,7 @@
                 },
                 "data": {
                     "title": "Veriler",
-                    "body": "Yerelleştirme verileri Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, Dünya Bankası, Google libphonenumber, mwgg/Airports ve IP2Location gibi üçüncü taraf kaynaklardan derlenir. Her kaynağın kendi lisansı ve atıf koşulları geçerlidir; veriyi yeniden dağıtıyorsan bunları kontrol edip uygula. Kaynakların tam listesi <docs>dokümantasyonda</docs> yer alır."
+                    "body": "Yerelleştirme verileri Unicode CLDR, mledoze/countries, Dünya Bankası, IANA tz veritabanı, Google libphonenumber, Google libaddressinput, Wikidata, ourworldincode/currency, mwgg/Airports ve IP2Location gibi üçüncü taraf kaynaklardan derlenir. Her kaynağın kendi lisansı ve atıf koşulları geçerlidir; veriyi yeniden dağıtıyorsan bunları kontrol edip uygula. Kaynakların tam listesi <docs>dokümantasyonda</docs> yer alır."
                 },
                 "warranty": {
                     "title": "Garanti yoktur",

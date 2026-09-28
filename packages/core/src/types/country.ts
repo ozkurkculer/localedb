@@ -82,8 +82,6 @@ export interface CodeSystems {
   fips10: string;
   /** UN/LOCODE (United Nations Code for Trade and Transport Locations), e.g. "TR" */
   unLocode: string;
-  /** NATO STANAG 1059 code, e.g. "TUR" */
-  stanag1059: string;
   /** ITU (International Telecommunication Union) code, e.g. "TUR" */
   itu: string;
   /** UIC (International Union of Railways) country code, e.g. "52 TR" */
