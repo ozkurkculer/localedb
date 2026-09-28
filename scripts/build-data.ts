@@ -10,6 +10,7 @@ import type {
     AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry, CurrencyInfo, CurrencyLocaleData, CurrencyIndexEntry,
     Language, LanguageLocaleData, LanguageIndexEntry,
 } from '@localedb/core/browser';
+import { Cldr } from './sources/cldr';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -318,15 +319,19 @@ async function build() {
     const startTime = Date.now();
 
     // 1. Loading Base Data
-    console.log('📦 Loading SimpleLocalize (Base)...');
-    const slCountries = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
-    const slLanguages = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/languages.json')) || [];
+    console.log('📦 Loading mledoze (country list)...');
+    const mledozeList: any[] = await readJsonFile(path.join(DATA_DIR, 'mledoze.json')) || [];
+    if (mledozeList.length === 0) throw new Error('data/mledoze.json is missing. Run `pnpm update:data mledoze` first.');
 
-    console.log('📦 Loading Mledoze (Layer 1)...');
-    const mledozeList = await readJsonFile(path.join(DATA_DIR, 'mledoze.json')) || [];
-    const mledozeMap = new Map();
-    mledozeList.forEach((c: any) => mledozeMap.set(c.cca2, c));
-    mledozeList.forEach((c: any) => mledozeMap.set(c.cca3, c)); // Support iso3 lookup
+    console.log('📦 Loading CLDR...');
+    const cldr = new Cldr(path.join(DATA_DIR, 'cldr', 'cldr-json'));
+
+    // Legacy: SimpleLocalize is being phased out. When its files are present they
+    // only fill fields no other source provides yet (see LEGACY_SL_FIELDS).
+    const slCountries: any[] = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
+    const slMap = new Map<string, any>(slCountries.map((c: any) => [c.code, c]));
+    if (slMap.size) console.log(`   SimpleLocalize fallback available for ${slMap.size} countries`);
+    else console.warn(`⚠️  No SimpleLocalize fallback; these fields stay empty: ${LEGACY_SL_FIELDS}`);
 
     console.log('📦 Loading World Bank (Layer 2)...');
     const wbDataMap = await loadWorldBankData();
@@ -532,43 +537,38 @@ async function build() {
     const currencyUsageMap: Record<string, string[]> = {};
     const currencyInfoMap: Record<string, CurrencyInfo> = {};
 
-    console.log(`🌍 Processing ${slCountries.length} countries...`);
+    const languageInfoMap = new Map<string, Language>();
+
+    console.log(`🌍 Processing ${mledozeList.length} countries...`);
     const BATCH_SIZE = 10;
-    for (let i = 0; i < slCountries.length; i += BATCH_SIZE) {
-        const batch = slCountries.slice(i, i + BATCH_SIZE);
-        await Promise.all(batch.map(async (slCountry: any) => {
-            const isoCode = slCountry.code;
-            const mledozeCountry = mledozeMap.get(isoCode);
-            // SimpleLocalize usually has iso3, use that for WB lookup
-            const iso3 = slCountry.iso_3166_1_alpha3 || mledozeCountry?.cca3;
-            const wbData = iso3 ? wbDataMap.get(iso3) : undefined;
-            const countryAirports = airportsMap.get(isoCode) || [];
-
-            const phoneMeta = phoneMetaMap.get(isoCode);
-
-            await processCountry(
+    for (let i = 0; i < mledozeList.length; i += BATCH_SIZE) {
+        const batch = mledozeList.slice(i, i + BATCH_SIZE);
+        await Promise.all(batch.map(async (mledozeCountry: any) => {
+            const isoCode: string = mledozeCountry.cca2;
+            await processCountry({
                 isoCode,
-                slCountry,
-                mledozeCountry,
-                wbData,
-                countryIndex,
-                languageUsageMap,
-                currencyUsageMap,
+                mledozeData: mledozeCountry,
+                slData: slMap.get(isoCode),
+                cldr,
+                wbData: wbDataMap.get(mledozeCountry.cca3),
+                index: countryIndex,
+                langMap: languageUsageMap,
+                languageInfoMap,
+                currencyMap: currencyUsageMap,
                 currencyInfoMap,
-                countryAirports,
-                phoneMeta
-            );
+                airports: airportsMap.get(isoCode) || [],
+                phoneMeta: phoneMetaMap.get(isoCode),
+            });
         }));
         if (global.gc) global.gc();
-        process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, slCountries.length)}/${slCountries.length} countries`);
+        process.stdout.write(`\r✅ Processed ${Math.min(i + BATCH_SIZE, mledozeList.length)}/${mledozeList.length} countries`);
     }
     console.log('\n✨ Countries processed.');
 
-    // 4. Languages & Currencies (Same as before)
-    console.log(`🗣️ Processing languages...`);
-    for (let i = 0; i < slLanguages.length; i += BATCH_SIZE) {
-        const batch = slLanguages.slice(i, i + BATCH_SIZE);
-        await Promise.all(batch.map((lang: any) => processLanguage(lang, languageUsageMap, languageIndex)));
+    // 4. Languages & Currencies
+    console.log(`🗣️ Processing ${languageInfoMap.size} languages...`);
+    for (const code of [...languageInfoMap.keys()].sort()) {
+        await processLanguage(languageInfoMap.get(code)!, languageUsageMap, languageIndex);
     }
 
     console.log(`💰 Processing currencies...`);
@@ -597,10 +597,10 @@ async function build() {
         },
         sources: [
             { name: "CLDR", version: "latest" },
-            { name: "ICU", version: "latest" },
             { name: "World Bank", year: "2024" },
             { name: "mledoze", version: "latest" },
-            { name: "SimpleLocalize", version: "latest" },
+            { name: "libphonenumber", version: "latest" },
+            ...(slMap.size ? [{ name: "SimpleLocalize (legacy fallback)", version: "latest" }] : []),
             { name: "MWGG Airports", version: "latest" },
             { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
         ]
@@ -611,30 +611,38 @@ async function build() {
 }
 
 build().catch(console.error);
-async function processCountry(
-    isoCode: string,
-    slData: any,
-    mledozeData: any,
-    wbData: WorldBankData | undefined,
-    index: CountryIndexEntry[],
-    langMap: Record<string, string[]>,
-    currencyMap: Record<string, string[]>,
-    currencyInfoMap: Record<string, CurrencyInfo>,
-    airports: any[],
-    phoneMeta: PhoneTerritory | undefined
-) {
-    const primaryLang = slData.languages?.[0]?.iso_639_1 || 'en';
+/**
+ * Fields no open source provides yet. They are only filled when the legacy
+ * SimpleLocalize files are present and will move to IANA tz, libaddressinput
+ * and Wikidata step by step.
+ */
+const LEGACY_SL_FIELDS = 'timezones, postal codes, capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
+
+interface ProcessCountryInput {
+    isoCode: string;
+    mledozeData: any;
+    slData?: any;
+    cldr: Cldr;
+    wbData?: WorldBankData;
+    index: CountryIndexEntry[];
+    langMap: Record<string, string[]>;
+    languageInfoMap: Map<string, Language>;
+    currencyMap: Record<string, string[]>;
+    currencyInfoMap: Record<string, CurrencyInfo>;
+    airports: any[];
+    phoneMeta?: PhoneTerritory;
+}
+
+async function processCountry({
+    isoCode, mledozeData, slData, cldr, wbData, index, langMap, languageInfoMap,
+    currencyMap, currencyInfoMap, airports, phoneMeta,
+}: ProcessCountryInput) {
+    // --- Locale: CLDR likely language, most specific CLDR locale available (e.g. de-CH, zh-Hant-TW)
+    const { language: primaryLang, script } = cldr.likelyLanguage(isoCode);
     const cldrLocale = `${primaryLang}-${isoCode}`;
-    let cldrPath = primaryLang;
+    const cldrPath = cldr.localeFor(primaryLang, isoCode, script);
 
-    // --- CLDR DATA (Highest Priority, with fallback to 'en') ---
-    // Check if the primary CLDR locale directory exists, fall back to 'en'
-    const cldrDatesDir = path.join(DATA_DIR, 'cldr', 'cldr-json', 'cldr-dates-full', 'main', cldrPath);
-    if (!fs.existsSync(cldrDatesDir)) {
-        cldrPath = 'en';
-    }
-
-    const territories = await readCldrData(`cldr-localenames-full/main/${cldrPath}/territories.json`, "main", cldrPath, "localeDisplayNames", "territories", isoCode);
+    const territories = cldr.territoryName(cldrPath, isoCode);
     const caGregorian = await readCldrData(`cldr-dates-full/main/${cldrPath}/ca-gregorian.json`, "main", cldrPath, "dates", "calendars", "gregorian");
     const numbers = await readCldrData(`cldr-numbers-full/main/${cldrPath}/numbers.json`, "main", cldrPath, "numbers");
 
@@ -642,128 +650,111 @@ async function processCountry(
     const weekData = await readCldrData('cldr-core/supplemental/weekData.json', 'supplemental', 'weekData');
     const dayPeriods = caGregorian?.dayPeriods?.format?.abbreviated;
 
-    // Construct Currency
-    // Priority: SL > Mledoze > Default
-    const slCurrencyCode = slData.currency_code;
+    // --- Currency: CLDR (legal tender, names, symbols, digits) > mledoze
     const mledozeCurrencyCode = mledozeData?.currencies ? Object.keys(mledozeData.currencies)[0] : undefined;
-    const currencyCode = slCurrencyCode || mledozeCurrencyCode;
+    const currencyCode = cldr.currency(isoCode) || mledozeCurrencyCode || "";
+    const mledozeCurrency = mledozeData?.currencies?.[currencyCode];
+    const localCurrency = currencyCode ? cldr.currencyNames(cldrPath, currencyCode) : undefined;
+    const englishCurrency = currencyCode ? cldr.currencyNames('en', currencyCode) : undefined;
+    const currencyPattern: string = numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00";
+    const decimalDigits = currencyCode ? cldr.currencyDigits(currencyCode) : 2;
+    const symbol = localCurrency?.symbol || mledozeCurrency?.symbol || currencyCode;
 
-    let currencyObj: CurrencyInfo = {
-        code: currencyCode || "",
-        numericCode: slData.currency_numeric || "", // Mledoze doesn't have numeric easily accessible in this structure
-        name: slData.currency || mledozeData?.currencies?.[currencyCode]?.name || "",
-        nativeName: slData.currency_local || "",
-        symbol: slData.currency_symbol || mledozeData?.currencies?.[currencyCode]?.symbol || "",
-        narrowSymbol: slData.currency_symbol || mledozeData?.currencies?.[currencyCode]?.symbol || "",
-        symbolPosition: "before",
+    const currencyObj: CurrencyInfo = {
+        code: currencyCode,
+        numericCode: (currencyCode && cldr.currencyNumericCode(currencyCode)) || 0,
+        name: englishCurrency?.displayName || mledozeCurrency?.name || "",
+        nativeName: localCurrency?.displayName || "",
+        symbol,
+        narrowSymbol: localCurrency?.["symbol-alt-narrow"] || symbol,
+        symbolPosition: currencyPattern.split(';')[0].trim().startsWith('¤') ? "before" : "after",
         decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",
         thousandsSeparator: numbers?.["symbols-numberSystem-latn"]?.group || ",",
-        decimalDigits: 2,
-        subunitValue: slData.currency_subunit_value || 100,
-        subunitName: slData.currency_subunit_name || "", // default
-        pattern: numbers?.["currencyFormats-numberSystem-latn"]?.standard || "¤#,##0.00",
+        decimalDigits,
+        subunitValue: 10 ** decimalDigits,
+        subunitName: slData?.currency_subunit_name || "",
+        pattern: currencyPattern,
         example: safeFormatCurrency(cldrLocale, currencyCode, 123456.789),
         accountingExample: safeFormatCurrency(cldrLocale, currencyCode, -1234.56, { currencySign: "accounting" })
     };
 
     // --- PRIORITIZATION LOGIC ---
 
-    // 1. Name: CLDR > ICU (skipped) > WB (rarely useful) > Mledoze > SL
-    let name = slData.name;
-    if (mledozeData?.name?.common) name = mledozeData.name.common;
-    if (territories) name = territories;
+    // Name: CLDR (in the country's language) > mledoze
+    const name = territories || mledozeData.name.common;
 
-    // 2. Population: WB > Mledoze > SL
-    let population = mledozeData?.population || slData.population || 0;
-    if (wbData?.population) population = wbData.population;
+    // Population: World Bank > CLDR territory info
+    const population = wbData?.population || cldr.population(isoCode);
 
-    // 3. Region: WB > Mledoze > SL
-    let region = slData.region;
-    if (mledozeData?.region) region = mledozeData.region;
-    if (wbData?.region) region = wbData.region;
+    // Region: World Bank > mledoze
+    const region = wbData?.region || mledozeData.region || "";
 
-    // 4. Income: WB (Exclusive)
-    let incomeGroup = wbData?.incomeGroup || "";
+    // --- Languages: CLDR official languages (by speakers), else the likely language
+    const official = cldr.officialLanguages(isoCode);
+    const languageIds = official.length ? official : [{ code: primaryLang, script }];
+    const languages: Language[] = languageIds.map(({ code, script: langScript }) => {
+        if (!languageInfoMap.has(code)) {
+            const ownLocale = cldr.localeFor(code, isoCode, langScript);
+            languageInfoMap.set(code, {
+                code,
+                ...cldr.languageCodesFor(code),
+                name: cldr.languageName('en', code) || code,
+                nativeName: cldr.languageName(code, code) || cldr.languageName(ownLocale, code) || cldr.languageName('en', code) || code,
+                direction: cldr.direction(cldr.hasLocale(code) ? code : ownLocale),
+                countries: [],
+            });
+        }
+        return { ...languageInfoMap.get(code)!, countries: [] };
+    });
 
-    // 5. Coordinates: Mledoze > SL
-    let coordinates = slData.coordinates || [0, 0];
-    if (mledozeData?.latlng) coordinates = mledozeData.latlng;
-
-    // 6. Capital: Mledoze > SL
-    let capital = slData.capital_name;
-    if (mledozeData?.capital?.length > 0) capital = mledozeData.capital[0];
-
-    // 7. Area: SL (usually reliable) but allow Mledoze fallback
-    let area = slData.area_sq_km;
-    if (!area && mledozeData?.area) area = mledozeData.area;
-
-    // 8. TLD: Mledoze > SL
-    let tld = slData.tld ? [slData.tld] : [];
-    if (mledozeData?.tld?.length > 0) tld = mledozeData.tld;
-
-    // 9. Borders: Mledoze > SL
-    let borders = slData.borders || [];
-    if (mledozeData?.borders) borders = mledozeData.borders;
-
-    // Languages: Merge SL and Mledoze? SL has localized names, Mledoze has codes.
-    // SL structure is flat array of objects. Mledoze has { "tur": "Turkish" } map.
-    // Stick to SL as primary for now because it has localized names, but could augment.
-    const languages = slData.languages.map((l: any) => ({
-        code: l.iso_639_1,
-        iso639_2: l.iso_639_2,
-        iso639_3: l.iso_639_3,
-        name: l.name,
-        nativeName: l.name_local,
-        official: true,
-        direction: "ltr",
-        countries: []
-    }));
+    const codes = cldr.territoryCode(isoCode);
+    const tld: string[] = mledozeData.tld || [];
 
     // Assemble Data
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["CLDR", "WorldBank", "mledoze", "SimpleLocalize"],
+        sources: ["CLDR", "mledoze", ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
         basics: {
             name: name,
-            officialName: mledozeData?.name?.official || name,
-            nativeName: territories || slData.name_local,
-            officialNativeName: mledozeData?.name?.native?.[Object.keys(mledozeData?.name?.native || {})[0]]?.official || "",
-            capital: capital,
-            capitalCoordinates: [slData.capital_latitude, slData.capital_longitude],
-            coordinates: coordinates,
-            continent: slData.continent,
+            officialName: mledozeData.name.official || name,
+            nativeName: territories || mledozeData.name.common,
+            officialNativeName: mledozeData.name.native?.[Object.keys(mledozeData.name.native || {})[0]]?.official || "",
+            capital: mledozeData.capital?.[0] || "",
+            capitalCoordinates: slData ? [slData.capital_latitude, slData.capital_longitude] : [0, 0],
+            coordinates: mledozeData.latlng || [0, 0],
+            continent: cldr.continent(isoCode),
             region: region,
-            subregion: mledozeData?.subregion || slData.region,
+            subregion: mledozeData.subregion || "",
             population: population,
-            area: area,
-            flagEmoji: mledozeData?.flag || slData.flag, // Mledoze flag usually good too
+            area: mledozeData.area || 0,
+            flagEmoji: mledozeData.flag || "",
             tld: tld,
-            landlocked: mledozeData?.landlocked ?? slData.is_landlocked,
-            borders: borders,
+            landlocked: Boolean(mledozeData.landlocked),
+            borders: mledozeData.borders || [],
             languages: languages,
-            demonym: mledozeData?.demonyms?.eng?.m || ""
+            demonym: mledozeData.demonyms?.eng?.m || ""
         },
         worldBank: {
-            incomeGroup: incomeGroup,
+            incomeGroup: wbData?.incomeGroup || "",
             region: wbData?.region || ""
         },
         codes: {
-            iso3166Alpha2: slData.iso_3166_1_alpha2,
-            iso3166Alpha3: slData.iso_3166_1_alpha3,
-            iso3166Numeric: String(slData.iso_3166_1_numeric),
+            iso3166Alpha2: isoCode,
+            iso3166Alpha3: mledozeData.cca3 || codes.alpha3 || "",
+            iso3166Numeric: mledozeData.ccn3 || codes.numeric || "",
             bcp47: [cldrLocale],
             internetTld: tld[0] || "",
-            ioc: mledozeData?.cioc || slData.ioc,
-            fifa: mledozeData?.fifa || slData.fifa,
-            vehicleCode: mledozeData?.car?.signs?.[0] || slData.vehicle_code,
-            fips10: slData.fips10,
-            unLocode: slData.un_locode,
-            stanag1059: slData.stanag_1059,
-            itu: slData.itu,
-            uic: slData.uic,
-            maritime: slData.maritime,
-            mmc: slData.mmc
+            ioc: mledozeData.cioc || "",
+            fifa: slData?.fifa || "",
+            vehicleCode: slData?.vehicle_code || "",
+            fips10: codes.fips10,
+            unLocode: isoCode,
+            stanag1059: slData?.stanag_1059 || "",
+            itu: slData?.itu || "",
+            uic: slData?.uic || "",
+            maritime: slData?.maritime || 0,
+            mmc: slData?.mmc || 0
         },
         currency: currencyObj,
         dateTime: {
@@ -819,8 +810,8 @@ async function processCountry(
                 dayPeriods?.am || "AM",
                 dayPeriods?.pm || "PM"
             ],
-            timezones: mledozeData?.timezones || slData.timezones || [],
-            primaryTimezone: slData.timezones?.[0] || "UTC",
+            timezones: slData?.timezones || [],
+            primaryTimezone: slData?.timezones?.[0] || "UTC",
             utcOffset: "+00:00"
         },
         numberFormat: {
@@ -833,7 +824,7 @@ async function processCountry(
             numberingSystem: numbers?.defaultNumberingSystem || "latn"
         },
         phone: (() => {
-            // Priority: libphonenumber > mledoze > SL
+            // Priority: libphonenumber > mledoze
             const callingCode = phoneMeta
                 ? `+${phoneMeta.countryCode}`
                 : (mledozeData?.idd?.root ? mledozeData.idd.root + (mledozeData.idd.suffixes?.[0] || "") : "");
@@ -866,14 +857,14 @@ async function processCountry(
         addressFormat: {
             format: "%N%n%A%n%Z %C",
             lineOrder: ["name", "address", "city"],
-            postalCodeFormat: mledozeData?.postalCode?.format || slData.postal_code_format,
-            postalCodeRegex: mledozeData?.postalCode?.regex || slData.postal_code_regex,
+            postalCodeFormat: slData?.postal_code_format || "",
+            postalCodeRegex: slData?.postal_code_regex || "",
             postalCodeExample: "",
             administrativeDivisionName: "Province",
             administrativeDivisionType: "Province"
         },
         locale: {
-            writingDirection: "ltr",
+            writingDirection: cldr.direction(cldrPath),
             measurementSystem: "metric",
             temperatureScale: "celsius",
             paperSize: "A4",
@@ -884,9 +875,9 @@ async function processCountry(
     };
 
     // Update index (Language)
-    slData.languages.forEach((l: any) => {
-        if (!langMap[l.iso_639_1]) langMap[l.iso_639_1] = [];
-        langMap[l.iso_639_1].push(isoCode);
+    languages.forEach((l) => {
+        if (!langMap[l.code]) langMap[l.code] = [];
+        langMap[l.code].push(isoCode);
     });
 
     // Update index (Currency)
@@ -898,19 +889,16 @@ async function processCountry(
         }
     }
 
-    // English common name: mledoze common > SL name (before CLDR override)
-    const englishName = mledozeData?.name?.common || slData.name;
-
     index.push({
         code: isoCode,
-        alpha3: slData.iso_3166_1_alpha3 || mledozeData?.cca3 || "",
-        name: englishName,
+        alpha3: data.codes.iso3166Alpha3,
+        name: mledozeData.name.common,
         nativeName: data.basics.name, // Native name (from CLDR override)
-        flagEmoji: slData.flag,
-        continent: slData.continent,
+        flagEmoji: data.basics.flagEmoji,
+        continent: data.basics.continent,
         region: data.basics.region, // Use prioritized region
         primaryLocale: cldrLocale,
-        currencyCode: slData.currency_code,
+        currencyCode: currencyObj.code,
         callingCode: data.phone.callingCode
     });
 
@@ -918,30 +906,20 @@ async function processCountry(
     await fs.promises.writeFile(outFile, JSON.stringify(data, null, 2));
 }
 
-async function processLanguage(metadata: any, langMap: Record<string, string[]>, index: any[]) {
-    const code = metadata.iso_639_1;
-    if (!code) return;
-    const countries = langMap[code] || [];
+async function processLanguage(language: Language, langMap: Record<string, string[]>, index: LanguageIndexEntry[]) {
+    const countries = langMap[language.code] || [];
     const langData: LanguageLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        data: {
-            code: code,
-            iso639_2: metadata.iso_639_2,
-            iso639_3: metadata.iso_639_3,
-            name: metadata.name,
-            nativeName: metadata.name_local,
-            direction: "ltr",
-            countries: countries
-        }
+        data: { ...language, countries }
     };
     index.push({
-        code: code,
-        name: metadata.name,
-        nativeName: metadata.name_local,
+        code: language.code,
+        name: language.name,
+        nativeName: language.nativeName,
         countriesCount: countries.length
     });
-    const outFile = path.join(OUT_LANGUAGES_DIR, `${code}.json`);
+    const outFile = path.join(OUT_LANGUAGES_DIR, `${language.code}.json`);
     await fs.promises.writeFile(outFile, JSON.stringify(langData, null, 2));
 }
 
