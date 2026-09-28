@@ -68,7 +68,7 @@ export function RoadmapClient() {
             id: "4",
             title: t("items.4.title"),
             description: t("items.4.description"),
-            status: "in-progress",
+            status: "completed",
             date: t("items.4.date"),
         },
         {

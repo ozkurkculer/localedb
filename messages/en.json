@@ -604,12 +604,12 @@
             "4": {
                 "title": "npm Package & CLI Tool",
                 "description": "A dedicated npm package and CLI tool for developers to download and integrate locale data directly into their projects.",
-                "date": "Q4 2026"
+                "date": "Q3 2026"
             },
             "5": {
                 "title": "Public API Launch",
                 "description": "Development and deployment of a RESTful API to serve locale data dynamically.",
-                "date": "Q1 2027"
+                "date": "Q3 2027"
             }
         }
     },

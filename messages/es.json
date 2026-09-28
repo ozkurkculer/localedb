@@ -605,12 +605,12 @@
             "4": {
                 "title": "Paquete npm y Herramienta CLI",
                 "description": "Un paquete npm dedicado y una herramienta CLI para que los desarrolladores descarguen e integren datos locales directamente en sus proyectos.",
-                "date": "T4 2026"
+                "date": "T3 2026"
             },
             "5": {
                 "title": "Lanzamiento de API Pública",
                 "description": "Desarrollo y despliegue de una API RESTful para servir datos locales dinámicamente.",
-                "date": "T1 2027"
+                "date": "T3 2027"
             }
         }
     },

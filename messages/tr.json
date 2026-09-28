@@ -605,12 +605,12 @@
             "4": {
                 "title": "npm Paketi ve CLI Aracı",
                 "description": "Geliştiricilerin yerel verileri doğrudan projelerine indirip entegre etmeleri için özel bir npm paketi ve CLI aracı.",
-                "date": "2026 4. Çeyrek"
+                "date": "2026 3. Çeyrek"
             },
             "5": {
                 "title": "Herkese Açık API Lansmanı",
                 "description": "Yerel verileri dinamik olarak sunmak için RESTful bir API'nin geliştirilmesi ve dağıtılması.",
-                "date": "2027 1. Çeyrek"
+                "date": "2027 3. Çeyrek"
             }
         }
     },
