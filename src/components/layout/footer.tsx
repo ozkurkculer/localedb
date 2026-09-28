@@ -24,19 +24,22 @@ export async function Footer() {
                 <div>
                     <h3 className="mb-4 text-sm font-semibold">{t('footer.sections.resources.title')}</h3>
                     <ul className="space-y-3 text-sm">
-                        {footerNav.resources.map((item) => (
-                            <li key={item.href}>
-                                <Link
-                                    href={item.href}
-                                    className={`
-                      text-muted-foreground transition-colors hover:text-foreground
-                      ${item.disabled ? 'cursor-not-allowed opacity-60' : ''}
-                    `}
-                                >
-                                    {t(item.title as any)}
-                                </Link>
-                            </li>
-                        ))}
+                        {footerNav.resources.map((item) => {
+                            const label = t(item.title as any);
+                            return (
+                                <li key={item.href}>
+                                    {item.disabled ? (
+                                        <span aria-disabled="true" className="cursor-not-allowed text-muted-foreground opacity-60">
+                                            {label}
+                                        </span>
+                                    ) : (
+                                        <Link href={item.href} className="text-muted-foreground transition-colors hover:text-foreground">
+                                            {label}
+                                        </Link>
+                                    )}
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
 

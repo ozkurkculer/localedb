@@ -28,7 +28,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/currencies',
         '/languages',
         '/airports',
-        '/locale-codes'
+        '/locale-codes',
+        '/privacy',
+        '/terms'
     ];
 
     routing.locales.forEach((locale) => {

@@ -46,10 +46,6 @@ export default async function DocsPage() {
         <div className="container py-12 md:py-24">
             {/* Hero */}
             <div className="mx-auto max-w-5xl text-center mb-16 animate-fade-in-up">
-                <div className="inline-flex items-center gap-2 rounded-full border border-border/40 bg-muted/50 px-4 py-1.5 text-sm mb-6">
-                    <FileCode2 className="h-4 w-4" />
-                    <span className="font-medium">{t('badge')}</span>
-                </div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
                     <span className="bg-gradient-to-br from-primary to-primary/50 bg-clip-text text-transparent">
                         {t('title')}

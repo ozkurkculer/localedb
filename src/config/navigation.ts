@@ -137,13 +137,11 @@ export const footerNav: {
     legal: [
         {
             title: 'footer.sections.legal.privacy',
-            href: '/privacy',
-            disabled: true
+            href: '/privacy'
         },
         {
             title: 'footer.sections.legal.terms',
-            href: '/terms',
-            disabled: true
+            href: '/terms'
         },
         {
             title: 'footer.sections.legal.license',

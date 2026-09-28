@@ -651,12 +651,12 @@
             "4": {
                 "title": "npm Package & CLI Tool",
                 "description": "A dedicated npm package and CLI tool for developers to download and integrate locale data directly into their projects.",
-                "date": "Q2 2026"
+                "date": "Q4 2026"
             },
             "5": {
                 "title": "Public API Launch",
                 "description": "Development and deployment of a RESTful API to serve locale data dynamically.",
-                "date": "Q3 2026"
+                "date": "Q1 2027"
             }
         }
     },
@@ -831,7 +831,6 @@
     "docs": {
         "title": "Документация",
         "subtitle": "Все, что вам нужно знать о данных, конвейере и архитектуре LocaleDB.",
-        "badge": "Руководство Разработчика",
         "meta": {
             "title": "Документация - LocaleDB",
             "description": "Узнайте, как использовать LocaleDB, обширную базу данных локализации.",
@@ -1091,6 +1090,86 @@
                     "translate": "Переведите все ключи из messages/en.json",
                     "routing": "Добавьте код локали в src/i18n/routing.ts",
                     "verify": "Запустите npx tsx scripts/check-i18n.ts для проверки полноты"
+                }
+            }
+        }
+    },
+    "legal": {
+        "privacy": {
+            "meta": {
+                "title": "Privacy Policy",
+                "description": "What LocaleDB processes when you visit: cookieless analytics, a language cookie and nothing else."
+            },
+            "title": "Privacy Policy",
+            "updated": "Last updated: September 28, 2026",
+            "intro": "LocaleDB is a free, open-source reference site maintained by Mehmet Emin Özkürkçüler. There are no accounts, sign-ups or contact forms, and no personal data is sold or shared. This page explains the little that is processed when you visit.",
+            "sections": {
+                "analytics": {
+                    "title": "Analytics",
+                    "body": "We use Vercel Web Analytics and Vercel Speed Insights to see which pages are visited and how fast they load. Neither uses cookies or identifies you personally: visitors are counted with an anonymised hash of the request that is discarded after 24 hours, and Speed Insights records performance metrics such as load times together with the page, browser and device type."
+                },
+                "hosting": {
+                    "title": "Hosting",
+                    "body": "The site is hosted on Vercel. Like any web server, Vercel processes technical data such as your IP address and browser user agent in order to deliver pages and protect the service. See <vercel>Vercel's privacy policy</vercel> for details."
+                },
+                "storage": {
+                    "title": "Cookies and local storage",
+                    "body": "We set a single functional cookie, <code>NEXT_LOCALE</code>, to remember the language you picked; it expires when you close your browser. Your light or dark theme preference is kept in your browser's local storage. Neither is used for tracking or advertising."
+                },
+                "export": {
+                    "title": "Data export",
+                    "body": "When you use the export tool, your selection of datasets, entries and fields is sent to our server only to build the file you download. It is not stored or linked to you."
+                },
+                "choices": {
+                    "title": "Your choices",
+                    "body": "You can block cookies and clear local storage in your browser settings. The site keeps working; it just won't remember your language or theme. Content blockers that stop the analytics scripts are fine too."
+                },
+                "changes": {
+                    "title": "Changes",
+                    "body": "If this policy changes, the date at the top of the page will show the latest revision."
+                },
+                "contact": {
+                    "title": "Contact",
+                    "body": "Questions about privacy? <github>Open an issue on GitHub</github>."
+                }
+            }
+        },
+        "terms": {
+            "meta": {
+                "title": "Terms of Use",
+                "description": "The terms for using LocaleDB: open-source code, third-party data, provided as is."
+            },
+            "title": "Terms of Use",
+            "updated": "Last updated: September 28, 2026",
+            "intro": "By using LocaleDB you agree to these terms. They are short because the project is simple: free, open-source locale data, provided as is.",
+            "sections": {
+                "license": {
+                    "title": "Open source",
+                    "body": "LocaleDB's source code is released under the <license>MIT License</license>. You are free to use, copy and modify it under that license."
+                },
+                "data": {
+                    "title": "The data",
+                    "body": "Locale data is aggregated from third-party sources such as Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, the World Bank, mwgg/Airports and IP2Location. Each source keeps its own license and attribution requirements; if you redistribute the data, check and follow them. The full list of sources is in the <docs>documentation</docs>."
+                },
+                "warranty": {
+                    "title": "No warranty",
+                    "body": "The site, its data and its code are provided \"as is\", without warranty of any kind. Localization rules change and sources can disagree, so verify anything critical, such as legal, financial or safety-related formats, before relying on it. The maintainer is not liable for any damages arising from the use of the site or its data."
+                },
+                "fairUse": {
+                    "title": "Fair use",
+                    "body": "The website and its endpoints, including the export tool, are free to use. Please don't overload them with automated high-volume requests; access may be limited to keep the service available for everyone."
+                },
+                "contributions": {
+                    "title": "Contributions",
+                    "body": "Contributions made through GitHub are licensed under the project's MIT License, as described in the <contributing>contributing guide</contributing>."
+                },
+                "changes": {
+                    "title": "Changes",
+                    "body": "These terms may be updated as the project evolves. The date at the top of the page shows the latest revision; continuing to use the site means you accept the current version."
+                },
+                "contact": {
+                    "title": "Contact",
+                    "body": "Questions about these terms? <github>Open an issue on GitHub</github>."
                 }
             }
         }

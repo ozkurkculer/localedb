@@ -599,12 +599,12 @@
             "4": {
                 "title": "npm Paketi ve CLI Aracı",
                 "description": "Geliştiricilerin yerel verileri doğrudan projelerine indirip entegre etmeleri için özel bir npm paketi ve CLI aracı.",
-                "date": "2026 2. Çeyrek"
+                "date": "2026 4. Çeyrek"
             },
             "5": {
                 "title": "Herkese Açık API Lansmanı",
                 "description": "Yerel verileri dinamik olarak sunmak için RESTful bir API'nin geliştirilmesi ve dağıtılması.",
-                "date": "2026 3. Çeyrek"
+                "date": "2027 1. Çeyrek"
             }
         }
     },
@@ -741,7 +741,6 @@
     "docs": {
         "title": "Dokümantasyon",
         "subtitle": "LocaleDB'yi uygulamalarınıza entegre etmek için ihtiyacınız olan her şey.",
-        "badge": "Geliştirici Rehberi",
         "meta": {
             "title": "Dokümantasyon - LocaleDB",
             "description": "Kapsamlı bir yerelleştirme verisi veritabanı olan LocaleDB'yi nasıl kullanacağınızı öğrenin.",
@@ -1001,6 +1000,86 @@
                     "translate": "messages/en.json'daki tüm anahtarları çevirin",
                     "routing": "src/i18n/routing.ts dosyasına yerel ayar kodunu ekleyin",
                     "verify": "Tamamlandığını doğrulamak için npx tsx scripts/check-i18n.ts çalıştırın"
+                }
+            }
+        }
+    },
+    "legal": {
+        "privacy": {
+            "meta": {
+                "title": "Gizlilik Politikası",
+                "description": "LocaleDB'yi ziyaret ettiğinde neler işlenir: çerezsiz analitik, bir dil çerezi ve başka hiçbir şey."
+            },
+            "title": "Gizlilik Politikası",
+            "updated": "Son güncelleme: 28 Eylül 2026",
+            "intro": "LocaleDB, Mehmet Emin Özkürkçüler tarafından yürütülen ücretsiz ve açık kaynak bir başvuru sitesidir. Hesap, üyelik ya da iletişim formu yoktur; kişisel veriler satılmaz veya paylaşılmaz. Bu sayfa, siteyi ziyaret ettiğinde işlenen az miktardaki veriyi açıklar.",
+            "sections": {
+                "analytics": {
+                    "title": "Analitik",
+                    "body": "Hangi sayfaların ziyaret edildiğini ve ne kadar hızlı yüklendiğini görmek için Vercel Web Analytics ve Vercel Speed Insights kullanıyoruz. İkisi de çerez kullanmaz ve seni kişisel olarak tanımlamaz: ziyaretçiler, 24 saat sonra silinen anonimleştirilmiş bir istek özetiyle sayılır; Speed Insights ise yüklenme süreleri gibi performans ölçümlerini sayfa, tarayıcı ve cihaz türüyle birlikte kaydeder."
+                },
+                "hosting": {
+                    "title": "Barındırma",
+                    "body": "Site Vercel üzerinde barındırılır. Her web sunucusu gibi Vercel de sayfaları sunmak ve hizmeti korumak için IP adresin ve tarayıcı bilgin gibi teknik verileri işler. Ayrıntılar için <vercel>Vercel'in gizlilik politikasına</vercel> bakabilirsin."
+                },
+                "storage": {
+                    "title": "Çerezler ve yerel depolama",
+                    "body": "Seçtiğin dili hatırlamak için tek bir işlevsel çerez, <code>NEXT_LOCALE</code>, kullanıyoruz; tarayıcını kapattığında silinir. Açık veya koyu tema tercihin tarayıcının yerel depolamasında tutulur. İkisi de takip ya da reklam amacıyla kullanılmaz."
+                },
+                "export": {
+                    "title": "Veri dışa aktarma",
+                    "body": "Dışa aktarma aracını kullandığında seçtiğin veri seti, kayıtlar ve alanlar yalnızca indireceğin dosyayı oluşturmak için sunucumuza gönderilir. Saklanmaz ve seninle ilişkilendirilmez."
+                },
+                "choices": {
+                    "title": "Seçimlerin",
+                    "body": "Tarayıcı ayarlarından çerezleri engelleyebilir ve yerel depolamayı temizleyebilirsin. Site çalışmaya devam eder, yalnızca dil ve tema tercihini hatırlamaz. Analitik betiklerini engelleyen içerik engelleyiciler de sorun çıkarmaz."
+                },
+                "changes": {
+                    "title": "Değişiklikler",
+                    "body": "Bu politika değişirse sayfanın başındaki tarih en son düzenlemeyi gösterir."
+                },
+                "contact": {
+                    "title": "İletişim",
+                    "body": "Gizlilikle ilgili bir sorun mu var? <github>GitHub'da bir issue aç</github>."
+                }
+            }
+        },
+        "terms": {
+            "meta": {
+                "title": "Kullanım Koşulları",
+                "description": "LocaleDB'yi kullanma koşulları: açık kaynak kod, üçüncü taraf veriler, olduğu gibi sunulur."
+            },
+            "title": "Kullanım Koşulları",
+            "updated": "Son güncelleme: 28 Eylül 2026",
+            "intro": "LocaleDB'yi kullanarak bu koşulları kabul etmiş olursun. Koşullar kısa, çünkü proje basit: ücretsiz, açık kaynak ve olduğu gibi sunulan yerelleştirme verisi.",
+            "sections": {
+                "license": {
+                    "title": "Açık kaynak",
+                    "body": "LocaleDB'nin kaynak kodu <license>MIT Lisansı</license> ile yayımlanır. Bu lisans kapsamında kullanabilir, kopyalayabilir ve değiştirebilirsin."
+                },
+                "data": {
+                    "title": "Veriler",
+                    "body": "Yerelleştirme verileri Unicode CLDR, ICU, mledoze/countries, SimpleLocalize, Dünya Bankası, mwgg/Airports ve IP2Location gibi üçüncü taraf kaynaklardan derlenir. Her kaynağın kendi lisansı ve atıf koşulları geçerlidir; veriyi yeniden dağıtıyorsan bunları kontrol edip uygula. Kaynakların tam listesi <docs>dokümantasyonda</docs> yer alır."
+                },
+                "warranty": {
+                    "title": "Garanti yoktur",
+                    "body": "Site, verileri ve kodu hiçbir garanti olmaksızın \"olduğu gibi\" sunulur. Yerelleştirme kuralları değişebilir ve kaynaklar birbiriyle çelişebilir; hukuki, finansal veya güvenlikle ilgili formatlar gibi kritik bilgilere güvenmeden önce doğrula. Proje sahibi, sitenin veya verilerinin kullanımından doğabilecek zararlardan sorumlu değildir."
+                },
+                "fairUse": {
+                    "title": "Adil kullanım",
+                    "body": "Dışa aktarma aracı dahil web sitesi ve uç noktaları ücretsizdir. Lütfen bunları otomatik, yüksek hacimli isteklerle aşırı yükleme; hizmetin herkes için erişilebilir kalması amacıyla erişim sınırlandırılabilir."
+                },
+                "contributions": {
+                    "title": "Katkılar",
+                    "body": "GitHub üzerinden yapılan katkılar, <contributing>katkı rehberinde</contributing> anlatıldığı gibi projenin MIT Lisansı ile lisanslanır."
+                },
+                "changes": {
+                    "title": "Değişiklikler",
+                    "body": "Proje geliştikçe bu koşullar güncellenebilir. Sayfanın başındaki tarih en son düzenlemeyi gösterir; siteyi kullanmaya devam etmen güncel sürümü kabul ettiğin anlamına gelir."
+                },
+                "contact": {
+                    "title": "İletişim",
+                    "body": "Bu koşullarla ilgili bir sorun mu var? <github>GitHub'da bir issue aç</github>."
                 }
             }
         }
