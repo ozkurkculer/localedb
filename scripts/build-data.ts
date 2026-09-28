@@ -635,8 +635,6 @@ async function build() {
     console.log(`🎉 Build complete in ${((Date.now() - startTime) / 1000).toFixed(2)}s`);
 }
 
-build().catch(console.error);
-
 interface ProcessCountryInput {
     isoCode: string;
     mledozeData: any;
@@ -966,4 +964,8 @@ async function processCurrency(code: string, info: CurrencyInfo, currencyMap: Re
     await fs.promises.writeFile(outFile, JSON.stringify(currencyData, null, 2));
 }
 
-build().catch(console.error);
+// Called once: two concurrent builds would interleave writes to the same files.
+build().catch((error) => {
+    console.error(error);
+    process.exit(1);
+});
