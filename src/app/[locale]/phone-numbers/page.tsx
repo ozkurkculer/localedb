@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import { PhoneNumbersClient, PhoneNumberEntry } from '@/components/phone/phone-numbers-client';
-import { CountryLocaleData } from '@/types/country';
+import type { CountryLocaleData } from '@localedb/core/browser';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

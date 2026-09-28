@@ -11,7 +11,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import type { CountryIndexEntry } from "@/types/country";
+import type { CountryIndexEntry } from "@localedb/core/browser";
 
 export function SearchCommand() {
   const router = useRouter();

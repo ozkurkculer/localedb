@@ -1,7 +1,6 @@
 import AdmZip from "adm-zip";
 
-export { pickFields } from "./pick";
-export { toCsv } from "./csv";
+export { pickFields, toCsv } from "@localedb/core/browser";
 
 export type ExportFormat = "json" | "json-min" | "csv" | "zip";
 

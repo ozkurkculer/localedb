@@ -1,6 +1,6 @@
 import { readFile, readdir } from "fs/promises";
 import path from "path";
-import type { CurrencyLocaleData, CurrencyIndexEntry } from "@/types/currency";
+import type { CurrencyLocaleData, CurrencyIndexEntry } from "@localedb/core/browser";
 
 const DATA_DIR = path.join(process.cwd(), "data", "currencies");
 const INDEX_PATH = path.join(process.cwd(), "data", "_index_currencies.json");

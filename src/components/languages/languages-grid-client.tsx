@@ -13,7 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { LanguageIndexEntry } from "@/types/language";
+import type { LanguageIndexEntry } from "@localedb/core/browser";
 
 interface LanguagesGridClientProps {
   languages: LanguageIndexEntry[];

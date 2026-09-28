@@ -13,7 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { CurrencyIndexEntry } from "@/types/currency";
+import type { CurrencyIndexEntry } from "@localedb/core/browser";
 
 interface CurrenciesGridClientProps {
   currencies: CurrencyIndexEntry[];

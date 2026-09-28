@@ -14,7 +14,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import type { Airport } from "@/types/airport";
+import type { Airport } from "@localedb/core/browser";
 import { toast } from "sonner";
 
 interface AirportsTableClientProps {

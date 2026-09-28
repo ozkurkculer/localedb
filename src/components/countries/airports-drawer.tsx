@@ -10,7 +10,7 @@ import { DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from '@/com
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { ResponsiveDrawer } from '@/components/ui/responsive-drawer';
 import { CopyButton } from '@/components/copy-button';
-import type { Airport } from '@/types/airport';
+import type { Airport } from '@localedb/core/browser';
 import { cn } from '@/lib/utils';
 
 interface AirportsDrawerProps {

@@ -14,7 +14,7 @@ import {
     DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
-import type { CountryIndexEntry } from '@/types/country';
+import type { CountryIndexEntry } from '@localedb/core/browser';
 import { getContinentStyle } from './continent-variants';
 
 interface CountriesGridClientProps {

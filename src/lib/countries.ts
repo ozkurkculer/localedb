@@ -1,6 +1,6 @@
 import { readFile, readdir } from 'fs/promises';
 import path from 'path';
-import type { CountryLocaleData, CountryIndexEntry } from '@/types/country';
+import type { CountryLocaleData, CountryIndexEntry } from '@localedb/core/browser';
 
 const DATA_DIR = path.join(process.cwd(), 'data', 'countries');
 const INDEX_PATH = path.join(process.cwd(), 'data', '_index_countries.json');

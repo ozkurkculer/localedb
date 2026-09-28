@@ -3,18 +3,17 @@
  * Defines the complete structure for country localization data
  */
 
+import type { Airport } from "./airport";
+import type { CurrencyInfo } from "./currency";
+import type { Language } from "./language";
+
 // ─── Type Definitions ────────────────────────────────────────────
 
 export type WritingDirection = "ltr" | "rtl";
 export type MeasurementSystem = "metric" | "imperial" | "mixed";
 export type TemperatureScale = "celsius" | "fahrenheit";
-// CurrencySymbolPosition moved to currency.ts
 export type DayOfWeek = 1 | 2 | 3 | 4 | 5 | 6 | 7; // ISO 8601: 1=Monday, 7=Sunday
 export type ClockFormat = "12h" | "24h";
-
-// ─── Language Information ────────────────────────────────────────
-
-import { Language } from "./language";
 
 // ─── Country Basics ──────────────────────────────────────────────
 
@@ -94,13 +93,6 @@ export interface CodeSystems {
   /** Mobile country code (MCC) for GSM networks, e.g. 286 */
   mmc: number;
 }
-
-// ─── Currency ────────────────────────────────────────────────────
-
-// ─── Currency ────────────────────────────────────────────────────
-
-import { CurrencyInfo } from "./currency";
-import { Airport } from "./airport";
 
 export type { CurrencyInfo, Airport };
 

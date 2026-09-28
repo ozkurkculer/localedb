@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Globe2, Coins, Languages, Plane } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { DatasetKey } from "@/lib/export/field-schema";
+import type { DatasetKey } from "@localedb/core/browser";
 
 interface DatasetPickerProps {
   value: DatasetKey;

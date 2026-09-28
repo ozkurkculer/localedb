@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Search, X, Plane } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import type { Airport } from "@/types/airport";
+import type { Airport } from "@localedb/core/browser";
 
 interface AirportsGridClientProps {
   airports: Airport[];

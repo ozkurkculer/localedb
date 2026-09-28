@@ -10,10 +10,10 @@ import { cn } from "@/lib/utils";
 import {
   DATASET_SCHEMAS,
   collectDefaultPaths,
+  toCsv,
   type DatasetKey,
-} from "@/lib/export/field-schema";
+} from "@localedb/core/browser";
 import type { ExportFormat } from "@/lib/export/serialize";
-import { toCsv } from "@/lib/export/csv";
 import { DatasetPicker } from "./dataset-picker";
 import { EntityGrid, type EntityOption } from "./entity-grid";
 import { FieldTree } from "./field-tree";

@@ -5,9 +5,11 @@ import { fileURLToPath } from 'url';
 import { XMLParser } from 'fast-xml-parser';
 
 // Types
-import { CountryLocaleData, CountryBasics, CodeSystems, DateTimeInfo, NumberFormatInfo, PhoneInfo, PhoneNumberFormat, PhoneNumberType, AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry } from '../src/types/country';
-import { CurrencyInfo, CurrencyLocaleData, CurrencyIndexEntry } from '../src/types/currency';
-import { Language, LanguageLocaleData, LanguageIndexEntry } from '../src/types/language';
+import type {
+    CountryLocaleData, CountryBasics, CodeSystems, DateTimeInfo, NumberFormatInfo, PhoneInfo, PhoneNumberFormat, PhoneNumberType,
+    AddressFormatInfo, LocaleMiscInfo, CountryIndexEntry, CurrencyInfo, CurrencyLocaleData, CurrencyIndexEntry,
+    Language, LanguageLocaleData, LanguageIndexEntry,
+} from '@localedb/core/browser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

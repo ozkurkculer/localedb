@@ -12,7 +12,7 @@ import {
   getMimeType,
   type ExportFormat,
 } from "@/lib/export/serialize";
-import type { DatasetKey } from "@/lib/export/field-schema";
+import type { DatasetKey } from "@localedb/core/browser";
 
 interface ExportPayload {
   dataset: DatasetKey;

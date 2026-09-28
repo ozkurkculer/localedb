@@ -1,6 +1,6 @@
 import { readFile } from "fs/promises";
 import path from "path";
-import type { Airport } from "@/types/airport";
+import type { Airport } from "@localedb/core/browser";
 
 const AIRPORTS_INDEX_PATH = path.join(process.cwd(), "data", "_index_airports.json");
 

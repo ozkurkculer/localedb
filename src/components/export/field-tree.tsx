@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import {
   type FieldNode,
   collectAllPaths,
-} from "@/lib/export/field-schema";
+} from "@localedb/core/browser";
 
 interface FieldTreeProps {
   nodes: FieldNode[];
