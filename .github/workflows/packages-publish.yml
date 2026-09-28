@@ -38,6 +38,8 @@ jobs:
           cp .env.example .env
           pnpm update:data
           pnpm build:data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm --filter @localedb/core pack-data
 
       - run: pnpm packages:typecheck

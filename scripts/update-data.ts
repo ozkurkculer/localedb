@@ -22,6 +22,7 @@ async function downloadFile(url: string, outputPath: string) {
     console.log(`⬇️  Downloading: ${url}`);
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.statusText}`);
+    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     const fileStream = fs.createWriteStream(outputPath);
     // @ts-ignore
     await finished(Readable.fromWeb(res.body).pipe(fileStream));
@@ -72,7 +73,9 @@ async function downloadZipAndExtract(url: string, outputDir: string, filter?: (f
 
 async function getLatestGitHubTag(repo: string): Promise<string> {
     console.log(`🔍 Checking latest release for ${repo}...`);
-    const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
+    // Authenticated when GITHUB_TOKEN is set (CI), to avoid the shared-IP rate limit.
+    const headers: Record<string, string> = process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {};
+    const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, { headers });
     if (!res.ok) throw new Error(`Failed to check latest release for ${repo}: ${res.statusText}`);
     const data = await res.json() as any;
     console.log(`✨ Latest version for ${repo}: ${data.tag_name}`);
@@ -177,22 +180,32 @@ async function updateCurrencyUnits() {
 }
 
 async function queryWikidata(query: string, attempt = 1): Promise<{ results?: { bindings?: unknown[] } }> {
-    const res = await fetch(process.env.WIKIDATA_SPARQL_URL || 'https://query.wikidata.org/sparql', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Accept: 'application/sparql-results+json',
-            // Required by the Wikimedia User-Agent policy.
-            'User-Agent': 'LocaleDB data build (https://localedb.org; https://github.com/ozkurkculer/localedb)',
-        },
-        body: new URLSearchParams({ query }),
-    });
-    // Wikidata rate-limits (429) and times out (5xx) under load; wait as asked and retry.
-    if ((res.status === 429 || res.status >= 500) && attempt < 5) {
-        const wait = Math.min(Number(res.headers.get('retry-after')) || 15 * attempt, 120);
-        console.log(`⏳ Wikidata answered ${res.status}, retrying in ${wait}s...`);
+    const retry = async (reason: string, seconds: number) => {
+        const wait = Math.min(seconds, 120);
+        console.log(`⏳ Wikidata ${reason}, retrying in ${wait}s...`);
         await new Promise((resolve) => setTimeout(resolve, wait * 1000));
         return queryWikidata(query, attempt + 1);
+    };
+    let res: Response;
+    try {
+        res = await fetch(process.env.WIKIDATA_SPARQL_URL || 'https://query.wikidata.org/sparql', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                Accept: 'application/sparql-results+json',
+                // Required by the Wikimedia User-Agent policy.
+                'User-Agent': 'LocaleDB data build (https://localedb.org; https://github.com/ozkurkculer/localedb)',
+            },
+            body: new URLSearchParams({ query }),
+        });
+    } catch (error) {
+        // Connection resets and timeouts: retry like a 5xx.
+        if (attempt < 5) return retry('was unreachable', 15 * attempt);
+        throw error;
+    }
+    // Wikidata rate-limits (429) and times out (5xx) under load; wait as asked and retry.
+    if ((res.status === 429 || res.status >= 500) && attempt < 5) {
+        return retry(`answered ${res.status}`, Number(res.headers.get('retry-after')) || 15 * attempt);
     }
     if (!res.ok) throw new Error(`Wikidata query failed: ${res.status} ${res.statusText}`);
     return res.json() as Promise<{ results?: { bindings?: unknown[] } }>;
