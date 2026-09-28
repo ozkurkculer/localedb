@@ -11,6 +11,7 @@ import type {
     Language, LanguageLocaleData, LanguageIndexEntry,
 } from '@localedb/core/browser';
 import { Cldr } from './sources/cldr';
+import { TimeZones, standardOffset } from './sources/tz';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -326,6 +327,10 @@ async function build() {
     console.log('📦 Loading CLDR...');
     const cldr = new Cldr(path.join(DATA_DIR, 'cldr', 'cldr-json'));
 
+    console.log('🕒 Loading IANA tz...');
+    const timeZones = new TimeZones(path.join(DATA_DIR, 'tz', 'zone.tab'));
+    if (!timeZones.size) console.warn('⚠️  data/tz/zone.tab not found, time zones stay empty. Run `pnpm update:data tz`.');
+
     // Legacy: SimpleLocalize is being phased out. When its files are present they
     // only fill fields no other source provides yet (see LEGACY_SL_FIELDS).
     const slCountries: any[] = await readJsonFile(path.join(DATA_DIR, 'simplelocalize/countries.json')) || [];
@@ -550,6 +555,7 @@ async function build() {
                 mledozeData: mledozeCountry,
                 slData: slMap.get(isoCode),
                 cldr,
+                timeZones,
                 wbData: wbDataMap.get(mledozeCountry.cca3),
                 index: countryIndex,
                 langMap: languageUsageMap,
@@ -600,6 +606,7 @@ async function build() {
             { name: "World Bank", year: "2024" },
             { name: "mledoze", version: "latest" },
             { name: "libphonenumber", version: "latest" },
+            { name: "IANA tz", version: "latest" },
             ...(slMap.size ? [{ name: "SimpleLocalize (legacy fallback)", version: "latest" }] : []),
             { name: "MWGG Airports", version: "latest" },
             { name: "ip2location (IATA-ICAO CSV)", version: "latest" }
@@ -616,13 +623,14 @@ build().catch(console.error);
  * SimpleLocalize files are present and will move to IANA tz, libaddressinput
  * and Wikidata step by step.
  */
-const LEGACY_SL_FIELDS = 'timezones, postal codes, capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
+const LEGACY_SL_FIELDS = 'postal codes, capital coordinates, FIFA/vehicle/STANAG/ITU/UIC/MID/MCC codes, currency subunit name';
 
 interface ProcessCountryInput {
     isoCode: string;
     mledozeData: any;
     slData?: any;
     cldr: Cldr;
+    timeZones: TimeZones;
     wbData?: WorldBankData;
     index: CountryIndexEntry[];
     langMap: Record<string, string[]>;
@@ -634,7 +642,7 @@ interface ProcessCountryInput {
 }
 
 async function processCountry({
-    isoCode, mledozeData, slData, cldr, wbData, index, langMap, languageInfoMap,
+    isoCode, mledozeData, slData, cldr, timeZones, wbData, index, langMap, languageInfoMap,
     currencyMap, currencyInfoMap, airports, phoneMeta,
 }: ProcessCountryInput) {
     // --- Locale: CLDR likely language, most specific CLDR locale available (e.g. de-CH, zh-Hant-TW)
@@ -707,6 +715,10 @@ async function processCountry({
         return { ...languageInfoMap.get(code)!, countries: [] };
     });
 
+    // --- Time zones: IANA tz; primary = the capital's zone
+    const zones = timeZones.zones(isoCode);
+    const primaryTimezone = timeZones.primary(isoCode, mledozeData.capital?.[0] || '', cldr.representativeZones(isoCode));
+
     const codes = cldr.territoryCode(isoCode);
     const tld: string[] = mledozeData.tld || [];
 
@@ -714,7 +726,7 @@ async function processCountry({
     const data: CountryLocaleData = {
         $schema: "1.0.0",
         lastUpdated: new Date().toISOString().split('T')[0],
-        sources: ["CLDR", "mledoze", ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
+        sources: ["CLDR", "mledoze", ...(zones.length ? ["IANA tz"] : []), ...(wbData ? ["World Bank"] : []), ...(phoneMeta ? ["libphonenumber"] : []), ...(slData ? ["SimpleLocalize (legacy)"] : [])],
         basics: {
             name: name,
             officialName: mledozeData.name.official || name,
@@ -810,9 +822,9 @@ async function processCountry({
                 dayPeriods?.am || "AM",
                 dayPeriods?.pm || "PM"
             ],
-            timezones: slData?.timezones || [],
-            primaryTimezone: slData?.timezones?.[0] || "UTC",
-            utcOffset: "+00:00"
+            timezones: zones,
+            primaryTimezone: primaryTimezone || "UTC",
+            utcOffset: primaryTimezone ? standardOffset(primaryTimezone) : "+00:00"
         },
         numberFormat: {
             decimalSeparator: numbers?.["symbols-numberSystem-latn"]?.decimal || ".",

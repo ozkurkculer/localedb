@@ -158,6 +158,13 @@ async function updateLibphonenumber() {
     await downloadFile(url, path.join(outputDir, 'PhoneNumberMetadata.xml'));
 }
 
+async function updateTimeZones() {
+    console.log('\n--- IANA tz ---');
+    const outputDir = path.join(DATA_DIR, 'tz');
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    await downloadFile(process.env.TZ_ZONE_TAB_URL || 'https://raw.githubusercontent.com/eggert/tz/main/zone.tab', path.join(outputDir, 'zone.tab'));
+}
+
 async function updateICU() {
     console.log('\n--- ICU ---');
     let version = process.env.ICU_VERSION || 'latest';
@@ -179,7 +186,7 @@ async function updateICU() {
 
 async function main() {
     const args = process.argv.slice(2);
-    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber'];
+    const availableSources = ['simplelocalize', 'mledoze', 'airports', 'worldbank', 'cldr', 'icu', 'libphonenumber', 'tz'];
 
     // Check for helps/list
     if (args.includes('--help') || args.includes('-h')) {
@@ -215,6 +222,7 @@ If no source is specified, ALL sources will be updated.
         if (sourcesToUpdate.includes('cldr')) await updateCLDR();
         if (sourcesToUpdate.includes('icu')) await updateICU();
         if (sourcesToUpdate.includes('libphonenumber')) await updateLibphonenumber();
+        if (sourcesToUpdate.includes('tz')) await updateTimeZones();
 
         console.log('\n✨ Selected data sources updated successfully!');
     } catch (error) {

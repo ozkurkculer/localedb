@@ -39,6 +39,7 @@ export class Cldr {
     private readonly fractions: Json;
     private readonly parents = new Map<string, string[]>();
     private readonly languageCodes = new Map<string, CldrLanguageCodes>();
+    private readonly zoneMappings: { zone: string; territory: string }[];
 
     constructor(root: string) {
         this.root = root;
@@ -61,6 +62,11 @@ export class Cldr {
                 this.parents.set(child, [...(this.parents.get(child) ?? []), group]);
             }
         }
+
+        this.zoneMappings = (supplemental('metaZones').metaZones?.metazones ?? []).map(({ mapZone }: Json) => ({
+            zone: mapZone._type,
+            territory: mapZone._territory,
+        }));
 
         // ISO 639-2/3 codes: "tur" -> "tr" is an overlong alias, "ger" -> "de" a bibliographic one.
         const aliases = supplemental('aliases')?.metadata?.alias?.languageAlias ?? {};
@@ -175,6 +181,13 @@ export class Cldr {
             if (!info._to && info._tender !== 'false') return code;
         }
         return undefined;
+    }
+
+    /** CLDR's representative time zones: country-specific ones first, then worldwide (001). */
+    representativeZones(region: string): string[] {
+        const forRegion = this.zoneMappings.filter((m) => m.territory === region).map((m) => m.zone);
+        const worldwide = this.zoneMappings.filter((m) => m.territory === '001').map((m) => m.zone);
+        return [...forRegion, ...worldwide];
     }
 
     currencyNumericCode(code: string): number | undefined {

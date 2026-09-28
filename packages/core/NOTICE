@@ -28,6 +28,10 @@ World Bank Open Data (World Development Indicators)  https://data.worldbank.org
 License: Creative Commons Attribution 4.0 (CC BY 4.0)
 Used for: population, World Bank region and income group.
 
+IANA Time Zone Database (tz)                     https://www.iana.org/time-zones
+License: Public domain
+Used for: time zones per country and UTC offsets.
+
 Google libphonenumber                            https://github.com/google/libphonenumber
 License: Apache License 2.0                      https://www.apache.org/licenses/LICENSE-2.0
 Used for: phone number patterns, formats and example numbers.
