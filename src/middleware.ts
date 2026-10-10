@@ -7,11 +7,12 @@ const intlMiddleware = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
     const response = intlMiddleware(request);
 
-    // The Cloudflare Worker is also reachable on *.workers.dev (and its preview
-    // URLs). Canonical already points at localedb.org; this keeps the duplicate
-    // host out of search indexes. No effect on localedb.org or Vercel.
-    if (request.nextUrl.hostname.endsWith('.workers.dev')) {
-        response.headers.set('X-Robots-Tag', 'noindex');
+    // OpenNext serves prerendered HTML and RSC with `s-maxage=31536000`. A shared cache that honours
+    // it could keep a page for a year, pointing at `_next/static` chunks a later deploy no longer
+    // has. Pages are revalidated on every request instead (what Vercel used to send). Redirects
+    // keep their own headers.
+    if (response.status < 300) {
+        response.headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
     }
 
     return response;
@@ -19,7 +20,7 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
     // Match all pathnames except for
-    // - … if they start with `/api`, `/_next`, `/_vercel`, or `/og-image`
+    // - … if they start with `/api`, `/_next`, or `/og-image`
     // - … the ones containing a dot (e.g. `favicon.ico`)
-    matcher: ['/((?!api|_next|_vercel|og-image|.*\\..*).*)']
+    matcher: ['/((?!api|_next|og-image|.*\\..*).*)']
 };

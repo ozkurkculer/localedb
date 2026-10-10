@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Smoke test of a deployed Worker (CI: .github/workflows/deploy-cloudflare.yml; also after a manual deploy).
 #
-#   scripts/cloudflare-smoke.sh https://localedb.boraa-durna.workers.dev [BUILD_ID]
+#   scripts/cloudflare-smoke.sh https://localedb.org [BUILD_ID]
 #
 # With BUILD_ID (the deployed `.next/BUILD_ID`), first waits until the Worker serves that build on
 # several consecutive requests: right after a deploy some requests still reach the previous version
-# for a few minutes. Then checks a handful of URLs (status, Location, x-opennext-cache, noindex) and
-# one /api/export request. Prints a Markdown table; exits 1 if any check fails.
+# for a few minutes. Then checks a handful of URLs (status, Location, x-opennext-cache, cache-control,
+# noindex) and one /api/export request. Prints a Markdown table; exits 1 if any check fails.
 set -uo pipefail
 
 BASE="${1:?usage: cloudflare-smoke.sh BASE_URL [BUILD_ID]}"
@@ -39,7 +39,8 @@ if [[ -n "$BUILD_ID" ]]; then
     (( failed == 0 )) && rows+=("| \`/about\` | build \`$BUILD_ID\` served | after $((SECONDS - start))s | ✅ |")
 fi
 
-# check PATH EXPECTED_STATUS [HEADER=VALUE] — HEADER is matched case-insensitively, VALUE as a substring.
+# check PATH EXPECTED_STATUS [HEADER=VALUE | HEADER!] — HEADER is matched case-insensitively, VALUE as a
+# substring; HEADER! means the header must be absent.
 check() {
     local path="$1" want="$2" header="${3:-}"
     local headers status got ok=1
@@ -48,10 +49,19 @@ check() {
     got="$status"
     [[ "$status" == "$want" ]] || ok=0
     if [[ -n "$header" ]]; then
-        local name="${header%%=*}" value="${header#*=}" actual
+        local name value actual
+        if [[ "$header" == *! ]]; then
+            name="${header%!}"
+        else
+            name="${header%%=*}" value="${header#*=}"
+        fi
         actual=$(awk -v h="$(tr '[:upper:]' '[:lower:]' <<<"$name")" -F': ' 'tolower($1) == h { print $2; exit }' <<<"$headers")
         got="$got, $name: ${actual:-—}"
-        [[ "$actual" == *"$value"* ]] || ok=0
+        if [[ "$header" == *! ]]; then
+            [[ -z "$actual" ]] || ok=0
+        else
+            [[ "$actual" == *"$value"* ]] || ok=0
+        fi
     fi
     record "\`$path\`" "$want${header:+, $header}" "$got" "$ok"
 }
@@ -62,8 +72,8 @@ record() {
     rows+=("| $1 | $2 | $3 | $mark |")
 }
 
-check / 200
-check /ar 200
+check / 200 x-robots-tag!
+check /ar 200 "cache-control=public, max-age=0, must-revalidate"
 check /tr/countries/TR 200 x-opennext-cache=HIT
 check /countries/US 200 x-opennext-cache=HIT
 check /regions/north-america 200 x-opennext-cache=HIT

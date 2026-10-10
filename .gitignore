@@ -39,9 +39,6 @@ yarn-error.log*
 .docs*  
 .claude*
 
-# vercel
-.vercel
-
 # cloudflare (OpenNext build output, wrangler state, local secrets)
 .open-next
 .wrangler

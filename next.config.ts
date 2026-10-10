@@ -25,16 +25,6 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
 
-  // /api/export reads public/_data from disk at request time (src/lib/data/runtime.ts).
-  outputFileTracingIncludes: {
-    "/api/export": [
-      "./public/_data/countries/*.json",
-      "./public/_data/currencies/*.json",
-      "./public/_data/languages/*.json",
-      "./public/_data/_index_airports.json",
-    ],
-  },
-
   // public/_data (scripts/publish-data.ts) is for the site's own fetches, not for search engines.
   async headers() {
     return [
@@ -71,7 +61,7 @@ export default async function config(phase: string): Promise<NextConfig> {
     throw new Error("public/_data is missing: build with `pnpm build` (runs `pnpm build:public-data` first).");
   }
   // Cloudflare bindings for `getCloudflareContext()` during `next dev` (wrangler.jsonc). Imported only
-  // here so `next build` and `next start` (Vercel) never load the adapter.
+  // here so `next build` and `next start` never load the adapter.
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     const { initOpenNextCloudflareForDev } = await import("@opennextjs/cloudflare");
     initOpenNextCloudflareForDev();

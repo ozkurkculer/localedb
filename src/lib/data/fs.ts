@@ -12,8 +12,8 @@ import type { DataSource } from "./source";
  *
  * `turbopackIgnore` keeps the reads out of automatic file tracing, which would otherwise
  * pull the whole project (data/cldr included) into every server function. Prerendered pages
- * need no data at runtime; `/api/export` gets `public/_data` through `outputFileTracingIncludes`
- * in next.config.
+ * need no data at runtime; `next start` runs from the project directory, so `/api/export` finds
+ * `public/_data` on disk.
  */
 const ROOTS = {
   data: path.join(/* turbopackIgnore: true */ process.cwd(), "data"),

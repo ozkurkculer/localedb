@@ -1040,16 +1040,16 @@
                 "description": "LocaleDB'yi ziyaret ettiğinde neler işlenir: çerezsiz analitik, bir dil çerezi ve başka hiçbir şey."
             },
             "title": "Gizlilik Politikası",
-            "updated": "Son güncelleme: 28 Eylül 2026",
+            "updated": "Son güncelleme: 10 Ekim 2026",
             "intro": "LocaleDB, Mehmet Emin Özkürkçüler tarafından yürütülen ücretsiz ve açık kaynak bir başvuru sitesidir. Hesap, üyelik ya da iletişim formu yoktur; kişisel veriler satılmaz veya paylaşılmaz. Bu sayfa, siteyi ziyaret ettiğinde işlenen az miktardaki veriyi açıklar.",
             "sections": {
                 "analytics": {
                     "title": "Analitik",
-                    "body": "Hangi sayfaların ziyaret edildiğini ve ne kadar hızlı yüklendiğini görmek için Vercel Web Analytics ve Vercel Speed Insights kullanıyoruz. İkisi de çerez kullanmaz ve seni kişisel olarak tanımlamaz: ziyaretçiler, 24 saat sonra silinen anonimleştirilmiş bir istek özetiyle sayılır; Speed Insights ise yüklenme süreleri gibi performans ölçümlerini sayfa, tarayıcı ve cihaz türüyle birlikte kaydeder."
+                    "body": "Hangi sayfaların ziyaret edildiğini ve ne kadar hızlı yüklendiğini görmek için Cloudflare Web Analytics kullanıyoruz. Çerez ya da yerel depolama kullanmaz, seni tanımlamaz ve siteler arasında takip etmez. Sayfa görüntülemelerini yönlendiren sayfa, tarayıcı, işletim sistemi, cihaz türü ve ülkeyle birlikte, yüklenme süreleri gibi performans ölçümlerini de kaydeder."
                 },
                 "hosting": {
                     "title": "Barındırma",
-                    "body": "Site Vercel üzerinde barındırılır. Her web sunucusu gibi Vercel de sayfaları sunmak ve hizmeti korumak için IP adresin ve tarayıcı bilgin gibi teknik verileri işler. Ayrıntılar için <vercel>Vercel'in gizlilik politikasına</vercel> bakabilirsin."
+                    "body": "Site Cloudflare üzerinde barındırılır. Her web sunucusu gibi Cloudflare da sayfaları sunmak ve hizmeti korumak için IP adresin ve tarayıcı bilgin gibi teknik verileri işler. Ayrıntılar için <cloudflare>Cloudflare'in gizlilik politikasına</cloudflare> bakabilirsin."
                 },
                 "storage": {
                     "title": "Çerezler ve yerel depolama",

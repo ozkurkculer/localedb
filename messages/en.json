@@ -1039,16 +1039,16 @@
                 "description": "What LocaleDB processes when you visit: cookieless analytics, a language cookie and nothing else."
             },
             "title": "Privacy Policy",
-            "updated": "Last updated: September 28, 2026",
+            "updated": "Last updated: October 10, 2026",
             "intro": "LocaleDB is a free, open-source reference site maintained by Mehmet Emin Özkürkçüler. There are no accounts, sign-ups or contact forms, and no personal data is sold or shared. This page explains the little that is processed when you visit.",
             "sections": {
                 "analytics": {
                     "title": "Analytics",
-                    "body": "We use Vercel Web Analytics and Vercel Speed Insights to see which pages are visited and how fast they load. Neither uses cookies or identifies you personally: visitors are counted with an anonymised hash of the request that is discarded after 24 hours, and Speed Insights records performance metrics such as load times together with the page, browser and device type."
+                    "body": "We use Cloudflare Web Analytics to see which pages are visited and how fast they load. It sets no cookies, uses no local storage and does not identify you or follow you across sites. It records page views with the referring page, browser, operating system, device type and country, plus performance metrics such as load times."
                 },
                 "hosting": {
                     "title": "Hosting",
-                    "body": "The site is hosted on Vercel. Like any web server, Vercel processes technical data such as your IP address and browser user agent in order to deliver pages and protect the service. See <vercel>Vercel's privacy policy</vercel> for details."
+                    "body": "The site is hosted on Cloudflare. Like any web server, Cloudflare processes technical data such as your IP address and browser user agent in order to deliver pages and protect the service. See <cloudflare>Cloudflare's privacy policy</cloudflare> for details."
                 },
                 "storage": {
                     "title": "Cookies and local storage",

@@ -8,14 +8,11 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script";
 import { fontClassName } from "../fonts";
 
-// Pages are prerendered, so these are read once at build time. Vercel sets VERCEL=1 in its builds;
-// the Cloudflare build gets the Web Analytics token from its build environment (never committed).
-const onVercel = Boolean(process.env.VERCEL);
+// Pages are prerendered, so this is read once at build time. The Cloudflare build gets the Web
+// Analytics token from its build environment (never committed).
 const cfBeaconToken = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN;
 
 export function generateStaticParams() {
@@ -131,12 +128,6 @@ export default async function LocaleLayout({
               <Footer />
             </div>
             <Toaster />
-            {onVercel && (
-              <>
-                <SpeedInsights />
-                <Analytics />
-              </>
-            )}
             {cfBeaconToken && (
               <Script
                 src="https://static.cloudflareinsights.com/beacon.min.js"

@@ -19,8 +19,8 @@ const richLinks = {
             {chunks}
         </a>
     ),
-    vercel: (chunks: ReactNode) => (
-        <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className={linkClass}>
+    cloudflare: (chunks: ReactNode) => (
+        <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className={linkClass}>
             {chunks}
         </a>
     ),
