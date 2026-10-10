@@ -17,6 +17,8 @@ const eslintConfig = defineConfig([
     // Cloudflare build output and wrangler state
     ".open-next/**",
     ".wrangler/**",
+    // Claude Code worktrees (full checkouts with their own build output)
+    ".claude/**",
   ]),
 ]);
 

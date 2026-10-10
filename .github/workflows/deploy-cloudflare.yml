@@ -1,0 +1,156 @@
+name: Deploy to Cloudflare
+
+# Builds the dataset from upstream sources, builds the site with OpenNext and deploys it to the
+# `localedb` Worker (production). Same data flow as Vercel's `pnpm build:clean`:
+# update:data → build:data → build:public-data → next build, with `next build` run once (by `cf:build`).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Never cancel a running deploy: a cancelled upload would leave a half-uploaded version.
+concurrency:
+  group: deploy-cloudflare-prod
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    # workflow_dispatch can pick any branch; only main deploys to production.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WORKER_URL: https://localedb.boraa-durna.workers.dev
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0 (version from packageManager)
+      # Node 24 like Vercel: ICU and tz data end up in the dataset and the pages.
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Disk space
+        run: |
+          echo "LOGS=$RUNNER_TEMP/ci-logs" >> "$GITHUB_ENV"
+          LOGS="$RUNNER_TEMP/ci-logs"
+          mkdir -p "$LOGS"
+          df -h /
+          # Measured locally: data 0.3 GB + .next 7.1 GB (includes the standalone copy) + .open-next 3.4 GB
+          # + node_modules 0.9 GB + the pnpm store: ~13 GB.
+          free_gb=$(df --output=avail -BG / | tail -1 | tr -dc '0-9')
+          if (( free_gb < 20 )); then
+            echo "Only ${free_gb} GB free, removing unused preinstalled toolchains"
+            sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+            df -h /
+          fi
+          df --output=avail -BG / | tail -1 | tr -dc 0-9 > "$LOGS/disk-before"
+
+      - name: Install
+        run: |
+          start=$SECONDS
+          pnpm install --frozen-lockfile
+          echo "install|$((SECONDS - start))" >> "$LOGS/timings"
+
+      # Any failing source fails the step (update-data exits 1), so a partial dataset is never deployed.
+      - name: Download data (update:data)
+        run: |
+          start=$SECONDS
+          cp .env.example .env
+          pnpm update:data
+          echo "update:data|$((SECONDS - start))" >> "$LOGS/timings"
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # CLDR release lookup without the shared-IP rate limit
+
+      - name: Build data (build:data)
+        run: |
+          start=$SECONDS
+          pnpm build:data
+          echo "build:data|$((SECONDS - start))" >> "$LOGS/timings"
+
+      # cf:build = opennextjs-cloudflare build (runs `pnpm build` = build:public-data + next build) + _headers.
+      - name: Build site (cf:build)
+        run: |
+          set -o pipefail
+          start=$SECONDS
+          pnpm cf:build 2>&1 | perl -MTime::HiRes=time -ne '$|=1; printf "[%.1f] %s", time, $_' | tee "$LOGS/build.log"
+          echo "cf:build|$((SECONDS - start))" >> "$LOGS/timings"
+          df -h /
+        env:
+          # Public value (it is in every page's HTML), so a repository variable, not a secret.
+          NEXT_PUBLIC_CF_BEACON_TOKEN: ${{ vars.NEXT_PUBLIC_CF_BEACON_TOKEN }}
+
+      # Not `pnpm run deploy`: that runs cf:build again.
+      - name: Deploy
+        id: deploy
+        run: |
+          set -o pipefail
+          previous=$(pnpm exec wrangler deployments list --json | jq -r 'sort_by(.created_on) | last | .versions | max_by(.percentage) | .version_id' || true)
+          echo "previous_version=$previous" >> "$GITHUB_OUTPUT"
+          echo "Previous version: $previous"
+          start=$SECONDS
+          # The per-asset "+ /path" lines (~6,000) only go to the log file.
+          WRANGLER_OUTPUT_FILE_PATH="$LOGS/wrangler-output.ndjson" \
+            pnpm exec opennextjs-cloudflare deploy --tag "${GITHUB_SHA::12}" --message "ci-run-${GITHUB_RUN_ID}" 2>&1 \
+            | perl -MTime::HiRes=time -ne '$|=1; printf "[%.1f] %s", time, $_' | tee "$LOGS/deploy.log" | grep -v '^\[[0-9.]*\] + /'
+          echo "deploy|$((SECONDS - start))" >> "$LOGS/timings"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Smoke test
+        run: |
+          set -o pipefail
+          scripts/cloudflare-smoke.sh "$WORKER_URL" "$(cat .next/BUILD_ID)" | tee "$LOGS/smoke.md"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Cloudflare deploy"
+            echo
+            echo "- Commit: \`$GITHUB_SHA\`"
+            echo "- Node: $(node -v) (ICU $(node -p process.versions.icu), tz $(node -p process.versions.tz))"
+            [[ -f .next/BUILD_ID ]] && echo "- Build id: \`$(cat .next/BUILD_ID)\`"
+            version=$(jq -r 'select(.type == "deploy") | .version_id // empty' "$LOGS/wrangler-output.ndjson" 2>/dev/null || true)
+            [[ -n "$version" ]] && echo "- Version: \`$version\` (tag \`${GITHUB_SHA::12}\`, message \`ci-run-${GITHUB_RUN_ID}\`)"
+            bundle=$(jq -r 'select(.type == "deploy") | .bundle_size | "\(.raw_bytes / 1024 | floor) KiB raw / \(.gzip_bytes / 1024 | floor) KiB gzip"' "$LOGS/wrangler-output.ndjson" 2>/dev/null || true)
+            [[ -n "$bundle" ]] && echo "- Worker size: $bundle"
+            uploaded=$(grep -o 'Success! Uploaded .*' "$LOGS/deploy.log" 2>/dev/null || true)
+            [[ -n "$uploaded" ]] && echo "- Assets: ${uploaded#Success! }"
+            [[ -f "$LOGS/disk-before" ]] && echo "- Disk: $(cat "$LOGS/disk-before") GB free at start, $(df --output=avail -BG / | tail -1 | tr -dc '0-9') GB at end"
+            echo
+            echo "| Step | Seconds |"
+            echo "|---|---|"
+            [[ -f "$LOGS/timings" ]] && while IFS='|' read -r name secs; do echo "| $name | $secs |"; done < "$LOGS/timings"
+            # Sub-steps from the timestamped logs: [epoch] line.
+            span() { awk -v a="$2" -v b="$3" -v n="$4" 'index($0, a) && !s { s = substr($1, 2) + 0 } index($0, b) && s && !e { e = substr($1, 2) + 0 } END { if (s && e) printf "| ↳ %s | %d |\n", n, e - s }' "$1" 2>/dev/null || true; }
+            span "$LOGS/build.log" 'OpenNext — Building Next.js app' 'OpenNext — Generating bundle' 'build:public-data + next build'
+            span "$LOGS/build.log" 'OpenNext — Generating bundle' 'OpenNext build complete' 'OpenNext bundle'
+            span "$LOGS/deploy.log" 'Populating Workers static assets' 'Successfully populated' 'populate'
+            span "$LOGS/deploy.log" 'Starting asset upload' 'Success! Uploaded' 'asset upload'
+            span "$LOGS/deploy.log" 'Success! Uploaded' 'Current Version ID' 'worker upload + triggers'
+            if [[ -f "$LOGS/smoke.md" ]]; then
+              echo
+              echo "### Smoke test ($WORKER_URL)"
+              echo
+              cat "$LOGS/smoke.md"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Rollback hint
+        if: failure() && steps.deploy.outputs.previous_version != ''
+        run: |
+          {
+            echo
+            echo "### ❌ Deploy or smoke test failed"
+            echo
+            echo "If the new version is live and broken, roll back to the version that was live before this run (no upload):"
+            echo
+            echo '```bash'
+            echo "pnpm wrangler rollback ${{ steps.deploy.outputs.previous_version }} --message \"rollback of ci-run-${GITHUB_RUN_ID}\""
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

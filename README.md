@@ -190,7 +190,52 @@ This runs `pnpm cf:build` (`opennextjs-cloudflare build`, which calls `pnpm buil
 - Static assets are served before the Worker runs, so `next.config.ts` `headers()` does not reach them. `scripts/cloudflare-headers.ts` generates `.open-next/assets/_headers` from those rules. Keep header and redirect rules in `next.config.ts`.
 - Cloudflare Web Analytics is rendered only when `NEXT_PUBLIC_CF_BEACON_TOKEN` is set at build time. Pass it on the command line or in CI, not in a committed file. Vercel Analytics is rendered only in Vercel builds (`VERCEL=1`).
 - `pnpm cf-typegen` regenerates `cloudflare-env.d.ts` after binding changes in `wrangler.jsonc`.
-- Deploying is `pnpm run deploy` (`pnpm deploy` is a built-in pnpm command) and needs `wrangler login`.
+- Deploying is `pnpm run deploy` (`pnpm deploy` is a built-in pnpm command) and needs `wrangler login`. See "Deploy (Cloudflare)" below.
+
+### ☁️ Deploy (Cloudflare)
+
+Every push to `main` deploys the `localedb` Worker through GitHub Actions (`.github/workflows/deploy-cloudflare.yml`); it can also be started by hand from the Actions tab (`workflow_dispatch`, `main` only). Deploys run one at a time and are never cancelled halfway.
+
+**CI flow** (Node 24, the same as Vercel, because ICU and tz data end up in the dataset and the pages):
+
+1. `pnpm install --frozen-lockfile`
+2. `cp .env.example .env` and `pnpm update:data`: fresh downloads of every source. Any failing source fails the run, so a partial dataset is never deployed.
+3. `pnpm build:data`
+4. `pnpm cf:build`: `opennextjs-cloudflare build` runs `pnpm build` (`build:public-data` + `next build`), then `scripts/cloudflare-headers.ts`. Same order as `pnpm build:clean`, with `next build` run once.
+5. `opennextjs-cloudflare deploy --tag <commit sha> --message ci-run-<run id>`: copies the prerendered pages into the static assets and runs `wrangler deploy`. Every deploy uploads ~6,000 changed files (~3 GB): the build id is in every page.
+6. `scripts/cloudflare-smoke.sh`: waits until the Worker serves the new build id, then checks a few URLs and one `/api/export` request. If it fails, the run is red and its summary shows the rollback command.
+
+The run summary lists step timings, uploaded/existing asset counts, Worker size, version id and commit.
+
+**Manual deploy** (Node 24, after `wrangler login`, with fresh data):
+
+```bash
+pnpm build:clean
+```
+
+```bash
+NEXT_PUBLIC_CF_BEACON_TOKEN=<token> pnpm run deploy
+```
+
+**Rollback** (no upload, takes effect in seconds; without a version id it offers the previous one):
+
+```bash
+pnpm wrangler rollback <version-id>
+```
+
+`pnpm wrangler deployments list` and `pnpm wrangler versions list` show the history; CI versions carry the commit sha as their tag. After a deploy or rollback, some requests can reach the previous version for a few minutes.
+
+**Required settings** (GitHub → Settings → Secrets and variables → Actions):
+
+| Name | Kind | Value |
+|---|---|---|
+| `CLOUDFLARE_API_TOKEN` | Secret | Account API token limited to the LocaleDB account with **Account → Workers Scripts: Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | Secret | The Cloudflare account id |
+| `NEXT_PUBLIC_CF_BEACON_TOKEN` | Variable | Cloudflare Web Analytics site token. Public (it is in every page's HTML), so a variable, not a secret |
+
+**PR previews** are off: each would upload ~3 GB. If needed, a manual workflow can run `opennextjs-cloudflare upload` (uploads a version with a preview URL without deploying it). Secrets are not available to pull requests from forks, so such a job must skip them.
+
+**Why GitHub Actions and not Workers Builds:** Workers Builds (Cloudflare's Git integration) allows 20 minutes and 20 GB of disk per build on the paid plan. It defaults to Node 24 (selectable with `.nvmrc` or `NODE_VERSION`), so the Node version is not the issue. But our build needs ~13 GB of disk, the data download depends on upstream sources, and a deploy uploads ~3 GB. That leaves little margin under the 20-minute limit. Actions has a 60-minute job limit, lets us check disk space and free more, and lets the data pipeline, the smoke test and the step summary live in one versioned file.
 
 ### 📜 Available Scripts
 

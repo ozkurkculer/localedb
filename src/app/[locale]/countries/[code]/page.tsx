@@ -421,9 +421,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.full')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'full' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            dateStyle: 'full',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.dateFormats.full}
@@ -434,9 +435,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.long')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'long' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            dateStyle: 'long',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.dateFormats.long}
@@ -448,7 +450,8 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], {
-                                            dateStyle: 'medium'
+                                            dateStyle: 'medium',
+                                            timeZone: 'UTC'
                                         }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
@@ -460,9 +463,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.short')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { dateStyle: 'short' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            dateStyle: 'short',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.dateFormats.short}
@@ -480,9 +484,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.full')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'full' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            timeStyle: 'full',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.timeFormats.full}
@@ -493,9 +498,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.long')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'long' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            timeStyle: 'long',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.timeFormats.long}
@@ -507,7 +513,8 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
                                         {new Intl.DateTimeFormat(country.codes.bcp47[0], {
-                                            timeStyle: 'medium'
+                                            timeStyle: 'medium',
+                                            timeZone: 'UTC'
                                         }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
@@ -519,9 +526,10 @@ export default async function CountryPage({ params }: CountryPageProps) {
                                         {t('dateTime.short')}
                                     </p>
                                     <p className="mt-1.5 font-mono text-base font-semibold text-foreground">
-                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], { timeStyle: 'short' }).format(
-                                            now
-                                        )}
+                                        {new Intl.DateTimeFormat(country.codes.bcp47[0], {
+                                            timeStyle: 'short',
+                                            timeZone: 'UTC'
+                                        }).format(now)}
                                     </p>
                                     <p className="mt-1 font-mono text-xs text-muted-foreground">
                                         {country.dateTime.timeFormats.short}
