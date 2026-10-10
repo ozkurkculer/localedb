@@ -1,15 +1,16 @@
 import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ContributingClient } from "@/components/contributing/contributing-client";
 import { localeAlternates } from "@/lib/seo";
 
-export async function generateMetadata() {
-  const t = await getTranslations("contributing.meta");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contributing.meta" });
 
   return {
     title: t("title"),
     description: t("description"),
-    alternates: await localeAlternates("/contributing"),
+    alternates: localeAlternates(locale, "/contributing"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -34,6 +35,9 @@ export async function generateMetadata() {
   };
 }
 
-export default function ContributingPage() {
+export default async function ContributingPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return <ContributingClient />;
 }

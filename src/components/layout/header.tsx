@@ -34,7 +34,7 @@ export function Header() {
 
                 {/* Logo */}
                 {/* Logo */}
-                <Link href="/" className="mr-4 flex items-center space-x-2 md:mr-8">
+                <Link href="/" className="me-4 flex items-center space-x-2 md:me-8">
                     <Logo className="h-8 w-auto" />
                 </Link>
 

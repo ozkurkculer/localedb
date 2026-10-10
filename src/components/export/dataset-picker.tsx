@@ -76,7 +76,7 @@ export function DatasetPicker({ value, onChange }: DatasetPickerProps) {
             aria-checked={selected}
             onClick={() => onChange(key)}
             className={cn(
-              "group relative flex flex-col items-start gap-2 rounded-xl border-0 p-4 text-left text-foreground",
+              "group relative flex flex-col items-start gap-2 rounded-xl border-0 p-4 text-start text-foreground",
               "transition-all duration-200 ease-out",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               selected

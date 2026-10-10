@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { LegalDocument } from '@/components/legal/legal-document';
 import { localeAlternates } from "@/lib/seo";
 
@@ -12,10 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
         title: t('title'),
         description: t('description'),
-        alternates: await localeAlternates('/terms'),
+        alternates: localeAlternates(locale, '/terms'),
     };
 }
 
-export default function TermsPage() {
+export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
     return <LegalDocument namespace="legal.terms" sections={SECTIONS} />;
 }

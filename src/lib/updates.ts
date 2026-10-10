@@ -1,5 +1,4 @@
-import { readFile, readdir } from "fs/promises";
-import path from "path";
+import { readUpdateFiles } from "@/lib/data/build";
 import packageJson from "../../package.json";
 
 export interface UpdateEntry {
@@ -12,18 +11,12 @@ export interface UpdateEntry {
   rawContent: string;
 }
 
-const UPDATES_DIR = path.join(process.cwd(), "updates");
-
 export async function getAllUpdates(): Promise<UpdateEntry[]> {
   try {
-    const files = await readdir(UPDATES_DIR);
-    const mdFiles = files.filter((f) => f.startsWith("v") && f.endsWith(".md"));
+    const files = await readUpdateFiles();
 
     const updates = await Promise.all(
-      mdFiles.map(async (fileName) => {
-        const filePath = path.join(UPDATES_DIR, fileName);
-        const rawContent = await readFile(filePath, "utf-8");
-
+      files.map(async ({ fileName, rawContent }) => {
         // Extract version from filename: v0.2.0.md -> 0.2.0
         const version = fileName.replace("v", "").replace(".md", "");
 

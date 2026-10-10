@@ -1,23 +1,12 @@
-import { readFile } from "fs/promises";
-import path from "path";
 import type { Airport } from "@localedb/core/browser";
-
-const AIRPORTS_INDEX_PATH = path.join(process.cwd(), "data", "_index_airports.json");
+import { buildRecords } from "@/lib/data/build";
 
 /**
  * Load the airport index.
  * Contains all major airports with IATA codes.
  */
 export async function getAirportIndex(): Promise<Airport[]> {
-  try {
-    const raw = await readFile(AIRPORTS_INDEX_PATH, "utf-8");
-    return JSON.parse(raw) as Airport[];
-  } catch (error: any) {
-    if (error.code !== 'ENOENT') {
-      console.error("Failed to load airport index:", error);
-    }
-    return [];
-  }
+  return buildRecords.getAirportIndex();
 }
 
 /**

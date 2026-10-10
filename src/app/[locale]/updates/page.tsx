@@ -1,15 +1,16 @@
 import { getAllUpdates, getAppVersion } from "@/lib/updates";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { ChangelogAccordion } from "@/components/updates/changelog-accordion";
 import { localeAlternates } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("updates");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "updates" });
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: await localeAlternates("/updates"),
+    alternates: localeAlternates(locale, "/updates"),
     openGraph: {
       title: t("title"),
       description: t("subtitle"),
@@ -35,7 +36,10 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function UpdatesPage() {
+export default async function UpdatesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const t = await getTranslations("updates");
   const updates = await getAllUpdates();
   const currentVersion = getAppVersion();

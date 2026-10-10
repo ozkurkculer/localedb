@@ -137,12 +137,12 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center lg:justify-between">
                     {/* Search Input */}
                     <div className="relative flex-1 sm:max-w-sm">
-                        <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                        <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                         <Input
                             placeholder={t('countries.search')}
                             value={searchInput}
                             onChange={(e) => handleSearchChange(e.target.value)}
-                            className="pl-9 pr-9"
+                            className="ps-9 pe-9"
                         />
                         {searchInput && (
                             <button
@@ -150,7 +150,7 @@ export function CountriesGridClient({ countries }: CountriesGridClientProps) {
                                     setSearchInput('');
                                     setSearch('');
                                 }}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-sm p-0.5 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                                className="absolute end-3 top-1/2 -translate-y-1/2 rounded-sm p-0.5 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                                 aria-label={t('common.clearSearch')}
                             >
                                 <X className="h-3.5 w-3.5" />

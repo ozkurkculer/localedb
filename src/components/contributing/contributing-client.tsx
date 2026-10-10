@@ -88,10 +88,10 @@ export function ContributingClient() {
                 <motion.section variants={item} className="mb-20">
                     <h2 className="text-2xl font-bold mb-10 text-center">{t("workflow.title")}</h2>
 
-                    <div className="space-y-12 relative before:absolute before:inset-0 before:ml-6 md:before:ml-8 before:-translate-x-px before:h-full before:w-0.5 before:bg-border before:z-0">
+                    <div className="space-y-12 relative before:absolute before:inset-0 before:ms-6 md:before:ms-8 before:-translate-x-px rtl:before:translate-x-px before:h-full before:w-0.5 before:bg-border before:z-0">
                         {/* Step 1 */}
-                        <div className="relative pl-16 md:pl-24">
-                            <div className="absolute left-0 md:left-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
+                        <div className="relative ps-16 md:ps-24">
+                            <div className="absolute start-0 md:start-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
                                 1
                             </div>
                             <h3 className="text-xl font-bold mb-2">{t("workflow.step1.title")}</h3>
@@ -103,8 +103,8 @@ export function ContributingClient() {
                         </div>
 
                         {/* Step 2 */}
-                        <div className="relative pl-16 md:pl-24">
-                            <div className="absolute left-0 md:left-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
+                        <div className="relative ps-16 md:ps-24">
+                            <div className="absolute start-0 md:start-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
                                 2
                             </div>
                             <h3 className="text-xl font-bold mb-2">{t("workflow.step2.title")}</h3>
@@ -127,8 +127,8 @@ export function ContributingClient() {
                         </div>
 
                         {/* Step 3 */}
-                        <div className="relative pl-16 md:pl-24">
-                            <div className="absolute left-0 md:left-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
+                        <div className="relative ps-16 md:ps-24">
+                            <div className="absolute start-0 md:start-2 top-0 flex items-center justify-center w-12 h-12 rounded-full border-4 border-background bg-blue-500 text-white font-bold z-10">
                                 3
                             </div>
                             <h3 className="text-xl font-bold mb-2">{t("workflow.step3.title")}</h3>

@@ -36,7 +36,7 @@ export function FormatSelector({ value, onChange }: FormatSelectorProps) {
             aria-checked={selected}
             onClick={() => onChange(key)}
             className={cn(
-              "flex flex-col items-start gap-1.5 rounded-lg border p-3 text-left text-sm text-foreground transition-all",
+              "flex flex-col items-start gap-1.5 rounded-lg border p-3 text-start text-sm text-foreground transition-all",
               "hover:bg-accent/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               selected
                 ? "border-primary bg-primary/5 ring-2 ring-primary/20"

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { getCurrencyIndex } from "@/lib/currencies";
 import { getLanguageIndex } from "@/lib/languages";
@@ -18,7 +18,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    alternates: await localeAlternates("/export"),
+    alternates: localeAlternates(locale, "/export"),
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
@@ -44,7 +44,10 @@ export async function generateMetadata({
   };
 }
 
-export default async function ExportPage() {
+export default async function ExportPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const [countriesIndex, currenciesIndex, languagesIndex, airports] =
     await Promise.all([
       getCountryIndex(),

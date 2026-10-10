@@ -1,4 +1,3 @@
-import { getLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
 /** `path` as served in `locale` ("" is the home page); the default locale has no prefix. */
@@ -8,12 +7,11 @@ function localizedPath(locale: string, path: string): string {
 }
 
 /**
- * Canonical and hreflang links for the current locale's version of `path`.
+ * Canonical and hreflang links for `locale`'s version of `path`.
  * Each locale is its own canonical page; pointing them all at the English URL
  * made Google treat translations as duplicates and leave them unindexed.
  */
-export async function localeAlternates(path: string) {
-  const locale = await getLocale();
+export function localeAlternates(locale: string, path: string) {
   return {
     canonical: localizedPath(locale, path),
     languages: {

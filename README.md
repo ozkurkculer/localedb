@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://nextjs.org">
-    <img src="https://img.shields.io/badge/Next.js-16.1.6-black?style=for-the-badge&logo=next.js" alt="Next.js 16" />
+    <img src="https://img.shields.io/badge/Next.js-16.3.8-black?style=for-the-badge&logo=next.js" alt="Next.js 16" />
   </a>
   <a href="https://react.dev">
     <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React 19" />
@@ -175,6 +175,22 @@ pnpm build
 ```
 
 This will run type checks, linting, and generate static pages for all locales.
+
+### ☁️ Local Preview on Cloudflare Workers
+
+The site can also run on Cloudflare Workers through [OpenNext](https://opennext.js.org/cloudflare) (`wrangler.jsonc`, `open-next.config.ts`). To try the Worker locally in `workerd`, the same runtime Cloudflare uses, after the data has been built (`pnpm build:clean` once):
+
+```bash
+pnpm preview
+```
+
+This runs `pnpm cf:build` (`opennextjs-cloudflare build`, which calls `pnpm build`, then `scripts/cloudflare-headers.ts`) and serves the result at [http://localhost:8787](http://localhost:8787). No Cloudflare login is needed for the preview.
+
+- Prerendered pages and `public/` (including `public/_data`) are served as Workers static assets. `/api/export` reads `public/_data` through the `ASSETS` binding instead of the disk (`src/lib/data/runtime.ts`).
+- Static assets are served before the Worker runs, so `next.config.ts` `headers()` does not reach them. `scripts/cloudflare-headers.ts` generates `.open-next/assets/_headers` from those rules. Keep header and redirect rules in `next.config.ts`.
+- Cloudflare Web Analytics is rendered only when `NEXT_PUBLIC_CF_BEACON_TOKEN` is set at build time. Pass it on the command line or in CI, not in a committed file. Vercel Analytics is rendered only in Vercel builds (`VERCEL=1`).
+- `pnpm cf-typegen` regenerates `cloudflare-env.d.ts` after binding changes in `wrangler.jsonc`.
+- Deploying is `pnpm run deploy` (`pnpm deploy` is a built-in pnpm command) and needs `wrangler login`.
 
 ### 📜 Available Scripts
 

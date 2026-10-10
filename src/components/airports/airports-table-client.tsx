@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Search, X, Plane, ArrowUpDown, Copy, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -28,10 +28,12 @@ type SortOrder = "asc" | "desc";
 export function AirportsTableClient({ airports, countryMap }: AirportsTableClientProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const t = useTranslations();
 
-  const [search, setSearch] = React.useState(searchParams.get("search") || "");
+  // `?search=` is read after hydration rather than with useSearchParams, which would
+  // drop the statically rendered page's table to its Suspense fallback.
+  const [search, setSearch] = React.useState("");
+  const searchRead = React.useRef(false);
   const [page, setPage] = React.useState(1);
   const [sortKey, setSortKey] = React.useState<SortKey>("iata");
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("asc");
@@ -39,14 +41,22 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
 
   // Update URL when search changes (debounced)
   React.useEffect(() => {
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(window.location.search);
+    if (!searchRead.current) {
+      searchRead.current = true;
+      const initial = params.get("search");
+      if (initial) {
+        setSearch(initial);
+        return;
+      }
+    }
     if (search) {
       params.set("search", search);
     } else {
       params.delete("search");
     }
     router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-  }, [search, pathname, router, searchParams]);
+  }, [search, pathname, router]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -135,17 +145,17 @@ export function AirportsTableClient({ airports, countryMap }: AirportsTableClien
       {/* Filters */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="relative flex-1 sm:max-w-md">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          <Search className="absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             placeholder={t("airports.search")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="pl-9 pr-9 focus-visible:ring-red-500"
+            className="ps-9 pe-9 focus-visible:ring-red-500"
           />
           {search && (
             <button
               onClick={() => setSearch("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              className="absolute end-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
               <X className="h-4 w-4" />
             </button>

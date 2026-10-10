@@ -73,8 +73,8 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
     }
 
     const SortIcon = ({ field }: { field: keyof PhoneNumberEntry }) => {
-        if (sortField !== field) return <ArrowUpDown className="ml-2 h-4 w-4 opacity-30" />
-        return <ArrowUpDown className={cn("ml-2 h-4 w-4", sortDirection === "desc" && "rotate-180")} />
+        if (sortField !== field) return <ArrowUpDown className="ms-2 h-4 w-4 opacity-30" />
+        return <ArrowUpDown className={cn("ms-2 h-4 w-4", sortDirection === "desc" && "rotate-180")} />
     }
 
     return (
@@ -87,10 +87,10 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                     </p>
                 </div>
                 <div className="relative w-full md:w-72">
-                    <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                    <Search className="absolute start-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
                     <Input
                         placeholder={t("phoneNumbers.search")}
-                        className="pl-9"
+                        className="ps-9"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
@@ -102,13 +102,13 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                     <TableHeader>
                         <TableRow>
                             <TableHead className="w-[200px]">
-                                <Button variant="ghost" onClick={() => handleSort("name")} className="-ml-3 h-8 data-[state=open]:bg-accent">
+                                <Button variant="ghost" onClick={() => handleSort("name")} className="-ms-3 h-8 data-[state=open]:bg-accent">
                                     {t("phoneNumbers.table.country")}
                                     <SortIcon field="name" />
                                 </Button>
                             </TableHead>
                             <TableHead className="w-[100px]">
-                                <Button variant="ghost" onClick={() => handleSort("callingCode")} className="-ml-3 h-8">
+                                <Button variant="ghost" onClick={() => handleSort("callingCode")} className="-ms-3 h-8">
                                     {t("phoneNumbers.table.code")}
                                     <SortIcon field="callingCode" />
                                 </Button>
@@ -136,7 +136,7 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                                             <span className="text-2xl leading-none">{item.flagEmoji}</span>
                                             <div className="flex flex-col">
                                                 <span>{item.name}</span>
-                                                <span className="text-xs text-muted-foreground md:hidden">{item.callingCode}</span>
+                                                <span dir="ltr" className="text-xs text-muted-foreground md:hidden">{item.callingCode}</span>
                                             </div>
                                         </div>
                                     </TableCell>
@@ -160,7 +160,7 @@ export function PhoneNumbersClient({ data }: PhoneNumbersClientProps) {
                                         {item.exampleFormat ? (
                                             <div className="flex flex-col gap-1" onClick={(e) => e.stopPropagation()}>
                                                 <div className="flex items-center gap-2 group/ex">
-                                                    <span className="text-sm font-medium">{item.exampleFormat}</span>
+                                                    <span dir="ltr" className="text-sm font-medium">{item.exampleFormat}</span>
                                                     <CopyButton
                                                         value={item.exampleFormat}
                                                         className="h-6 w-6 opacity-0 group-hover/ex:opacity-100 focus:opacity-100 transition-opacity"

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { RoadmapClient } from "@/components/roadmap/roadmap-client";
 
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    alternates: await localeAlternates("/roadmap"),
+    alternates: localeAlternates(locale, "/roadmap"),
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
@@ -37,6 +37,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function RoadmapPage() {
+export default async function RoadmapPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return <RoadmapClient />;
 }

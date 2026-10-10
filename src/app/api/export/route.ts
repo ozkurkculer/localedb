@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getCountry } from "@/lib/countries";
-import { getCurrency } from "@/lib/currencies";
-import { getLanguage } from "@/lib/languages";
-import { getAirportIndex } from "@/lib/airports";
+import { getRuntimeRecords } from "@/lib/data/runtime";
 import {
   pickFields,
   toJson,
@@ -29,6 +26,7 @@ async function loadRecords(
   dataset: DatasetKey,
   entities: string[]
 ): Promise<{ key: string; data: Record<string, unknown> | null }[]> {
+  const { getCountry, getCurrency, getLanguage, getAirportIndex } = getRuntimeRecords();
   if (dataset === "airports") {
     const all = await getAirportIndex();
     const set = new Set(entities.map((e) => e.toUpperCase()));

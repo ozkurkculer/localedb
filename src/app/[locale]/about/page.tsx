@@ -1,14 +1,15 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import AboutContent from "./about-content";
 import { localeAlternates } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("about");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: await localeAlternates("/about"),
+    alternates: localeAlternates(locale, "/about"),
     openGraph: {
       title: t("meta.title"),
       description: t("meta.description"),
@@ -33,6 +34,9 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return <AboutContent />;
 }

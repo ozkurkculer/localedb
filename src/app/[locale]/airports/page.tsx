@@ -1,18 +1,19 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getAirportIndex } from "@/lib/airports";
 import { getCountryIndex } from "@/lib/countries";
 import { AirportsTableClient } from "@/components/airports/airports-table-client";
 import { localeAlternates } from "@/lib/seo";
 
-export async function generateMetadata() {
-  const t = await getTranslations("airports.meta");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "airports.meta" });
 
   return {
     title: t("title"),
     description: t("description"),
-    alternates: await localeAlternates("/airports"),
+    alternates: localeAlternates(locale, "/airports"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -37,7 +38,10 @@ export async function generateMetadata() {
   };
 }
 
-export default async function AirportsPage() {
+export default async function AirportsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const airports = await getAirportIndex();
   const countries = await getCountryIndex();
   const t = await getTranslations();

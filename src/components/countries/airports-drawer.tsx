@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Plane, Search, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Loader2, Plane, Search, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { SheetHeader, SheetTitle, SheetDescription, SheetClose } from '@/components/ui/sheet';
@@ -10,18 +11,57 @@ import { DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from '@/com
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { ResponsiveDrawer } from '@/components/ui/responsive-drawer';
 import { CopyButton } from '@/components/copy-button';
-import type { Airport } from '@localedb/core/browser';
+import { countryAirportsUrl, type DrawerAirport } from '@/lib/published-data';
 import { cn } from '@/lib/utils';
 
 interface AirportsDrawerProps {
-    airports: Airport[];
+    /** Route code of the country; names its file in public/_data/country-airports. */
+    countryCode: string;
+    total: number;
     countryName: string;
 }
 
-export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
+// The full list is not part of the page (US alone has ~13k airports); it is fetched once per
+// country when the drawer is first opened (or the trigger hovered). A failed fetch is retried
+// on the next open.
+const listCache = new Map<string, Promise<DrawerAirport[]>>();
+
+function loadCountryAirports(countryCode: string): Promise<DrawerAirport[]> {
+    let list = listCache.get(countryCode);
+    if (!list) {
+        list = fetch(countryAirportsUrl(countryCode)).then((res) => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res.json() as Promise<DrawerAirport[]>;
+        });
+        list.catch(() => listCache.delete(countryCode));
+        listCache.set(countryCode, list);
+    }
+    return list;
+}
+
+export function AirportsDrawer({ countryCode, total, countryName }: AirportsDrawerProps) {
+    const t = useTranslations('common');
     const isDesktop = useMediaQuery('(min-width: 768px)');
     const [open, setOpen] = React.useState(false);
     const [search, setSearch] = React.useState('');
+    const [status, setStatus] = React.useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
+    const [airports, setAirports] = React.useState<DrawerAirport[]>([]);
+
+    const handleOpenChange = (next: boolean) => {
+        setOpen(next);
+        if (!next || status === 'loading' || status === 'ready') return;
+        setStatus('loading');
+        loadCountryAirports(countryCode).then(
+            (list) => {
+                setAirports(list);
+                setStatus('ready');
+            },
+            (error) => {
+                console.error(error);
+                setStatus('error');
+            }
+        );
+    };
 
     const filteredAirports = React.useMemo(() => {
         if (!search) return airports;
@@ -41,16 +81,21 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
 
     // Trigger Button
     const Trigger = (
-        <Button variant="outline" size="sm" className="gap-2">
+        <Button
+            variant="outline"
+            size="sm"
+            className="gap-2"
+            onPointerEnter={() => loadCountryAirports(countryCode).catch(() => {})}
+        >
             <Plane className="h-4 w-4" />
-            View all {airports.length} airports
+            View all {total} airports
         </Button>
     );
 
     return (
         <ResponsiveDrawer
             open={open}
-            onOpenChange={setOpen}
+            onOpenChange={handleOpenChange}
             trigger={Trigger}
             side="right"
             className={cn(
@@ -64,7 +109,7 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
                         <Title className="text-xl font-bold">Airports in {countryName}</Title>
                         {!isDesktop && (
                             <DrawerClose asChild>
-                                <Button variant="ghost" size="icon" className="-mr-2">
+                                <Button variant="ghost" size="icon" className="-me-2">
                                     <X className="h-4 w-4" />
                                 </Button>
                             </DrawerClose>
@@ -72,14 +117,14 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
                     </div>
 
                     <Description className="text-muted-foreground">
-                        {airports.length} airports available. Search by name, IATA, or ICAO code.
+                        {total} airports available. Search by name, IATA, or ICAO code.
                     </Description>
 
                     <div className="relative mt-4">
-                        <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                        <Search className="absolute start-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
                         <Input
                             placeholder="Search airports..."
-                            className="pl-9 bg-muted/50 border-none focus-visible:ring-1"
+                            className="ps-9 bg-muted/50 border-none focus-visible:ring-1"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                         />
@@ -87,7 +132,23 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
                 </Header>
 
                 <div className={cn("flex-1 overflow-y-auto", isDesktop ? "px-6" : "px-4")}>
-                    {filteredAirports.length === 0 ? (
+                    {status === 'loading' || status === 'idle' ? (
+                        <div
+                            role="status"
+                            className="flex flex-col items-center justify-center py-12 text-center text-muted-foreground"
+                        >
+                            <Loader2 className="h-8 w-8 mb-4 animate-spin opacity-50" />
+                            <p>{t('loading')}</p>
+                        </div>
+                    ) : status === 'error' ? (
+                        <div
+                            role="alert"
+                            className="flex flex-col items-center justify-center py-12 text-center text-muted-foreground"
+                        >
+                            <Plane className="h-12 w-12 mb-4 opacity-20" />
+                            <p>{t('error')}</p>
+                        </div>
+                    ) : filteredAirports.length === 0 ? (
                         <div className="flex flex-col items-center justify-center py-12 text-center text-muted-foreground">
                             <Plane className="h-12 w-12 mb-4 opacity-20" />
                             <p>No airports found matching "{search}"</p>
@@ -111,7 +172,7 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
                                                 <CopyButton
                                                     value={airport.iata}
                                                     label="IATA"
-                                                    className="h-4 w-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100"
+                                                    className="h-4 w-4 ms-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100"
                                                 />
                                             </div>
                                         )}
@@ -122,7 +183,7 @@ export function AirportsDrawer({ airports, countryName }: AirportsDrawerProps) {
                                                 <CopyButton
                                                     value={airport.icao}
                                                     label="ICAO"
-                                                    className="h-4 w-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100"
+                                                    className="h-4 w-4 ms-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100"
                                                 />
                                             </div>
                                         )}

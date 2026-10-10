@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site';
 import { getAllCountryCodes } from '@/lib/countries';
 import { getAllCurrencyCodes } from '@/lib/currencies';
 import { getAllLanguageCodes } from '@/lib/languages';
-import { getAllRegions } from '@/lib/countries';
+import { getAllRegions, regionSlug } from '@/lib/countries';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = siteConfig.url;
@@ -110,7 +110,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         // Add region pages
         regions.forEach((region) => {
-            const slug = region.toLowerCase();
+            const slug = regionSlug(region);
             sitemap.push({
                 url: `${baseUrl}${localePrefix}/regions/${slug}`,
                 lastModified: new Date(),

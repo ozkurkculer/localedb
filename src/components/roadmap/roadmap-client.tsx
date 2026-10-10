@@ -91,7 +91,7 @@ export function RoadmapClient() {
                 </p>
             </div>
 
-            <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+            <div className="relative space-y-8 before:absolute before:inset-0 before:ms-5 before:-translate-x-px rtl:before:translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
                 {roadmapData.map((item, index) => {
                     const config = statusConfig[item.status];
                     const Icon = config.icon;
@@ -106,7 +106,7 @@ export function RoadmapClient() {
                         >
                             {/* Icon Marker */}
                             <div className={cn(
-                                "flex items-center justify-center w-10 h-10 rounded-full border-2 bg-background shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10",
+                                "flex items-center justify-center w-10 h-10 rounded-full border-2 bg-background shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 rtl:md:group-odd:translate-x-1/2 rtl:md:group-even:-translate-x-1/2 shadow-sm z-10",
                                 config.color,
                                 config.border
                             )}>
@@ -126,7 +126,7 @@ export function RoadmapClient() {
                                     </span>
                                     {item.date && (
                                         <span className="flex items-center text-xs text-muted-foreground">
-                                            <Clock className="w-3 h-3 mr-1" />
+                                            <Clock className="w-3 h-3 me-1" />
                                             {item.date}
                                         </span>
                                     )}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -10,6 +10,13 @@ import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script";
+import { fontClassName } from "../fonts";
+
+// Pages are prerendered, so these are read once at build time. Vercel sets VERCEL=1 in its builds;
+// the Cloudflare build gets the Web Analytics token from its build environment (never committed).
+const onVercel = Boolean(process.env.VERCEL);
+const cfBeaconToken = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -95,27 +102,51 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  // Lets next-intl read the locale from here instead of request headers, so pages render statically.
+  setRequestLocale(locale);
+
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <div className="relative flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <Toaster />
-        <SpeedInsights />
-        <Analytics />
-      </ThemeProvider>
-    </NextIntlClientProvider>
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css"
+        />
+      </head>
+      <body className={fontClassName}>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="relative flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+            <Toaster />
+            {onVercel && (
+              <>
+                <SpeedInsights />
+                <Analytics />
+              </>
+            )}
+            {cfBeaconToken && (
+              <Script
+                src="https://static.cloudflareinsights.com/beacon.min.js"
+                data-cf-beacon={JSON.stringify({ token: cfBeaconToken })}
+                strategy="afterInteractive"
+              />
+            )}
+          </ThemeProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

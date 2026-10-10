@@ -1,9 +1,5 @@
-import { readFile, readdir } from 'fs/promises';
-import path from 'path';
 import type { CountryLocaleData, CountryIndexEntry } from '@localedb/core/browser';
-
-const DATA_DIR = path.join(process.cwd(), 'data', 'countries');
-const INDEX_PATH = path.join(process.cwd(), 'data', '_index_countries.json');
+import { buildRecords, listRecordIds, readIndex } from '@/lib/data/build';
 
 /**
  * Load a single country's full data by alpha-2 code.
@@ -11,14 +7,7 @@ const INDEX_PATH = path.join(process.cwd(), 'data', '_index_countries.json');
  * @param code - ISO 3166-1 alpha-2 code (e.g., "TR", "US")
  */
 export async function getCountry(code: string): Promise<CountryLocaleData | null> {
-    try {
-        const filePath = path.join(DATA_DIR, `${code.toUpperCase()}.json`);
-        const raw = await readFile(filePath, 'utf-8');
-        return JSON.parse(raw) as CountryLocaleData;
-    } catch (error) {
-        console.error(`Failed to load country data for ${code}:`, error);
-        return null;
-    }
+    return buildRecords.getCountry(code);
 }
 
 /**
@@ -26,13 +15,7 @@ export async function getCountry(code: string): Promise<CountryLocaleData | null
  * Returns an array of ISO 3166-1 alpha-2 codes.
  */
 export async function getAllCountryCodes(): Promise<string[]> {
-    try {
-        const files = await readdir(DATA_DIR);
-        return files.filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''));
-    } catch (error) {
-        console.error('Failed to load country codes:', error);
-        return [];
-    }
+    return listRecordIds('countries');
 }
 
 /**
@@ -40,15 +23,7 @@ export async function getAllCountryCodes(): Promise<string[]> {
  * Contains minimal data for all countries.
  */
 export async function getCountryIndex(): Promise<CountryIndexEntry[]> {
-    try {
-        const raw = await readFile(INDEX_PATH, 'utf-8');
-        return JSON.parse(raw) as CountryIndexEntry[];
-    } catch (error: any) {
-        if (error.code !== 'ENOENT') {
-            console.error('Failed to load country index:', error);
-        }
-        return [];
-    }
+    return readIndex<CountryIndexEntry>('countries');
 }
 
 /**
@@ -85,6 +60,22 @@ export async function getAllRegions(): Promise<string[]> {
     const index = await getCountryIndex();
     const regions = new Set(index.map((c) => c.continent).filter(Boolean));
     return Array.from(regions);
+}
+
+/**
+ * URL slug of a region, e.g. "North America" → "north-america".
+ * A slug with a space was requested as `north%20america` and never matched its prerendered page.
+ */
+export function regionSlug(region: string): string {
+    return region.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+/**
+ * Resolve a region slug back to its name (e.g. "north-america" → "North America").
+ */
+export async function getRegionBySlug(slug: string): Promise<string | undefined> {
+    const regions = await getAllRegions();
+    return regions.find((region) => regionSlug(region) === slug);
 }
 
 /**

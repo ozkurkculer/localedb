@@ -1,0 +1,19 @@
+{
+  // Cloudflare Workers deployment through OpenNext (`pnpm preview`, `pnpm run deploy`).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "localedb",
+  "main": ".open-next/worker.js",
+  // The newest date the pinned wrangler's workerd supports; bump together with wrangler.
+  "compatibility_date": "2026-10-06",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Built by `opennextjs-cloudflare build`: _next/static, public/ (public/_data included) and the
+  // prerendered pages (cdn-cgi/_next_cache, only reachable through the Worker).
+  // ASSETS is also how /api/export reads public/_data (src/lib/data/assets.ts).
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

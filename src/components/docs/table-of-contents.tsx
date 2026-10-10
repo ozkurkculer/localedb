@@ -91,7 +91,7 @@ export function TableOfContents() {
                     <button
                         key={id}
                         onClick={() => scrollToSection(id)}
-                        className={`block w-full rounded-md px-3 py-1.5 text-left text-sm !bg-transparent !border-transparent transition-colors hover:!bg-zinc-100 dark:hover:!bg-zinc-800 hover:!text-zinc-900 dark:hover:!text-zinc-100 ${
+                        className={`block w-full rounded-md px-3 py-1.5 text-start text-sm !bg-transparent !border-transparent transition-colors hover:!bg-zinc-100 dark:hover:!bg-zinc-800 hover:!text-zinc-900 dark:hover:!text-zinc-100 ${
                             activeId === id
                                 ? 'font-medium !text-primary'
                                 : '!text-zinc-600 dark:!text-zinc-400'

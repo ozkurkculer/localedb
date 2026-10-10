@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { CountriesGridClient } from "@/components/countries/countries-grid-client";
 import { localeAlternates } from "@/lib/seo";
 
-export async function generateMetadata() {
-  const t = await getTranslations("countries.meta");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "countries.meta" });
 
   return {
     title: t("title"),
     description: t("description"),
-    alternates: await localeAlternates("/countries"),
+    alternates: localeAlternates(locale, "/countries"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -35,7 +36,10 @@ export async function generateMetadata() {
   };
 }
 
-export default async function CountriesPage() {
+export default async function CountriesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const countries = await getCountryIndex();
   const t = await getTranslations();
 

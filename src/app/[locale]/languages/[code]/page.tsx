@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { getLanguage, getAllLanguageCodes } from "@/lib/languages";
 import { getCountryIndex } from "@/lib/countries";
@@ -49,7 +49,7 @@ export async function generateMetadata({
     return {
       title: t('title', { name: language.data.name }),
       description: t('description', { name: language.data.name, count: language.data.countries.length }),
-      alternates: await localeAlternates(`/languages/${code}`),
+      alternates: localeAlternates(locale, `/languages/${code}`),
       openGraph: {
         title: t('ogTitle', { name: language.data.name }),
         description: t('ogDescription', { name: language.data.name, count: language.data.countries.length }),
@@ -81,7 +81,8 @@ export async function generateMetadata({
 }
 
 export default async function LanguagePage({ params }: LanguagePageProps) {
-  const { code } = await params;
+  const { code, locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations('languages.detail');
 
   let language: any;

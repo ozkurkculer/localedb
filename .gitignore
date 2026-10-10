@@ -42,6 +42,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cloudflare (OpenNext build output, wrangler state, local secrets)
+.open-next
+.wrangler
+.dev.vars*
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
@@ -70,3 +75,8 @@ data
 # workspace package builds
 packages/*/dist
 packages/core/data
+
+# the data access layer is source code, not generated data (the bare `data` rule above matches it)
+!src/lib/data/
+# request-time data published by scripts/publish-data.ts
+public/_data

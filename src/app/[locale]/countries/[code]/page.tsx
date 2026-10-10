@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getCountry, getAllCountryCodes, getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
 import { Button } from '@/components/ui/button';
@@ -30,10 +30,12 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { getContinentStyle } from '@/components/countries/continent-variants';
 import { AirportsDrawer } from '@/components/countries/airports-drawer';
 import { localeAlternates } from "@/lib/seo";
+import { COUNTRY_PAGE_AIRPORTS, countryRecordUrl } from "@/lib/published-data";
 
 interface CountryPageProps {
     params: Promise<{
         code: string;
+        locale: string;
     }>;
 }
 
@@ -51,8 +53,8 @@ export const dynamicParams = false;
 
 // Generate metadata for each country page
 export async function generateMetadata({ params }: CountryPageProps): Promise<Metadata> {
-    const { code } = await params;
-    const t = await getTranslations('countries.detail');
+    const { code, locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'countries.detail' });
 
     try {
         const country = await getCountry(code);
@@ -78,7 +80,7 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
                 capital: country.basics.capital,
                 region: country.basics.region
             }),
-            alternates: await localeAlternates(`/countries/${code}`),
+            alternates: localeAlternates(locale, `/countries/${code}`),
             openGraph: {
                 title: t('meta.ogTitle', { flag: country.basics.flagEmoji, name: country.basics.name }),
                 description: t('meta.ogDescription', { name: country.basics.name, currency: country.currency.code, phone: country.phone.callingCode, timezones: country.dateTime.timezones.join(', ') }),
@@ -111,8 +113,10 @@ export async function generateMetadata({ params }: CountryPageProps): Promise<Me
 }
 
 export default async function CountryPage({ params }: CountryPageProps) {
-    const { code } = await params;
+    const { code, locale } = await params;
+    setRequestLocale(locale);
     const t = await getTranslations('countries.detail');
+    const tCommon = await getTranslations('common');
     const now = new Date();
 
     let country;
@@ -126,6 +130,16 @@ export default async function CountryPage({ params }: CountryPageProps) {
     if (!country) {
         notFound();
     }
+
+    // Only the first airports are part of the page; the drawer fetches the full list from
+    // public/_data, and the raw JSON below shows the same cut (the full record is linked).
+    const airports = country.airports ?? [];
+    const airportsTruncated = airports.length > COUNTRY_PAGE_AIRPORTS;
+    const rawJson = JSON.stringify(
+        airportsTruncated ? { ...country, airports: airports.slice(0, COUNTRY_PAGE_AIRPORTS) } : country,
+        null,
+        2
+    );
 
     // Load index for alpha3 -> alpha2 mapping
     const countryIndex = await getCountryIndex();
@@ -332,13 +346,13 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 </div>
 
                 {/* Airports */}
-                {country.airports && country.airports.length > 0 && (
+                {airports.length > 0 && (
                     <Section
-                        title={t('airports.count', { count: country.airports.length })}
+                        title={t('airports.count', { count: airports.length })}
                         icon={<Plane className="h-4 w-4 text-muted-foreground" />}
                     >
                         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                            {country.airports.slice(0, 9).map((airport, i) => (
+                            {airports.slice(0, COUNTRY_PAGE_AIRPORTS).map((airport, i) => (
                                 <div key={i} className="rounded-md bg-muted/30 p-3 transition-colors hover:bg-muted/50">
                                     <div className="mb-1 flex items-center gap-2">
                                         <code className="rounded bg-background px-1.5 py-0.5 font-mono text-xs font-semibold">
@@ -351,9 +365,13 @@ export default async function CountryPage({ params }: CountryPageProps) {
                             ))}
                         </div>
 
-                        {country.airports.length > 9 && (
+                        {airportsTruncated && (
                             <div className="mt-4 text-center">
-                                <AirportsDrawer airports={country.airports} countryName={country.basics.name} />
+                                <AirportsDrawer
+                                    countryCode={code}
+                                    total={airports.length}
+                                    countryName={country.basics.name}
+                                />
                             </div>
                         )}
                     </Section>
@@ -688,12 +706,27 @@ export default async function CountryPage({ params }: CountryPageProps) {
                 <Section title={t('sections.rawJson')} icon={<Code2 className="h-4 w-4 text-muted-foreground" />}>
                     <div className="relative">
                         <div className="absolute right-2 top-2">
-                            <CopyButton value={JSON.stringify(country, null, 2)} label="Country data" />
+                            <CopyButton value={rawJson} label="Country data" />
                         </div>
                         <pre className="overflow-x-auto max-h-96 rounded-lg bg-muted p-4 text-xs">
-                            <code>{JSON.stringify(country, null, 2)}</code>
+                            <code>{rawJson}</code>
                         </pre>
                     </div>
+                    {airportsTruncated && (
+                        <p className="mt-2 text-xs text-muted-foreground">
+                            {t('sections.airports')}:{' '}
+                            {tCommon('showing', { shown: COUNTRY_PAGE_AIRPORTS, total: airports.length })}
+                            {' · '}
+                            <a
+                                href={countryRecordUrl(code)}
+                                target="_blank"
+                                rel="nofollow noopener"
+                                className="underline underline-offset-2 hover:text-foreground"
+                            >
+                                {tCommon('showAll')}
+                            </a>
+                        </p>
+                    )}
                 </Section>
             </div>
         </div>
@@ -721,7 +754,9 @@ function InfoCard({
                 {icon}
                 <p className="text-sm font-medium">{label}</p>
             </div>
-            <p className="text-lg font-semibold">{value}</p>
+            <p className="text-lg font-semibold">
+                <bdi>{value}</bdi>
+            </p>
         </div>
     );
 }

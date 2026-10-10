@@ -93,13 +93,13 @@ export function LocaleCodesTableClient({
             <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
                 {/* Search Input */}
                 <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <Search className="absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                     <Input
                         type="text"
                         placeholder={t("localeCodes.search")}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="pl-10"
+                        className="ps-10"
                     />
                 </div>
 
@@ -134,10 +134,10 @@ export function LocaleCodesTableClient({
                     <TableCaption>{t("localeCodes.table.caption")}</TableCaption>
                     <TableHeader>
                         <TableRow>
-                            <TableHead className="sticky left-0 z-10 bg-background w-16">
+                            <TableHead className="sticky start-0 z-10 bg-background w-16">
                                 {t("localeCodes.table.flag")}
                             </TableHead>
-                            <TableHead className="sticky left-16 z-10 bg-background min-w-[150px]">
+                            <TableHead className="sticky start-16 z-10 bg-background min-w-[150px]">
                                 {t("localeCodes.table.country")}
                             </TableHead>
                             <TableHead className="min-w-[100px]">
@@ -174,12 +174,12 @@ export function LocaleCodesTableClient({
                                     key={country.code}
                                     className="group cursor-pointer transition-colors hover:bg-muted/50"
                                 >
-                                    <TableCell className="sticky left-0 z-10 bg-background group-hover:bg-muted/50 text-2xl transition-colors">
+                                    <TableCell className="sticky start-0 z-10 bg-background group-hover:bg-muted/50 text-2xl transition-colors">
                                         <Link href={`/countries/${country.code}`} className="block">
                                             {country.flagEmoji}
                                         </Link>
                                     </TableCell>
-                                    <TableCell className="sticky left-16 z-10 bg-background group-hover:bg-muted/50 transition-colors">
+                                    <TableCell className="sticky start-16 z-10 bg-background group-hover:bg-muted/50 transition-colors">
                                         <Link
                                             href={`/countries/${country.code}`}
                                             className="font-medium text-foreground hover:text-primary transition-colors"

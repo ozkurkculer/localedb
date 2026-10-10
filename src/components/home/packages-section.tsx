@@ -39,12 +39,12 @@ export async function PackagesSection() {
                         <Button asChild>
                             <Link href="/docs#packages">
                                 {t('footer.sections.resources.documentation')}
-                                <ArrowRight className="ml-2 h-4 w-4" />
+                                <ArrowRight className="ms-2 h-4 w-4 rtl:-scale-x-100" />
                             </Link>
                         </Button>
                         <Button variant="outline" asChild>
                             <NextLink href={siteConfig.links.npm} target="_blank" rel="noopener noreferrer">
-                                <Package className="mr-2 h-4 w-4" />
+                                <Package className="me-2 h-4 w-4" />
                                 npm
                             </NextLink>
                         </Button>

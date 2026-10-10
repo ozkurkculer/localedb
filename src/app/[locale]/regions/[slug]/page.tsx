@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import type { Metadata } from 'next';
-import { getAllRegions, getCountriesByRegion } from '@/lib/countries';
+import { getAllRegions, getCountriesByRegion, getRegionBySlug, regionSlug } from '@/lib/countries';
 import { getContinentStyle } from '@/components/countries/continent-variants';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Globe } from 'lucide-react';
 import { localeAlternates } from "@/lib/seo";
 
@@ -17,7 +17,7 @@ interface RegionPageProps {
 export async function generateStaticParams() {
     const regions = await getAllRegions();
     return regions.map((region) => ({
-        slug: region.toLowerCase()
+        slug: regionSlug(region)
     }));
 }
 
@@ -25,8 +25,8 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: RegionPageProps): Promise<Metadata> {
     const { slug, locale } = await params;
-    // Simple title case for metadata
-    const regionName = slug.charAt(0).toUpperCase() + slug.slice(1);
+    const regionName = await getRegionBySlug(slug);
+    if (!regionName) notFound();
     const t = await getTranslations({ locale, namespace: 'regions.meta' });
 
     const ogUrl = new URL('https://localedb.org/og_image.png');
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: RegionPageProps): Promise<Met
     return {
         title: t('title', { region: regionName }),
         description: t('description', { region: regionName }),
-        alternates: await localeAlternates(`/regions/${slug}`),
+        alternates: localeAlternates(locale, `/regions/${slug}`),
         openGraph: {
             title: t('ogTitle', { region: regionName }),
             description: t('ogDescription', { region: regionName }),
@@ -66,13 +66,13 @@ export async function generateMetadata({ params }: RegionPageProps): Promise<Met
 
 export default async function RegionPage({ params }: RegionPageProps) {
     const { slug, locale } = await params;
+    setRequestLocale(locale);
     const t = await getTranslations({ locale, namespace: 'regions' });
 
-    // We need to match the slug back to the actual continent name in DB if it's case sensitive?
-    // The helper getCountriesByRegion is case-insensitive, so 'europe' works for 'Europe'.
-    const countries = await getCountriesByRegion(slug);
+    const region = await getRegionBySlug(slug);
+    const countries = region ? await getCountriesByRegion(region) : [];
 
-    if (!countries || countries.length === 0) {
+    if (countries.length === 0) {
         notFound();
     }
 

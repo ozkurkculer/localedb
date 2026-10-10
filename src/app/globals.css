@@ -219,38 +219,23 @@
     }
 }
 
-/* RTL Support for Arabic and other RTL languages */
+/* RTL support (Arabic). `dir="rtl"` on <html> mirrors the layout on its own; these rules cover what it can't. */
 @layer base {
-    [dir='rtl'] {
-        direction: rtl;
+    /* Codes, numbers, patterns and truncated names are mostly left-to-right data. Lay each one out in the
+       direction of its own text so the bidi algorithm doesn't reorder it inside right-to-left text
+       (`+1 684` → `684 1+`, mirrored brackets in regexes, an ellipsis that cuts the start of `Mexico`).
+       `direction` itself stays rtl, so the element still lines up and its logical margins still apply. */
+    [dir='rtl'] :where(.font-mono, .truncate, code, kbd, samp):where(:not(pre *)) {
+        unicode-bidi: plaintext;
+        text-align: -webkit-match-parent;
+        text-align: match-parent;
     }
 
-    /* RTL-specific spacing adjustments */
-    [dir='rtl'] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
-        --tw-space-x-reverse: 1;
-    }
-
-    [dir='rtl'] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
-        --tw-space-x-reverse: 1;
-    }
-
-    /* RTL-specific flex direction */
-    [dir='rtl'] .flex-row {
-        flex-direction: row-reverse;
-    }
-
-    /* RTL-specific text alignment */
-    [dir='rtl'] .text-left {
-        text-align: right;
-    }
-
-    [dir='rtl'] .text-right {
+    /* Code blocks and JSON read left to right, line by line. */
+    [dir='rtl'] pre {
+        direction: ltr;
+        unicode-bidi: isolate;
         text-align: left;
-    }
-
-    /* Header navigation RTL support */
-    [dir='rtl'] header nav {
-        flex-direction: row-reverse;
     }
 }
 

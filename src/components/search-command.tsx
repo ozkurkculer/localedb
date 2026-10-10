@@ -91,8 +91,8 @@ export function SearchCommand() {
                       runCommand(() => router.push(`/countries/${country.code}`));
                     }}
                   >
-                    <Globe className="mr-2 h-4 w-4" />
-                    <span className="mr-2 text-xl">{country.flagEmoji}</span>
+                    <Globe className="me-2 h-4 w-4" />
+                    <span className="me-2 text-xl">{country.flagEmoji}</span>
                     <div className="flex flex-1 items-center justify-between">
                       <span>{country.name}</span>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">

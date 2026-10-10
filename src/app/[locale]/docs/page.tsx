@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Globe2, Database, FileCode2, FolderTree, Terminal, GitPullRequest, Languages as LanguagesIcon, CheckCircle2, ArrowDown, Download, FileJson, FileSpreadsheet, FileArchive, Package } from 'lucide-react';
 import { TableOfContents } from '@/components/docs/table-of-contents';
 import { CodeBlock } from '@/components/docs/code-block';
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
         title: t('title'),
         description: t('description'),
-        alternates: await localeAlternates("/docs"),
+        alternates: localeAlternates(locale, "/docs"),
         openGraph: {
             title: t('ogTitle'),
             description: t('ogDescription'),
@@ -38,7 +38,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     };
 }
 
-export default async function DocsPage() {
+export default async function DocsPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
     const t = await getTranslations('docs');
 
     return (
@@ -149,7 +152,7 @@ pnpm dev`}
                             </p>
 
                             {/* Pipeline Steps */}
-                            <div className="relative space-y-6 before:absolute before:left-[19px] before:top-8 before:h-[calc(100%-4rem)] before:w-0.5 before:bg-border">
+                            <div className="relative space-y-6 before:absolute before:start-[19px] before:top-8 before:h-[calc(100%-4rem)] before:w-0.5 before:bg-border">
                                 {Object.entries(t.raw('dataPipeline.steps')).map(([key, step]: [string, any], i) => (
                                     <div key={key} className="relative flex gap-4">
                                         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-border bg-background">
@@ -390,8 +393,8 @@ localedb sync --check`}
                                 <table className="w-full">
                                     <thead className="bg-muted/50">
                                         <tr>
-                                            <th className="px-4 py-3 text-left text-sm font-semibold">Command</th>
-                                            <th className="px-4 py-3 text-left text-sm font-semibold">Description</th>
+                                            <th className="px-4 py-3 text-start text-sm font-semibold">Command</th>
+                                            <th className="px-4 py-3 text-start text-sm font-semibold">Description</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">

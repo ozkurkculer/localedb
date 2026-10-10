@@ -42,7 +42,7 @@ function GroupRow({
       <summary className="flex cursor-pointer list-none items-center gap-2 rounded-lg px-3 py-2 hover:bg-accent/40">
         <ChevronRight
           aria-hidden
-          className="h-4 w-4 text-muted-foreground transition-transform group-open:rotate-90"
+          className="h-4 w-4 text-muted-foreground transition-transform rtl:-scale-x-100 group-open:rotate-90 rtl:group-open:-rotate-90"
         />
         <Checkbox
           checked={allOn ? true : someOn ? "indeterminate" : false}
@@ -51,11 +51,11 @@ function GroupRow({
           aria-label={node.key}
         />
         <span className="text-sm font-semibold">{node.key}</span>
-        <span className="ml-auto font-mono text-xs text-muted-foreground">
+        <span className="ms-auto font-mono text-xs text-muted-foreground">
           {paths.filter((p) => selected.has(p)).length}/{paths.length}
         </span>
       </summary>
-      <div className="space-y-1 px-3 pb-3 pl-10">{children}</div>
+      <div className="space-y-1 px-3 pb-3 ps-10">{children}</div>
     </details>
   );
 }
@@ -78,7 +78,7 @@ function LeafRow({
     >
       <Checkbox checked={checked} onCheckedChange={onToggle} aria-label={node.path} />
       <span className="font-mono text-xs">{node.key}</span>
-      <span className="ml-auto truncate font-mono text-[10px] text-muted-foreground">
+      <span className="ms-auto truncate font-mono text-[10px] text-muted-foreground">
         {node.path}
       </span>
     </label>

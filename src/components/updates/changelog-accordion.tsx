@@ -66,7 +66,7 @@ function ChangelogItem({ update, isOpen, onToggle }: ChangelogItemProps) {
         onClick={onToggle}
         aria-expanded={isOpen}
         className={cn(
-          "changelog-trigger flex w-full h-auto !justify-between whitespace-normal border items-center gap-3 sm:gap-4 px-4 py-3.5 sm:px-5 sm:py-4 text-left rounded-xl",
+          "changelog-trigger flex w-full h-auto !justify-between whitespace-normal border items-center gap-3 sm:gap-4 px-4 py-3.5 sm:px-5 sm:py-4 text-start rounded-xl",
           isOpen && "border-b border-t-0 border-x-0 rounded-b-none",
           "transition-[border-radius,background-color,border-color] duration-200"
         )}
@@ -140,7 +140,7 @@ function MarkdownContent({ content }: { content: string }) {
                 </pre>
               </div>
             ) : (
-              <ul className="space-y-1.5 sm:space-y-2 pl-4 sm:pl-5">
+              <ul className="space-y-1.5 sm:space-y-2 ps-4 sm:ps-5">
                 {body
                   .split("\n")
                   .filter((line) => line.trim().startsWith("-"))

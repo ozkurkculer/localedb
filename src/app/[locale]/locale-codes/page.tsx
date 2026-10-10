@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCountryIndex } from "@/lib/countries";
 import { LocaleCodesTableClient } from "@/components/locale-codes/locale-codes-table-client";
 import { localeAlternates } from "@/lib/seo";
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    alternates: await localeAlternates("/locale-codes"),
+    alternates: localeAlternates(locale, "/locale-codes"),
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
@@ -37,7 +37,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function LocaleCodesPage() {
+export default async function LocaleCodesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const countries = await getCountryIndex();
   const t = await getTranslations();
 

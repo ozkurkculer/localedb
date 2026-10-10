@@ -77,12 +77,12 @@ export async function Hero() {
                         <Button size="lg" asChild>
                             <Link href="/countries">
                                 {t('home.cta.browseCountries')}
-                                <ArrowRight className="ml-2 h-4 w-4" />
+                                <ArrowRight className="ms-2 h-4 w-4 rtl:-scale-x-100" />
                             </Link>
                         </Button>
                         <Button size="lg" variant="outline" asChild>
                             <NextLink href={siteConfig.links.github} target="_blank">
-                                <Code2 className="mr-2 h-4 w-4" />
+                                <Code2 className="me-2 h-4 w-4" />
                                 {t('home.cta.viewOnGitHub')}
                             </NextLink>
                         </Button>

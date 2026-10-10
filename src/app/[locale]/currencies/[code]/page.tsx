@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getCurrency, getAllCurrencyCodes } from '@/lib/currencies';
 import { getCountryIndex } from '@/lib/countries';
 import { CopyButton } from '@/components/copy-button';
@@ -10,6 +10,7 @@ import { localeAlternates } from "@/lib/seo";
 interface CurrencyPageProps {
     params: Promise<{
         code: string;
+        locale: string;
     }>;
 }
 
@@ -23,8 +24,8 @@ export async function generateStaticParams() {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: CurrencyPageProps): Promise<Metadata> {
-    const { code } = await params;
-    const t = await getTranslations('currencies.detail.meta');
+    const { code, locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'currencies.detail.meta' });
 
     try {
         const currency = await getCurrency(code);
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
                 symbol: currency.data.symbol,
                 count: currency.data.countries.length
             }),
-            alternates: await localeAlternates(`/currencies/${code}`),
+            alternates: localeAlternates(locale, `/currencies/${code}`),
             openGraph: {
                 title: t('ogTitle', { symbol: currency.data.symbol, name: currency.data.name, code: currency.data.code }),
                 description: t('ogDescription', {
@@ -85,7 +86,8 @@ export async function generateMetadata({ params }: CurrencyPageProps): Promise<M
 }
 
 export default async function CurrencyPage({ params }: CurrencyPageProps) {
-    const { code } = await params;
+    const { code, locale } = await params;
+    setRequestLocale(locale);
     const t = await getTranslations('currencies.detail');
 
     let currency: any;
